@@ -1,0 +1,217 @@
+.image-with-features__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 749px) {
+  .image-with-features__grid {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+.image-with-features__item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: rgba(var(--color-foreground), 0.03);
+  min-width: fit-content;
+  flex: 0 1 auto;
+}
+
+/* Mobile: Stack one feature per row */
+@media screen and (max-width: 749px) {
+  .image-with-features__item {
+    flex: 1 1 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* Allow text to wrap on mobile since items are full width */
+  .image-with-features__text {
+    white-space: normal;
+  }
+  
+  .image-with-features__text p {
+    white-space: normal;
+  }
+}
+
+/* Desktop: When there's an image, limit to 2 features per row */
+@media screen and (min-width: 750px) {
+  .image-with-text:not(.image-with-text--no-image) .image-with-features__item {
+    flex: 0 1 calc(50% - 0.75rem);
+    max-width: calc(50% - 0.75rem);
+  }
+}
+
+.image-with-features__icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  min-width: 3rem;
+  min-height: 3rem;
+}
+
+.image-with-features__icon .svg-wrapper {
+  width: 3rem;
+  height: 3rem;
+  fill: rgb(var(--color-foreground));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-with-features__icon img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+}
+
+.image-with-features__text {
+  flex: 1;
+  line-height: 1.5;
+  margin: 0;
+  min-width: 0;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.image-with-features__text p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Image border radius */
+.image-with-text .image-with-text__media img {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Ensure proper spacing when heading is present */
+.image-with-text__heading + .image-with-features__grid {
+  margin-top: 2rem;
+}
+
+/* Adjust spacing for content alignment */
+.image-with-text__content--desktop-center .image-with-features__grid,
+.image-with-text__content--mobile-center .image-with-features__grid {
+  justify-content: center;
+}
+
+.image-with-text__content--desktop-center .image-with-features__item,
+.image-with-text__content--mobile-center .image-with-features__item {
+  justify-content: center;
+  text-align: center;
+}
+
+.image-with-text__content--desktop-right .image-with-features__grid,
+.image-with-text__content--mobile-right .image-with-features__grid {
+  justify-content: flex-end;
+}
+
+.image-with-text__content--desktop-right .image-with-features__item,
+.image-with-text__content--mobile-right .image-with-features__item {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+/* No image styles */
+.image-with-text--no-image .image-with-text__text-item {
+  width: 100%;
+  max-width: 100%;
+}
+
+.image-with-text--no-image .image-with-text__content {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Force left alignment when no image */
+.image-with-text--no-image .image-with-text__content--no-image > * {
+  text-align: left !important;
+  align-self: flex-start !important;
+}
+
+.image-with-text--no-image .image-with-text__content--no-image .image-with-text__heading {
+  text-align: left !important;
+}
+
+.image-with-text--no-image .image-with-text__content--no-image .image-with-features__grid {
+  justify-content: flex-start !important;
+}
+
+.image-with-text--no-image .image-with-text__content--no-image .image-with-features__item {
+  justify-content: flex-start !important;
+  text-align: left !important;
+}
+
+/* Prevent text wrapping within features when no image */
+.image-with-text--no-image .image-with-text__content--no-image .image-with-features__text {
+  white-space: nowrap;
+}
+
+.image-with-text--no-image .image-with-text__content--no-image .image-with-features__text p {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 749px) {
+  /* On mobile, allow text to wrap when no image since items are full width */
+  .image-with-text--no-image .image-with-text__content--no-image .image-with-features__text {
+    white-space: normal;
+  }
+  
+  .image-with-text--no-image .image-with-text__content--no-image .image-with-features__text p {
+    white-space: normal;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .image-with-text--no-image .image-with-text__content {
+    padding: 0;
+  }
+  
+  .image-with-text--no-image .image-with-text__content--no-image > * {
+    text-align: left !important;
+    align-self: flex-start !important;
+  }
+  
+  .image-with-text--no-image .image-with-text__content--desktop-center > *,
+  .image-with-text--no-image .image-with-text__content--desktop-right > * {
+    text-align: left !important;
+    align-self: flex-start !important;
+  }
+  
+  /* Allow up to 4 columns when no image, items wrap if content is too long */
+  .image-with-text--no-image .image-with-text__content--no-image .image-with-features__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  /* Each item can be up to 25% width (4 columns), but will grow if content is longer */
+  .image-with-text--no-image .image-with-text__content--no-image .image-with-features__item {
+    flex: 0 1 calc(25% - 1.125rem);
+    min-width: fit-content;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  /* On larger screens, allow items to grow more if needed */
+  .image-with-text--no-image .image-with-text__content--no-image .image-with-features__item {
+    flex: 0 1 calc(25% - 1.125rem);
+    min-width: max-content;
+  }
+}
+
