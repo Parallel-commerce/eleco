@@ -1,0 +1,429 @@
+{%- style -%}
+  .two-col-accordion-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .two-col-accordion-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .two-col-accordion-{{ section.id }} .two-col-accordion {
+    display: grid;
+    gap: 24px;
+  }
+
+  .two-col-accordion-{{ section.id }} .two-col-accordion__heading {
+    margin: 0;
+  }
+
+  .two-col-accordion-{{ section.id }} .two-col-accordion__grid {
+    display: none;
+  }
+
+  .two-col-accordion-{{ section.id }} .two-col-accordion__stacked {
+    display: grid;
+    gap: 12px;
+  }
+
+  .two-col-accordion-{{ section.id }} .two-col-accordion__trigger {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: #f6f7f7;
+    padding: 16px 18px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    text-align: left;
+    color: inherit;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .two-col-accordion__hr{
+    margin: 3rem 0rem !important;
+    background: #e85a47;
+  }
+
+  .two-col-accordion-{{ section.id }} .two-col-accordion__trigger:hover,
+  .two-col-accordion-{{ section.id }} .two-col-accordion__trigger:focus-visible {
+    background: #eef1f1;
+    border-color: rgba(0, 0, 0, 0.12);
+    outline: none;
+  }
+
+  .two-col-accordion-{{ section.id }} .two-col-accordion__icon {
+    display: none;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+
+  .two-col-accordion-{{ section.id }} .two-col-accordion__trigger.is-active .two-col-accordion__icon {
+    display: inline-flex;
+  }
+
+  .two-col-accordion-{{ section.id }} .two-col-accordion__trigger.is-active .two-col-accordion__title {
+    font-weight: 700;
+    font-size: 150%;
+  }
+
+  .two-col-accordion-{{ section.id }} .two-col-accordion__panel,
+  .two-col-accordion-{{ section.id }} .two-col-accordion__stacked-panel {
+    padding: 18px 20px;
+    background: #ffffff;
+  }
+
+  .two-col-accordion-{{ section.id }} .two-col-accordion__stacked-panel {
+    display: block;
+  }
+
+  .two-col-accordion-{{ section.id }} .two-col-accordion__stacked-panel[hidden] {
+    display: none;
+  }
+
+  .two-col-accordion-{{ section.id }} .two-col-accordion__panel {
+    display: none;
+  }
+
+  .two-col-accordion-{{ section.id }} .two-col-accordion__panel.is-active {
+    display: block;
+  }
+
+  @media screen and (min-width: 990px) {
+    .two-col-accordion-{{ section.id }} .two-col-accordion__grid {
+      display: grid;
+      grid-template-columns: minmax(240px, 1fr) 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+
+    .two-col-accordion-{{ section.id }} .two-col-accordion__stacked {
+      display: none;
+    }
+
+    .two-col-accordion-{{ section.id }} .two-col-accordion__list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .two-col-accordion-{{ section.id }} .two-col-accordion__panel {
+      min-height: 220px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="two-col-accordion-{{ section.id }} isolate" data-two-col-accordion-root>
+  <div class="page-width">
+    <div class="two-col-accordion">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="two-col-accordion__heading {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+
+      <div class="two-col-accordion__grid" data-two-col-accordion>
+        <div class="two-col-accordion__list" role="tablist" aria-orientation="vertical">
+          {%- for block in section.blocks -%}
+            {%- assign panel_id = 'two-col-' | append: section.id | append: '-panel-' | append: block.id -%}
+            <button
+              type="button"
+              class="two-col-accordion__trigger"
+              aria-expanded="false"
+              aria-controls="{{ panel_id }}"
+              id="{{ panel_id }}-tab"
+              data-accordion-trigger="desktop"
+              data-accordion-index="{{ forloop.index0 }}"
+              {{ block.shopify_attributes }}
+            >
+              <span class="two-col-accordion__icon" aria-hidden="true">
+                {%- render 'icon-eleco-tick' -%}
+              </span>
+              <span class="two-col-accordion__title">{{ block.settings.title | escape }}</span>
+            </button>
+          {%- endfor -%}
+        </div>
+        <div class="two-col-accordion__panels">
+          {%- for block in section.blocks -%}
+            {%- assign panel_id = 'two-col-' | append: section.id | append: '-panel-' | append: block.id -%}
+            <div
+              id="{{ panel_id }}"
+              class="two-col-accordion__panel"
+              role="region"
+              aria-labelledby="{{ panel_id }}-tab"
+              data-accordion-panel="desktop"
+              data-accordion-index="{{ forloop.index0 }}"
+            >
+              <div class="two-col-accordion__panel-content rte">
+                {%- assign first_section = true -%}
+                {%- for i in (1..6) -%}
+                  {%- assign content_key = 'content_' | append: i -%}
+                  {%- assign content_value = block.settings[content_key] -%}
+                  {%- if content_value != blank -%}
+                    {%- unless first_section -%}
+                      <hr class="two-col-accordion__hr">
+                    {%- endunless -%}
+                    {{ content_value }}
+                    {%- assign first_section = false -%}
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+
+      <div class="two-col-accordion__stacked" data-two-col-accordion-mobile>
+        {%- for block in section.blocks -%}
+          {%- assign panel_id = 'two-col-mobile-' | append: section.id | append: '-panel-' | append: block.id -%}
+          <div class="two-col-accordion__stacked-item" {{ block.shopify_attributes }}>
+            <button
+              type="button"
+              class="two-col-accordion__trigger"
+              aria-expanded="false"
+              aria-controls="{{ panel_id }}"
+              id="{{ panel_id }}-tab"
+              data-accordion-trigger="mobile"
+              data-accordion-index="{{ forloop.index0 }}"
+            >
+              <span class="two-col-accordion__icon" aria-hidden="true">
+                {%- render 'icon-eleco-tick' -%}
+              </span>
+              <span class="two-col-accordion__title">{{ block.settings.title | escape }}</span>
+            </button>
+            <div
+              id="{{ panel_id }}"
+              class="two-col-accordion__stacked-panel rte"
+              role="region"
+              aria-labelledby="{{ panel_id }}-tab"
+              data-accordion-panel="mobile"
+              data-accordion-index="{{ forloop.index0 }}"
+            >
+              {%- assign first_section = true -%}
+              {%- for i in (1..6) -%}
+                {%- assign content_key = 'content_' | append: i -%}
+                {%- assign content_value = block.settings[content_key] -%}
+                {%- if content_value != blank -%}
+                  {%- unless first_section -%}
+                    <hr class="two-col-accordion__hr">
+                  {%- endunless -%}
+                  {{ content_value }}
+                  {%- assign first_section = false -%}
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{%- javascript -%}
+  (function () {
+    const sectionRoots = document.querySelectorAll('[data-two-col-accordion-root]');
+    if (!sectionRoots.length) return;
+
+    const setActive = (sectionRoot, index) => {
+      const desktopTriggers = sectionRoot.querySelectorAll('[data-accordion-trigger="desktop"]');
+      const mobileTriggers = sectionRoot.querySelectorAll('[data-accordion-trigger="mobile"]');
+      const desktopPanels = sectionRoot.querySelectorAll('[data-accordion-panel="desktop"]');
+      const mobilePanels = sectionRoot.querySelectorAll('[data-accordion-panel="mobile"]');
+
+      const updateGroup = (triggers, panels, isMobile) => {
+        triggers.forEach((trigger) => {
+          const isActive = Number(trigger.dataset.accordionIndex) === index;
+          trigger.classList.toggle('is-active', isActive);
+          trigger.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+        });
+
+        panels.forEach((panel) => {
+          const isActive = Number(panel.dataset.accordionIndex) === index;
+          panel.classList.toggle('is-active', isActive);
+          if (isMobile) {
+            panel.toggleAttribute('hidden', !isActive);
+          }
+        });
+      };
+
+      updateGroup(desktopTriggers, desktopPanels, false);
+      updateGroup(mobileTriggers, mobilePanels, true);
+    };
+
+    const attach = (root) => {
+      const triggers = root.querySelectorAll('[data-accordion-trigger]');
+      if (!triggers.length) return;
+      let activeIndex = 0;
+
+      const activate = (index) => {
+        activeIndex = index;
+        setActive(root, activeIndex);
+      };
+
+      triggers.forEach((trigger) => {
+        trigger.addEventListener('click', () => {
+          const index = Number(trigger.dataset.accordionIndex);
+          if (index === activeIndex) return;
+          activate(index);
+        });
+
+        trigger.addEventListener('keydown', (event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            const index = Number(trigger.dataset.accordionIndex);
+            if (index === activeIndex) return;
+            activate(index);
+          }
+        });
+      });
+
+      activate(0);
+    };
+
+    sectionRoots.forEach((root) => attach(root));
+  })();
+{%- endjavascript -%}
+
+{% schema %}
+{
+  "name": "Two-Column Accordion",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Better project outcomes for every team"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Heading size",
+      "default": "h1",
+      "options": [
+        {
+          "value": "h2",
+          "label": "Medium"
+        },
+        {
+          "value": "h1",
+          "label": "Large"
+        },
+        {
+          "value": "h0",
+          "label": "Extra large"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "accordion_item",
+      "name": "Accordion item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Accordion title"
+        },
+        {
+          "type": "header",
+          "content": "Content sections"
+        },
+        {
+          "type": "richtext",
+          "id": "content_1",
+          "label": "Content section 1",
+          "default": "<p>Add your descriptive copy here.</p>"
+        },
+        {
+          "type": "richtext",
+          "id": "content_2",
+          "label": "Content section 2"
+        },
+        {
+          "type": "richtext",
+          "id": "content_3",
+          "label": "Content section 3"
+        },
+        {
+          "type": "richtext",
+          "id": "content_4",
+          "label": "Content section 4"
+        },
+        {
+          "type": "richtext",
+          "id": "content_5",
+          "label": "Content section 5"
+        },
+        {
+          "type": "richtext",
+          "id": "content_6",
+          "label": "Content section 6"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "Two-Column Accordion",
+      "blocks": [
+        {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Contractors",
+            "content_1": "<p>Powerful critical path analysis and precise scheduling.</p>"
+          }
+        },
+        {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Sub contractors",
+            "content_1": "<p>Comprehensive resource and cost management, early identification of budget issues.</p>"
+          }
+        },
+        {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Designers and consultancy",
+            "content_1": "<p>Detailed history of project changes to support claims and resolve disputes.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
