@@ -282,7 +282,9 @@
         "award_icon_wBjhQL": {
           "type": "award_icon",
           "settings": {
+            "icon_image": "shopify://shop_images/partner_logo_2.svg",
             "icon_alt": "Award icon",
+            "mobile_icon_image": "shopify://shop_images/partner_logo_2.svg",
             "mobile_icon_alt": ""
           }
         },
