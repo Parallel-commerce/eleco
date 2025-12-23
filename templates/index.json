@@ -275,6 +275,58 @@
         "text_padding_left": 16,
         "text_padding_right": 16
       }
+    },
+    "award_banner_C6Xfiy": {
+      "type": "award-banner",
+      "blocks": {
+        "award_icon_wBjhQL": {
+          "type": "award_icon",
+          "settings": {
+            "icon_alt": "Award icon",
+            "mobile_icon_alt": ""
+          }
+        },
+        "award_icon_qTTRyE": {
+          "type": "award_icon",
+          "settings": {
+            "icon_alt": "Award icon",
+            "mobile_icon_alt": ""
+          }
+        },
+        "award_icon_m3Q6Ce": {
+          "type": "award_icon",
+          "settings": {
+            "icon_alt": "Award icon",
+            "mobile_icon_alt": ""
+          }
+        },
+        "richtext_CfaDac": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Voted best Project Management Software</p>"
+          }
+        }
+      },
+      "block_order": [
+        "award_icon_wBjhQL",
+        "award_icon_qTTRyE",
+        "award_icon_m3Q6Ce",
+        "richtext_CfaDac"
+      ],
+      "name": "Award Banner",
+      "settings": {
+        "background_image": "shopify://shop_images/failte-restaurant-image.jpg",
+        "image_height": "medium",
+        "min_height": 400,
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "content_alignment": "left",
+        "content_width": 50,
+        "text_color": "#ffffff",
+        "mobile_text_color": "#000000",
+        "underline_color": "#ff5a3c",
+        "icon_size": 120
+      }
     }
   },
   "order": [
@@ -284,6 +336,7 @@
     "collage",
     "video",
     "multicolumn",
-    "image_with_features_FfG8CU"
+    "image_with_features_FfG8CU",
+    "award_banner_C6Xfiy"
   ]
 }
