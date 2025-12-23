@@ -237,71 +237,69 @@
     {%- endif -%}
   </div>
 
-  <div class="award-banner__content">
-    <div class="page-width">
-      <div class="award-banner__content-wrap award-banner__content-wrap--{{ section.settings.content_alignment }}">
-        <div class="award-banner__inner">
-          {%- if section.blocks.size > 0 -%}
-            <div class="award-banner__icons">
-              {%- for block in section.blocks -%}
-                {%- if block.type == 'award_icon' -%}
-                  {%- liquid
-                    assign desktop_alt = block.settings.icon_alt
-                    if desktop_alt == blank
-                      assign desktop_alt = 'Award icon'
-                    endif
-                    assign mobile_alt = block.settings.mobile_icon_alt
-                    if mobile_alt == blank
-                      assign mobile_alt = block.settings.icon_alt
-                    endif
-                    if mobile_alt == blank
-                      assign mobile_alt = 'Award icon'
-                    endif
-                  -%}
-                  <div class="award-banner__icon-wrapper" {{ block.shopify_attributes }}>
-                    {%- if block.settings.icon_image != blank -%}
-                      {{
-                        block.settings.icon_image
-                        | image_url: width: 240
-                        | image_tag:
-                          loading: 'lazy',
-                          class: 'award-banner__icon award-banner__icon--desktop',
-                          alt: desktop_alt
-                      }}
-                    {%- endif -%}
-                    {%- if block.settings.mobile_icon_image != blank -%}
-                      {{
-                        block.settings.mobile_icon_image
-                        | image_url: width: 240
-                        | image_tag:
-                          loading: 'lazy',
-                          class: 'award-banner__icon award-banner__icon--mobile',
-                          alt: mobile_alt
-                      }}
-                    {%- elsif block.settings.icon_image != blank -%}
-                      {{
-                        block.settings.icon_image
-                        | image_url: width: 240
-                        | image_tag:
-                          loading: 'lazy',
-                          class: 'award-banner__icon award-banner__icon--mobile',
-                          alt: desktop_alt
-                      }}
-                    {%- endif -%}
-                  </div>
-                {%- endif -%}
-              {%- endfor -%}
+  <div class="award-banner__content page-width">
+    <div class="award-banner__content-wrap award-banner__content-wrap--{{ section.settings.content_alignment }}">
+      <div class="award-banner__inner">
+        {%- if section.blocks.size > 0 -%}
+          <div class="award-banner__icons">
+            {%- for block in section.blocks -%}
+              {%- if block.type == 'award_icon' -%}
+                {%- liquid
+                  assign desktop_alt = block.settings.icon_alt
+                  if desktop_alt == blank
+                    assign desktop_alt = 'Award icon'
+                  endif
+                  assign mobile_alt = block.settings.mobile_icon_alt
+                  if mobile_alt == blank
+                    assign mobile_alt = block.settings.icon_alt
+                  endif
+                  if mobile_alt == blank
+                    assign mobile_alt = 'Award icon'
+                  endif
+                -%}
+                <div class="award-banner__icon-wrapper" {{ block.shopify_attributes }}>
+                  {%- if block.settings.icon_image != blank -%}
+                    {{
+                      block.settings.icon_image
+                      | image_url: width: 240
+                      | image_tag:
+                        loading: 'lazy',
+                        class: 'award-banner__icon award-banner__icon--desktop',
+                        alt: desktop_alt
+                    }}
+                  {%- endif -%}
+                  {%- if block.settings.mobile_icon_image != blank -%}
+                    {{
+                      block.settings.mobile_icon_image
+                      | image_url: width: 240
+                      | image_tag:
+                        loading: 'lazy',
+                        class: 'award-banner__icon award-banner__icon--mobile',
+                        alt: mobile_alt
+                    }}
+                  {%- elsif block.settings.icon_image != blank -%}
+                    {{
+                      block.settings.icon_image
+                      | image_url: width: 240
+                      | image_tag:
+                        loading: 'lazy',
+                        class: 'award-banner__icon award-banner__icon--mobile',
+                        alt: desktop_alt
+                    }}
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'richtext' -%}
+            <div class="award-banner__text rte" {{ block.shopify_attributes }}>
+              {{ block.settings.text }}
             </div>
           {%- endif -%}
-
-          {%- for block in section.blocks -%}
-            {%- if block.type == 'richtext' -%}
-              <div class="award-banner__text rte" {{ block.shopify_attributes }}>
-                {{ block.settings.text }}
-              </div>
-            {%- endif -%}
-          {%- endfor -%}
-        </div>
+        {%- endfor -%}
       </div>
     </div>
   </div>
