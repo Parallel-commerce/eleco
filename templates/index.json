@@ -323,11 +323,65 @@
         "overlay_color": "#000000",
         "overlay_opacity": 0,
         "content_alignment": "left",
+        "text_alignment": "left",
         "content_width": 50,
         "text_color": "#ffffff",
         "mobile_text_color": "#000000",
         "underline_color": "#ff5a3c",
         "icon_size": 120
+      }
+    },
+    "two_column_accordion_9ewBCp": {
+      "type": "two-column-accordion",
+      "blocks": {
+        "accordion_item_zi4RWj": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Contractors",
+            "content_1": "<p>Powerful critical path analysis and precise scheduling.</p>",
+            "content_2": "<p>Powerful critical path analysis and precise scheduling.</p>",
+            "content_3": "<p>Powerful critical path analysis and precise scheduling.</p>",
+            "content_4": "<p>Powerful critical path analysis and precise scheduling.</p>",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_A8nNp8": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Sub contractors",
+            "content_1": "<p>Comprehensive resource and cost management, early identification of budget issues.</p>",
+            "content_2": "",
+            "content_3": "",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_Bg3Ax3": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Designers and consultancy",
+            "content_1": "<p>Detailed history of project changes to support claims and resolve disputes.</p>",
+            "content_2": "",
+            "content_3": "",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_zi4RWj",
+        "accordion_item_A8nNp8",
+        "accordion_item_Bg3Ax3"
+      ],
+      "name": "Two-Column Accordion",
+      "settings": {
+        "heading": "Better project outcomes for every team",
+        "heading_size": "h1",
+        "padding_top": 48,
+        "padding_bottom": 60
       }
     }
   },
@@ -339,6 +393,7 @@
     "video",
     "multicolumn",
     "image_with_features_FfG8CU",
-    "award_banner_C6Xfiy"
+    "award_banner_C6Xfiy",
+    "two_column_accordion_9ewBCp"
   ]
 }
