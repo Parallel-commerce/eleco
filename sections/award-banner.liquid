@@ -71,13 +71,30 @@
 
   #AwardBanner-{{ section.id }} .award-banner__inner {
     width: 100%;
-    text-align: {{ section.settings.content_alignment }};
+    text-align: {{ section.settings.text_alignment }};
   }
 
   @media screen and (min-width: 750px) {
     #AwardBanner-{{ section.id }} .award-banner__inner {
       max-width: {{ section.settings.content_width }}%;
     }
+  }
+
+  #AwardBanner-{{ section.id }} .award-banner__content-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  #AwardBanner-{{ section.id }} .award-banner__content-wrap--left {
+    justify-content: flex-start;
+  }
+
+  #AwardBanner-{{ section.id }} .award-banner__content-wrap--center {
+    justify-content: center;
+  }
+
+  #AwardBanner-{{ section.id }} .award-banner__content-wrap--right {
+    justify-content: flex-end;
   }
 
   #AwardBanner-{{ section.id }} .award-banner__icons {
@@ -222,67 +239,69 @@
 
   <div class="award-banner__content">
     <div class="page-width">
-      <div class="award-banner__inner">
-        {%- if section.blocks.size > 0 -%}
-          <div class="award-banner__icons">
-            {%- for block in section.blocks -%}
-              {%- if block.type == 'award_icon' -%}
-                {%- liquid
-                  assign desktop_alt = block.settings.icon_alt
-                  if desktop_alt == blank
-                    assign desktop_alt = 'Award icon'
-                  endif
-                  assign mobile_alt = block.settings.mobile_icon_alt
-                  if mobile_alt == blank
-                    assign mobile_alt = block.settings.icon_alt
-                  endif
-                  if mobile_alt == blank
-                    assign mobile_alt = 'Award icon'
-                  endif
-                -%}
-                <div class="award-banner__icon-wrapper" {{ block.shopify_attributes }}>
-                  {%- if block.settings.icon_image != blank -%}
-                    {{
-                      block.settings.icon_image
-                      | image_url: width: 240
-                      | image_tag:
-                        loading: 'lazy',
-                        class: 'award-banner__icon award-banner__icon--desktop',
-                        alt: desktop_alt
-                    }}
-                  {%- endif -%}
-                  {%- if block.settings.mobile_icon_image != blank -%}
-                    {{
-                      block.settings.mobile_icon_image
-                      | image_url: width: 240
-                      | image_tag:
-                        loading: 'lazy',
-                        class: 'award-banner__icon award-banner__icon--mobile',
-                        alt: mobile_alt
-                    }}
-                  {%- elsif block.settings.icon_image != blank -%}
-                    {{
-                      block.settings.icon_image
-                      | image_url: width: 240
-                      | image_tag:
-                        loading: 'lazy',
-                        class: 'award-banner__icon award-banner__icon--mobile',
-                        alt: desktop_alt
-                    }}
-                  {%- endif -%}
-                </div>
-              {%- endif -%}
-            {%- endfor -%}
-          </div>
-        {%- endif -%}
-
-        {%- for block in section.blocks -%}
-          {%- if block.type == 'richtext' -%}
-            <div class="award-banner__text rte" {{ block.shopify_attributes }}>
-              {{ block.settings.text }}
+      <div class="award-banner__content-wrap award-banner__content-wrap--{{ section.settings.content_alignment }}">
+        <div class="award-banner__inner">
+          {%- if section.blocks.size > 0 -%}
+            <div class="award-banner__icons">
+              {%- for block in section.blocks -%}
+                {%- if block.type == 'award_icon' -%}
+                  {%- liquid
+                    assign desktop_alt = block.settings.icon_alt
+                    if desktop_alt == blank
+                      assign desktop_alt = 'Award icon'
+                    endif
+                    assign mobile_alt = block.settings.mobile_icon_alt
+                    if mobile_alt == blank
+                      assign mobile_alt = block.settings.icon_alt
+                    endif
+                    if mobile_alt == blank
+                      assign mobile_alt = 'Award icon'
+                    endif
+                  -%}
+                  <div class="award-banner__icon-wrapper" {{ block.shopify_attributes }}>
+                    {%- if block.settings.icon_image != blank -%}
+                      {{
+                        block.settings.icon_image
+                        | image_url: width: 240
+                        | image_tag:
+                          loading: 'lazy',
+                          class: 'award-banner__icon award-banner__icon--desktop',
+                          alt: desktop_alt
+                      }}
+                    {%- endif -%}
+                    {%- if block.settings.mobile_icon_image != blank -%}
+                      {{
+                        block.settings.mobile_icon_image
+                        | image_url: width: 240
+                        | image_tag:
+                          loading: 'lazy',
+                          class: 'award-banner__icon award-banner__icon--mobile',
+                          alt: mobile_alt
+                      }}
+                    {%- elsif block.settings.icon_image != blank -%}
+                      {{
+                        block.settings.icon_image
+                        | image_url: width: 240
+                        | image_tag:
+                          loading: 'lazy',
+                          class: 'award-banner__icon award-banner__icon--mobile',
+                          alt: desktop_alt
+                      }}
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
+              {%- endfor -%}
             </div>
           {%- endif -%}
-        {%- endfor -%}
+
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'richtext' -%}
+              <div class="award-banner__text rte" {{ block.shopify_attributes }}>
+                {{ block.settings.text }}
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
       </div>
     </div>
   </div>
@@ -366,6 +385,26 @@
       "options": [
         {
           "value": "left",
+          "label": "Left (container)"
+        },
+        {
+          "value": "center",
+          "label": "Center (container)"
+        },
+        {
+          "value": "right",
+          "label": "Right (container)"
+        }
+      ],
+      "default": "left",
+      "label": "Content alignment (container)"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "options": [
+        {
+          "value": "left",
           "label": "Left"
         },
         {
@@ -378,7 +417,7 @@
         }
       ],
       "default": "left",
-      "label": "Content alignment"
+      "label": "Text alignment"
     },
     {
       "type": "range",
