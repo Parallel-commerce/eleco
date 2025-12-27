@@ -173,12 +173,12 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background: rgb(var(--color-button));
+    /* background: rgb(var(--color-button)); */
     color: rgb(var(--color-button-text));
     border: none;
     cursor: pointer;
     transition: opacity 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); */
   }
 
   .testimonials-{{ section.id }}__nav-button:hover:not([disabled]) {
@@ -230,19 +230,16 @@
   }
 
   .testimonials-{{ section.id }}__nav-button .svg-wrapper {
-    width: 20px;
-    height: 20px;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .testimonials-{{ section.id }}__nav-button--prev .svg-wrapper svg {
-    transform: rotate(90deg);
-  }
-
-  .testimonials-{{ section.id }}__nav-button--next .svg-wrapper svg {
-    transform: rotate(-90deg);
+  .testimonials-{{ section.id }}__nav-button .svg-wrapper svg {
+    width: 100%;
+    height: 100%;
   }
 {%- endstyle -%}
 
@@ -267,102 +264,98 @@
       {%- if section.blocks.size > 0 -%}
         <div class="testimonials-{{ section.id }}__slider-wrapper">
           <slider-component>
-          <div
-            class="testimonials-{{ section.id }}__slider slider"
-            id="Slider-{{ section.id }}"
-            role="list"
-          >
-            {%- for block in section.blocks -%}
-              <div
-                id="Slide-{{ section.id }}-{{ forloop.index }}"
-                class="testimonials-{{ section.id }}__slide slider__slide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-                {{ block.shopify_attributes }}
-                {% if settings.animations_reveal_on_scroll %}
-                  data-cascade
-                  style="--animation-order: {{ forloop.index }};"
-                {% endif %}
-              >
-                <div class="testimonials-{{ section.id }}__card">
-                  {%- if block.settings.image != blank -%}
-                    {%- liquid
-                      assign image_alt = block.settings.name | escape
-                      assign image_class = 'testimonials-' | append: section.id | append: '__image'
-                    -%}
-                    <div class="testimonials-{{ section.id }}__image-wrapper">
-                      {{
-                        block.settings.image
-                        | image_url: width: 160
-                        | image_tag:
-                          loading: 'lazy',
-                          alt: image_alt,
-                          class: image_class,
-                          widths: '80, 160'
-                      }}
-                    </div>
-                  {%- else -%}
-                    <div class="testimonials-{{ section.id }}__image-wrapper">
-                      <div style="width: 100%; height: 100%; background: rgba(var(--color-foreground), 0.1);"></div>
-                    </div>
-                  {%- endif -%}
-                  
-                  <div class="testimonials-{{ section.id }}__content">
-                    {%- if block.settings.testimonial_text != blank -%}
-                      <p class="testimonials-{{ section.id }}__text">
-                        {{ block.settings.testimonial_text }}
-                      </p>
+            <div
+              class="testimonials-{{ section.id }}__slider slider"
+              id="Slider-{{ section.id }}"
+              role="list"
+            >
+              {%- for block in section.blocks -%}
+                <div
+                  id="Slide-{{ section.id }}-{{ forloop.index }}"
+                  class="testimonials-{{ section.id }}__slide slider__slide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                  {{ block.shopify_attributes }}
+                  {% if settings.animations_reveal_on_scroll %}
+                    data-cascade
+                    style="--animation-order: {{ forloop.index }};"
+                  {% endif %}
+                >
+                  <div class="testimonials-{{ section.id }}__card">
+                    {%- if block.settings.image != blank -%}
+                      {%- liquid
+                        assign image_alt = block.settings.name | escape
+                        assign image_class = 'testimonials-' | append: section.id | append: '__image'
+                      -%}
+                      <div class="testimonials-{{ section.id }}__image-wrapper">
+                        {{
+                          block.settings.image
+                          | image_url: width: 160
+                          | image_tag: loading: 'lazy', alt: image_alt, class: image_class, widths: '80, 160'
+                        }}
+                      </div>
+                    {%- else -%}
+                      <div class="testimonials-{{ section.id }}__image-wrapper">
+                        <div style="width: 100%; height: 100%; background: rgba(var(--color-foreground), 0.1);"></div>
+                      </div>
                     {%- endif -%}
-                    
-                    <div class="testimonials-{{ section.id }}__author">
-                      {%- if block.settings.name != blank -%}
-                        <h3 class="testimonials-{{ section.id }}__name">
-                          {%- if block.settings.country_flag != blank -%}
-                            <span class="testimonials-{{ section.id }}__flag">{{ block.settings.country_flag }}</span>
-                          {%- endif -%}
-                          {{ block.settings.name }}
-                        </h3>
-                      {%- endif -%}
-                      {%- if block.settings.title != blank -%}
-                        <p class="testimonials-{{ section.id }}__title-text">
-                          {{ block.settings.title }}
+
+                    <div class="testimonials-{{ section.id }}__content">
+                      {%- if block.settings.testimonial_text != blank -%}
+                        <p class="testimonials-{{ section.id }}__text">
+                          {{ block.settings.testimonial_text }}
                         </p>
                       {%- endif -%}
+
+                      <div class="testimonials-{{ section.id }}__author">
+                        {%- if block.settings.name != blank -%}
+                          <h3 class="testimonials-{{ section.id }}__name">
+                            {%- if block.settings.country_flag != blank -%}
+                              <span class="testimonials-{{ section.id }}__flag">{{ block.settings.country_flag }}</span>
+                            {%- endif -%}
+                            {{ block.settings.name }}
+                          </h3>
+                        {%- endif -%}
+                        {%- if block.settings.title != blank -%}
+                          <p class="testimonials-{{ section.id }}__title-text">
+                            {{ block.settings.title }}
+                          </p>
+                        {%- endif -%}
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            {%- endfor -%}
-          </div>
-
-          {%- if section.blocks.size > 2 -%}
-            <button
-              type="button"
-              class="testimonials-{{ section.id }}__nav-button testimonials-{{ section.id }}__nav-button--prev slider-button slider-button--prev"
-              name="previous"
-              aria-label="{{ 'general.slider.previous_slide' | t }}"
-              aria-controls="Slider-{{ section.id }}"
-            >
-              <span class="svg-wrapper">{{ 'icon-caret.svg' | inline_asset_content }}</span>
-            </button>
-            <button
-              type="button"
-              class="testimonials-{{ section.id }}__nav-button testimonials-{{ section.id }}__nav-button--next slider-button slider-button--next"
-              name="next"
-              aria-label="{{ 'general.slider.next_slide' | t }}"
-              aria-controls="Slider-{{ section.id }}"
-            >
-              <span class="svg-wrapper">{{ 'icon-caret.svg' | inline_asset_content }}</span>
-            </button>
-            <div class="slider-buttons large-up-hide">
-              <div class="slider-counter caption">
-                <span class="slider-counter--current">1</span>
-                <span aria-hidden="true"> / </span>
-                <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
-                <span class="slider-counter--total">{{ section.blocks.size }}</span>
-              </div>
+              {%- endfor -%}
             </div>
-          {%- endif -%}
-        </slider-component>
-      </div>
+
+            {%- if section.blocks.size > 2 -%}
+              <button
+                type="button"
+                class="testimonials-{{ section.id }}__nav-button testimonials-{{ section.id }}__nav-button--prev slider-button slider-button--prev"
+                name="previous"
+                aria-label="{{ 'general.slider.previous_slide' | t }}"
+                aria-controls="Slider-{{ section.id }}"
+              >
+                <span class="svg-wrapper">{{ 'icon-eleco-arrow-left.svg' | inline_asset_content }}</span>
+              </button>
+              <button
+                type="button"
+                class="testimonials-{{ section.id }}__nav-button testimonials-{{ section.id }}__nav-button--next slider-button slider-button--next"
+                name="next"
+                aria-label="{{ 'general.slider.next_slide' | t }}"
+                aria-controls="Slider-{{ section.id }}"
+              >
+                <span class="svg-wrapper">{{ 'icon-eleco-arrow-right.svg' | inline_asset_content }}</span>
+              </button>
+              <div class="slider-buttons large-up-hide">
+                <div class="slider-counter caption">
+                  <span class="slider-counter--current">1</span>
+                  <span aria-hidden="true"> / </span>
+                  <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
+                  <span class="slider-counter--total">{{ section.blocks.size }}</span>
+                </div>
+              </div>
+            {%- endif -%}
+          </slider-component>
+        </div>
       {%- endif -%}
     </div>
   </div>
@@ -558,4 +551,3 @@
   ]
 }
 {% endschema %}
-
