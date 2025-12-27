@@ -1,0 +1,561 @@
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .testimonials-{{ section.id }} {
+    position: relative;
+  }
+
+  .testimonials-{{ section.id }}__header {
+    text-align: {{ section.settings.header_alignment }};
+    margin-bottom: {{ section.settings.header_spacing }}px;
+  }
+
+  .testimonials-{{ section.id }}__title {
+    margin: 0 0 1rem 0;
+  }
+
+  .testimonials-{{ section.id }}__subtitle {
+    margin: 0;
+    color: rgba(var(--color-foreground), 0.7);
+  }
+
+  .testimonials-{{ section.id }}__outer-wrapper {
+    position: relative;
+  }
+
+  .testimonials-{{ section.id }}__slider-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: visible;
+  }
+
+  .testimonials-{{ section.id }}__slider {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    width: 100%;
+  }
+
+  .testimonials-{{ section.id }}__slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media screen and (min-width: 750px) {
+    .testimonials-{{ section.id }}__slider {
+      overflow-x: auto;
+    }
+  }
+
+  .testimonials-{{ section.id }}__slide {
+    flex: 0 0 calc((100% - 2rem) / 2);
+    scroll-snap-align: start;
+    min-width: 0;
+    width: calc((100% - 2rem) / 2);
+    max-width: calc((100% - 2rem) / 2);
+    flex-shrink: 0;
+  }
+
+  @media screen and (min-width: 750px) {
+    .testimonials-{{ section.id }}__slide {
+      flex: 0 0 calc((100% - 2rem) / 2);
+      width: calc((100% - 2rem) / 2);
+      max-width: calc((100% - 2rem) / 2);
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .testimonials-{{ section.id }}__slide {
+      flex: 0 0 calc(100% - 3rem);
+      width: calc(100% - 3rem);
+      max-width: calc(100% - 3rem);
+    }
+  }
+
+  .testimonials-{{ section.id }}__card {
+    background: rgba(var(--color-foreground), 0.03);
+    border: 1px solid rgba(var(--color-foreground), 0.1);
+    border-radius: 0.8rem;
+    padding: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    height: 100%;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+
+  .testimonials-{{ section.id }}__card:hover {
+    box-shadow: 0 4px 12px rgba(var(--color-foreground), 0.08);
+    border-color: rgba(var(--color-foreground), 0.15);
+  }
+
+  .testimonials-{{ section.id }}__image-wrapper {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    background: rgba(var(--color-foreground), 0.05);
+  }
+
+  .testimonials-{{ section.id }}__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .testimonials-{{ section.id }}__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonials-{{ section.id }}__text {
+    margin: 0 0 1.5rem 0;
+    color: rgb(var(--color-foreground));
+    line-height: 1.6;
+    flex: 1;
+  }
+
+  .testimonials-{{ section.id }}__author {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .testimonials-{{ section.id }}__name {
+    font-weight: 600;
+    margin: 0;
+    color: rgb(var(--color-foreground));
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .testimonials-{{ section.id }}__flag {
+    font-size: 1.2em;
+    line-height: 1;
+  }
+
+  .testimonials-{{ section.id }}__title-text {
+    margin: 0;
+    color: rgba(var(--color-foreground), 0.7);
+    font-size: 0.9em;
+  }
+
+  slider-component {
+    position: relative;
+  }
+
+  .testimonials-{{ section.id }}__nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgb(var(--color-button));
+    color: rgb(var(--color-button-text));
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .testimonials-{{ section.id }}__nav-button:hover:not([disabled]) {
+    opacity: 0.9;
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  .testimonials-{{ section.id }}__nav-button[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .testimonials-{{ section.id }}__nav-button--prev {
+    left: -22px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .testimonials-{{ section.id }}__nav-button--prev {
+      left: calc(-22px - 3.5rem);
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    .testimonials-{{ section.id }}__nav-button--prev {
+      left: calc(-22px - 5rem);
+    }
+  }
+
+  .testimonials-{{ section.id }}__nav-button--next {
+    right: -22px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .testimonials-{{ section.id }}__nav-button--next {
+      right: calc(-22px - 3.5rem);
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    .testimonials-{{ section.id }}__nav-button--next {
+      right: calc(-22px - 5rem);
+    }
+  }
+
+  @media screen and (max-width: 989px) {
+    .testimonials-{{ section.id }}__nav-button {
+      display: none;
+    }
+  }
+
+  .testimonials-{{ section.id }}__nav-button .svg-wrapper {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonials-{{ section.id }}__nav-button--prev .svg-wrapper svg {
+    transform: rotate(90deg);
+  }
+
+  .testimonials-{{ section.id }}__nav-button--next .svg-wrapper svg {
+    transform: rotate(-90deg);
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="testimonials-{{ section.id }}__outer-wrapper">
+    <div class="testimonials-{{ section.id }} page-width section-{{ section.id }}-padding isolate">
+      {%- if section.settings.heading != blank or section.settings.subheading != blank -%}
+        <div class="testimonials-{{ section.id }}__header{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+          {%- if section.settings.heading != blank -%}
+            <h2 class="testimonials-{{ section.id }}__title inline-richtext {{ section.settings.heading_size }}">
+              {{ section.settings.heading }}
+            </h2>
+          {%- endif -%}
+          {%- if section.settings.subheading != blank -%}
+            <p class="testimonials-{{ section.id }}__subtitle">
+              {{ section.settings.subheading }}
+            </p>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+
+      {%- if section.blocks.size > 0 -%}
+        <div class="testimonials-{{ section.id }}__slider-wrapper">
+          <slider-component>
+          <div
+            class="testimonials-{{ section.id }}__slider slider"
+            id="Slider-{{ section.id }}"
+            role="list"
+          >
+            {%- for block in section.blocks -%}
+              <div
+                id="Slide-{{ section.id }}-{{ forloop.index }}"
+                class="testimonials-{{ section.id }}__slide slider__slide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                {{ block.shopify_attributes }}
+                {% if settings.animations_reveal_on_scroll %}
+                  data-cascade
+                  style="--animation-order: {{ forloop.index }};"
+                {% endif %}
+              >
+                <div class="testimonials-{{ section.id }}__card">
+                  {%- if block.settings.image != blank -%}
+                    {%- liquid
+                      assign image_alt = block.settings.name | escape
+                      assign image_class = 'testimonials-' | append: section.id | append: '__image'
+                    -%}
+                    <div class="testimonials-{{ section.id }}__image-wrapper">
+                      {{
+                        block.settings.image
+                        | image_url: width: 160
+                        | image_tag:
+                          loading: 'lazy',
+                          alt: image_alt,
+                          class: image_class,
+                          widths: '80, 160'
+                      }}
+                    </div>
+                  {%- else -%}
+                    <div class="testimonials-{{ section.id }}__image-wrapper">
+                      <div style="width: 100%; height: 100%; background: rgba(var(--color-foreground), 0.1);"></div>
+                    </div>
+                  {%- endif -%}
+                  
+                  <div class="testimonials-{{ section.id }}__content">
+                    {%- if block.settings.testimonial_text != blank -%}
+                      <p class="testimonials-{{ section.id }}__text">
+                        {{ block.settings.testimonial_text }}
+                      </p>
+                    {%- endif -%}
+                    
+                    <div class="testimonials-{{ section.id }}__author">
+                      {%- if block.settings.name != blank -%}
+                        <h3 class="testimonials-{{ section.id }}__name">
+                          {%- if block.settings.country_flag != blank -%}
+                            <span class="testimonials-{{ section.id }}__flag">{{ block.settings.country_flag }}</span>
+                          {%- endif -%}
+                          {{ block.settings.name }}
+                        </h3>
+                      {%- endif -%}
+                      {%- if block.settings.title != blank -%}
+                        <p class="testimonials-{{ section.id }}__title-text">
+                          {{ block.settings.title }}
+                        </p>
+                      {%- endif -%}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {%- endfor -%}
+          </div>
+
+          {%- if section.blocks.size > 2 -%}
+            <button
+              type="button"
+              class="testimonials-{{ section.id }}__nav-button testimonials-{{ section.id }}__nav-button--prev slider-button slider-button--prev"
+              name="previous"
+              aria-label="{{ 'general.slider.previous_slide' | t }}"
+              aria-controls="Slider-{{ section.id }}"
+            >
+              <span class="svg-wrapper">{{ 'icon-caret.svg' | inline_asset_content }}</span>
+            </button>
+            <button
+              type="button"
+              class="testimonials-{{ section.id }}__nav-button testimonials-{{ section.id }}__nav-button--next slider-button slider-button--next"
+              name="next"
+              aria-label="{{ 'general.slider.next_slide' | t }}"
+              aria-controls="Slider-{{ section.id }}"
+            >
+              <span class="svg-wrapper">{{ 'icon-caret.svg' | inline_asset_content }}</span>
+            </button>
+            <div class="slider-buttons large-up-hide">
+              <div class="slider-counter caption">
+                <span class="slider-counter--current">1</span>
+                <span aria-hidden="true"> / </span>
+                <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
+                <span class="slider-counter--total">{{ section.blocks.size }}</span>
+              </div>
+            </div>
+          {%- endif -%}
+        </slider-component>
+      </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "What do our clients say?"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Find out why our clients are glad they met us."
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "Small"
+        },
+        {
+          "value": "h1",
+          "label": "Medium"
+        },
+        {
+          "value": "h0",
+          "label": "Large"
+        },
+        {
+          "value": "hxl",
+          "label": "Extra large"
+        },
+        {
+          "value": "hxxl",
+          "label": "Extra extra large"
+        }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+    {
+      "type": "select",
+      "id": "header_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "label": "Header alignment"
+    },
+    {
+      "type": "range",
+      "id": "header_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Header spacing",
+      "default": 40,
+      "info": "Space between header and testimonials"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Client Information"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name",
+          "default": "John Doe"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title/Company",
+          "default": "CEO, Company Name"
+        },
+        {
+          "type": "text",
+          "id": "country_flag",
+          "label": "Country Flag (Emoji)",
+          "info": "Enter a flag emoji (e.g., 🇺🇸, 🇬🇧, 🇨🇦)"
+        },
+        {
+          "type": "header",
+          "content": "Testimonial"
+        },
+        {
+          "type": "textarea",
+          "id": "testimonial_text",
+          "label": "Testimonial Text",
+          "default": "This is a testimonial from a satisfied client."
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "Client photo or logo"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonials",
+      "blocks": [
+        {
+          "type": "testimonial",
+          "settings": {
+            "name": "Dan Morar",
+            "title": "CEO topcarrentals.ro",
+            "testimonial_text": "The Vertical Digital team was essential for building, launching and growing our rental and booking platforms. With them we always had a trusted, loyal and dedicated partner for our success."
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "name": "Levin Wense",
+            "title": "CEO and Co-founder MVP Match",
+            "testimonial_text": "I would highly recommend their services to any company looking for top-notch IT staff. They have truly been a valuable partner for our business and have played an important role in our success."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
