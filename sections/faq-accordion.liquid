@@ -1,0 +1,459 @@
+{%- style -%}
+  .faq-accordion-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .faq-accordion-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .faq-accordion-{{ section.id }}__wrapper {
+    width: 100%;
+  }
+
+  .faq-accordion-{{ section.id }}__heading {
+    text-align: {{ section.settings.heading_alignment }};
+    margin: 0 0 {{ section.settings.heading_spacing }}px 0;
+  }
+
+  .faq-accordion-{{ section.id }}__list {
+    display: grid;
+    gap: {{ section.settings.item_gap }}px;
+  }
+
+  .faq-accordion-{{ section.id }}__item {
+    background: #ffffff;
+    border: 2px solid {{ section.settings.item_background_active }};
+    border-radius: {{ section.settings.border_radius }}px;
+    overflow: hidden;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+
+  .faq-accordion-{{ section.id }}__item details {
+    transition: background-color 0.3s ease;
+  }
+
+  .faq-accordion-{{ section.id }}__item details[open] {
+    background: {{ section.settings.item_background_active }};
+    border-color: {{ section.settings.item_background_active }};
+  }
+
+  .faq-accordion-{{ section.id }}__item summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: {{ section.settings.item_padding }}px;
+    cursor: pointer;
+    list-style: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+
+  .faq-accordion-{{ section.id }}__item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-accordion-{{ section.id }}__item summary {
+    border-bottom: 1px solid transparent;
+  }
+
+  .faq-accordion-{{ section.id }}__item details[open] summary {
+    background: {{ section.settings.item_background_active }};
+    border-bottom-color: #ffffff;
+  }
+
+  .faq-accordion-{{ section.id }}__question {
+    flex: 1;
+    margin: 0;
+    font-weight: {{ section.settings.question_font_weight }};
+    font-size: {{ section.settings.question_font_size }}px;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  .faq-accordion-{{ section.id }}__icon-wrapper {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16px;
+    transition: transform 0.3s ease;
+    position: relative;
+  }
+
+  .faq-accordion-{{ section.id }}__icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .faq-accordion-{{ section.id }}__icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .faq-accordion-{{ section.id }}__icon-plus {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  .faq-accordion-{{ section.id }}__icon-minus {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .faq-accordion-{{ section.id }}__item details[open] .faq-accordion-{{ section.id }}__icon-plus {
+    opacity: 0;
+  }
+
+  .faq-accordion-{{ section.id }}__item details[open] .faq-accordion-{{ section.id }}__icon-minus {
+    opacity: 1;
+  }
+
+  .faq-accordion-{{ section.id }}__answer {
+    padding: 0 {{ section.settings.item_padding }}px;
+    background: {{ section.settings.item_background_active }};
+    color: inherit;
+    line-height: 1.6;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease, opacity 0.3s ease;
+  }
+
+  .faq-accordion-{{ section.id }}__item details[open] .faq-accordion-{{ section.id }}__answer {
+    max-height: 1000px;
+    padding: {{ section.settings.item_padding }}px;
+    opacity: 1;
+  }
+
+  .faq-accordion-{{ section.id }}__answer p {
+    margin: 0;
+  }
+
+  .faq-accordion-{{ section.id }}__answer p + p {
+    margin-top: 1em;
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="faq-accordion-{{ section.id }} page-width isolate">
+    <div class="faq-accordion-{{ section.id }}__wrapper">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="faq-accordion-{{ section.id }}__heading inline-richtext {{ section.settings.heading_size }}">
+          {{ section.settings.heading }}
+        </h2>
+      {%- endif -%}
+
+      {%- if section.blocks.size > 0 -%}
+        <div class="faq-accordion-{{ section.id }}__list">
+          {%- for block in section.blocks -%}
+            <div class="faq-accordion-{{ section.id }}__item" {{ block.shopify_attributes }}>
+              <details id="Details-{{ block.id }}-{{ section.id }}">
+                <summary id="Summary-{{ block.id }}-{{ section.id }}">
+                  <h3 class="faq-accordion-{{ section.id }}__question">
+                    {{ block.settings.question | escape }}
+                  </h3>
+                  <div class="faq-accordion-{{ section.id }}__icon-wrapper">
+                    <span
+                      class="faq-accordion-{{ section.id }}__icon faq-accordion-{{ section.id }}__icon-plus"
+                      aria-hidden="true"
+                    >
+                      {{ 'icon-plus.svg' | inline_asset_content }}
+                    </span>
+                    <span
+                      class="faq-accordion-{{ section.id }}__icon faq-accordion-{{ section.id }}__icon-minus"
+                      aria-hidden="true"
+                    >
+                      {{ 'icon-minus.svg' | inline_asset_content }}
+                    </span>
+                  </div>
+                </summary>
+                <div
+                  class="faq-accordion-{{ section.id }}__answer rte"
+                  id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                  role="region"
+                  aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                >
+                  {{ block.settings.answer }}
+                </div>
+              </details>
+            </div>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "FAQ Accordion",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Questions? We have answers."
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Heading size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "Small"
+        },
+        {
+          "value": "h1",
+          "label": "Medium"
+        },
+        {
+          "value": "h0",
+          "label": "Large"
+        },
+        {
+          "value": "hxl",
+          "label": "Extra large"
+        },
+        {
+          "value": "hxxl",
+          "label": "Extra extra large"
+        }
+      ],
+      "default": "h1"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "Heading alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "heading_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Heading spacing",
+      "default": 40,
+      "info": "Space between heading and FAQ items"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "item_gap",
+      "min": 8,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Item gap",
+      "default": 12,
+      "info": "Space between FAQ items"
+    },
+    {
+      "type": "range",
+      "id": "item_padding",
+      "min": 12,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Item padding",
+      "default": 18,
+      "info": "Padding inside each FAQ item"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 12,
+      "info": "Rounded corners for FAQ items"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "question_font_size",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Question font size",
+      "default": 16
+    },
+    {
+      "type": "select",
+      "id": "question_font_weight",
+      "label": "Question font weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "color",
+      "id": "item_background",
+      "label": "Item background (closed)",
+      "default": "#f6f7f7"
+    },
+    {
+      "type": "color",
+      "id": "item_background_active",
+      "label": "Item background (open)",
+      "default": "#fce8e6",
+      "info": "Background color when FAQ is expanded"
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq_item",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "Who is Asta Powerproject for?"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer",
+          "default": "<p>If a stakeholder hasn't bought a licence but needs to view the project, they can download our Project Viewer.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ Accordion",
+      "blocks": [
+        {
+          "type": "faq_item",
+          "settings": {
+            "question": "Who is Asta Powerproject for?",
+            "answer": "<p>This is a sample answer to the first question.</p>"
+          }
+        },
+        {
+          "type": "faq_item",
+          "settings": {
+            "question": "Why is Asta better than the competition?",
+            "answer": "<p>This is a sample answer to the second question.</p>"
+          }
+        },
+        {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is the difference between a single and a concurrent license?",
+            "answer": "<p>This is a sample answer to the third question.</p>"
+          }
+        },
+        {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can stakeholders see my project if they don't have a license?",
+            "answer": "<p>If a stakeholder hasn't bought a licence but needs to view the project, they can download our Project Viewer.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

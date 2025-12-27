@@ -2384,8 +2384,8 @@ input[type='checkbox'] {
   }
 
   .header--middle-left {
-    grid-template-areas: 'heading navigation icons';
-    grid-template-columns: auto auto 1fr;
+    grid-template-areas: 'heading . navigation icons';
+    grid-template-columns: auto 1fr auto auto;
     column-gap: 2rem;
   }
 
@@ -2784,6 +2784,7 @@ details[open] > .header__submenu {
 
   .header--middle-left .header__inline-menu {
     margin-left: 0;
+    justify-self: end;
   }
 }
 
@@ -2794,11 +2795,11 @@ details[open] > .header__submenu {
 .header__menu-item {
   padding: 1.2rem;
   text-decoration: none;
-  color: rgba(var(--color-foreground), 0.75);
+  color: #262626;
 }
 
 .header__menu-item:hover {
-  color: rgb(var(--color-foreground));
+  color: #262626;
 }
 
 .header__menu-item span {
@@ -2824,7 +2825,7 @@ details[open] > .header__menu-item .icon-caret {
 
 .header__active-menu-item {
   transition: text-decoration-thickness var(--duration-short) ease;
-  color: rgb(var(--color-foreground));
+  color: #262626;
   text-decoration: underline;
   text-underline-offset: 0.3rem;
 }

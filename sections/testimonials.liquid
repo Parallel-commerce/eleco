@@ -45,6 +45,7 @@
     display: flex;
     gap: 2rem;
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
@@ -90,7 +91,7 @@
 
   .testimonials-{{ section.id }}__card {
     background: rgba(var(--color-foreground), 0.03);
-    border: 1px solid rgba(var(--color-foreground), 0.1);
+    /* border: 1px solid rgba(var(--color-foreground), 0.1); */
     border-radius: 0.8rem;
     padding: 2rem;
     display: flex;
@@ -125,37 +126,33 @@
     flex-direction: column;
   }
 
-  .testimonials-{{ section.id }}__text {
-    margin: 0 0 1.5rem 0;
-    color: rgb(var(--color-foreground));
-    line-height: 1.6;
-    flex: 1;
-  }
-
-  .testimonials-{{ section.id }}__author {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-  }
-
   .testimonials-{{ section.id }}__name {
     font-weight: 600;
-    margin: 0;
+    margin: 0 0 0.25rem 0;
     color: rgb(var(--color-foreground));
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .testimonials-{{ section.id }}__flag {
-    font-size: 1.2em;
-    line-height: 1;
   }
 
   .testimonials-{{ section.id }}__title-text {
-    margin: 0;
+    margin: 0 0 0.5rem 0;
     color: rgba(var(--color-foreground), 0.7);
     font-size: 0.9em;
+  }
+
+  .testimonials-{{ section.id }}__flag-wrapper {
+    margin: 0 0 1rem 0;
+  }
+
+  .testimonials-{{ section.id }}__flag {
+    font-size: 1.5em;
+    line-height: 1;
+    display: inline-block;
+  }
+
+  .testimonials-{{ section.id }}__text {
+    margin: 0;
+    color: rgb(var(--color-foreground));
+    line-height: 1.6;
+    flex: 1;
   }
 
   slider-component {
@@ -299,27 +296,26 @@
                     {%- endif -%}
 
                     <div class="testimonials-{{ section.id }}__content">
+                      {%- if block.settings.name != blank -%}
+                        <h3 class="testimonials-{{ section.id }}__name">
+                          {{ block.settings.name }}
+                        </h3>
+                      {%- endif -%}
+                      {%- if block.settings.title != blank -%}
+                        <p class="testimonials-{{ section.id }}__title-text">
+                          {{ block.settings.title }}
+                        </p>
+                      {%- endif -%}
+                      {%- if block.settings.country_flag != blank -%}
+                        <div class="testimonials-{{ section.id }}__flag-wrapper">
+                          <span class="testimonials-{{ section.id }}__flag">{{ block.settings.country_flag }}</span>
+                        </div>
+                      {%- endif -%}
                       {%- if block.settings.testimonial_text != blank -%}
                         <p class="testimonials-{{ section.id }}__text">
                           {{ block.settings.testimonial_text }}
                         </p>
                       {%- endif -%}
-
-                      <div class="testimonials-{{ section.id }}__author">
-                        {%- if block.settings.name != blank -%}
-                          <h3 class="testimonials-{{ section.id }}__name">
-                            {%- if block.settings.country_flag != blank -%}
-                              <span class="testimonials-{{ section.id }}__flag">{{ block.settings.country_flag }}</span>
-                            {%- endif -%}
-                            {{ block.settings.name }}
-                          </h3>
-                        {%- endif -%}
-                        {%- if block.settings.title != blank -%}
-                          <p class="testimonials-{{ section.id }}__title-text">
-                            {{ block.settings.title }}
-                          </p>
-                        {%- endif -%}
-                      </div>
                     </div>
                   </div>
                 </div>
