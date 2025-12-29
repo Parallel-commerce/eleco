@@ -1,0 +1,679 @@
+{% comment %}
+  Custom Product Information Section
+  Duplicates product information functionality to allow app integrations (e.g., Shopify Subscriptions)
+  Matches the design with two-column pricing layout
+{% endcomment %}
+
+<product-info
+  id="CustomProductInfo-{{ section.id }}"
+  class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}"
+  data-section="{{ section.id }}"
+  data-product-id="{{ product.id }}"
+  data-update-url="true"
+  data-url="{{ product.url }}"
+>
+  {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+  {{ 'component-price.css' | asset_url | stylesheet_tag }}
+  {{ 'component-product-variant-picker.css' | asset_url | stylesheet_tag }}
+  {{ 'component-swatch-input.css' | asset_url | stylesheet_tag }}
+  {{ 'component-swatch.css' | asset_url | stylesheet_tag }}
+
+  {%- if product.quantity_price_breaks_configured? -%}
+    {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
+  {%- endif -%}
+
+  {%- style -%}
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+
+
+    .custom-product-info__pricing-wrapper {
+      position: relative;
+      z-index: 2;
+      margin-top: 0;
+      padding-top: 3rem;
+    }
+
+    @media screen and (min-width: 750px) {
+      .custom-product-info__pricing-wrapper {
+        margin-top: -22rem;
+        padding-top: 4rem;
+      }
+    }
+
+    .custom-product-info__pricing-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    @media screen and (min-width: 750px) {
+      .custom-product-info__pricing-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        align-items: stretch;
+      }
+    }
+
+    .custom-product-info__pricing-column {
+      padding: 3rem 2rem;
+      background-color: {{ section.settings.column_background_color }};
+      min-width: 0;
+    }
+
+    .custom-product-info__divider {
+      display: none;
+    }
+
+    @media screen and (min-width: 750px) {
+      .custom-product-info__divider {
+        display: block;
+        background-color: {{ section.settings.divider_color }};
+        width: 1px;
+        height: 100%;
+        align-self: stretch;
+      }
+    }
+
+    .custom-product-info__column-header {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: rgb(var(--color-foreground));
+    }
+
+    .custom-product-info__price {
+      font-size: 3.6rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+      color: rgb(var(--color-foreground));
+    }
+
+    .custom-product-info__price-label {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+      color: rgba(var(--color-foreground), 0.75);
+    }
+
+    .custom-product-info__buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .custom-product-info__button-primary {
+      background-color: {{ section.settings.primary_button_color }};
+      color: {{ section.settings.primary_button_text_color }};
+      border: none;
+      padding: 1.2rem 2.4rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: var(--buttons-radius-outset);
+      transition: opacity 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .custom-product-info__button-primary:hover:not(:disabled) {
+      opacity: 0.9;
+    }
+
+    .custom-product-info__button-primary:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .custom-product-info__button-secondary {
+      background-color: transparent;
+      color: rgb(var(--color-foreground));
+      border: 1px solid rgba(var(--color-foreground), 0.2);
+      padding: 1.2rem 2.4rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: var(--buttons-radius-outset);
+      transition: background-color 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .custom-product-info__button-secondary:hover {
+      background-color: rgba(var(--color-foreground), 0.05);
+    }
+
+    .custom-product-info__fine-print {
+      font-size: 1.2rem;
+      color: rgba(var(--color-foreground), 0.6);
+      margin-top: 1rem;
+    }
+
+    .custom-product-info__app-integration {
+      margin-top: 2rem;
+    }
+
+    .custom-product-info__hero {
+      background-color: {{ section.settings.hero_background_color }};
+      padding: 4rem 2rem;
+      padding-bottom: 12rem;
+      margin-bottom: 0;
+      border-radius: 0;
+      position: relative;
+      overflow: visible;
+      width: 100vw;
+      margin-left: calc(-50vw + 50%);
+      margin-right: calc(-50vw + 50%);
+    }
+
+    .custom-product-info__hero-container{
+        display: flex;
+    }
+
+    @media screen and (min-width: 750px) {
+      .custom-product-info__hero {
+        padding-bottom: 24rem;
+      }
+    }
+
+
+    @media screen and (min-width: 750px) {
+      .custom-product-info__hero {
+        padding: 8rem 0 22rem 0;
+      }
+
+      .custom-product-info__hero-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+      }
+    }
+
+    .custom-product-info__hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .custom-product-info__hero-title {
+      font-size: 3.2rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+      color: {{ section.settings.hero_text_color }};
+    }
+
+    @media screen and (min-width: 750px) {
+      .custom-product-info__hero-title {
+        font-size: 4.8rem;
+      }
+    }
+
+    .custom-product-info__hero-subtitle {
+      font-size: 1.6rem;
+      line-height: 1.5;
+      color: {{ section.settings.hero_text_color }};
+      opacity: 0.9;
+    }
+
+    @media screen and (min-width: 750px) {
+      .custom-product-info__hero-subtitle {
+        font-size: 1.8rem;
+      }
+    }
+
+    .custom-product-info__hero-graphic {
+      position: relative;
+      z-index: 1;
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    @media screen and (min-width: 750px) {
+      .custom-product-info__hero-graphic {
+        margin-top: 0;
+      }
+    }
+
+    .custom-product-info__hero-graphic img,
+    .custom-product-info__hero-graphic svg {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  {%- endstyle -%}
+
+  <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+  {%- if product.quantity_price_breaks_configured? -%}
+    <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
+  {%- endif -%}
+
+  {%- assign product_form_id = 'custom-product-form-' | append: section.id -%}
+
+  {%- comment -%} Hero Banner - Full Width {%- endcomment -%}
+  {%- if section.settings.hero_title != blank
+    or section.settings.hero_subtitle != blank
+    or section.settings.hero_image != blank
+  -%}
+    <div class="custom-product-info__hero">
+      <div class="page-width custom-product-info__hero-container">
+        <div class="custom-product-info__hero-content">
+          {%- if section.settings.hero_title != blank -%}
+            <h2 class="custom-product-info__hero-title">
+              {{ section.settings.hero_title }}
+            </h2>
+          {%- endif -%}
+          {%- if section.settings.hero_subtitle != blank -%}
+            <p class="custom-product-info__hero-subtitle">
+              {{ section.settings.hero_subtitle }}
+            </p>
+          {%- endif -%}
+        </div>
+        {%- if section.settings.hero_image != blank -%}
+          <div class="custom-product-info__hero-graphic">
+            {{
+              section.settings.hero_image
+              | image_url: width: 800
+              | image_tag: loading: 'lazy', alt: section.settings.hero_image.alt
+            }}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- comment -%} Pricing Section - Contained in Page Width {%- endcomment -%}
+  <div class="page-width">
+    <div class="custom-product-info__pricing-wrapper">
+      {%- comment -%} App Integration Block Support {%- endcomment -%}
+      {%- for block in section.blocks -%}
+        {%- if block.type == '@app' -%}
+          <div class="custom-product-info__app-integration" {{ block.shopify_attributes }}>
+            {% render block %}
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+
+      {%- comment -%} Two-Column Pricing Layout {%- endcomment -%}
+      <div class="custom-product-info__pricing-grid">
+        {%- comment -%} Left Column: Annual Subscription {%- endcomment -%}
+        <div class="custom-product-info__pricing-column">
+          <h3 class="custom-product-info__column-header">
+            {{ section.settings.left_column_title | default: 'Annual subscription' }}
+          </h3>
+
+          <div class="custom-product-info__price">
+            {%- if section.settings.left_column_price != blank -%}
+              {%- assign custom_price = section.settings.left_column_price | times: 100 -%}
+              {{ custom_price | money }}
+            {%- else -%}
+              {%- assign monthly_price = product.price | divided_by: 12 -%}
+              {{ monthly_price | money }}
+            {%- endif -%}
+          </div>
+
+          <div class="custom-product-info__price-label">
+            {{ section.settings.left_column_price_label | default: 'Prices start from / month' }}
+          </div>
+
+          {%- comment -%} Product Form for Add to Cart {%- endcomment -%}
+          <product-form
+            class="product-form"
+            data-section-id="{{ section.id }}"
+          >
+            <div class="product-form__error-message-wrapper" role="alert" hidden>
+              <span class="svg-wrapper">
+                {{- 'icon-error.svg' | inline_asset_content -}}
+              </span>
+              <span class="product-form__error-message"></span>
+            </div>
+
+            {%- liquid
+              assign check_against_inventory = true
+              assign quantity_rule_soldout = false
+              if product.selected_or_first_available_variant.inventory_management != 'shopify' or product.selected_or_first_available_variant.inventory_policy == 'continue'
+                assign check_against_inventory = false
+              endif
+              if product.selected_or_first_available_variant.quantity_rule.min > product.selected_or_first_available_variant.inventory_quantity and check_against_inventory
+                assign quantity_rule_soldout = true
+              endif
+            -%}
+
+            {%- form 'product',
+              product,
+              id: product_form_id,
+              class: 'form',
+              novalidate: 'novalidate',
+              data-type: 'add-to-cart-form'
+            -%}
+              <input
+                type="hidden"
+                name="id"
+                value="{{ product.selected_or_first_available_variant.id }}"
+                {% if product.selected_or_first_available_variant.available == false
+                  or quantity_rule_soldout
+                  or product.selected_or_first_available_variant == null
+                %}
+                  disabled
+                {% endif %}
+                class="product-variant-id"
+              >
+
+              <div class="custom-product-info__buttons">
+                <button
+                  id="CustomProductSubmitButton-{{ section.id }}-left"
+                  type="submit"
+                  name="add"
+                  class="custom-product-info__button-primary"
+                  {% if product.selected_or_first_available_variant.available == false
+                    or quantity_rule_soldout
+                    or product.selected_or_first_available_variant == null
+                  %}
+                    disabled
+                  {% endif %}
+                >
+                  <span>
+                    {%- if product.selected_or_first_available_variant == null -%}
+                      {{ 'products.product.unavailable' | t }}
+                    {%- elsif product.selected_or_first_available_variant.available == false
+                      or quantity_rule_soldout
+                    -%}
+                      {{ 'products.product.sold_out' | t }}
+                    {%- else -%}
+                      {{ section.settings.left_column_button_text | default: 'Add to cart' }}
+                    {%- endif -%}
+                  </span>
+                  {%- render 'loading-spinner' -%}
+                </button>
+
+                {%- if section.settings.left_column_secondary_button_text != blank -%}
+                  <a
+                    href="{{ section.settings.left_column_secondary_button_link | default: '#' }}"
+                    class="custom-product-info__button-secondary"
+                  >
+                    {{ section.settings.left_column_secondary_button_text }}
+                  </a>
+                {%- endif -%}
+              </div>
+            {%- endform -%}
+          </product-form>
+
+          {%- if section.settings.left_column_fine_print != blank -%}
+            <div class="custom-product-info__fine-print">
+              {{ section.settings.left_column_fine_print }}
+            </div>
+          {%- endif -%}
+        </div>
+
+        {%- comment -%} Divider {%- endcomment -%}
+        <div class="custom-product-info__divider"></div>
+
+        {%- comment -%} Right Column: Concurrent & SaaS Solutions {%- endcomment -%}
+        <div class="custom-product-info__pricing-column">
+          <h3 class="custom-product-info__column-header">
+            {{ section.settings.right_column_title | default: 'Concurrent & SaaS solutions' }}
+          </h3>
+
+          <div class="custom-product-info__price">
+            {%- if section.settings.right_column_price != blank -%}
+              {%- assign custom_price = section.settings.right_column_price | times: 100 -%}
+              {{ custom_price | money }}
+            {%- else -%}
+              {{ product.price | money }}
+            {%- endif -%}
+          </div>
+
+          <div class="custom-product-info__price-label">
+            {{ section.settings.right_column_price_label | default: 'Prices start from / year' }}
+          </div>
+
+          <div class="custom-product-info__buttons">
+            {%- if section.settings.right_column_primary_button_text != blank -%}
+              <a
+                href="{{ section.settings.right_column_primary_button_link | default: '#' }}"
+                class="custom-product-info__button-primary"
+              >
+                {{ section.settings.right_column_primary_button_text }}
+              </a>
+            {%- endif -%}
+
+            {%- if section.settings.right_column_secondary_button_text != blank -%}
+              <a
+                href="{{ section.settings.right_column_secondary_button_link | default: '#' }}"
+                class="custom-product-info__button-secondary"
+              >
+                {{ section.settings.right_column_secondary_button_text }}
+              </a>
+            {%- endif -%}
+          </div>
+
+          {%- if section.settings.right_column_fine_print != blank -%}
+            <div class="custom-product-info__fine-print">
+              {{ section.settings.right_column_fine_print }}
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</product-info>
+
+{% schema %}
+{
+  "name": "Custom Product Info",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "color",
+      "id": "column_background_color",
+      "label": "Column background color",
+      "default": "#FFF5F5"
+    },
+    {
+      "type": "color",
+      "id": "divider_color",
+      "label": "Divider color",
+      "default": "#FF0000"
+    },
+    {
+      "type": "color",
+      "id": "primary_button_color",
+      "label": "Primary button color (Add to cart)",
+      "default": "#FF6B35"
+    },
+    {
+      "type": "color",
+      "id": "primary_button_text_color",
+      "label": "Primary button text color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "header",
+      "content": "Hero Banner Settings"
+    },
+    {
+      "type": "text",
+      "id": "hero_title",
+      "label": "Hero title",
+      "default": "Plan with certainty, build with confidence"
+    },
+    {
+      "type": "textarea",
+      "id": "hero_subtitle",
+      "label": "Hero subtitle",
+      "default": "Take control with integrative tools that gives teams the power to master project timelines"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero graphic/image"
+    },
+    {
+      "type": "color",
+      "id": "hero_background_color",
+      "label": "Hero background color",
+      "default": "#4A4A4A"
+    },
+    {
+      "type": "color",
+      "id": "hero_text_color",
+      "label": "Hero text color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "header",
+      "content": "Left Column Settings"
+    },
+    {
+      "type": "text",
+      "id": "left_column_title",
+      "label": "Left column title",
+      "default": "Annual subscription"
+    },
+    {
+      "type": "text",
+      "id": "left_column_price",
+      "label": "Left column price (override product price)",
+      "info": "Leave blank to use product price. Format: 122.50"
+    },
+    {
+      "type": "text",
+      "id": "left_column_price_label",
+      "label": "Left column price label",
+      "default": "Prices start from £122.5 / month"
+    },
+    {
+      "type": "text",
+      "id": "left_column_button_text",
+      "label": "Left column button text",
+      "default": "Add to cart"
+    },
+    {
+      "type": "text",
+      "id": "left_column_secondary_button_text",
+      "label": "Left column secondary button text",
+      "default": "Download free trial"
+    },
+    {
+      "type": "url",
+      "id": "left_column_secondary_button_link",
+      "label": "Left column secondary button link"
+    },
+    {
+      "type": "text",
+      "id": "left_column_fine_print",
+      "label": "Left column fine print",
+      "default": "Paid annually, one user installed onto a single Windows PC. Includes VAT."
+    },
+    {
+      "type": "header",
+      "content": "Right Column Settings"
+    },
+    {
+      "type": "text",
+      "id": "right_column_title",
+      "label": "Right column title",
+      "default": "Concurrent & SaaS solutions"
+    },
+    {
+      "type": "text",
+      "id": "right_column_price",
+      "label": "Right column price (override product price)",
+      "info": "Leave blank to use product price. Format: 2412"
+    },
+    {
+      "type": "text",
+      "id": "right_column_price_label",
+      "label": "Right column price label",
+      "default": "Prices start from £2412 / year"
+    },
+    {
+      "type": "text",
+      "id": "right_column_primary_button_text",
+      "label": "Right column primary button text",
+      "default": "Contact sales"
+    },
+    {
+      "type": "url",
+      "id": "right_column_primary_button_link",
+      "label": "Right column primary button link"
+    },
+    {
+      "type": "text",
+      "id": "right_column_secondary_button_text",
+      "label": "Right column secondary button text",
+      "default": "Book a demo"
+    },
+    {
+      "type": "url",
+      "id": "right_column_secondary_button_link",
+      "label": "Right column secondary button link"
+    },
+    {
+      "type": "text",
+      "id": "right_column_fine_print",
+      "label": "Right column fine print",
+      "default": "Paid annually. Includes VAT."
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Product Info"
+    }
+  ]
+}
+{% endschema %}
