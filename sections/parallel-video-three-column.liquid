@@ -36,7 +36,7 @@
         </div>
       {%- endunless -%}
     </div>
-    
+
     <div class="video-three-column__grid grid grid--1-col-tablet-down grid--3-col-desktop">
       {%- for block in section.blocks limit: 3 -%}
         {%- liquid
@@ -53,8 +53,11 @@
             endif
           endif
         -%}
-        
-        <div class="video-three-column__item grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" {{ block.shopify_attributes }}>
+
+        <div
+          class="video-three-column__item grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          {{ block.shopify_attributes }}
+        >
           <deferred-media
             class="video-section__media deferred-media gradient global-media-settings{% if fix_ratio %} media-fit-cover{% endif %}"
             data-media-id="{{ video_id }}"
@@ -129,7 +132,7 @@
 
 {% schema %}
 {
-  "name": "Three Column Video",
+  "name": "|| Three Column Video",
   "tag": "section",
   "class": "section",
   "disabled_on": {
@@ -280,4 +283,3 @@
   ]
 }
 {% endschema %}
-
