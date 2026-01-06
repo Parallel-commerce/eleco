@@ -150,6 +150,38 @@
         "padding_bottom": 28
       }
     },
+    "parallel_custom_product_info_i3cpfR": {
+      "type": "parallel-custom-product-info",
+      "name": "Custom Product Info",
+      "settings": {
+        "color_scheme": "",
+        "column_background_color": "#FFF5F5",
+        "divider_color": "#FF0000",
+        "primary_button_color": "#FF6B35",
+        "primary_button_text_color": "#FFFFFF",
+        "hero_title": "Plan with certainty, build with confidence",
+        "hero_subtitle": "Take control with integrative tools that gives teams the power to master project timelines",
+        "hero_background_color": "#4A4A4A",
+        "hero_text_color": "#FFFFFF",
+        "left_column_title": "Annual subscription",
+        "left_column_price": "",
+        "left_column_price_label": "Prices start from £122.5 / month",
+        "left_column_button_text": "Add to cart",
+        "left_column_secondary_button_text": "Download free trial",
+        "left_column_secondary_button_link": "",
+        "left_column_fine_print": "Paid annually, one user installed onto a single Windows PC. Includes VAT.",
+        "right_column_title": "Concurrent & SaaS solutions",
+        "right_column_price": "",
+        "right_column_price_label": "Prices start from £2412 / year",
+        "right_column_primary_button_text": "Contact sales",
+        "right_column_primary_button_link": "",
+        "right_column_secondary_button_text": "Book a demo",
+        "right_column_secondary_button_link": "",
+        "right_column_fine_print": "Paid annually. Includes VAT.",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
     "parallel_image_with_features_hVbtUt": {
       "type": "parallel-image-with-features",
       "blocks": {
@@ -982,6 +1014,7 @@
   "order": [
     "main",
     "related-products",
+    "parallel_custom_product_info_i3cpfR",
     "parallel_image_with_features_hVbtUt",
     "parallel_image_with_features_pYtxX7",
     "parallel_image_with_features_UVMBrD",
