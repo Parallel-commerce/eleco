@@ -355,7 +355,7 @@
         "richtext_LJNcig": {
           "type": "richtext",
           "settings": {
-            "text": "<h1>Voted best Project Management Software</h1>"
+            "text": "<h1>Voted best <span style=\"text-decoration:underline\">Project Management </span>Software</h1>"
           }
         }
       },
