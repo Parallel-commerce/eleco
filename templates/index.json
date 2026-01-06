@@ -221,7 +221,7 @@
       }
     },
     "image_with_features_FfG8CU": {
-      "type": "image-with-features",
+      "type": "parallel-image-with-features",
       "blocks": {
         "heading_N4cBEL": {
           "type": "heading",
@@ -277,7 +277,7 @@
       }
     },
     "award_banner_C6Xfiy": {
-      "type": "award-banner",
+      "type": "parallel-award-banner",
       "blocks": {
         "award_icon_wBjhQL": {
           "type": "award_icon",
@@ -332,7 +332,7 @@
       }
     },
     "two_column_accordion_9ewBCp": {
-      "type": "two-column-accordion",
+      "type": "parallel-two-column-accordion",
       "blocks": {
         "accordion_item_zi4RWj": {
           "type": "accordion_item",

@@ -24,18 +24,6 @@
     width: 100%;
   }
 
-  .logo-block-{{ section.id }}__container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-  }
-
-  @media screen and (min-width: 750px) {
-    .logo-block-{{ section.id }}__container {
-      padding: 0 5rem;
-    }
-  }
-
   .logo-block-{{ section.id }}__grid {
     display: grid;
     {%- if section.settings.mobile_columns == '2' -%}
@@ -95,7 +83,7 @@
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="logo-block-{{ section.id }} section-{{ section.id }}-padding isolate">
-    <div class="logo-block-{{ section.id }}__container">
+    <div class="logo-block-{{ section.id }}__container page-width">
       {%- if section.settings.title != blank -%}
         <div class="logo-block-{{ section.id }}__title{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           <h2 class="inline-richtext {{ section.settings.heading_size }}">
