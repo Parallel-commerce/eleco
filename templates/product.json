@@ -721,6 +721,62 @@
         "padding_top": 40,
         "padding_bottom": 40
       }
+    },
+    "parallel_faq_accordion_3Vq7Fm": {
+      "type": "parallel-faq-accordion",
+      "blocks": {
+        "faq_item_QVNkTB": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Who is Asta Powerproject for?",
+            "answer": "<p>This is a sample answer to the first question.</p>"
+          }
+        },
+        "faq_item_bVkqMa": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Why is Asta better than the competition?",
+            "answer": "<p>This is a sample answer to the second question.</p>"
+          }
+        },
+        "faq_item_jARANR": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is the difference between a single and a concurrent license?",
+            "answer": "<p>This is a sample answer to the third question.</p>"
+          }
+        },
+        "faq_item_bAXDXk": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can stakeholders see my project if they don't have a license?",
+            "answer": "<p>If a stakeholder hasn't bought a licence but needs to view the project, they can download our Project Viewer.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_QVNkTB",
+        "faq_item_bVkqMa",
+        "faq_item_jARANR",
+        "faq_item_bAXDXk"
+      ],
+      "name": "FAQ Accordion",
+      "settings": {
+        "heading": "Questions? We have answers.",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_spacing": 40,
+        "item_gap": 12,
+        "item_padding": 18,
+        "border_radius": 12,
+        "question_font_size": 16,
+        "question_font_weight": "400",
+        "color_scheme": "",
+        "item_background": "#f6f7f7",
+        "item_background_active": "#fce8e6",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -736,6 +792,7 @@
     "parallel_logo_block_hHLWpL",
     "parallel_testimonials_6ayBHg",
     "parallel_custom_product_list_M7EFHt",
-    "parallel_logo_block_Kyk8RD"
+    "parallel_logo_block_Kyk8RD",
+    "parallel_faq_accordion_3Vq7Fm"
   ]
 }
