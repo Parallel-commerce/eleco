@@ -161,6 +161,7 @@
         "primary_button_text_color": "#FFFFFF",
         "hero_title": "Plan with certainty, build with confidence",
         "hero_subtitle": "Take control with integrative tools that gives teams the power to master project timelines",
+        "hero_image": "shopify://shop_images/illustration.png",
         "hero_background_color": "#4A4A4A",
         "hero_text_color": "#FFFFFF",
         "left_column_title": "Annual subscription",
