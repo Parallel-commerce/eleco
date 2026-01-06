@@ -418,6 +418,59 @@
         "padding_top": 40,
         "padding_bottom": 40
       }
+    },
+    "parallel_two_column_accordion_xi4PpU": {
+      "type": "parallel-two-column-accordion",
+      "blocks": {
+        "accordion_item_AX7zXQ": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Contractors",
+            "content_1": "<p>Powerful critical path analysis and precise scheduling.</p>",
+            "content_2": "<p>Powerful critical path analysis and precise scheduling.</p>",
+            "content_3": "<p>Powerful critical path analysis and precise scheduling.</p>",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_htnMQm": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Sub contractors",
+            "content_1": "<p>Comprehensive resource and cost management, early identification of budget issues.</p>",
+            "content_2": "",
+            "content_3": "",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_EDULcY": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Designers and consultancy",
+            "content_1": "<p>Detailed history of project changes to support claims and resolve disputes.</p>",
+            "content_2": "",
+            "content_3": "",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_AX7zXQ",
+        "accordion_item_htnMQm",
+        "accordion_item_EDULcY"
+      ],
+      "name": "Two-Column Accordion",
+      "settings": {
+        "heading": "Better project outcomes for every team",
+        "heading_size": "h1",
+        "padding_top": 48,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
@@ -427,6 +480,7 @@
     "parallel_image_with_features_pYtxX7",
     "parallel_image_with_features_UVMBrD",
     "parallel_award_banner_C3twkW",
-    "parallel_highlights_yTAfJh"
+    "parallel_highlights_yTAfJh",
+    "parallel_two_column_accordion_xi4PpU"
   ]
 }
