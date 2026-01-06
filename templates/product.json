@@ -870,6 +870,77 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "parallel_support_cta_RxfB67": {
+      "type": "parallel-support-cta",
+      "blocks": {
+        "resource_link_kEdPjk": {
+          "type": "resource_link",
+          "settings": {
+            "label": "Support portal",
+            "link": ""
+          }
+        },
+        "resource_link_wTwLVG": {
+          "type": "resource_link",
+          "settings": {
+            "label": "Release notes",
+            "link": ""
+          }
+        },
+        "resource_link_y8bPwx": {
+          "type": "resource_link",
+          "settings": {
+            "label": "System requirements",
+            "link": ""
+          }
+        },
+        "resource_link_VzrFGt": {
+          "type": "resource_link",
+          "settings": {
+            "label": "View all resources",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "resource_link_kEdPjk",
+        "resource_link_wTwLVG",
+        "resource_link_y8bPwx",
+        "resource_link_VzrFGt"
+      ],
+      "name": "Support CTA",
+      "settings": {
+        "heading": "Learn & Support",
+        "description": "The Asta Powerproject support package includes technical, installation and activation support, access to our help desk and web-based tutorials. Our support services are complemented by our wide range of classroom or online training to ensure you get the most from your software.",
+        "primary_button_label": "Learn & Support",
+        "primary_button_link": "",
+        "primary_button_background": "#E75742",
+        "primary_button_background_hover": "#d04a35",
+        "primary_button_text": "#ffffff",
+        "secondary_button_label": "Add premium support",
+        "product": "",
+        "secondary_button_link": "",
+        "secondary_button_background": "#ffffff",
+        "secondary_button_background_hover": "#f5f5f5",
+        "secondary_button_text": "#333333",
+        "secondary_button_border": "#cccccc",
+        "background_color": "#2c2c2c",
+        "text_color": "#ffffff",
+        "resource_background": "#3a3a3a",
+        "resource_background_hover": "#4a4a4a",
+        "resource_border": "#ffffff",
+        "resource_icon_color": "#E75742",
+        "heading_font_size": 48,
+        "heading_font_weight": "700",
+        "description_font_size": 16,
+        "button_font_size": 16,
+        "resource_font_size": 16,
+        "button_border_radius": 4,
+        "resource_border_radius": 4,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
@@ -887,6 +958,7 @@
     "parallel_custom_product_list_M7EFHt",
     "parallel_logo_block_Kyk8RD",
     "parallel_faq_accordion_3Vq7Fm",
-    "parallel_comparison_table_eeJhkm"
+    "parallel_comparison_table_eeJhkm",
+    "parallel_support_cta_RxfB67"
   ]
 }
