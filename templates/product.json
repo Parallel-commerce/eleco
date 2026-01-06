@@ -659,6 +659,68 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "parallel_logo_block_Kyk8RD": {
+      "type": "parallel-logo-block",
+      "blocks": {
+        "logo_X7DT6Q": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/sparklayer_black.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_X3bNgL": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_pfRhE7": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/partner_logo_2.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_XpeMAz": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/partner_logo_3.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "logo_X7DT6Q",
+        "logo_X3bNgL",
+        "logo_pfRhE7",
+        "logo_XpeMAz"
+      ],
+      "name": "Logo Block",
+      "settings": {
+        "color_scheme": "",
+        "title": "",
+        "heading_size": "h1",
+        "title_alignment": "center",
+        "title_spacing": 24,
+        "logo_width": 150,
+        "logo_spacing": 40,
+        "logo_opacity": 100,
+        "logo_hover_opacity": 100,
+        "mobile_columns": "1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
@@ -673,6 +735,7 @@
     "parallel_video_three_column_BTPQnC",
     "parallel_logo_block_hHLWpL",
     "parallel_testimonials_6ayBHg",
-    "parallel_custom_product_list_M7EFHt"
+    "parallel_custom_product_list_M7EFHt",
+    "parallel_logo_block_Kyk8RD"
   ]
 }
