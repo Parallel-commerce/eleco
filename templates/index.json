@@ -89,7 +89,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "all",
+        "collection": "all-products",
         "products_to_show": 8,
         "title": "Featured products",
         "heading_size": "h2",
@@ -270,6 +270,7 @@
         "mobile_content_alignment": "left",
         "section_color_scheme": "",
         "color_scheme": "",
+        "anchor_id": "#",
         "padding_top": 36,
         "padding_bottom": 36,
         "text_padding_left": 16,
