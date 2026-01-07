@@ -90,11 +90,33 @@
                     {{ block.settings.heading }}
                   </h2>
                 {%- when 'feature_item' -%}
-                  {%- assign prev_index = forloop.index0 | minus: 1 -%}
-                  {%- assign prev_block = section.blocks[prev_index] -%}
-                  {%- assign next_index = forloop.index -%}
-                  {%- assign next_block = section.blocks[next_index] -%}
-                  {%- if prev_block.type != 'feature_item' -%}
+                  {%- liquid
+                    assign prev_index = forloop.index0 | minus: 1
+                    assign should_wrap = false
+                    if prev_index < 0
+                      assign should_wrap = true
+                    else
+                      assign prev_block = section.blocks[prev_index]
+                      if prev_block.type != 'feature_item'
+                        assign should_wrap = true
+                      endif
+                    endif
+                    assign next_index = forloop.index
+                    assign should_close = false
+                    if forloop.last
+                      assign should_close = true
+                    else
+                      if next_index >= section.blocks.size
+                        assign should_close = true
+                      else
+                        assign next_block = section.blocks[next_index]
+                        if next_block.type != 'feature_item'
+                          assign should_close = true
+                        endif
+                      endif
+                    endif
+                  -%}
+                  {%- if should_wrap -%}
                     <div class="image-with-features__grid">
                   {%- endif -%}
                   <div class="image-with-features__item" {{ block.shopify_attributes }}>
@@ -121,7 +143,7 @@
                       </div>
                     {%- endif -%}
                   </div>
-                  {%- if next_block.type != 'feature_item' or forloop.last -%}
+                  {%- if should_close -%}
                     </div>
                   {%- endif -%}
               {%- endcase -%}

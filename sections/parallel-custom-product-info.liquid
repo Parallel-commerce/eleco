@@ -182,23 +182,18 @@
       margin-right: calc(-50vw + 50%);
     }
 
-    .custom-product-info__hero-container{
-        display: flex;
+    .custom-product-info__hero-container {
+      display: flex;
+      flex-direction: column;
     }
-
-    @media screen and (min-width: 750px) {
-      .custom-product-info__hero {
-        padding-bottom: 24rem;
-      }
-    }
-
 
     @media screen and (min-width: 750px) {
       .custom-product-info__hero {
         padding: 8rem 0 22rem 0;
+        padding-bottom: 24rem;
       }
 
-      .custom-product-info__hero-inner {
+      .custom-product-info__hero-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 4rem;
