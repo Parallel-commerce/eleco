@@ -256,7 +256,13 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
+<div
+  {% if section.settings.anchor_id != blank and section.settings.anchor_id != '#' %}
+    {%- assign clean_anchor_id = section.settings.anchor_id | replace: '#', '' -%}
+    id="{{ clean_anchor_id }}"
+  {% endif %}
+  class="color-{{ section.settings.color_scheme }} gradient"
+>
   <div class="comparison-table-{{ section.id }} page-width isolate">
     <div class="comparison-table-{{ section.id }}__wrapper">
       {%- if section.settings.heading != blank -%}
@@ -346,7 +352,7 @@
                 {% else %}
                   href="{{ section.settings.button_1_link }}"
                 {% endif %}
-                class="button comparison-table-{{ section.id }}__button comparison-table-{{ section.id }}__button--1"
+                class="button button--secondary"
               >
                 {{ section.settings.button_1_label | escape }}
               </a>
@@ -360,7 +366,7 @@
                 {% else %}
                   href="{{ section.settings.button_2_link }}"
                 {% endif %}
-                class="button comparison-table-{{ section.id }}__button comparison-table-{{ section.id }}__button--2"
+                class="button button--primary"
               >
                 {{ section.settings.button_2_label | escape }}
               </a>
@@ -616,6 +622,16 @@
       "id": "border_color",
       "label": "Border color",
       "default": "#e5e7eb"
+    },
+    {
+      "type": "header",
+      "content": "Section anchor"
+    },
+    {
+      "type": "text",
+      "id": "anchor_id",
+      "label": "Anchor ID",
+      "info": "Enter an ID for anchor links (e.g., 'features'). Links can use #features to jump to this section. Do not include the # symbol."
     },
     {
       "type": "header",

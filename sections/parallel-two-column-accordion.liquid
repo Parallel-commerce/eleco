@@ -119,8 +119,9 @@
 {%- endstyle -%}
 
 <div
-  {% if section.settings.anchor_id != blank %}
-    id="{{ section.settings.anchor_id }}"
+  {% if section.settings.anchor_id != blank and section.settings.anchor_id != '#' %}
+    {%- assign clean_anchor_id = section.settings.anchor_id | replace: '#', '' -%}
+    id="{{ clean_anchor_id }}"
   {% endif %}
   class="two-col-accordion-{{ section.id }} isolate" data-two-col-accordion-root>
   <div class="page-width">
@@ -334,8 +335,7 @@
       "type": "text",
       "id": "anchor_id",
       "label": "Anchor ID",
-      "info": "Enter an ID for anchor links (e.g., 'features'). Links can use #features to jump to this section.",
-      "default": "#"
+      "info": "Enter an ID for anchor links (e.g., 'features'). Links can use #features to jump to this section. Do not include the # symbol."
     },
     {
       "type": "header",

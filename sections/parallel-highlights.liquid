@@ -72,7 +72,13 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
+<div
+  {% if section.settings.anchor_id != blank and section.settings.anchor_id != '#' %}
+    {%- assign clean_anchor_id = section.settings.anchor_id | replace: '#', '' -%}
+    id="{{ clean_anchor_id }}"
+  {% endif %}
+  class="color-{{ section.settings.color_scheme }} gradient"
+>
   <div class="page-width section-{{ section.id }}-padding isolate">
     <div class="highlights-{{ section.id }}__grid">
       {%- for block in section.blocks -%}
@@ -114,6 +120,16 @@
       "id": "highlight_color",
       "label": "Highlight colour",
       "default": "#e85a47"
+    },
+    {
+      "type": "header",
+      "content": "Section anchor"
+    },
+    {
+      "type": "text",
+      "id": "anchor_id",
+      "label": "Anchor ID",
+      "info": "Enter an ID for anchor links (e.g., 'features'). Links can use #features to jump to this section. Do not include the # symbol."
     },
     {
       "type": "range",

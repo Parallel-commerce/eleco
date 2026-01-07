@@ -5,7 +5,12 @@
 {% endcomment %}
 
 <product-info
-  id="CustomProductInfo-{{ section.id }}"
+  {% if section.settings.anchor_id != blank and section.settings.anchor_id != '#' %}
+    {%- assign clean_anchor_id = section.settings.anchor_id | replace: '#', '' -%}
+    id="{{ clean_anchor_id }}"
+  {% else %}
+    id="CustomProductInfo-{{ section.id }}"
+  {% endif %}
   class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}"
   data-section="{{ section.id }}"
   data-product-id="{{ product.id }}"
@@ -107,7 +112,6 @@
 
     .custom-product-info__buttons {
       display: flex;
-      flex-direction: column;
       gap: 1rem;
       margin-bottom: 1.5rem;
     }
@@ -377,7 +381,7 @@
                   id="CustomProductSubmitButton-{{ section.id }}-left"
                   type="submit"
                   name="add"
-                  class="custom-product-info__button-primary"
+                  class="button button--primary"
                   {% if product.selected_or_first_available_variant.available == false
                     or quantity_rule_soldout
                     or product.selected_or_first_available_variant == null
@@ -402,7 +406,7 @@
                 {%- if section.settings.left_column_secondary_button_text != blank -%}
                   <a
                     href="{{ section.settings.left_column_secondary_button_link | default: '#' }}"
-                    class="custom-product-info__button-secondary"
+                    class="button button--secondary"
                   >
                     {{ section.settings.left_column_secondary_button_text }}
                   </a>
@@ -444,7 +448,7 @@
             {%- if section.settings.right_column_primary_button_text != blank -%}
               <a
                 href="{{ section.settings.right_column_primary_button_link | default: '#' }}"
-                class="custom-product-info__button-primary"
+                class="button button--primary"
               >
                 {{ section.settings.right_column_primary_button_text }}
               </a>
@@ -453,7 +457,7 @@
             {%- if section.settings.right_column_secondary_button_text != blank -%}
               <a
                 href="{{ section.settings.right_column_secondary_button_link | default: '#' }}"
-                class="custom-product-info__button-secondary"
+                class="button button--secondary"
               >
                 {{ section.settings.right_column_secondary_button_text }}
               </a>
@@ -634,6 +638,16 @@
       "id": "right_column_fine_print",
       "label": "Right column fine print",
       "default": "Paid annually. Includes VAT."
+    },
+    {
+      "type": "header",
+      "content": "Section anchor"
+    },
+    {
+      "type": "text",
+      "id": "anchor_id",
+      "label": "Anchor ID",
+      "info": "Enter an ID for anchor links (e.g., 'features'). Links can use #features to jump to this section. Do not include the # symbol."
     },
     {
       "type": "header",

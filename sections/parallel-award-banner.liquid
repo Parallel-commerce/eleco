@@ -216,7 +216,12 @@
 {%- endstyle -%}
 
 <div
-  id="AwardBanner-{{ section.id }}"
+  {% if section.settings.anchor_id != blank and section.settings.anchor_id != '#' %}
+    {%- assign clean_anchor_id = section.settings.anchor_id | replace: '#', '' -%}
+    id="{{ clean_anchor_id }}"
+  {% else %}
+    id="AwardBanner-{{ section.id }}"
+  {% endif %}
   class="award-banner{% if section.settings.image_height == 'adapt' and section.settings.background_image != blank %} award-banner--adapt{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
 >
   <div class="award-banner__image-wrapper">
@@ -450,6 +455,16 @@
       "label": "Underline color",
       "default": "#ff5a3c",
       "info": "Underlined text will use this color (underline is removed)."
+    },
+    {
+      "type": "header",
+      "content": "Section anchor"
+    },
+    {
+      "type": "text",
+      "id": "anchor_id",
+      "label": "Anchor ID",
+      "info": "Enter an ID for anchor links (e.g., 'features'). Links can use #features to jump to this section. Do not include the # symbol."
     },
     {
       "type": "header",

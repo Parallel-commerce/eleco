@@ -373,5 +373,55 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    <script>
+      // Handle anchor link scrolling with header offset
+      (function() {
+        const scrollToAnchor = (hash) => {
+          if (!hash) return;
+          
+          const targetId = hash.replace('#', '');
+          const targetElement = document.getElementById(targetId);
+          
+          if (targetElement) {
+            const headerHeight = document.documentElement.style.getPropertyValue('--header-height') || 
+                                (document.querySelector('.section-header')?.offsetHeight || 0);
+            const offset = parseInt(headerHeight) || 0;
+            const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+            const offsetPosition = elementPosition - offset - 20; // 20px extra padding
+            
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        };
+
+        // Handle initial page load with hash
+        if (window.location.hash) {
+          window.addEventListener('load', () => {
+            setTimeout(() => scrollToAnchor(window.location.hash), 100);
+          });
+        }
+
+        // Handle hash changes
+        window.addEventListener('hashchange', () => {
+          scrollToAnchor(window.location.hash);
+        });
+
+        // Handle anchor link clicks
+        document.addEventListener('click', (event) => {
+          const link = event.target.closest('a[href^="#"]');
+          if (link && link.getAttribute('href') !== '#') {
+            const hash = link.getAttribute('href');
+            if (document.getElementById(hash.replace('#', ''))) {
+              event.preventDefault();
+              history.pushState(null, null, hash);
+              scrollToAnchor(hash);
+            }
+          }
+        });
+      })();
+    </script>
   </body>
 </html>

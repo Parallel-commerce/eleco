@@ -171,7 +171,13 @@
   }
 {%- endstyle -%}
 
-<div class="support-cta-{{ section.id }}">
+<div
+  {% if section.settings.anchor_id != blank and section.settings.anchor_id != '#' %}
+    {%- assign clean_anchor_id = section.settings.anchor_id | replace: '#', '' -%}
+    id="{{ clean_anchor_id }}"
+  {% endif %}
+  class="support-cta-{{ section.id }}"
+>
   <div class="support-cta-{{ section.id }}__wrapper page-width">
     <div class="support-cta-{{ section.id }}__container">
       <div class="support-cta-{{ section.id }}__content">
@@ -544,6 +550,16 @@
       "unit": "px",
       "label": "Resource link border radius",
       "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Section anchor"
+    },
+    {
+      "type": "text",
+      "id": "anchor_id",
+      "label": "Anchor ID",
+      "info": "Enter an ID for anchor links (e.g., 'features'). Links can use #features to jump to this section. Do not include the # symbol."
     },
     {
       "type": "header",

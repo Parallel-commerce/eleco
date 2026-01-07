@@ -1204,8 +1204,8 @@ button.shopify-payment-button__button--unbranded {
 .shopify-challenge__button,
 .customer button,
 button.shopify-payment-button__button--unbranded {
-  min-width: calc(12rem + var(--buttons-border-width) * 2);
-  min-height: calc(4.5rem + var(--buttons-border-width) * 2);
+  /* min-width: calc(12rem + var(--buttons-border-width) * 2); */
+  /* min-height: calc(4.5rem + var(--buttons-border-width) * 2); */
 }
 
 .button,
@@ -1215,7 +1215,7 @@ button.shopify-payment-button__button--unbranded {
   justify-content: center;
   align-items: center;
   border: 0;
-  padding: 0 3rem;
+  padding: 0 0rem; /* parallel change */
   cursor: pointer;
   font: inherit;
   font-size: 1.5rem;
@@ -3595,4 +3595,18 @@ details-disclosure > details {
   100% {
     transform: translateX(100%) scaleX(0);
   }
+}
+
+/* Subscription App Block */
+
+.shopify_subscriptions_app_block {
+  display: none;
+}
+
+/* Button - parallel */
+
+.button--orange{
+  background-color: #E75742;
+  border: none;
+  box-shadow: none;
 }

@@ -41,6 +41,7 @@
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    align-items: self-start;
     gap: 1rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
@@ -108,7 +109,13 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient custom-product-list-{{ section.id }}">
+<div
+  {% if section.settings.anchor_id != blank and section.settings.anchor_id != '#' %}
+    {%- assign clean_anchor_id = section.settings.anchor_id | replace: '#', '' -%}
+    id="{{ clean_anchor_id }}"
+  {% endif %}
+  class="color-{{ section.settings.color_scheme }} gradient custom-product-list-{{ section.id }}"
+>
   <div class="page-width section-{{ section.id }}-padding isolate">
     {% if section.settings.heading != blank %}
       <div class="custom-product-list-{{ section.id }}__header">
@@ -139,7 +146,7 @@
                 </div>
               {% endif %}
 
-              <a href="{{ product.url }}" class="custom-product-list-{{ section.id }}__button">
+              <a href="{{ product.url }}" class="button button--secondary">
                 {{ section.settings.button_text | default: 'Learn more' }}
               </a>
             </div>
@@ -238,6 +245,16 @@
       "id": "color_scheme",
       "label": "Color scheme",
       "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Section anchor"
+    },
+    {
+      "type": "text",
+      "id": "anchor_id",
+      "label": "Anchor ID",
+      "info": "Enter an ID for anchor links (e.g., 'features'). Links can use #features to jump to this section. Do not include the # symbol."
     },
     {
       "type": "header",
