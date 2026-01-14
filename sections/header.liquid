@@ -88,9 +88,27 @@
     gap: 2rem;
   }
 
+  .header__submenu-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
   .header__submenu-list {
     justify-content: flex-end;
     align-items: center;
+  }
+
+  .header__submenu-list--desktop {
+    display: flex;
+  }
+
+  .header__submenu-list--mobile {
+    display: none;
+  }
+
+  .header__submenu-accordion {
+    display: none;
   }
 
   .header__submenu-product {
@@ -120,25 +138,123 @@
     white-space: nowrap;
   }
 
+  .header__submenu-product--mobile,
+  .header__submenu-buy-now--mobile,
+  .header__submenu-accordion {
+    display: none;
+  }
+
+  .header__submenu-accordion-summary {
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .header__submenu-accordion-summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .header__submenu-mobile-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .header__submenu-buy-now--mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__submenu-product--mobile {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .header__submenu-chevron {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: 0.4rem;
+    position: relative;
+  }
+
+  .header__submenu-chevron .svg-wrapper {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .header__submenu-chevron svg,
+  .header__submenu-chevron .icon-caret {
+    height: 1.2rem !important;
+    width: 1.2rem !important;
+    position: relative !important;
+    right: auto !important;
+    top: auto !important;
+    transition: transform 0.2s ease;
+    display: block;
+    fill: currentColor;
+  }
+
+  .header__submenu-accordion[open] .header__submenu-chevron svg,
+  .header__submenu-accordion[open] .header__submenu-chevron .icon-caret {
+    transform: rotate(180deg);
+  }
+
   @media screen and (max-width: 749px) {
     .header__submenu-container {
       flex-direction: column;
-      align-items: flex-start;
-      gap: 1rem;
+      align-items: stretch;
+      gap: 0;
     }
 
-    .header__submenu-list {
+    .header__submenu-product--desktop,
+    .header__submenu-right--desktop {
+      display: none;
+    }
+
+    .header__submenu-accordion {
+      display: block;
       width: 100%;
+      /* position: relative; */
+    }
+
+    .header__submenu-product--mobile {
+      display: inline-flex;
+    }
+
+    .header__submenu-chevron {
+      display: inline-flex !important;
+    }
+
+    .header__submenu-list--desktop {
+      display: none;
+    }
+
+    .header__submenu-list--mobile {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      display: flex;
       flex-direction: column;
       align-items: flex-start;
+      padding: 1rem;
+      gap: 0.5rem;
+      background-color: #f2f3f3;
+      border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
+      z-index: 10;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    .header__submenu-buy-now {
-      width: 100%;
+    .header__submenu-accordion:not([open]) .header__submenu-list--mobile {
+      display: none;
     }
 
     .header__submenu-buy-button {
-      width: 100%;
+      padding: 0.8rem 1.2rem;
+      font-size: 1.3rem;
     }
   }
 </style>
@@ -378,28 +494,32 @@
   {%- if request.page_type == 'product' -%}
     <nav class="header__submenu-bar color-{{ section.settings.color_scheme }} gradient" aria-label="Product navigation">
       <div class="page-width header__submenu-container">
-        <div class="header__submenu-product">
+        {%- comment -%} Desktop layout {%- endcomment -%}
+        <div class="header__submenu-product header__submenu-product--desktop">
           <span class="svg-wrapper header__submenu-icon">{{ 'icon-asta-favicon.svg' | inline_asset_content }}</span>
           <span class="header__submenu-product-name">{{ product.title | escape }}</span>
         </div>
-        <ul class="list-menu list-menu--inline header__submenu-list" role="list">
-          {%- if product.metafields.custom.product_sub_menu != blank -%}
-            {%- assign sub_menu_content = product.metafields.custom.product_sub_menu | strip -%}
-            {%- assign sub_menu_items = sub_menu_content | split: '"' -%}
-            {%- for item in sub_menu_items -%}
-              {%- assign trimmed_item = item | strip -%}
-              {%- if trimmed_item != blank and trimmed_item != '[' and trimmed_item != ']' and trimmed_item != ',' -%}
-                {%- assign anchor_text = trimmed_item | downcase | replace: ' ', '-' -%}
-                <li class="list-menu__item">
-                  <a href="#{{ anchor_text }}" class="header__menu-item list-menu__item link link--text focus-inset">
-                    {{ trimmed_item | escape }}
-                  </a>
-                </li>
-              {%- endif -%}
-            {%- endfor -%}
-          {%- endif -%}
-          {%- comment -%} Buy Now Button {%- endcomment -%}
-          <li class="list-menu__item header__submenu-buy-now">
+        <div class="header__submenu-right header__submenu-right--desktop">
+          {%- comment -%} Desktop inline menu {%- endcomment -%}
+          <ul class="list-menu list-menu--inline header__submenu-list header__submenu-list--desktop" role="list">
+            {%- if product.metafields.custom.product_sub_menu != blank -%}
+              {%- assign sub_menu_content = product.metafields.custom.product_sub_menu | strip -%}
+              {%- assign sub_menu_items = sub_menu_content | split: '"' -%}
+              {%- for item in sub_menu_items -%}
+                {%- assign trimmed_item = item | strip -%}
+                {%- if trimmed_item != blank and trimmed_item != '[' and trimmed_item != ']' and trimmed_item != ',' -%}
+                  {%- assign anchor_text = trimmed_item | downcase | replace: ' ', '-' -%}
+                  <li class="list-menu__item">
+                    <a href="#{{ anchor_text }}" class="header__menu-item list-menu__item link link--text focus-inset">
+                      {{ trimmed_item | escape }}
+                    </a>
+                  </li>
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+          </ul>
+          {%- comment -%} Desktop Buy Now Button {%- endcomment -%}
+          <div class="header__submenu-buy-now header__submenu-buy-now--desktop">
             <product-form
               class="product-form"
               data-section-id="header-submenu"
@@ -412,7 +532,7 @@
               </div>
               {%- form 'product',
                 product,
-                id: 'header-submenu-product-form',
+                id: 'header-submenu-product-form-desktop',
                 class: 'form',
                 novalidate: 'novalidate',
                 data-type: 'add-to-cart-form'
@@ -443,8 +563,89 @@
                 </button>
               {%- endform -%}
             </product-form>
-          </li>
-        </ul>
+          </div>
+        </div>
+        {%- comment -%} Mobile accordion layout {%- endcomment -%}
+        {%- if product.metafields.custom.product_sub_menu != blank -%}
+          {%- assign sub_menu_content = product.metafields.custom.product_sub_menu | strip -%}
+          {%- assign sub_menu_items = sub_menu_content | split: '"' -%}
+          <details class="header__submenu-accordion header__submenu-accordion--mobile">
+            <summary class="header__submenu-accordion-summary">
+              <div class="header__submenu-mobile-top">
+                <div class="header__submenu-product header__submenu-product--mobile">
+                  <span class="svg-wrapper header__submenu-icon">
+                    {{- 'icon-asta-favicon.svg' | inline_asset_content -}}
+                  </span>
+                  <span class="header__submenu-product-name">{{ product.title | escape }}</span>
+                  <span class="header__submenu-chevron">
+                    <span class="svg-wrapper">{{- 'icon-caret.svg' | inline_asset_content -}}</span>
+                  </span>
+                </div>
+                <div class="header__submenu-buy-now header__submenu-buy-now--mobile">
+                  <product-form
+                    class="product-form"
+                    data-section-id="header-submenu-mobile"
+                  >
+                    <div class="product-form__error-message-wrapper" role="alert" hidden>
+                      <span class="svg-wrapper">
+                        {{- 'icon-error.svg' | inline_asset_content -}}
+                      </span>
+                      <span class="product-form__error-message"></span>
+                    </div>
+                    {%- form 'product',
+                      product,
+                      id: 'header-submenu-product-form-mobile',
+                      class: 'form',
+                      novalidate: 'novalidate',
+                      data-type: 'add-to-cart-form'
+                    -%}
+                      <input
+                        type="hidden"
+                        name="id"
+                        value="{{ product.selected_or_first_available_variant.id }}"
+                        {% if product.selected_or_first_available_variant.available == false
+                          or product.selected_or_first_available_variant == null
+                        %}
+                          disabled
+                        {% endif %}
+                        class="product-variant-id"
+                      >
+                      <button
+                        type="submit"
+                        name="add"
+                        class="header__submenu-buy-button button button--primary button--orange"
+                        {% if product.selected_or_first_available_variant.available == false
+                          or product.selected_or_first_available_variant == null
+                        %}
+                          disabled
+                        {% endif %}
+                      >
+                        <span>Buy Now</span>
+                        {%- render 'loading-spinner' -%}
+                      </button>
+                    {%- endform -%}
+                  </product-form>
+                </div>
+              </div>
+            </summary>
+            <ul class="list-menu header__submenu-list header__submenu-list--mobile" role="list">
+              {%- for item in sub_menu_items -%}
+                {%- assign trimmed_item = item | strip -%}
+                {%- if trimmed_item != blank and trimmed_item != '[' and trimmed_item != ']' and trimmed_item != ',' -%}
+                  {%- assign anchor_text = trimmed_item | downcase | replace: ' ', '-' -%}
+                  <li class="list-menu__item">
+                    <a
+                      href="#{{ anchor_text }}"
+                      class="header__menu-item list-menu__item link link--text focus-inset"
+                    >
+                      {{ trimmed_item | escape }}
+                    </a>
+                  </li>
+                {%- endif -%}
+              {%- endfor -%}
+            </ul>
+          </details>
+        {%- endif -%}
       </div>
     </nav>
   {%- endif -%}
@@ -569,6 +770,37 @@
   }
 
   customElements.define('sticky-header', StickyHeader);
+
+  // Prevent buy button from toggling accordion and close menu on link click
+  document.addEventListener('DOMContentLoaded', function () {
+    const accordion = document.querySelector('.header__submenu-accordion--mobile');
+    if (accordion) {
+      const buyButton = accordion.querySelector('.header__submenu-buy-button');
+      const buyForm = accordion.querySelector('form');
+
+      if (buyButton && buyForm) {
+        buyForm.addEventListener('click', function (e) {
+          e.stopPropagation();
+        });
+
+        buyButton.addEventListener('click', function (e) {
+          e.stopPropagation();
+        });
+      }
+
+      // Close accordion when a menu link is clicked
+      const menuLinks = accordion.querySelectorAll('.header__submenu-list--mobile a');
+      menuLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+          accordion.removeAttribute('open');
+          const summary = accordion.querySelector('summary');
+          if (summary) {
+            summary.setAttribute('aria-expanded', 'false');
+          }
+        });
+      });
+    }
+  });
 {% endjavascript %}
 
 <script type="application/ld+json">

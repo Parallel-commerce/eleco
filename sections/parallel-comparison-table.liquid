@@ -83,7 +83,7 @@
     display: flex;
     align-items: center;
     background: #ffffff;
-    border-bottom: 1px solid #E75742;
+    border-bottom: 1px solid var(--eleco-primary);
     min-width: 0;
     max-width: 100%;
   }
@@ -145,39 +145,6 @@
 
   .comparison-table-{{ section.id }}__button-wrapper .button {
     min-width: auto;
-    padding: 0rem 1rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-    border-radius: 0.4rem;
-    transition: all 0.3s ease;
-    border-radius: 10px;
-  }
-
-  .comparison-table-{{ section.id }}__button-wrapper .button:after {
-    box-shadow: none !important;
-  }
-
-  .comparison-table-{{ section.id }}__button-wrapper:first-child .button {
-    background-color: transparent;
-    border: 2px solid {{ section.settings.button_1_border_color | default: '#E75742' }};
-    color: {{ section.settings.button_1_text_color | default: '#E75742' }};
-  }
-
-  .comparison-table-{{ section.id }}__button-wrapper:first-child .button:hover {
-    background-color: {{ section.settings.button_1_border_color | default: '#E75742' }};
-    color: {{ section.settings.button_1_hover_text_color | default: '#ffffff' }};
-  }
-
-  .comparison-table-{{ section.id }}__button-wrapper:last-child .button {
-    background-color: {{ section.settings.button_2_background_color | default: '#E75742' }};
-    border: 2px solid {{ section.settings.button_2_background_color | default: '#E75742' }};
-    color: {{ section.settings.button_2_text_color | default: '#ffffff' }};
-  }
-
-  .comparison-table-{{ section.id }}__button-wrapper:last-child .button:hover {
-    background-color: {{ section.settings.button_2_hover_background_color | default: '#d14a32' }};
-    border-color: {{ section.settings.button_2_hover_background_color | default: '#d14a32' }};
-    color: {{ section.settings.button_2_hover_text_color | default: '#ffffff' }};
   }
 
   @media screen and (max-width: 749px) {
@@ -366,7 +333,7 @@
                 {% else %}
                   href="{{ section.settings.button_2_link }}"
                 {% endif %}
-                class="button button--primary"
+                class="button"
               >
                 {{ section.settings.button_2_label | escape }}
               </a>
@@ -481,13 +448,13 @@
       "type": "color",
       "id": "button_1_border_color",
       "label": "Button 1 border color",
-      "default": "#E75742"
+      "default": "#E83F40"
     },
     {
       "type": "color",
       "id": "button_1_text_color",
       "label": "Button 1 text color",
-      "default": "#E75742"
+      "default": "#E83F40"
     },
     {
       "type": "color",
@@ -514,7 +481,7 @@
       "type": "color",
       "id": "button_2_background_color",
       "label": "Button 2 background color",
-      "default": "#E75742"
+      "default": "#E83F40"
     },
     {
       "type": "color",

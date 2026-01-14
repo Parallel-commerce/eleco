@@ -78,6 +78,12 @@
     color: rgb(var(--color-foreground));
   }
 
+  .custom-product-list-{{ section.id }}__logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
   .custom-product-list-{{ section.id }}__description {
     color: rgba(var(--color-foreground), 0.7);
     line-height: 1.6;
@@ -132,12 +138,24 @@
           {% if product != blank %}
             <div class="custom-product-list-{{ section.id }}__card" {{ block.shopify_attributes }}>
               <div class="custom-product-list-{{ section.id }}__title-wrapper">
-                <div class="custom-product-list-{{ section.id }}__icon">
-                  {{ 'icon-asta-favicon.svg' | inline_asset_content }}
-                </div>
-                <h3 class="custom-product-list-{{ section.id }}__title">
-                  {{ product.title }}
-                </h3>
+                {% if product.metafields.custom.product_logo == blank %}
+                  <div class="custom-product-list-{{ section.id }}__icon">
+                    {{ 'icon-asta-favicon.svg' | inline_asset_content }}
+                  </div>
+                {% endif %}
+                {% if product.metafields.custom.product_logo != blank %}
+                  <div class="custom-product-list-{{ section.id }}__logo">
+                    {{
+                      product.metafields.custom.product_logo
+                      | image_url: width: 150
+                      | image_tag: loading: 'lazy', alt: product.title
+                    }}
+                  </div>
+                {% else %}
+                  <h3 class="custom-product-list-{{ section.id }}__title">
+                    {{ product.title }}
+                  </h3>
+                {% endif %}
               </div>
 
               {% if product.metafields.custom.short_description != blank %}

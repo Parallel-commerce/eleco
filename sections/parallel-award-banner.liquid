@@ -106,6 +106,14 @@
     justify-content: {{ section.settings.content_alignment }};
   }
 
+  {%- if section.settings.hide_logos_mobile -%}
+    @media screen and (max-width: 749px) {
+      #AwardBanner-{{ section.id }} .award-banner__icons {
+        display: none;
+      }
+    }
+  {%- endif -%}
+
   /* Desktop icons - hidden on mobile */
   #AwardBanner-{{ section.id }} .award-banner__icon--desktop {
     max-width: {{ section.settings.icon_size }}px;
@@ -479,6 +487,12 @@
       "unit": "px",
       "label": "Icon size",
       "default": 120
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_logos_mobile",
+      "label": "Hide logos on mobile",
+      "default": false
     }
   ],
   "blocks": [

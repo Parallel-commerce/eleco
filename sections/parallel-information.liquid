@@ -39,7 +39,7 @@
     {%- if section.settings.border_color != blank -%}
       border-bottom: 1px solid {{ section.settings.border_color }};
     {%- else -%}
-      border-bottom: 1px solid #E75742;
+      border-bottom: 1px solid var(--eleco-primary);
     {%- endif -%}
   }
 
@@ -191,8 +191,8 @@
       "type": "color",
       "id": "border_color",
       "label": "Border color",
-      "default": "#E75742",
-      "info": "Leave blank to use default color (#E75742)"
+      "default": "#E83F40",
+      "info": "Leave blank to use default color (#E83F40)"
     },
     {
       "type": "header",
