@@ -156,9 +156,9 @@
         "subscriptions_app_block_HfcxDY": {
           "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
           "settings": {
-            "color_text_body": "#6D7175",
-            "dividers_color": "#8F8D8D",
-            "bacgkround_color": "#FFFFFF",
+            "color_text_body": "#6d7175",
+            "dividers_color": "#8f8d8d",
+            "bacgkround_color": "#ffffff",
             "border_thickness": 1,
             "border_radius": 0,
             "subscription_policy_url": "",
@@ -196,6 +196,7 @@
         "right_column_secondary_button_text": "Book a demo",
         "right_column_secondary_button_link": "",
         "right_column_fine_print": "Paid annually. Includes VAT.",
+        "anchor_id": "",
         "padding_top": 0,
         "padding_bottom": 36
       }
@@ -252,9 +253,9 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "anchor_id": "#",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "text_padding_left": 16,
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "text_padding_left": 32,
         "text_padding_right": 16
       }
     },
@@ -310,10 +311,10 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "anchor_id": "#",
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_top": 52,
+        "padding_bottom": 52,
         "text_padding_left": 16,
-        "text_padding_right": 16
+        "text_padding_right": 32
       }
     },
     "parallel_image_with_features_UVMBrD": {
@@ -368,9 +369,9 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "anchor_id": "#",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "text_padding_left": 16,
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "text_padding_left": 32,
         "text_padding_right": 16
       }
     },
@@ -428,6 +429,7 @@
         "text_color": "#ffffff",
         "mobile_text_color": "#000000",
         "underline_color": "#ff5a3c",
+        "anchor_id": "",
         "icon_size": 120
       }
     },
@@ -465,6 +467,7 @@
       "settings": {
         "color_scheme": "",
         "highlight_color": "#e85a47",
+        "anchor_id": "",
         "padding_top": 40,
         "padding_bottom": 40
       }
@@ -560,6 +563,7 @@
         "enable_video_looping": false,
         "full_width": false,
         "color_scheme": "",
+        "anchor_id": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -622,6 +626,7 @@
         "logo_opacity": 100,
         "logo_hover_opacity": 100,
         "mobile_columns": "1",
+        "anchor_id": "",
         "padding_top": 0,
         "padding_bottom": 40
       }
@@ -660,6 +665,7 @@
         "header_alignment": "center",
         "header_spacing": 40,
         "color_scheme": "",
+        "anchor_id": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -707,6 +713,7 @@
         "columns_desktop": 3,
         "columns_mobile": "2",
         "color_scheme": "scheme-2",
+        "anchor_id": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -769,6 +776,7 @@
         "logo_opacity": 100,
         "logo_hover_opacity": 100,
         "mobile_columns": "1",
+        "anchor_id": "",
         "padding_top": 40,
         "padding_bottom": 40
       }
@@ -825,6 +833,7 @@
         "color_scheme": "",
         "item_background": "#f6f7f7",
         "item_background_active": "#fce8e6",
+        "anchor_id": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -918,6 +927,7 @@
         "header_background": "#f3f4f6",
         "header_text_color": "#111827",
         "border_color": "#e5e7eb",
+        "anchor_id": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -989,6 +999,7 @@
         "resource_font_size": 16,
         "button_border_radius": 4,
         "resource_border_radius": 4,
+        "anchor_id": "",
         "padding_top": 60,
         "padding_bottom": 60
       }
@@ -1025,6 +1036,7 @@
         "text_color": "",
         "border_color": "#e75742",
         "block_spacing": 24,
+        "anchor_id": "",
         "padding_top": 60,
         "padding_bottom": 60
       }
