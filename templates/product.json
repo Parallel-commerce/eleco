@@ -381,7 +381,7 @@
         "award_icon_wWHCpq": {
           "type": "award_icon",
           "settings": {
-            "icon_image": "shopify://shop_images/Patchworks-Logo-Primary-White.svg",
+            "icon_image": "shopify://shop_images/Project_Management_Software_of_the_year.png",
             "icon_alt": "Award icon",
             "mobile_icon_image": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
             "mobile_icon_alt": ""
@@ -390,7 +390,7 @@
         "award_icon_VzWygn": {
           "type": "award_icon",
           "settings": {
-            "icon_image": "shopify://shop_images/sparklayer_white.svg",
+            "icon_image": "shopify://shop_images/Project_Management_Software_of_the_year.png",
             "icon_alt": "Award icon",
             "mobile_icon_image": "shopify://shop_images/sparklayer_black.svg",
             "mobile_icon_alt": ""
@@ -418,7 +418,7 @@
       ],
       "name": "Award Banner",
       "settings": {
-        "background_image": "shopify://shop_images/failte-restaurant-image.jpg",
+        "background_image": "shopify://shop_images/team.jpg",
         "image_height": "medium",
         "min_height": 400,
         "overlay_color": "#000000",
@@ -430,8 +430,8 @@
         "mobile_text_color": "#000000",
         "underline_color": "#ff5a3c",
         "anchor_id": "",
-        "icon_size": 120,
-        "hide_logos_mobile": false
+        "icon_size": 100,
+        "hide_logos_mobile": true
       }
     },
     "parallel_highlights_yTAfJh": {
