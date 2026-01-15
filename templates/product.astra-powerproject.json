@@ -207,7 +207,7 @@
         "heading_GGwQtN": {
           "type": "heading",
           "settings": {
-            "heading": "Heading",
+            "heading": "Build trust with predictable outcomes",
             "heading_size": "h1"
           }
         },
@@ -215,21 +215,28 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Real-time progress tracking"
           }
         },
         "feature_item_efdUrz": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Critical path analysis"
           }
         },
         "feature_item_eVF6yn": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Unlimited coded logic"
+          }
+        },
+        "feature_item_mCNTLb": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Same reporting tools as major contractors"
           }
         }
       },
@@ -237,7 +244,8 @@
         "heading_GGwQtN",
         "feature_item_CkdfUp",
         "feature_item_efdUrz",
-        "feature_item_eVF6yn"
+        "feature_item_eVF6yn",
+        "feature_item_mCNTLb"
       ],
       "name": "Image with features",
       "settings": {
@@ -265,7 +273,7 @@
         "heading_qDbMj8": {
           "type": "heading",
           "settings": {
-            "heading": "Heading",
+            "heading": "Get more done, faster",
             "heading_size": "h1"
           }
         },
@@ -273,21 +281,28 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Robust but easy to use"
           }
         },
         "feature_item_gVYYUV": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Streamlined schedule creation"
           }
         },
         "feature_item_iRNHQw": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Track and manage delays"
+          }
+        },
+        "feature_item_a4YiiR": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Simplied resources and cost scheduled management"
           }
         }
       },
@@ -295,7 +310,8 @@
         "heading_qDbMj8",
         "feature_item_8agkWh",
         "feature_item_gVYYUV",
-        "feature_item_iRNHQw"
+        "feature_item_iRNHQw",
+        "feature_item_a4YiiR"
       ],
       "name": "Image with features",
       "settings": {
@@ -323,7 +339,7 @@
         "heading_EU6MmW": {
           "type": "heading",
           "settings": {
-            "heading": "Heading",
+            "heading": "Know where you stand – always",
             "heading_size": "h1"
           }
         },
@@ -331,21 +347,28 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Robust scheduling capabilities"
           }
         },
         "feature_item_JY6MwN": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Proactive scenario modelling"
           }
         },
         "feature_item_prUy3i": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Automated compliance checks"
+          }
+        },
+        "feature_item_FgNLUc": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Track planned vs actual costs"
           }
         }
       },
@@ -353,7 +376,8 @@
         "heading_EU6MmW",
         "feature_item_Wp9bXU",
         "feature_item_JY6MwN",
-        "feature_item_prUy3i"
+        "feature_item_prUy3i",
+        "feature_item_FgNLUc"
       ],
       "name": "Image with features",
       "settings": {
@@ -481,9 +505,9 @@
           "settings": {
             "title": "Contractors",
             "content_1": "<p>Powerful critical path analysis and precise scheduling.</p>",
-            "content_2": "<p>Powerful critical path analysis and precise scheduling.</p>",
-            "content_3": "<p>Powerful critical path analysis and precise scheduling.</p>",
-            "content_4": "",
+            "content_2": "<p>Comprehensive resource and cost management, early identification of budget issues.</p>",
+            "content_3": "<p>Detailed history of project changes to support claims and resolve disputes.</p>",
+            "content_4": "<p>Produce high-quality outputs for tender submissions to help win work with professional schedules.</p>",
             "content_5": "",
             "content_6": ""
           }
@@ -492,10 +516,10 @@
           "type": "accordion_item",
           "settings": {
             "title": "Sub contractors",
-            "content_1": "<p>Comprehensive resource and cost management, early identification of budget issues.</p>",
-            "content_2": "",
-            "content_3": "",
-            "content_4": "",
+            "content_1": "<p>Free project viewer for seamless communication, relevant to each project</p>",
+            "content_2": "<p>Simple functionality allows subcontractors to engaging directly with project data.</p>",
+            "content_3": "<p>Clear task visibility and filters allow for visual clarity across complete programme of works.</p>",
+            "content_4": "<p>Mobile progress tracking with Asta Siteprogress allows for on-site updates.</p>",
             "content_5": "",
             "content_6": ""
           }
@@ -504,10 +528,34 @@
           "type": "accordion_item",
           "settings": {
             "title": "Designers and consultancy",
-            "content_1": "<p>Detailed history of project changes to support claims and resolve disputes.</p>",
-            "content_2": "",
-            "content_3": "",
-            "content_4": "",
+            "content_1": "<p>BIM integration and 4D planning enables consultants to combine 3D models with scheduling in one solution.</p>",
+            "content_2": "<p>Built-in scenario analysis and risk management tools to explore optimal project outcomes.</p>",
+            "content_3": "<p>Schedule Quality Check against plans to ensure compliance with industry or company standards.</p>",
+            "content_4": "<p>Customisable reports for clear communication and collaboration with clients, contractors, and stakeholders.</p>",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_M7z9KA": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Residential construction",
+            "content_1": "<p>Repeated tasks and plot management for effective planning and procurement.</p>",
+            "content_2": "<p>Line of balance for multi-plot developments, creating a smooth workflow between trades.</p>",
+            "content_3": "<p>Template-based planning allows for consistency across planning and scheduling.</p>",
+            "content_4": "<p>Asta Siteprogress mobile allows for photo uploads on-site creating an immediate picture of progress.</p>",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_VxNne6": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Clients and asset owners",
+            "content_1": "<p>Real-time visibility across entire portfolios with BI integration for strategic reporting.</p>",
+            "content_2": "<p>Progress tracking against baselines means clients receive transparent reporting, with a full audit trail.</p>",
+            "content_3": "<p>Evidence-based change management and impact documentation increases accountability.</p>",
+            "content_4": "<p>Rock-solid records of progress provide robust evidence for any dispute resolution.</p>",
             "content_5": "",
             "content_6": ""
           }
@@ -516,7 +564,9 @@
       "block_order": [
         "accordion_item_AX7zXQ",
         "accordion_item_htnMQm",
-        "accordion_item_EDULcY"
+        "accordion_item_EDULcY",
+        "accordion_item_M7z9KA",
+        "accordion_item_VxNne6"
       ],
       "name": "Two-Column Accordion",
       "settings": {
@@ -674,10 +724,16 @@
     "parallel_custom_product_list_M7EFHt": {
       "type": "parallel-custom-product-list",
       "blocks": {
+        "product_W6X3YF": {
+          "type": "product",
+          "settings": {
+            "product": "asta-powerproject-4d"
+          }
+        },
         "product_9Fqg3n": {
           "type": "product",
           "settings": {
-            "product": "asta-connect"
+            "product": "asta-vision"
           }
         },
         "product_Hi9e7N": {
@@ -689,7 +745,7 @@
         "product_aeUw4W": {
           "type": "product",
           "settings": {
-            "product": "asta-estimate"
+            "product": "asta-siteprogress"
           }
         },
         "product_3Mi7Bg": {
@@ -700,6 +756,7 @@
         }
       },
       "block_order": [
+        "product_W6X3YF",
         "product_9Fqg3n",
         "product_Hi9e7N",
         "product_aeUw4W",
@@ -789,28 +846,63 @@
           "type": "faq_item",
           "settings": {
             "question": "Who is Asta Powerproject for?",
-            "answer": "<p>This is a sample answer to the first question.</p>"
+            "answer": "<p>Asta Powerproject is designed to scale. It’s used by large £1B enterprises as well as smaller independent contractors and it’s also widely adopted across industries beyond construction for effective project planning and management.</p>"
           }
         },
         "faq_item_bVkqMa": {
           "type": "faq_item",
           "settings": {
-            "question": "Why is Asta better than the competition?",
-            "answer": "<p>This is a sample answer to the second question.</p>"
+            "question": "What devices can I install Asta Powerproject on?",
+            "answer": "<p>The software is available for download on Windows PC. There is a separately licensed companion app for use on iOS and Android.</p>"
           }
         },
         "faq_item_jARANR": {
           "type": "faq_item",
           "settings": {
-            "question": "What is the difference between a single and a concurrent license?",
-            "answer": "<p>This is a sample answer to the third question.</p>"
+            "question": "Can it be used on a Macbook?",
+            "answer": "<p>Yes. By upgrading to Asta Powerproject SaaS, you can access it seamlessly on a Mac</p>"
           }
         },
         "faq_item_bAXDXk": {
           "type": "faq_item",
           "settings": {
-            "question": "Can stakeholders see my project if they don't have a license?",
-            "answer": "<p>If a stakeholder hasn't bought a licence but needs to view the project, they can download our Project Viewer.</p>"
+            "question": "What is the difference between a single and a concurrent licence?",
+            "answer": "<p>A single licence is tied to one user on one device. </p><p>A concurrent licence allows multiple users to share the same licence across different devices, offering greater flexibility and lowering the cost per user. </p><p>Both options suit businesses of any size, depending on your needs.</p>"
+          }
+        },
+        "faq_item_iLkedR": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Why choose Asta Powerproject over other scheduling tools?",
+            "answer": "<p>Asta Powerproject offers features unique to our user base, offering improved usability, more accurate scheduling and better analytics which are not available in other project management solutions. This helps you to predict, plan, and proactively avoid delays, giving greater certainty and smarter outcomes.</p><p>It is also consistently recognised for being user-friendly, efficient, and cost-effective.</p>"
+          }
+        },
+        "faq_item_3zcwtw": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What language versions are available?",
+            "answer": "<p>Asta Powerproject is available in English (Australia, UK, US versions), Danish, Dutch, Finnish, German, Norwegian, Swedish, French, Polish, Spanish, Italian and Turkish.</p><p>For other languages, please refer to our list of approved resellers.</p><p>We post all Asta Powerproject’s latest updates here.<br/><br/></p>"
+          }
+        },
+        "faq_item_Y8h4bQ": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can stakeholders view my project without a licence?",
+            "answer": "<p>Yes. Stakeholders can download our free ProjectViewer to access your project without requiring a licence.</p>"
+          }
+        },
+        "faq_item_mDbcdE": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can a single licence be transferred to another colleague or device?",
+            "answer": "<p>Yes. Users can follow the steps within the software to move a licence between a device. If you need to cancel a licence off a device for which you no longer have access, our support team can do this remotely; contact us at support@elecosoft.com.</p>"
+          }
+        },
+        "faq_item_FbD6cb": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What support and training are available?",
+            "answer": "<p>We provide comprehensive in-house training solutions for new users and more advanced sessions for experienced teams, ensuring everyone can get the most out of Asta Powerproject.</p>"
           }
         }
       },
@@ -818,7 +910,12 @@
         "faq_item_QVNkTB",
         "faq_item_bVkqMa",
         "faq_item_jARANR",
-        "faq_item_bAXDXk"
+        "faq_item_bAXDXk",
+        "faq_item_iLkedR",
+        "faq_item_3zcwtw",
+        "faq_item_Y8h4bQ",
+        "faq_item_mDbcdE",
+        "faq_item_FbD6cb"
       ],
       "name": "FAQ Accordion",
       "settings": {
