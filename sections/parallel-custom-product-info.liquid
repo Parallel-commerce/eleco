@@ -70,7 +70,7 @@
     }
 
     .custom-product-info__pricing-column {
-      padding: 3rem 2rem;
+      padding: 3rem 4rem;
       background-color: {{ section.settings.column_background_color }};
       min-width: 0;
       border-radius: 8px;
@@ -120,24 +120,35 @@
       }
     }
 
-    .custom-product-info__column-header {
-      font-size: 1.8rem;
-      font-weight: 600;
-      margin-bottom: 1.5rem;
-      color: rgb(var(--color-foreground));
+    .custom-product-info__price-wrapper {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      line-height: 1.2;
+    }
+
+    .custom-product-info__price-prefix {
+      font-size: 1.4rem;
+      color: rgba(var(--color-foreground), 0.75);
     }
 
     .custom-product-info__price {
       font-size: 3.6rem;
       font-weight: 700;
-      line-height: 1.2;
-      margin-bottom: 0.5rem;
       color: rgb(var(--color-foreground));
     }
 
-    .custom-product-info__price-label {
+    .custom-product-info__price-slash {
+      font-size: 3.6rem;
+      font-weight: 700;
+      color: {{ section.settings.divider_color }};
+      margin: 0 0.2rem;
+    }
+
+    .custom-product-info__price-suffix {
       font-size: 1.4rem;
-      margin-bottom: 2rem;
       color: rgba(var(--color-foreground), 0.75);
     }
 
@@ -346,22 +357,23 @@
       <div class="custom-product-info__pricing-grid">
         {%- comment -%} Left Column: Annual Subscription {%- endcomment -%}
         <div class="custom-product-info__pricing-column">
-          <h3 class="custom-product-info__column-header">
+          <h2>
             {{ section.settings.left_column_title | default: 'Annual subscription' }}
-          </h3>
+          </h2>
 
-          <div class="custom-product-info__price">
-            {%- if section.settings.left_column_price != blank -%}
-              {%- assign custom_price = section.settings.left_column_price | times: 100 -%}
-              {{ custom_price | money }}
-            {%- else -%}
-              {%- assign monthly_price = product.price | divided_by: 12 -%}
-              {{ monthly_price | money }}
-            {%- endif -%}
-          </div>
-
-          <div class="custom-product-info__price-label">
-            {{ section.settings.left_column_price_label | default: 'Prices start from / month' }}
+          <div class="custom-product-info__price-wrapper">
+            <span class="custom-product-info__price-prefix">Prices start from</span>
+            <span class="custom-product-info__price">
+              {%- if section.settings.left_column_price != blank -%}
+                {%- assign custom_price = section.settings.left_column_price | times: 100 -%}
+                {{ custom_price | money }}
+              {%- else -%}
+                {%- assign monthly_price = product.price | divided_by: 12 -%}
+                {{ monthly_price | money }}
+              {%- endif -%}
+            </span>
+            <span class="custom-product-info__price-slash">/</span>
+            <span class="custom-product-info__price-suffix">month</span>
           </div>
 
           {%- comment -%} Product Form for Add to Cart {%- endcomment -%}
@@ -458,21 +470,22 @@
 
         {%- comment -%} Right Column: Concurrent & SaaS Solutions {%- endcomment -%}
         <div class="custom-product-info__pricing-column">
-          <h3 class="custom-product-info__column-header">
+          <h2>
             {{ section.settings.right_column_title | default: 'Concurrent & SaaS solutions' }}
-          </h3>
+          </h2>
 
-          <div class="custom-product-info__price">
-            {%- if section.settings.right_column_price != blank -%}
-              {%- assign custom_price = section.settings.right_column_price | times: 100 -%}
-              {{ custom_price | money }}
-            {%- else -%}
-              {{ product.price | money }}
-            {%- endif -%}
-          </div>
-
-          <div class="custom-product-info__price-label">
-            {{ section.settings.right_column_price_label | default: 'Prices start from / year' }}
+          <div class="custom-product-info__price-wrapper">
+            <span class="custom-product-info__price-prefix">Prices start from</span>
+            <span class="custom-product-info__price">
+              {%- if section.settings.right_column_price != blank -%}
+                {%- assign custom_price = section.settings.right_column_price | times: 100 -%}
+                {{ custom_price | money }}
+              {%- else -%}
+                {{ product.price | money }}
+              {%- endif -%}
+            </span>
+            <span class="custom-product-info__price-slash">/</span>
+            <span class="custom-product-info__price-suffix">year</span>
           </div>
 
           <div class="custom-product-info__buttons">

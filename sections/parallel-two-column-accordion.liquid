@@ -66,7 +66,12 @@
 
   .two-col-accordion-{{ section.id }} .two-col-accordion__title {
     font-weight: 700;
-    font-size: 120%;
+    font-size: 110%;
+    color: #8EA1B2;
+  }
+
+  .two-col-accordion-{{ section.id }} .two-col-accordion__trigger.is-active .two-col-accordion__title {
+    color: inherit;
   }
 
   .two-col-accordion-{{ section.id }} .two-col-accordion__trigger.is-active .two-col-accordion__icon {
@@ -123,7 +128,9 @@
     {%- assign clean_anchor_id = section.settings.anchor_id | replace: '#', '' -%}
     id="{{ clean_anchor_id }}"
   {% endif %}
-  class="two-col-accordion-{{ section.id }} isolate" data-two-col-accordion-root>
+  class="two-col-accordion-{{ section.id }} isolate"
+  data-two-col-accordion-root
+>
   <div class="page-width">
     <div class="two-col-accordion">
       {%- if section.settings.heading != blank -%}

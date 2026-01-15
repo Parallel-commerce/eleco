@@ -81,6 +81,10 @@
     padding: 1rem 3rem;
   }
 
+  .header__submenu-logo{
+  display: flex;
+  }
+
   .header__submenu-container {
     display: flex;
     justify-content: space-between;
@@ -496,8 +500,18 @@
       <div class="page-width header__submenu-container">
         {%- comment -%} Desktop layout {%- endcomment -%}
         <div class="header__submenu-product header__submenu-product--desktop">
-          <span class="svg-wrapper header__submenu-icon">{{ 'icon-asta-favicon.svg' | inline_asset_content }}</span>
-          <span class="header__submenu-product-name">{{ product.title | escape }}</span>
+          {%- if product.metafields.custom.product_logo != blank -%}
+            <div class="header__submenu-logo">
+              {{
+                product.metafields.custom.product_logo
+                | image_url: width: 150
+                | image_tag: loading: 'lazy', alt: product.title, class: 'header__submenu-logo-image'
+              }}
+            </div>
+          {%- else -%}
+            <span class="svg-wrapper header__submenu-icon">{{ 'icon-asta-favicon.svg' | inline_asset_content }}</span>
+            <span class="header__submenu-product-name">{{ product.title | escape }}</span>
+          {%- endif -%}
         </div>
         <div class="header__submenu-right header__submenu-right--desktop">
           {%- comment -%} Desktop inline menu {%- endcomment -%}
@@ -573,10 +587,20 @@
             <summary class="header__submenu-accordion-summary">
               <div class="header__submenu-mobile-top">
                 <div class="header__submenu-product header__submenu-product--mobile">
-                  <span class="svg-wrapper header__submenu-icon">
-                    {{- 'icon-asta-favicon.svg' | inline_asset_content -}}
-                  </span>
-                  <span class="header__submenu-product-name">{{ product.title | escape }}</span>
+                  {%- if product.metafields.custom.product_logo != blank -%}
+                    <div class="header__submenu-logo">
+                      {{
+                        product.metafields.custom.product_logo
+                        | image_url: width: 150
+                        | image_tag: loading: 'lazy', alt: product.title, class: 'header__submenu-logo-image'
+                      }}
+                    </div>
+                  {%- else -%}
+                    <span class="svg-wrapper header__submenu-icon">
+                      {{- 'icon-asta-favicon.svg' | inline_asset_content -}}
+                    </span>
+                    <span class="header__submenu-product-name">{{ product.title | escape }}</span>
+                  {%- endif -%}
                   <span class="header__submenu-chevron">
                     <span class="svg-wrapper">{{- 'icon-caret.svg' | inline_asset_content -}}</span>
                   </span>
@@ -801,6 +825,55 @@
       });
     }
   });
+
+  // Update header Buy Now button when variant changes on product page
+  {%- if request.page_type == 'product' -%}
+  if (typeof subscribe !== 'undefined' && typeof PUB_SUB_EVENTS !== 'undefined') {
+    const desktopForm = document.getElementById('header-submenu-product-form-desktop');
+    const mobileForm = document.getElementById('header-submenu-product-form-mobile');
+    const desktopButton = desktopForm?.querySelector('button[type="submit"]');
+    const mobileButton = mobileForm?.querySelector('button[type="submit"]');
+
+    if (desktopForm || mobileForm) {
+      const updateHeaderForms = (variant) => {
+        if (!variant || !variant.id) return;
+
+        // Update desktop form
+        if (desktopForm) {
+          const desktopInput = desktopForm.querySelector('input[name="id"]');
+          if (desktopInput) {
+            desktopInput.value = variant.id;
+            desktopInput.disabled = !variant.available || variant === null;
+          }
+          if (desktopButton) {
+            desktopButton.disabled = !variant.available || variant === null;
+            desktopButton.setAttribute('aria-disabled', (!variant.available || variant === null).toString());
+          }
+        }
+
+        // Update mobile form
+        if (mobileForm) {
+          const mobileInput = mobileForm.querySelector('input[name="id"]');
+          if (mobileInput) {
+            mobileInput.value = variant.id;
+            mobileInput.disabled = !variant.available || variant === null;
+          }
+          if (mobileButton) {
+            mobileButton.disabled = !variant.available || variant === null;
+            mobileButton.setAttribute('aria-disabled', (!variant.available || variant === null).toString());
+          }
+        }
+      };
+
+      // Subscribe to variant changes
+      subscribe(PUB_SUB_EVENTS.variantChange, (event) => {
+        if (event && event.data && event.data.variant) {
+          updateHeaderForms(event.data.variant);
+        }
+      });
+    }
+  }
+  {%- endif -%}
 {% endjavascript %}
 
 <script type="application/ld+json">

@@ -80,7 +80,7 @@
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
-    padding: 1rem 2rem;
+    padding: 8px 10px;
     border-radius: {{ section.settings.button_border_radius }}px;
     text-decoration: none;
     font-weight: 600;
@@ -141,8 +141,8 @@
     display: inline-flex;
     align-items: center;
     gap: 0.75rem;
-    padding: 1rem 1.25rem;
-    background-color: {{ section.settings.resource_background }};
+    padding: 8px 10px;
+    background-color: transparent;
     border: 1px solid {{ section.settings.resource_border }};
     border-radius: {{ section.settings.resource_border_radius }}px;
     text-decoration: none;
@@ -154,7 +154,7 @@
   }
 
   .support-cta-{{ section.id }}__resource-link:hover {
-    background-color: {{ section.settings.resource_background_hover }};
+    background-color: transparent;
     transform: translateX(4px);
   }
 
@@ -239,9 +239,7 @@
                       {% endif %}
                     >
                       <span class="support-cta-{{ section.id }}__button-icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M22.7 19L13.6 9.9C14.5 7.6 14 4.9 12.1 3C10.1 1 7.1 0.6 4.7 1.7L9 6L6 9L1.6 4.7C0.4 7.1 0.9 10.1 2.9 12.1C4.8 14 7.5 14.5 9.8 13.6L18.9 22.7C19.3 23.1 19.9 23.1 20.3 22.7L22.6 20.4C23 20 23 19.3 22.7 19Z"/>
-                        </svg>
+                        {{ 'icon-eleco-spanner.svg' | inline_asset_content }}
                       </span>
                       <span>
                         {%- if product.selected_or_first_available_variant == null -%}
@@ -276,7 +274,7 @@
               >
                 <span class="support-cta-{{ section.id }}__button-icon">
                   <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22.7 19L13.6 9.9C14.5 7.6 14 4.9 12.1 3C10.1 1 7.1 0.6 4.7 1.7L9 6L6 9L1.6 4.7C0.4 7.1 0.9 10.1 2.9 12.1C4.8 14 7.5 14.5 9.8 13.6L18.9 22.7C19.3 23.1 19.9 23.1 20.3 22.7L22.6 20.4C23 20 23 19.3 22.7 19Z"/>
+                    {{ 'icon-eleco-spanner.svg' | inline_asset_content }}
                   </svg>
                 </span>
                 {{ section.settings.secondary_button_label }}
@@ -539,7 +537,7 @@
       "step": 1,
       "unit": "px",
       "label": "Button border radius",
-      "default": 4
+      "default": 10
     },
     {
       "type": "range",

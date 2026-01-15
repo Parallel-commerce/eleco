@@ -58,6 +58,9 @@
   .comparison-table-{{ section.id }}__header-cell:not(:first-child) {
     flex: 1 1 16.67%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .comparison-table-{{ section.id }}__table {
@@ -164,12 +167,11 @@
     }
 
     .comparison-table-{{ section.id }}__header-cell:first-child {
-      flex: 1 1 50%;
-      overflow-x: auto;
+      flex: 1 1 33.33%;
     }
 
     .comparison-table-{{ section.id }}__header-cell:not(:first-child) {
-      flex: 1 1 25%;
+      flex: 1 1 33.33%;
     }
 
     .comparison-table-{{ section.id }}__table {
@@ -187,24 +189,27 @@
     }
 
     .comparison-table-{{ section.id }}__cell:first-child {
-      flex: 1 1 50%;
-      overflow-x: auto;
+      flex: 1 1 33.33%;
     }
 
     .comparison-table-{{ section.id }}__cell:not(:first-child) {
-      flex: 1 1 25%;
+      flex: 1 1 33.33%;
     }
 
     .comparison-table-{{ section.id }}__header-cell,
     .comparison-table-{{ section.id }}__cell {
-      padding: {{ section.settings.cell_padding | times: 0.75 | round: 0 }}px;
+      padding: 12px;
       font-size: {{ section.settings.cell_font_size | times: 0.9 | round: 0 }}px;
     }
 
     .comparison-table-{{ section.id }}__header-cell {
-      font-size: {{ section.settings.header_font_size | times: 0.9 | round: 0 }}px;
+      font-size: 14px;
       display: flex;
       align-items: center;
+    }
+
+    .comparison-table-{{ section.id }}__header-cell:not(:first-child) {
+      justify-content: center;
     }
 
     .comparison-table-{{ section.id }}__buttons {

@@ -20,6 +20,12 @@
     display: block;
   }
 
+  @media screen and (max-width: 749px) {
+    #AwardBanner-{{ section.id }} .award-banner__background {
+      height: 35rem;
+    }
+  }
+
   @media screen and (min-width: 750px) {
     #AwardBanner-{{ section.id }} .award-banner__image-wrapper {
       position: absolute;
