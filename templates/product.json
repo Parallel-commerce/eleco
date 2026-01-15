@@ -626,7 +626,7 @@
         "logo_spacing": 40,
         "logo_opacity": 100,
         "logo_hover_opacity": 100,
-        "mobile_columns": "1",
+        "mobile_columns": "2",
         "anchor_id": "",
         "padding_top": 0,
         "padding_bottom": 40
@@ -776,7 +776,7 @@
         "logo_spacing": 40,
         "logo_opacity": 100,
         "logo_hover_opacity": 100,
-        "mobile_columns": "1",
+        "mobile_columns": "2",
         "anchor_id": "",
         "padding_top": 40,
         "padding_bottom": 40
