@@ -68,7 +68,7 @@
   .faq-accordion-{{ section.id }}__question {
     flex: 1;
     margin: 0;
-    font-weight: {{ section.settings.question_font_weight }};
+    font-weight: 600;
     font-size: {{ section.settings.question_font_size }}px;
     line-height: 1.4;
     text-align: left;
@@ -333,30 +333,6 @@
       "unit": "px",
       "label": "Question font size",
       "default": 16
-    },
-    {
-      "type": "select",
-      "id": "question_font_weight",
-      "label": "Question font weight",
-      "options": [
-        {
-          "value": "400",
-          "label": "Normal"
-        },
-        {
-          "value": "500",
-          "label": "Medium"
-        },
-        {
-          "value": "600",
-          "label": "Semi-bold"
-        },
-        {
-          "value": "700",
-          "label": "Bold"
-        }
-      ],
-      "default": "400"
     },
     {
       "type": "header",
