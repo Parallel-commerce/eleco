@@ -207,7 +207,7 @@
         "heading_GGwQtN": {
           "type": "heading",
           "settings": {
-            "heading": "Heading",
+            "heading": "Simple planning for clarity and confidence",
             "heading_size": "h1"
           }
         },
@@ -215,21 +215,28 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Build site-ready programmes fast"
           }
         },
         "feature_item_efdUrz": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Create linked short-term lookaheads"
           }
         },
         "feature_item_eVF6yn": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Simple for site teams, robust for planners"
+          }
+        },
+        "feature_item_KKhGzp": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Works seamlessly with main schedules in Asta Powerproject"
           }
         }
       },
@@ -237,7 +244,8 @@
         "heading_GGwQtN",
         "feature_item_CkdfUp",
         "feature_item_efdUrz",
-        "feature_item_eVF6yn"
+        "feature_item_eVF6yn",
+        "feature_item_KKhGzp"
       ],
       "name": "Image with features",
       "settings": {
@@ -265,7 +273,7 @@
         "heading_qDbMj8": {
           "type": "heading",
           "settings": {
-            "heading": "Heading",
+            "heading": "Keep up with change on site",
             "heading_size": "h1"
           }
         },
@@ -273,21 +281,28 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Update tasks and logic quickly"
           }
         },
         "feature_item_gVYYUV": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Replan blocks of work easily"
+          }
+        },
+        "feature_item_m7wxha": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Reduce time on admin"
           }
         },
         "feature_item_iRNHQw": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Highlight impacts of change clearly"
           }
         }
       },
@@ -295,6 +310,7 @@
         "heading_qDbMj8",
         "feature_item_8agkWh",
         "feature_item_gVYYUV",
+        "feature_item_m7wxha",
         "feature_item_iRNHQw"
       ],
       "name": "Image with features",
@@ -323,7 +339,7 @@
         "heading_EU6MmW": {
           "type": "heading",
           "settings": {
-            "heading": "Heading",
+            "heading": "Turn plans into trusted reports",
             "heading_size": "h1"
           }
         },
@@ -331,21 +347,28 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Share simple, visual schedules"
           }
         },
         "feature_item_JY6MwN": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Give leadership visibility"
           }
         },
         "feature_item_prUy3i": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Align site and main programmes"
+          }
+        },
+        "feature_item_UaG9Ah": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Evidence progress and delays"
           }
         }
       },
@@ -353,7 +376,8 @@
         "heading_EU6MmW",
         "feature_item_Wp9bXU",
         "feature_item_JY6MwN",
-        "feature_item_prUy3i"
+        "feature_item_prUy3i",
+        "feature_item_UaG9Ah"
       ],
       "name": "Image with features",
       "settings": {
@@ -480,11 +504,11 @@
           "type": "accordion_item",
           "settings": {
             "title": "Contractors",
-            "content_1": "<p>Powerful critical path analysis and precise scheduling.</p>",
-            "content_2": "<p>Powerful critical path analysis and precise scheduling.</p>",
-            "content_3": "<p>Powerful critical path analysis and precise scheduling.</p>",
-            "content_4": "",
-            "content_5": "",
+            "content_1": "<p>Link and maintain fully resourced short term plans that align to the master schedule.</p>",
+            "content_2": "<p>Create baselines to evidence the impact of late information, variations, and access issues.</p>",
+            "content_3": "<p>Use visual logic views to show how resequencing affects milestones and handover dates.</p>",
+            "content_4": "<p>Track resources and costs against plan to protect margin.</p>",
+            "content_5": "<p>Produce clear delay and disruption records to support commercial positions.</p>",
             "content_6": ""
           }
         },
@@ -511,12 +535,25 @@
             "content_5": "",
             "content_6": ""
           }
+        },
+        "accordion_item_aFFapF": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Accordion title",
+            "content_1": "<p>Add your descriptive copy here.</p>",
+            "content_2": "",
+            "content_3": "",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
         }
       },
       "block_order": [
         "accordion_item_AX7zXQ",
         "accordion_item_htnMQm",
-        "accordion_item_EDULcY"
+        "accordion_item_EDULcY",
+        "accordion_item_aFFapF"
       ],
       "name": "Two-Column Accordion",
       "settings": {
@@ -830,7 +867,6 @@
         "item_padding": 18,
         "border_radius": 12,
         "question_font_size": 16,
-        "question_font_weight": "400",
         "color_scheme": "",
         "item_background": "#f6f7f7",
         "item_background_active": "#fce8e6",
