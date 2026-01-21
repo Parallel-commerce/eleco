@@ -516,10 +516,10 @@
           "type": "accordion_item",
           "settings": {
             "title": "Sub contractors",
-            "content_1": "<p>Comprehensive resource and cost management, early identification of budget issues.</p>",
-            "content_2": "",
-            "content_3": "",
-            "content_4": "",
+            "content_1": "<p>Break down main contractor programmes into clear, trade-specific work packages.</p>",
+            "content_2": "<p>Maintain short-term lookahead schedules that stay aligned with the master schedule.</p>",
+            "content_3": "<p>Quickly resequence activities as access, design, or predecessor trades change.</p>",
+            "content_4": "<p>Track labour, plant, and productivity to keep packages on target.</p>",
             "content_5": "",
             "content_6": ""
           }
@@ -528,23 +528,35 @@
           "type": "accordion_item",
           "settings": {
             "title": "Designers and consultancy",
-            "content_1": "<p>Detailed history of project changes to support claims and resolve disputes.</p>",
-            "content_2": "",
-            "content_3": "",
-            "content_4": "",
-            "content_5": "",
+            "content_1": "<p>Build integrated design, approval, and procurement programmes with clear dependencies.</p>",
+            "content_2": "<p>Coordinate design deliverables with construction sequences.</p>",
+            "content_3": "<p>Model “what-if” scenarios to advise clients on phasing, acceleration, and mitigation options.</p>",
+            "content_4": "<p>Apply structured coding to analyse progress by discipline, package, or building zone.</p>",
+            "content_5": "<p>Generate concise reports that support planning submissions and stakeholder reviews.</p>",
             "content_6": ""
           }
         },
         "accordion_item_aFFapF": {
           "type": "accordion_item",
           "settings": {
-            "title": "Accordion title",
-            "content_1": "<p>Add your descriptive copy here.</p>",
-            "content_2": "",
-            "content_3": "",
-            "content_4": "",
-            "content_5": "",
+            "title": "Residential construction",
+            "content_1": "<p>Plan repeatable unit types, phases, and blocks using reusable templates.</p>",
+            "content_2": "<p>Sequence trades efficiently across plots to maximise crew productivity.</p>",
+            "content_3": "<p>Track starts, completions, and handovers by plot, block, and tenure.</p>",
+            "content_4": "<p>Monitor key dates for inspections, client changes, and legal completions.</p>",
+            "content_5": "<p>Report clearly on build progress, slippage, and forecast completions.</p>",
+            "content_6": ""
+          }
+        },
+        "accordion_item_tQ9Tta": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Clients and asset owners",
+            "content_1": "<p>View consistent programme structures across multiple projects and frameworks.</p>",
+            "content_2": "<p>Compare baseline and current forecasts to spot emerging delays early.</p>",
+            "content_3": "<p>Apply coding to analyse performance by region, contractor, or asset type.</p>",
+            "content_4": "<p>Link milestones to strategic outcomes, budgets, and operational readiness.</p>",
+            "content_5": "<p>Receive transparent reporting that supports governance, approvals, and investment decisions.</p>",
             "content_6": ""
           }
         }
@@ -553,7 +565,8 @@
         "accordion_item_AX7zXQ",
         "accordion_item_htnMQm",
         "accordion_item_EDULcY",
-        "accordion_item_aFFapF"
+        "accordion_item_aFFapF",
+        "accordion_item_tQ9Tta"
       ],
       "name": "Two-Column Accordion",
       "settings": {
@@ -675,25 +688,15 @@
         "testimonial_tHbLzP": {
           "type": "testimonial",
           "settings": {
-            "name": "Dan Morar",
-            "title": "CEO topcarrentals.ro",
+            "name": "Jamie Smith",
+            "title": "Senior Project Manager | Careys",
             "country_flag": "",
-            "testimonial_text": "The Vertical Digital team was essential for building, launching and growing our rental and booking platforms. With them we always had a trusted, loyal and dedicated partner for our success."
-          }
-        },
-        "testimonial_FTmqJ9": {
-          "type": "testimonial",
-          "settings": {
-            "name": "Levin Wense",
-            "title": "CEO and Co-founder MVP Match",
-            "country_flag": "",
-            "testimonial_text": "I would highly recommend their services to any company looking for top-notch IT staff. They have truly been a valuable partner for our business and have played an important role in our success."
+            "testimonial_text": "Programmes change throughout the lifecycle of a project and Easyplan makes it simple for us to manage those changes."
           }
         }
       },
       "block_order": [
-        "testimonial_tHbLzP",
-        "testimonial_FTmqJ9"
+        "testimonial_tHbLzP"
       ],
       "name": "Testimonials",
       "settings": {
@@ -711,24 +714,6 @@
     "parallel_custom_product_list_M7EFHt": {
       "type": "parallel-custom-product-list",
       "blocks": {
-        "product_9Fqg3n": {
-          "type": "product",
-          "settings": {
-            "product": "asta-connect"
-          }
-        },
-        "product_Hi9e7N": {
-          "type": "product",
-          "settings": {
-            "product": "asta-enterprise"
-          }
-        },
-        "product_aeUw4W": {
-          "type": "product",
-          "settings": {
-            "product": "asta-estimate"
-          }
-        },
         "product_3Mi7Bg": {
           "type": "product",
           "settings": {
@@ -737,14 +722,11 @@
         }
       },
       "block_order": [
-        "product_9Fqg3n",
-        "product_Hi9e7N",
-        "product_aeUw4W",
         "product_3Mi7Bg"
       ],
       "name": "Custom Product List",
       "settings": {
-        "heading": "Related Products",
+        "heading": "Asta Integrations",
         "heading_size": "h2",
         "heading_alignment": "left",
         "button_text": "Learn more",
@@ -756,97 +738,69 @@
         "padding_bottom": 36
       }
     },
-    "parallel_logo_block_Kyk8RD": {
-      "type": "parallel-logo-block",
-      "blocks": {
-        "logo_X7DT6Q": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/sparklayer_black.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_X3bNgL": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_pfRhE7": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/partner_logo_2.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_XpeMAz": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/partner_logo_3.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        }
-      },
-      "block_order": [
-        "logo_X7DT6Q",
-        "logo_X3bNgL",
-        "logo_pfRhE7",
-        "logo_XpeMAz"
-      ],
-      "name": "Logo Block",
-      "settings": {
-        "color_scheme": "scheme-2",
-        "title": "Partner Integrataions",
-        "heading_size": "h2",
-        "title_alignment": "left",
-        "title_spacing": 24,
-        "logo_width": 150,
-        "logo_spacing": 40,
-        "logo_opacity": 100,
-        "logo_hover_opacity": 100,
-        "mobile_columns": "2",
-        "anchor_id": "",
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
     "parallel_faq_accordion_3Vq7Fm": {
       "type": "parallel-faq-accordion",
       "blocks": {
         "faq_item_QVNkTB": {
           "type": "faq_item",
           "settings": {
-            "question": "Who is Asta Powerproject for?",
-            "answer": "<p>This is a sample answer to the first question.</p>"
+            "question": "Who is Easyplan for?",
+            "answer": "<p>Easyplan is designed for planners, project managers and site teams who need clear, practical programmes without the complexity of enterprise scheduling tools. </p><p>It suitable for simple projects or to breakdown work packages, where fast, reliable project plans that are easy to update and share are required.</p>"
           }
         },
         "faq_item_bVkqMa": {
           "type": "faq_item",
           "settings": {
-            "question": "Why is Asta better than the competition?",
-            "answer": "<p>This is a sample answer to the second question.</p>"
+            "question": "Can it be used on a MacBook?",
+            "answer": "<p>Yes, Easyplan can be used on a MacBook by running Windows through a compatible virtualisation or remote desktop solution. This allows Mac users to access the full Easyplan feature set in a similar way to other Windows-only project planning tools.</p>"
           }
         },
         "faq_item_jARANR": {
           "type": "faq_item",
           "settings": {
-            "question": "What is the difference between a single and a concurrent license?",
-            "answer": "<p>This is a sample answer to the third question.</p>"
+            "question": "How does Easyplan work with Asta Powerproject?",
+            "answer": "<p>Easyplan is often used as a complementary tool to Asta Powerproject, giving site and package teams a simpler environment while maintaining alignment with the main programme. Schedules can be structured to mirror key milestones and logic in Asta Powerproject so that reporting and governance remain consistent.</p>"
           }
         },
         "faq_item_bAXDXk": {
           "type": "faq_item",
           "settings": {
-            "question": "Can stakeholders see my project if they don't have a license?",
+            "question": "Why choose Easyplan over other simple scheduling tools?",
+            "answer": "<p>Easyplan combines the clarity and speed of “lightweight” planning tools with more robust logic and reporting than spreadsheets or basic Gantt apps. It helps users build realistic programmes quickly, replan as conditions change, and clearly demonstrate the impact of delays or scope changes.</p>"
+          }
+        },
+        "faq_item_rViXyC": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is Easyplan suitable for smaller contractors and subcontractors?",
+            "answer": "<p>Yes, Easyplan is well suited to smaller organisations that need professional-grade programmes without the overhead of complex enterprise systems. It supports trade-level planning, short-term lookaheads, and simple capture of progress to support applications, valuations, and client updates.</p>"
+          }
+        },
+        "faq_item_ecK9Wr": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can stakeholders view my Easyplan schedules without a full licence?",
+            "answer": "<p>Stakeholders can typically receive schedules as exported files, PDFs, or reports that can be opened without a full planning licence. This makes it easier to share programme information with clients, partners, and internal teams who only need to view, not edit, the schedule.</p>"
+          }
+        },
+        "faq_item_JbHDhY": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can a licence be transferred to another colleague or device?",
+            "answer": "<p>Yes, licences can usually be reallocated if team members change or devices are upgraded, following your organisation’s licence management process. Your account or support team can advise on how best to move licences between users or machines; contact us at support@elecosoft.com.</p>"
+          }
+        },
+        "faq_item_RjmqQC": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What support and training are available?",
+            "answer": "<p>Easyplan is typically supported with onboarding assistance, documentation, and optional training to help teams get value quickly. Training can cover core scheduling skills, best practice workflows, and how to align Easyplan with other tools used in your business.</p>"
+          }
+        },
+        "faq_item_9y3Mj6": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Who is Asta Powerproject for?",
             "answer": "<p>If a stakeholder hasn't bought a licence but needs to view the project, they can download our Project Viewer.</p>"
           }
         }
@@ -855,7 +809,12 @@
         "faq_item_QVNkTB",
         "faq_item_bVkqMa",
         "faq_item_jARANR",
-        "faq_item_bAXDXk"
+        "faq_item_bAXDXk",
+        "faq_item_rViXyC",
+        "faq_item_ecK9Wr",
+        "faq_item_JbHDhY",
+        "faq_item_RjmqQC",
+        "faq_item_9y3Mj6"
       ],
       "name": "FAQ Accordion",
       "settings": {
@@ -898,10 +857,40 @@
             "column_3_text": "Unlimited"
           }
         },
+        "comparison_row_fcy6Rt": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Start on or After constraints",
+            "column_2_type": "tick",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_zMLTPJ": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Integrates with other Asta software",
+            "column_2_type": "tick",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
         "comparison_row_3E8i6B": {
           "type": "comparison_row",
           "settings": {
             "functionality_text": "Overlapping tasks",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_awV8wN": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Baseline comparison and analysis",
             "column_2_type": "cross",
             "column_2_text": "Value",
             "column_3_type": "tick",
@@ -918,11 +907,61 @@
             "column_3_text": "Value"
           }
         },
-        "comparison_row_DbzVPR": {
+        "comparison_row_7CFTzy": {
           "type": "comparison_row",
           "settings": {
-            "functionality_text": "Start On or After constraints",
-            "column_2_type": "tick",
+            "functionality_text": "Tasks can be set to ASAP or ALAP",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_bcXKGn": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Edit view based presentation",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_t7e3tF": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Float and negative path calculations",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_3PJpmD": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Depth and colour dependent on certain criteria",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_7P68gH": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Formalae to display user-definable information",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_fH4a4q": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "A user to issue part of a programme to another user for editing without causing conflicts within the file",
+            "column_2_type": "cross",
             "column_2_text": "Value",
             "column_3_type": "tick",
             "column_3_text": "Value"
@@ -932,9 +971,17 @@
       "block_order": [
         "comparison_row_9B77nj",
         "comparison_row_hhDyjA",
+        "comparison_row_fcy6Rt",
+        "comparison_row_zMLTPJ",
         "comparison_row_3E8i6B",
+        "comparison_row_awV8wN",
         "comparison_row_rJAtXQ",
-        "comparison_row_DbzVPR"
+        "comparison_row_7CFTzy",
+        "comparison_row_bcXKGn",
+        "comparison_row_t7e3tF",
+        "comparison_row_3PJpmD",
+        "comparison_row_7P68gH",
+        "comparison_row_fH4a4q"
       ],
       "name": "Comparison Table",
       "settings": {
@@ -944,15 +991,15 @@
         "column_1_title": "Functionality",
         "column_2_title": "Easyplan",
         "column_3_title": "Asta Powerproject",
-        "button_1_label": "Learn more",
+        "button_1_label": "Buy Now",
         "button_1_link": "",
         "button_1_border_color": "#e83f40",
-        "button_1_text_color": "#e83f40",
-        "button_1_hover_text_color": "#ffffff",
-        "button_2_label": "Buy Now",
+        "button_1_text_color": "#ffffff",
+        "button_1_hover_text_color": "#d14a32",
+        "button_2_label": "Learn more",
         "button_2_link": "",
-        "button_2_background_color": "#e83f40",
-        "button_2_text_color": "#ffffff",
+        "button_2_background_color": "#ffffff",
+        "button_2_text_color": "#e83f40",
         "button_2_hover_background_color": "#d14a32",
         "button_2_hover_text_color": "#ffffff",
         "button_spacing": 40,
@@ -1093,7 +1140,6 @@
     "parallel_logo_block_hHLWpL",
     "parallel_testimonials_6ayBHg",
     "parallel_custom_product_list_M7EFHt",
-    "parallel_logo_block_Kyk8RD",
     "parallel_faq_accordion_3Vq7Fm",
     "parallel_comparison_table_eeJhkm",
     "parallel_support_cta_RxfB67",
