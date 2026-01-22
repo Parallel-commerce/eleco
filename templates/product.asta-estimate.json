@@ -207,7 +207,7 @@
         "heading_GGwQtN": {
           "type": "heading",
           "settings": {
-            "heading": "Heading",
+            "heading": "Estimate projects faster with connected data",
             "heading_size": "h1"
           }
         },
@@ -215,21 +215,21 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Build accurate cost plans quickly"
           }
         },
         "feature_item_efdUrz": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Automate BIM and PDF take-offs"
           }
         },
         "feature_item_eVF6yn": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Link cost and time in one place"
           }
         }
       },
@@ -265,7 +265,7 @@
         "heading_qDbMj8": {
           "type": "heading",
           "settings": {
-            "heading": "Heading",
+            "heading": "Keep teams on the same page",
             "heading_size": "h1"
           }
         },
@@ -273,21 +273,21 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Work from a single project dataset"
           }
         },
         "feature_item_gVYYUV": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Connect estimating, planning and delivery"
           }
         },
         "feature_item_iRNHQw": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Keep cost, time and carbon aligned"
           }
         }
       },
@@ -323,7 +323,7 @@
         "heading_EU6MmW": {
           "type": "heading",
           "settings": {
-            "heading": "Heading",
+            "heading": "Win more work and prove value",
             "heading_size": "h1"
           }
         },
@@ -331,21 +331,21 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Increase bid accuracy and consistency"
           }
         },
         "feature_item_JY6MwN": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Show carbon, time and cost side by side"
           }
         },
         "feature_item_prUy3i": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Report performance clearly to clients"
           }
         }
       },
@@ -406,7 +406,7 @@
         "richtext_LJNcig": {
           "type": "richtext",
           "settings": {
-            "text": "<h1>Voted best <span style=\"text-decoration:underline\">Project Management </span>Software</h1>"
+            "text": "<h1>UK's <span style=\"text-decoration:underline\">newest </span>costing and estimating software</h1>"
           }
         }
       },
@@ -480,9 +480,9 @@
           "type": "accordion_item",
           "settings": {
             "title": "Contractors",
-            "content_1": "<p>Powerful critical path analysis and precise scheduling.</p>",
-            "content_2": "<p>Powerful critical path analysis and precise scheduling.</p>",
-            "content_3": "<p>Powerful critical path analysis and precise scheduling.</p>",
+            "content_1": "<p>Improve bid accuracy and consistency with structured, up-to-date cost databases instead of spreadsheets, reducing the risk of underpricing or missed items on projects.​</p>",
+            "content_2": "<p>Link estimates directly with schedules and BIM to see cost, time and carbon impacts together, helping contractors manage change, protect margin and evidence decisions to Tier 1 clients and funders.</p>",
+            "content_3": "",
             "content_4": "",
             "content_5": "",
             "content_6": ""
@@ -492,8 +492,8 @@
           "type": "accordion_item",
           "settings": {
             "title": "Sub contractors",
-            "content_1": "<p>Comprehensive resource and cost management, early identification of budget issues.</p>",
-            "content_2": "",
+            "content_1": "<p>Enable repeatable, fast estimating for frequent tenders, with reusable templates and libraries that suit specialist trades such as steel, concrete and MEP.​</p>",
+            "content_2": "<p>Provide clear, structured breakdowns of cost, time and carbon that make it easier to respond to multiple main contractors on the same project while demonstrating professionalism and transparency.</p>",
             "content_3": "",
             "content_4": "",
             "content_5": "",
@@ -504,8 +504,32 @@
           "type": "accordion_item",
           "settings": {
             "title": "Designers and consultancy",
-            "content_1": "<p>Detailed history of project changes to support claims and resolve disputes.</p>",
-            "content_2": "",
+            "content_1": "<p>Model-based quantity take-offs and linked cost plans, creating a robust basis for early-stage option studies and value engineering.​</p>",
+            "content_2": "<p>Transparent carbon and cost metrics that help advisors test scenarios, support planning submissions and meet emerging sustainability and reporting standards.</p>",
+            "content_3": "",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_TaQTDx": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Residential construction",
+            "content_1": "<p>A consistent way to price standard house types, phases and options using reusable cost structures and assemblies.​</p>",
+            "content_2": "<p>Produce detailed cost and carbon breakdowns that support internal approvals, sales pricing, and compliance requirements such as those linked to the Building Safety Act.</p>",
+            "content_3": "",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_UPkC8E": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Clients and asset owners",
+            "content_1": "<p>Standardised reports that show cost, time and carbon in a format that is easy to review across multiple projects and suppliers.​</p>",
+            "content_2": "<p>Enable better decision-making by making the impact of design changes and phasing visible early, supporting more reliable budgets, programmes and sustainability targets over the asset lifecycle.</p>",
             "content_3": "",
             "content_4": "",
             "content_5": "",
@@ -516,7 +540,9 @@
       "block_order": [
         "accordion_item_AX7zXQ",
         "accordion_item_htnMQm",
-        "accordion_item_EDULcY"
+        "accordion_item_EDULcY",
+        "accordion_item_TaQTDx",
+        "accordion_item_UPkC8E"
       ],
       "name": "Two-Column Accordion",
       "settings": {
@@ -674,22 +700,10 @@
     "parallel_custom_product_list_M7EFHt": {
       "type": "parallel-custom-product-list",
       "blocks": {
-        "product_9Fqg3n": {
-          "type": "product",
-          "settings": {
-            "product": "asta-connect"
-          }
-        },
         "product_Hi9e7N": {
           "type": "product",
           "settings": {
             "product": "asta-enterprise"
-          }
-        },
-        "product_aeUw4W": {
-          "type": "product",
-          "settings": {
-            "product": "asta-estimate"
           }
         },
         "product_3Mi7Bg": {
@@ -700,14 +714,12 @@
         }
       },
       "block_order": [
-        "product_9Fqg3n",
         "product_Hi9e7N",
-        "product_aeUw4W",
         "product_3Mi7Bg"
       ],
       "name": "Custom Product List",
       "settings": {
-        "heading": "Related Products",
+        "heading": "Asta Integrations",
         "heading_size": "h2",
         "heading_alignment": "left",
         "button_text": "Learn more",
@@ -788,37 +800,85 @@
         "faq_item_QVNkTB": {
           "type": "faq_item",
           "settings": {
-            "question": "Who is Asta Powerproject for?",
-            "answer": "<p>This is a sample answer to the first question.</p>"
+            "question": "Who is Asta Estimate for?",
+            "answer": "<p>Asta Estimate is designed for estimators, QSs, planners and project teams who need accurate, structured estimates that link cost, time and carbon in one place.</p><p>It is designed to provide consistent, auditable estimating rather than ad‑hoc spreadsheets.<br/><br/></p>"
           }
         },
         "faq_item_bVkqMa": {
           "type": "faq_item",
           "settings": {
-            "question": "Why is Asta better than the competition?",
-            "answer": "<p>This is a sample answer to the second question.</p>"
+            "question": "Is Asta Estimate suitable for smaller contractors and subcontractors?",
+            "answer": "<p>Yes, Asta Estimate works well for smaller organisations that need professional-grade estimating without the overhead of complex enterprise systems. It supports repetitive tenders, trade-level breakdowns and standard templates so teams can price quickly and present estimates clearly to main contractors and clients.</p>"
+          }
+        },
+        "faq_item_Ud6FWL": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How does Asta Estimate work with Asta Powerproject?",
+            "answer": "<p>Asta Estimate connects directly with Asta Powerproject so that cost and time share the same underlying data. This allows teams to align estimates with programmes, use model-based quantities in both tools, and maintain a single thread of information from tender through delivery.​</p>"
           }
         },
         "faq_item_jARANR": {
           "type": "faq_item",
           "settings": {
-            "question": "What is the difference between a single and a concurrent license?",
-            "answer": "<p>This is a sample answer to the third question.</p>"
+            "question": "Where does the cost database come from?",
+            "answer": "<p>Asta Estimate includes structured cost libraries that draw on recognised data sources including the RICS NRM1 and NRM2, which is widely used across the civil and construction sectors. These libraries can be customised with company norms, regional pricing and project-specific rates so that each organisation can refine the baseline data to its own standards.</p>"
           }
         },
         "faq_item_bAXDXk": {
           "type": "faq_item",
           "settings": {
-            "question": "Can stakeholders see my project if they don't have a license?",
-            "answer": "<p>If a stakeholder hasn't bought a licence but needs to view the project, they can download our Project Viewer.</p>"
+            "question": "Can the cost database be customised?",
+            "answer": "<p>Yes, users can adapt and extend the cost database, adding or editing items, assemblies and labour rates to match their own methods and supply chain. This helps teams maintain consistency across bids while still reflecting real-world pricing and productivity.<br/><br/></p>"
+          }
+        },
+        "faq_item_DQVGf9": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Does Asta Estimate integrate with other systems?",
+            "answer": "<p>Yes, Asta Estimate is designed to work within a broader digital ecosystem, including BIM tools, Bluebeam-based take-off workflows, ERP and analytics platforms.</p><p>This reduces double entry, improves reporting and helps different teams work from one consistent dataset.</p>"
+          }
+        },
+        "faq_item_ebJJeq": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How does Asta Estimate handle carbon?",
+            "answer": "<p>Asta Estimate includes carbon calculation and reporting tools, allowing users to link climate data and EPDs to cost plans through a dedicated Climate Module. Carbon data is taken from the ICE database. This gives early visibility of carbon impact alongside cost, supporting compliance, client reporting and more sustainable decision-making.</p>"
+          }
+        },
+        "faq_item_g4eBDE": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can Asta Estimate be used on a MacBook?",
+            "answer": "<p>Asta Estimate is Windows-based, but Mac users can typically run it by using Windows via a virtual machine or remote desktop solution. This approach is similar to how other Windows-only construction applications are used in mixed IT environments.</p>"
+          }
+        },
+        "faq_item_xMEVnw": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can a licence be transferred to another colleague or device?",
+            "answer": "<p>Licences can normally be reassigned if team members change roles or devices are upgraded, following your organisation’s licence management process. Your account manager or support contact can advise on the practical steps to move licences between users or machines. You can contact us at support@elecosoft.com.</p>"
+          }
+        },
+        "faq_item_acXeiH": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What support and training are available?",
+            "answer": "<p>We provide comprehensive in-house training solutions for new users, ensuring everyone can get the most out of Asta Estimate.</p>"
           }
         }
       },
       "block_order": [
         "faq_item_QVNkTB",
         "faq_item_bVkqMa",
+        "faq_item_Ud6FWL",
         "faq_item_jARANR",
-        "faq_item_bAXDXk"
+        "faq_item_bAXDXk",
+        "faq_item_DQVGf9",
+        "faq_item_ebJJeq",
+        "faq_item_g4eBDE",
+        "faq_item_xMEVnw",
+        "faq_item_acXeiH"
       ],
       "name": "FAQ Accordion",
       "settings": {
@@ -830,7 +890,6 @@
         "item_padding": 18,
         "border_radius": 12,
         "question_font_size": 16,
-        "question_font_weight": "400",
         "color_scheme": "",
         "item_background": "#f6f7f7",
         "item_background_active": "#fce8e6",
@@ -900,6 +959,7 @@
         "comparison_row_rJAtXQ",
         "comparison_row_DbzVPR"
       ],
+      "disabled": true,
       "name": "Comparison Table",
       "settings": {
         "heading": "Compare products",
@@ -1010,6 +1070,7 @@
       "blocks": {
         "info_block_WNhbpE": {
           "type": "info_block",
+          "disabled": true,
           "settings": {
             "heading": "Try Asta Powerproject before you buy",
             "text": "<p>See how Asta Powerproject can work for you and your organisation.</p><p>Asta Powerproject supports more than 100,000 professionals worldwide in delivering successful projects by equipping organisations with the award-winning project, program, and resource management tools necessary to bring their built asset to life, regardless of scale; whether a high-profile megaproject, single storey extensions or anything in between.</p><p>Sales team: +44 1844 281 700</p>"
@@ -1017,6 +1078,7 @@
         },
         "info_block_39Mnd3": {
           "type": "info_block",
+          "disabled": true,
           "settings": {
             "heading": "Need a single Education licence?",
             "text": "<p>To receive an education licence, an authorised officer of the educational establishment can complete this form to start the process.</p>"
