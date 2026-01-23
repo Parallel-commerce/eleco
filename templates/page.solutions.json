@@ -11,13 +11,57 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "parallel_video_three_column_mjC6Cp": {
+      "type": "parallel-video-three-column",
+      "blocks": {
+        "video_item_pq4gaw": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "video_item_FBApFg": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "video_item_44Wfam": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_item_pq4gaw",
+        "video_item_FBApFg",
+        "video_item_44Wfam"
+      ],
+      "name": "Three Column Video",
+      "settings": {
+        "heading": "Video Gallery",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "full_width": false,
+        "color_scheme": "",
+        "anchor_id": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "parallel_video_three_column_mjC6Cp"
   ]
 }
