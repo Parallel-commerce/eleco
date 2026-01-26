@@ -1147,6 +1147,16 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "custom_liquid_J74cfT": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<script type=\"text/javascript\">var loc = \"https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/\";var cdSurveyCdn = \"https://cdn-eu.clickdimensions.com/web/newformeditor/\";</script>\n<script type=\"text/javascript\" src=\"https://cdn-eu.clickdimensions.com/web/newformeditor/CDWidget.js\"></script>\n<div pageID=\"1laq6gu7efc0y3weui1vuq\"></div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -1168,6 +1178,7 @@
     "parallel_comparison_table_eeJhkm",
     "parallel_support_cta_RxfB67",
     "parallel_information_Ehxmkb",
-    "custom_liquid_pz7cCE"
+    "custom_liquid_pz7cCE",
+    "custom_liquid_J74cfT"
   ]
 }
