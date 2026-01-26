@@ -23,33 +23,13 @@
         "heading_PGKFGb": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Industries",
             "heading_size": "h1"
-          }
-        },
-        "text_faWrjU": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "buttons_hYMThE": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Construction",
-            "button_link_1": "shopify://collections/construction",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "heading_PGKFGb",
-        "text_faWrjU",
-        "buttons_hYMThE"
+        "heading_PGKFGb"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
@@ -57,171 +37,106 @@
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "image_behavior": "none",
-        "desktop_content_position": "middle-center",
+        "desktop_content_position": "bottom-left",
         "desktop_content_alignment": "center",
-        "show_text_box": true,
-        "color_scheme": "",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
         "show_text_below": true
       }
     },
-    "image_with_text_RJ887M": {
-      "type": "image-with-text",
+    "rich_text_KpRgxW": {
+      "type": "rich-text",
       "blocks": {
-        "caption_TeRYtP": {
-          "type": "caption",
-          "settings": {
-            "caption": "Add a tagline",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "heading_EibKjL": {
+        "heading_kwwKXQ": {
           "type": "heading",
+          "disabled": true,
           "settings": {
-            "heading": "Image with text",
+            "heading": "Industries",
             "heading_size": "h1"
           }
         },
-        "text_tddzMj": {
+        "text_9J9nyn": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_style": "body"
+            "text": "<p>Designed to handle the realities of live worksites, the Asta suite is built for the full spectrum of the built environment industry supporting construction, infrastructure, civil engineering, fit-outs, residential developments, and complex engineering projects.</p><p>The Asta software solutions gives teams real-time visibility, smarter resource planning, and reliable project scheduling from pre-construction through delivery.<br/><br/>Whether you’re managing large-scale infrastructure works, fast-paced commercial fit-outs, or residential builds, our software solution helps reduce delays, improve collaboration, and keep projects on time and on budget.</p>"
           }
         }
       },
       "block_order": [
-        "caption_TeRYtP",
-        "heading_EibKjL",
-        "text_tddzMj"
+        "heading_kwwKXQ",
+        "text_9J9nyn"
       ],
-      "name": "t:sections.image-with-text.presets.name",
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/failte-restaurant-image.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
-    "parallel_custom_product_list_6cFMEH": {
-      "type": "parallel-custom-product-list",
+    "collection_list_wTHGGQ": {
+      "type": "collection-list",
       "blocks": {
-        "product_Y4niiq": {
-          "type": "product",
+        "featured_collection_b77MfP": {
+          "type": "featured_collection",
           "settings": {
-            "product": "asta-powerproject"
+            "collection": "construction"
           }
         },
-        "product_cG8JNg": {
-          "type": "product",
+        "featured_collection_mxWchU": {
+          "type": "featured_collection",
           "settings": {
-            "product": "asta-vision"
+            "collection": "infastructure"
           }
         },
-        "product_phptNL": {
-          "type": "product",
+        "featured_collection_Rzgj3Y": {
+          "type": "featured_collection",
           "settings": {
-            "product": ""
+            "collection": "civil-engineering"
+          }
+        },
+        "featured_collection_qNpDML": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "fit-out"
+          }
+        },
+        "featured_collection_jgiJHh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "residential"
+          }
+        },
+        "featured_collection_i9Vakq": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "engineering"
           }
         }
       },
       "block_order": [
-        "product_Y4niiq",
-        "product_cG8JNg",
-        "product_phptNL"
+        "featured_collection_b77MfP",
+        "featured_collection_mxWchU",
+        "featured_collection_Rzgj3Y",
+        "featured_collection_qNpDML",
+        "featured_collection_jgiJHh",
+        "featured_collection_i9Vakq"
       ],
-      "name": "Custom Product List",
+      "name": "t:sections.collection-list.presets.name",
       "settings": {
-        "heading": "Related Products",
+        "title": "",
         "heading_size": "h1",
-        "heading_alignment": "left",
-        "button_text": "Learn more",
+        "image_ratio": "adapt",
         "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
         "columns_mobile": "1",
-        "color_scheme": "",
-        "anchor_id": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "featured_product_qHdp3x": {
-      "type": "featured-product",
-      "blocks": {
-        "text_pAfbbY": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title_6wDHHf": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "price_LHGzGy": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker_rCbgKt": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "quantity_selector_bkL6EC": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons_Ur6Qzz": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "share_z4pmiR": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "text_pAfbbY",
-        "title_6wDHHf",
-        "price_LHGzGy",
-        "variant_picker_rCbgKt",
-        "quantity_selector_bkL6EC",
-        "buy_buttons_Ur6Qzz",
-        "share_z4pmiR"
-      ],
-      "name": "t:sections.featured-product.presets.name",
-      "settings": {
-        "product": "asta-powerproject-4d",
-        "color_scheme": "",
-        "secondary_background": false,
-        "media_size": "medium",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
+        "swipe_on_mobile": false,
+        "padding_top": 12,
         "padding_bottom": 36
       }
     }
@@ -229,8 +144,7 @@
   "order": [
     "main",
     "image_banner_e9tbaL",
-    "image_with_text_RJ887M",
-    "parallel_custom_product_list_6cFMEH",
-    "featured_product_qHdp3x"
+    "rich_text_KpRgxW",
+    "collection_list_wTHGGQ"
   ]
 }
