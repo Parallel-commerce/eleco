@@ -927,7 +927,6 @@
         "item_padding": 18,
         "border_radius": 12,
         "question_font_size": 16,
-        "question_font_weight": "400",
         "color_scheme": "",
         "item_background": "#f6f7f7",
         "item_background_active": "#fce8e6",
@@ -1138,6 +1137,16 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "custom_liquid_pz7cCE": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<script src=\"https://js.hsforms.net/forms/embed/23774208.js\" defer></script>\n<div class=\"hs-form-frame\" data-region=\"na1\" data-form-id=\"d02192f6-5226-41f1-af02-2abdedbdf035\" data-portal-id=\"23774208\"></div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -1158,6 +1167,7 @@
     "parallel_faq_accordion_3Vq7Fm",
     "parallel_comparison_table_eeJhkm",
     "parallel_support_cta_RxfB67",
-    "parallel_information_Ehxmkb"
+    "parallel_information_Ehxmkb",
+    "custom_liquid_pz7cCE"
   ]
 }
