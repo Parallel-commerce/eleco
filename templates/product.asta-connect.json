@@ -215,21 +215,21 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Controlled access for site teams and stakeholders"
+            "text": "Controlled stakeholder access"
           }
         },
         "feature_item_efdUrz": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Everyone contributes to the same, current programme"
+            "text": "One up-to-date programme"
           }
         },
         "feature_item_eVF6yn": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Role-based views to protect governance"
+            "text": "Governance-safe visibility"
           }
         }
       },
@@ -265,7 +265,7 @@
         "heading_qDbMj8": {
           "type": "heading",
           "settings": {
-            "heading": "Heading",
+            "heading": "Keep tasks in one place",
             "heading_size": "h1"
           }
         },
@@ -273,27 +273,35 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Project phase breakdown"
+          }
+        },
+        "feature_item_4yXFJR": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Cross-timezone planning"
           }
         },
         "feature_item_gVYYUV": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Pull-based planning workflow"
           }
         },
         "feature_item_iRNHQw": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Stronger cross-team collaboration"
           }
         }
       },
       "block_order": [
         "heading_qDbMj8",
         "feature_item_8agkWh",
+        "feature_item_4yXFJR",
         "feature_item_gVYYUV",
         "feature_item_iRNHQw"
       ],
@@ -323,37 +331,45 @@
         "heading_EU6MmW": {
           "type": "heading",
           "settings": {
-            "heading": "Heading",
+            "heading": "Monitor project performance",
             "heading_size": "h1"
-          }
-        },
-        "feature_item_Wp9bXU": {
-          "type": "feature_item",
-          "settings": {
-            "icon": "eleco-tick",
-            "text": "Feature text"
           }
         },
         "feature_item_JY6MwN": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Automate communication"
           }
         },
         "feature_item_prUy3i": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "System generated notifications"
+          }
+        },
+        "feature_item_Wp9bXU": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Live data feed"
+          }
+        },
+        "feature_item_je9GAQ": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Overall percentage complete"
           }
         }
       },
       "block_order": [
         "heading_EU6MmW",
-        "feature_item_Wp9bXU",
         "feature_item_JY6MwN",
-        "feature_item_prUy3i"
+        "feature_item_prUy3i",
+        "feature_item_Wp9bXU",
+        "feature_item_je9GAQ"
       ],
       "name": "Image with features",
       "settings": {
