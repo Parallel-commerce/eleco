@@ -664,19 +664,19 @@
         "testimonial_tHbLzP": {
           "type": "testimonial",
           "settings": {
-            "name": "Dan Morar",
-            "title": "CEO topcarrentals.ro",
+            "name": "David Chapell",
+            "title": "Head of Cost Management",
             "country_flag": "",
-            "testimonial_text": "The Vertical Digital team was essential for building, launching and growing our rental and booking platforms. With them we always had a trusted, loyal and dedicated partner for our success."
+            "testimonial_text": "Bidcon BIM ticked all our boxes – and, the more questions we asked, the more boxes it ticked. It puts your prices at your fingertips, instead of locating them from cost plans or bills of quantities on an ad-hoc basis."
           }
         },
         "testimonial_FTmqJ9": {
           "type": "testimonial",
           "settings": {
-            "name": "Levin Wense",
-            "title": "CEO and Co-founder MVP Match",
+            "name": "Niclas Peterson",
+            "title": "Operation Manager | LP Entreprenad",
             "country_flag": "",
-            "testimonial_text": "I would highly recommend their services to any company looking for top-notch IT staff. They have truly been a valuable partner for our business and have played an important role in our success."
+            "testimonial_text": "The big difference with Bidcon is that it can visually show you that you really have everything included in the estimation, which makes the risk lower... Bidcon is a great tool for the entire workflow."
           }
         }
       },
@@ -737,34 +737,7 @@
         "logo_X7DT6Q": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/sparklayer_black.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_X3bNgL": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_pfRhE7": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/partner_logo_2.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_XpeMAz": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/partner_logo_3.svg",
+            "logo": "shopify://shop_images/bluebeam_logo_black_76c994a2-a597-4248-84e6-7e08d717f1c1.png",
             "alt_text": "Logo",
             "link": "",
             "link_target_blank": false
@@ -772,21 +745,18 @@
         }
       },
       "block_order": [
-        "logo_X7DT6Q",
-        "logo_X3bNgL",
-        "logo_pfRhE7",
-        "logo_XpeMAz"
+        "logo_X7DT6Q"
       ],
       "name": "Logo Block",
       "settings": {
         "color_scheme": "scheme-2",
-        "title": "Partner Integrataions",
+        "title": "Partner Integrations",
         "heading_size": "h2",
         "title_alignment": "left",
         "title_spacing": 24,
         "logo_width": 150,
         "logo_spacing": 40,
-        "logo_opacity": 100,
+        "logo_opacity": 55,
         "logo_hover_opacity": 100,
         "mobile_columns": "2",
         "anchor_id": "",
