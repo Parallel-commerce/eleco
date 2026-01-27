@@ -215,21 +215,21 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Streamline project insights"
           }
         },
         "feature_item_efdUrz": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Automated integrated reporting"
           }
         },
         "feature_item_eVF6yn": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Baseline management ensures visibility"
           }
         }
       },
@@ -265,7 +265,7 @@
         "heading_qDbMj8": {
           "type": "heading",
           "settings": {
-            "heading": "Heading",
+            "heading": "Access enterprise-grade tools for a competitive edge",
             "heading_size": "h1"
           }
         },
@@ -273,21 +273,21 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "4D BIM integration creates impressive visual planning presentations"
           }
         },
         "feature_item_gVYYUV": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Complex modeling capabilities"
           }
         },
         "feature_item_iRNHQw": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Contractual compliance through change management"
           }
         }
       },
@@ -323,7 +323,7 @@
         "heading_EU6MmW": {
           "type": "heading",
           "settings": {
-            "heading": "Heading",
+            "heading": "Reduce risk from time-related costs",
             "heading_size": "h1"
           }
         },
@@ -331,21 +331,21 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Identify risks before they materialise and cause delays"
           }
         },
         "feature_item_JY6MwN": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Automated revision management"
           }
         },
         "feature_item_prUy3i": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Resource and cost management integrated with time scheduling"
           }
         }
       },
@@ -480,10 +480,10 @@
           "type": "accordion_item",
           "settings": {
             "title": "Contractors",
-            "content_1": "<p>Powerful critical path analysis and precise scheduling.</p>",
-            "content_2": "<p>Powerful critical path analysis and precise scheduling.</p>",
-            "content_3": "<p>Powerful critical path analysis and precise scheduling.</p>",
-            "content_4": "",
+            "content_1": "<p>Real-time portfolio visibility through centralised schedule management</p>",
+            "content_2": "<p>Reduce time-related project costs by identifying issues before they escalate</p>",
+            "content_3": "<p>Supports good practice by automatically logging changes against each revision.</p>",
+            "content_4": "<p>Develop contract-specific workflows flexibly, standardising enture project approach.</p>",
             "content_5": "",
             "content_6": ""
           }
@@ -492,10 +492,10 @@
           "type": "accordion_item",
           "settings": {
             "title": "Sub contractors",
-            "content_1": "<p>Comprehensive resource and cost management, early identification of budget issues.</p>",
-            "content_2": "",
-            "content_3": "",
-            "content_4": "",
+            "content_1": "<p>Real-time multi-user collaboration means everyone is working from the same project plans.</p>",
+            "content_2": "<p>Access tender planning tools allowing for accurate and reliable bids for a competitive advantage.</p>",
+            "content_3": "<p>Controlled access and clear responsibilities fosters accountability while protecting sensitive information.</p>",
+            "content_4": "<p><a href=\"/products/asta-siteprogress\" title=\"Asta SiteProgress\">Asta Siteprogress</a> integration allows for on-site updates that feed information directly into Asta Vision.</p>",
             "content_5": "",
             "content_6": ""
           }
