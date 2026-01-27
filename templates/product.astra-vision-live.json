@@ -177,7 +177,7 @@
         "primary_button_color": "#ff6b35",
         "primary_button_text_color": "#ffffff",
         "hero_title": "Multi-user collaboration in real time",
-        "hero_subtitle": "Take control with integrative tools that gives teams the power to master project timelines",
+        "hero_subtitle": "Use the full power of Asta in a live, multi-user environment without compromising security, functionality or performance",
         "hero_image": "shopify://shop_images/Asta_Powerproject_109e16a4-29a3-4d9b-b8d5-165a549f2bf1.svg",
         "hero_background_color": "#2a303a",
         "hero_text_color": "#ffffff",
@@ -658,45 +658,6 @@
         "padding_bottom": 40
       }
     },
-    "parallel_testimonials_6ayBHg": {
-      "type": "parallel-testimonials",
-      "blocks": {
-        "testimonial_tHbLzP": {
-          "type": "testimonial",
-          "settings": {
-            "name": "Dan Morar",
-            "title": "CEO topcarrentals.ro",
-            "country_flag": "",
-            "testimonial_text": "The Vertical Digital team was essential for building, launching and growing our rental and booking platforms. With them we always had a trusted, loyal and dedicated partner for our success."
-          }
-        },
-        "testimonial_FTmqJ9": {
-          "type": "testimonial",
-          "settings": {
-            "name": "Levin Wense",
-            "title": "CEO and Co-founder MVP Match",
-            "country_flag": "",
-            "testimonial_text": "I would highly recommend their services to any company looking for top-notch IT staff. They have truly been a valuable partner for our business and have played an important role in our success."
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_tHbLzP",
-        "testimonial_FTmqJ9"
-      ],
-      "name": "Testimonials",
-      "settings": {
-        "heading": "What do our clients say?",
-        "subheading": "Find out why our clients are glad they met us.",
-        "heading_size": "h1",
-        "header_alignment": "center",
-        "header_spacing": 40,
-        "color_scheme": "",
-        "anchor_id": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "parallel_custom_product_list_M7EFHt": {
       "type": "parallel-custom-product-list",
       "blocks": {
@@ -961,7 +922,6 @@
     "parallel_two_column_accordion_xi4PpU",
     "parallel_video_three_column_BTPQnC",
     "parallel_logo_block_hHLWpL",
-    "parallel_testimonials_6ayBHg",
     "parallel_custom_product_list_M7EFHt",
     "parallel_faq_accordion_3Vq7Fm",
     "parallel_support_cta_RxfB67",
