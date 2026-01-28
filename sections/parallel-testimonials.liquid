@@ -45,7 +45,9 @@
     display: flex;
     gap: 2rem;
     overflow-x: auto;
-    overflow-y: hidden;
+    /* allow taller slides to expand container on mobile */
+    overflow-y: visible;
+    align-items: stretch;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
@@ -73,6 +75,7 @@
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
+    height: auto;
   }
 
   @media screen and (min-width: 750px) {
@@ -89,6 +92,17 @@
       width: calc(100% - 3rem);
       max-width: calc(100% - 3rem);
     }
+
+    .testimonials-{{ section.id }}__card {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .testimonials-{{ section.id }}__image-wrapper {
+      width: 100%;
+      max-width: none;
+      align-self: stretch;
+    }
   }
 
   .testimonials-{{ section.id }}__card {
@@ -101,6 +115,7 @@
     align-items: flex-start;
     flex: 1;
     transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    height: 100%;
   }
 
   .testimonials-{{ section.id }}__card:hover {
@@ -113,7 +128,7 @@
     align-self: stretch;
     aspect-ratio: 1 / 1;
     min-width: 80px;
-    max-width: calc(50% - 0.75rem);
+    /* max-width: calc(50% - 0.75rem); */
     border-radius: 0.4rem;
     overflow: hidden;
     background: rgba(var(--color-foreground), 0.05);

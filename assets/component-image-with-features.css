@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 1rem;
+  padding: 1rem 2rem;
   border-radius: 8px;
   background-color: rgba(var(--color-foreground), 0.03);
   min-width: fit-content;
@@ -31,12 +31,12 @@
     width: 100% !important;
     max-width: 100% !important;
   }
-  
+
   /* Allow text to wrap on mobile since items are full width */
   .image-with-features__text {
     white-space: normal;
   }
-  
+
   .image-with-features__text p {
     white-space: normal;
   }
@@ -84,6 +84,7 @@
   white-space: nowrap;
   font-weight: bold;
   font-size: 1.3rem;
+  text-wrap: wrap;
 }
 
 .image-with-features__text p {
@@ -98,7 +99,7 @@
 }
 
 /* Ensure proper spacing when heading is present */
-.image-with-text__heading + .image-with-features__grid {
+.image-with-text__heading+.image-with-features__grid {
   margin-top: 2rem;
 }
 
@@ -139,7 +140,7 @@
 }
 
 /* Force left alignment when no image */
-.image-with-text--no-image .image-with-text__content--no-image > * {
+.image-with-text--no-image .image-with-text__content--no-image>* {
   text-align: left !important;
   align-self: flex-start !important;
 }
@@ -167,11 +168,12 @@
 }
 
 @media screen and (max-width: 749px) {
+
   /* On mobile, allow text to wrap when no image since items are full width */
   .image-with-text--no-image .image-with-text__content--no-image .image-with-features__text {
     white-space: normal;
   }
-  
+
   .image-with-text--no-image .image-with-text__content--no-image .image-with-features__text p {
     white-space: normal;
   }
@@ -181,25 +183,25 @@
   .image-with-text--no-image .image-with-text__content {
     padding: 0;
   }
-  
-  .image-with-text--no-image .image-with-text__content--no-image > * {
+
+  .image-with-text--no-image .image-with-text__content--no-image>* {
     text-align: left !important;
     align-self: flex-start !important;
   }
-  
-  .image-with-text--no-image .image-with-text__content--desktop-center > *,
-  .image-with-text--no-image .image-with-text__content--desktop-right > * {
+
+  .image-with-text--no-image .image-with-text__content--desktop-center>*,
+  .image-with-text--no-image .image-with-text__content--desktop-right>* {
     text-align: left !important;
     align-self: flex-start !important;
   }
-  
+
   /* Allow up to 4 columns when no image, items wrap if content is too long */
   .image-with-text--no-image .image-with-text__content--no-image .image-with-features__grid {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
   }
-  
+
   /* Each item can be up to 25% width (4 columns), but will grow if content is longer */
   .image-with-text--no-image .image-with-text__content--no-image .image-with-features__item {
     flex: 0 1 calc(25% - 1.125rem);
@@ -209,10 +211,10 @@
 }
 
 @media screen and (min-width: 990px) {
+
   /* On larger screens, allow items to grow more if needed */
   .image-with-text--no-image .image-with-text__content--no-image .image-with-features__item {
     flex: 0 1 calc(25% - 1.125rem);
     min-width: max-content;
   }
 }
-
