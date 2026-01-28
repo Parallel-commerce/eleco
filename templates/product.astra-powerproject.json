@@ -1138,24 +1138,44 @@
         "padding_bottom": 60
       }
     },
-    "custom_liquid_pz7cCE": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
+    "parallel_market_embed_gGAwgk": {
+      "type": "parallel-market-embed",
+      "blocks": {
+        "embed_HGNRDr": {
+          "type": "embed",
+          "name": "Default",
+          "settings": {
+            "market_identifier": "",
+            "country_code": "",
+            "is_fallback": true,
+            "embed_code": "<script type=\"text/javascript\">var loc = \"https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/\";var cdSurveyCdn = \"https://cdn-eu.clickdimensions.com/web/newformeditor/\";</script>\n<script type=\"text/javascript\" src=\"https://cdn-eu.clickdimensions.com/web/newformeditor/CDWidget.js\"></script>\n<div pageid=\"1laq6gu7efc0y3weui1vuq\"></div>"
+          }
+        },
+        "embed_6VLxN3": {
+          "type": "embed",
+          "name": "United States",
+          "settings": {
+            "market_identifier": "us",
+            "country_code": "us",
+            "is_fallback": false,
+            "embed_code": "<script src=\"https://js.hsforms.net/forms/embed/23774208.js\" defer></script>\n<div class=\"hs-form-frame\" data-region=\"na1\" data-form-id=\"d02192f6-5226-41f1-af02-2abdedbdf035\" data-portal-id=\"23774208\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "embed_HGNRDr",
+        "embed_6VLxN3"
+      ],
+      "name": "Market Embed",
       "settings": {
-        "custom_liquid": "<script src=\"https://js.hsforms.net/forms/embed/23774208.js\" defer></script>\n<div class=\"hs-form-frame\" data-region=\"na1\" data-form-id=\"d02192f6-5226-41f1-af02-2abdedbdf035\" data-portal-id=\"23774208\"></div>",
+        "heading": "",
+        "subheading": "",
+        "heading_size": "h1",
         "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "custom_liquid_J74cfT": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "<script type=\"text/javascript\">var loc = \"https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/\";var cdSurveyCdn = \"https://cdn-eu.clickdimensions.com/web/newformeditor/\";</script>\n<script type=\"text/javascript\" src=\"https://cdn-eu.clickdimensions.com/web/newformeditor/CDWidget.js\"></script>\n<div pageID=\"1laq6gu7efc0y3weui1vuq\"></div>",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "anchor_id": "",
+        "show_debug_info": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -1178,7 +1198,6 @@
     "parallel_comparison_table_eeJhkm",
     "parallel_support_cta_RxfB67",
     "parallel_information_Ehxmkb",
-    "custom_liquid_pz7cCE",
-    "custom_liquid_J74cfT"
+    "parallel_market_embed_gGAwgk"
   ]
 }
