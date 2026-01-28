@@ -61,11 +61,19 @@
       gap: 2rem;
     }
 
+    .custom-product-info__pricing-grid--single {
+      grid-template-columns: 1fr;
+    }
+
     @media screen and (min-width: 750px) {
       .custom-product-info__pricing-grid {
         grid-template-columns: 1fr 1fr;
         gap: 0;
         align-items: stretch;
+      }
+
+      .custom-product-info__pricing-grid.custom-product-info__pricing-grid--single {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -77,12 +85,12 @@
     }
 
     @media screen and (min-width: 750px) {
-      .custom-product-info__pricing-column:first-child {
+      .custom-product-info__pricing-column:first-child:not(.custom-product-info__pricing-column--full) {
         border-radius: 8px 0 0 8px;
         position: relative;
       }
 
-      .custom-product-info__pricing-column:first-child::after {
+      .custom-product-info__pricing-column:first-child:not(.custom-product-info__pricing-column--full)::after {
         content: '';
         position: absolute;
         right: 0;
@@ -92,7 +100,7 @@
         background-color: {{ section.settings.divider_color }};
       }
 
-      .custom-product-info__pricing-column:last-child {
+      .custom-product-info__pricing-column:last-child:not(.custom-product-info__pricing-column--full) {
         border-radius: 0 8px 8px 0;
       }
     }
@@ -342,6 +350,10 @@
   {%- endif -%}
 
   {%- comment -%} Pricing Section - Contained in Page Width {%- endcomment -%}
+  {%- assign is_free_product = false -%}
+  {%- if product.price == 0 -%}
+    {%- assign is_free_product = true -%}
+  {%- endif -%}
   <div class="page-width">
     <div class="custom-product-info__pricing-wrapper">
       {%- comment -%} App Integration Block Support {%- endcomment -%}
@@ -354,139 +366,132 @@
       {%- endfor -%}
 
       {%- comment -%} Two-Column Pricing Layout {%- endcomment -%}
-      <div class="custom-product-info__pricing-grid">
-        {%- comment -%} Left Column: Annual Subscription {%- endcomment -%}
-        <div class="custom-product-info__pricing-column">
-          <h2>
-            {{ section.settings.left_column_title | default: 'Annual subscription' }}
-          </h2>
+      <div class="custom-product-info__pricing-grid{% if is_free_product %} custom-product-info__pricing-grid--single{% endif %}">
+        {%- unless is_free_product -%}
+          {%- comment -%} Left Column: Annual Subscription {%- endcomment -%}
+          <div class="custom-product-info__pricing-column">
+            <h2>
+              {{ section.settings.left_column_title | default: 'Annual subscription' }}
+            </h2>
 
-          <div class="custom-product-info__price-wrapper">
-            <span class="custom-product-info__price-prefix">Prices start from</span>
-            <span class="custom-product-info__price">
-              {%- if section.settings.left_column_price != blank -%}
-                {%- assign custom_price = section.settings.left_column_price | times: 100 -%}
-                {{ custom_price | money }}
-              {%- else -%}
-                {%- assign monthly_price = product.price | divided_by: 12 -%}
-                {{ monthly_price | money }}
-              {%- endif -%}
-            </span>
-            <span class="custom-product-info__price-slash">/</span>
-            <span class="custom-product-info__price-suffix">month</span>
-          </div>
-
-          {%- comment -%} Product Form for Add to Cart {%- endcomment -%}
-          <product-form
-            class="product-form"
-            data-section-id="{{ section.id }}"
-          >
-            <div class="product-form__error-message-wrapper" role="alert" hidden>
-              <span class="svg-wrapper">
-                {{- 'icon-error.svg' | inline_asset_content -}}
+            <div class="custom-product-info__price-wrapper">
+              <span class="custom-product-info__price-prefix">Prices start from</span>
+              <span class="custom-product-info__price">
+                {%- if section.settings.left_column_price != blank -%}
+                  {%- assign custom_price = section.settings.left_column_price | times: 100 -%}
+                  {{ custom_price | money }}
+                {%- else -%}
+                  {%- assign monthly_price = product.price | divided_by: 12 -%}
+                  {{ monthly_price | money }}
+                {%- endif -%}
               </span>
-              <span class="product-form__error-message"></span>
+              <span class="custom-product-info__price-slash">/</span>
+              <span class="custom-product-info__price-suffix">month</span>
             </div>
 
-            {%- liquid
-              assign check_against_inventory = true
-              assign quantity_rule_soldout = false
-              if product.selected_or_first_available_variant.inventory_management != 'shopify' or product.selected_or_first_available_variant.inventory_policy == 'continue'
-                assign check_against_inventory = false
-              endif
-              if product.selected_or_first_available_variant.quantity_rule.min > product.selected_or_first_available_variant.inventory_quantity and check_against_inventory
-                assign quantity_rule_soldout = true
-              endif
-            -%}
+            {%- comment -%} Product Form for Add to Cart {%- endcomment -%}
+            <product-form
+              class="product-form"
+              data-section-id="{{ section.id }}"
+            >
+              <div class="product-form__error-message-wrapper" role="alert" hidden>
+                <span class="svg-wrapper">
+                  {{- 'icon-error.svg' | inline_asset_content -}}
+                </span>
+                <span class="product-form__error-message"></span>
+              </div>
 
-            {%- form 'product',
-              product,
-              id: product_form_id,
-              class: 'form',
-              novalidate: 'novalidate',
-              data-type: 'add-to-cart-form'
-            -%}
-              <input
-                type="hidden"
-                name="id"
-                value="{{ product.selected_or_first_available_variant.id }}"
-                {% if product.selected_or_first_available_variant.available == false
-                  or quantity_rule_soldout
-                  or product.selected_or_first_available_variant == null
-                %}
-                  disabled
-                {% endif %}
-                class="product-variant-id"
-              >
+              {%- liquid
+                assign check_against_inventory = true
+                assign quantity_rule_soldout = false
+                if product.selected_or_first_available_variant.inventory_management != 'shopify' or product.selected_or_first_available_variant.inventory_policy == 'continue'
+                  assign check_against_inventory = false
+                endif
+                if product.selected_or_first_available_variant.quantity_rule.min > product.selected_or_first_available_variant.inventory_quantity and check_against_inventory
+                  assign quantity_rule_soldout = true
+                endif
+              -%}
 
-              <div class="custom-product-info__buttons">
-                <button
-                  id="CustomProductSubmitButton-{{ section.id }}-left"
-                  type="submit"
-                  name="add"
-                  class="button button--primary"
+              {%- form 'product',
+                product,
+                id: product_form_id,
+                class: 'form',
+                novalidate: 'novalidate',
+                data-type: 'add-to-cart-form'
+              -%}
+                <input
+                  type="hidden"
+                  name="id"
+                  value="{{ product.selected_or_first_available_variant.id }}"
                   {% if product.selected_or_first_available_variant.available == false
                     or quantity_rule_soldout
                     or product.selected_or_first_available_variant == null
                   %}
                     disabled
                   {% endif %}
+                  class="product-variant-id"
                 >
-                  <span>
-                    {%- if product.selected_or_first_available_variant == null -%}
-                      {{ 'products.product.unavailable' | t }}
-                    {%- elsif product.selected_or_first_available_variant.available == false
+
+                <div class="custom-product-info__buttons">
+                  <button
+                    id="CustomProductSubmitButton-{{ section.id }}-left"
+                    type="submit"
+                    name="add"
+                    class="button button--primary"
+                    {% if product.selected_or_first_available_variant.available == false
                       or quantity_rule_soldout
-                    -%}
-                      {{ 'products.product.sold_out' | t }}
-                    {%- else -%}
-                      {{ section.settings.left_column_button_text | default: 'Add to cart' }}
-                    {%- endif -%}
-                  </span>
-                  {%- render 'loading-spinner' -%}
-                </button>
-
-                {%- if section.settings.left_column_secondary_button_text != blank -%}
-                  <a
-                    href="{{ section.settings.left_column_secondary_button_link | default: '#' }}"
-                    class="button button--secondary"
+                      or product.selected_or_first_available_variant == null
+                    %}
+                      disabled
+                    {% endif %}
                   >
-                    {{ section.settings.left_column_secondary_button_text }}
-                  </a>
-                {%- endif -%}
+                    <span>
+                      {%- if product.selected_or_first_available_variant == null -%}
+                        {{ 'products.product.unavailable' | t }}
+                      {%- elsif product.selected_or_first_available_variant.available == false
+                        or quantity_rule_soldout
+                      -%}
+                        {{ 'products.product.sold_out' | t }}
+                      {%- else -%}
+                        {{ section.settings.left_column_button_text | default: 'Add to cart' }}
+                      {%- endif -%}
+                    </span>
+                    {%- render 'loading-spinner' -%}
+                  </button>
+
+                  {%- if section.settings.left_column_secondary_button_text != blank -%}
+                    <a
+                      href="{{ section.settings.left_column_secondary_button_link | default: '#' }}"
+                      class="button button--secondary"
+                    >
+                      {{ section.settings.left_column_secondary_button_text }}
+                    </a>
+                  {%- endif -%}
+                </div>
+              {%- endform -%}
+            </product-form>
+
+            {%- if section.settings.left_column_fine_print != blank -%}
+              <div class="custom-product-info__fine-print">
+                {{ section.settings.left_column_fine_print }}
               </div>
-            {%- endform -%}
-          </product-form>
+            {%- endif -%}
+          </div>
 
-          {%- if section.settings.left_column_fine_print != blank -%}
-            <div class="custom-product-info__fine-print">
-              {{ section.settings.left_column_fine_print }}
-            </div>
-          {%- endif -%}
-        </div>
+          {%- comment -%} Divider {%- endcomment -%}
+          <div class="custom-product-info__divider"></div>
+        {%- endunless -%}
 
-        {%- comment -%} Divider {%- endcomment -%}
-        <div class="custom-product-info__divider"></div>
-
-        {%- comment -%} Right Column: Concurrent & SaaS Solutions {%- endcomment -%}
-        <div class="custom-product-info__pricing-column">
+        {%- comment -%} Right Column: Concurrent & SaaS Solutions (no price) {%- endcomment -%}
+        <div class="custom-product-info__pricing-column{% if is_free_product %} custom-product-info__pricing-column--full{% endif %}">
           <h2>
-            {{ section.settings.right_column_title | default: 'Concurrent & SaaS solutions' }}
+            Concurrent &amp; SaaS solutions
           </h2>
 
-          <div class="custom-product-info__price-wrapper">
-            <span class="custom-product-info__price-prefix">Prices start from</span>
-            <span class="custom-product-info__price">
-              {%- if section.settings.right_column_price != blank -%}
-                {%- assign custom_price = section.settings.right_column_price | times: 100 -%}
-                {{ custom_price | money }}
-              {%- else -%}
-                {{ product.price | money }}
-              {%- endif -%}
-            </span>
-            <span class="custom-product-info__price-slash">/</span>
-            <span class="custom-product-info__price-suffix">year</span>
-          </div>
+          <p>
+            You wouldn't place a tender without first understanding the full scope of work. We approach custom quotes
+            the same way. Help us get to know your team's needs to get started now.
+          </p>
 
           <div class="custom-product-info__buttons">
             {%- if section.settings.right_column_primary_button_text != blank -%}

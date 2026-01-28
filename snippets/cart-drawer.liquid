@@ -7,9 +7,11 @@
 
 {{ 'quantity-popover.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}
 
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
 <style>
   .drawer {
@@ -91,9 +93,6 @@
                 <table class="cart-items" role="table">
                   <thead role="rowgroup">
                     <tr role="row">
-                      <th id="CartDrawer-ColumnProductImage" role="columnheader">
-                        <span class="visually-hidden">{{ 'sections.cart.headings.image' | t }}</span>
-                      </th>
                       <th
                         id="CartDrawer-ColumnProduct"
                         class="caption-with-letter-spacing"
@@ -126,33 +125,33 @@
                           aria-label="{{- 'products.product.nested_label' | t: title: item.product.title, parent_title: item.parent_relationship.parent.title | escape -}}"
                         {% endif %}
                       >
-                        <td
-                          class="cart-item__media"
-                          role="cell"
-                          headers="CartDrawer-ColumnProductImage"
-                        >
-                          {% if item.image %}
-                            {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
-                            <a href="{{ item.url }}" class="cart-item__link" tabindex="-1" aria-hidden="true"> </a>
-                            <img
-                              class="cart-item__image"
-                              src="{{ item.image | image_url: width: 300 }}"
-                              alt="{{ item.image.alt | escape }}"
-                              loading="lazy"
-                              width="150"
-                              height="{{ 150 | divided_by: item.image.aspect_ratio | ceil }}"
-                            >
-                          {% endif %}
-                        </td>
-
                         <td class="cart-item__details" role="cell" headers="CartDrawer-ColumnProduct">
+                          {%- liquid
+                            assign product_logo = item.product.metafields.custom.product_logo
+                            if product_logo.value != blank
+                              assign product_logo = product_logo.value
+                            endif
+                          -%}
+
+                          {%- if product_logo != blank -%}
+                            <a href="{{ item.url }}" class="cart-item__product-logo-link">
+                              {{
+                                product_logo
+                                | image_url: width: 200
+                                | image_tag: loading: 'lazy', alt: item.product.title, class: 'product-logo'
+                              }}
+                            </a>
+                          {%- endif -%}
+
                           {%- if settings.show_vendor -%}
                             <p class="caption-with-letter-spacing light">{{ item.product.vendor }}</p>
                           {%- endif -%}
 
-                          <a href="{{ item.url }}" class="cart-item__name h4 break">
-                            {{- item.product.title | escape -}}
-                          </a>
+                          {%- if product_logo == blank -%}
+                            <a href="{{ item.url }}" class="cart-item__name h4 break">
+                              {{- item.product.title | escape -}}
+                            </a>
+                          {%- endif -%}
 
                           {%- if item.original_price != item.final_price -%}
                             <div class="cart-item__discounted-prices">
@@ -475,6 +474,132 @@
         </form>
       </cart-drawer-items>
       <div class="drawer__footer">
+        {%- liquid
+          assign upsell_product = settings.cart_upsell_product
+          assign show_upsell = false
+          if upsell_product != blank and cart != empty
+            assign show_upsell = true
+          endif
+        -%}
+
+        {%- if show_upsell -%}
+          {%- assign upsell_variant = upsell_product.selected_or_first_available_variant -%}
+          <div class="cart-drawer__upsell" aria-label="Cart upsell">
+            <div class="cart-drawer__upsell-content">
+              {%- if upsell_product.featured_media != blank -%}
+                <a href="{{ upsell_product.url }}" class="cart-drawer__upsell-media">
+                  {{
+                    upsell_product.featured_media
+                    | image_url: width: 180
+                    | image_tag: loading: 'lazy', alt: upsell_product.title, class: 'cart-drawer__upsell-image'
+                  }}
+                </a>
+              {%- endif -%}
+
+              <div class="cart-drawer__upsell-info">
+                <p class="cart-drawer__upsell-label">
+                  {{ 'sections.cart.upsell_label' | t: default: 'You might also like' }}
+                </p>
+
+                <a href="{{ upsell_product.url }}" class="cart-drawer__upsell-title h5">
+                  {{ upsell_product.title | escape }}
+                </a>
+
+                {%- if upsell_product.metafields.custom.short_description != blank -%}
+                  <div class="cart-drawer__upsell-short-description caption-large light rte">
+                    {{ upsell_product.metafields.custom.short_description | metafield_tag }}
+                  </div>
+                {%- endif -%}
+
+                <div class="cart-drawer__upsell-price">
+                  {%- if upsell_product.compare_at_price_max > upsell_product.price -%}
+                    <span class="cart-drawer__upsell-price--sale">
+                      {{ upsell_product.price | money }}
+                    </span>
+                    <s class="cart-drawer__upsell-price--compare">
+                      {{ upsell_product.compare_at_price_max | money }}
+                    </s>
+                  {%- else -%}
+                    <span class="cart-drawer__upsell-price--regular">
+                      {{ upsell_product.price | money }}
+                    </span>
+                  {%- endif -%}
+                </div>
+
+                {%- if upsell_variant -%}
+                  {%- liquid
+                    assign upsell_quantity_rule_soldout = false
+                    assign upsell_check_inventory = true
+                    if upsell_variant.inventory_management != 'shopify' or upsell_variant.inventory_policy == 'continue'
+                      assign upsell_check_inventory = false
+                    endif
+                    if upsell_variant.quantity_rule.min > upsell_variant.inventory_quantity and upsell_check_inventory
+                      assign upsell_quantity_rule_soldout = true
+                    endif
+                  -%}
+
+                  <product-form
+                    class="product-form cart-drawer__upsell-form"
+                    data-section-id="cart-drawer-upsell"
+                  >
+                    <div class="product-form__error-message-wrapper" role="alert" hidden>
+                      <span class="svg-wrapper">
+                        {{- 'icon-error.svg' | inline_asset_content -}}
+                      </span>
+                      <span class="product-form__error-message"></span>
+                    </div>
+
+                    {%- form 'product',
+                      upsell_product,
+                      id: 'CartDrawer-Upsell-Form',
+                      class: 'form cart-drawer__upsell-form-inner',
+                      novalidate: 'novalidate',
+                      data-type: 'add-to-cart-form'
+                    -%}
+                      <input
+                        type="hidden"
+                        name="id"
+                        value="{{ upsell_variant.id }}"
+                        class="product-variant-id"
+                        {% if upsell_variant.available == false
+                          or upsell_quantity_rule_soldout
+                          or upsell_variant == null
+                        %}
+                          disabled
+                        {% endif %}
+                      >
+                      <button
+                        type="submit"
+                        name="add"
+                        class="button button--secondary cart-drawer__upsell-button"
+                        {% if upsell_variant.available == false
+                          or upsell_quantity_rule_soldout
+                          or upsell_variant == null
+                        %}
+                          disabled
+                        {% endif %}
+                      >
+                        <span>
+                          {%- if upsell_variant == null -%}
+                            {{ 'products.product.unavailable' | t }}
+                          {%- elsif upsell_variant.available == false
+                            or upsell_quantity_rule_soldout
+                          -%}
+                            {{ 'products.product.sold_out' | t }}
+                          {%- else -%}
+                            {{ 'products.product.add_to_cart' | t }}
+                          {%- endif -%}
+                        </span>
+                        {%- render 'loading-spinner' -%}
+                      </button>
+                    {%- endform -%}
+                  </product-form>
+                {%- endif -%}
+              </div>
+            </div>
+          </div>
+        {%- endif -%}
+
         {%- if settings.show_cart_note -%}
           <details id="Details-CartDrawer">
             <summary>

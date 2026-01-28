@@ -130,6 +130,10 @@
   border: 1px solid rgba(var(--color-foreground), 0.2);
   min-height: 200px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .card__content--auto-margins {
@@ -339,6 +343,11 @@
   right: 0;
   top: 0;
   z-index: 1;
+}
+
+/* For product cards, only the actual link text should be clickable */
+.product-card-wrapper .card__heading a::after {
+  content: none;
 }
 
 .card__heading a:after {
@@ -611,4 +620,23 @@
 .product-card-wrapper .card__content .card__heading {
   display: block !important;
   margin-bottom: 0.5rem;
+}
+
+/* Inline actions: Learn more + Buy now */
+.card__actions-inline {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.card__actions-inline .card__product-link {
+  text-decoration: none;
+  color: #4c4c4f;
+  font-size: 16px;
+  line-height: 1.625;
+}
+
+.card__actions-inline .card__buy-now-form {
+  margin: 0;
 }

@@ -1445,6 +1445,12 @@
         "info": "t:settings_schema.cart.settings.cart_drawer.collection.info"
       },
       {
+        "type": "product",
+        "id": "cart_upsell_product",
+        "label": "Upsell product",
+        "info": "Product shown as an upsell in the cart drawer."
+      },
+      {
         "type": "color_scheme",
         "id": "cart_color_scheme",
         "label": "t:sections.all.colors.label",
