@@ -121,6 +121,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
+    "cart_upsell_product": "powerproject-premium-support",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
@@ -382,7 +383,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".sd-element--with-frame {padding: 8px !important; box-shadow:revert-layer !important;}"
+      ".sd-element--with-frame {padding: 8px !important; box-shadow: revert-layer !important;}"
     ]
   }
 }
