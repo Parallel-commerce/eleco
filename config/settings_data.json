@@ -379,5 +379,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".sd-element--with-frame {padding: 8px !important; box-shadow:revert-layer !important;}"
+    ]
   }
 }
