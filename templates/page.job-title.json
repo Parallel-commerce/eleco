@@ -36,12 +36,68 @@
           "settings": {
             "collection": "estimator"
           }
+        },
+        "featured_collection_ikPJLy": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "executive"
+          }
+        },
+        "featured_collection_dWHaTk": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "field-engineer"
+          }
+        },
+        "featured_collection_3jXWgY": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "it-systems"
+          }
+        },
+        "featured_collection_WKTchL": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "planners-and-schedulers"
+          }
+        },
+        "featured_collection_b9ciFG": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "planning-lead"
+          }
+        },
+        "featured_collection_EqGaHT": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "project-manager"
+          }
+        },
+        "featured_collection_e8ntTT": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "site-manager"
+          }
+        },
+        "featured_collection_FRWmQh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "subcontractor"
+          }
         }
       },
       "block_order": [
         "featured_collection_qVQRcH",
         "featured_collection_j8gh4D",
-        "featured_collection_AEbRM7"
+        "featured_collection_AEbRM7",
+        "featured_collection_ikPJLy",
+        "featured_collection_dWHaTk",
+        "featured_collection_3jXWgY",
+        "featured_collection_WKTchL",
+        "featured_collection_b9ciFG",
+        "featured_collection_EqGaHT",
+        "featured_collection_e8ntTT",
+        "featured_collection_FRWmQh"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
