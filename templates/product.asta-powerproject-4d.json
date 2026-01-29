@@ -491,10 +491,10 @@
         "accordion_item_htnMQm": {
           "type": "accordion_item",
           "settings": {
-            "title": "Sub contractors",
-            "content_1": "<p>Comprehensive resource and cost management, early identification of budget issues.</p>",
-            "content_2": "",
-            "content_3": "",
+            "title": "Subcontractors",
+            "content_1": "<p>Clearer task windows reduces downtime caused by unclear timing</p>",
+            "content_2": "<p>Better coordination with other trades, helping to resolve overlaps and avoid disputes</p>",
+            "content_3": "<p>More reliable resource planning</p>",
             "content_4": "",
             "content_5": "",
             "content_6": ""
@@ -503,10 +503,34 @@
         "accordion_item_EDULcY": {
           "type": "accordion_item",
           "settings": {
-            "title": "Designers and consultancy",
-            "content_1": "<p>Detailed history of project changes to support claims and resolve disputes.</p>",
-            "content_2": "",
-            "content_3": "",
+            "title": "Designers and Consultants",
+            "content_1": "<p>Earlier coordination while design-related decisions are still flexdible</p>",
+            "content_2": "<p>Stronger optioneering by comparing alternative methods visually against time and cost</p>",
+            "content_3": "<p>Better communication with non-stakeholders enabling quicker approvals</p>",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_Md4qfb": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Residential construction",
+            "content_1": "<p>Sales and stakeholder engagement, using 4D to show build progress</p>",
+            "content_2": "<p>Phased occupancy planning for multi-block schemes, coordinating access</p>",
+            "content_3": "<p>Reduced rework through clearer sequencing in repetitive units</p>",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_QWPW3e": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Clients and Asset owners",
+            "content_1": "<p>Greater confidence in delivery dates through visibility of critical path and milestones</p>",
+            "content_2": "<p>Better risk and change management, with scenario testing that shows operational impact of design changes</p>",
+            "content_3": "<p>Improved handover and operations readiness, using time-linked models</p>",
             "content_4": "",
             "content_5": "",
             "content_6": ""
@@ -516,7 +540,9 @@
       "block_order": [
         "accordion_item_AX7zXQ",
         "accordion_item_htnMQm",
-        "accordion_item_EDULcY"
+        "accordion_item_EDULcY",
+        "accordion_item_Md4qfb",
+        "accordion_item_QWPW3e"
       ],
       "name": "Two-Column Accordion",
       "settings": {
@@ -638,10 +664,10 @@
         "testimonial_tHbLzP": {
           "type": "testimonial",
           "settings": {
-            "name": "Dan Morar",
-            "title": "CEO topcarrentals.ro",
+            "name": "Bengisu Uygur",
+            "title": "Planning Manager | MiCiM Ltd",
             "country_flag": "",
-            "testimonial_text": "The Vertical Digital team was essential for building, launching and growing our rental and booking platforms. With them we always had a trusted, loyal and dedicated partner for our success."
+            "testimonial_text": "It offers robust planning and scheduling features, an intuitive interface, and high levels of flexibility."
           }
         },
         "testimonial_FTmqJ9": {
