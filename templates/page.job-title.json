@@ -113,10 +113,54 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_WQ3iEj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_DQMCBX": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_yR6Mkj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Built for every role involved in planning and delivering projects, our robust but extremely easy-to-use project management suite of tools was built to meet the needs of both strategic decision-makers and delivery teams across the built environment.</p><p>Asta supports clients, executives, commercial teams, estimators, planners and schedulers, planning leads, project managers, site managers, field engineers, IT teams, and subcontractors. </p><p>The Asta suite delivers real-time project planning and management, construction scheduling, and programme visibility across all stages of delivery. With cloud-based access, role-specific controls, and a single source of truth, teams can improve coordination, reduce risk, and keep projects on time and within budget.</p>"
+          }
+        },
+        "button_cdLkyh": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_DQMCBX",
+        "text_yR6Mkj",
+        "button_cdLkyh"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
-    "collection_list_a4Pj4P"
+    "collection_list_a4Pj4P",
+    "rich_text_WQ3iEj"
   ]
 }
