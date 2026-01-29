@@ -17,6 +17,35 @@
         "padding_bottom": 28
       }
     },
+    "image_banner_kGMAxh": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_NAWHMp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Job Titles",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NAWHMp"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/team.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-left",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
     "rich_text_WQ3iEj": {
       "type": "rich-text",
       "blocks": {
@@ -140,6 +169,7 @@
   },
   "order": [
     "main",
+    "image_banner_kGMAxh",
     "rich_text_WQ3iEj",
     "collection_list_a4Pj4P"
   ]
