@@ -685,28 +685,38 @@
     "parallel_testimonials_6ayBHg": {
       "type": "parallel-testimonials",
       "blocks": {
-        "testimonial_tHbLzP": {
-          "type": "testimonial",
-          "settings": {
-            "name": "Dan Morar",
-            "title": "CEO topcarrentals.ro",
-            "country_flag": "",
-            "testimonial_text": "The Vertical Digital team was essential for building, launching and growing our rental and booking platforms. With them we always had a trusted, loyal and dedicated partner for our success."
-          }
-        },
         "testimonial_FTmqJ9": {
           "type": "testimonial",
           "settings": {
             "name": "Levin Wense",
-            "title": "CEO and Co-founder MVP Match",
+            "title": "CEO and Co-founder | MVP Match",
             "country_flag": "",
             "testimonial_text": "I would highly recommend their services to any company looking for top-notch IT staff. They have truly been a valuable partner for our business and have played an important role in our success."
+          }
+        },
+        "testimonial_8LdM6q": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Bengisu Uygur",
+            "title": "Planning Manager | MiCiM Ltd",
+            "country_flag": "",
+            "testimonial_text": "MiCiM combines extensive engineering and construction know-how with the latest technology to implement pragmatic solutions, and Asta Powerproject is central to the efficiency and effectiveness of our operations."
+          }
+        },
+        "testimonial_tHbLzP": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Dan Morar",
+            "title": "CEO | topcarrentals.ro",
+            "country_flag": "",
+            "testimonial_text": "The Vertical Digital team was essential for building, launching and growing our rental and booking platforms. With them we always had a trusted, loyal and dedicated partner for our success."
           }
         }
       },
       "block_order": [
-        "testimonial_tHbLzP",
-        "testimonial_FTmqJ9"
+        "testimonial_FTmqJ9",
+        "testimonial_8LdM6q",
+        "testimonial_tHbLzP"
       ],
       "name": "Testimonials",
       "settings": {
