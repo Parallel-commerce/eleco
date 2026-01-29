@@ -176,8 +176,8 @@
         "divider_color": "#ff0000",
         "primary_button_color": "#ff6b35",
         "primary_button_text_color": "#ffffff",
-        "hero_title": "Plan with certainty, build with confidence",
-        "hero_subtitle": "Take control with integrative tools that gives teams the power to master project timelines",
+        "hero_title": "The future of 4D planning",
+        "hero_subtitle": "Use the power of model-based planning to optimise your schedule with a fully integrated module making it easy to generate 4D plans",
         "hero_image": "shopify://shop_images/Asta_Powerproject_109e16a4-29a3-4d9b-b8d5-165a549f2bf1.svg",
         "hero_background_color": "#2a303a",
         "hero_text_color": "#ffffff",
@@ -283,6 +283,13 @@
             "text": "Identify issues early"
           }
         },
+        "feature_item_eDjGz8": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Most accesible on the market"
+          }
+        },
         "feature_item_iRNHQw": {
           "type": "feature_item",
           "settings": {
@@ -295,6 +302,7 @@
         "heading_qDbMj8",
         "feature_item_8agkWh",
         "feature_item_gVYYUV",
+        "feature_item_eDjGz8",
         "feature_item_iRNHQw"
       ],
       "name": "Image with features",
@@ -406,7 +414,7 @@
         "richtext_LJNcig": {
           "type": "richtext",
           "settings": {
-            "text": "<h1>Voted best <span style=\"text-decoration:underline\">Project Management </span>Software</h1>"
+            "text": "<h1>Asta is your all in one software solution </h1>"
           }
         }
       },
@@ -669,20 +677,10 @@
             "country_flag": "",
             "testimonial_text": "Asta Powerproject 4D’s features and capabilities align well with our needs. Its competitive pricing and good customer support and training made it more attractive than other companies’ BIM modules."
           }
-        },
-        "testimonial_FTmqJ9": {
-          "type": "testimonial",
-          "settings": {
-            "name": "Levin Wense",
-            "title": "CEO and Co-founder MVP Match",
-            "country_flag": "",
-            "testimonial_text": "I would highly recommend their services to any company looking for top-notch IT staff. They have truly been a valuable partner for our business and have played an important role in our success."
-          }
         }
       },
       "block_order": [
-        "testimonial_tHbLzP",
-        "testimonial_FTmqJ9"
+        "testimonial_tHbLzP"
       ],
       "name": "Testimonials",
       "settings": {
@@ -703,7 +701,7 @@
         "product_9Fqg3n": {
           "type": "product",
           "settings": {
-            "product": "asta-connect"
+            "product": "asta-powerproject"
           }
         },
         "product_Hi9e7N": {
@@ -715,13 +713,13 @@
         "product_aeUw4W": {
           "type": "product",
           "settings": {
-            "product": "asta-estimate"
+            "product": "asta-vision"
           }
         },
         "product_3Mi7Bg": {
           "type": "product",
           "settings": {
-            "product": "asta-powerproject"
+            "product": "asta-vision-live"
           }
         }
       },
@@ -745,91 +743,63 @@
         "padding_bottom": 36
       }
     },
-    "parallel_logo_block_Kyk8RD": {
-      "type": "parallel-logo-block",
-      "blocks": {
-        "logo_X7DT6Q": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/sparklayer_black.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_X3bNgL": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_pfRhE7": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/partner_logo_2.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_XpeMAz": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/partner_logo_3.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        }
-      },
-      "block_order": [
-        "logo_X7DT6Q",
-        "logo_X3bNgL",
-        "logo_pfRhE7",
-        "logo_XpeMAz"
-      ],
-      "name": "Logo Block",
-      "settings": {
-        "color_scheme": "scheme-2",
-        "title": "Partner Integrataions",
-        "heading_size": "h2",
-        "title_alignment": "left",
-        "title_spacing": 24,
-        "logo_width": 150,
-        "logo_spacing": 40,
-        "logo_opacity": 100,
-        "logo_hover_opacity": 100,
-        "mobile_columns": "2",
-        "anchor_id": "",
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
     "parallel_faq_accordion_3Vq7Fm": {
       "type": "parallel-faq-accordion",
       "blocks": {
         "faq_item_QVNkTB": {
           "type": "faq_item",
           "settings": {
-            "question": "Who is Asta Powerproject for?",
-            "answer": "<p>This is a sample answer to the first question.</p>"
+            "question": "What is Asta 4D?",
+            "answer": "<p>Asta 4D is the 4D (time-linked) planning and visualisation capability for Asta Powerproject, connecting the project schedule to BIM models to show how a project will be built over time. It turns 3D models into animated construction sequences, improving communication, coordination, and issue identification across the project team.</p>"
           }
         },
         "faq_item_bVkqMa": {
           "type": "faq_item",
           "settings": {
-            "question": "Why is Asta better than the competition?",
-            "answer": "<p>This is a sample answer to the second question.</p>"
+            "question": "What is model-based planning?",
+            "answer": "<p>Model-based planning links the construction programme directly to a digital model, so time, sequence, and geometry are managed together rather than in separate tools. This allows teams to simulate the build, test options, and spot problems visually before they affect cost, safety, or time on site.</p>"
           }
         },
         "faq_item_jARANR": {
           "type": "faq_item",
           "settings": {
-            "question": "What is the difference between a single and a concurrent license?",
-            "answer": "<p>This is a sample answer to the third question.</p>"
+            "question": "Who is Asta 4D for?",
+            "answer": "<p>Asta 4D is designed for contractors, subcontractors, designers, consultants, clients, and asset owners who want to plan and review projects using 4D rather than Gantt charts alone. It suits organisations delivering complex buildings, infrastructure, or residential schemes where visualising sequence, logistics, and risk is critical.</p>"
+          }
+        },
+        "faq_item_xbqw6y": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How does Asta 4D work with Asta Powerproject?",
+            "answer": "<p>Asta 4D is integrated with Asta Powerproject so the construction schedule drives the 4D simulation directly, using tasks, calendars, and logic already in the programme. BIM models (for example from IFC) are linked to tasks, and the 4D viewer—built on Unity—plays the construction sequence, updated automatically when the schedule or model changes.</p>"
+          }
+        },
+        "faq_item_D6kYMK": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Does Asta 4D export to other formats?",
+            "answer": "<p>Yes, AVI movie files along with JPEG, PNG, GIF, BMP, TIFF imagery formats.</p>"
+          }
+        },
+        "faq_item_J98dPj": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What BIM Model formats does Asta 4D use?",
+            "answer": "<p>Asta can import one or multiple IFC files, which can then be overlaid to create a federated model view.</p>"
+          }
+        },
+        "faq_item_WMUxVH": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can Temporary Works be visualised in Asta 4D?",
+            "answer": "<p>Yes. Separate IFC files for site objects, like cranes and site offices, can be imported and moved around within the 3D viewer. These can be linked to activities to control appearance, and have movement paths added to animate them.</p>"
+          }
+        },
+        "faq_item_rTRq3B": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Do you offer training for 4D?",
+            "answer": "<p>Yes, we offer a two-day Introduction to Asta 4D course.</p>"
           }
         },
         "faq_item_bAXDXk": {
@@ -844,6 +814,11 @@
         "faq_item_QVNkTB",
         "faq_item_bVkqMa",
         "faq_item_jARANR",
+        "faq_item_xbqw6y",
+        "faq_item_D6kYMK",
+        "faq_item_J98dPj",
+        "faq_item_WMUxVH",
+        "faq_item_rTRq3B",
         "faq_item_bAXDXk"
       ],
       "name": "FAQ Accordion",
@@ -860,102 +835,8 @@
         "item_background": "#f6f7f7",
         "item_background_active": "#fce8e6",
         "anchor_id": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "parallel_comparison_table_eeJhkm": {
-      "type": "parallel-comparison-table",
-      "blocks": {
-        "comparison_row_9B77nj": {
-          "type": "comparison_row",
-          "settings": {
-            "functionality_text": "Task of work per file",
-            "column_2_type": "text",
-            "column_2_text": "250",
-            "column_3_type": "text",
-            "column_3_text": "Unlimited"
-          }
-        },
-        "comparison_row_hhDyjA": {
-          "type": "comparison_row",
-          "settings": {
-            "functionality_text": "Task per line of work",
-            "column_2_type": "text",
-            "column_2_text": "10",
-            "column_3_type": "text",
-            "column_3_text": "Unlimited"
-          }
-        },
-        "comparison_row_3E8i6B": {
-          "type": "comparison_row",
-          "settings": {
-            "functionality_text": "Overlapping tasks",
-            "column_2_type": "cross",
-            "column_2_text": "Value",
-            "column_3_type": "tick",
-            "column_3_text": "Value"
-          }
-        },
-        "comparison_row_rJAtXQ": {
-          "type": "comparison_row",
-          "settings": {
-            "functionality_text": "Reschedule tasks within the project",
-            "column_2_type": "cross",
-            "column_2_text": "Value",
-            "column_3_type": "tick",
-            "column_3_text": "Value"
-          }
-        },
-        "comparison_row_DbzVPR": {
-          "type": "comparison_row",
-          "settings": {
-            "functionality_text": "Start On or After constraints",
-            "column_2_type": "tick",
-            "column_2_text": "Value",
-            "column_3_type": "tick",
-            "column_3_text": "Value"
-          }
-        }
-      },
-      "block_order": [
-        "comparison_row_9B77nj",
-        "comparison_row_hhDyjA",
-        "comparison_row_3E8i6B",
-        "comparison_row_rJAtXQ",
-        "comparison_row_DbzVPR"
-      ],
-      "name": "Comparison Table",
-      "settings": {
-        "heading": "Compare products",
-        "heading_size": "h1",
-        "heading_spacing": 40,
-        "column_1_title": "Functionality",
-        "column_2_title": "Easyplan",
-        "column_3_title": "Asta Powerproject",
-        "button_1_label": "Learn more",
-        "button_1_link": "",
-        "button_1_border_color": "#e83f40",
-        "button_1_text_color": "#e83f40",
-        "button_1_hover_text_color": "#ffffff",
-        "button_2_label": "Buy Now",
-        "button_2_link": "",
-        "button_2_background_color": "#e83f40",
-        "button_2_text_color": "#ffffff",
-        "button_2_hover_background_color": "#d14a32",
-        "button_2_hover_text_color": "#ffffff",
-        "button_spacing": 40,
-        "cell_padding": 20,
-        "border_radius": 8,
-        "header_font_size": 18,
-        "cell_font_size": 16,
-        "color_scheme": "",
-        "header_background": "#f3f4f6",
-        "header_text_color": "#111827",
-        "border_color": "#e5e7eb",
-        "anchor_id": "",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 68,
+        "padding_bottom": 68
       }
     },
     "parallel_support_cta_RxfB67": {
@@ -965,21 +846,21 @@
           "type": "resource_link",
           "settings": {
             "label": "Support portal",
-            "link": ""
+            "link": "https://support.elecosoft.com/"
           }
         },
         "resource_link_wTwLVG": {
           "type": "resource_link",
           "settings": {
-            "label": "Release notes",
-            "link": ""
+            "label": "Resource Hub",
+            "link": "https://elecosoft.com/products/asta/asta-powerproject/learn-support/"
           }
         },
         "resource_link_y8bPwx": {
           "type": "resource_link",
           "settings": {
-            "label": "System requirements",
-            "link": ""
+            "label": "Training Course (UK)",
+            "link": "https://elecosoft.com/training-events/introduction-to-asta-powerproject-4d/"
           }
         },
         "resource_link_VzrFGt": {
@@ -1014,7 +895,7 @@
         "secondary_button_border": "#cccccc",
         "background_color": "#2c2c2c",
         "text_color": "#ffffff",
-        "resource_background": "#3a3a3a",
+        "resource_background": "#242833",
         "resource_background_hover": "#4a4a4a",
         "resource_border": "#ffffff",
         "resource_icon_color": "#e83f40",
@@ -1032,26 +913,6 @@
     },
     "parallel_information_Ehxmkb": {
       "type": "parallel-information",
-      "blocks": {
-        "info_block_WNhbpE": {
-          "type": "info_block",
-          "settings": {
-            "heading": "Try Asta Powerproject before you buy",
-            "text": "<p>See how Asta Powerproject can work for you and your organisation.</p><p>Asta Powerproject supports more than 100,000 professionals worldwide in delivering successful projects by equipping organisations with the award-winning project, program, and resource management tools necessary to bring their built asset to life, regardless of scale; whether a high-profile megaproject, single storey extensions or anything in between.</p><p>Sales team: +44 1844 281 700</p>"
-          }
-        },
-        "info_block_39Mnd3": {
-          "type": "info_block",
-          "settings": {
-            "heading": "Need a single Education licence?",
-            "text": "<p>To receive an education licence, an authorised officer of the educational establishment can complete this form to start the process.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "info_block_WNhbpE",
-        "info_block_39Mnd3"
-      ],
       "name": "Information",
       "settings": {
         "color_scheme": "",
@@ -1082,9 +943,7 @@
     "parallel_logo_block_hHLWpL",
     "parallel_testimonials_6ayBHg",
     "parallel_custom_product_list_M7EFHt",
-    "parallel_logo_block_Kyk8RD",
     "parallel_faq_accordion_3Vq7Fm",
-    "parallel_comparison_table_eeJhkm",
     "parallel_support_cta_RxfB67",
     "parallel_information_Ehxmkb"
   ]
