@@ -28,13 +28,13 @@
         "featured_collection_j8gh4D": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "commercial"
           }
         },
         "featured_collection_AEbRM7": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "estimator"
           }
         }
       },
