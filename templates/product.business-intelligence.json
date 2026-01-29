@@ -638,10 +638,10 @@
         "testimonial_tHbLzP": {
           "type": "testimonial",
           "settings": {
-            "name": "Dan Morar",
-            "title": "CEO topcarrentals.ro",
+            "name": "Bengisu Uygur",
+            "title": "Planning Manager | MiCiM Ltd",
             "country_flag": "",
-            "testimonial_text": "The Vertical Digital team was essential for building, launching and growing our rental and booking platforms. With them we always had a trusted, loyal and dedicated partner for our success."
+            "testimonial_text": "MiCiM can now produce BI reports using live, unambiguous project data that is visible 24/7 to anyone and is just one click away."
           }
         },
         "testimonial_FTmqJ9": {
@@ -830,7 +830,6 @@
         "item_padding": 18,
         "border_radius": 12,
         "question_font_size": 16,
-        "question_font_weight": "400",
         "color_scheme": "",
         "item_background": "#f6f7f7",
         "item_background_active": "#fce8e6",
