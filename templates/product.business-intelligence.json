@@ -825,7 +825,7 @@
           "type": "resource_link",
           "settings": {
             "label": "View all resources",
-            "link": ""
+            "link": "https://elecosoft.com/us/documentation/powerproject/"
           }
         }
       },
