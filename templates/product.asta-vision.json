@@ -678,11 +678,21 @@
             "country_flag": "",
             "testimonial_text": "I would highly recommend their services to any company looking for top-notch IT staff. They have truly been a valuable partner for our business and have played an important role in our success."
           }
+        },
+        "testimonial_BKxVbp": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Bengisu Uygur",
+            "title": "Planning Manager | MiCiM Ltd",
+            "country_flag": "",
+            "testimonial_text": "With Asta Powerproject Vision, we have end-to-end visibility of project changes and progress. As a result, we can easily make and sync changes to ensure that our teams never work in isolation again."
+          }
         }
       },
       "block_order": [
         "testimonial_tHbLzP",
-        "testimonial_FTmqJ9"
+        "testimonial_FTmqJ9",
+        "testimonial_BKxVbp"
       ],
       "name": "Testimonials",
       "settings": {
