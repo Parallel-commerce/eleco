@@ -515,7 +515,7 @@
         "accordion_item_htnMQm": {
           "type": "accordion_item",
           "settings": {
-            "title": "Sub contractors",
+            "title": "Subcontractors",
             "content_1": "<p>Clear visibility of what needs doing and when, as tasks are derived from the main schedule.</p>",
             "content_2": "<p>Faster sign-off for completed work.</p>",
             "content_3": "<p>Reduced paperwork and duplication with a simple mobile workflow.</p>",
@@ -527,10 +527,34 @@
         "accordion_item_EDULcY": {
           "type": "accordion_item",
           "settings": {
-            "title": "Designers and consultancy",
-            "content_1": "<p>Detailed history of project changes to support claims and resolve disputes.</p>",
-            "content_2": "",
-            "content_3": "",
+            "title": "Designers and Consultants",
+            "content_1": "<p>More accurate as-built data from the field, improving project analysis.</p>",
+            "content_2": "<p>Easier compliance and energy-performance verification for Part L compliance.</p>",
+            "content_3": "<p>Better insight for advisory work through consistent data.</p>",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_E9ewrb": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Residential Construction",
+            "content_1": "<p>Plot-by-plot visibility of build and Part L status so housebuilders can see which are compliant.</p>",
+            "content_2": "<p>Faster EPC and handover.</p>",
+            "content_3": "<p>Lower risk of costly rework when defects are caught early.</p>",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_kqEfGL": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Clients and Asset Owners",
+            "content_1": "<p>Greater transparency over progress and compliance.</p>",
+            "content_2": "<p>Strong asset documentation (including Part L).</p>",
+            "content_3": "<p>Improved delivery, as accurate site data gives the information needed to manage risk.</p>",
             "content_4": "",
             "content_5": "",
             "content_6": ""
@@ -540,7 +564,9 @@
       "block_order": [
         "accordion_item_AX7zXQ",
         "accordion_item_htnMQm",
-        "accordion_item_EDULcY"
+        "accordion_item_EDULcY",
+        "accordion_item_E9ewrb",
+        "accordion_item_kqEfGL"
       ],
       "name": "Two-Column Accordion",
       "settings": {
@@ -662,25 +688,16 @@
         "testimonial_tHbLzP": {
           "type": "testimonial",
           "settings": {
-            "name": "Dan Morar",
-            "title": "CEO topcarrentals.ro",
+            "name": "Shane McHugh",
+            "title": "Senior Planner | JJ Rhatigan & Company",
             "country_flag": "",
-            "testimonial_text": "The Vertical Digital team was essential for building, launching and growing our rental and booking platforms. With them we always had a trusted, loyal and dedicated partner for our success."
-          }
-        },
-        "testimonial_FTmqJ9": {
-          "type": "testimonial",
-          "settings": {
-            "name": "Levin Wense",
-            "title": "CEO and Co-founder MVP Match",
-            "country_flag": "",
-            "testimonial_text": "I would highly recommend their services to any company looking for top-notch IT staff. They have truly been a valuable partner for our business and have played an important role in our success."
+            "testimonial_text": "Bringing in Asta Powerproject and Asta SiteProgress has been central to restructuring our project delivery and operations.",
+            "image": "shopify://shop_images/JJ-Rhatigan-logo-400x200-1.jpg"
           }
         }
       },
       "block_order": [
-        "testimonial_tHbLzP",
-        "testimonial_FTmqJ9"
+        "testimonial_tHbLzP"
       ],
       "name": "Testimonials",
       "settings": {
@@ -698,22 +715,10 @@
     "parallel_custom_product_list_M7EFHt": {
       "type": "parallel-custom-product-list",
       "blocks": {
-        "product_9Fqg3n": {
-          "type": "product",
-          "settings": {
-            "product": "asta-connect"
-          }
-        },
         "product_Hi9e7N": {
           "type": "product",
           "settings": {
             "product": "asta-enterprise"
-          }
-        },
-        "product_aeUw4W": {
-          "type": "product",
-          "settings": {
-            "product": "asta-estimate"
           }
         },
         "product_3Mi7Bg": {
@@ -724,14 +729,12 @@
         }
       },
       "block_order": [
-        "product_9Fqg3n",
         "product_Hi9e7N",
-        "product_aeUw4W",
         "product_3Mi7Bg"
       ],
       "name": "Custom Product List",
       "settings": {
-        "heading": "Related Products",
+        "heading": "Asta Intergrations",
         "heading_size": "h2",
         "heading_alignment": "left",
         "button_text": "Learn more",
