@@ -211,13 +211,6 @@
             "heading_size": "h1"
           }
         },
-        "feature_item_CkdfUp": {
-          "type": "feature_item",
-          "settings": {
-            "icon": "eleco-tick",
-            "text": "Record progress without a signal"
-          }
-        },
         "feature_item_efdUrz": {
           "type": "feature_item",
           "settings": {
@@ -232,6 +225,13 @@
             "text": "Streamline site operations"
           }
         },
+        "feature_item_CkdfUp": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Record progress without a signal"
+          }
+        },
         "feature_item_HUwPLi": {
           "type": "feature_item",
           "settings": {
@@ -242,9 +242,9 @@
       },
       "block_order": [
         "heading_GGwQtN",
-        "feature_item_CkdfUp",
         "feature_item_efdUrz",
         "feature_item_eVF6yn",
+        "feature_item_CkdfUp",
         "feature_item_HUwPLi"
       ],
       "name": "Image with features",
