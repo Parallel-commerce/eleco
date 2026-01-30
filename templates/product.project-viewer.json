@@ -583,34 +583,7 @@
         "logo_X7DT6Q": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/AstaGPT.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_X3bNgL": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_pfRhE7": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/partner_logo_2.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_XpeMAz": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/partner_logo_3.svg",
+            "logo": "shopify://shop_images/Asta_Powerproject.svg",
             "alt_text": "Logo",
             "link": "",
             "link_target_blank": false
@@ -618,15 +591,12 @@
         }
       },
       "block_order": [
-        "logo_X7DT6Q",
-        "logo_X3bNgL",
-        "logo_pfRhE7",
-        "logo_XpeMAz"
+        "logo_X7DT6Q"
       ],
       "name": "Logo Block",
       "settings": {
         "color_scheme": "scheme-2",
-        "title": "Partner Integrations",
+        "title": "Asta Integrations",
         "heading_size": "h2",
         "title_alignment": "left",
         "title_spacing": 24,
