@@ -523,7 +523,7 @@
         "accordion_item_Md4qfb": {
           "type": "accordion_item",
           "settings": {
-            "title": "Residential construction",
+            "title": "Residential Construction",
             "content_1": "<p>Sales and stakeholder engagement, using 4D to show build progress</p>",
             "content_2": "<p>Phased occupancy planning for multi-block schemes, coordinating access</p>",
             "content_3": "<p>Reduced rework through clearer sequencing in repetitive units</p>",
@@ -535,7 +535,7 @@
         "accordion_item_QWPW3e": {
           "type": "accordion_item",
           "settings": {
-            "title": "Clients and Asset owners",
+            "title": "Clients and Asset Owners",
             "content_1": "<p>Greater confidence in delivery dates through visibility of critical path and milestones</p>",
             "content_2": "<p>Better risk and change management, with scenario testing that shows operational impact of design changes</p>",
             "content_3": "<p>Improved handover and operations readiness, using time-linked models</p>",
