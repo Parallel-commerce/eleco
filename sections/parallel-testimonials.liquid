@@ -100,8 +100,9 @@
 
     .testimonials-{{ section.id }}__image-wrapper {
       width: 100%;
-      max-width: none;
-      align-self: stretch;
+      max-width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
     }
   }
 
@@ -125,16 +126,19 @@
 
   .testimonials-{{ section.id }}__image-wrapper {
     flex-shrink: 0;
-    align-self: stretch;
-    aspect-ratio: 1 / 1;
+    width: 120px;
+    height: 120px;
     min-width: 80px;
-    /* max-width: calc(50% - 0.75rem); */
+    max-width: 150px;
     border-radius: 0.4rem;
     overflow: hidden;
-    background: rgba(var(--color-foreground), 0.05);
+    position: relative;
   }
 
   .testimonials-{{ section.id }}__image {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -311,13 +315,9 @@
                       <div class="testimonials-{{ section.id }}__image-wrapper">
                         {{
                           block.settings.image
-                          | image_url: width: 160
-                          | image_tag: loading: 'lazy', alt: image_alt, class: image_class, widths: '80, 160'
+                          | image_url: width: 300
+                          | image_tag: loading: 'lazy', alt: image_alt, class: image_class, widths: '120, 150, 240, 300'
                         }}
-                      </div>
-                    {%- else -%}
-                      <div class="testimonials-{{ section.id }}__image-wrapper">
-                        <div style="width: 100%; height: 100%; background: rgba(var(--color-foreground), 0.1);"></div>
                       </div>
                     {%- endif -%}
 
