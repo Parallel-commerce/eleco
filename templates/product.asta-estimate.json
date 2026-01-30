@@ -434,6 +434,69 @@
         "hide_logos_mobile": true
       }
     },
+    "parallel_logo_block_hHLWpL": {
+      "type": "parallel-logo-block",
+      "blocks": {
+        "logo_XeHnR7": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/sparklayer_black.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_WNf64B": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_hWRjrM": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/partner_logo_2.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_itwWmj": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/partner_logo_3.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "logo_XeHnR7",
+        "logo_WNf64B",
+        "logo_hWRjrM",
+        "logo_itwWmj"
+      ],
+      "name": "Logo Block",
+      "settings": {
+        "color_scheme": "",
+        "title": "",
+        "heading_size": "h1",
+        "title_alignment": "center",
+        "title_spacing": 24,
+        "logo_width": 150,
+        "logo_spacing": 40,
+        "logo_opacity": 100,
+        "logo_hover_opacity": 100,
+        "mobile_columns": "2",
+        "anchor_id": "",
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
     "parallel_highlights_yTAfJh": {
       "type": "parallel-highlights",
       "blocks": {
@@ -464,6 +527,7 @@
         "highlight_kcCRDW",
         "highlight_kmzQJf"
       ],
+      "disabled": true,
       "name": "Highlights",
       "settings": {
         "color_scheme": "",
@@ -553,111 +617,6 @@
         "padding_bottom": 60
       }
     },
-    "parallel_video_three_column_BTPQnC": {
-      "type": "parallel-video-three-column",
-      "blocks": {
-        "video_item_NYWJta": {
-          "type": "video_item",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": ""
-          }
-        },
-        "video_item_qFpjwc": {
-          "type": "video_item",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": ""
-          }
-        },
-        "video_item_cfdDnt": {
-          "type": "video_item",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": ""
-          }
-        }
-      },
-      "block_order": [
-        "video_item_NYWJta",
-        "video_item_qFpjwc",
-        "video_item_cfdDnt"
-      ],
-      "name": "Three Column Video",
-      "settings": {
-        "heading": "Video Gallery",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "full_width": false,
-        "color_scheme": "",
-        "anchor_id": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "parallel_logo_block_hHLWpL": {
-      "type": "parallel-logo-block",
-      "blocks": {
-        "logo_XeHnR7": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/sparklayer_black.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_WNf64B": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_hWRjrM": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/partner_logo_2.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_itwWmj": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/partner_logo_3.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        }
-      },
-      "block_order": [
-        "logo_XeHnR7",
-        "logo_WNf64B",
-        "logo_hWRjrM",
-        "logo_itwWmj"
-      ],
-      "name": "Logo Block",
-      "settings": {
-        "color_scheme": "",
-        "title": "",
-        "heading_size": "h1",
-        "title_alignment": "center",
-        "title_spacing": 24,
-        "logo_width": 150,
-        "logo_spacing": 40,
-        "logo_opacity": 100,
-        "logo_hover_opacity": 100,
-        "mobile_columns": "2",
-        "anchor_id": "",
-        "padding_top": 0,
-        "padding_bottom": 40
-      }
-    },
     "parallel_testimonials_6ayBHg": {
       "type": "parallel-testimonials",
       "blocks": {
@@ -726,7 +685,7 @@
         "columns_desktop": 3,
         "columns_mobile": "2",
         "color_scheme": "scheme-2",
-        "anchor_id": "",
+        "anchor_id": "Integrations",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -1083,10 +1042,9 @@
     "parallel_image_with_features_pYtxX7",
     "parallel_image_with_features_UVMBrD",
     "parallel_award_banner_C3twkW",
+    "parallel_logo_block_hHLWpL",
     "parallel_highlights_yTAfJh",
     "parallel_two_column_accordion_xi4PpU",
-    "parallel_video_three_column_BTPQnC",
-    "parallel_logo_block_hHLWpL",
     "parallel_testimonials_6ayBHg",
     "parallel_custom_product_list_M7EFHt",
     "parallel_logo_block_Kyk8RD",
