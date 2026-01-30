@@ -98,8 +98,20 @@
   width: calc(100% - 2 * var(--image-padding));
 }
 
+/* Ensure card__media fills the ratio container for collection cards */
+.card__inner.ratio > .card__media {
+  position: absolute;
+  top: var(--image-padding);
+  left: var(--image-padding);
+  right: var(--image-padding);
+  bottom: var(--image-padding);
+  width: auto;
+  margin: 0;
+}
+
 .card .media {
   bottom: 0;
+  left: 0;
   position: absolute;
   top: 0;
   width: 100%;
