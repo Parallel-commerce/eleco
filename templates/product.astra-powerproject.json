@@ -284,18 +284,18 @@
             "text": "Robust but easy to use"
           }
         },
-        "feature_item_gVYYUV": {
-          "type": "feature_item",
-          "settings": {
-            "icon": "eleco-tick",
-            "text": "Streamlined schedule creation"
-          }
-        },
         "feature_item_iRNHQw": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
             "text": "Track and manage delays"
+          }
+        },
+        "feature_item_gVYYUV": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Streamlined schedule creation"
           }
         },
         "feature_item_a4YiiR": {
@@ -309,8 +309,8 @@
       "block_order": [
         "heading_qDbMj8",
         "feature_item_8agkWh",
-        "feature_item_gVYYUV",
         "feature_item_iRNHQw",
+        "feature_item_gVYYUV",
         "feature_item_a4YiiR"
       ],
       "name": "Image with features",
@@ -357,18 +357,18 @@
             "text": "Proactive scenario modelling"
           }
         },
-        "feature_item_prUy3i": {
-          "type": "feature_item",
-          "settings": {
-            "icon": "eleco-tick",
-            "text": "Automated compliance checks"
-          }
-        },
         "feature_item_FgNLUc": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
             "text": "Track planned vs actual costs"
+          }
+        },
+        "feature_item_prUy3i": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Automated compliance checks"
           }
         }
       },
@@ -376,8 +376,8 @@
         "heading_EU6MmW",
         "feature_item_Wp9bXU",
         "feature_item_JY6MwN",
-        "feature_item_prUy3i",
-        "feature_item_FgNLUc"
+        "feature_item_FgNLUc",
+        "feature_item_prUy3i"
       ],
       "name": "Image with features",
       "settings": {
