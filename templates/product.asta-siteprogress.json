@@ -273,7 +273,7 @@
         "heading_qDbMj8": {
           "type": "heading",
           "settings": {
-            "heading": "Heading",
+            "heading": "Direct integration with Asta Powerproject",
             "heading_size": "h1"
           }
         },
@@ -281,21 +281,21 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Update progress at any time from any location"
           }
         },
         "feature_item_gVYYUV": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Align site reporting with planning"
           }
         },
         "feature_item_iRNHQw": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Updates captured in the app sync directly into the Asta Powerproject master schedule"
           }
         }
       },
