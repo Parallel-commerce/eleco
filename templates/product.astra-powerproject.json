@@ -551,8 +551,8 @@
         "accordion_item_VxNne6": {
           "type": "accordion_item",
           "settings": {
-            "title": "Clients and asset owners",
-            "content_1": "<p>Real-time visibility across entire portfolios with BI integration for strategic reporting.</p>",
+            "title": "Clients and Asset Owners",
+            "content_1": "<p>Real-time visibility across entire portfolios with <a href=\"/products/business-intelligence\" title=\"Business Intelligence\">BI integration</a> for strategic reporting.</p>",
             "content_2": "<p>Progress tracking against baselines means clients receive transparent reporting, with a full audit trail.</p>",
             "content_3": "<p>Evidence-based change management and impact documentation increases accountability.</p>",
             "content_4": "<p>Rock-solid records of progress provide robust evidence for any dispute resolution.</p>",
