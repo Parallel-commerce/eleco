@@ -343,13 +343,6 @@
             "heading_size": "h1"
           }
         },
-        "feature_item_Wp9bXU": {
-          "type": "feature_item",
-          "settings": {
-            "icon": "eleco-tick",
-            "text": "Robust scheduling capabilities"
-          }
-        },
         "feature_item_JY6MwN": {
           "type": "feature_item",
           "settings": {
@@ -364,6 +357,13 @@
             "text": "Track planned vs actual costs"
           }
         },
+        "feature_item_Wp9bXU": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Robust scheduling capabilities"
+          }
+        },
         "feature_item_prUy3i": {
           "type": "feature_item",
           "settings": {
@@ -374,9 +374,9 @@
       },
       "block_order": [
         "heading_EU6MmW",
-        "feature_item_Wp9bXU",
         "feature_item_JY6MwN",
         "feature_item_FgNLUc",
+        "feature_item_Wp9bXU",
         "feature_item_prUy3i"
       ],
       "name": "Image with features",
