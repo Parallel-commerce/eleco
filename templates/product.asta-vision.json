@@ -491,7 +491,7 @@
         "accordion_item_htnMQm": {
           "type": "accordion_item",
           "settings": {
-            "title": "Sub contractors",
+            "title": "Subcontractors",
             "content_1": "<p>Real-time multi-user collaboration means everyone is working from the same project plans.</p>",
             "content_2": "<p>Access tender planning tools allowing for accurate and reliable bids for a competitive advantage.</p>",
             "content_3": "<p>Controlled access and clear responsibilities fosters accountability while protecting sensitive information.</p>",
@@ -503,7 +503,7 @@
         "accordion_item_EDULcY": {
           "type": "accordion_item",
           "settings": {
-            "title": "Designers and consultancy",
+            "title": "Designers and Consultants",
             "content_1": "<p>Centralised programme hub to align design stages, approvals, and delivery milestones across all projects.</p>",
             "content_2": "<p>Configurable, portfolio‑level views and dashboards to support client reporting and governance.</p>",
             "content_3": "<p>Controlled collaboration spaces so internal teams and external partners can work on shared, live schedules.</p>",
@@ -515,7 +515,7 @@
         "accordion_item_XX8GYV": {
           "type": "accordion_item",
           "settings": {
-            "title": "Residential construction",
+            "title": "Residential Construction",
             "content_1": "<p>Portfolio-level oversight for multiple housing developments enables faster, strategic decision-making.</p>",
             "content_2": "<p>Template-driven planning to standardise planning and minimise the risk of errors.</p>",
             "content_3": "<p>Seamless resource management across multiple developments to co-ordinate trades.</p>",
@@ -527,7 +527,7 @@
         "accordion_item_MXN6jV": {
           "type": "accordion_item",
           "settings": {
-            "title": "Clients and Asset owners",
+            "title": "Clients and Asset Owners",
             "content_1": "<p>Portfolio hub giving a single, controlled view of all project schedules and key milestones.</p>",
             "content_2": "<p>Standardised coding, templates, and approvals so partners supply data in a consistent, comparable format.</p>",
             "content_3": "<p>Configurable views and reports to support governance forums, gateway decisions, and board reporting.</p>",
