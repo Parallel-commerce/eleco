@@ -491,7 +491,7 @@
         "accordion_item_htnMQm": {
           "type": "accordion_item",
           "settings": {
-            "title": "Sub contractors",
+            "title": "Subcontractors",
             "content_1": "<p>Clear visibility of how your package links to the master programme, milestones, and interfaces.</p>",
             "content_2": "<p>Structured change and approval history to support variations, extensions of time, and claims.</p>",
             "content_3": "<p>Role‑based access so site teams update progress while planners control logic and standards.</p>",
@@ -503,7 +503,7 @@
         "accordion_item_EDULcY": {
           "type": "accordion_item",
           "settings": {
-            "title": "Designers and Consultancy",
+            "title": "Designers and Consultants",
             "content_1": "<p>Live, central programme so design stages, approvals, and delivery milestones update instantly for all users.</p>",
             "content_2": "<p>Real‑time portfolio views and dashboards so leaders and clients see the latest position without chasing updates.</p>",
             "content_3": "",
@@ -515,7 +515,7 @@
         "accordion_item_V49zj7": {
           "type": "accordion_item",
           "settings": {
-            "title": "Residential construction",
+            "title": "Residential Construction",
             "content_1": "<p>Live site and plot‑level programmes so build stages update instantly for construction, sales, and management.</p>",
             "content_2": "<p>Real‑time portfolio views across all developments to spot delays early and rebalance resources between sites.</p>",
             "content_3": "<p>Shared, always‑current schedules that keep contractors, sales teams, and customer care aligned on handover dates.</p>",
@@ -527,7 +527,7 @@
         "accordion_item_9Hiwyt": {
           "type": "accordion_item",
           "settings": {
-            "title": "Clients and Asset owners",
+            "title": "Clients and Asset Owners",
             "content_1": "<p>Real‑time portfolio dashboards showing the latest status, milestones, and slippage across all projects.</p>",
             "content_2": "<p>Live access to delivery schedules from contractors and consultants, without chasing static reports.</p>",
             "content_3": "<p>Always‑current views that support governance meetings, gateway decisions, and board reporting on demand.</p>",
