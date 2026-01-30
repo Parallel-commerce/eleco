@@ -528,10 +528,10 @@
           "type": "accordion_item",
           "settings": {
             "title": "Designers and Consultants",
-            "content_1": "<p>BIM integration and 4D planning enables consultants to combine 3D models with scheduling in one solution.</p>",
+            "content_1": "<p><a href=\"/products/asta-powerproject-4d\" title=\"Asta Powerproject 4D\">BIM integration</a> and 4D planning enables consultants to combine 3D models with scheduling in one solution.</p>",
             "content_2": "<p>Built-in scenario analysis and risk management tools to explore optimal project outcomes.</p>",
-            "content_3": "<p>Schedule Quality Check against plans to ensure compliance with industry or company standards.</p>",
-            "content_4": "<p>Customisable reports for clear communication and collaboration with clients, contractors, and stakeholders.</p>",
+            "content_3": "<p>Schedule Quality Checks against plans to ensure compliance with industry or company standards.</p>",
+            "content_4": "<p>Customisable reports for clear communication and collaboration with clients, contractors and stakeholders.</p>",
             "content_5": "",
             "content_6": ""
           }
@@ -539,11 +539,11 @@
         "accordion_item_M7z9KA": {
           "type": "accordion_item",
           "settings": {
-            "title": "Residential construction",
+            "title": "Residential Construction",
             "content_1": "<p>Repeated tasks and plot management for effective planning and procurement.</p>",
             "content_2": "<p>Line of balance for multi-plot developments, creating a smooth workflow between trades.</p>",
             "content_3": "<p>Template-based planning allows for consistency across planning and scheduling.</p>",
-            "content_4": "<p>Asta Siteprogress mobile allows for photo uploads on-site creating an immediate picture of progress.</p>",
+            "content_4": "<p><a href=\"/products/asta-siteprogress\" title=\"Asta SiteProgress\">Asta Siteprogress</a> mobile allows for photo uploads on-site creating an immediate picture of progress.</p>",
             "content_5": "",
             "content_6": ""
           }
