@@ -291,6 +291,13 @@
             "text": "Align site reporting with planning"
           }
         },
+        "feature_item_B9fPCn": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Purpose-built for Powerproject"
+          }
+        },
         "feature_item_iRNHQw": {
           "type": "feature_item",
           "settings": {
@@ -303,6 +310,7 @@
         "heading_qDbMj8",
         "feature_item_8agkWh",
         "feature_item_gVYYUV",
+        "feature_item_B9fPCn",
         "feature_item_iRNHQw"
       ],
       "name": "Image with features",
