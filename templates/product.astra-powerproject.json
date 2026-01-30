@@ -691,7 +691,16 @@
             "name": "Amy Griffiths",
             "title": "Project Manager | Kier Group",
             "country_flag": "",
-            "testimonial_text": "At every point we were being adaptive, reacting to changes and opportunities. Asta Powerproject allowed us to ask '"
+            "testimonial_text": "At every point we were being adaptive, reacting to changes and opportunities. Asta Powerproject allowed us to ask ... and have subscontractors feed into the discussion. As a result, we maintained our critical path and smooth workflow between trades."
+          }
+        },
+        "testimonial_DDjcT4": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Aldwyn Payne",
+            "title": "Planning Manager | HG Construction",
+            "country_flag": "",
+            "testimonial_text": "We're finishing some projects many months ahead of programme, which is excellent achievement given their complexity. Powerproject has been a major contributor to this success."
           }
         },
         "testimonial_FTmqJ9": {
@@ -724,6 +733,7 @@
       },
       "block_order": [
         "testimonial_J3UM8L",
+        "testimonial_DDjcT4",
         "testimonial_FTmqJ9",
         "testimonial_8LdM6q",
         "testimonial_tHbLzP"
@@ -744,22 +754,10 @@
     "parallel_custom_product_list_M7EFHt": {
       "type": "parallel-custom-product-list",
       "blocks": {
-        "product_W6X3YF": {
-          "type": "product",
-          "settings": {
-            "product": "asta-powerproject-4d"
-          }
-        },
         "product_9Fqg3n": {
           "type": "product",
           "settings": {
             "product": "asta-vision"
-          }
-        },
-        "product_Hi9e7N": {
-          "type": "product",
-          "settings": {
-            "product": "asta-enterprise"
           }
         },
         "product_aeUw4W": {
@@ -768,23 +766,56 @@
             "product": "asta-siteprogress"
           }
         },
+        "product_w7pAX3": {
+          "type": "product",
+          "settings": {
+            "product": "asta-estimate"
+          }
+        },
+        "product_W6X3YF": {
+          "type": "product",
+          "settings": {
+            "product": "asta-powerproject-4d"
+          }
+        },
         "product_3Mi7Bg": {
           "type": "product",
           "settings": {
-            "product": "asta-powerproject"
+            "product": "asta-vision-live"
+          }
+        },
+        "product_Hi9e7N": {
+          "type": "product",
+          "settings": {
+            "product": "asta-enterprise"
+          }
+        },
+        "product_dMQG99": {
+          "type": "product",
+          "settings": {
+            "product": "business-intelligence"
+          }
+        },
+        "product_TQGH9D": {
+          "type": "product",
+          "settings": {
+            "product": "project-viewer"
           }
         }
       },
       "block_order": [
-        "product_W6X3YF",
         "product_9Fqg3n",
-        "product_Hi9e7N",
         "product_aeUw4W",
-        "product_3Mi7Bg"
+        "product_w7pAX3",
+        "product_W6X3YF",
+        "product_3Mi7Bg",
+        "product_Hi9e7N",
+        "product_dMQG99",
+        "product_TQGH9D"
       ],
       "name": "Custom Product List",
       "settings": {
-        "heading": "Related Products",
+        "heading": "Asta Intergations",
         "heading_size": "h2",
         "heading_alignment": "left",
         "button_text": "Learn more",
@@ -794,69 +825,6 @@
         "anchor_id": "",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "parallel_logo_block_Kyk8RD": {
-      "type": "parallel-logo-block",
-      "blocks": {
-        "logo_X7DT6Q": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/sparklayer_black.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_X3bNgL": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_pfRhE7": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/partner_logo_2.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_XpeMAz": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/partner_logo_3.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        }
-      },
-      "block_order": [
-        "logo_X7DT6Q",
-        "logo_X3bNgL",
-        "logo_pfRhE7",
-        "logo_XpeMAz"
-      ],
-      "name": "Logo Block",
-      "settings": {
-        "color_scheme": "scheme-2",
-        "title": "Partner Integrataions",
-        "heading_size": "h2",
-        "title_alignment": "left",
-        "title_spacing": 24,
-        "logo_width": 150,
-        "logo_spacing": 40,
-        "logo_opacity": 100,
-        "logo_hover_opacity": 100,
-        "mobile_columns": "2",
-        "anchor_id": "",
-        "padding_top": 40,
-        "padding_bottom": 40
       }
     },
     "parallel_faq_accordion_3Vq7Fm": {
@@ -1213,7 +1181,6 @@
     "parallel_logo_block_hHLWpL",
     "parallel_testimonials_6ayBHg",
     "parallel_custom_product_list_M7EFHt",
-    "parallel_logo_block_Kyk8RD",
     "parallel_faq_accordion_3Vq7Fm",
     "parallel_comparison_table_eeJhkm",
     "parallel_support_cta_RxfB67",
