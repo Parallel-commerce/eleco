@@ -685,6 +685,15 @@
     "parallel_testimonials_6ayBHg": {
       "type": "parallel-testimonials",
       "blocks": {
+        "testimonial_J3UM8L": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Amy Griffiths",
+            "title": "Project Manager | Kier Group",
+            "country_flag": "",
+            "testimonial_text": "At every point we were being adaptive, reacting to changes and opportunities. Asta Powerproject allowed us to ask '"
+          }
+        },
         "testimonial_FTmqJ9": {
           "type": "testimonial",
           "settings": {
@@ -714,6 +723,7 @@
         }
       },
       "block_order": [
+        "testimonial_J3UM8L",
         "testimonial_FTmqJ9",
         "testimonial_8LdM6q",
         "testimonial_tHbLzP"
