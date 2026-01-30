@@ -207,7 +207,7 @@
         "heading_GGwQtN": {
           "type": "heading",
           "settings": {
-            "heading": "Heading",
+            "heading": "Reliable offline, on-site data capture",
             "heading_size": "h1"
           }
         },
@@ -215,21 +215,28 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Record progress without a signal"
           }
         },
         "feature_item_efdUrz": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Offline-first approach"
           }
         },
         "feature_item_eVF6yn": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Streamline site operations"
+          }
+        },
+        "feature_item_HUwPLi": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Updates synced automatically when signal returns"
           }
         }
       },
@@ -237,7 +244,8 @@
         "heading_GGwQtN",
         "feature_item_CkdfUp",
         "feature_item_efdUrz",
-        "feature_item_eVF6yn"
+        "feature_item_eVF6yn",
+        "feature_item_HUwPLi"
       ],
       "name": "Image with features",
       "settings": {
