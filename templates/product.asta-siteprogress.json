@@ -394,7 +394,7 @@
         "color_scheme": "",
         "anchor_id": "#",
         "padding_top": 52,
-        "padding_bottom": 52,
+        "padding_bottom": 0,
         "text_padding_left": 32,
         "text_padding_right": 16
       }
