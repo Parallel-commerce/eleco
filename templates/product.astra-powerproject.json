@@ -347,7 +347,14 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Proactive scenario modelling"
+            "text": "Proactive scenario models"
+          }
+        },
+        "feature_item_Wp9bXU": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Extensive schedule capabilities"
           }
         },
         "feature_item_FgNLUc": {
@@ -355,13 +362,6 @@
           "settings": {
             "icon": "eleco-tick",
             "text": "Track planned vs actual costs"
-          }
-        },
-        "feature_item_Wp9bXU": {
-          "type": "feature_item",
-          "settings": {
-            "icon": "eleco-tick",
-            "text": "Robust scheduling capabilities"
           }
         },
         "feature_item_prUy3i": {
@@ -375,8 +375,8 @@
       "block_order": [
         "heading_EU6MmW",
         "feature_item_JY6MwN",
-        "feature_item_FgNLUc",
         "feature_item_Wp9bXU",
+        "feature_item_FgNLUc",
         "feature_item_prUy3i"
       ],
       "name": "Image with features",
