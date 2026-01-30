@@ -677,10 +677,20 @@
             "country_flag": "",
             "testimonial_text": "Asta Powerproject 4D’s features and capabilities align well with our needs. Its competitive pricing and good customer support and training made it more attractive than other companies’ BIM modules."
           }
+        },
+        "testimonial_N6gj89": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Aldwyn Payne",
+            "title": "Planning Manager | HG Construction",
+            "country_flag": "",
+            "testimonial_text": "Having the 4D model built into the same software greatly improved coordination... The coordination session was far more effective, and we reached the right outcome much faster."
+          }
         }
       },
       "block_order": [
-        "testimonial_tHbLzP"
+        "testimonial_tHbLzP",
+        "testimonial_N6gj89"
       ],
       "name": "Testimonials",
       "settings": {
