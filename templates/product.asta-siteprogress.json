@@ -277,13 +277,6 @@
             "heading_size": "h1"
           }
         },
-        "feature_item_dwV9eq": {
-          "type": "feature_item",
-          "settings": {
-            "icon": "eleco-tick",
-            "text": "Clean task-focused interface"
-          }
-        },
         "feature_item_mzeYTi": {
           "type": "feature_item",
           "settings": {
@@ -298,6 +291,13 @@
             "text": "Improve overall delivery"
           }
         },
+        "feature_item_dwV9eq": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Clean task-focused interface"
+          }
+        },
         "feature_item_a9jrqF": {
           "type": "feature_item",
           "settings": {
@@ -308,9 +308,9 @@
       },
       "block_order": [
         "heading_qDbMj8",
-        "feature_item_dwV9eq",
         "feature_item_mzeYTi",
         "feature_item_H4qCNB",
+        "feature_item_dwV9eq",
         "feature_item_a9jrqF"
       ],
       "name": "Image with features",
