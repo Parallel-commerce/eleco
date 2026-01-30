@@ -1132,6 +1132,13 @@
             "link": ""
           }
         },
+        "resource_link_fRcDdz": {
+          "type": "resource_link",
+          "settings": {
+            "label": "Educational licence",
+            "link": "https://elecosoft.com/products/asta/asta-powerproject/single-education-licence/"
+          }
+        },
         "resource_link_VzrFGt": {
           "type": "resource_link",
           "settings": {
@@ -1144,6 +1151,7 @@
         "resource_link_kEdPjk",
         "resource_link_wTwLVG",
         "resource_link_y8bPwx",
+        "resource_link_fRcDdz",
         "resource_link_VzrFGt"
       ],
       "name": "Support CTA",
