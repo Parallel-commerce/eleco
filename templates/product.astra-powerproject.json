@@ -1180,43 +1180,6 @@
         "padding_bottom": 60
       }
     },
-    "parallel_information_Ehxmkb": {
-      "type": "parallel-information",
-      "blocks": {
-        "info_block_WNhbpE": {
-          "type": "info_block",
-          "settings": {
-            "heading": "Try Asta Powerproject before you buy",
-            "text": "<p>See how Asta Powerproject can work for you and your organisation.</p><p>Asta Powerproject supports more than 100,000 professionals worldwide in delivering successful projects by equipping organisations with the award-winning project, program, and resource management tools necessary to bring their built asset to life, regardless of scale; whether a high-profile megaproject, single storey extensions or anything in between.</p><p>Sales team: +44 1844 281 700</p>"
-          }
-        },
-        "info_block_39Mnd3": {
-          "type": "info_block",
-          "settings": {
-            "heading": "Need a single Education licence?",
-            "text": "<p>To receive an education licence, an authorised officer of the educational establishment can complete this form to start the process.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "info_block_WNhbpE",
-        "info_block_39Mnd3"
-      ],
-      "name": "Information",
-      "settings": {
-        "color_scheme": "",
-        "heading_font_size": 24,
-        "heading_font_weight": "700",
-        "text_font_size": 16,
-        "heading_color": "",
-        "text_color": "",
-        "border_color": "#e83f40",
-        "block_spacing": 24,
-        "anchor_id": "",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
     "parallel_market_embed_gGAwgk": {
       "type": "parallel-market-embed",
       "blocks": {
@@ -1256,6 +1219,35 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "parallel_information_Ehxmkb": {
+      "type": "parallel-information",
+      "blocks": {
+        "info_block_39Mnd3": {
+          "type": "info_block",
+          "settings": {
+            "heading": "Need a single Education licence?",
+            "text": "<p>To receive an education licence, an authorised officer of the educational establishment can complete this form to start the process.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "info_block_39Mnd3"
+      ],
+      "name": "Information",
+      "settings": {
+        "color_scheme": "",
+        "heading_font_size": 24,
+        "heading_font_weight": "700",
+        "text_font_size": 16,
+        "heading_color": "",
+        "text_color": "",
+        "border_color": "#e83f40",
+        "block_spacing": 24,
+        "anchor_id": "",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
@@ -1275,7 +1267,7 @@
     "parallel_faq_accordion_3Vq7Fm",
     "parallel_comparison_table_eeJhkm",
     "parallel_support_cta_RxfB67",
-    "parallel_information_Ehxmkb",
-    "parallel_market_embed_gGAwgk"
+    "parallel_market_embed_gGAwgk",
+    "parallel_information_Ehxmkb"
   ]
 }
