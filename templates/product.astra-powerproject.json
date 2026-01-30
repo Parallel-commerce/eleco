@@ -612,7 +612,7 @@
       ],
       "name": "Three Column Video",
       "settings": {
-        "heading": "What do our clients say?",
+        "heading": "Find out why our clients are glad they met us",
         "heading_size": "h1",
         "enable_video_looping": false,
         "full_width": false,
@@ -744,7 +744,7 @@
       "name": "Testimonials",
       "settings": {
         "heading": "",
-        "subheading": "Find out why our clients are glad they met us.",
+        "subheading": "",
         "heading_size": "h1",
         "header_alignment": "center",
         "header_spacing": 40,
