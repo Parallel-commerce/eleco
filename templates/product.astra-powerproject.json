@@ -516,11 +516,11 @@
           "type": "accordion_item",
           "settings": {
             "title": "Sub contractors",
-            "content_1": "<p>Free project viewer for seamless communication, relevant to each project</p>",
+            "content_1": "",
             "content_2": "<p>Simple functionality allows subcontractors to engaging directly with project data.</p>",
             "content_3": "<p>Clear task visibility and filters allow for visual clarity across complete programme of works.</p>",
             "content_4": "<p>Mobile progress tracking with Asta Siteprogress allows for on-site updates.</p>",
-            "content_5": "",
+            "content_5": "<p>Free <a href=\"/products/project-viewer\" title=\"Project Viewer\">project viewer</a> for seamless communication, relevant to each project</p>",
             "content_6": ""
           }
         },
