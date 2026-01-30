@@ -1227,7 +1227,7 @@
           "type": "info_block",
           "settings": {
             "heading": "Need a single Education licence?",
-            "text": "<p>To receive an education licence, an authorised officer of the educational establishment can complete this form to start the process.</p>"
+            "text": "<p>To receive an education licence, an authorised officer of the educational establishment can complete this <a href=\"https://elecosoft.com/products/asta/asta-powerproject/single-education-licence/\" title=\"https://elecosoft.com/products/asta/asta-powerproject/single-education-licence/\">form</a> to start the process.</p>"
           }
         }
       },
