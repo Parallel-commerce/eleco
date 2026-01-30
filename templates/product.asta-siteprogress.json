@@ -249,7 +249,7 @@
       ],
       "name": "Image with features",
       "settings": {
-        "image": "shopify://shop_images/failte-restaurant-image.jpg",
+        "image": "shopify://shop_images/Siteprogress_Value_Prop_1.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -315,7 +315,7 @@
       ],
       "name": "Image with features",
       "settings": {
-        "image": "shopify://shop_images/failte-restaurant-image.jpg",
+        "image": "shopify://shop_images/Siteprogress_Value_Prop_3.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -381,7 +381,7 @@
       ],
       "name": "Image with features",
       "settings": {
-        "image": "shopify://shop_images/failte-restaurant-image.jpg",
+        "image": "shopify://shop_images/Siteprogress_Value_Prop_2.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
