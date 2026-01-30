@@ -273,45 +273,45 @@
         "heading_qDbMj8": {
           "type": "heading",
           "settings": {
-            "heading": "Direct integration with Asta Powerproject",
+            "heading": "Simple, focused UX for site teams",
             "heading_size": "h1"
           }
         },
-        "feature_item_8agkWh": {
+        "feature_item_dwV9eq": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Update progress at any time from any location"
+            "text": "A clean task-focused interface"
           }
         },
-        "feature_item_gVYYUV": {
+        "feature_item_mzeYTi": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Align site reporting with planning"
+            "text": "Quick and intuitive capture"
           }
         },
-        "feature_item_B9fPCn": {
+        "feature_item_H4qCNB": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Purpose-built for Powerproject"
+            "text": "Improve overall delivery"
           }
         },
-        "feature_item_iRNHQw": {
+        "feature_item_a9jrqF": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Updates captured in the app sync directly into the Asta Powerproject master schedule"
+            "text": "Designed for standard site activities"
           }
         }
       },
       "block_order": [
         "heading_qDbMj8",
-        "feature_item_8agkWh",
-        "feature_item_gVYYUV",
-        "feature_item_B9fPCn",
-        "feature_item_iRNHQw"
+        "feature_item_dwV9eq",
+        "feature_item_mzeYTi",
+        "feature_item_H4qCNB",
+        "feature_item_a9jrqF"
       ],
       "name": "Image with features",
       "settings": {
@@ -339,37 +339,45 @@
         "heading_EU6MmW": {
           "type": "heading",
           "settings": {
-            "heading": "Heading",
+            "heading": "Direct integration with Asta Powerproject",
             "heading_size": "h1"
           }
         },
-        "feature_item_Wp9bXU": {
+        "feature_item_hHczD3": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Update progress at any time from any location"
           }
         },
-        "feature_item_JY6MwN": {
+        "feature_item_i4nA7a": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Align site reporting with planning"
           }
         },
-        "feature_item_prUy3i": {
+        "feature_item_bDDnaj": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Purpose-built for Powerproject"
+          }
+        },
+        "feature_item_mXyfPf": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Updates captured in the app sync directly into the Asta Powerproject master schedule"
           }
         }
       },
       "block_order": [
         "heading_EU6MmW",
-        "feature_item_Wp9bXU",
-        "feature_item_JY6MwN",
-        "feature_item_prUy3i"
+        "feature_item_hHczD3",
+        "feature_item_i4nA7a",
+        "feature_item_bDDnaj",
+        "feature_item_mXyfPf"
       ],
       "name": "Image with features",
       "settings": {
@@ -496,9 +504,9 @@
           "type": "accordion_item",
           "settings": {
             "title": "Contractors",
-            "content_1": "<p>Powerful critical path analysis and precise scheduling.</p>",
-            "content_2": "<p>Powerful critical path analysis and precise scheduling.</p>",
-            "content_3": "<p>Powerful critical path analysis and precise scheduling.</p>",
+            "content_1": "<p>Reduced risk of project delays as site teams record real progress against planned tasks</p>",
+            "content_2": "<p>Lower admin effort as updates are captured once in the app and synced into Asta Powerproject.</p>",
+            "content_3": "<p>Stronger evidence for claims and disputes through physical records of work.</p>",
             "content_4": "",
             "content_5": "",
             "content_6": ""
@@ -508,9 +516,9 @@
           "type": "accordion_item",
           "settings": {
             "title": "Sub contractors",
-            "content_1": "<p>Comprehensive resource and cost management, early identification of budget issues.</p>",
-            "content_2": "",
-            "content_3": "",
+            "content_1": "<p>Clear visibility of what needs doing and when, as tasks are derived from the main schedule.</p>",
+            "content_2": "<p>Faster sign-off for completed work.</p>",
+            "content_3": "<p>Reduced paperwork and duplication with a simple mobile workflow.</p>",
             "content_4": "",
             "content_5": "",
             "content_6": ""
