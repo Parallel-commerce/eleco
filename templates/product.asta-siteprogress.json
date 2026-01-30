@@ -746,98 +746,49 @@
         "padding_bottom": 36
       }
     },
-    "parallel_logo_block_Kyk8RD": {
-      "type": "parallel-logo-block",
-      "blocks": {
-        "logo_X7DT6Q": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/sparklayer_black.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_X3bNgL": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_pfRhE7": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/partner_logo_2.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_XpeMAz": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/partner_logo_3.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        }
-      },
-      "block_order": [
-        "logo_X7DT6Q",
-        "logo_X3bNgL",
-        "logo_pfRhE7",
-        "logo_XpeMAz"
-      ],
-      "name": "Logo Block",
-      "settings": {
-        "color_scheme": "scheme-2",
-        "title": "Partner Integrataions",
-        "heading_size": "h2",
-        "title_alignment": "left",
-        "title_spacing": 24,
-        "logo_width": 150,
-        "logo_spacing": 40,
-        "logo_opacity": 100,
-        "logo_hover_opacity": 100,
-        "mobile_columns": "2",
-        "anchor_id": "",
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
     "parallel_faq_accordion_3Vq7Fm": {
       "type": "parallel-faq-accordion",
       "blocks": {
         "faq_item_QVNkTB": {
           "type": "faq_item",
           "settings": {
-            "question": "Who is Asta Powerproject for?",
-            "answer": "<p>This is a sample answer to the first question.</p>"
+            "question": "What is Asta Siteprogress and how does it work with Asta Powerproject?",
+            "answer": "<p>Asta Siteprogress  is an app for recording progress on tasks and building stages from a remote location using a mobile device.​ At the start of a period, an administrator exports project information from Powerproject so that the relevant tasks and plots appear in the app for each user.​ At the end of the period, users submit their updates and an Asta Siteprogress Administrator imports and applies the approved changes back into the Powerproject plan.</p>"
           }
         },
         "faq_item_bVkqMa": {
           "type": "faq_item",
           "settings": {
-            "question": "Why is Asta better than the competition?",
-            "answer": "<p>This is a sample answer to the second question.</p>"
+            "question": "Do I need an extra modules in Powerproject to use Siteprogress?",
+            "answer": "<p>Siteprogress is an add‑on connected to Asta Powerproject, so you need a compatible Powerproject installation plus the Siteprogress functionality enabled.​ </p>"
           }
         },
         "faq_item_jARANR": {
           "type": "faq_item",
           "settings": {
-            "question": "What is the difference between a single and a concurrent license?",
-            "answer": "<p>This is a sample answer to the third question.</p>"
+            "question": "What devices and operating systems are supported?",
+            "answer": "<p>Siteprogress is available as a mobile app for iOS and Android.</p>"
           }
         },
         "faq_item_bAXDXk": {
           "type": "faq_item",
           "settings": {
-            "question": "Can stakeholders see my project if they don't have a license?",
-            "answer": "<p>If a stakeholder hasn't bought a licence but needs to view the project, they can download our Project Viewer.</p>"
+            "question": "Can I use Siteprogress offline and what happens to updates when I have no signal?",
+            "answer": "<p>Once project data has been downloaded, you can record progress in Siteprogress even without a valid internet connection (for example, in remote or low‑signal areas). While offline, your changes (progress values, photos, notes) are stored locally on the device. When a connection becomes available, you submit your changes and the app synchronises them, making them available for import into the Powerproject programme.</p>"
+          }
+        },
+        "faq_item_dwXCEV": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is Siteprogress included with my existing Asta Powerproject licences?",
+            "answer": "<p>Siteprogress requires an additional licence.</p>"
+          }
+        },
+        "faq_item_iN34Cy": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What support is available for Siteprogress?",
+            "answer": "<p>Siteprogress has user guides available and video tutorials to help users learn the workflow.</p>"
           }
         }
       },
@@ -845,7 +796,9 @@
         "faq_item_QVNkTB",
         "faq_item_bVkqMa",
         "faq_item_jARANR",
-        "faq_item_bAXDXk"
+        "faq_item_bAXDXk",
+        "faq_item_dwXCEV",
+        "faq_item_iN34Cy"
       ],
       "name": "FAQ Accordion",
       "settings": {
@@ -861,7 +814,7 @@
         "item_background": "#f6f7f7",
         "item_background_active": "#fce8e6",
         "anchor_id": "",
-        "padding_top": 36,
+        "padding_top": 72,
         "padding_bottom": 36
       }
     },
@@ -1083,7 +1036,6 @@
     "parallel_logo_block_hHLWpL",
     "parallel_testimonials_6ayBHg",
     "parallel_custom_product_list_M7EFHt",
-    "parallel_logo_block_Kyk8RD",
     "parallel_faq_accordion_3Vq7Fm",
     "parallel_comparison_table_eeJhkm",
     "parallel_support_cta_RxfB67",
