@@ -959,10 +959,80 @@
             "column_3_text": "Value"
           }
         },
+        "comparison_row_myPVe9": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Baseline comparison and analysis",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
         "comparison_row_rJAtXQ": {
           "type": "comparison_row",
           "settings": {
             "functionality_text": "Reschedule tasks within the project",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_CPiBRt": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Tasks can be set to ASAP or ALAP",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_GLxUe4": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Float and negative float path calculations",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_n9aVEq": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Edit view based presentation",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_ibLjJz": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Depth and colour dependent on certain criteria",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_Fz7EwA": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Formulae to display user definable information",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_nbtjdy": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Intergrates with other Asta software",
             "column_2_type": "cross",
             "column_2_text": "Value",
             "column_3_type": "tick",
@@ -978,14 +1048,32 @@
             "column_3_type": "tick",
             "column_3_text": "Value"
           }
+        },
+        "comparison_row_tRBXeX": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "A user to issue part of a programme to another user for editing, without causing conflicts within the originating file",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
         }
       },
       "block_order": [
         "comparison_row_9B77nj",
         "comparison_row_hhDyjA",
         "comparison_row_3E8i6B",
+        "comparison_row_myPVe9",
         "comparison_row_rJAtXQ",
-        "comparison_row_DbzVPR"
+        "comparison_row_CPiBRt",
+        "comparison_row_GLxUe4",
+        "comparison_row_n9aVEq",
+        "comparison_row_ibLjJz",
+        "comparison_row_Fz7EwA",
+        "comparison_row_nbtjdy",
+        "comparison_row_DbzVPR",
+        "comparison_row_tRBXeX"
       ],
       "name": "Comparison Table",
       "settings": {
