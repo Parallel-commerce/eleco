@@ -583,7 +583,7 @@
         "logo_X7DT6Q": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/sparklayer_black.svg",
+            "logo": "shopify://shop_images/AstaGPT.svg",
             "alt_text": "Logo",
             "link": "",
             "link_target_blank": false
@@ -635,7 +635,7 @@
         "logo_opacity": 100,
         "logo_hover_opacity": 100,
         "mobile_columns": "2",
-        "anchor_id": "",
+        "anchor_id": "integrations",
         "padding_top": 40,
         "padding_bottom": 40
       }
@@ -755,7 +755,7 @@
         "color_scheme": "",
         "item_background": "#f6f7f7",
         "item_background_active": "#fce8e6",
-        "anchor_id": "",
+        "anchor_id": "faqs",
         "padding_top": 64,
         "padding_bottom": 72
       }
