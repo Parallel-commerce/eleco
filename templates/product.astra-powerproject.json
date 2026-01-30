@@ -583,6 +583,7 @@
         "video_item_NYWJta": {
           "type": "video_item",
           "settings": {
+            "video": "shopify://files/videos/Richard Easton, Senior Planner, Higgins Partnership.mp4",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "description": ""
           }
@@ -590,6 +591,7 @@
         "video_item_qFpjwc": {
           "type": "video_item",
           "settings": {
+            "video": "shopify://files/videos/Glopet Izidug, Project Planner, Dornan Engineering Services (1).mp4",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "description": ""
           }
@@ -597,6 +599,7 @@
         "video_item_cfdDnt": {
           "type": "video_item",
           "settings": {
+            "video": "shopify://files/videos/James Horton, Senior Planning Manager, MACE Construction (1).mp4",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "description": ""
           }
