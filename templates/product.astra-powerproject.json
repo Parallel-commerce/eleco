@@ -260,7 +260,7 @@
         "mobile_content_alignment": "left",
         "section_color_scheme": "",
         "color_scheme": "",
-        "anchor_id": "reviews",
+        "anchor_id": "",
         "padding_top": 0,
         "padding_bottom": 52,
         "text_padding_left": 32,
@@ -617,7 +617,7 @@
         "enable_video_looping": false,
         "full_width": false,
         "color_scheme": "",
-        "anchor_id": "",
+        "anchor_id": "reviews",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -825,7 +825,7 @@
         "columns_desktop": 3,
         "columns_mobile": "2",
         "color_scheme": "scheme-2",
-        "anchor_id": "",
+        "anchor_id": "intergrations",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -921,7 +921,7 @@
         "color_scheme": "",
         "item_background": "#f6f7f7",
         "item_background_active": "#fce8e6",
-        "anchor_id": "",
+        "anchor_id": "FAQs",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -1103,7 +1103,7 @@
         "header_background": "#f3f4f6",
         "header_text_color": "#111827",
         "border_color": "#e5e7eb",
-        "anchor_id": "",
+        "anchor_id": "compare",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -1175,7 +1175,7 @@
         "resource_font_size": 16,
         "button_border_radius": 4,
         "resource_border_radius": 4,
-        "anchor_id": "",
+        "anchor_id": "support",
         "padding_top": 60,
         "padding_bottom": 60
       }
