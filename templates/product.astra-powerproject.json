@@ -515,7 +515,7 @@
         "accordion_item_htnMQm": {
           "type": "accordion_item",
           "settings": {
-            "title": "Sub contractors",
+            "title": "Subcontractors",
             "content_1": "",
             "content_2": "<p>Simple functionality allows subcontractors to engaging directly with project data.</p>",
             "content_3": "<p>Clear task visibility and filters allow for visual clarity across complete programme of works.</p>",
@@ -527,7 +527,7 @@
         "accordion_item_EDULcY": {
           "type": "accordion_item",
           "settings": {
-            "title": "Designers and consultancy",
+            "title": "Designers and Consultants",
             "content_1": "<p>BIM integration and 4D planning enables consultants to combine 3D models with scheduling in one solution.</p>",
             "content_2": "<p>Built-in scenario analysis and risk management tools to explore optimal project outcomes.</p>",
             "content_3": "<p>Schedule Quality Check against plans to ensure compliance with industry or company standards.</p>",
