@@ -176,8 +176,8 @@
         "divider_color": "#ff0000",
         "primary_button_color": "#ff6b35",
         "primary_button_text_color": "#ffffff",
-        "hero_title": "Plan with certainty, build with confidence",
-        "hero_subtitle": "Take control with integrative tools that gives teams the power to master project timelines",
+        "hero_title": "Lean planning tool for small projects",
+        "hero_subtitle": "The effective and affordable option for standalone plans and working on subsections of complex programmes that are managed within Asta Powerproject",
         "hero_image": "shopify://shop_images/Asta_Powerproject_109e16a4-29a3-4d9b-b8d5-165a549f2bf1.svg",
         "hero_background_color": "#2a303a",
         "hero_text_color": "#ffffff",
@@ -215,14 +215,14 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Build site-ready programmes fast"
+            "text": "Build programmes fast"
           }
         },
         "feature_item_efdUrz": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Create linked short-term lookaheads"
+            "text": "Linked short-term lookaheads"
           }
         },
         "feature_item_eVF6yn": {
@@ -249,7 +249,7 @@
       ],
       "name": "Image with features",
       "settings": {
-        "image": "shopify://shop_images/failte-restaurant-image.jpg",
+        "image": "shopify://shop_images/Easyplan_Overview_2.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -261,7 +261,7 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "anchor_id": "#",
-        "padding_top": 52,
+        "padding_top": 0,
         "padding_bottom": 52,
         "text_padding_left": 32,
         "text_padding_right": 16
@@ -315,7 +315,7 @@
       ],
       "name": "Image with features",
       "settings": {
-        "image": "shopify://shop_images/failte-restaurant-image.jpg",
+        "image": "shopify://shop_images/Easyplan_Overview_1.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -327,8 +327,8 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "anchor_id": "#",
-        "padding_top": 52,
-        "padding_bottom": 52,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "text_padding_left": 16,
         "text_padding_right": 32
       }
@@ -368,7 +368,7 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Evidence progress and delays"
+            "text": "Evidence of progress and delays"
           }
         }
       },
@@ -440,6 +440,7 @@
         "award_icon_LXKmTV",
         "richtext_LJNcig"
       ],
+      "disabled": true,
       "name": "Award Banner",
       "settings": {
         "background_image": "shopify://shop_images/team.jpg",
@@ -488,6 +489,7 @@
         "highlight_kcCRDW",
         "highlight_kmzQJf"
       ],
+      "disabled": true,
       "name": "Highlights",
       "settings": {
         "color_scheme": "",
@@ -607,6 +609,7 @@
         "video_item_qFpjwc",
         "video_item_cfdDnt"
       ],
+      "disabled": true,
       "name": "Three Column Video",
       "settings": {
         "heading": "Video Gallery",
@@ -1104,6 +1107,54 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "parallel_market_embed_YprYE9": {
+      "type": "parallel-market-embed",
+      "blocks": {
+        "embed_UteYwK": {
+          "type": "embed",
+          "settings": {
+            "market_identifier": "UK",
+            "country_code": "GB",
+            "is_fallback": false,
+            "embed_code": "<script type=\"text/javascript\">var loc = \"https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/\";var cdSurveyCdn = \"https://cdn-eu.clickdimensions.com/web/newformeditor/\";</script>\n<script type=\"text/javascript\" src=\"https://cdn-eu.clickdimensions.com/web/newformeditor/CDWidget.js\"></script>\n<div pageid=\"1laq6gu7efc0y3weui1vuq\"></div>"
+          }
+        },
+        "embed_nxaLjQ": {
+          "type": "embed",
+          "settings": {
+            "market_identifier": "",
+            "country_code": "GB",
+            "is_fallback": false,
+            "embed_code": "<iframe src=\"https://example.com/uk-embed\" width=\"100%\" height=\"100%\" frameborder=\"0\"></iframe>"
+          }
+        },
+        "embed_fATkTC": {
+          "type": "embed",
+          "settings": {
+            "market_identifier": "",
+            "country_code": "",
+            "is_fallback": true,
+            "embed_code": "<iframe src=\"https://example.com/default-embed\" width=\"100%\" height=\"100%\" frameborder=\"0\"></iframe>"
+          }
+        }
+      },
+      "block_order": [
+        "embed_UteYwK",
+        "embed_nxaLjQ",
+        "embed_fATkTC"
+      ],
+      "name": "Market Embed",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "anchor_id": "",
+        "show_debug_info": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -1123,6 +1174,7 @@
     "parallel_faq_accordion_3Vq7Fm",
     "parallel_comparison_table_eeJhkm",
     "parallel_support_cta_RxfB67",
-    "parallel_information_Ehxmkb"
+    "parallel_information_Ehxmkb",
+    "parallel_market_embed_YprYE9"
   ]
 }
