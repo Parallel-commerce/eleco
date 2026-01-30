@@ -507,7 +507,7 @@
         "accordion_item_htnMQm": {
           "type": "accordion_item",
           "settings": {
-            "title": "Sub contractors",
+            "title": "Subcontractors",
             "content_1": "<p>Straightforward access to trade-specific work packages.</p>",
             "content_2": "<p>Visibility of tasks, dependencies and constraints in context.<br/></p>",
             "content_3": "<p>Update progress, resequence activities when access or design changes, and provide reliable data on labour, plant and productivity that flows back into the main programme.</p>",
@@ -519,7 +519,7 @@
         "accordion_item_EDULcY": {
           "type": "accordion_item",
           "settings": {
-            "title": "Designers and consultancy",
+            "title": "Designers and Consultants",
             "content_1": "<p>Separate design, approval and procurement programmes.</p>",
             "content_2": "<p>Assign packages to sub contractors but maintain control of the master schedule.</p>",
             "content_3": "<p>Ensure client visibility of simplified deliverables and progress.</p>",
@@ -531,7 +531,7 @@
         "accordion_item_BxXeBx": {
           "type": "accordion_item",
           "settings": {
-            "title": "Residential construction",
+            "title": "Residential Construction",
             "content_1": "<p>Keep short-term lookaheads aligned with the master schedule.</p>",
             "content_2": "<p>Manage sub-contractors and trades but maintain control centrally of the programme.</p>",
             "content_3": "<p>Track starts, completions and handovers by plot, block and tenure, with structured updates feeding into central reporting.</p>",
@@ -543,7 +543,7 @@
         "accordion_item_LTfMGp": {
           "type": "accordion_item",
           "settings": {
-            "title": "Clients and Asset owners",
+            "title": "Clients and Asset Owners",
             "content_1": "<p>Visibility of simplified deliverables and progress by work package or sub contractor.</p>",
             "content_2": "",
             "content_3": "",
