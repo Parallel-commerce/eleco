@@ -614,6 +614,15 @@
     "parallel_testimonials_6ayBHg": {
       "type": "parallel-testimonials",
       "blocks": {
+        "testimonial_t7cwLV": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Warren Betts",
+            "title": "While United House",
+            "country_flag": "",
+            "testimonial_text": "Asta SiteProgress enables us to do is give the project teams their programmes, with all the planning aspects agreed in advance. The opportunity was to give project managers real responsibility for their own progress management and how they mark it up. Now, the planning team can collate and aggregate the programme position fast, sending them back a report on the same day."
+          }
+        },
         "testimonial_BizQXi": {
           "type": "testimonial",
           "settings": {
@@ -643,14 +652,15 @@
         }
       },
       "block_order": [
+        "testimonial_t7cwLV",
         "testimonial_BizQXi",
         "testimonial_Yqb8KC",
         "testimonial_tHbLzP"
       ],
       "name": "Testimonials",
       "settings": {
-        "heading": "What do our clients say?",
-        "subheading": "Find out why our clients are glad they met us.",
+        "heading": "What do our customers say?",
+        "subheading": "Find out why our customers are glad they met us.",
         "heading_size": "h1",
         "header_alignment": "center",
         "header_spacing": 40,
