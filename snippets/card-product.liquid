@@ -241,12 +241,12 @@
             {%- endcomment -%}
 
             <div class="card__actions-inline">
-              <a
+              <button
                 href="{{ card_product.url }}"
-                class="card__product-link"
+                class="product__card-button button button--secondary"
               >
                 Learn more
-              </a>
+              </button>
             </div>
             {%- comment -%}
               {%- if card_product.quantity_price_breaks_configured? -%}

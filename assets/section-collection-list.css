@@ -59,3 +59,27 @@
 .collection-list-view-all {
   margin-top: 2rem;
 }
+
+/* Fixed height for collection card images (logos) */
+.section-collection-list .card__inner.ratio {
+  display: block;
+}
+
+.section-collection-list .card__inner.ratio::before {
+  display: none;
+}
+
+.section-collection-list .card__inner .card__media {
+  height: 100px;
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  width: calc(100% - 2 * var(--image-padding));
+  margin: var(--image-padding);
+}
+
+.section-collection-list .card__media .media {
+  height: 100%;
+}

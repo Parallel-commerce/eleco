@@ -25,6 +25,29 @@
     gap: {{ section.settings.item_gap }}px;
   }
 
+  .faq-accordion-{{ section.id }}__list--two-columns {
+    display: flex;
+    flex-direction: column;
+    gap: {{ section.settings.item_gap }}px;
+  }
+
+  .faq-accordion-{{ section.id }}__list--two-columns .faq-accordion-{{ section.id }}__column {
+    display: grid;
+    gap: {{ section.settings.item_gap }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .faq-accordion-{{ section.id }}__list--two-columns {
+      flex-direction: row;
+      gap: {{ section.settings.item_gap }}px;
+    }
+
+    .faq-accordion-{{ section.id }}__list--two-columns .faq-accordion-{{ section.id }}__column {
+      flex: 1;
+      min-width: 0;
+    }
+  }
+
   .faq-accordion-{{ section.id }}__item {
     background: #ffffff;
     border: 2px solid {{ section.settings.item_background_active }};
@@ -165,41 +188,117 @@
       {%- endif -%}
 
       {%- if section.blocks.size > 0 -%}
-        <div class="faq-accordion-{{ section.id }}__list">
-          {%- for block in section.blocks -%}
-            <div class="faq-accordion-{{ section.id }}__item" {{ block.shopify_attributes }}>
-              <details id="Details-{{ block.id }}-{{ section.id }}">
-                <summary id="Summary-{{ block.id }}-{{ section.id }}">
-                  <h3 class="faq-accordion-{{ section.id }}__question">
-                    {{ block.settings.question | escape }}
-                  </h3>
-                  <div class="faq-accordion-{{ section.id }}__icon-wrapper">
-                    <span
-                      class="faq-accordion-{{ section.id }}__icon faq-accordion-{{ section.id }}__icon-plus"
-                      aria-hidden="true"
+        {%- if section.blocks.size > 6 -%}
+          {%- assign first_col_count = section.blocks.size | plus: 1 | divided_by: 2 -%}
+          <div class="faq-accordion-{{ section.id }}__list faq-accordion-{{ section.id }}__list--two-columns">
+            <div class="faq-accordion-{{ section.id }}__column">
+              {%- for block in section.blocks limit: first_col_count -%}
+                <div class="faq-accordion-{{ section.id }}__item" {{ block.shopify_attributes }}>
+                  <details id="Details-{{ block.id }}-{{ section.id }}">
+                    <summary id="Summary-{{ block.id }}-{{ section.id }}">
+                      <h3 class="faq-accordion-{{ section.id }}__question">
+                        {{ block.settings.question | escape }}
+                      </h3>
+                      <div class="faq-accordion-{{ section.id }}__icon-wrapper">
+                        <span
+                          class="faq-accordion-{{ section.id }}__icon faq-accordion-{{ section.id }}__icon-plus"
+                          aria-hidden="true"
+                        >
+                          {{ 'icon-plus.svg' | inline_asset_content }}
+                        </span>
+                        <span
+                          class="faq-accordion-{{ section.id }}__icon faq-accordion-{{ section.id }}__icon-minus"
+                          aria-hidden="true"
+                        >
+                          {{ 'icon-minus.svg' | inline_asset_content }}
+                        </span>
+                      </div>
+                    </summary>
+                    <div
+                      class="faq-accordion-{{ section.id }}__answer rte"
+                      id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                      role="region"
+                      aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
                     >
-                      {{ 'icon-plus.svg' | inline_asset_content }}
-                    </span>
-                    <span
-                      class="faq-accordion-{{ section.id }}__icon faq-accordion-{{ section.id }}__icon-minus"
-                      aria-hidden="true"
-                    >
-                      {{ 'icon-minus.svg' | inline_asset_content }}
-                    </span>
-                  </div>
-                </summary>
-                <div
-                  class="faq-accordion-{{ section.id }}__answer rte"
-                  id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
-                  role="region"
-                  aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
-                >
-                  {{ block.settings.answer }}
+                      {{ block.settings.answer }}
+                    </div>
+                  </details>
                 </div>
-              </details>
+              {%- endfor -%}
             </div>
-          {%- endfor -%}
-        </div>
+            <div class="faq-accordion-{{ section.id }}__column">
+              {%- for block in section.blocks offset: first_col_count -%}
+                <div class="faq-accordion-{{ section.id }}__item" {{ block.shopify_attributes }}>
+                  <details id="Details-{{ block.id }}-{{ section.id }}">
+                    <summary id="Summary-{{ block.id }}-{{ section.id }}">
+                      <h3 class="faq-accordion-{{ section.id }}__question">
+                        {{ block.settings.question | escape }}
+                      </h3>
+                      <div class="faq-accordion-{{ section.id }}__icon-wrapper">
+                        <span
+                          class="faq-accordion-{{ section.id }}__icon faq-accordion-{{ section.id }}__icon-plus"
+                          aria-hidden="true"
+                        >
+                          {{ 'icon-plus.svg' | inline_asset_content }}
+                        </span>
+                        <span
+                          class="faq-accordion-{{ section.id }}__icon faq-accordion-{{ section.id }}__icon-minus"
+                          aria-hidden="true"
+                        >
+                          {{ 'icon-minus.svg' | inline_asset_content }}
+                        </span>
+                      </div>
+                    </summary>
+                    <div
+                      class="faq-accordion-{{ section.id }}__answer rte"
+                      id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                      role="region"
+                      aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                    >
+                      {{ block.settings.answer }}
+                    </div>
+                  </details>
+                </div>
+              {%- endfor -%}
+            </div>
+          </div>
+        {%- else -%}
+          <div class="faq-accordion-{{ section.id }}__list">
+            {%- for block in section.blocks -%}
+              <div class="faq-accordion-{{ section.id }}__item" {{ block.shopify_attributes }}>
+                <details id="Details-{{ block.id }}-{{ section.id }}">
+                  <summary id="Summary-{{ block.id }}-{{ section.id }}">
+                    <h3 class="faq-accordion-{{ section.id }}__question">
+                      {{ block.settings.question | escape }}
+                    </h3>
+                    <div class="faq-accordion-{{ section.id }}__icon-wrapper">
+                      <span
+                        class="faq-accordion-{{ section.id }}__icon faq-accordion-{{ section.id }}__icon-plus"
+                        aria-hidden="true"
+                      >
+                        {{ 'icon-plus.svg' | inline_asset_content }}
+                      </span>
+                      <span
+                        class="faq-accordion-{{ section.id }}__icon faq-accordion-{{ section.id }}__icon-minus"
+                        aria-hidden="true"
+                      >
+                        {{ 'icon-minus.svg' | inline_asset_content }}
+                      </span>
+                    </div>
+                  </summary>
+                  <div
+                    class="faq-accordion-{{ section.id }}__answer rte"
+                    id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                    role="region"
+                    aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                  >
+                    {{ block.settings.answer }}
+                  </div>
+                </details>
+              </div>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
       {%- endif -%}
     </div>
   </div>
