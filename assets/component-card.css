@@ -657,6 +657,11 @@
   line-height: 1.625;
 }
 
+.card__actions-inline .card__product-link:hover,
+.underline-links-hover:hover .card__actions-inline .card__product-link {
+  text-decoration: none;
+}
+
 .product__card-button{
   border: 1px solid var(--eleco-primary) !important
 }
