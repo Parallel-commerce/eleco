@@ -1061,8 +1061,8 @@
       "settings": {
         "heading": "Learn & Support",
         "description": "Our support services are complemented by our wide range of web-based tutorials, release notes, classroom and online training to ensure you get the most from your software.",
-        "primary_button_label": "Learn & Support",
-        "primary_button_link": "",
+        "primary_button_label": "View all resources",
+        "primary_button_link": "https://elecosoft.com/products/asta/asta-powerproject/learn-support/",
         "primary_button_background": "#e83f40",
         "primary_button_background_hover": "#d04a35",
         "primary_button_text": "#ffffff",
