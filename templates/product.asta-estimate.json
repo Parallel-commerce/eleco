@@ -345,7 +345,7 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Report performance clearly to clients"
+            "text": "Report performance clearly"
           }
         }
       },
@@ -380,6 +380,7 @@
       "blocks": {
         "award_icon_wWHCpq": {
           "type": "award_icon",
+          "disabled": true,
           "settings": {
             "icon_image": "shopify://shop_images/Project_Management_Software_of_the_year.png",
             "icon_alt": "Award icon",
@@ -389,6 +390,7 @@
         },
         "award_icon_VzWygn": {
           "type": "award_icon",
+          "disabled": true,
           "settings": {
             "icon_image": "shopify://shop_images/Project_Management_Software_of_the_year.png",
             "icon_alt": "Award icon",
@@ -416,6 +418,7 @@
         "award_icon_LXKmTV",
         "richtext_LJNcig"
       ],
+      "disabled": true,
       "name": "Award Banner",
       "settings": {
         "background_image": "shopify://shop_images/team.jpg",
@@ -437,10 +440,28 @@
     "parallel_logo_block_hHLWpL": {
       "type": "parallel-logo-block",
       "blocks": {
+        "logo_PRBypU": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/AEstimate_skanska-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_LiNF9m": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/AEstimate_clarkson-alliance-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
         "logo_XeHnR7": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/sparklayer_black.svg",
+            "logo": "shopify://shop_images/bam-logo-new.svg",
             "alt_text": "Logo",
             "link": "",
             "link_target_blank": false
@@ -449,7 +470,7 @@
         "logo_WNf64B": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
+            "logo": "shopify://shop_images/mccarthy-stone-logo-new.svg",
             "alt_text": "Logo",
             "link": "",
             "link_target_blank": false
@@ -458,7 +479,7 @@
         "logo_hWRjrM": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/partner_logo_2.svg",
+            "logo": "shopify://shop_images/AEstimate_-_mcclaren-property-logo-new.svg",
             "alt_text": "Logo",
             "link": "",
             "link_target_blank": false
@@ -467,7 +488,7 @@
         "logo_itwWmj": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/partner_logo_3.svg",
+            "logo": "shopify://shop_images/AEstimate_willmot-dixon-logo-new.svg",
             "alt_text": "Logo",
             "link": "",
             "link_target_blank": false
@@ -475,6 +496,8 @@
         }
       },
       "block_order": [
+        "logo_PRBypU",
+        "logo_LiNF9m",
         "logo_XeHnR7",
         "logo_WNf64B",
         "logo_hWRjrM",
@@ -493,7 +516,7 @@
         "logo_hover_opacity": 100,
         "mobile_columns": "2",
         "anchor_id": "",
-        "padding_top": 0,
+        "padding_top": 20,
         "padding_bottom": 40
       }
     },
@@ -624,7 +647,7 @@
           "type": "testimonial",
           "settings": {
             "name": "David Chapell",
-            "title": "Head of Cost Management",
+            "title": "Head of Cost Management | Clarkson Alliance",
             "country_flag": "",
             "testimonial_text": "Bidcon BIM ticked all our boxes – and, the more questions we asked, the more boxes it ticked. It puts your prices at your fingertips, instead of locating them from cost plans or bills of quantities on an ad-hoc basis."
           }
@@ -637,11 +660,21 @@
             "country_flag": "",
             "testimonial_text": "The big difference with Bidcon is that it can visually show you that you really have everything included in the estimation, which makes the risk lower... Bidcon is a great tool for the entire workflow."
           }
+        },
+        "testimonial_G4XiYQ": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Jorgen",
+            "title": "Furniture Consulting AB",
+            "country_flag": "",
+            "testimonial_text": "Bidcon provides us with the security of knowing that everything is taken into account and nothing is falling between the cracks. You constantly find new ways to work smarter if you let Bidcon do the job."
+          }
         }
       },
       "block_order": [
         "testimonial_tHbLzP",
-        "testimonial_FTmqJ9"
+        "testimonial_FTmqJ9",
+        "testimonial_G4XiYQ"
       ],
       "name": "Testimonials",
       "settings": {
