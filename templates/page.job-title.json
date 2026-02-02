@@ -112,7 +112,7 @@
       ],
       "name": "Collection list",
       "settings": {
-        "title": "Collections",
+        "title": "",
         "subtitle": "",
         "heading_size": "h1",
         "columns_desktop": 3,
