@@ -912,7 +912,7 @@
         "resource_link_y8bPwx": {
           "type": "resource_link",
           "settings": {
-            "label": "Training Course (UK)",
+            "label": "Training Courses (UK)",
             "link": "https://elecosoft.com/training-events/introduction-to-asta-powerproject-4d/"
           }
         },
@@ -920,7 +920,7 @@
           "type": "resource_link",
           "settings": {
             "label": "View all resources",
-            "link": ""
+            "link": "https://elecosoft.com/products/asta/asta-powerproject/learn-support/"
           }
         }
       },
@@ -939,7 +939,7 @@
         "primary_button_background": "#e83f40",
         "primary_button_background_hover": "#d04a35",
         "primary_button_text": "#ffffff",
-        "secondary_button_label": "Add premium support",
+        "secondary_button_label": "",
         "product": "",
         "secondary_button_link": "",
         "secondary_button_background": "#ffffff",
