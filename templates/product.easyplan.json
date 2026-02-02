@@ -1026,28 +1026,28 @@
           "type": "resource_link",
           "settings": {
             "label": "Support portal",
-            "link": ""
+            "link": "https://support.elecosoft.com"
           }
         },
         "resource_link_wTwLVG": {
           "type": "resource_link",
           "settings": {
             "label": "Release notes",
-            "link": ""
+            "link": "https://elecosoft.com/documentation/easyplan/release-notes/"
           }
         },
         "resource_link_y8bPwx": {
           "type": "resource_link",
           "settings": {
             "label": "System requirements",
-            "link": ""
+            "link": "https://elecosoft.com/documentation/easyplan/system-requirements/"
           }
         },
         "resource_link_VzrFGt": {
           "type": "resource_link",
           "settings": {
-            "label": "View all resources",
-            "link": ""
+            "label": "Training Courses (UK)",
+            "link": "https://elecosoft.com/training-events/introduction-to-easyplan/"
           }
         }
       },
