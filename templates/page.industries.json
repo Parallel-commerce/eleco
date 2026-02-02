@@ -78,65 +78,64 @@
         "padding_bottom": 52
       }
     },
-    "collection_list_wTHGGQ": {
-      "type": "collection-list",
+    "parallel_collection_list_q8BjYt": {
+      "type": "parallel-collection-list",
       "blocks": {
-        "featured_collection_b77MfP": {
-          "type": "featured_collection",
+        "collection_rgDzKF": {
+          "type": "collection",
           "settings": {
             "collection": "construction"
           }
         },
-        "featured_collection_mxWchU": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "infastructure"
-          }
-        },
-        "featured_collection_Rzgj3Y": {
-          "type": "featured_collection",
+        "collection_yzWEVA": {
+          "type": "collection",
           "settings": {
             "collection": "civil-engineering"
           }
         },
-        "featured_collection_qNpDML": {
-          "type": "featured_collection",
+        "collection_kgxNNp": {
+          "type": "collection",
           "settings": {
-            "collection": "fit-out"
+            "collection": "engineering"
           }
         },
-        "featured_collection_jgiJHh": {
-          "type": "featured_collection",
+        "collection_Ndat8J": {
+          "type": "collection",
+          "settings": {
+            "collection": "infastructure"
+          }
+        },
+        "collection_ywrXY8": {
+          "type": "collection",
           "settings": {
             "collection": "residential"
           }
         },
-        "featured_collection_i9Vakq": {
-          "type": "featured_collection",
+        "collection_iiGK7V": {
+          "type": "collection",
           "settings": {
-            "collection": "engineering"
+            "collection": "fit-out"
           }
         }
       },
       "block_order": [
-        "featured_collection_b77MfP",
-        "featured_collection_mxWchU",
-        "featured_collection_Rzgj3Y",
-        "featured_collection_qNpDML",
-        "featured_collection_jgiJHh",
-        "featured_collection_i9Vakq"
+        "collection_rgDzKF",
+        "collection_yzWEVA",
+        "collection_kgxNNp",
+        "collection_Ndat8J",
+        "collection_ywrXY8",
+        "collection_iiGK7V"
       ],
-      "name": "t:sections.collection-list.presets.name",
+      "name": "Collection list",
       "settings": {
         "title": "",
+        "subtitle": "",
         "heading_size": "h1",
-        "image_ratio": "adapt",
         "columns_desktop": 3,
-        "color_scheme": "",
-        "show_view_all": false,
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 12,
+        "image_ratio": "square",
+        "color_scheme": "",
+        "padding_top": 36,
         "padding_bottom": 36
       }
     }
@@ -145,6 +144,6 @@
     "main",
     "image_banner_e9tbaL",
     "rich_text_KpRgxW",
-    "collection_list_wTHGGQ"
+    "parallel_collection_list_q8BjYt"
   ]
 }
