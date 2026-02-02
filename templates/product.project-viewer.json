@@ -193,8 +193,10 @@
         "right_column_price_label": "",
         "right_column_primary_button_text": "Download now",
         "right_column_primary_button_link": "",
+        "right_column_primary_button_embed_url": "",
         "right_column_secondary_button_text": "",
         "right_column_secondary_button_link": "",
+        "right_column_secondary_button_embed_url": "",
         "right_column_fine_print": "",
         "anchor_id": "",
         "padding_top": 0,
@@ -253,7 +255,7 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "anchor_id": "#",
-        "padding_top": 52,
+        "padding_top": 0,
         "padding_bottom": 52,
         "text_padding_left": 32,
         "text_padding_right": 16
@@ -297,6 +299,7 @@
         "feature_item_gVYYUV",
         "feature_item_iRNHQw"
       ],
+      "disabled": true,
       "name": "Image with features",
       "settings": {
         "image": "shopify://shop_images/failte-restaurant-image.jpg",
@@ -355,6 +358,7 @@
         "feature_item_Wp9bXU",
         "feature_item_JY6MwN"
       ],
+      "disabled": true,
       "name": "Image with features",
       "settings": {
         "image": "shopify://shop_images/failte-restaurant-image.jpg",
@@ -416,6 +420,7 @@
         "award_icon_LXKmTV",
         "richtext_LJNcig"
       ],
+      "disabled": true,
       "name": "Award Banner",
       "settings": {
         "background_image": "shopify://shop_images/team.jpg",
@@ -480,6 +485,7 @@
         "logo_hWRjrM",
         "logo_itwWmj"
       ],
+      "disabled": true,
       "name": "Logo Block",
       "settings": {
         "color_scheme": "",
