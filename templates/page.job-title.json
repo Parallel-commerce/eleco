@@ -69,99 +69,56 @@
         "padding_bottom": 52
       }
     },
-    "collection_list_a4Pj4P": {
-      "type": "collection-list",
+    "parallel_collection_list_QYLGV9": {
+      "type": "parallel-collection-list",
       "blocks": {
-        "featured_collection_qVQRcH": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "client"
-          }
-        },
-        "featured_collection_j8gh4D": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "commercial"
-          }
-        },
-        "featured_collection_AEbRM7": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "estimator"
-          }
-        },
-        "featured_collection_ikPJLy": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "executive"
-          }
-        },
-        "featured_collection_dWHaTk": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "field-engineer"
-          }
-        },
-        "featured_collection_3jXWgY": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "it-systems"
-          }
-        },
-        "featured_collection_WKTchL": {
-          "type": "featured_collection",
+        "collection_9djaaK": {
+          "type": "collection",
           "settings": {
             "collection": "planners-and-schedulers"
           }
         },
-        "featured_collection_b9ciFG": {
-          "type": "featured_collection",
+        "collection_ey83UT": {
+          "type": "collection",
           "settings": {
-            "collection": "planning-lead"
+            "collection": "bim-manager"
           }
         },
-        "featured_collection_EqGaHT": {
-          "type": "featured_collection",
+        "collection_3ViyWy": {
+          "type": "collection",
           "settings": {
-            "collection": "project-manager"
+            "collection": "executive"
           }
         },
-        "featured_collection_e8ntTT": {
-          "type": "featured_collection",
+        "collection_qD6WbQ": {
+          "type": "collection",
           "settings": {
-            "collection": "site-manager"
+            "collection": "estimator"
           }
         },
-        "featured_collection_FRWmQh": {
-          "type": "featured_collection",
+        "collection_6JF8En": {
+          "type": "collection",
           "settings": {
-            "collection": "subcontractor"
+            "collection": "field-engineer"
           }
         }
       },
       "block_order": [
-        "featured_collection_qVQRcH",
-        "featured_collection_j8gh4D",
-        "featured_collection_AEbRM7",
-        "featured_collection_ikPJLy",
-        "featured_collection_dWHaTk",
-        "featured_collection_3jXWgY",
-        "featured_collection_WKTchL",
-        "featured_collection_b9ciFG",
-        "featured_collection_EqGaHT",
-        "featured_collection_e8ntTT",
-        "featured_collection_FRWmQh"
+        "collection_9djaaK",
+        "collection_ey83UT",
+        "collection_3ViyWy",
+        "collection_qD6WbQ",
+        "collection_6JF8En"
       ],
-      "name": "t:sections.collection-list.presets.name",
+      "name": "Collection list",
       "settings": {
-        "title": "",
+        "title": "Collections",
+        "subtitle": "",
         "heading_size": "h1",
-        "image_ratio": "adapt",
         "columns_desktop": 3,
-        "color_scheme": "",
-        "show_view_all": false,
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -171,6 +128,6 @@
     "main",
     "image_banner_kGMAxh",
     "rich_text_WQ3iEj",
-    "collection_list_a4Pj4P"
+    "parallel_collection_list_QYLGV9"
   ]
 }
