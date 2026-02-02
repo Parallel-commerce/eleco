@@ -584,6 +584,7 @@
         "video_item_qFpjwc",
         "video_item_cfdDnt"
       ],
+      "disabled": true,
       "name": "Three Column Video",
       "settings": {
         "heading": "Video Gallery",
@@ -662,6 +663,15 @@
     "parallel_testimonials_6ayBHg": {
       "type": "parallel-testimonials",
       "blocks": {
+        "testimonial_a3KHyH": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Steven Tideswell",
+            "title": " Head of Business Excellence | VINCI Construction",
+            "country_flag": "",
+            "testimonial_text": "Going forward, all our programmes will be created and managed in Asta Vision. We will be able to simplify and automate reporting, reduce our business continuity risk by working more collaboratively and without loss of data, and a with standardised approach to planning and programming across the business we will be able to create a better, more professional and more consistent experience for all our customers."
+          }
+        },
         "testimonial_tHbLzP": {
           "type": "testimonial",
           "settings": {
@@ -691,6 +701,7 @@
         },
         "testimonial_FTmqJ9": {
           "type": "testimonial",
+          "disabled": true,
           "settings": {
             "name": "Levin Wense",
             "title": "CEO and Co-founder |  MVP Match",
@@ -700,6 +711,7 @@
         }
       },
       "block_order": [
+        "testimonial_a3KHyH",
         "testimonial_tHbLzP",
         "testimonial_gmUK7t",
         "testimonial_BKxVbp",
@@ -707,8 +719,8 @@
       ],
       "name": "Testimonials",
       "settings": {
-        "heading": "What do our clients say?",
-        "subheading": "Find out why our clients are glad they met us.",
+        "heading": "What do our customers say?",
+        "subheading": "Find out why our customers are glad they met us.",
         "heading_size": "h1",
         "header_alignment": "center",
         "header_spacing": 40,
