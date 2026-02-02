@@ -465,6 +465,7 @@
         "highlight_kcCRDW",
         "highlight_kmzQJf"
       ],
+      "disabled": true,
       "name": "Highlights",
       "settings": {
         "color_scheme": "",
@@ -664,6 +665,15 @@
     "parallel_testimonials_6ayBHg": {
       "type": "parallel-testimonials",
       "blocks": {
+        "testimonial_dC6gQg": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Derek O'Neil",
+            "title": "Head of Planning | Careys Civil Engineering",
+            "country_flag": "",
+            "testimonial_text": "With Asta Vision we have a common tool to help guide everyone towards using good planning principles and processes. Asta Vision enables us to view live project data across all our projects with greater transparency and consistency. It helps planners to focus on the day job and not be distracted by lengthy reporting processes."
+          }
+        },
         "testimonial_a3KHyH": {
           "type": "testimonial",
           "settings": {
@@ -712,6 +722,7 @@
         }
       },
       "block_order": [
+        "testimonial_dC6gQg",
         "testimonial_a3KHyH",
         "testimonial_BKxVbp",
         "testimonial_tHbLzP",
