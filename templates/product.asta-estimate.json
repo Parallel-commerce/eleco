@@ -996,7 +996,7 @@
       "name": "Support CTA",
       "settings": {
         "heading": "Learn & Support",
-        "description": "The Asta Powerproject support package includes technical, installation and activation support, access to our help desk and web-based tutorials. Our support services are complemented by our wide range of classroom or online training to ensure you get the most from your software.",
+        "description": "",
         "primary_button_label": "",
         "primary_button_link": "https://elecosoft.com/products/asta-estimate/learn-support/",
         "primary_button_background": "#e83f40",
