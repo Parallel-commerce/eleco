@@ -207,7 +207,7 @@
         "heading_GGwQtN": {
           "type": "heading",
           "settings": {
-            "heading": "Heading",
+            "heading": "Expert help. Always on.",
             "heading_size": "h1"
           }
         },
@@ -215,21 +215,21 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "24/7 access"
           }
         },
         "feature_item_efdUrz": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "instant answers saves you time"
           }
         },
         "feature_item_eVF6yn": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Answers are clearly laid out in a logical sequence"
           }
         }
       },
@@ -241,7 +241,6 @@
       ],
       "name": "Image with features",
       "settings": {
-        "image": "shopify://shop_images/failte-restaurant-image.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
