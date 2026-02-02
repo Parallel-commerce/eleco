@@ -306,6 +306,32 @@
       height: auto;
       display: block;
     }
+
+    .custom-product-info__embed-modal .product-popup-modal__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .custom-product-info__embed-iframe {
+      flex: 1;
+      width: 100%;
+      min-height: 50vh;
+      border: none;
+      margin-top: 1rem;
+    }
+
+    .custom-product-info__embed-code-wrapper {
+      flex: 1;
+      width: 100%;
+      min-height: 50vh;
+      margin-top: 1rem;
+    }
+
+    .custom-product-info__embed-code-wrapper iframe {
+      width: 100%;
+      min-height: 70vh;
+      border: none;
+    }
   {%- endstyle -%}
 
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
@@ -484,9 +510,7 @@
 
         {%- comment -%} Right Column: Concurrent & SaaS Solutions (no price) {%- endcomment -%}
         <div class="custom-product-info__pricing-column{% if is_free_product %} custom-product-info__pricing-column--full{% endif %}">
-          <h2>
-            Concurrent &amp; SaaS solutions
-          </h2>
+          <h2>Concurrent &amp; SaaS solutions</h2>
 
           <p>
             You wouldn't place a tender without first understanding the full scope of work. We approach custom quotes
@@ -494,22 +518,108 @@
           </p>
 
           <div class="custom-product-info__buttons">
-            {%- if section.settings.right_column_primary_button_text != blank -%}
+            {%- comment -%} Contact Sales – link or embed {%- endcomment -%}
+            {%- assign primary_show_link = false -%}
+            {%- assign primary_show_embed = false -%}
+            {%- if section.settings.right_column_primary_button_type == 'link'
+              and section.settings.right_column_primary_button_text != blank
+              and section.settings.right_column_primary_button_link != blank
+            -%}
+              {%- assign primary_show_link = true -%}
+            {%- endif -%}
+            {%- assign primary_has_embed_url = false -%}
+            {%- assign primary_has_embed_code = false -%}
+            {%- if section.settings.right_column_primary_button_embed_content_type == 'url'
+              and section.settings.right_column_primary_button_embed_url != blank
+            -%}
+              {%- assign primary_has_embed_url = true -%}
+            {%- endif -%}
+            {%- if section.settings.right_column_primary_button_embed_content_type == 'embed_code'
+              and section.settings.right_column_primary_button_embed_code != blank
+            -%}
+              {%- assign primary_has_embed_code = true -%}
+            {%- endif -%}
+            {%- if section.settings.right_column_primary_button_type == 'embed'
+              and section.settings.right_column_primary_button_text != blank
+              and primary_has_embed_url
+            -%}
+              {%- assign primary_show_embed = true -%}
+            {%- endif -%}
+            {%- if section.settings.right_column_primary_button_type == 'embed'
+              and section.settings.right_column_primary_button_text != blank
+              and primary_has_embed_code
+            -%}
+              {%- assign primary_show_embed = true -%}
+            {%- endif -%}
+            {%- if primary_show_link -%}
               <a
-                href="{{ section.settings.right_column_primary_button_link | default: '#' }}"
+                href="{{ section.settings.right_column_primary_button_link }}"
                 class="button button--primary"
               >
                 {{ section.settings.right_column_primary_button_text }}
               </a>
+            {%- elsif primary_show_embed -%}
+              <modal-opener data-modal="#EmbedModal-Primary-{{ section.id }}">
+                <button
+                  type="button"
+                  class="button button--primary"
+                  aria-haspopup="dialog"
+                >
+                  {{ section.settings.right_column_primary_button_text }}
+                </button>
+              </modal-opener>
             {%- endif -%}
 
-            {%- if section.settings.right_column_secondary_button_text != blank -%}
+            {%- comment -%} Book a Demo – link or embed {%- endcomment -%}
+            {%- assign secondary_show_link = false -%}
+            {%- assign secondary_show_embed = false -%}
+            {%- if section.settings.right_column_secondary_button_type == 'link'
+              and section.settings.right_column_secondary_button_text != blank
+              and section.settings.right_column_secondary_button_link != blank
+            -%}
+              {%- assign secondary_show_link = true -%}
+            {%- endif -%}
+            {%- assign secondary_has_embed_url = false -%}
+            {%- assign secondary_has_embed_code = false -%}
+            {%- if section.settings.right_column_secondary_button_embed_content_type == 'url'
+              and section.settings.right_column_secondary_button_embed_url != blank
+            -%}
+              {%- assign secondary_has_embed_url = true -%}
+            {%- endif -%}
+            {%- if section.settings.right_column_secondary_button_embed_content_type == 'embed_code'
+              and section.settings.right_column_secondary_button_embed_code != blank
+            -%}
+              {%- assign secondary_has_embed_code = true -%}
+            {%- endif -%}
+            {%- if section.settings.right_column_secondary_button_type == 'embed'
+              and section.settings.right_column_secondary_button_text != blank
+              and secondary_has_embed_url
+            -%}
+              {%- assign secondary_show_embed = true -%}
+            {%- endif -%}
+            {%- if section.settings.right_column_secondary_button_type == 'embed'
+              and section.settings.right_column_secondary_button_text != blank
+              and secondary_has_embed_code
+            -%}
+              {%- assign secondary_show_embed = true -%}
+            {%- endif -%}
+            {%- if secondary_show_link -%}
               <a
-                href="{{ section.settings.right_column_secondary_button_link | default: '#' }}"
+                href="{{ section.settings.right_column_secondary_button_link }}"
                 class="button button--secondary"
               >
                 {{ section.settings.right_column_secondary_button_text }}
               </a>
+            {%- elsif secondary_show_embed -%}
+              <modal-opener data-modal="#EmbedModal-Secondary-{{ section.id }}">
+                <button
+                  type="button"
+                  class="button button--secondary"
+                  aria-haspopup="dialog"
+                >
+                  {{ section.settings.right_column_secondary_button_text }}
+                </button>
+              </modal-opener>
             {%- endif -%}
           </div>
 
@@ -522,6 +632,102 @@
       </div>
     </div>
   </div>
+
+  {%- comment -%} Embed modals (when type is embed and URL or embed code set) {%- endcomment -%}
+  {%- assign primary_embed_show_modal = false -%}
+  {%- if section.settings.right_column_primary_button_type == 'embed' -%}
+    {%- if section.settings.right_column_primary_button_embed_content_type == 'url'
+      and section.settings.right_column_primary_button_embed_url != blank
+    -%}
+      {%- assign primary_embed_show_modal = true -%}
+      {%- assign primary_embed_is_url = true -%}
+    {%- elsif section.settings.right_column_primary_button_embed_content_type == 'embed_code'
+      and section.settings.right_column_primary_button_embed_code != blank
+    -%}
+      {%- assign primary_embed_show_modal = true -%}
+      {%- assign primary_embed_is_url = false -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- if primary_embed_show_modal -%}
+    <modal-dialog id="EmbedModal-Primary-{{ section.id }}" class="product-popup-modal custom-product-info__embed-modal">
+      <div
+        role="dialog"
+        aria-label="{{ section.settings.right_column_primary_button_text | escape }}"
+        aria-modal="true"
+        class="product-popup-modal__content custom-product-info__embed-modal-content"
+        tabindex="-1"
+      >
+        <button
+          id="ModalClose-EmbedPrimary-{{ section.id }}"
+          type="button"
+          class="product-popup-modal__toggle"
+          aria-label="{{ 'accessibility.close' | t }}"
+        >
+          {{- 'icon-close.svg' | inline_asset_content -}}
+        </button>
+        {%- if primary_embed_is_url -%}
+          <iframe
+            src="{{ section.settings.right_column_primary_button_embed_url }}"
+            class="custom-product-info__embed-iframe"
+            title="{{ section.settings.right_column_primary_button_text | escape }}"
+          ></iframe>
+        {%- else -%}
+          <div class="custom-product-info__embed-code-wrapper">
+            {{ section.settings.right_column_primary_button_embed_code }}
+          </div>
+        {%- endif -%}
+      </div>
+    </modal-dialog>
+  {%- endif -%}
+
+  {%- assign secondary_embed_show_modal = false -%}
+  {%- if section.settings.right_column_secondary_button_type == 'embed' -%}
+    {%- if section.settings.right_column_secondary_button_embed_content_type == 'url'
+      and section.settings.right_column_secondary_button_embed_url != blank
+    -%}
+      {%- assign secondary_embed_show_modal = true -%}
+      {%- assign secondary_embed_is_url = true -%}
+    {%- elsif section.settings.right_column_secondary_button_embed_content_type == 'embed_code'
+      and section.settings.right_column_secondary_button_embed_code != blank
+    -%}
+      {%- assign secondary_embed_show_modal = true -%}
+      {%- assign secondary_embed_is_url = false -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- if secondary_embed_show_modal -%}
+    <modal-dialog
+      id="EmbedModal-Secondary-{{ section.id }}"
+      class="product-popup-modal custom-product-info__embed-modal"
+    >
+      <div
+        role="dialog"
+        aria-label="{{ section.settings.right_column_secondary_button_text | escape }}"
+        aria-modal="true"
+        class="product-popup-modal__content custom-product-info__embed-modal-content"
+        tabindex="-1"
+      >
+        <button
+          id="ModalClose-EmbedSecondary-{{ section.id }}"
+          type="button"
+          class="product-popup-modal__toggle"
+          aria-label="{{ 'accessibility.close' | t }}"
+        >
+          {{- 'icon-close.svg' | inline_asset_content -}}
+        </button>
+        {%- if secondary_embed_is_url -%}
+          <iframe
+            src="{{ section.settings.right_column_secondary_button_embed_url }}"
+            class="custom-product-info__embed-iframe"
+            title="{{ section.settings.right_column_secondary_button_text | escape }}"
+          ></iframe>
+        {%- else -%}
+          <div class="custom-product-info__embed-code-wrapper">
+            {{ section.settings.right_column_secondary_button_embed_code }}
+          </div>
+        {%- endif -%}
+      </div>
+    </modal-dialog>
+  {%- endif -%}
 </product-info>
 
 {% schema %}
@@ -661,26 +867,98 @@
       "default": "Prices start from £2412 / year"
     },
     {
+      "type": "header",
+      "content": "Right column buttons"
+    },
+    {
+      "type": "select",
+      "id": "right_column_primary_button_type",
+      "label": "Contact Sales – type",
+      "options": [
+        { "value": "link", "label": "Link" },
+        { "value": "embed", "label": "Embed" }
+      ],
+      "default": "link"
+    },
+    {
       "type": "text",
       "id": "right_column_primary_button_text",
-      "label": "Right column primary button text",
+      "label": "Contact Sales – button text",
       "default": "Contact sales"
     },
     {
       "type": "url",
       "id": "right_column_primary_button_link",
-      "label": "Right column primary button link"
+      "label": "Contact Sales – link",
+      "info": "Used when type is Link"
+    },
+    {
+      "type": "select",
+      "id": "right_column_primary_button_embed_content_type",
+      "label": "Contact Sales – embed content",
+      "options": [
+        { "value": "url", "label": "URL (load in iframe)" },
+        { "value": "embed_code", "label": "Embed code (paste iframe HTML)" }
+      ],
+      "default": "url",
+      "info": "Used when type is Embed"
+    },
+    {
+      "type": "url",
+      "id": "right_column_primary_button_embed_url",
+      "label": "Contact Sales – embed URL",
+      "info": "Used when embed content is URL. Opens in popup (e.g. Calendly, form)."
+    },
+    {
+      "type": "liquid",
+      "id": "right_column_primary_button_embed_code",
+      "label": "Contact Sales – embed code",
+      "info": "Used when embed content is Embed code. Paste the full iframe or script tag from your provider."
+    },
+    {
+      "type": "select",
+      "id": "right_column_secondary_button_type",
+      "label": "Book a Demo – type",
+      "options": [
+        { "value": "link", "label": "Link" },
+        { "value": "embed", "label": "Embed" }
+      ],
+      "default": "link"
     },
     {
       "type": "text",
       "id": "right_column_secondary_button_text",
-      "label": "Right column secondary button text",
+      "label": "Book a Demo – button text",
       "default": "Book a demo"
     },
     {
       "type": "url",
       "id": "right_column_secondary_button_link",
-      "label": "Right column secondary button link"
+      "label": "Book a Demo – link",
+      "info": "Used when type is Link"
+    },
+    {
+      "type": "select",
+      "id": "right_column_secondary_button_embed_content_type",
+      "label": "Book a Demo – embed content",
+      "options": [
+        { "value": "url", "label": "URL (load in iframe)" },
+        { "value": "embed_code", "label": "Embed code (paste iframe HTML)" }
+      ],
+      "default": "url",
+      "info": "Used when type is Embed"
+    },
+    {
+      "type": "url",
+      "id": "right_column_secondary_button_embed_url",
+      "label": "Book a Demo – embed URL",
+      "info": "Used when embed content is URL. Opens in popup (e.g. Calendly, form)."
+    },
+    {
+      "type": "liquid",
+      "id": "right_column_secondary_button_embed_code",
+      "label": "Book a Demo – embed code",
+      "info": "Used when embed content is Embed code. Paste the full iframe or script tag from your provider."
     },
     {
       "type": "text",
