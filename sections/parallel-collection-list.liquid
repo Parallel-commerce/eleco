@@ -1,0 +1,364 @@
+{%- liquid
+  assign section_id = section.id
+  assign columns_desktop = section.settings.columns_desktop
+  assign columns_mobile = section.settings.columns_mobile
+  assign image_ratio = section.settings.image_ratio
+-%}
+
+{%- style -%}
+  .pcl-{{ section_id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .pcl-{{ section_id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .pcl-{{ section_id }}__grid {
+    display: grid;
+    grid-template-columns: repeat({{ columns_mobile }}, minmax(0, 1fr));
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media screen and (min-width: 750px) {
+    .pcl-{{ section_id }}__grid {
+      grid-template-columns: repeat({{ columns_desktop }}, minmax(0, 1fr));
+      gap: 2rem;
+    }
+  }
+
+  .pcl-{{ section_id }}__card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+    border-radius: var(--media-radius, 0);
+  }
+
+  .pcl-{{ section_id }}__card:hover {
+    color: inherit;
+  }
+
+  .pcl-{{ section_id }}__media-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(var(--color-foreground), 0.04);
+  }
+
+  .pcl-{{ section_id }}__media-wrapper--adapt {
+    aspect-ratio: var(--pcl-ratio, 1);
+  }
+
+  .pcl-{{ section_id }}__media-wrapper--square {
+    aspect-ratio: 1;
+  }
+
+  .pcl-{{ section_id }}__media-wrapper--portrait {
+    aspect-ratio: 0.8;
+  }
+
+  .pcl-{{ section_id }}__media-wrapper .pcl-{{ section_id }}__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .pcl-{{ section_id }}__card:hover .pcl-{{ section_id }}__img {
+    transform: scale(1.03);
+  }
+
+  .pcl-{{ section_id }}__content {
+    padding-top: 1rem;
+  }
+
+  .pcl-{{ section_id }}__title {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  @media screen and (max-width: 749px) {
+    .pcl-{{ section_id }}__title {
+      font-size: 1.4rem;
+    }
+  }
+
+  .pcl-{{ section_id }}__header {
+    margin-bottom: 1rem;
+  }
+
+  .pcl-{{ section_id }}__heading {
+    margin: 0 0 0.25rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .pcl-{{ section_id }}__subtitle {
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    opacity: 0.85;
+  }
+
+  @media screen and (max-width: 749px) {
+    .pcl-{{ section_id }}__heading {
+      font-size: 1.8rem;
+    }
+    .pcl-{{ section_id }}__subtitle {
+      font-size: 1.2rem;
+    }
+  }
+
+  .pcl-{{ section_id }}.pcl--no-heading .pcl-{{ section_id }}__header {
+    display: none;
+  }
+
+  .pcl-{{ section_id }}__media-wrapper .pcl-placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+{%- endstyle -%}
+
+<div
+  class="color-{{ section.settings.color_scheme }} gradient pcl-{{ section_id }}{% if section.settings.title == blank and section.settings.subtitle == blank %} pcl--no-heading{% endif %}"
+  {{ section.shopify_attributes }}
+>
+  <div class="page-width pcl-{{ section_id }}-padding isolate">
+    {%- if section.settings.title != blank or section.settings.subtitle != blank -%}
+      <header class="pcl-{{ section_id }}__header">
+        {%- if section.settings.title != blank -%}
+          <h2 class="pcl-{{ section_id }}__heading {{ section.settings.heading_size }}">
+            {{ section.settings.title }}
+          </h2>
+        {%- endif -%}
+        {%- if section.settings.subtitle != blank -%}
+          <p class="pcl-{{ section_id }}__subtitle">
+            {{ section.settings.subtitle }}
+          </p>
+        {%- endif -%}
+      </header>
+    {%- endif -%}
+
+    <ul class="pcl-{{ section_id }}__grid" role="list">
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign collection = block.settings.collection
+          assign custom_image = block.settings.image
+          if custom_image != blank
+            assign card_image = custom_image
+          elsif collection != blank and collection.featured_image != blank
+            assign card_image = collection.featured_image
+          else
+            assign card_image = nil
+          endif
+          assign card_url = collection.url | default: '#'
+          assign card_title = collection.title | default: 'Collection'
+          assign ratio = 1
+          if card_image != blank and image_ratio == 'portrait'
+            assign ratio = 0.8
+          elsif card_image != blank and image_ratio == 'adapt'
+            assign ratio = card_image.aspect_ratio
+          endif
+          if ratio == 0 or ratio == null
+            assign ratio = 1
+          endif
+        -%}
+        <li
+          class="pcl-{{ section_id }}__item"
+          {{ block.shopify_attributes }}
+        >
+          <a
+            href="{{ card_url }}"
+            class="pcl-{{ section_id }}__card"
+            {% if collection == blank %}aria-disabled="true"{% endif %}
+          >
+            <div
+              class="pcl-{{ section_id }}__media-wrapper pcl-{{ section_id }}__media-wrapper--{{ image_ratio }}"
+              {% if image_ratio == 'adapt' and card_image != blank %}
+                style="--pcl-ratio: {{ card_image.aspect_ratio }};"
+              {% endif %}
+            >
+              {%- if card_image != blank -%}
+                <img
+                  class="pcl-{{ section_id }}__img"
+                  src="{{ card_image | image_url: width: 750 }}"
+                  srcset="
+                    {%- if card_image.width >= 165 -%}{{ card_image | image_url: width: 165 }} 165w,{%- endif -%}
+                    {%- if card_image.width >= 330 -%}{{ card_image | image_url: width: 330 }} 330w,{%- endif -%}
+                    {%- if card_image.width >= 535 -%}{{ card_image | image_url: width: 535 }} 535w,{%- endif -%}
+                    {%- if card_image.width >= 750 -%}{{ card_image | image_url: width: 750 }} 750w,{%- endif -%}
+                    {%- if card_image.width >= 1000 -%}{{ card_image | image_url: width: 1000 }} 1000w,{%- endif -%}
+                    {%- if card_image.width >= 1500 -%}{{ card_image | image_url: width: 1500 }} 1500w,{%- endif -%}
+                    {{ card_image | image_url }} {{ card_image.width }}w
+                  "
+                  sizes="(min-width: 990px) calc((100vw - 12rem) / {{ columns_desktop }}), (min-width: 750px) calc((100vw - 10rem) / {{ columns_desktop }}), calc(100vw - 3rem)"
+                  alt="{{ card_image.alt | default: card_title | escape }}"
+                  width="{{ card_image.width }}"
+                  height="{{ card_image.height }}"
+                  loading="lazy"
+                >
+              {%- else -%}
+                {%- assign placeholder_index = forloop.index0 | modulo: 4 | plus: 1 -%}
+                {%- assign placeholder_name = 'collection-apparel-' | append: placeholder_index -%}
+                {{ placeholder_name | placeholder_svg_tag: 'pcl-placeholder' }}
+              {%- endif -%}
+            </div>
+            <div class="pcl-{{ section_id }}__content">
+              <h3 class="pcl-{{ section_id }}__title">
+                {{ card_title }}
+              </h3>
+            </div>
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Collection list",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 12,
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Collections"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Heading size",
+      "options": [
+        { "value": "h2", "label": "Small" },
+        { "value": "h1", "label": "Medium" },
+        { "value": "h0", "label": "Large" },
+        { "value": "hxl", "label": "Extra large" },
+        { "value": "hxxl", "label": "2X large" }
+      ],
+      "default": "h1"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 3,
+      "label": "Collections per row (desktop)"
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Collections per row (mobile)",
+      "options": [
+        { "value": "1", "label": "1" },
+        { "value": "2", "label": "2" }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "label": "Image ratio",
+      "options": [
+        { "value": "adapt", "label": "Adapt to image" },
+        { "value": "portrait", "label": "Portrait" },
+        { "value": "square", "label": "Square" }
+      ],
+      "default": "square"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Custom image",
+          "info": "Optional. Leave blank to use the collection's featured image."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection list",
+      "blocks": [
+        { "type": "collection" },
+        { "type": "collection" },
+        { "type": "collection" }
+      ]
+    }
+  ]
+}
+{% endschema %}

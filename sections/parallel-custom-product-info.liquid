@@ -450,7 +450,7 @@
                     id="CustomProductSubmitButton-{{ section.id }}-left"
                     type="submit"
                     name="add"
-                    class="button button--primary"
+                    class="button button--primary custom-product-info__button-primary"
                     {% if product.selected_or_first_available_variant.available == false
                       or quantity_rule_soldout
                       or product.selected_or_first_available_variant == null
@@ -475,7 +475,7 @@
                   {%- if section.settings.left_column_secondary_button_text != blank -%}
                     <a
                       href="{{ section.settings.left_column_secondary_button_link | default: '#' }}"
-                      class="button button--secondary"
+                      class="button button--secondary custom-product-info__button-secondary"
                     >
                       {{ section.settings.left_column_secondary_button_text }}
                     </a>
@@ -497,12 +497,13 @@
 
         {%- comment -%} Right Column: Concurrent & SaaS Solutions (no price) {%- endcomment -%}
         <div class="custom-product-info__pricing-column{% if is_free_product %} custom-product-info__pricing-column--full{% endif %}">
-          <h2>Concurrent &amp; SaaS solutions</h2>
+          {%- if section.settings.right_column_title != blank -%}
+            <h2>{{ section.settings.right_column_title }}</h2>
+          {%- endif -%}
 
-          <p>
-            You wouldn't place a tender without first understanding the full scope of work. We approach custom quotes
-            the same way. Help us get to know your team's needs to get started now.
-          </p>
+          {%- if section.settings.right_column_paragraph != blank -%}
+            <p>{{ section.settings.right_column_paragraph }}</p>
+          {%- endif -%}
 
           <div class="custom-product-info__buttons">
             {%- comment -%} Contact Sales – link or iframe embed (whichever field is filled) {%- endcomment -%}
@@ -514,12 +515,12 @@
             {%- endif -%}
             {%- if primary_show -%}
               {%- if section.settings.right_column_primary_button_link != blank -%}
-                <a href="{{ section.settings.right_column_primary_button_link }}" class="button button--primary">
+                <a href="{{ section.settings.right_column_primary_button_link }}" class="button button--primary custom-product-info__button-primary">
                   {{ section.settings.right_column_primary_button_text }}
                 </a>
               {%- else -%}
                 <modal-opener data-modal="#EmbedModal-Primary-{{ section.id }}">
-                  <button type="button" class="button button--primary" aria-haspopup="dialog">
+                  <button type="button" class="button button--primary custom-product-info__button-primary" aria-haspopup="dialog">
                     {{ section.settings.right_column_primary_button_text }}
                   </button>
                 </modal-opener>
@@ -535,12 +536,12 @@
             {%- endif -%}
             {%- if secondary_show -%}
               {%- if section.settings.right_column_secondary_button_link != blank -%}
-                <a href="{{ section.settings.right_column_secondary_button_link }}" class="button button--secondary">
+                <a href="{{ section.settings.right_column_secondary_button_link }}" class="button button--secondary custom-product-info__button-secondary">
                   {{ section.settings.right_column_secondary_button_text }}
                 </a>
               {%- else -%}
                 <modal-opener data-modal="#EmbedModal-Secondary-{{ section.id }}">
-                  <button type="button" class="button button--secondary" aria-haspopup="dialog">
+                  <button type="button" class="button button--secondary custom-product-info__button-secondary" aria-haspopup="dialog">
                     {{ section.settings.right_column_secondary_button_text }}
                   </button>
                 </modal-opener>
@@ -595,194 +596,20 @@
   "class": "section",
   "settings": [
     {
+      "type": "header",
+      "content": "Section"
+    },
+    {
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "Color scheme",
       "default": "scheme-1"
     },
     {
-      "type": "color",
-      "id": "column_background_color",
-      "label": "Column background color",
-      "default": "#FFF5F5"
-    },
-    {
-      "type": "color",
-      "id": "divider_color",
-      "label": "Divider color",
-      "default": "#FF0000"
-    },
-    {
-      "type": "color",
-      "id": "primary_button_color",
-      "label": "Primary button color (Add to cart)",
-      "default": "#FF6B35"
-    },
-    {
-      "type": "color",
-      "id": "primary_button_text_color",
-      "label": "Primary button text color",
-      "default": "#FFFFFF"
-    },
-    {
-      "type": "header",
-      "content": "Hero Banner Settings"
-    },
-    {
-      "type": "text",
-      "id": "hero_title",
-      "label": "Hero title",
-      "default": "Plan with certainty, build with confidence"
-    },
-    {
-      "type": "textarea",
-      "id": "hero_subtitle",
-      "label": "Hero subtitle",
-      "default": "Take control with integrative tools that gives teams the power to master project timelines"
-    },
-    {
-      "type": "image_picker",
-      "id": "hero_image",
-      "label": "Hero graphic/image"
-    },
-    {
-      "type": "color",
-      "id": "hero_background_color",
-      "label": "Hero background color",
-      "default": "#4A4A4A"
-    },
-    {
-      "type": "color",
-      "id": "hero_text_color",
-      "label": "Hero text color",
-      "default": "#FFFFFF"
-    },
-    {
-      "type": "header",
-      "content": "Left Column Settings"
-    },
-    {
-      "type": "text",
-      "id": "left_column_title",
-      "label": "Left column title",
-      "default": "Annual subscription"
-    },
-    {
-      "type": "text",
-      "id": "left_column_price",
-      "label": "Left column price (override product price)",
-      "info": "Leave blank to use product price. Format: 122.50"
-    },
-    {
-      "type": "text",
-      "id": "left_column_price_label",
-      "label": "Left column price label",
-      "default": "Prices start from £122.5 / month"
-    },
-    {
-      "type": "text",
-      "id": "left_column_button_text",
-      "label": "Left column button text",
-      "default": "Add to cart"
-    },
-    {
-      "type": "text",
-      "id": "left_column_secondary_button_text",
-      "label": "Left column secondary button text",
-      "default": "Download free trial"
-    },
-    {
-      "type": "url",
-      "id": "left_column_secondary_button_link",
-      "label": "Left column secondary button link"
-    },
-    {
-      "type": "text",
-      "id": "left_column_fine_print",
-      "label": "Left column fine print",
-      "default": "Paid annually, one user installed onto a single Windows PC. Includes VAT."
-    },
-    {
-      "type": "header",
-      "content": "Right Column Settings"
-    },
-    {
-      "type": "text",
-      "id": "right_column_title",
-      "label": "Right column title",
-      "default": "Concurrent & SaaS solutions"
-    },
-    {
-      "type": "text",
-      "id": "right_column_price",
-      "label": "Right column price (override product price)",
-      "info": "Leave blank to use product price. Format: 2412"
-    },
-    {
-      "type": "text",
-      "id": "right_column_price_label",
-      "label": "Right column price label",
-      "default": "Prices start from £2412 / year"
-    },
-    {
-      "type": "header",
-      "content": "Right column buttons"
-    },
-    {
-      "type": "text",
-      "id": "right_column_primary_button_text",
-      "label": "Contact Sales – button text",
-      "default": "Contact sales"
-    },
-    {
-      "type": "url",
-      "id": "right_column_primary_button_link",
-      "label": "Contact Sales – link",
-      "info": "Fill this for a normal link. If both link and embed URL are filled, link is used."
-    },
-    {
-      "type": "url",
-      "id": "right_column_primary_button_embed_url",
-      "label": "Contact Sales – embed URL",
-      "info": "Fill this to open in a popup (iframe). Whichever of link or embed URL is filled is used."
-    },
-    {
-      "type": "text",
-      "id": "right_column_secondary_button_text",
-      "label": "Book a Demo – button text",
-      "default": "Book a demo"
-    },
-    {
-      "type": "url",
-      "id": "right_column_secondary_button_link",
-      "label": "Book a Demo – link",
-      "info": "Fill this for a normal link. If both link and embed URL are filled, link is used."
-    },
-    {
-      "type": "url",
-      "id": "right_column_secondary_button_embed_url",
-      "label": "Book a Demo – embed URL",
-      "info": "Fill this to open in a popup (iframe). Whichever of link or embed URL is filled is used."
-    },
-    {
-      "type": "text",
-      "id": "right_column_fine_print",
-      "label": "Right column fine print",
-      "default": "Paid annually. Includes VAT."
-    },
-    {
-      "type": "header",
-      "content": "Section anchor"
-    },
-    {
       "type": "text",
       "id": "anchor_id",
       "label": "Anchor ID",
-      "info": "Enter an ID for anchor links (e.g., 'features'). Links can use #features to jump to this section. Do not include the # symbol."
-    },
-    {
-      "type": "header",
-      "content": "Section Padding"
+      "info": "For anchor links (e.g. #features). Do not include #."
     },
     {
       "type": "range",
@@ -803,6 +630,172 @@
       "unit": "px",
       "label": "Padding bottom",
       "default": 36
+    },
+    {
+      "type": "header",
+      "content": "Hero banner"
+    },
+    {
+      "type": "text",
+      "id": "hero_title",
+      "label": "Title",
+      "default": "Plan with certainty, build with confidence"
+    },
+    {
+      "type": "textarea",
+      "id": "hero_subtitle",
+      "label": "Subtitle",
+      "default": "Take control with integrative tools that gives teams the power to master project timelines"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Image"
+    },
+    {
+      "type": "color",
+      "id": "hero_background_color",
+      "label": "Background color",
+      "default": "#4A4A4A"
+    },
+    {
+      "type": "color",
+      "id": "hero_text_color",
+      "label": "Text color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "header",
+      "content": "Pricing box"
+    },
+    {
+      "type": "color",
+      "id": "column_background_color",
+      "label": "Box background color",
+      "default": "#FFF5F5"
+    },
+    {
+      "type": "color",
+      "id": "divider_color",
+      "label": "Divider and accent color",
+      "default": "#FF0000"
+    },
+    {
+      "type": "color",
+      "id": "primary_button_color",
+      "label": "Primary button color",
+      "default": "#FF6B35"
+    },
+    {
+      "type": "color",
+      "id": "primary_button_text_color",
+      "label": "Primary button text color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "header",
+      "content": "Left column (Annual subscription)"
+    },
+    {
+      "type": "text",
+      "id": "left_column_title",
+      "label": "Title",
+      "default": "Annual subscription"
+    },
+    {
+      "type": "text",
+      "id": "left_column_price",
+      "label": "Price override",
+      "info": "Leave blank to use product price ÷ 12. Format: 122.50"
+    },
+    {
+      "type": "text",
+      "id": "left_column_button_text",
+      "label": "Add to cart button text",
+      "default": "Add to cart"
+    },
+    {
+      "type": "text",
+      "id": "left_column_secondary_button_text",
+      "label": "Secondary button text",
+      "default": "Download free trial"
+    },
+    {
+      "type": "url",
+      "id": "left_column_secondary_button_link",
+      "label": "Secondary button link"
+    },
+    {
+      "type": "text",
+      "id": "left_column_fine_print",
+      "label": "Fine print",
+      "default": "Paid annually, one user installed onto a single Windows PC. Includes VAT."
+    },
+    {
+      "type": "header",
+      "content": "Right column (Contact & Demo)"
+    },
+    {
+      "type": "text",
+      "id": "right_column_title",
+      "label": "Title",
+      "default": "Concurrent & SaaS solutions"
+    },
+    {
+      "type": "textarea",
+      "id": "right_column_paragraph",
+      "label": "Paragraph",
+      "default": "You wouldn't place a tender without first understanding the full scope of work. We approach custom quotes the same way. Help us get to know your team's needs to get started now."
+    },
+    {
+      "type": "text",
+      "id": "right_column_fine_print",
+      "label": "Fine print",
+      "default": "Paid annually. Includes VAT."
+    },
+    {
+      "type": "header",
+      "content": "Contact Sales button"
+    },
+    {
+      "type": "text",
+      "id": "right_column_primary_button_text",
+      "label": "Button text",
+      "default": "Contact sales"
+    },
+    {
+      "type": "url",
+      "id": "right_column_primary_button_link",
+      "label": "Link",
+      "info": "Filled = normal link. If both link and embed URL are filled, link is used."
+    },
+    {
+      "type": "url",
+      "id": "right_column_primary_button_embed_url",
+      "label": "Embed URL",
+      "info": "Filled = opens in popup (iframe)."
+    },
+    {
+      "type": "header",
+      "content": "Book a Demo button"
+    },
+    {
+      "type": "text",
+      "id": "right_column_secondary_button_text",
+      "label": "Button text",
+      "default": "Book a demo"
+    },
+    {
+      "type": "url",
+      "id": "right_column_secondary_button_link",
+      "label": "Link",
+      "info": "Filled = normal link. If both link and embed URL are filled, link is used."
+    },
+    {
+      "type": "url",
+      "id": "right_column_secondary_button_embed_url",
+      "label": "Embed URL",
+      "info": "Filled = opens in popup (iframe)."
     }
   ],
   "blocks": [
