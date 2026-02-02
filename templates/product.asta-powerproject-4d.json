@@ -241,7 +241,7 @@
       ],
       "name": "Image with features",
       "settings": {
-        "image": "shopify://shop_images/failte-restaurant-image.jpg",
+        "image": "shopify://shop_images/Asta_4D_Overview_2.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -253,7 +253,7 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "anchor_id": "#",
-        "padding_top": 52,
+        "padding_top": 0,
         "padding_bottom": 52,
         "text_padding_left": 32,
         "text_padding_right": 16
@@ -307,7 +307,7 @@
       ],
       "name": "Image with features",
       "settings": {
-        "image": "shopify://shop_images/failte-restaurant-image.jpg",
+        "image": "shopify://shop_images/Asta_4D_Overview_3.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -319,8 +319,8 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "anchor_id": "#",
-        "padding_top": 52,
-        "padding_bottom": 52,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "text_padding_left": 16,
         "text_padding_right": 32
       }
@@ -365,7 +365,7 @@
       ],
       "name": "Image with features",
       "settings": {
-        "image": "shopify://shop_images/failte-restaurant-image.jpg",
+        "image": "shopify://shop_images/Asta_4D_Overview_1.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -378,7 +378,7 @@
         "color_scheme": "",
         "anchor_id": "#",
         "padding_top": 52,
-        "padding_bottom": 52,
+        "padding_bottom": 0,
         "text_padding_left": 32,
         "text_padding_right": 16
       }
@@ -424,6 +424,7 @@
         "award_icon_LXKmTV",
         "richtext_LJNcig"
       ],
+      "disabled": true,
       "name": "Award Banner",
       "settings": {
         "background_image": "shopify://shop_images/team.jpg",
@@ -440,6 +441,99 @@
         "anchor_id": "",
         "icon_size": 100,
         "hide_logos_mobile": true
+      }
+    },
+    "parallel_logo_block_hHLWpL": {
+      "type": "parallel-logo-block",
+      "blocks": {
+        "logo_jdyw67": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/bam-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_7CWUJn": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Asta_4D_bouygues-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_tmNnqn": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/galliford-try-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_XeHnR7": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/mace-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_WNf64B": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/mccarthy-stone-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_hWRjrM": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/AEstimate_skanska-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_itwWmj": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/kier-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "logo_jdyw67",
+        "logo_7CWUJn",
+        "logo_tmNnqn",
+        "logo_XeHnR7",
+        "logo_WNf64B",
+        "logo_hWRjrM",
+        "logo_itwWmj"
+      ],
+      "name": "Logo Block",
+      "settings": {
+        "color_scheme": "",
+        "title": "",
+        "heading_size": "h1",
+        "title_alignment": "center",
+        "title_spacing": 24,
+        "logo_width": 150,
+        "logo_spacing": 40,
+        "logo_opacity": 100,
+        "logo_hover_opacity": 100,
+        "mobile_columns": "2",
+        "anchor_id": "",
+        "padding_top": 16,
+        "padding_bottom": 40
       }
     },
     "parallel_highlights_yTAfJh": {
@@ -472,6 +566,7 @@
         "highlight_kcCRDW",
         "highlight_kmzQJf"
       ],
+      "disabled": true,
       "name": "Highlights",
       "settings": {
         "color_scheme": "",
@@ -591,6 +686,7 @@
         "video_item_qFpjwc",
         "video_item_cfdDnt"
       ],
+      "disabled": true,
       "name": "Three Column Video",
       "settings": {
         "heading": "Video Gallery",
@@ -603,72 +699,18 @@
         "padding_bottom": 36
       }
     },
-    "parallel_logo_block_hHLWpL": {
-      "type": "parallel-logo-block",
-      "blocks": {
-        "logo_XeHnR7": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/sparklayer_black.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_WNf64B": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_hWRjrM": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/partner_logo_2.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_itwWmj": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/partner_logo_3.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        }
-      },
-      "block_order": [
-        "logo_XeHnR7",
-        "logo_WNf64B",
-        "logo_hWRjrM",
-        "logo_itwWmj"
-      ],
-      "name": "Logo Block",
-      "settings": {
-        "color_scheme": "",
-        "title": "",
-        "heading_size": "h1",
-        "title_alignment": "center",
-        "title_spacing": 24,
-        "logo_width": 150,
-        "logo_spacing": 40,
-        "logo_opacity": 100,
-        "logo_hover_opacity": 100,
-        "mobile_columns": "2",
-        "anchor_id": "",
-        "padding_top": 0,
-        "padding_bottom": 40
-      }
-    },
     "parallel_testimonials_6ayBHg": {
       "type": "parallel-testimonials",
       "blocks": {
+        "testimonial_9Kp64F": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Mark Williamson",
+            "title": "Head of Planning (Infrastructure) | VolkerFitzpatrick",
+            "country_flag": "",
+            "testimonial_text": "Asta Powerproject 4D is a very practical tool that expands our communication abilities and gives clients confidence in what we’re trying to achieve."
+          }
+        },
         "testimonial_tHbLzP": {
           "type": "testimonial",
           "settings": {
@@ -689,13 +731,14 @@
         }
       },
       "block_order": [
+        "testimonial_9Kp64F",
         "testimonial_tHbLzP",
         "testimonial_N6gj89"
       ],
       "name": "Testimonials",
       "settings": {
-        "heading": "What do our clients say?",
-        "subheading": "Find out why our clients are glad they met us.",
+        "heading": "What do our customers say?",
+        "subheading": "Find out why our customers are glad they met us.",
         "heading_size": "h1",
         "header_alignment": "center",
         "header_spacing": 40,
@@ -947,10 +990,10 @@
     "parallel_image_with_features_pYtxX7",
     "parallel_image_with_features_UVMBrD",
     "parallel_award_banner_C3twkW",
+    "parallel_logo_block_hHLWpL",
     "parallel_highlights_yTAfJh",
     "parallel_two_column_accordion_xi4PpU",
     "parallel_video_three_column_BTPQnC",
-    "parallel_logo_block_hHLWpL",
     "parallel_testimonials_6ayBHg",
     "parallel_custom_product_list_M7EFHt",
     "parallel_faq_accordion_3Vq7Fm",
