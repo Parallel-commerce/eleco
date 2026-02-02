@@ -187,7 +187,7 @@
         "left_column_button_text": "Add to cart",
         "left_column_secondary_button_text": "Download free trial",
         "left_column_secondary_button_link": "",
-        "left_column_fine_print": "Paid annually, one user installed onto a single Windows PC. Includes VAT.",
+        "left_column_fine_print": "Paid annually, one user installed onto a single Windows PC. Excludes VAT.",
         "right_column_title": "Concurrent & SaaS solutions",
         "right_column_price": "",
         "right_column_price_label": "Prices start from £2412 / year",
@@ -195,7 +195,7 @@
         "right_column_primary_button_link": "",
         "right_column_secondary_button_text": "Book a demo",
         "right_column_secondary_button_link": "",
-        "right_column_fine_print": "Paid annually. Includes VAT.",
+        "right_column_fine_print": "Paid annually. Excludes VAT.",
         "anchor_id": "",
         "padding_top": 0,
         "padding_bottom": 36
@@ -668,6 +668,7 @@
         "logo_hWRjrM",
         "logo_itwWmj"
       ],
+      "disabled": true,
       "name": "Logo Block",
       "settings": {
         "color_scheme": "",
@@ -703,8 +704,8 @@
       ],
       "name": "Testimonials",
       "settings": {
-        "heading": "What do our clients say?",
-        "subheading": "Find out why our clients are glad they met us.",
+        "heading": "What do our customers say?",
+        "subheading": "Find out why our customers are glad they met us.",
         "heading_size": "h1",
         "header_alignment": "center",
         "header_spacing": 40,
