@@ -195,7 +195,7 @@
         "right_column_primary_button_link": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/2xuxnv3yefceb3ztjtmygq.html?PageId=361715dbf2fdf01184077ced8d39b281",
         "right_column_secondary_button_text": "Book a demo",
         "right_column_secondary_button_link": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/7bpodp35efcebwaisehs0q.html?PageId=0ce813ecf9fdf011840700224841d2d1",
-        "right_column_fine_print": "Paid annually. Includes VAT.",
+        "right_column_fine_print": "Paid annually. Excludes VAT.",
         "anchor_id": "",
         "padding_top": 0,
         "padding_bottom": 36
@@ -381,7 +381,6 @@
       ],
       "name": "Image with features",
       "settings": {
-        "image": "shopify://shop_images/failte-restaurant-image.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
