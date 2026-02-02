@@ -440,6 +440,7 @@
         "award_icon_LXKmTV",
         "richtext_LJNcig"
       ],
+      "disabled": true,
       "name": "Award Banner",
       "settings": {
         "background_image": "shopify://shop_images/team.jpg",
@@ -461,6 +462,14 @@
     "parallel_logo_block_hHLWpL": {
       "type": "parallel-logo-block",
       "blocks": {
+        "logo_YkAYGD": {
+          "type": "logo",
+          "settings": {
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
         "logo_XeHnR7": {
           "type": "logo",
           "settings": {
@@ -499,6 +508,7 @@
         }
       },
       "block_order": [
+        "logo_YkAYGD",
         "logo_XeHnR7",
         "logo_WNf64B",
         "logo_hWRjrM",
@@ -604,6 +614,15 @@
     "parallel_testimonials_6ayBHg": {
       "type": "parallel-testimonials",
       "blocks": {
+        "testimonial_Yqb8KC": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Damien Gallagher",
+            "title": "John Sisk & Son",
+            "country_flag": "",
+            "testimonial_text": "Tools like the Asta SiteProgress app help us to take people out from behind desks, marking up progress on drawings or schedules, to managing the work on site – which is exactly where we want them."
+          }
+        },
         "testimonial_tHbLzP": {
           "type": "testimonial",
           "settings": {
@@ -616,6 +635,7 @@
         }
       },
       "block_order": [
+        "testimonial_Yqb8KC",
         "testimonial_tHbLzP"
       ],
       "name": "Testimonials",
