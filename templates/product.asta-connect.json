@@ -481,10 +481,104 @@
         "highlight_kcCRDW",
         "highlight_kmzQJf"
       ],
+      "disabled": true,
       "name": "Highlights",
       "settings": {
         "color_scheme": "",
         "highlight_color": "#e85a47",
+        "anchor_id": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "parallel_logo_block_GY9JCr": {
+      "type": "parallel-logo-block",
+      "blocks": {
+        "logo_D6UjUn": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/mace-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_Neq3g3": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/john-moores-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_3ywFwk": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/kier-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_FT66mh": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/mccarthy-stone-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_TjA6QL": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/mccarthy-stone-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_DBhkjR": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/bam-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_WxRihA": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/galliford-try-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "logo_D6UjUn",
+        "logo_Neq3g3",
+        "logo_3ywFwk",
+        "logo_FT66mh",
+        "logo_TjA6QL",
+        "logo_DBhkjR",
+        "logo_WxRihA"
+      ],
+      "name": "Logo Block",
+      "settings": {
+        "color_scheme": "",
+        "title": "",
+        "heading_size": "h1",
+        "title_alignment": "center",
+        "title_spacing": 24,
+        "logo_width": 150,
+        "logo_spacing": 40,
+        "logo_opacity": 100,
+        "logo_hover_opacity": 100,
+        "mobile_columns": "1",
         "anchor_id": "",
         "padding_top": 40,
         "padding_bottom": 40
@@ -817,6 +911,7 @@
     "parallel_image_with_features_UVMBrD",
     "parallel_award_banner_C3twkW",
     "parallel_highlights_yTAfJh",
+    "parallel_logo_block_GY9JCr",
     "parallel_two_column_accordion_xi4PpU",
     "parallel_custom_product_list_M7EFHt",
     "parallel_faq_accordion_3Vq7Fm",
