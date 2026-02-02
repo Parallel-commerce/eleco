@@ -187,7 +187,7 @@
         "left_column_button_text": "Add to cart",
         "left_column_secondary_button_text": "Download free trial",
         "left_column_secondary_button_link": "",
-        "left_column_fine_print": "Paid annually, one user installed onto a single Windows PC. Includes VAT.",
+        "left_column_fine_print": "Paid annually, one user installed onto a single Windows PC. Excludes VAT.",
         "right_column_title": "Concurrent & SaaS solutions",
         "right_column_price": "",
         "right_column_price_label": "Prices start from £2412 / year",
@@ -577,45 +577,69 @@
         "padding_bottom": 60
       }
     },
-    "parallel_video_three_column_BTPQnC": {
-      "type": "parallel-video-three-column",
+    "parallel_testimonials_6ayBHg": {
+      "type": "parallel-testimonials",
       "blocks": {
-        "video_item_NYWJta": {
-          "type": "video_item",
+        "testimonial_J3UM8L": {
+          "type": "testimonial",
           "settings": {
-            "video": "shopify://files/videos/Richard Easton, Senior Planner, Higgins Partnership.mp4",
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": ""
+            "name": "Amy Griffiths",
+            "title": "Project Manager | Kier Group",
+            "country_flag": "",
+            "testimonial_text": "At every point we were being adaptive, reacting to changes and opportunities. Asta Powerproject allowed us to ask ... and have subscontractors feed into the discussion. As a result, we maintained our critical path and smooth workflow between trades."
           }
         },
-        "video_item_qFpjwc": {
-          "type": "video_item",
+        "testimonial_DDjcT4": {
+          "type": "testimonial",
           "settings": {
-            "video": "shopify://files/videos/Glopet Izidug, Project Planner, Dornan Engineering Services (1).mp4",
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": ""
+            "name": "Aldwyn Payne",
+            "title": "Planning Manager | HG Construction",
+            "country_flag": "",
+            "testimonial_text": "We're finishing some projects many months ahead of programme, which is excellent achievement given their complexity. Powerproject has been a major contributor to this success."
           }
         },
-        "video_item_cfdDnt": {
-          "type": "video_item",
+        "testimonial_FTmqJ9": {
+          "type": "testimonial",
           "settings": {
-            "video": "shopify://files/videos/James Horton, Senior Planning Manager, MACE Construction (1).mp4",
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": ""
+            "name": "Levin Wense",
+            "title": "CEO and Co-founder | MVP Match",
+            "country_flag": "",
+            "testimonial_text": "I would highly recommend their services to any company looking for top-notch IT staff. They have truly been a valuable partner for our business and have played an important role in our success."
+          }
+        },
+        "testimonial_8LdM6q": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Bengisu Uygur",
+            "title": "Planning Manager | MiCiM Ltd",
+            "country_flag": "",
+            "testimonial_text": "MiCiM combines extensive engineering and construction know-how with the latest technology to implement pragmatic solutions, and Asta Powerproject is central to the efficiency and effectiveness of our operations."
+          }
+        },
+        "testimonial_tHbLzP": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Dan Morar",
+            "title": "CEO | topcarrentals.ro",
+            "country_flag": "",
+            "testimonial_text": "The Vertical Digital team was essential for building, launching and growing our rental and booking platforms. With them we always had a trusted, loyal and dedicated partner for our success."
           }
         }
       },
       "block_order": [
-        "video_item_NYWJta",
-        "video_item_qFpjwc",
-        "video_item_cfdDnt"
+        "testimonial_J3UM8L",
+        "testimonial_DDjcT4",
+        "testimonial_FTmqJ9",
+        "testimonial_8LdM6q",
+        "testimonial_tHbLzP"
       ],
-      "name": "Three Column Video",
+      "name": "Testimonials",
       "settings": {
-        "heading": "Find out why our clients are glad they met us",
+        "heading": "Find out why our customers are glad they met us",
+        "subheading": "",
         "heading_size": "h1",
-        "enable_video_looping": false,
-        "full_width": false,
+        "header_alignment": "center",
+        "header_spacing": 40,
         "color_scheme": "",
         "anchor_id": "reviews",
         "padding_top": 36,
@@ -715,71 +739,47 @@
         "padding_bottom": 40
       }
     },
-    "parallel_testimonials_6ayBHg": {
-      "type": "parallel-testimonials",
+    "parallel_video_three_column_BTPQnC": {
+      "type": "parallel-video-three-column",
       "blocks": {
-        "testimonial_J3UM8L": {
-          "type": "testimonial",
+        "video_item_NYWJta": {
+          "type": "video_item",
           "settings": {
-            "name": "Amy Griffiths",
-            "title": "Project Manager | Kier Group",
-            "country_flag": "",
-            "testimonial_text": "At every point we were being adaptive, reacting to changes and opportunities. Asta Powerproject allowed us to ask ... and have subscontractors feed into the discussion. As a result, we maintained our critical path and smooth workflow between trades."
+            "video": "shopify://files/videos/Richard Easton, Senior Planner, Higgins Partnership.mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
           }
         },
-        "testimonial_DDjcT4": {
-          "type": "testimonial",
+        "video_item_qFpjwc": {
+          "type": "video_item",
           "settings": {
-            "name": "Aldwyn Payne",
-            "title": "Planning Manager | HG Construction",
-            "country_flag": "",
-            "testimonial_text": "We're finishing some projects many months ahead of programme, which is excellent achievement given their complexity. Powerproject has been a major contributor to this success."
+            "video": "shopify://files/videos/Glopet Izidug, Project Planner, Dornan Engineering Services (1).mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
           }
         },
-        "testimonial_FTmqJ9": {
-          "type": "testimonial",
+        "video_item_cfdDnt": {
+          "type": "video_item",
           "settings": {
-            "name": "Levin Wense",
-            "title": "CEO and Co-founder | MVP Match",
-            "country_flag": "",
-            "testimonial_text": "I would highly recommend their services to any company looking for top-notch IT staff. They have truly been a valuable partner for our business and have played an important role in our success."
-          }
-        },
-        "testimonial_8LdM6q": {
-          "type": "testimonial",
-          "settings": {
-            "name": "Bengisu Uygur",
-            "title": "Planning Manager | MiCiM Ltd",
-            "country_flag": "",
-            "testimonial_text": "MiCiM combines extensive engineering and construction know-how with the latest technology to implement pragmatic solutions, and Asta Powerproject is central to the efficiency and effectiveness of our operations."
-          }
-        },
-        "testimonial_tHbLzP": {
-          "type": "testimonial",
-          "settings": {
-            "name": "Dan Morar",
-            "title": "CEO | topcarrentals.ro",
-            "country_flag": "",
-            "testimonial_text": "The Vertical Digital team was essential for building, launching and growing our rental and booking platforms. With them we always had a trusted, loyal and dedicated partner for our success."
+            "video": "shopify://files/videos/James Horton, Senior Planning Manager, MACE Construction (1).mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
           }
         }
       },
       "block_order": [
-        "testimonial_J3UM8L",
-        "testimonial_DDjcT4",
-        "testimonial_FTmqJ9",
-        "testimonial_8LdM6q",
-        "testimonial_tHbLzP"
+        "video_item_NYWJta",
+        "video_item_qFpjwc",
+        "video_item_cfdDnt"
       ],
-      "name": "Testimonials",
+      "name": "Three Column Video",
       "settings": {
         "heading": "",
-        "subheading": "",
         "heading_size": "h1",
-        "header_alignment": "center",
-        "header_spacing": 40,
+        "enable_video_looping": false,
+        "full_width": false,
         "color_scheme": "",
-        "anchor_id": "",
+        "anchor_id": "reviews",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -1298,9 +1298,9 @@
     "parallel_award_banner_C3twkW",
     "parallel_highlights_yTAfJh",
     "parallel_two_column_accordion_xi4PpU",
-    "parallel_video_three_column_BTPQnC",
-    "parallel_logo_block_hHLWpL",
     "parallel_testimonials_6ayBHg",
+    "parallel_logo_block_hHLWpL",
+    "parallel_video_three_column_BTPQnC",
     "parallel_custom_product_list_M7EFHt",
     "parallel_faq_accordion_3Vq7Fm",
     "parallel_comparison_table_eeJhkm",
