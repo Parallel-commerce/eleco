@@ -678,8 +678,8 @@
       ],
       "name": "Testimonials",
       "settings": {
-        "heading": "What do our clients say?",
-        "subheading": "Find out why our clients are glad they met us.",
+        "heading": "What do our customers say?",
+        "subheading": "Find out why our customers are glad they met us.",
         "heading_size": "h1",
         "header_alignment": "center",
         "header_spacing": 40,
