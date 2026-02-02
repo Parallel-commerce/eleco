@@ -195,7 +195,7 @@
         "right_column_primary_button_link": "",
         "right_column_secondary_button_text": "Book a demo",
         "right_column_secondary_button_link": "",
-        "right_column_fine_print": "Paid annually. Includes VAT.",
+        "right_column_fine_print": "",
         "anchor_id": "",
         "padding_top": 0,
         "padding_bottom": 36
@@ -241,7 +241,7 @@
       ],
       "name": "Image with features",
       "settings": {
-        "image": "shopify://shop_images/failte-restaurant-image.jpg",
+        "image": "shopify://shop_images/Asta_Connect_Overview_1.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -253,7 +253,7 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "anchor_id": "#",
-        "padding_top": 52,
+        "padding_top": 0,
         "padding_bottom": 52,
         "text_padding_left": 32,
         "text_padding_right": 16
@@ -307,7 +307,7 @@
       ],
       "name": "Image with features",
       "settings": {
-        "image": "shopify://shop_images/failte-restaurant-image.jpg",
+        "image": "shopify://shop_images/Asta_Connect_Overview_3.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -319,8 +319,8 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "anchor_id": "#",
-        "padding_top": 52,
-        "padding_bottom": 52,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "text_padding_left": 16,
         "text_padding_right": 32
       }
@@ -373,7 +373,7 @@
       ],
       "name": "Image with features",
       "settings": {
-        "image": "shopify://shop_images/failte-restaurant-image.jpg",
+        "image": "shopify://shop_images/Asta_Connect_Overview_4.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -386,7 +386,7 @@
         "color_scheme": "",
         "anchor_id": "#",
         "padding_top": 52,
-        "padding_bottom": 52,
+        "padding_bottom": 0,
         "text_padding_left": 32,
         "text_padding_right": 16
       }
@@ -432,6 +432,7 @@
         "award_icon_LXKmTV",
         "richtext_LJNcig"
       ],
+      "disabled": true,
       "name": "Award Banner",
       "settings": {
         "background_image": "shopify://shop_images/team.jpg",
@@ -722,11 +723,12 @@
           "type": "resource_link",
           "settings": {
             "label": "Support portal",
-            "link": ""
+            "link": "https://support.elecosoft.com/"
           }
         },
         "resource_link_wTwLVG": {
           "type": "resource_link",
+          "disabled": true,
           "settings": {
             "label": "What's new",
             "link": ""
@@ -734,6 +736,7 @@
         },
         "resource_link_y8bPwx": {
           "type": "resource_link",
+          "disabled": true,
           "settings": {
             "label": "System requirements",
             "link": ""
@@ -743,7 +746,7 @@
           "type": "resource_link",
           "settings": {
             "label": "View all resources",
-            "link": ""
+            "link": "https://elecosoft.com/us/products/asta/asta-powerproject/learn-support/"
           }
         }
       },
@@ -762,7 +765,7 @@
         "primary_button_background": "#e83f40",
         "primary_button_background_hover": "#d04a35",
         "primary_button_text": "#ffffff",
-        "secondary_button_label": "Add premium support",
+        "secondary_button_label": "",
         "product": "",
         "secondary_button_link": "",
         "secondary_button_background": "#ffffff",
