@@ -514,6 +514,7 @@
         "logo_hWRjrM",
         "logo_itwWmj"
       ],
+      "disabled": true,
       "name": "Logo Block",
       "settings": {
         "color_scheme": "scheme-1",
@@ -614,11 +615,20 @@
     "parallel_testimonials_6ayBHg": {
       "type": "parallel-testimonials",
       "blocks": {
+        "testimonial_LQpJVG": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Michael Bryars",
+            "title": "Senior Project Manager | Severfield plc",
+            "country_flag": "",
+            "testimonial_text": "Our Asta SiteProgress users said the app was easy to use, while the Asta Powerproject users immediately felt the benefit of better reporting. They found it easier to report upstream, and it was much easier for the directors to look at a dropline programme instead of five or so pages of written content. The look and feel of what we could print out and present to clients was one of the biggest selling points."
+          }
+        },
         "testimonial_t7cwLV": {
           "type": "testimonial",
           "settings": {
             "name": "Warren Betts",
-            "title": "While United House",
+            "title": "United House",
             "country_flag": "",
             "testimonial_text": "Asta SiteProgress enables us to do is give the project teams their programmes, with all the planning aspects agreed in advance. The opportunity was to give project managers real responsibility for their own progress management and how they mark it up. Now, the planning team can collate and aggregate the programme position fast, sending them back a report on the same day."
           }
@@ -652,6 +662,7 @@
         }
       },
       "block_order": [
+        "testimonial_LQpJVG",
         "testimonial_t7cwLV",
         "testimonial_BizQXi",
         "testimonial_Yqb8KC",
