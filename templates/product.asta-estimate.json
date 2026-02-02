@@ -287,7 +287,7 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Keep cost, time and carbon aligned"
+            "text": "Align cost, time and carbon"
           }
         }
       },
@@ -299,7 +299,7 @@
       ],
       "name": "Image with features",
       "settings": {
-        "image": "shopify://shop_images/failte-restaurant-image.jpg",
+        "image": "shopify://shop_images/Asta_Estimate_Overview_3.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -311,8 +311,8 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "anchor_id": "#",
-        "padding_top": 52,
-        "padding_bottom": 52,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "text_padding_left": 16,
         "text_padding_right": 32
       }
@@ -357,7 +357,7 @@
       ],
       "name": "Image with features",
       "settings": {
-        "image": "shopify://shop_images/failte-restaurant-image.jpg",
+        "image": "shopify://shop_images/Asta_Estimate_Overview_4.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -370,7 +370,7 @@
         "color_scheme": "",
         "anchor_id": "#",
         "padding_top": 52,
-        "padding_bottom": 52,
+        "padding_bottom": 0,
         "text_padding_left": 32,
         "text_padding_right": 16
       }
