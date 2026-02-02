@@ -176,8 +176,8 @@
         "divider_color": "#ff0000",
         "primary_button_color": "#ff6b35",
         "primary_button_text_color": "#ffffff",
-        "hero_title": "Plan with certainty, build with confidence",
-        "hero_subtitle": "Take control with integrative tools that gives teams the power to master project timelines",
+        "hero_title": "Optimise team collaboration",
+        "hero_subtitle": "Drive profitability and efficiency with Asta Vision, the web-based portal designed to simplify complex construction project management",
         "hero_image": "shopify://shop_images/Asta_Powerproject_109e16a4-29a3-4d9b-b8d5-165a549f2bf1.svg",
         "hero_background_color": "#2a303a",
         "hero_text_color": "#ffffff",
@@ -195,7 +195,7 @@
         "right_column_primary_button_link": "",
         "right_column_secondary_button_text": "Book a demo",
         "right_column_secondary_button_link": "",
-        "right_column_fine_print": "Paid annually. Includes VAT.",
+        "right_column_fine_print": "",
         "anchor_id": "",
         "padding_top": 0,
         "padding_bottom": 36
@@ -416,6 +416,7 @@
         "award_icon_LXKmTV",
         "richtext_LJNcig"
       ],
+      "disabled": true,
       "name": "Award Banner",
       "settings": {
         "background_image": "shopify://shop_images/team.jpg",
