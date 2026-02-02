@@ -614,6 +614,15 @@
     "parallel_testimonials_6ayBHg": {
       "type": "parallel-testimonials",
       "blocks": {
+        "testimonial_BizQXi": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Matthew Kingston",
+            "title": "Planner | Brown & Carroll London",
+            "country_flag": "",
+            "testimonial_text": "The great thing about the Asta SiteProgress app is we can go to a location that is marked on the programme, and if we can’t start work take a picture of the area. That is automatically pulled into the programme with a photo reference, which demonstrates the reason for the delay."
+          }
+        },
         "testimonial_Yqb8KC": {
           "type": "testimonial",
           "settings": {
@@ -634,6 +643,7 @@
         }
       },
       "block_order": [
+        "testimonial_BizQXi",
         "testimonial_Yqb8KC",
         "testimonial_tHbLzP"
       ],
