@@ -33,9 +33,9 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/team.jpg",
+        "image": "shopify://shop_images/Asta_Powerproject_Banner_UK_approved.png",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "adapt",
         "image_behavior": "none",
         "desktop_content_position": "bottom-left",
         "desktop_content_alignment": "center",
@@ -72,6 +72,24 @@
     "parallel_collection_list_QYLGV9": {
       "type": "parallel-collection-list",
       "blocks": {
+        "collection_3pxrj6": {
+          "type": "collection",
+          "settings": {
+            "collection": "client"
+          }
+        },
+        "collection_FUFeTr": {
+          "type": "collection",
+          "settings": {
+            "collection": "commercial"
+          }
+        },
+        "collection_CeJAqc": {
+          "type": "collection",
+          "settings": {
+            "collection": "digital-construction"
+          }
+        },
         "collection_9djaaK": {
           "type": "collection",
           "settings": {
@@ -101,14 +119,45 @@
           "settings": {
             "collection": "field-engineer"
           }
+        },
+        "collection_BhQXCU": {
+          "type": "collection",
+          "settings": {
+            "collection": "it-systems"
+          }
+        },
+        "collection_UY4JVi": {
+          "type": "collection",
+          "settings": {
+            "collection": "planning-lead"
+          }
+        },
+        "collection_mqbNPK": {
+          "type": "collection",
+          "settings": {
+            "collection": "project-manager"
+          }
+        },
+        "collection_F83iAz": {
+          "type": "collection",
+          "settings": {
+            "collection": "site-manager"
+          }
         }
       },
       "block_order": [
+        "collection_3pxrj6",
+        "collection_FUFeTr",
+        "collection_CeJAqc",
         "collection_9djaaK",
         "collection_ey83UT",
         "collection_3ViyWy",
         "collection_qD6WbQ",
-        "collection_6JF8En"
+        "collection_6JF8En",
+        "collection_BhQXCU",
+        "collection_UY4JVi",
+        "collection_mqbNPK",
+        "collection_F83iAz"
       ],
       "name": "Collection list",
       "settings": {
@@ -117,7 +166,7 @@
         "heading_size": "h1",
         "columns_desktop": 3,
         "columns_mobile": "1",
-        "image_ratio": "square",
+        "image_ratio": "adapt",
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
