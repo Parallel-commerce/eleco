@@ -782,6 +782,7 @@
         "logo_pfRhE7",
         "logo_XpeMAz"
       ],
+      "disabled": true,
       "name": "Logo Block",
       "settings": {
         "color_scheme": "scheme-2",
@@ -837,6 +838,7 @@
         "faq_item_jARANR",
         "faq_item_bAXDXk"
       ],
+      "disabled": true,
       "name": "FAQ Accordion",
       "settings": {
         "heading": "Questions? We have answers.",
@@ -861,37 +863,37 @@
         "comparison_row_9B77nj": {
           "type": "comparison_row",
           "settings": {
-            "functionality_text": "Task of work per file",
-            "column_2_type": "text",
+            "functionality_text": "AstaGPT",
+            "column_2_type": "tick",
             "column_2_text": "250",
-            "column_3_type": "text",
+            "column_3_type": "tick",
             "column_3_text": "Unlimited"
           }
         },
         "comparison_row_hhDyjA": {
           "type": "comparison_row",
           "settings": {
-            "functionality_text": "Task per line of work",
-            "column_2_type": "text",
+            "functionality_text": "Support Portal",
+            "column_2_type": "tick",
             "column_2_text": "10",
-            "column_3_type": "text",
+            "column_3_type": "tick",
             "column_3_text": "Unlimited"
           }
         },
         "comparison_row_3E8i6B": {
           "type": "comparison_row",
           "settings": {
-            "functionality_text": "Overlapping tasks",
+            "functionality_text": "Email & Telephone Support",
             "column_2_type": "cross",
             "column_2_text": "Value",
-            "column_3_type": "tick",
-            "column_3_text": "Value"
+            "column_3_type": "text",
+            "column_3_text": "1-Hour Reponse | 8-Hour Resolution"
           }
         },
         "comparison_row_rJAtXQ": {
           "type": "comparison_row",
           "settings": {
-            "functionality_text": "Reschedule tasks within the project",
+            "functionality_text": "Customer Success Onboarding",
             "column_2_type": "cross",
             "column_2_text": "Value",
             "column_3_type": "tick",
@@ -901,7 +903,7 @@
         "comparison_row_DbzVPR": {
           "type": "comparison_row",
           "settings": {
-            "functionality_text": "Start On or After constraints",
+            "functionality_text": "Customer Success Contact",
             "column_2_type": "tick",
             "column_2_text": "Value",
             "column_3_type": "tick",
@@ -922,14 +924,14 @@
         "heading_size": "h1",
         "heading_spacing": 40,
         "column_1_title": "Functionality",
-        "column_2_title": "Easyplan",
-        "column_3_title": "Asta Powerproject",
-        "button_1_label": "Learn more",
+        "column_2_title": "No Support",
+        "column_3_title": "Added Support",
+        "button_1_label": "",
         "button_1_link": "",
         "button_1_border_color": "#e83f40",
         "button_1_text_color": "#e83f40",
         "button_1_hover_text_color": "#ffffff",
-        "button_2_label": "Buy Now",
+        "button_2_label": "Add to Cart",
         "button_2_link": "",
         "button_2_background_color": "#e83f40",
         "button_2_text_color": "#ffffff",
@@ -991,7 +993,7 @@
       "settings": {
         "heading": "Learn & Support",
         "description": "The Asta Powerproject support package includes technical, installation and activation support, access to our help desk and web-based tutorials. Our support services are complemented by our wide range of classroom or online training to ensure you get the most from your software.",
-        "primary_button_label": "Learn & Support",
+        "primary_button_label": "",
         "primary_button_link": "",
         "primary_button_background": "#e83f40",
         "primary_button_background_hover": "#d04a35",
