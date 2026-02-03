@@ -65,6 +65,10 @@
     aspect-ratio: 0.8;
   }
 
+  .pcl-{{ section_id }}__media-wrapper--landscape {
+    aspect-ratio: 4 / 3;
+  }
+
   .pcl-{{ section_id }}__media-wrapper .pcl-{{ section_id }}__img {
     display: block;
     width: 100%;
@@ -292,7 +296,8 @@
       "options": [
         { "value": "adapt", "label": "Adapt to image" },
         { "value": "portrait", "label": "Portrait" },
-        { "value": "square", "label": "Square" }
+        { "value": "square", "label": "Square" },
+        { "value": "landscape", "label": "Landscape (4:3)" }
       ],
       "default": "square"
     },
