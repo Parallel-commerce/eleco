@@ -172,35 +172,33 @@
       "name": "Custom Product Info",
       "settings": {
         "color_scheme": "",
-        "column_background_color": "#fff5f5",
-        "divider_color": "#ff0000",
-        "primary_button_color": "#ff6b35",
-        "primary_button_text_color": "#ffffff",
+        "anchor_id": "",
+        "padding_top": 0,
+        "padding_bottom": 36,
         "hero_title": "Construction estimating software",
         "hero_subtitle": "Generates accurate cost estimates for tenders, increases productivity and reduces risk throughout the lifecycle of a project.",
         "hero_image": "shopify://shop_images/Asta_Powerproject_109e16a4-29a3-4d9b-b8d5-165a549f2bf1.svg",
         "hero_background_color": "#2a303a",
         "hero_text_color": "#ffffff",
+        "column_background_color": "#fff5f5",
+        "divider_color": "#ff0000",
+        "primary_button_color": "#ff6b35",
+        "primary_button_text_color": "#ffffff",
         "left_column_title": "Annual subscription",
         "left_column_price": "",
-        "left_column_price_label": "Prices start from £122.5 / month",
         "left_column_button_text": "Add to cart",
         "left_column_secondary_button_text": "Download free trial",
         "left_column_secondary_button_link": "",
         "left_column_fine_print": "Paid annually, one user installed onto a single Windows PC. Includes VAT.",
         "right_column_title": "Concurrent & SaaS solutions",
-        "right_column_price": "",
-        "right_column_price_label": "Prices start from £2412 / year",
+        "right_column_paragraph": "You wouldn't place a tender without first understanding the full scope of work. We approach custom quotes the same way. Help us get to know your team's needs to get started now.",
+        "right_column_fine_print": "Paid annually. Includes VAT.",
         "right_column_primary_button_text": "Contact sales",
         "right_column_primary_button_link": "",
         "right_column_primary_button_embed_url": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/2xuxnv3yefceb3ztjtmygq.html?PageId=361715dbf2fdf01184077ced8d39b281",
         "right_column_secondary_button_text": "Book a demo",
         "right_column_secondary_button_link": "",
-        "right_column_secondary_button_embed_url": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/7bpodp35efcebwaisehs0q.html?PageId=0ce813ecf9fdf011840700224841d2d1",
-        "right_column_fine_print": "Paid annually. Includes VAT.",
-        "anchor_id": "",
-        "padding_top": 0,
-        "padding_bottom": 36
+        "right_column_secondary_button_embed_url": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/7bpodp35efcebwaisehs0q.html?PageId=0ce813ecf9fdf011840700224841d2d1"
       }
     },
     "parallel_image_with_features_hVbtUt": {
@@ -651,7 +649,7 @@
             "name": "David Chapell",
             "title": "Head of Cost Management | Clarkson Alliance",
             "country_flag": "",
-            "testimonial_text": "Bidcon BIM ticked all our boxes – and, the more questions we asked, the more boxes it ticked. It puts your prices at your fingertips, instead of locating them from cost plans or bills of quantities on an ad-hoc basis."
+            "testimonial_text": "Asta Estimate (Bidcon) BIM ticked all our boxes – and, the more questions we asked, the more boxes it ticked. It puts your prices at your fingertips, instead of locating them from cost plans or bills of quantities on an ad-hoc basis."
           }
         },
         "testimonial_FTmqJ9": {
@@ -660,7 +658,7 @@
             "name": "Niclas Peterson",
             "title": "Operation Manager | LP Entreprenad",
             "country_flag": "",
-            "testimonial_text": "The big difference with Bidcon is that it can visually show you that you really have everything included in the estimation, which makes the risk lower... Bidcon is a great tool for the entire workflow."
+            "testimonial_text": "The big difference with Asta Estimate (Bidcon) is that it can visually show you that you really have everything included in the estimation, which makes the risk lower... Asta Estimate is a great tool for the entire workflow."
           }
         },
         "testimonial_G4XiYQ": {
@@ -669,7 +667,7 @@
             "name": "Jorgen",
             "title": "Furniture Consulting AB",
             "country_flag": "",
-            "testimonial_text": "Bidcon provides us with the security of knowing that everything is taken into account and nothing is falling between the cracks. You constantly find new ways to work smarter if you let Bidcon do the job."
+            "testimonial_text": "Asta Estimate (Bidcon) provides us with the security of knowing that everything is taken into account and nothing is falling between the cracks. You constantly find new ways to work smarter if you let Asta Estimate do the job."
           }
         }
       },
