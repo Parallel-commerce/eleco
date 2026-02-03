@@ -1063,7 +1063,7 @@
         "block_spacing": 24,
         "anchor_id": "",
         "padding_top": 60,
-        "padding_bottom": 60
+        "padding_bottom": 0
       }
     }
   },
