@@ -201,6 +201,45 @@
         "right_column_secondary_button_embed_url": ""
       }
     },
+    "parallel_highlights_yTAfJh": {
+      "type": "parallel-highlights",
+      "blocks": {
+        "highlight_KdRTH8": {
+          "type": "highlight",
+          "settings": {
+            "highlight": "+100k",
+            "text": "professionals worldwide"
+          }
+        },
+        "highlight_kcCRDW": {
+          "type": "highlight",
+          "settings": {
+            "highlight": "70+",
+            "text": "Countries use Asta"
+          }
+        },
+        "highlight_kmzQJf": {
+          "type": "highlight",
+          "settings": {
+            "highlight": "90%",
+            "text": "top 100 UK contractors choose us"
+          }
+        }
+      },
+      "block_order": [
+        "highlight_KdRTH8",
+        "highlight_kcCRDW",
+        "highlight_kmzQJf"
+      ],
+      "name": "Highlights",
+      "settings": {
+        "color_scheme": "",
+        "highlight_color": "#e85a47",
+        "anchor_id": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "parallel_image_with_features_hVbtUt": {
       "type": "parallel-image-with-features",
       "blocks": {
@@ -457,45 +496,6 @@
         "hide_logos_mobile": true
       }
     },
-    "parallel_highlights_yTAfJh": {
-      "type": "parallel-highlights",
-      "blocks": {
-        "highlight_KdRTH8": {
-          "type": "highlight",
-          "settings": {
-            "highlight": "+250k",
-            "text": "Licenses sold worldwide"
-          }
-        },
-        "highlight_kcCRDW": {
-          "type": "highlight",
-          "settings": {
-            "highlight": "70+",
-            "text": "Countries use Asta"
-          }
-        },
-        "highlight_kmzQJf": {
-          "type": "highlight",
-          "settings": {
-            "highlight": "75%",
-            "text": "UK builder choose Asta"
-          }
-        }
-      },
-      "block_order": [
-        "highlight_KdRTH8",
-        "highlight_kcCRDW",
-        "highlight_kmzQJf"
-      ],
-      "name": "Highlights",
-      "settings": {
-        "color_scheme": "",
-        "highlight_color": "#e85a47",
-        "anchor_id": "",
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
     "parallel_two_column_accordion_xi4PpU": {
       "type": "parallel-two-column-accordion",
       "blocks": {
@@ -572,7 +572,7 @@
         "heading": "Better project outcomes for every team",
         "heading_size": "h1",
         "anchor_id": "#capabilities",
-        "padding_top": 48,
+        "padding_top": 72,
         "padding_bottom": 60
       }
     },
@@ -734,7 +734,7 @@
         "logo_hover_opacity": 100,
         "mobile_columns": "2",
         "anchor_id": "",
-        "padding_top": 0,
+        "padding_top": 28,
         "padding_bottom": 40
       }
     },
@@ -951,7 +951,7 @@
         "item_background": "#f6f7f7",
         "item_background_active": "#fce8e6",
         "anchor_id": "faqs",
-        "padding_top": 36,
+        "padding_top": 56,
         "padding_bottom": 36
       }
     },
@@ -1133,7 +1133,7 @@
         "header_text_color": "#111827",
         "border_color": "#e5e7eb",
         "anchor_id": "compare",
-        "padding_top": 36,
+        "padding_top": 64,
         "padding_bottom": 36
       }
     },
@@ -1291,11 +1291,11 @@
     "main",
     "related-products",
     "parallel_custom_product_info_i3cpfR",
+    "parallel_highlights_yTAfJh",
     "parallel_image_with_features_hVbtUt",
     "parallel_image_with_features_pYtxX7",
     "parallel_image_with_features_UVMBrD",
     "parallel_award_banner_C3twkW",
-    "parallel_highlights_yTAfJh",
     "parallel_two_column_accordion_xi4PpU",
     "parallel_testimonials_6ayBHg",
     "parallel_logo_block_hHLWpL",
