@@ -215,21 +215,28 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Access to trained product specialists"
           }
         },
         "feature_item_efdUrz": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "SLA-backed response commitments"
           }
         },
         "feature_item_eVF6yn": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Industry-leading resolution times"
+          }
+        },
+        "feature_item_yyjEFM": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Specialist tools and expertise"
           }
         }
       },
@@ -237,7 +244,8 @@
         "heading_GGwQtN",
         "feature_item_CkdfUp",
         "feature_item_efdUrz",
-        "feature_item_eVF6yn"
+        "feature_item_eVF6yn",
+        "feature_item_yyjEFM"
       ],
       "name": "Image with features",
       "settings": {
