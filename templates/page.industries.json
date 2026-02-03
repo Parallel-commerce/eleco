@@ -33,9 +33,9 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/team.jpg",
+        "image": "shopify://shop_images/Asta_Powerproject_Banner_UK_approved.png",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "adapt",
         "image_behavior": "none",
         "desktop_content_position": "bottom-left",
         "desktop_content_alignment": "center",
@@ -133,7 +133,7 @@
         "heading_size": "h1",
         "columns_desktop": 3,
         "columns_mobile": "1",
-        "image_ratio": "square",
+        "image_ratio": "adapt",
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
