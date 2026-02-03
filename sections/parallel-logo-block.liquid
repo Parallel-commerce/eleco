@@ -33,7 +33,8 @@
     {%- endif -%}
     gap: 2rem;
     align-items: center;
-    justify-items: center;
+    justify-items: {{ section.settings.block_alignment }};
+    justify-content: {{ section.settings.block_alignment }};
   }
 
   @media screen and (min-width: 750px) {
@@ -46,7 +47,7 @@
   .logo-block-{{ section.id }}__item {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: {{ section.settings.block_alignment }};
     width: 100%;
   }
 
@@ -224,6 +225,26 @@
       "label": "Title spacing",
       "default": 24,
       "info": "Space between title and logos"
+    },
+    {
+      "type": "select",
+      "id": "block_alignment",
+      "options": [
+        {
+          "value": "start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Centre"
+        },
+        {
+          "value": "end",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "label": "Block alignment"
     },
     {
       "type": "header",
