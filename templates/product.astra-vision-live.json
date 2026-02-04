@@ -195,7 +195,7 @@
         "right_column_fine_print": "Paid annually. Includes VAT.",
         "right_column_primary_button_text": "Contact sales",
         "right_column_primary_button_link": "",
-        "right_column_primary_button_embed_url": "",
+        "right_column_primary_button_embed_url": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/fpypwqgyefgebwaisehs0q.html?PageId=c1a99c7eb201f111840700224841d2d1",
         "right_column_secondary_button_text": "Book a demo",
         "right_column_secondary_button_link": "",
         "right_column_secondary_button_embed_url": ""
@@ -488,6 +488,7 @@
         "heading_size": "h1",
         "title_alignment": "center",
         "title_spacing": 24,
+        "block_alignment": "center",
         "logo_width": 150,
         "logo_spacing": 40,
         "logo_opacity": 100,
