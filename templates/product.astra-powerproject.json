@@ -301,7 +301,7 @@
         "color_scheme": "",
         "anchor_id": "",
         "padding_top": 0,
-        "padding_bottom": 52,
+        "padding_bottom": 0,
         "text_padding_left": 32,
         "text_padding_right": 16
       }
@@ -728,6 +728,7 @@
         "heading_size": "h1",
         "title_alignment": "center",
         "title_spacing": 24,
+        "block_alignment": "center",
         "logo_width": 150,
         "logo_spacing": 40,
         "logo_opacity": 100,
@@ -1124,9 +1125,9 @@
         "button_2_hover_background_color": "#d14a32",
         "button_2_hover_text_color": "#ffffff",
         "button_spacing": 40,
-        "cell_padding": 20,
+        "cell_padding": 12,
         "border_radius": 8,
-        "header_font_size": 18,
+        "header_font_size": 17,
         "cell_font_size": 16,
         "color_scheme": "",
         "header_background": "#f3f4f6",
@@ -1174,6 +1175,13 @@
             "label": "",
             "link": ""
           }
+        },
+        "resource_link_tU7bVJ": {
+          "type": "resource_link",
+          "settings": {
+            "label": "View all resources",
+            "link": "https://elecosoft.com/products/asta/asta-powerproject/learn-support/"
+          }
         }
       },
       "block_order": [
@@ -1181,18 +1189,19 @@
         "resource_link_wTwLVG",
         "resource_link_y8bPwx",
         "resource_link_fRcDdz",
-        "resource_link_VzrFGt"
+        "resource_link_VzrFGt",
+        "resource_link_tU7bVJ"
       ],
       "name": "Support CTA",
       "settings": {
-        "heading": "Learn & Support",
-        "description": "Add enhanced support for Asta Powerproject includes Our support services are complemented by our wide range of web-based tutorials, release notes, classroom and online training to ensure you get the most from your software.",
-        "primary_button_label": "View all resources",
-        "primary_button_link": "https://elecosoft.com/products/asta/asta-powerproject/learn-support/",
+        "heading": "Asta Enhanced Support",
+        "description": "Find comfort in knowing you will be looked after by our industry leading experts. The Asta Enhanced Support package includes technical, installation and activation support if needed, access to our help desk and customer success team to help you get the most out of your Asta projects.",
+        "primary_button_label": "View Enhanced Support",
+        "primary_button_link": "shopify://products/powerproject-premium-support",
         "primary_button_background": "#e83f40",
         "primary_button_background_hover": "#d04a35",
         "primary_button_text": "#ffffff",
-        "secondary_button_label": "Add on enhanced support",
+        "secondary_button_label": "Add to cart",
         "product": "",
         "secondary_button_link": "",
         "secondary_button_background": "#ffffff",
@@ -1214,7 +1223,7 @@
         "resource_border_radius": 4,
         "anchor_id": "support",
         "padding_top": 60,
-        "padding_bottom": 60
+        "padding_bottom": 80
       }
     },
     "parallel_market_embed_gGAwgk": {
