@@ -8,15 +8,15 @@
  * ------------------------------------------------------------
  */
 {
-  "markets": {
-    "canada": {
-      "parent": "@default"
-    },
-    "united-states": {
-      "parent": "@default"
-    },
-    "mexico": {
-      "parent": "@default"
+  "parent": "product.astra-vision-live.json",
+  "context": {
+    "market": "mexico"
+  },
+  "sections": {
+    "parallel_custom_product_info_i3cpfR": {
+      "settings": {
+        "right_column_primary_button_embed_url": "https://e5kao.share.hsforms.com/2vouyNxvDRuymeHqcNAi1dA"
+      }
     }
   }
 }
