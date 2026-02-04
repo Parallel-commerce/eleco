@@ -1008,10 +1008,10 @@
         "button_2_hover_background_color": "#d14a32",
         "button_2_hover_text_color": "#ffffff",
         "button_spacing": 40,
-        "cell_padding": 20,
+        "cell_padding": 12,
         "border_radius": 8,
-        "header_font_size": 18,
-        "cell_font_size": 16,
+        "header_font_size": 17,
+        "cell_font_size": 15,
         "color_scheme": "",
         "header_background": "#f3f4f6",
         "header_text_color": "#111827",
@@ -1051,13 +1051,21 @@
             "label": "Training Courses (UK)",
             "link": "https://elecosoft.com/training-events/introduction-to-easyplan/"
           }
+        },
+        "resource_link_LXkjQR": {
+          "type": "resource_link",
+          "settings": {
+            "label": "View all resources",
+            "link": "https://elecosoft.com/products/asta/asta-powerproject/learn-support/"
+          }
         }
       },
       "block_order": [
         "resource_link_kEdPjk",
         "resource_link_wTwLVG",
         "resource_link_y8bPwx",
-        "resource_link_VzrFGt"
+        "resource_link_VzrFGt",
+        "resource_link_LXkjQR"
       ],
       "name": "Support CTA",
       "settings": {
