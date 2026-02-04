@@ -882,7 +882,7 @@
           "type": "faq_item",
           "settings": {
             "question": "What language versions are available?",
-            "answer": "<p>Asta Powerproject is available in English (Australia, UK, US versions), Danish, Dutch, Finnish, German, Norwegian, Swedish, French, Polish, Spanish, Italian and Turkish.</p><p>For other languages, please refer to our list of approved resellers.</p><p>We post all Asta Powerproject’s latest updates here.<br/><br/></p>"
+            "answer": "<p>Asta Powerproject is available in English (Australia, UK, US versions), Danish, Dutch, Finnish, German, Norwegian, Swedish, French, Polish, Spanish, Italian and Turkish.</p><p>For other languages, please refer to our list of <a href=\"https://elecosoft.com/support/reseller-directory/\" target=\"_blank\" title=\"https://elecosoft.com/support/reseller-directory/\">approved resellers.</a><br/><br/></p>"
           }
         },
         "faq_item_Y8h4bQ": {
