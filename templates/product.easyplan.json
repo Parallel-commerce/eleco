@@ -800,13 +800,6 @@
             "question": "What support and training are available?",
             "answer": "<p>Easyplan is typically supported with onboarding assistance, documentation, and optional training to help teams get value quickly. Training can cover core scheduling skills, best practice workflows, and how to align Easyplan with other tools used in your business.</p>"
           }
-        },
-        "faq_item_9y3Mj6": {
-          "type": "faq_item",
-          "settings": {
-            "question": "Who is Asta Powerproject for?",
-            "answer": "<p>If a stakeholder hasn't bought a licence but needs to view the project, they can download our Project Viewer.</p>"
-          }
         }
       },
       "block_order": [
@@ -817,8 +810,7 @@
         "faq_item_rViXyC",
         "faq_item_ecK9Wr",
         "faq_item_JbHDhY",
-        "faq_item_RjmqQC",
-        "faq_item_9y3Mj6"
+        "faq_item_RjmqQC"
       ],
       "name": "FAQ Accordion",
       "settings": {
