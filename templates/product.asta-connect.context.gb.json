@@ -8,21 +8,15 @@
  * ------------------------------------------------------------
  */
 {
-  "markets": {
-    "canada": {
-      "parent": "@default"
-    },
-    "united-states": {
-      "parent": "@default"
-    },
-    "mexico": {
-      "parent": "@default"
-    },
-    "europe": {
-      "parent": "@default"
-    },
-    "gb": {
-      "parent": "@default"
+  "parent": "product.asta-connect.json",
+  "context": {
+    "market": "gb"
+  },
+  "sections": {
+    "parallel_custom_product_info_i3cpfR": {
+      "settings": {
+        "right_column_primary_button_embed_url": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/mpdwsag3efgeb2bfvrmtaw.html?PageId=48d6f030b701f11184076045bd131303"
+      }
     }
   }
 }
