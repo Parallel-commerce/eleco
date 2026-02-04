@@ -597,15 +597,6 @@
             "testimonial_text": "We're finishing some projects many months ahead of programme, which is excellent achievement given their complexity. Powerproject has been a major contributor to this success."
           }
         },
-        "testimonial_FTmqJ9": {
-          "type": "testimonial",
-          "settings": {
-            "name": "Levin Wense",
-            "title": "CEO and Co-founder | MVP Match",
-            "country_flag": "",
-            "testimonial_text": "I would highly recommend their services to any company looking for top-notch IT staff. They have truly been a valuable partner for our business and have played an important role in our success."
-          }
-        },
         "testimonial_8LdM6q": {
           "type": "testimonial",
           "settings": {
@@ -614,23 +605,12 @@
             "country_flag": "",
             "testimonial_text": "MiCiM combines extensive engineering and construction know-how with the latest technology to implement pragmatic solutions, and Asta Powerproject is central to the efficiency and effectiveness of our operations."
           }
-        },
-        "testimonial_tHbLzP": {
-          "type": "testimonial",
-          "settings": {
-            "name": "Dan Morar",
-            "title": "CEO | topcarrentals.ro",
-            "country_flag": "",
-            "testimonial_text": "The Vertical Digital team was essential for building, launching and growing our rental and booking platforms. With them we always had a trusted, loyal and dedicated partner for our success."
-          }
         }
       },
       "block_order": [
         "testimonial_J3UM8L",
         "testimonial_DDjcT4",
-        "testimonial_FTmqJ9",
-        "testimonial_8LdM6q",
-        "testimonial_tHbLzP"
+        "testimonial_8LdM6q"
       ],
       "name": "Testimonials",
       "settings": {
