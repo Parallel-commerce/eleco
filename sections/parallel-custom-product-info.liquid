@@ -82,6 +82,22 @@
       background-color: {{ section.settings.column_background_color }};
       min-width: 0;
       border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .custom-product-info__column-content {
+      flex: 1;
+      min-height: 0;
+    }
+
+    .custom-product-info__pricing-column .product-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .custom-product-info__pricing-column .custom-product-info__buttons {
+      flex-shrink: 0;
     }
 
     @media screen and (min-width: 750px) {
@@ -179,7 +195,6 @@
       text-decoration: none;
       display: inline-block;
       text-align: center;
-      width: 100%;
       box-sizing: border-box;
     }
 
@@ -205,7 +220,6 @@
       text-decoration: none;
       display: inline-block;
       text-align: center;
-      width: 100%;
       box-sizing: border-box;
     }
 
@@ -383,11 +397,12 @@
         {%- unless is_free_product -%}
           {%- comment -%} Left Column: Annual Subscription {%- endcomment -%}
           <div class="custom-product-info__pricing-column">
-            <h2>
-              {{ section.settings.left_column_title | default: 'Annual subscription' }}
-            </h2>
+            <div class="custom-product-info__column-content">
+              <h2>
+                {{ section.settings.left_column_title | default: 'Annual subscription' }}
+              </h2>
 
-            <div class="custom-product-info__price-wrapper">
+              <div class="custom-product-info__price-wrapper">
               <span class="custom-product-info__price-prefix">Prices start from</span>
               <span class="custom-product-info__price">
                 {%- if section.settings.left_column_price != blank -%}
@@ -400,6 +415,7 @@
               </span>
               <span class="custom-product-info__price-slash">/</span>
               <span class="custom-product-info__price-suffix">month</span>
+            </div>
             </div>
 
             {%- comment -%} Product Form for Add to Cart {%- endcomment -%}
@@ -497,30 +513,57 @@
 
         {%- comment -%} Right Column: Concurrent & SaaS Solutions (no price) {%- endcomment -%}
         <div class="custom-product-info__pricing-column{% if is_free_product %} custom-product-info__pricing-column--full{% endif %}">
-          {%- if section.settings.right_column_title != blank -%}
-            <h2>{{ section.settings.right_column_title }}</h2>
-          {%- endif -%}
+          <div class="custom-product-info__column-content">
+            {%- if section.settings.right_column_title != blank -%}
+              <h2>{{ section.settings.right_column_title }}</h2>
+            {%- endif -%}
 
-          {%- if section.settings.right_column_paragraph != blank -%}
-            <p>{{ section.settings.right_column_paragraph }}</p>
-          {%- endif -%}
+            {%- if section.settings.right_column_show_price -%}
+              <div class="custom-product-info__price-wrapper">
+                <span class="custom-product-info__price-prefix">Prices start from</span>
+                <span class="custom-product-info__price">
+                  {%- assign price_mod = product.price | modulo: 100 -%}
+                  {%- if price_mod == 0 -%}
+                    {{ product.price | money_without_trailing_zeros }}
+                  {%- else -%}
+                    {{ product.price | money }}
+                  {%- endif -%}
+                </span>
+                <span class="custom-product-info__price-slash">/</span>
+                <span class="custom-product-info__price-suffix">{{ section.settings.right_column_price_suffix | default: 'year' }}</span>
+              </div>
+            {%- endif -%}
+
+            {%- if section.settings.right_column_paragraph != blank -%}
+              <p>{{ section.settings.right_column_paragraph }}</p>
+            {%- endif -%}
+          </div>
 
           <div class="custom-product-info__buttons">
             {%- comment -%} Contact Sales – link or iframe embed (whichever field is filled) {%- endcomment -%}
             {%- assign primary_show = false -%}
             {%- if section.settings.right_column_primary_button_text != blank -%}
-              {%- if section.settings.right_column_primary_button_link != blank or section.settings.right_column_primary_button_embed_url != blank -%}
+              {%- if section.settings.right_column_primary_button_link != blank
+                or section.settings.right_column_primary_button_embed_url != blank
+              -%}
                 {%- assign primary_show = true -%}
               {%- endif -%}
             {%- endif -%}
             {%- if primary_show -%}
               {%- if section.settings.right_column_primary_button_link != blank -%}
-                <a href="{{ section.settings.right_column_primary_button_link }}" class="button button--primary custom-product-info__button-primary">
+                <a
+                  href="{{ section.settings.right_column_primary_button_link }}"
+                  class="button button--primary custom-product-info__button-primary"
+                >
                   {{ section.settings.right_column_primary_button_text }}
                 </a>
               {%- else -%}
                 <modal-opener data-modal="#EmbedModal-Primary-{{ section.id }}">
-                  <button type="button" class="button button--primary custom-product-info__button-primary" aria-haspopup="dialog">
+                  <button
+                    type="button"
+                    class="button button--primary custom-product-info__button-primary"
+                    aria-haspopup="dialog"
+                  >
                     {{ section.settings.right_column_primary_button_text }}
                   </button>
                 </modal-opener>
@@ -530,18 +573,27 @@
             {%- comment -%} Book a Demo – link or iframe embed (whichever field is filled) {%- endcomment -%}
             {%- assign secondary_show = false -%}
             {%- if section.settings.right_column_secondary_button_text != blank -%}
-              {%- if section.settings.right_column_secondary_button_link != blank or section.settings.right_column_secondary_button_embed_url != blank -%}
+              {%- if section.settings.right_column_secondary_button_link != blank
+                or section.settings.right_column_secondary_button_embed_url != blank
+              -%}
                 {%- assign secondary_show = true -%}
               {%- endif -%}
             {%- endif -%}
             {%- if secondary_show -%}
               {%- if section.settings.right_column_secondary_button_link != blank -%}
-                <a href="{{ section.settings.right_column_secondary_button_link }}" class="button button--secondary custom-product-info__button-secondary">
+                <a
+                  href="{{ section.settings.right_column_secondary_button_link }}"
+                  class="button button--secondary custom-product-info__button-secondary"
+                >
                   {{ section.settings.right_column_secondary_button_text }}
                 </a>
               {%- else -%}
                 <modal-opener data-modal="#EmbedModal-Secondary-{{ section.id }}">
-                  <button type="button" class="button button--secondary custom-product-info__button-secondary" aria-haspopup="dialog">
+                  <button
+                    type="button"
+                    class="button button--secondary custom-product-info__button-secondary"
+                    aria-haspopup="dialog"
+                  >
                     {{ section.settings.right_column_secondary_button_text }}
                   </button>
                 </modal-opener>
@@ -565,11 +617,26 @@
     and section.settings.right_column_primary_button_link == blank
   -%}
     <modal-dialog id="EmbedModal-Primary-{{ section.id }}" class="product-popup-modal custom-product-info__embed-modal">
-      <div role="dialog" aria-label="{{ section.settings.right_column_primary_button_text | escape }}" aria-modal="true" class="product-popup-modal__content custom-product-info__embed-modal-content" tabindex="-1">
-        <button id="ModalClose-EmbedPrimary-{{ section.id }}" type="button" class="product-popup-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">
+      <div
+        role="dialog"
+        aria-label="{{ section.settings.right_column_primary_button_text | escape }}"
+        aria-modal="true"
+        class="product-popup-modal__content custom-product-info__embed-modal-content"
+        tabindex="-1"
+      >
+        <button
+          id="ModalClose-EmbedPrimary-{{ section.id }}"
+          type="button"
+          class="product-popup-modal__toggle"
+          aria-label="{{ 'accessibility.close' | t }}"
+        >
           {{- 'icon-close.svg' | inline_asset_content -}}
         </button>
-        <iframe src="{{ section.settings.right_column_primary_button_embed_url }}" class="custom-product-info__embed-iframe" title="{{ section.settings.right_column_primary_button_text | escape }}"></iframe>
+        <iframe
+          src="{{ section.settings.right_column_primary_button_embed_url }}"
+          class="custom-product-info__embed-iframe"
+          title="{{ section.settings.right_column_primary_button_text | escape }}"
+        ></iframe>
       </div>
     </modal-dialog>
   {%- endif -%}
@@ -578,12 +645,30 @@
     and section.settings.right_column_secondary_button_embed_url != blank
     and section.settings.right_column_secondary_button_link == blank
   -%}
-    <modal-dialog id="EmbedModal-Secondary-{{ section.id }}" class="product-popup-modal custom-product-info__embed-modal">
-      <div role="dialog" aria-label="{{ section.settings.right_column_secondary_button_text | escape }}" aria-modal="true" class="product-popup-modal__content custom-product-info__embed-modal-content" tabindex="-1">
-        <button id="ModalClose-EmbedSecondary-{{ section.id }}" type="button" class="product-popup-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">
+    <modal-dialog
+      id="EmbedModal-Secondary-{{ section.id }}"
+      class="product-popup-modal custom-product-info__embed-modal"
+    >
+      <div
+        role="dialog"
+        aria-label="{{ section.settings.right_column_secondary_button_text | escape }}"
+        aria-modal="true"
+        class="product-popup-modal__content custom-product-info__embed-modal-content"
+        tabindex="-1"
+      >
+        <button
+          id="ModalClose-EmbedSecondary-{{ section.id }}"
+          type="button"
+          class="product-popup-modal__toggle"
+          aria-label="{{ 'accessibility.close' | t }}"
+        >
           {{- 'icon-close.svg' | inline_asset_content -}}
         </button>
-        <iframe src="{{ section.settings.right_column_secondary_button_embed_url }}" class="custom-product-info__embed-iframe" title="{{ section.settings.right_column_secondary_button_text | escape }}"></iframe>
+        <iframe
+          src="{{ section.settings.right_column_secondary_button_embed_url }}"
+          class="custom-product-info__embed-iframe"
+          title="{{ section.settings.right_column_secondary_button_text | escape }}"
+        ></iframe>
       </div>
     </modal-dialog>
   {%- endif -%}
@@ -740,6 +825,20 @@
       "id": "right_column_title",
       "label": "Title",
       "default": "Concurrent & SaaS solutions"
+    },
+    {
+      "type": "checkbox",
+      "id": "right_column_show_price",
+      "label": "Show product price",
+      "default": false,
+      "info": "Display 'Prices start from' with the product price below the title"
+    },
+    {
+      "type": "text",
+      "id": "right_column_price_suffix",
+      "label": "Price suffix",
+      "default": "year",
+      "info": "Text shown after the price (e.g., 'year', 'month')"
     },
     {
       "type": "textarea",

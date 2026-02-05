@@ -149,12 +149,22 @@
 .product-card-wrapper .card__content {
   border: 1px solid rgba(var(--color-foreground), 0.2);
   min-height: 200px;
+  height: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: stretch;
   border-radius: var(--product-card-corner-radius);
+}
+
+/* Fill card height so actions can sit at bottom */
+.product-card-wrapper .card__information {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  height: 100%;
 }
 
 .card__content--auto-margins {
@@ -486,6 +496,20 @@
   width: 100%;
 }
 
+/* Make card-information flex column to push actions to bottom */
+.product-card-wrapper .card-information {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  height: 100%;
+}
+
+/* Ensure the short description doesn't prevent button alignment */
+.product-card-wrapper .card__short-description {
+  flex-shrink: 0;
+}
+
 .card-information>* {
   line-height: calc(1 + 0.4 / var(--font-body-scale));
   color: rgb(var(--color-foreground));
@@ -650,6 +674,72 @@
   margin-top: 0.75rem;
 }
 
+/* Pin Learn more to bottom of product card */
+.product-card-wrapper .card__actions-inline {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+/* 
+ * Product card button alignment fix
+ * Ensures all "Learn more" buttons align at the bottom of cards
+ */
+
+/* Grid items must stretch to fill row height */
+.contains-card--product .grid__item,
+.product-grid .grid__item {
+  display: flex !important;
+  align-self: stretch !important;
+}
+
+/* Card wrapper fills grid item */
+.contains-card--product .card-wrapper,
+.product-grid .card-wrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 auto !important;
+  height: 100% !important;
+}
+
+/* Card fills wrapper */
+.contains-card--product .card-wrapper .card,
+.product-grid .card-wrapper .card {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 auto !important;
+  height: 100% !important;
+}
+
+/* Card content fills card */
+.contains-card--product .card__content,
+.product-grid .card__content {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 auto !important;
+}
+
+/* Card information fills content */
+.contains-card--product .card__information,
+.product-grid .card__information {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 auto !important;
+}
+
+/* Inner card-information fills and pushes button down */
+.contains-card--product .card-information,
+.product-grid .card-information {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 auto !important;
+}
+
+/* Button container pushed to bottom */
+.contains-card--product .card__actions-inline,
+.product-grid .card__actions-inline {
+  margin-top: auto !important;
+}
+
 .card__actions-inline .card__product-link {
   text-decoration: none;
   color: #4c4c4f;
@@ -663,7 +753,13 @@
 }
 
 .product__card-button{
-  border: 1px solid var(--eleco-primary) !important
+  border: 1px solid var(--eleco-primary) !important;
+}
+
+/* Remove underline on hover for product card buttons */
+.underline-links-hover:hover .product__card-button,
+.product__card-button:hover {
+  text-decoration: none !important;
 }
 
 .card__actions-inline .card__buy-now-form {
