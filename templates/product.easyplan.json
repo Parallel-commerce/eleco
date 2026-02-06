@@ -693,11 +693,12 @@
       "blocks": {
         "testimonial_tHbLzP": {
           "type": "testimonial",
+          "name": "Testimonial - Jamie",
           "settings": {
             "name": "Jamie Smith",
             "title": "Senior Project Manager | Careys",
             "country_flag": "",
-            "testimonial_text": "Programmes change throughout the lifecycle of a project and Easyplan makes it simple for us to manage those changes."
+            "testimonial_text": "\"Programmes change throughout the lifecycle of a project and Easyplan makes it simple for us to manage those changes.\""
           }
         }
       },
