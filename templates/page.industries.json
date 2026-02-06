@@ -33,11 +33,11 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Asta_Powerproject_Banner_UK_approved.png",
+        "image": "shopify://shop_images/Untitled_design_2.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
-        "desktop_content_position": "bottom-left",
+        "desktop_content_position": "bottom-center",
         "desktop_content_alignment": "center",
         "show_text_box": false,
         "color_scheme": "scheme-3",
@@ -49,6 +49,12 @@
     "rich_text_KpRgxW": {
       "type": "rich-text",
       "blocks": {
+        "text_RHJV7T": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Engineered for the realities of live construction sites.</h2>"
+          }
+        },
         "heading_kwwKXQ": {
           "type": "heading",
           "disabled": true,
@@ -60,11 +66,12 @@
         "text_9J9nyn": {
           "type": "text",
           "settings": {
-            "text": "<p>Designed to handle the realities of live worksites, the Asta suite is built for the full spectrum of the built environment industry supporting construction, infrastructure, civil engineering, fit-outs, residential developments, and complex engineering projects.</p><p>The Asta software solutions gives teams real-time visibility, smarter resource planning, and reliable project scheduling from pre-construction through delivery.<br/><br/>Whether you’re managing large-scale infrastructure works, fast-paced commercial fit-outs, or residential builds, our software solution helps reduce delays, improve collaboration, and keep projects on time and on budget.</p>"
+            "text": "<p>The Asta suite is purpose-built for the entire built environment sector, supporting construction, infrastructure, civil engineering, fit-outs, residential developments, and complex engineering projects. Designed to perform in dynamic, real-world conditions, Asta empowers teams to plan, adapt, and deliver with confidence.<br/><br/>With real-time visibility, smarter resource management, and dependable scheduling from pre-construction to completion, Asta solutions give you full control of every phase of delivery.<br/><br/>Whether you’re driving large-scale infrastructure projects, fast-track commercial fit-outs, or residential developments, let our solutions help minimise delays, enhance collaboration, and ensure every project stays on time and on budget.</p>"
           }
         }
       },
       "block_order": [
+        "text_RHJV7T",
         "heading_kwwKXQ",
         "text_9J9nyn"
       ],
@@ -133,7 +140,7 @@
         "heading_size": "h1",
         "columns_desktop": 3,
         "columns_mobile": "1",
-        "image_ratio": "square",
+        "image_ratio": "landscape",
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
