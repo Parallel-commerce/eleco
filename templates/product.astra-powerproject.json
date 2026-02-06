@@ -422,6 +422,7 @@
       ],
       "name": "Image with features",
       "settings": {
+        "image": "shopify://shop_images/Vision_Overview_4.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -433,8 +434,8 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "anchor_id": "#",
-        "padding_top": 52,
-        "padding_bottom": 52,
+        "padding_top": 28,
+        "padding_bottom": 4,
         "text_padding_left": 32,
         "text_padding_right": 16
       }
