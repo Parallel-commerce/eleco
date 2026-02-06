@@ -583,29 +583,32 @@
       "blocks": {
         "testimonial_J3UM8L": {
           "type": "testimonial",
+          "name": "Testimonial - Amy",
           "settings": {
             "name": "Amy Griffiths",
             "title": "Project Manager | Kier Group",
             "country_flag": "",
-            "testimonial_text": "At every point we were being adaptive, reacting to changes and opportunities. Asta Powerproject allowed us to ask ... and have subscontractors feed into the discussion. As a result, we maintained our critical path and smooth workflow between trades."
+            "testimonial_text": "\"At every point we were being adaptive, reacting to changes and opportunities. Asta Powerproject allowed us to ask ... and have subscontractors feed into the discussion. As a result, we maintained our critical path and smooth workflow between trades.\""
           }
         },
         "testimonial_DDjcT4": {
           "type": "testimonial",
+          "name": "Testimonial - Aldwyn",
           "settings": {
             "name": "Aldwyn Payne",
             "title": "Planning Manager | HG Construction",
             "country_flag": "",
-            "testimonial_text": "We're finishing some projects many months ahead of programme, which is excellent achievement given their complexity. Powerproject has been a major contributor to this success."
+            "testimonial_text": "\"We're finishing some projects many months ahead of programme, which is excellent achievement given their complexity. Powerproject has been a major contributor to this success.\""
           }
         },
         "testimonial_8LdM6q": {
           "type": "testimonial",
+          "name": "Testimonial - Bengisu",
           "settings": {
             "name": "Bengisu Uygur",
             "title": "Planning Manager | MiCiM Ltd",
             "country_flag": "",
-            "testimonial_text": "MiCiM combines extensive engineering and construction know-how with the latest technology to implement pragmatic solutions, and Asta Powerproject is central to the efficiency and effectiveness of our operations."
+            "testimonial_text": "\"MiCiM combines extensive engineering and construction know-how with the latest technology to implement pragmatic solutions, and Asta Powerproject is central to the efficiency and effectiveness of our operations.\""
           }
         }
       },
