@@ -193,7 +193,7 @@
         "right_column_title": "Concurrent & SaaS solutions",
         "right_column_show_price": false,
         "right_column_price_suffix": "year",
-        "right_column_paragraph": "You wouldn't place a tender without first understanding the full scope of work. We approach custom quotes the same way. Help us get to know your team's needs to get started now.",
+        "right_column_paragraph": "You wouldn't complete a project without first understanding the full scope of work. We approach custom quotes the same way. Help us get to know your team's needs to get started now.",
         "right_column_fine_print": "",
         "right_column_primary_button_text": "Contact sales",
         "right_column_primary_button_link": "",
@@ -255,8 +255,8 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "anchor_id": "#",
-        "padding_top": 52,
-        "padding_bottom": 52,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "text_padding_left": 32,
         "text_padding_right": 16
       }
@@ -313,8 +313,8 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "anchor_id": "#",
-        "padding_top": 52,
-        "padding_bottom": 52,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "text_padding_left": 16,
         "text_padding_right": 32
       }
@@ -371,8 +371,8 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "anchor_id": "#",
-        "padding_top": 52,
-        "padding_bottom": 52,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "text_padding_left": 32,
         "text_padding_right": 16
       }
@@ -483,6 +483,7 @@
         "logo_hWRjrM",
         "logo_itwWmj"
       ],
+      "disabled": true,
       "name": "Logo Block",
       "settings": {
         "color_scheme": "",
