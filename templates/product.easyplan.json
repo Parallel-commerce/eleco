@@ -383,6 +383,7 @@
       ],
       "name": "Image with features",
       "settings": {
+        "image": "shopify://shop_images/Powerproject-Laptop.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
