@@ -1111,7 +1111,7 @@
         "button_2_hover_background_color": "#d14a32",
         "button_2_hover_text_color": "#ffffff",
         "button_spacing": 40,
-        "cell_padding": 12,
+        "cell_padding": 6,
         "border_radius": 8,
         "header_font_size": 17,
         "cell_font_size": 16,
