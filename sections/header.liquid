@@ -17,6 +17,16 @@
 {%- endif -%}
 
 <style>
+  /* When using section groups, .section-header is nested inside a group wrapper div.
+     position: sticky is constrained by its parent's bounding box, so the header can't
+     stick beyond the group wrapper. display: contents removes the wrapper from the layout
+     tree, making .section-header a direct grid child of <body> where sticky works. */
+  {%- if section.settings.sticky_header_type != 'none' -%}
+    body > div:has(> .section-header) {
+      display: contents;
+    }
+  {%- endif -%}
+
   header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
@@ -842,65 +852,75 @@
     }
   });
 
-  // Update header Buy Now button when variant changes on product page
-  {%- if request.page_type == 'product' -%}
-  if (typeof subscribe !== 'undefined' && typeof PUB_SUB_EVENTS !== 'undefined') {
-    const desktopForm = document.getElementById('header-submenu-product-form-desktop');
-    const mobileForm = document.getElementById('header-submenu-product-form-mobile');
-    const desktopButton = desktopForm?.querySelector('button[type="submit"]');
-    const mobileButton = mobileForm?.querySelector('button[type="submit"]');
-
-    if (desktopForm || mobileForm) {
-      const updateHeaderForms = (variant) => {
-        if (!variant || !variant.id) return;
-
-        // Update desktop form
-        if (desktopForm) {
-          const desktopInput = desktopForm.querySelector('input[name="id"]');
-          if (desktopInput) {
-            desktopInput.value = variant.id;
-            desktopInput.disabled = !variant.available || variant === null;
-          }
-          if (desktopButton) {
-            desktopButton.disabled = !variant.available || variant === null;
-            desktopButton.setAttribute('aria-disabled', (!variant.available || variant === null).toString());
-          }
-          // Update selling plan if present
-          const desktopSellingPlan = desktopForm.querySelector('input[name="selling_plan"]');
-          if (desktopSellingPlan && variant.selling_plan_allocations && variant.selling_plan_allocations.length > 0) {
-            desktopSellingPlan.value = variant.selling_plan_allocations[0].selling_plan.id;
-          }
-        }
-
-        // Update mobile form
-        if (mobileForm) {
-          const mobileInput = mobileForm.querySelector('input[name="id"]');
-          if (mobileInput) {
-            mobileInput.value = variant.id;
-            mobileInput.disabled = !variant.available || variant === null;
-          }
-          if (mobileButton) {
-            mobileButton.disabled = !variant.available || variant === null;
-            mobileButton.setAttribute('aria-disabled', (!variant.available || variant === null).toString());
-          }
-          // Update selling plan if present
-          const mobileSellingPlan = mobileForm.querySelector('input[name="selling_plan"]');
-          if (mobileSellingPlan && variant.selling_plan_allocations && variant.selling_plan_allocations.length > 0) {
-            mobileSellingPlan.value = variant.selling_plan_allocations[0].selling_plan.id;
-          }
-        }
-      };
-
-      // Subscribe to variant changes
-      subscribe(PUB_SUB_EVENTS.variantChange, (event) => {
-        if (event && event.data && event.data.variant) {
-          updateHeaderForms(event.data.variant);
-        }
-      });
-    }
-  }
-  {%- endif -%}
 {% endjavascript %}
+
+{%- comment -%}
+  Variant sync script uses Liquid tags (request.page_type) so it MUST be in a
+  regular <script> tag, NOT inside {% javascript %} which compiles to scripts.js
+  and does not process Liquid.
+{%- endcomment -%}
+{%- if request.page_type == 'product' -%}
+  <script>
+    // Update header Buy Now button when variant changes on product page
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof subscribe !== 'undefined' && typeof PUB_SUB_EVENTS !== 'undefined') {
+        const desktopForm = document.getElementById('header-submenu-product-form-desktop');
+        const mobileForm = document.getElementById('header-submenu-product-form-mobile');
+        const desktopButton = desktopForm?.querySelector('button[type="submit"]');
+        const mobileButton = mobileForm?.querySelector('button[type="submit"]');
+
+        if (desktopForm || mobileForm) {
+          const updateHeaderForms = (variant) => {
+            if (!variant || !variant.id) return;
+
+            // Update desktop form
+            if (desktopForm) {
+              const desktopInput = desktopForm.querySelector('input[name="id"]');
+              if (desktopInput) {
+                desktopInput.value = variant.id;
+                desktopInput.disabled = !variant.available || variant === null;
+              }
+              if (desktopButton) {
+                desktopButton.disabled = !variant.available || variant === null;
+                desktopButton.setAttribute('aria-disabled', (!variant.available || variant === null).toString());
+              }
+              // Update selling plan if present
+              const desktopSellingPlan = desktopForm.querySelector('input[name="selling_plan"]');
+              if (desktopSellingPlan && variant.selling_plan_allocations && variant.selling_plan_allocations.length > 0) {
+                desktopSellingPlan.value = variant.selling_plan_allocations[0].selling_plan.id;
+              }
+            }
+
+            // Update mobile form
+            if (mobileForm) {
+              const mobileInput = mobileForm.querySelector('input[name="id"]');
+              if (mobileInput) {
+                mobileInput.value = variant.id;
+                mobileInput.disabled = !variant.available || variant === null;
+              }
+              if (mobileButton) {
+                mobileButton.disabled = !variant.available || variant === null;
+                mobileButton.setAttribute('aria-disabled', (!variant.available || variant === null).toString());
+              }
+              // Update selling plan if present
+              const mobileSellingPlan = mobileForm.querySelector('input[name="selling_plan"]');
+              if (mobileSellingPlan && variant.selling_plan_allocations && variant.selling_plan_allocations.length > 0) {
+                mobileSellingPlan.value = variant.selling_plan_allocations[0].selling_plan.id;
+              }
+            }
+          };
+
+          // Subscribe to variant changes
+          subscribe(PUB_SUB_EVENTS.variantChange, (event) => {
+            if (event && event.data && event.data.variant) {
+              updateHeaderForms(event.data.variant);
+            }
+          });
+        }
+      }
+    });
+  </script>
+{%- endif -%}
 
 <script type="application/ld+json">
   {
