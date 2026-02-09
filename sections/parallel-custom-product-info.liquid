@@ -518,15 +518,16 @@
               <h2>{{ section.settings.right_column_title }}</h2>
             {%- endif -%}
 
-            {%- if section.settings.right_column_show_price -%}
+            {%- if section.settings.right_column_show_price and section.settings.right_column_price != blank -%}
+              {%- assign right_price_cents = section.settings.right_column_price | times: 100 -%}
               <div class="custom-product-info__price-wrapper">
                 <span class="custom-product-info__price-prefix">Prices start from</span>
                 <span class="custom-product-info__price">
-                  {%- assign price_mod = product.price | modulo: 100 -%}
+                  {%- assign price_mod = right_price_cents | modulo: 100 -%}
                   {%- if price_mod == 0 -%}
-                    {{ product.price | money_without_trailing_zeros }}
+                    {{ right_price_cents | money_without_trailing_zeros }}
                   {%- else -%}
-                    {{ product.price | money }}
+                    {{ right_price_cents | money }}
                   {%- endif -%}
                 </span>
                 <span class="custom-product-info__price-slash">/</span>
@@ -829,9 +830,15 @@
     {
       "type": "checkbox",
       "id": "right_column_show_price",
-      "label": "Show product price",
+      "label": "Show price",
       "default": false,
-      "info": "Display 'Prices start from' with the product price below the title"
+      "info": "Display 'Prices start from' with a price below the title"
+    },
+    {
+      "type": "text",
+      "id": "right_column_price",
+      "label": "Price",
+      "info": "Amount to display (e.g. 2412 or 2412.50). Required when 'Show price' is on."
     },
     {
       "type": "text",

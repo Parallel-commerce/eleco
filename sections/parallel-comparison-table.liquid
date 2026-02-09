@@ -152,6 +152,15 @@
     min-width: auto;
   }
 
+  .comparison-table-{{ section.id }}__add-to-cart-form {
+    display: block;
+    width: 100%;
+  }
+
+  .comparison-table-{{ section.id }}__add-to-cart-form .button {
+    width: 100%;
+  }
+
   @media screen and (max-width: 749px) {
     .comparison-table-{{ section.id }}__table-wrapper {
       overflow-x: auto;
@@ -334,16 +343,87 @@
           {%- endif -%}
           {%- if section.settings.button_2_label != blank -%}
             <div class="comparison-table-{{ section.id }}__button-wrapper">
-              <a
-                {% if section.settings.button_2_link == blank %}
-                  role="link" aria-disabled="true"
-                {% else %}
-                  href="{{ section.settings.button_2_link }}"
-                {% endif %}
-                class="button"
-              >
-                {{ section.settings.button_2_label | escape }}
-              </a>
+              {%- if section.settings.button_2_action == 'add_to_cart' and product -%}
+                {%- assign variant = product.selected_or_first_available_variant -%}
+                {%- if variant.available -%}
+                  {%- assign comparison_table_form_id = 'comparison-table-add-to-cart-' | append: section.id -%}
+                  <form
+                    id="{{ comparison_table_form_id }}"
+                    action="{{ routes.cart_add_url }}"
+                    method="post"
+                    class="comparison-table-{{ section.id }}__add-to-cart-form form"
+                    novalidate="novalidate"
+                    data-comparison-table-page-product="true"
+                  >
+                    <input type="hidden" name="id" value="{{ variant.id }}">
+                    <input type="hidden" name="quantity" value="1">
+                    <button type="submit" class="button" name="add">
+                      <span>{{ section.settings.button_2_label | escape }}</span>
+                      {%- render 'loading-spinner' -%}
+                    </button>
+                  </form>
+                  <script>
+                    (function() {
+                      var form = document.getElementById('{{ comparison_table_form_id }}');
+                      if (!form) return;
+                      form.addEventListener('submit', function(evt) {
+                        evt.preventDefault();
+                        var submitBtn = form.querySelector('[type="submit"]');
+                        var spinner = form.querySelector('.loading__spinner');
+                        if (submitBtn.getAttribute('aria-disabled') === 'true') return;
+                        submitBtn.setAttribute('aria-disabled', 'true');
+                        submitBtn.classList.add('loading');
+                        if (spinner) spinner.classList.remove('hidden');
+                        var config = window.fetchConfig('javascript');
+                        config.headers['X-Requested-With'] = 'XMLHttpRequest';
+                        delete config.headers['Content-Type'];
+                        var formData = new FormData(form);
+                        var cart = document.querySelector('cart-drawer');
+                        if (cart) {
+                          cart.getSectionsToRender().forEach(function(s) { formData.append('sections', s.id); });
+                          formData.append('sections_url', window.location.pathname);
+                          cart.setActiveElement(document.activeElement);
+                        }
+                        config.body = formData;
+                        fetch(window.routes.cart_add_url, config)
+                          .then(function(r) { return r.json(); })
+                          .then(function(response) {
+                            if (response.status) {
+                              submitBtn.removeAttribute('aria-disabled');
+                              return;
+                            }
+                            if (cart) {
+                              cart.renderContents(response);
+                            } else {
+                              window.location = window.routes.cart_url;
+                            }
+                          })
+                          .catch(function(e) { console.error(e); })
+                          .finally(function() {
+                            submitBtn.classList.remove('loading');
+                            submitBtn.removeAttribute('aria-disabled');
+                            if (spinner) spinner.classList.add('hidden');
+                          });
+                      });
+                    })();
+                  </script>
+                {%- else -%}
+                  <button type="button" class="button" disabled>
+                    {{ section.settings.button_2_label | escape }}
+                  </button>
+                {%- endif -%}
+              {%- else -%}
+                <a
+                  {% if section.settings.button_2_link == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ section.settings.button_2_link }}"
+                  {% endif %}
+                  class="button"
+                >
+                  {{ section.settings.button_2_label | escape }}
+                </a>
+              {%- endif -%}
             </div>
           {%- endif -%}
         </div>
@@ -471,7 +551,7 @@
     },
     {
       "type": "header",
-      "content": "Button 2 Styles"
+      "content": "Button 2"
     },
     {
       "type": "text",
@@ -480,9 +560,31 @@
       "default": "Buy Now"
     },
     {
+      "type": "select",
+      "id": "button_2_action",
+      "label": "Button 2 action",
+      "options": [
+        {
+          "value": "link",
+          "label": "Link to URL"
+        },
+        {
+          "value": "add_to_cart",
+          "label": "Add this product to cart"
+        }
+      ],
+      "default": "add_to_cart",
+      "info": "Add to cart only works when this section is on a product page."
+    },
+    {
       "type": "url",
       "id": "button_2_link",
-      "label": "Button 2 link"
+      "label": "Button 2 link",
+      "info": "Used when Button 2 action is \"Link to URL\", or as fallback when \"Add to cart\" is selected but the section is not on a product page."
+    },
+    {
+      "type": "header",
+      "content": "Button 2 Styles"
     },
     {
       "type": "color",
