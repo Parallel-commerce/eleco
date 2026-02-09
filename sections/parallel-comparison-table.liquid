@@ -357,6 +357,9 @@
                   >
                     <input type="hidden" name="id" value="{{ variant.id }}">
                     <input type="hidden" name="quantity" value="1">
+                    {%- if product.requires_selling_plan -%}
+                      <input type="hidden" name="selling_plan" value="{{ variant.selling_plan_allocations.first.selling_plan.id }}">
+                    {%- endif -%}
                     <button type="submit" class="button" name="add">
                       <span>{{ section.settings.button_2_label | escape }}</span>
                       {%- render 'loading-spinner' -%}
@@ -380,7 +383,7 @@
                         var formData = new FormData(form);
                         var cart = document.querySelector('cart-drawer');
                         if (cart) {
-                          cart.getSectionsToRender().forEach(function(s) { formData.append('sections', s.id); });
+                          formData.append('sections', cart.getSectionsToRender().map(function(s) { return s.id; }).join(','));
                           formData.append('sections_url', window.location.pathname);
                           cart.setActiveElement(document.activeElement);
                         }

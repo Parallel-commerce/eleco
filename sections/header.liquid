@@ -562,6 +562,14 @@
                   {% endif %}
                   class="product-variant-id"
                 >
+                {%- if product.requires_selling_plan -%}
+                  <input
+                    type="hidden"
+                    name="selling_plan"
+                    value="{{ product.selected_or_first_available_variant.selling_plan_allocations.first.selling_plan.id }}"
+                    class="product-selling-plan-id"
+                  >
+                {%- endif -%}
                 <button
                   type="submit"
                   name="add"
@@ -634,6 +642,14 @@
                         {% endif %}
                         class="product-variant-id"
                       >
+                      {%- if product.requires_selling_plan -%}
+                        <input
+                          type="hidden"
+                          name="selling_plan"
+                          value="{{ product.selected_or_first_available_variant.selling_plan_allocations.first.selling_plan.id }}"
+                          class="product-selling-plan-id"
+                        >
+                      {%- endif -%}
                       <button
                         type="submit"
                         name="add"
@@ -849,6 +865,11 @@
             desktopButton.disabled = !variant.available || variant === null;
             desktopButton.setAttribute('aria-disabled', (!variant.available || variant === null).toString());
           }
+          // Update selling plan if present
+          const desktopSellingPlan = desktopForm.querySelector('input[name="selling_plan"]');
+          if (desktopSellingPlan && variant.selling_plan_allocations && variant.selling_plan_allocations.length > 0) {
+            desktopSellingPlan.value = variant.selling_plan_allocations[0].selling_plan.id;
+          }
         }
 
         // Update mobile form
@@ -861,6 +882,11 @@
           if (mobileButton) {
             mobileButton.disabled = !variant.available || variant === null;
             mobileButton.setAttribute('aria-disabled', (!variant.available || variant === null).toString());
+          }
+          // Update selling plan if present
+          const mobileSellingPlan = mobileForm.querySelector('input[name="selling_plan"]');
+          if (mobileSellingPlan && variant.selling_plan_allocations && variant.selling_plan_allocations.length > 0) {
+            mobileSellingPlan.value = variant.selling_plan_allocations[0].selling_plan.id;
           }
         }
       };
