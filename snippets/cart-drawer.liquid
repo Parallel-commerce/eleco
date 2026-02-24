@@ -568,6 +568,12 @@
                           disabled
                         {% endif %}
                       >
+                      {%- if upsell_product.requires_selling_plan -%}
+                        {%- assign upsell_selling_plan = upsell_product.selling_plan_groups.first.selling_plans.first -%}
+                        {%- if upsell_selling_plan -%}
+                          <input type="hidden" name="selling_plan" value="{{ upsell_selling_plan.id }}">
+                        {%- endif -%}
+                      {%- endif -%}
                       <button
                         type="submit"
                         name="add"
