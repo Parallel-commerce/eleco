@@ -190,18 +190,18 @@
         "left_column_secondary_button_text": "Download free trial",
         "left_column_secondary_button_link": "https://shop.elecosoft.com/products/easyplan#trial",
         "left_column_fine_print": "Paid annually, one user installed onto a single Windows PC. Includes VAT.",
-        "right_column_title": "Concurrent & SaaS solutions",
-        "right_column_show_price": true,
+        "right_column_title": "",
+        "right_column_show_price": false,
         "right_column_price": "",
-        "right_column_price_suffix": "year",
+        "right_column_price_suffix": "",
         "right_column_paragraph": "",
-        "right_column_fine_print": "Paid annually. Includes VAT.",
-        "right_column_primary_button_text": "Contact sales",
+        "right_column_fine_print": "",
+        "right_column_primary_button_text": "",
         "right_column_primary_button_link": "",
         "right_column_primary_button_embed_url": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/d1ur6qgefgeb2bfvrmtaw.html?PageId=e9ab5b77be01f11184076045bd131303",
-        "right_column_secondary_button_text": "Book a demo",
+        "right_column_secondary_button_text": "",
         "right_column_secondary_button_link": "",
-        "right_column_secondary_button_embed_url": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/twu4sahgefgeb3ztjwvsuq.html?PageId=48b80bb7e001f11184077ced8d6becb9"
+        "right_column_secondary_button_embed_url": ""
       }
     },
     "parallel_image_with_features_hVbtUt": {
