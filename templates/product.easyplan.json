@@ -843,9 +843,9 @@
           "settings": {
             "functionality_text": "Task of work per file",
             "column_2_type": "text",
-            "column_2_text": "250",
+            "column_2_text": "Unlimited",
             "column_3_type": "text",
-            "column_3_text": "Unlimited"
+            "column_3_text": "250"
           }
         },
         "comparison_row_hhDyjA": {
@@ -853,9 +853,9 @@
           "settings": {
             "functionality_text": "Task per line of work",
             "column_2_type": "text",
-            "column_2_text": "10",
+            "column_2_text": "Unlimited",
             "column_3_type": "text",
-            "column_3_text": "Unlimited"
+            "column_3_text": "10"
           }
         },
         "comparison_row_fcy6Rt": {
@@ -864,7 +864,7 @@
             "functionality_text": "Start on or After constraints",
             "column_2_type": "tick",
             "column_2_text": "Value",
-            "column_3_type": "tick",
+            "column_3_type": "cross",
             "column_3_text": "Value"
           }
         },
@@ -874,7 +874,7 @@
             "functionality_text": "Integrates with other Asta software",
             "column_2_type": "tick",
             "column_2_text": "Value",
-            "column_3_type": "tick",
+            "column_3_type": "cross",
             "column_3_text": "Value"
           }
         },
@@ -882,9 +882,9 @@
           "type": "comparison_row",
           "settings": {
             "functionality_text": "Overlapping tasks",
-            "column_2_type": "cross",
+            "column_2_type": "tick",
             "column_2_text": "Value",
-            "column_3_type": "tick",
+            "column_3_type": "cross",
             "column_3_text": "Value"
           }
         },
@@ -892,9 +892,9 @@
           "type": "comparison_row",
           "settings": {
             "functionality_text": "Baseline comparison and analysis",
-            "column_2_type": "cross",
+            "column_2_type": "tick",
             "column_2_text": "Value",
-            "column_3_type": "tick",
+            "column_3_type": "cross",
             "column_3_text": "Value"
           }
         },
@@ -902,9 +902,9 @@
           "type": "comparison_row",
           "settings": {
             "functionality_text": "Reschedule tasks within the project",
-            "column_2_type": "cross",
+            "column_2_type": "tick",
             "column_2_text": "Value",
-            "column_3_type": "tick",
+            "column_3_type": "cross",
             "column_3_text": "Value"
           }
         },
@@ -912,9 +912,9 @@
           "type": "comparison_row",
           "settings": {
             "functionality_text": "Tasks can be set to ASAP or ALAP",
-            "column_2_type": "cross",
+            "column_2_type": "tick",
             "column_2_text": "Value",
-            "column_3_type": "tick",
+            "column_3_type": "cross",
             "column_3_text": "Value"
           }
         },
@@ -922,9 +922,9 @@
           "type": "comparison_row",
           "settings": {
             "functionality_text": "Edit view based presentation",
-            "column_2_type": "cross",
+            "column_2_type": "tick",
             "column_2_text": "Value",
-            "column_3_type": "tick",
+            "column_3_type": "cross",
             "column_3_text": "Value"
           }
         },
@@ -932,9 +932,9 @@
           "type": "comparison_row",
           "settings": {
             "functionality_text": "Float and negative path calculations",
-            "column_2_type": "cross",
+            "column_2_type": "tick",
             "column_2_text": "Value",
-            "column_3_type": "tick",
+            "column_3_type": "cross",
             "column_3_text": "Value"
           }
         },
@@ -942,9 +942,9 @@
           "type": "comparison_row",
           "settings": {
             "functionality_text": "Depth and colour dependent on certain criteria",
-            "column_2_type": "cross",
+            "column_2_type": "tick",
             "column_2_text": "Value",
-            "column_3_type": "tick",
+            "column_3_type": "cross",
             "column_3_text": "Value"
           }
         },
@@ -952,19 +952,9 @@
           "type": "comparison_row",
           "settings": {
             "functionality_text": "Formalae to display user-definable information",
-            "column_2_type": "cross",
+            "column_2_type": "tick",
             "column_2_text": "Value",
-            "column_3_type": "tick",
-            "column_3_text": "Value"
-          }
-        },
-        "comparison_row_fH4a4q": {
-          "type": "comparison_row",
-          "settings": {
-            "functionality_text": "A user to issue part of a programme to another user for editing without causing conflicts within the file",
-            "column_2_type": "cross",
-            "column_2_text": "Value",
-            "column_3_type": "tick",
+            "column_3_type": "cross",
             "column_3_text": "Value"
           }
         }
@@ -981,8 +971,7 @@
         "comparison_row_bcXKGn",
         "comparison_row_t7e3tF",
         "comparison_row_3PJpmD",
-        "comparison_row_7P68gH",
-        "comparison_row_fH4a4q"
+        "comparison_row_7P68gH"
       ],
       "name": "Comparison Table",
       "settings": {
@@ -990,14 +979,14 @@
         "heading_size": "h1",
         "heading_spacing": 40,
         "column_1_title": "Functionality",
-        "column_2_title": "Easyplan",
-        "column_3_title": "Asta Powerproject",
-        "button_1_label": "Buy Now",
-        "button_1_link": "",
+        "column_2_title": "Asta Powerproject",
+        "column_3_title": "Easyplan",
+        "button_1_label": "Learn More",
+        "button_1_link": "shopify://products/asta-powerproject",
         "button_1_border_color": "#e83f40",
         "button_1_text_color": "#ffffff",
         "button_1_hover_text_color": "#d14a32",
-        "button_2_label": "Learn more",
+        "button_2_label": "Buy Now",
         "button_2_action": "add_to_cart",
         "button_2_link": "shopify://products/asta-powerproject",
         "button_2_background_color": "#ffffff",
