@@ -1138,22 +1138,11 @@
             "is_fallback": true,
             "embed_code": "<script type=\"text/javascript\">var loc = \"https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/\";var cdSurveyCdn = \"https://cdn-eu.clickdimensions.com/web/newformeditor/\";</script>\n<script type=\"text/javascript\" src=\"https://cdn-eu.clickdimensions.com/web/newformeditor/CDWidget.js\"></script>\n<div pageid=\"tssibxzoefgdqmbfvrmtaw\"></div>"
           }
-        },
-        "embed_fATkTC": {
-          "type": "embed",
-          "name": "US",
-          "settings": {
-            "market_identifier": "",
-            "country_code": "",
-            "is_fallback": false,
-            "embed_code": "<iframe src=\"https://example.com/default-embed\" width=\"100%\" height=\"100%\" frameborder=\"0\"></iframe>"
-          }
         }
       },
       "block_order": [
         "embed_UteYwK",
-        "embed_nxaLjQ",
-        "embed_fATkTC"
+        "embed_nxaLjQ"
       ],
       "name": "Market Embed",
       "settings": {
