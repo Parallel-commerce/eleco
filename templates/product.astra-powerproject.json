@@ -436,7 +436,7 @@
         "color_scheme": "",
         "anchor_id": "#",
         "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_bottom": 32,
         "text_padding_left": 32,
         "text_padding_right": 16
       }
