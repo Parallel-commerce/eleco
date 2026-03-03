@@ -1109,7 +1109,7 @@
         "button_1_hover_text_color": "#ffffff",
         "button_2_label": "Buy Now",
         "button_2_action": "add_to_cart",
-        "button_2_link": "",
+        "button_2_link": "shopify://products/easyplan",
         "button_2_background_color": "#e83f40",
         "button_2_text_color": "#ffffff",
         "button_2_hover_background_color": "#d14a32",
