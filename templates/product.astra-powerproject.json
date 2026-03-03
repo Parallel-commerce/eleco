@@ -833,13 +833,14 @@
         "product_dMQG99",
         "product_TQGH9D"
       ],
+      "disabled": true,
       "name": "Custom Product List",
       "settings": {
         "heading": "Asta Integrations",
         "heading_size": "h2",
         "heading_alignment": "left",
         "button_text": "Learn more",
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "columns_mobile": "2",
         "color_scheme": "scheme-2",
         "anchor_id": "integrations",
@@ -1068,6 +1069,7 @@
         },
         "comparison_row_tRBXeX": {
           "type": "comparison_row",
+          "disabled": true,
           "settings": {
             "functionality_text": "A user to issue part of a programme to another user for editing, without causing conflicts within the originating file",
             "column_2_type": "cross",
@@ -1113,10 +1115,10 @@
         "button_2_hover_background_color": "#d14a32",
         "button_2_hover_text_color": "#ffffff",
         "button_spacing": 40,
-        "cell_padding": 6,
+        "cell_padding": 4,
         "border_radius": 8,
         "header_font_size": 17,
-        "cell_font_size": 16,
+        "cell_font_size": 15,
         "color_scheme": "",
         "header_background": "#f3f4f6",
         "header_text_color": "#111827",
