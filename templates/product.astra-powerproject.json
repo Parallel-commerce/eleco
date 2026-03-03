@@ -1193,7 +1193,7 @@
         "primary_button_text": "#ffffff",
         "secondary_button_label": "Add to cart",
         "product": "powerproject-premium-support",
-        "secondary_button_link": "",
+        "secondary_button_link": "shopify://products/powerproject-premium-support",
         "secondary_button_background": "#ffffff",
         "secondary_button_background_hover": "#f5f5f5",
         "secondary_button_text": "#333333",
