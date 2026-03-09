@@ -22,6 +22,24 @@
         "right_column_fine_print": "Paid annually.",
         "right_column_price": "2500"
       }
+    },
+    "parallel_information_Ehxmkb": {
+      "blocks": {
+        "info_block_39Mnd3": {
+          "settings": {
+            "text": "<p>To receive an education licence, an authorized officer of the educational establishment can complete this <a href=\"https://elecosoft.com/products/asta/asta-powerproject/single-education-licence/\" title=\"https://elecosoft.com/products/asta/asta-powerproject/single-education-licence/\"><span style=\"text-decoration:underline\">form</span></a> to start the process.</p>"
+          }
+        }
+      }
+    },
+    "parallel_market_embed_gGAwgk": {
+      "blocks": {
+        "embed_kej3bR": {
+          "settings": {
+            "embed_code": "<script src=\"https://js.hsforms.net/forms/embed/23774208.js\" defer></script>\n<div class=\"hs-form-frame\" data-region=\"na1\" data-form-id=\"d02192f6-5226-41f1-af02-2abdedbdf035\" data-portal-id=\"23774208\"></div>"
+          }
+        }
+      }
     }
   }
 }
