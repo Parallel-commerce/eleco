@@ -28,6 +28,15 @@
           }
         }
       }
+    },
+    "parallel_market_embed_gGAwgk": {
+      "blocks": {
+        "embed_kej3bR": {
+          "settings": {
+            "embed_code": "<script src=\"https://js.hsforms.net/forms/embed/23774208.js\" defer></script>\n<div class=\"hs-form-frame\" data-region=\"na1\" data-form-id=\"d02192f6-5226-41f1-af02-2abdedbdf035\" data-portal-id=\"23774208\"></div>"
+          }
+        }
+      }
     }
   }
 }
