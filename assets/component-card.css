@@ -630,34 +630,61 @@
   }
 }
 
-/* Product Logo Styles */
-.card__product-logo {
-  margin-bottom: 0.75rem;
+/* Product card header: icon/logo + title side by side */
+.card__product-header {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  gap: 0.65rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(var(--color-foreground), 0.08);
+  margin-bottom: 1.5rem;
+  min-height: 40px;
+}
+
+.card__product-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__product-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Product Logo Styles */
+.card__product-logo {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  flex-shrink: 0;
 }
 
 .card__product-logo .product-logo {
-  max-height:20px;
+  height: 24px;
   width: auto;
-  height: auto;
+  max-width: 140px;
   object-fit: contain;
+  display: block;
 }
 
-@media screen and (max-width: 749px) {
-  .card__product-logo .product-logo {
-    max-width: 100px;
-    max-height: 50px;
-  }
-}
 
 /* Short Description Styles */
 .card__short-description {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  line-height: calc(1 + 0.4 / var(--font-body-scale));
-  color: rgba(var(--color-foreground), 0.75);
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.7;
+  color: rgba(var(--color-foreground), 0.6);
+  font-size: 0.9375rem;
+  flex-grow: 1;
+}
+
+.card__short-description p {
+  margin: 0;
 }
 
 /* Ensure product card heading is visible */
@@ -677,7 +704,18 @@
 /* Pin Learn more to bottom of product card */
 .product-card-wrapper .card__actions-inline {
   margin-top: auto;
-  padding-top: 1rem;
+  padding-top: 1.75rem;
+}
+
+/* Hover lift for text-only product cards */
+.product-card-wrapper .card--text .card__content {
+  border-color: rgba(var(--color-foreground), 0.09);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card-wrapper:hover .card--text .card__content {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 /* 

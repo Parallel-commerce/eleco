@@ -26,7 +26,7 @@
   .custom-product-list-{{ section.id }}__grid {
     display: grid;
     grid-template-columns: repeat({{ section.settings.columns_mobile }}, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   @media screen and (min-width: 750px) {
@@ -36,31 +36,40 @@
   }
 
   .custom-product-list-{{ section.id }}__card {
-    background: #FFF;
-    border-radius: 10px;
-    padding: 2rem;
+    background: #fff;
+    border-radius: 14px;
+    border: 1px solid rgba(var(--color-foreground), 0.09);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.06);
+    padding: 2.25rem;
     display: flex;
     flex-direction: column;
-    align-items: self-start;
-    gap: 1rem;
-    transition: transform 0.3s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
     height: 100%;
+    box-sizing: border-box;
   }
 
   .custom-product-list-{{ section.id }}__card:hover {
     transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06), 0 12px 28px rgba(0, 0, 0, 0.1);
   }
 
   .custom-product-list-{{ section.id }}__title-wrapper {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.65rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid rgba(var(--color-foreground), 0.07);
+    margin-bottom: 1.5rem;
+    min-height: 36px;
   }
 
   .custom-product-list-{{ section.id }}__icon {
     width: 24px;
     height: 24px;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .custom-product-list-{{ section.id }}__icon svg {
@@ -70,46 +79,43 @@
   }
 
   .custom-product-list-{{ section.id }}__title {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 600;
     margin: 0;
     color: rgb(var(--color-foreground));
+    letter-spacing: -0.01em;
+    line-height: 1.3;
   }
 
   .custom-product-list-{{ section.id }}__logo {
-    max-width: 100%;
-    height: auto;
+    display: flex;
+    align-items: center;
+    height: 24px;
+  }
+
+  .custom-product-list-{{ section.id }}__logo img {
+    height: 24px;
+    width: auto;
+    max-width: 160px;
     display: block;
+    object-fit: contain;
   }
 
   .custom-product-list-{{ section.id }}__description {
-    color: rgba(var(--color-foreground), 0.7);
-    line-height: 1.6;
+    color: rgba(var(--color-foreground), 0.6);
+    line-height: 1.7;
     flex-grow: 1;
-    margin: 0;
+    margin: 0 0 2rem;
+    font-size: 0.9375rem;
   }
 
   .custom-product-list-{{ section.id }}__description p {
     margin: 0;
   }
 
-  .custom-product-list-{{ section.id }}__button {
+  .custom-product-list-{{ section.id }}__cta {
     margin-top: auto;
-    padding: 0.75rem 1.5rem;
-    border: 1px solid rgba(var(--color-foreground), 0.2);
-    background: transparent;
-    color: rgb(var(--color-foreground));
-    text-decoration: none;
-    border-radius: 0.4rem;
-    display: inline-block;
-    text-align: center;
-    transition: all 0.3s ease;
-    font-weight: 500;
-  }
-
-  .custom-product-list-{{ section.id }}__button:hover {
-    border-color: rgb(var(--color-foreground));
-    background: rgba(var(--color-foreground), 0.05);
+    align-self: flex-start;
   }
 {%- endstyle -%}
 
@@ -136,24 +142,22 @@
           {% if product != blank %}
             <div class="custom-product-list-{{ section.id }}__card" {{ block.shopify_attributes }}>
               <div class="custom-product-list-{{ section.id }}__title-wrapper">
-                {% if product.metafields.custom.product_logo == blank %}
-                  <div class="custom-product-list-{{ section.id }}__icon">
-                    {{ 'icon-asta-favicon.svg' | inline_asset_content }}
-                  </div>
-                {% endif %}
-                {% if product.metafields.custom.product_logo != blank %}
+                {%- if product.metafields.custom.product_logo != blank -%}
                   <div class="custom-product-list-{{ section.id }}__logo">
                     {{
                       product.metafields.custom.product_logo
-                      | image_url: width: 150
+                      | image_url: width: 320
                       | image_tag: loading: 'lazy', alt: product.title
                     }}
                   </div>
-                {% else %}
+                {%- else -%}
+                  <div class="custom-product-list-{{ section.id }}__icon">
+                    {{ 'icon-asta-favicon.svg' | inline_asset_content }}
+                  </div>
                   <h3 class="custom-product-list-{{ section.id }}__title">
                     {{ product.title }}
                   </h3>
-                {% endif %}
+                {%- endif -%}
               </div>
 
               {% if product.metafields.custom.short_description != blank %}
@@ -162,9 +166,11 @@
                 </div>
               {% endif %}
 
-              <a href="{{ product.url }}" class="button button--secondary">
-                {{ section.settings.button_text | default: 'Learn more' }}
-              </a>
+              <div class="custom-product-list-{{ section.id }}__cta">
+                <a href="{{ product.url }}" class="button button--secondary">
+                  {{ section.settings.button_text | default: 'Learn more' }}
+                </a>
+              </div>
             </div>
           {% endif %}
         {% endfor %}

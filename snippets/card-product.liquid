@@ -154,43 +154,53 @@
             if product_logo.value != blank
               assign product_logo = product_logo.value
             endif
+            assign has_short_desc = false
+            if card_product.metafields.custom.short_description != blank
+              assign has_short_desc = true
+            endif
           -%}
-          {%- if product_logo != blank -%}
-            <div class="card__product-logo">
-              {{
-                product_logo
-                | image_url: width: 200
-                | image_tag: loading: 'lazy', alt: card_product.title, class: 'product-logo'
-              }}
+          {%- if has_short_desc -%}
+            <div class="card__product-header" aria-labelledby="title-{{ section_id }}-{{ card_product.id }}">
+              {%- if product_logo != blank -%}
+                <div class="card__product-logo" role="img" aria-labelledby="title-{{ section_id }}-{{ card_product.id }}">
+                  {{
+                    product_logo
+                    | image_url: width: 320
+                    | image_tag: loading: 'lazy', alt: card_product.title, class: 'product-logo'
+                  }}
+                </div>
+              {%- else -%}
+                <div class="card__product-icon" role="img" aria-labelledby="title-{{ section_id }}-{{ card_product.id }}">
+                  {{ 'icon-asta-favicon.svg' | inline_asset_content }}
+                </div>
+              {%- endif -%}
+              <h3
+                class="card__heading card__product-title visually-hidden"
+                id="title-{{ section_id }}-{{ card_product.id }}"
+              >
+                {{ card_product.title | escape }}
+              </h3>
             </div>
+          {%- else -%}
+            <h3
+              class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
+              {% if card_product.featured_media or settings.card_style == 'card' %}
+                id="title-{{ section_id }}-{{ card_product.id }}"
+              {% endif %}
+            >
+              <a
+                href="{{ card_product.url }}"
+                id="CardLink-{{ section_id }}-{{ card_product.id }}"
+                class="full-unstyled-link"
+                aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
+              >
+                {{ card_product.title | escape }}
+              </a>
+            </h3>
           {%- endif -%}
           <div class="card-information">
-            {%- if product_logo == blank -%}
-              <h3
-                class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
-                {% if card_product.featured_media or settings.card_style == 'card' %}
-                  id="title-{{ section_id }}-{{ card_product.id }}"
-                {% endif %}
-              >
-                <a
-                  href="{{ card_product.url }}"
-                  id="CardLink-{{ section_id }}-{{ card_product.id }}"
-                  class="full-unstyled-link"
-                  aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
-                >
-                  {{ card_product.title | escape }}
-                </a>
-              </h3>
-            {%- endif -%}
-            {%- comment -%}
-              {%- if show_vendor -%}
-                <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
-                <div class="caption-with-letter-spacing light">{{ card_product.vendor }}</div>
-              {%- endif -%}
-            {%- endcomment -%}
-
-            {%- if card_product.metafields.custom.short_description != blank -%}
-              <div class="card__short-description caption-large light rte">
+            {%- if has_short_desc -%}
+              <div class="card__short-description rte">
                 {{ card_product.metafields.custom.short_description | metafield_tag }}
               </div>
             {%- endif -%}
