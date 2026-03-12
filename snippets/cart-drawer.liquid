@@ -649,6 +649,7 @@
             <p class="totals__total-value">{{ cart.total_price | money_with_currency }}</p>
           </div>
 
+          {% comment %}
           <small class="tax-note caption-large rte">
             {%- if cart.duties_included and cart.taxes_included -%}
               {%- if shop.shipping_policy.body == blank -%}
@@ -688,11 +689,12 @@
               {%- endif -%}
             {%- endif -%}
           </small>
+          {% endcomment %}
         </div>
 
         <!-- CTAs -->
 
-        <div class="cart__ctas" {{ block.shopify_attributes }}>
+        <div class="cart__ctas" style="margin-top: 1.5rem;" {{ block.shopify_attributes }}>
           <button
             type="submit"
             id="CartDrawer-Checkout"
