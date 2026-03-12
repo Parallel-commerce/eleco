@@ -37,6 +37,11 @@
           }
         }
       }
+    },
+    "parallel_comparison_table_eeJhkm": {
+      "settings": {
+        "button_1_label": "Not Available"
+      }
     }
   }
 }
