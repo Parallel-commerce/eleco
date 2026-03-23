@@ -156,12 +156,14 @@
         "subscriptions_app_block_HfcxDY": {
           "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
           "settings": {
+            "widget_style": "card",
+            "widget_style_card_selector": "radio_button",
+            "subscription_policy_url": "",
             "color_text_body": "#6d7175",
             "dividers_color": "#8f8d8d",
-            "bacgkround_color": "#ffffff",
+            "background_color": "#ffffff",
             "border_thickness": 1,
             "border_radius": 0,
-            "subscription_policy_url": "",
             "product": "{{product}}"
           }
         }
@@ -189,13 +191,13 @@
         "left_column_button_text": "Add to cart",
         "left_column_secondary_button_text": "Download free trial",
         "left_column_secondary_button_link": "#free-trial",
-        "left_column_fine_print": "Paid annually, one user installed onto a single Windows PC. Includes VAT.",
+        "left_column_fine_print": "Paid annually. One user installed onto a single Windows PC. Includes VAT.",
         "right_column_title": "Concurrent & SaaS solutions",
         "right_column_show_price": true,
         "right_column_price": "2412",
         "right_column_price_suffix": "year",
         "right_column_paragraph": "",
-        "right_column_fine_print": "Paid annually. Includes VAT",
+        "right_column_fine_print": "Paid annually. Multiple users on one licence. Includes VAT",
         "right_column_primary_button_text": "Contact sales",
         "right_column_primary_button_link": "",
         "right_column_primary_button_embed_url": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/bny88gg9efgeb2bfvrmtaw.html?PageId=f23c7606bd01f11184076045bd131303",
