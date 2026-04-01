@@ -46,6 +46,31 @@
         "button_1_label": "Not Available",
         "button_1_link": "https://shop.elecosoft.com/products/asta-powerproject"
       }
+    },
+    "parallel_testimonials_6ayBHg": {
+      "blocks": {
+        "testimonial_J3UM8L": {
+          "settings": {
+            "name": "Justin Bryan",
+            "title": "Project Manager | Matukat Construction",
+            "testimonial_text": "“The biggest value is clarity” “We know where the project stands - good, bad, or otherwise and that takes the guesswork out of any decisions we make moving forward.”"
+          }
+        },
+        "testimonial_DDjcT4": {
+          "settings": {
+            "name": "Steve Camp",
+            "title": "Executive Vice President | Hill & Wilkinson",
+            "testimonial_text": "“Using Powerproject for new jobs and new schedules has translated into greater detail that is more connected to the actual commitments than would be done in a vacuum.”"
+          }
+        },
+        "testimonial_8LdM6q": {
+          "settings": {
+            "name": "Luis Berumen",
+            "title": "Vice President of Strategy and Innovation | Bartlett Cocke",
+            "testimonial_text": "“Basically, we were looking to democratize the scheduling effort, and we felt like Powerproject would allow us to do that better, more easily, more effectively, and more cost efficiently.”"
+          }
+        }
+      }
     }
   }
 }
