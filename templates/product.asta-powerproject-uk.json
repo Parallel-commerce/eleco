@@ -58,6 +58,7 @@
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Materials",
             "icon": "leather",
@@ -67,6 +68,7 @@
         },
         "collapsible-row-1": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
@@ -76,6 +78,7 @@
         },
         "collapsible-row-2": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Dimensions",
             "icon": "ruler",
@@ -85,6 +88,7 @@
         },
         "collapsible-row-3": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Care Instructions",
             "icon": "heart",
@@ -94,6 +98,7 @@
         },
         "share": {
           "type": "share",
+          "disabled": true,
           "settings": {
             "share_label": "Share"
           }
@@ -114,7 +119,6 @@
         "collapsible-row-3",
         "share"
       ],
-      "disabled": true,
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "",
@@ -164,7 +168,7 @@
             "background_color": "#ffffff",
             "border_thickness": 1,
             "border_radius": 0,
-            "product": "{{product}}"
+            "product": "asta-powerproject"
           }
         }
       },
@@ -189,15 +193,15 @@
         "left_column_title": "Annual subscription",
         "left_column_price": "",
         "left_column_button_text": "Add to cart",
-        "left_column_secondary_button_text": "Download free trial",
+        "left_column_secondary_button_text": "",
         "left_column_secondary_button_link": "#free-trial",
         "left_column_fine_print": "One user installed onto a single Windows PC. Paid annually. Includes VAT.",
-        "right_column_title": "Concurrent & SaaS solutions",
-        "right_column_show_price": true,
-        "right_column_price": "2412",
-        "right_column_price_suffix": "year",
+        "right_column_title": "",
+        "right_column_show_price": false,
+        "right_column_price": "",
+        "right_column_price_suffix": "",
         "right_column_paragraph": "",
-        "right_column_fine_print": "Multiple users and devices share one licence. Paid annually. Includes VAT.",
+        "right_column_fine_print": "",
         "right_column_primary_button_text": "Contact sales",
         "right_column_primary_button_link": "",
         "right_column_primary_button_embed_url": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/bny88gg9efgeb2bfvrmtaw.html?PageId=f23c7606bd01f11184076045bd131303",
@@ -236,6 +240,7 @@
         "highlight_kcCRDW",
         "highlight_kmzQJf"
       ],
+      "disabled": true,
       "name": "Highlights",
       "settings": {
         "color_scheme": "",
@@ -291,6 +296,7 @@
         "feature_item_eVF6yn",
         "feature_item_mCNTLb"
       ],
+      "disabled": true,
       "name": "Image with features",
       "settings": {
         "image": "shopify://shop_images/Powerproject_Overview.png",
@@ -357,6 +363,7 @@
         "feature_item_gVYYUV",
         "feature_item_a4YiiR"
       ],
+      "disabled": true,
       "name": "Image with features",
       "settings": {
         "image": "shopify://shop_images/Powerproject_Overview_2.png",
@@ -423,6 +430,7 @@
         "feature_item_Wp9bXU",
         "feature_item_prUy3i"
       ],
+      "disabled": true,
       "name": "Image with features",
       "settings": {
         "image": "shopify://shop_images/Vision_Overview_4.png",
@@ -484,6 +492,7 @@
         "award_icon_LXKmTV",
         "richtext_LJNcig"
       ],
+      "disabled": true,
       "name": "Award Banner",
       "settings": {
         "background_image": "shopify://shop_images/team.jpg",
@@ -573,6 +582,7 @@
         "accordion_item_M7z9KA",
         "accordion_item_VxNne6"
       ],
+      "disabled": true,
       "name": "Two-Column Accordion",
       "settings": {
         "heading": "Better project outcomes for every team",
@@ -621,6 +631,7 @@
         "testimonial_DDjcT4",
         "testimonial_8LdM6q"
       ],
+      "disabled": true,
       "name": "Testimonials",
       "settings": {
         "heading": "Find out why our customers are glad they met us",
@@ -710,6 +721,7 @@
         "logo_b9MxCR",
         "logo_kAFwTM"
       ],
+      "disabled": true,
       "name": "Logo Block",
       "settings": {
         "color_scheme": "",
@@ -761,6 +773,7 @@
         "video_item_qFpjwc",
         "video_item_cfdDnt"
       ],
+      "disabled": true,
       "name": "Three Column Video",
       "settings": {
         "heading": "",
@@ -928,6 +941,7 @@
         "faq_item_mDbcdE",
         "faq_item_FbD6cb"
       ],
+      "disabled": true,
       "name": "FAQ Accordion",
       "settings": {
         "heading": "Questions? We have answers.",
@@ -1096,6 +1110,7 @@
         "comparison_row_DbzVPR",
         "comparison_row_tRBXeX"
       ],
+      "disabled": true,
       "name": "Comparison Table",
       "settings": {
         "heading": "Compare products",
@@ -1184,6 +1199,7 @@
         "resource_link_VzrFGt",
         "resource_link_tU7bVJ"
       ],
+      "disabled": true,
       "name": "Support CTA",
       "settings": {
         "heading": "Asta Enhanced Support",
@@ -1267,6 +1283,7 @@
         "embed_HGNRDr",
         "embed_6VLxN3"
       ],
+      "disabled": true,
       "custom_css": [],
       "name": "Market Embed",
       "settings": {
@@ -1294,6 +1311,7 @@
       "block_order": [
         "info_block_39Mnd3"
       ],
+      "disabled": true,
       "name": "Information",
       "settings": {
         "color_scheme": "",
