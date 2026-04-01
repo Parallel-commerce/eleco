@@ -1,0 +1,1333 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Materials",
+            "icon": "leather",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "truck",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Dimensions",
+            "icon": "ruler",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care Instructions",
+            "icon": "heart",
+            "content": "",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "collapsible-row-2",
+        "collapsible-row-3",
+        "share"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "parallel_custom_product_info_i3cpfR": {
+      "type": "parallel-custom-product-info",
+      "blocks": {
+        "subscriptions_app_block_HfcxDY": {
+          "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
+          "settings": {
+            "widget_style": "card",
+            "widget_style_card_selector": "radio_button",
+            "subscription_policy_url": "",
+            "color_text_body": "#6d7175",
+            "dividers_color": "#8f8d8d",
+            "background_color": "#ffffff",
+            "border_thickness": 1,
+            "border_radius": 0,
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "subscriptions_app_block_HfcxDY"
+      ],
+      "name": "Custom Product Info",
+      "settings": {
+        "color_scheme": "",
+        "anchor_id": "",
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "hero_title": "Plan with certainty, build with confidence",
+        "hero_subtitle": "Take control with integrative tools that gives teams the power to master project timelines",
+        "hero_image": "shopify://shop_images/Asta_Powerproject_109e16a4-29a3-4d9b-b8d5-165a549f2bf1.svg",
+        "hero_background_color": "#2a303a",
+        "hero_text_color": "#ffffff",
+        "column_background_color": "#fff5f5",
+        "divider_color": "#ff0000",
+        "primary_button_color": "#e22412",
+        "primary_button_text_color": "#ffffff",
+        "left_column_title": "Annual subscription",
+        "left_column_price": "",
+        "left_column_button_text": "Add to cart",
+        "left_column_secondary_button_text": "Download free trial",
+        "left_column_secondary_button_link": "#free-trial",
+        "left_column_fine_print": "One user installed onto a single Windows PC. Paid annually. Includes VAT.",
+        "right_column_title": "Concurrent & SaaS solutions",
+        "right_column_show_price": true,
+        "right_column_price": "2412",
+        "right_column_price_suffix": "year",
+        "right_column_paragraph": "",
+        "right_column_fine_print": "Multiple users and devices share one licence. Paid annually. Includes VAT.",
+        "right_column_primary_button_text": "Contact sales",
+        "right_column_primary_button_link": "",
+        "right_column_primary_button_embed_url": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/bny88gg9efgeb2bfvrmtaw.html?PageId=f23c7606bd01f11184076045bd131303",
+        "right_column_secondary_button_text": "Book a demo",
+        "right_column_secondary_button_link": "",
+        "right_column_secondary_button_embed_url": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/a56yuwheefgeb3ztjwvsuq.html?PageId=53b29e03de01f11184077ced8d6becb9"
+      }
+    },
+    "parallel_highlights_yTAfJh": {
+      "type": "parallel-highlights",
+      "blocks": {
+        "highlight_KdRTH8": {
+          "type": "highlight",
+          "settings": {
+            "highlight": "+100k",
+            "text": "professionals worldwide"
+          }
+        },
+        "highlight_kcCRDW": {
+          "type": "highlight",
+          "settings": {
+            "highlight": "70+",
+            "text": "Countries use Asta"
+          }
+        },
+        "highlight_kmzQJf": {
+          "type": "highlight",
+          "settings": {
+            "highlight": "90%",
+            "text": "top 100 UK contractors choose us"
+          }
+        }
+      },
+      "block_order": [
+        "highlight_KdRTH8",
+        "highlight_kcCRDW",
+        "highlight_kmzQJf"
+      ],
+      "name": "Highlights",
+      "settings": {
+        "color_scheme": "",
+        "highlight_color": "#e85a47",
+        "anchor_id": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "parallel_image_with_features_hVbtUt": {
+      "type": "parallel-image-with-features",
+      "blocks": {
+        "heading_GGwQtN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Build trust with predictable outcomes",
+            "heading_size": "h1"
+          }
+        },
+        "feature_item_CkdfUp": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Real-time progress tracking"
+          }
+        },
+        "feature_item_efdUrz": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Critical path analysis"
+          }
+        },
+        "feature_item_eVF6yn": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Unlimited coded logic"
+          }
+        },
+        "feature_item_mCNTLb": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Same reporting tools as major contractors"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GGwQtN",
+        "feature_item_CkdfUp",
+        "feature_item_efdUrz",
+        "feature_item_eVF6yn",
+        "feature_item_mCNTLb"
+      ],
+      "name": "Image with features",
+      "settings": {
+        "image": "shopify://shop_images/Powerproject_Overview.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "anchor_id": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "text_padding_left": 32,
+        "text_padding_right": 16
+      }
+    },
+    "parallel_image_with_features_pYtxX7": {
+      "type": "parallel-image-with-features",
+      "blocks": {
+        "heading_qDbMj8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get more done, faster",
+            "heading_size": "h1"
+          }
+        },
+        "feature_item_8agkWh": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Robust but easy to use"
+          }
+        },
+        "feature_item_iRNHQw": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Track and manage delays"
+          }
+        },
+        "feature_item_gVYYUV": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Streamlined schedule creation"
+          }
+        },
+        "feature_item_a4YiiR": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Simplied resources and cost scheduled management"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qDbMj8",
+        "feature_item_8agkWh",
+        "feature_item_iRNHQw",
+        "feature_item_gVYYUV",
+        "feature_item_a4YiiR"
+      ],
+      "name": "Image with features",
+      "settings": {
+        "image": "shopify://shop_images/Powerproject_Overview_2.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "anchor_id": "#",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "text_padding_left": 16,
+        "text_padding_right": 32
+      }
+    },
+    "parallel_image_with_features_UVMBrD": {
+      "type": "parallel-image-with-features",
+      "blocks": {
+        "heading_EU6MmW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Know where you stand – always",
+            "heading_size": "h1"
+          }
+        },
+        "feature_item_JY6MwN": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Proactive scenario models"
+          }
+        },
+        "feature_item_FgNLUc": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Planned vs actual costs"
+          }
+        },
+        "feature_item_Wp9bXU": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Extensive schedule capabilities"
+          }
+        },
+        "feature_item_prUy3i": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Automated compliance checks"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EU6MmW",
+        "feature_item_JY6MwN",
+        "feature_item_FgNLUc",
+        "feature_item_Wp9bXU",
+        "feature_item_prUy3i"
+      ],
+      "name": "Image with features",
+      "settings": {
+        "image": "shopify://shop_images/Vision_Overview_4.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "anchor_id": "#",
+        "padding_top": 0,
+        "padding_bottom": 32,
+        "text_padding_left": 32,
+        "text_padding_right": 16
+      }
+    },
+    "parallel_award_banner_C3twkW": {
+      "type": "parallel-award-banner",
+      "blocks": {
+        "award_icon_wWHCpq": {
+          "type": "award_icon",
+          "settings": {
+            "icon_image": "shopify://shop_images/Project_Management_Software_of_the_year.png",
+            "icon_alt": "Award icon",
+            "mobile_icon_image": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
+            "mobile_icon_alt": ""
+          }
+        },
+        "award_icon_VzWygn": {
+          "type": "award_icon",
+          "settings": {
+            "icon_image": "shopify://shop_images/Project_Management_Software_of_the_year.png",
+            "icon_alt": "Award icon",
+            "mobile_icon_image": "shopify://shop_images/sparklayer_black.svg",
+            "mobile_icon_alt": ""
+          }
+        },
+        "award_icon_LXKmTV": {
+          "type": "award_icon",
+          "settings": {
+            "icon_alt": "Award icon",
+            "mobile_icon_alt": ""
+          }
+        },
+        "richtext_LJNcig": {
+          "type": "richtext",
+          "settings": {
+            "text": "<h1>Voted best <span style=\"text-decoration:underline\">Project Management </span>Software</h1>"
+          }
+        }
+      },
+      "block_order": [
+        "award_icon_wWHCpq",
+        "award_icon_VzWygn",
+        "award_icon_LXKmTV",
+        "richtext_LJNcig"
+      ],
+      "name": "Award Banner",
+      "settings": {
+        "background_image": "shopify://shop_images/team.jpg",
+        "image_height": "medium",
+        "min_height": 400,
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "content_alignment": "left",
+        "text_alignment": "left",
+        "content_width": 50,
+        "text_color": "#ffffff",
+        "mobile_text_color": "#000000",
+        "underline_color": "#ff5a3c",
+        "anchor_id": "",
+        "icon_size": 100,
+        "hide_logos_mobile": true
+      }
+    },
+    "parallel_two_column_accordion_xi4PpU": {
+      "type": "parallel-two-column-accordion",
+      "blocks": {
+        "accordion_item_AX7zXQ": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Contractors",
+            "content_1": "<p>Powerful critical path analysis and precise scheduling.</p>",
+            "content_2": "<p>Comprehensive resource and cost management, early identification of budget issues.</p>",
+            "content_3": "<p>Detailed history of project changes to support claims and resolve disputes.</p>",
+            "content_4": "<p>Produce high-quality outputs for tender submissions to help win work with professional schedules.</p>",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_htnMQm": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Subcontractors",
+            "content_1": "",
+            "content_2": "<p>Simple functionality allows subcontractors to engaging directly with project data.</p>",
+            "content_3": "<p>Clear task visibility and filters allow for visual clarity across complete programme of works.</p>",
+            "content_4": "<p>Mobile progress tracking with Asta Siteprogress allows for on-site updates.</p>",
+            "content_5": "<p>Free <a href=\"/products/project-viewer\" title=\"Project Viewer\">project viewer</a> for seamless communication, relevant to each project</p>",
+            "content_6": ""
+          }
+        },
+        "accordion_item_EDULcY": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Designers and Consultants",
+            "content_1": "<p><a href=\"/products/asta-powerproject-4d\" title=\"Asta Powerproject 4D\">BIM integration</a> and 4D planning enables consultants to combine 3D models with scheduling in one solution.</p>",
+            "content_2": "<p>Built-in scenario analysis and risk management tools to explore optimal project outcomes.</p>",
+            "content_3": "<p>Schedule Quality Checks against plans to ensure compliance with industry or company standards.</p>",
+            "content_4": "<p>Customisable reports for clear communication and collaboration with clients, contractors and stakeholders.</p>",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_M7z9KA": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Residential Construction",
+            "content_1": "<p>Repeated tasks and plot management for effective planning and procurement.</p>",
+            "content_2": "<p>Line of balance for multi-plot developments, creating a smooth workflow between trades.</p>",
+            "content_3": "<p>Template-based planning allows for consistency across planning and scheduling.</p>",
+            "content_4": "<p><a href=\"/products/asta-siteprogress\" title=\"Asta SiteProgress\">Asta Siteprogress</a> mobile allows for photo uploads on-site creating an immediate picture of progress.</p>",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_VxNne6": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Clients and Asset Owners",
+            "content_1": "<p>Real-time visibility across entire portfolios with <a href=\"/products/business-intelligence\" title=\"Business Intelligence\">BI integration</a> for strategic reporting.</p>",
+            "content_2": "<p>Progress tracking against baselines means clients receive transparent reporting, with a full audit trail.</p>",
+            "content_3": "<p>Evidence-based change management and impact documentation increases accountability.</p>",
+            "content_4": "<p>Rock-solid records of progress provide robust evidence for any dispute resolution.</p>",
+            "content_5": "",
+            "content_6": ""
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_AX7zXQ",
+        "accordion_item_htnMQm",
+        "accordion_item_EDULcY",
+        "accordion_item_M7z9KA",
+        "accordion_item_VxNne6"
+      ],
+      "name": "Two-Column Accordion",
+      "settings": {
+        "heading": "Better project outcomes for every team",
+        "heading_size": "h1",
+        "anchor_id": "#capabilities",
+        "padding_top": 72,
+        "padding_bottom": 60
+      }
+    },
+    "parallel_testimonials_6ayBHg": {
+      "type": "parallel-testimonials",
+      "blocks": {
+        "testimonial_J3UM8L": {
+          "type": "testimonial",
+          "name": "Testimonial - Amy",
+          "settings": {
+            "name": "Amy Griffiths",
+            "title": "Project Manager | Kier Group",
+            "country_flag": "",
+            "testimonial_text": "\"At every point we were being adaptive, reacting to changes and opportunities. Asta Powerproject allowed us to ask ... and have subscontractors feed into the discussion. As a result, we maintained our critical path and smooth workflow between trades.\""
+          }
+        },
+        "testimonial_DDjcT4": {
+          "type": "testimonial",
+          "name": "Testimonial - Aldwyn",
+          "settings": {
+            "name": "Aldwyn Payne",
+            "title": "Planning Manager | HG Construction",
+            "country_flag": "",
+            "testimonial_text": "\"We're finishing some projects many months ahead of programme, which is excellent achievement given their complexity. Powerproject has been a major contributor to this success.\""
+          }
+        },
+        "testimonial_8LdM6q": {
+          "type": "testimonial",
+          "name": "Testimonial - Bengisu",
+          "settings": {
+            "name": "Bengisu Uygur",
+            "title": "Planning Manager | MiCiM Ltd",
+            "country_flag": "",
+            "testimonial_text": "\"MiCiM combines extensive engineering and construction know-how with the latest technology to implement pragmatic solutions, and Asta Powerproject is central to the efficiency and effectiveness of our operations.\""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_J3UM8L",
+        "testimonial_DDjcT4",
+        "testimonial_8LdM6q"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "heading": "Find out why our customers are glad they met us",
+        "subheading": "",
+        "heading_size": "h1",
+        "header_alignment": "center",
+        "header_spacing": 40,
+        "color_scheme": "",
+        "anchor_id": "reviews",
+        "padding_top": 48,
+        "padding_bottom": 36
+      }
+    },
+    "parallel_logo_block_hHLWpL": {
+      "type": "parallel-logo-block",
+      "blocks": {
+        "logo_WNf64B": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/mace-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_4YUiLG": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/john-moores-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_itwWmj": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/kier-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_XeHnR7": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/galliford-try-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_hWRjrM": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/bam-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_b9MxCR": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/mccarthy-stone-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_kAFwTM": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/seddon-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "logo_WNf64B",
+        "logo_4YUiLG",
+        "logo_itwWmj",
+        "logo_XeHnR7",
+        "logo_hWRjrM",
+        "logo_b9MxCR",
+        "logo_kAFwTM"
+      ],
+      "name": "Logo Block",
+      "settings": {
+        "color_scheme": "",
+        "title": "",
+        "heading_size": "h1",
+        "title_alignment": "center",
+        "title_spacing": 24,
+        "block_alignment": "center",
+        "logo_width": 150,
+        "logo_spacing": 40,
+        "logo_opacity": 100,
+        "logo_hover_opacity": 100,
+        "mobile_columns": "2",
+        "anchor_id": "",
+        "padding_top": 28,
+        "padding_bottom": 40
+      }
+    },
+    "parallel_video_three_column_BTPQnC": {
+      "type": "parallel-video-three-column",
+      "blocks": {
+        "video_item_NYWJta": {
+          "type": "video_item",
+          "settings": {
+            "video": "shopify://files/videos/Richard Easton, Senior Planner, Higgins Partnership.mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "video_item_qFpjwc": {
+          "type": "video_item",
+          "settings": {
+            "video": "shopify://files/videos/Glopet Izidug, Project Planner, Dornan Engineering Services (1).mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "video_item_cfdDnt": {
+          "type": "video_item",
+          "settings": {
+            "video": "shopify://files/videos/James Horton, Senior Planning Manager, MACE Construction (1).mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_item_NYWJta",
+        "video_item_qFpjwc",
+        "video_item_cfdDnt"
+      ],
+      "name": "Three Column Video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "full_width": false,
+        "color_scheme": "",
+        "anchor_id": "reviews",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "parallel_custom_product_list_M7EFHt": {
+      "type": "parallel-custom-product-list",
+      "blocks": {
+        "product_9Fqg3n": {
+          "type": "product",
+          "settings": {
+            "product": "asta-vision"
+          }
+        },
+        "product_aeUw4W": {
+          "type": "product",
+          "settings": {
+            "product": "asta-siteprogress"
+          }
+        },
+        "product_w7pAX3": {
+          "type": "product",
+          "settings": {
+            "product": "asta-estimate"
+          }
+        },
+        "product_W6X3YF": {
+          "type": "product",
+          "settings": {
+            "product": "asta-powerproject-4d"
+          }
+        },
+        "product_3Mi7Bg": {
+          "type": "product",
+          "settings": {
+            "product": "asta-vision-live"
+          }
+        },
+        "product_Hi9e7N": {
+          "type": "product",
+          "settings": {
+            "product": "asta-enterprise"
+          }
+        },
+        "product_dMQG99": {
+          "type": "product",
+          "settings": {
+            "product": "business-intelligence"
+          }
+        },
+        "product_TQGH9D": {
+          "type": "product",
+          "settings": {
+            "product": "project-viewer"
+          }
+        }
+      },
+      "block_order": [
+        "product_9Fqg3n",
+        "product_aeUw4W",
+        "product_w7pAX3",
+        "product_W6X3YF",
+        "product_3Mi7Bg",
+        "product_Hi9e7N",
+        "product_dMQG99",
+        "product_TQGH9D"
+      ],
+      "disabled": true,
+      "name": "Custom Product List",
+      "settings": {
+        "heading": "Asta Integrations",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "button_text": "Learn more",
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-2",
+        "anchor_id": "integrations",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "parallel_faq_accordion_3Vq7Fm": {
+      "type": "parallel-faq-accordion",
+      "blocks": {
+        "faq_item_QVNkTB": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Who is Asta Powerproject for?",
+            "answer": "<p>Asta Powerproject is designed to scale. It’s used by large £1B enterprises as well as smaller independent contractors and it’s also widely adopted across industries beyond construction for effective project planning and management.</p>"
+          }
+        },
+        "faq_item_bVkqMa": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What devices can I install Asta Powerproject on?",
+            "answer": "<p>The software is available for download on Windows PC. There is a separately licensed companion app for use on iOS and Android.</p>"
+          }
+        },
+        "faq_item_jARANR": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can it be used on a Macbook?",
+            "answer": "<p>Yes. By upgrading to Asta Powerproject SaaS subscription, you can access it seamlessly on a Mac.</p>"
+          }
+        },
+        "faq_item_bAXDXk": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is the difference between a single and a concurrent licence?",
+            "answer": "<p>A single licence is tied to one user on one device. </p><p>A concurrent licence allows multiple users to share the same licence across different devices, offering greater flexibility and lowering the cost per user. </p><p>Both options suit businesses of any size, depending on your needs.</p>"
+          }
+        },
+        "faq_item_iLkedR": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Why choose Asta Powerproject over other scheduling tools?",
+            "answer": "<p>Asta Powerproject offers features unique to our user base, offering improved usability, more accurate scheduling and better analytics which are not available in other project management solutions. This helps you to predict, plan, and proactively avoid delays, giving greater certainty and smarter outcomes.</p><p>It is also consistently recognised for being user-friendly, efficient, and cost-effective.</p>"
+          }
+        },
+        "faq_item_3zcwtw": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What language versions are available?",
+            "answer": "<p>Asta Powerproject is available in English (Australia, UK, US versions), Danish, Dutch, Finnish, German, Norwegian, Swedish, French, Polish, Spanish, Italian and Turkish.</p><p>For other languages, please refer to our list of <a href=\"https://elecosoft.com/support/reseller-directory/\" target=\"_blank\" title=\"https://elecosoft.com/support/reseller-directory/\">approved resellers.</a><br/><br/></p>"
+          }
+        },
+        "faq_item_Y8h4bQ": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can stakeholders view my project without a licence?",
+            "answer": "<p>Yes. Stakeholders can download our free ProjectViewer to access your project without requiring a licence.</p>"
+          }
+        },
+        "faq_item_mDbcdE": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can a single licence be transferred to another colleague or device?",
+            "answer": "<p>Yes. Users can follow the steps within the software to move a licence between a device. If you need to cancel a licence off a device for which you no longer have access, our support team can do this remotely; contact us at support@elecosoft.com.</p>"
+          }
+        },
+        "faq_item_FbD6cb": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What support and training are available?",
+            "answer": "<p>We provide comprehensive in-house training solutions for new users and more advanced sessions for experienced teams, ensuring everyone can get the most out of Asta Powerproject.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_QVNkTB",
+        "faq_item_bVkqMa",
+        "faq_item_jARANR",
+        "faq_item_bAXDXk",
+        "faq_item_iLkedR",
+        "faq_item_3zcwtw",
+        "faq_item_Y8h4bQ",
+        "faq_item_mDbcdE",
+        "faq_item_FbD6cb"
+      ],
+      "name": "FAQ Accordion",
+      "settings": {
+        "heading": "Questions? We have answers.",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_spacing": 40,
+        "item_gap": 12,
+        "item_padding": 18,
+        "border_radius": 12,
+        "question_font_size": 16,
+        "color_scheme": "",
+        "item_background": "#f6f7f7",
+        "item_background_active": "#fce8e6",
+        "anchor_id": "faqs",
+        "padding_top": 56,
+        "padding_bottom": 36
+      }
+    },
+    "parallel_comparison_table_eeJhkm": {
+      "type": "parallel-comparison-table",
+      "blocks": {
+        "comparison_row_9B77nj": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Task of work per file",
+            "column_2_type": "text",
+            "column_2_text": "250",
+            "column_3_type": "text",
+            "column_3_text": "Unlimited"
+          }
+        },
+        "comparison_row_hhDyjA": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Task per line of work",
+            "column_2_type": "text",
+            "column_2_text": "10",
+            "column_3_type": "text",
+            "column_3_text": "Unlimited"
+          }
+        },
+        "comparison_row_3E8i6B": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Overlapping tasks",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_myPVe9": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Baseline comparison and analysis",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_rJAtXQ": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Reschedule tasks within the project",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_CPiBRt": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Tasks can be set to ASAP or ALAP",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_GLxUe4": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Float and negative float path calculations",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_n9aVEq": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Edit view based presentation",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_ibLjJz": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Depth and colour dependent on certain criteria",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_Fz7EwA": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Formulae to display user definable information",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_nbtjdy": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Intergrates with other Asta software",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_DbzVPR": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Start On or After constraints",
+            "column_2_type": "tick",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_tRBXeX": {
+          "type": "comparison_row",
+          "disabled": true,
+          "settings": {
+            "functionality_text": "A user to issue part of a programme to another user for editing, without causing conflicts within the originating file",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        }
+      },
+      "block_order": [
+        "comparison_row_9B77nj",
+        "comparison_row_hhDyjA",
+        "comparison_row_3E8i6B",
+        "comparison_row_myPVe9",
+        "comparison_row_rJAtXQ",
+        "comparison_row_CPiBRt",
+        "comparison_row_GLxUe4",
+        "comparison_row_n9aVEq",
+        "comparison_row_ibLjJz",
+        "comparison_row_Fz7EwA",
+        "comparison_row_nbtjdy",
+        "comparison_row_DbzVPR",
+        "comparison_row_tRBXeX"
+      ],
+      "name": "Comparison Table",
+      "settings": {
+        "heading": "Compare products",
+        "heading_size": "h1",
+        "heading_spacing": 40,
+        "column_1_title": "Functionality",
+        "column_2_title": "Easyplan",
+        "column_3_title": "Asta Powerproject",
+        "button_1_label": "Learn more",
+        "button_1_link": "shopify://products/easyplan",
+        "button_1_border_color": "#e83f40",
+        "button_1_text_color": "#e83f40",
+        "button_1_hover_text_color": "#ffffff",
+        "button_2_label": "Buy Now",
+        "button_2_action": "add_to_cart",
+        "button_2_link": "shopify://products/easyplan",
+        "button_2_background_color": "#e83f40",
+        "button_2_text_color": "#ffffff",
+        "button_2_hover_background_color": "#d14a32",
+        "button_2_hover_text_color": "#ffffff",
+        "button_spacing": 40,
+        "cell_padding": 4,
+        "border_radius": 8,
+        "header_font_size": 17,
+        "cell_font_size": 15,
+        "color_scheme": "",
+        "header_background": "#f3f4f6",
+        "header_text_color": "#111827",
+        "border_color": "#e5e7eb",
+        "anchor_id": "compare",
+        "padding_top": 64,
+        "padding_bottom": 36
+      }
+    },
+    "parallel_support_cta_RxfB67": {
+      "type": "parallel-support-cta",
+      "blocks": {
+        "resource_link_kEdPjk": {
+          "type": "resource_link",
+          "settings": {
+            "label": "Support portal",
+            "link": ""
+          }
+        },
+        "resource_link_wTwLVG": {
+          "type": "resource_link",
+          "settings": {
+            "label": "Release notes",
+            "link": ""
+          }
+        },
+        "resource_link_y8bPwx": {
+          "type": "resource_link",
+          "settings": {
+            "label": "System requirements",
+            "link": ""
+          }
+        },
+        "resource_link_fRcDdz": {
+          "type": "resource_link",
+          "settings": {
+            "label": "Educational licence",
+            "link": "https://elecosoft.com/products/asta/asta-powerproject/single-education-licence/"
+          }
+        },
+        "resource_link_VzrFGt": {
+          "type": "resource_link",
+          "settings": {
+            "label": "",
+            "link": ""
+          }
+        },
+        "resource_link_tU7bVJ": {
+          "type": "resource_link",
+          "settings": {
+            "label": "View all resources",
+            "link": "https://elecosoft.com/products/asta/asta-powerproject/learn-support/"
+          }
+        }
+      },
+      "block_order": [
+        "resource_link_kEdPjk",
+        "resource_link_wTwLVG",
+        "resource_link_y8bPwx",
+        "resource_link_fRcDdz",
+        "resource_link_VzrFGt",
+        "resource_link_tU7bVJ"
+      ],
+      "name": "Support CTA",
+      "settings": {
+        "heading": "Asta Enhanced Support",
+        "description": "Find comfort in knowing you will be looked after by our industry leading experts. The Asta Enhanced Support package includes technical, installation and activation support if needed, access to our help desk and customer success team to help you get the most out of your Asta projects.",
+        "primary_button_label": "View Enhanced Support",
+        "primary_button_link": "shopify://products/powerproject-premium-support",
+        "primary_button_background": "#e83f40",
+        "primary_button_background_hover": "#d04a35",
+        "primary_button_text": "#ffffff",
+        "secondary_button_label": "Add to cart",
+        "product": "powerproject-premium-support",
+        "secondary_button_link": "shopify://products/powerproject-premium-support",
+        "secondary_button_background": "#ffffff",
+        "secondary_button_background_hover": "#f5f5f5",
+        "secondary_button_text": "#333333",
+        "secondary_button_border": "#cccccc",
+        "background_color": "#2a303a",
+        "text_color": "#ffffff",
+        "resource_background": "#3a3a3a",
+        "resource_background_hover": "#4a4a4a",
+        "resource_border": "#ffffff",
+        "resource_icon_color": "#e83f40",
+        "heading_font_size": 48,
+        "heading_font_weight": "700",
+        "description_font_size": 16,
+        "button_font_size": 16,
+        "resource_font_size": 16,
+        "button_border_radius": 4,
+        "resource_border_radius": 4,
+        "anchor_id": "support",
+        "padding_top": 60,
+        "padding_bottom": 80
+      }
+    },
+    "parallel_market_embed_gGAwgk": {
+      "type": "parallel-market-embed",
+      "blocks": {
+        "embed_kej3bR": {
+          "type": "embed",
+          "name": "Europe",
+          "settings": {
+            "market_identifier": "",
+            "country_code": "",
+            "is_fallback": true,
+            "embed_code": "<script type=\"text/javascript\">var loc = \"https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/\";var cdSurveyCdn = \"https://cdn-eu.clickdimensions.com/web/newformeditor/\";</script>\n<script type=\"text/javascript\" src=\"https://cdn-eu.clickdimensions.com/web/newformeditor/CDWidget.js\"></script>\n<div pageid=\"suogdrytefgdqnztjwvsuq\"></div>"
+          }
+        },
+        "embed_nch6eT": {
+          "type": "embed",
+          "settings": {
+            "market_identifier": "united kingdom",
+            "country_code": "",
+            "is_fallback": false,
+            "embed_code": "<iframe src=\"https://example.com/embed\" width=\"100%\" height=\"100%\" frameborder=\"0\"></iframe>"
+          }
+        },
+        "embed_HGNRDr": {
+          "type": "embed",
+          "name": "UK",
+          "settings": {
+            "market_identifier": "United Kingdom",
+            "country_code": "GB",
+            "is_fallback": false,
+            "embed_code": "<script type=\"text/javascript\">var loc = \"https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/\";var cdSurveyCdn = \"https://cdn-eu.clickdimensions.com/web/newformeditor/\";</script>\n<script type=\"text/javascript\" src=\"https://cdn-eu.clickdimensions.com/web/newformeditor/CDWidget.js\"></script>\n<div pageid=\"1laq6gu7efc0y3weui1vuq\"></div>"
+          }
+        },
+        "embed_6VLxN3": {
+          "type": "embed",
+          "name": "United States",
+          "settings": {
+            "market_identifier": "us",
+            "country_code": "us",
+            "is_fallback": false,
+            "embed_code": "<script src=\"https://js.hsforms.net/forms/embed/23774208.js\" defer></script>\n<div class=\"hs-form-frame\" data-region=\"na1\" data-form-id=\"d02192f6-5226-41f1-af02-2abdedbdf035\" data-portal-id=\"23774208\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "embed_kej3bR",
+        "embed_nch6eT",
+        "embed_HGNRDr",
+        "embed_6VLxN3"
+      ],
+      "custom_css": [],
+      "name": "Market Embed",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "heading_size": "h1",
+        "color_scheme": "scheme-1",
+        "anchor_id": "free-trial",
+        "show_debug_info": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "parallel_information_Ehxmkb": {
+      "type": "parallel-information",
+      "blocks": {
+        "info_block_39Mnd3": {
+          "type": "info_block",
+          "settings": {
+            "heading": "Need a single Education licence?",
+            "text": "<p>To receive an education licence, an authorised officer of the educational establishment can complete this <a href=\"https://elecosoft.com/products/asta/asta-powerproject/single-education-licence/\" title=\"https://elecosoft.com/products/asta/asta-powerproject/single-education-licence/\">form</a> to start the process.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "info_block_39Mnd3"
+      ],
+      "name": "Information",
+      "settings": {
+        "color_scheme": "",
+        "heading_font_size": 24,
+        "heading_font_weight": "700",
+        "text_font_size": 16,
+        "heading_color": "",
+        "text_color": "",
+        "border_color": "#e83f40",
+        "block_spacing": 24,
+        "anchor_id": "",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "parallel_custom_product_info_i3cpfR",
+    "parallel_highlights_yTAfJh",
+    "parallel_image_with_features_hVbtUt",
+    "parallel_image_with_features_pYtxX7",
+    "parallel_image_with_features_UVMBrD",
+    "parallel_award_banner_C3twkW",
+    "parallel_two_column_accordion_xi4PpU",
+    "parallel_testimonials_6ayBHg",
+    "parallel_logo_block_hHLWpL",
+    "parallel_video_three_column_BTPQnC",
+    "parallel_custom_product_list_M7EFHt",
+    "parallel_faq_accordion_3Vq7Fm",
+    "parallel_comparison_table_eeJhkm",
+    "parallel_support_cta_RxfB67",
+    "parallel_market_embed_gGAwgk",
+    "parallel_information_Ehxmkb"
+  ]
+}
