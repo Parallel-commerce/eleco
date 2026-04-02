@@ -213,7 +213,7 @@
 
                   {%- form 'product',
                     product,
-                    id: 'support-cta-product-form',
+                    id: 'product-form-{{ section.id }}',
                     class: 'form',
                     novalidate: 'novalidate',
                     data-type: 'add-to-cart-form'
@@ -229,6 +229,12 @@
                       {% endif %}
                       class="product-variant-id"
                     >
+                    {%- if product.requires_selling_plan -%}
+                      {%- assign default_selling_plan = product.selling_plan_groups.first.selling_plans.first -%}
+                      {%- if default_selling_plan != blank -%}
+                        <input type="hidden" name="selling_plan" value="{{ default_selling_plan.id }}">
+                      {%- endif -%}
+                    {%- endif -%}
                     <button
                       type="submit"
                       name="add"
