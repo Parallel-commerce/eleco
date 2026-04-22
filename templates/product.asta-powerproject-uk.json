@@ -9,6 +9,103 @@
  */
 {
   "sections": {
+    "main_product_custom_F9wTnY": {
+      "type": "main-product-custom",
+      "blocks": {
+        "text_rRtFaG": {
+          "type": "text",
+          "settings": {
+            "text": "Subscription",
+            "text_style": "body"
+          }
+        },
+        "price_HDXkY4": {
+          "type": "price",
+          "settings": {}
+        },
+        "text_pcY3DW": {
+          "type": "text",
+          "settings": {
+            "text": "Billed annually • 1 user • Windows",
+            "text_style": "body"
+          }
+        },
+        "subscriptions_app_block_YTNBAm": {
+          "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
+          "settings": {
+            "widget_style": "card",
+            "widget_style_card_selector": "radio_button",
+            "subscription_policy_url": "",
+            "color_text_body": "#6D7175",
+            "dividers_color": "#8F8D8D",
+            "background_color": "#FFFFFF",
+            "border_thickness": 1,
+            "border_radius": 0,
+            "product": "{{product}}"
+          }
+        },
+        "buy_buttons_gpbtzm": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "quantity_selector_TDkQjp": {
+          "type": "quantity_selector",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "text_rRtFaG",
+        "price_HDXkY4",
+        "text_pcY3DW",
+        "subscriptions_app_block_YTNBAm",
+        "buy_buttons_gpbtzm",
+        "quantity_selector_TDkQjp"
+      ],
+      "name": "Main product custom",
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-3",
+        "left_heading": "Plan with certainty, build with confidence",
+        "left_description": "<p>Take control with integrative tools that give teams the power to master project timelines.</p>",
+        "show_left_check_icons": true,
+        "left_checklist_item_1": "Full feature access from day one",
+        "left_checklist_item_2": "Free updates for the subscription period",
+        "left_checklist_item_3": "Email support included",
+        "left_checklist_item_4": "30-day money-back guarantee",
+        "left_checklist_item_5": "",
+        "left_checklist_item_6": "",
+        "left_text_color": "#ffffff",
+        "left_description_color": "#d1d5db",
+        "left_icon_background_color": "#1f5d46",
+        "left_icon_color": "#72f0ad",
+        "left_column_padding": 56,
+        "left_column_border_radius": 20,
+        "right_color_scheme": "scheme-2",
+        "right_link_label_1": "Download free trial",
+        "right_link_url_1": "",
+        "right_link_label_2": "Contact sales",
+        "right_link_url_2": "",
+        "show_right_price_period": false,
+        "right_price_divisor": 12,
+        "right_price_period_label": "month",
+        "right_column_padding": 36,
+        "right_column_border_radius": 26,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -119,6 +216,7 @@
         "collapsible-row-3",
         "share"
       ],
+      "disabled": true,
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "",
@@ -175,6 +273,7 @@
       "block_order": [
         "subscriptions_app_block_HfcxDY"
       ],
+      "disabled": true,
       "name": "Custom Product Info",
       "settings": {
         "color_scheme": "",
@@ -1329,6 +1428,7 @@
     }
   },
   "order": [
+    "main_product_custom_F9wTnY",
     "main",
     "related-products",
     "parallel_custom_product_info_i3cpfR",
