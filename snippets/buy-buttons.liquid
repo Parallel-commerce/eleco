@@ -56,6 +56,21 @@
           class="product-variant-id"
         >
 
+        {%- if product.requires_selling_plan -%}
+          {%- assign selected_selling_plan = product.selected_or_first_available_variant.selling_plan_allocations.first.selling_plan -%}
+          {%- if selected_selling_plan == blank -%}
+            {%- assign selected_selling_plan = product.selling_plan_groups.first.selling_plans.first -%}
+          {%- endif -%}
+          {%- if selected_selling_plan != blank -%}
+            <input
+              type="hidden"
+              name="selling_plan"
+              value="{{ selected_selling_plan.id }}"
+              class="product-selling-plan-id"
+            >
+          {%- endif -%}
+        {%- endif -%}
+
         {%- if gift_card_recipient_feature_active -%}
           {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
         {%- endif -%}
