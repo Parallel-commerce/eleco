@@ -8,6 +8,8 @@
   - show_badges: {Boolean} Renders 'Sale' and 'Sold Out' tags if the product matches the condition (optional)
   - price_class: {String} Adds a price class to the price element (optional)
   - show_compare_at_price: {Boolean} Renders the compare at price if the product matches the condition (optional)
+  - divide_price_by: {Number} Divides the displayed price by a chosen number before formatting (optional)
+  - price_period_label: {String} Adds a trailing period label such as "month" (optional)
 
   Usage:
   {% render 'price', product: product %}
@@ -26,6 +28,17 @@
   assign price_min = product.price_min
   assign price_max = product.price_max
   assign available = target.available | default: false
+  assign price_divisor = divide_price_by | default: 1 | plus: 0
+  assign show_price_period = false
+  if price_period_label != blank and price_divisor > 0
+    assign show_price_period = true
+    assign price = price | times: 1.0 | divided_by: price_divisor | round
+    assign price_min = price_min | times: 1.0 | divided_by: price_divisor | round
+    assign price_max = price_max | times: 1.0 | divided_by: price_divisor | round
+    if compare_at_price
+      assign compare_at_price = compare_at_price | times: 1.0 | divided_by: price_divisor | round
+    endif
+  endif
   assign money_price = price | money
   assign money_price_min = price_min | money
   assign money_price_max = price_max | money
@@ -50,6 +63,7 @@
       {%- if compare_at_price > price and product.quantity_price_breaks_configured? %} volume-pricing--sale-badge{% endif -%}
       {%- if product.price_varies == false and product.compare_at_price_varies %} price--no-compare{% endif -%}
       {%- if show_badges %} price--show-badge{% endif -%}
+      {%- if show_price_period %} price--with-period{% endif -%}
     "
   >
     <div class="price__container">
@@ -85,8 +99,14 @@
           </span>
         {%- else -%}
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-          <span class="price-item price-item--regular">
-            {{ money_price }}
+          <span class="price-item price-item--regular{% if show_price_period %} price-item--with-period{% endif %}">
+            <span class="price-item__main">{{ money_price }}</span>
+            {%- if show_price_period -%}
+              <span class="price-item__period">
+                <span class="price-item__period-separator">/</span>
+                <span class="price-item__period-label">{{ price_period_label }}</span>
+              </span>
+            {%- endif -%}
           </span>
         {%- endif -%}
       </div>
@@ -104,8 +124,14 @@
           </span>
         {%- endunless -%}
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
-        <span class="price-item price-item--sale price-item--last">
-          {{ money_price }}
+        <span class="price-item price-item--sale price-item--last{% if show_price_period %} price-item--with-period{% endif %}">
+          <span class="price-item__main">{{ money_price }}</span>
+          {%- if show_price_period -%}
+            <span class="price-item__period">
+              <span class="price-item__period-separator">/</span>
+              <span class="price-item__period-label">{{ price_period_label }}</span>
+            </span>
+          {%- endif -%}
         </span>
       </div>
       {%- if product.selected_or_first_available_variant.unit_price_measurement -%}

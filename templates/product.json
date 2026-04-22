@@ -183,14 +183,14 @@
         "hero_text_color": "#ffffff",
         "left_column_title": "Annual subscription",
         "left_column_price": "",
-        "left_column_price_label": "Prices start from £122.5 / month",
+        "left_column_price_label": "Prices start from \u00a3122.5 / month",
         "left_column_button_text": "Add to cart",
         "left_column_secondary_button_text": "Download free trial",
         "left_column_secondary_button_link": "",
         "left_column_fine_print": "Paid annually, one user installed onto a single Windows PC. Includes VAT.",
         "right_column_title": "Concurrent & SaaS solutions",
         "right_column_price": "",
-        "right_column_price_label": "Prices start from £2412 / year",
+        "right_column_price_label": "Prices start from \u00a32412 / year",
         "right_column_primary_button_text": "Contact sales",
         "right_column_primary_button_link": "",
         "right_column_secondary_button_text": "Book a demo",
@@ -1041,10 +1041,134 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "main_product_custom": {
+      "type": "main-product-custom",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Materials",
+            "icon": "leather",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "truck",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Dimensions",
+            "icon": "ruler",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care Instructions",
+            "icon": "heart",
+            "content": "",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "collapsible-row-2",
+        "collapsible-row-3",
+        "share"
+      ],
+      "disabled": false,
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      },
+      "name": "Main product custom"
     }
   },
   "order": [
     "main",
+    "main_product_custom",
     "related-products",
     "parallel_custom_product_info_i3cpfR",
     "parallel_image_with_features_hVbtUt",
