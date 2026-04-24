@@ -112,7 +112,7 @@
         "column_QVkQnW": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/APP_illustration_overview.png",
+            "image": "shopify://shop_images/APP_Illustration_overview_c598e464-bcf6-4db3-81dd-28288e68a4a5.png",
             "title": "Gantt Chart Scheduling",
             "text": "<p>Extensive schedule capabilities to visualise dependencies, baselines and critical path across every task and team.</p>",
             "link_label": "",
@@ -122,7 +122,7 @@
         "column_D4NcPk": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/APP_illustration_overview_2.png",
+            "image": "shopify://shop_images/APP_Illustration_overview_2_883548d6-ab5f-4319-83bb-ebe4f571e0bf.png",
             "title": "Cost Forecasting and Allocation",
             "text": "<p>Track planned verse actual spend in real time and mitigate delays before they happen.</p>",
             "link_label": "",
@@ -132,7 +132,7 @@
         "column_7EwNze": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/APP_illustration_overview_3.png",
+            "image": "shopify://shop_images/APP_Illustration_overview_3_f25259d3-8810-4c7c-be94-1d72505ca1e0.png",
             "title": "Resource Planning",
             "text": "<p>Manage all available resources to maximise efficiency and manage planned vs actual completion time against deadline.</p>",
             "link_label": "",
