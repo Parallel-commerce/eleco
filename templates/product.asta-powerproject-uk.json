@@ -397,13 +397,6 @@
           "type": "quantity_selector",
           "settings": {}
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
         "description": {
           "type": "description",
           "settings": {}
@@ -463,7 +456,6 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons",
         "description",
         "collapsible-row-0",
         "collapsible-row-1",
@@ -505,44 +497,6 @@
         "show_rating": false,
         "padding_top": 36,
         "padding_bottom": 28
-      }
-    },
-    "parallel_custom_product_info_i3cpfR": {
-      "type": "parallel-custom-product-info",
-      "disabled": true,
-      "name": "Custom Product Info",
-      "settings": {
-        "color_scheme": "",
-        "anchor_id": "",
-        "padding_top": 0,
-        "padding_bottom": 36,
-        "hero_title": "Plan with certainty, build with confidence",
-        "hero_subtitle": "Take control with integrative tools that gives teams the power to master project timelines",
-        "hero_image": "shopify://shop_images/Asta_Powerproject_109e16a4-29a3-4d9b-b8d5-165a549f2bf1.svg",
-        "hero_background_color": "#2a303a",
-        "hero_text_color": "#ffffff",
-        "column_background_color": "#fff5f5",
-        "divider_color": "#ff0000",
-        "primary_button_color": "#e22412",
-        "primary_button_text_color": "#ffffff",
-        "left_column_title": "Annual subscription",
-        "left_column_price": "",
-        "left_column_button_text": "Add to cart",
-        "left_column_secondary_button_text": "",
-        "left_column_secondary_button_link": "#free-trial",
-        "left_column_fine_print": "One user installed onto a single Windows PC. Paid annually. Includes VAT.",
-        "right_column_title": "",
-        "right_column_show_price": false,
-        "right_column_price": "",
-        "right_column_price_suffix": "",
-        "right_column_paragraph": "",
-        "right_column_fine_print": "",
-        "right_column_primary_button_text": "Contact sales",
-        "right_column_primary_button_link": "",
-        "right_column_primary_button_embed_url": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/bny88gg9efgeb2bfvrmtaw.html?PageId=f23c7606bd01f11184076045bd131303",
-        "right_column_secondary_button_text": "Book a demo",
-        "right_column_secondary_button_link": "",
-        "right_column_secondary_button_embed_url": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/a56yuwheefgeb3ztjwvsuq.html?PageId=53b29e03de01f11184077ced8d6becb9"
       }
     },
     "parallel_highlights_yTAfJh": {
@@ -1478,7 +1432,6 @@
     "parallel_faq_accordion_3Vq7Fm",
     "main",
     "related-products",
-    "parallel_custom_product_info_i3cpfR",
     "parallel_highlights_yTAfJh",
     "parallel_image_with_features_hVbtUt",
     "parallel_image_with_features_pYtxX7",
