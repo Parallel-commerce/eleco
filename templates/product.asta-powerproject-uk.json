@@ -15,7 +15,7 @@
         "text_rRtFaG": {
           "type": "text",
           "settings": {
-            "text": "Subscription",
+            "text": "Annual Subscription",
             "text_style": "body"
           }
         },
@@ -26,7 +26,7 @@
         "text_pcY3DW": {
           "type": "text",
           "settings": {
-            "text": "Billed annually • 1 user • Windows PC",
+            "text": "Billed annually • 1 user per licence • Windows PC",
             "text_style": "body"
           }
         },
@@ -72,7 +72,7 @@
         "left_description": "",
         "show_left_check_icons": true,
         "left_checklist_item_1": "Full feature access from day one",
-        "left_checklist_item_2": "Access immediately and get started",
+        "left_checklist_item_2": "Get started instantly",
         "left_checklist_item_3": "",
         "left_checklist_item_4": "",
         "left_checklist_item_5": "",
@@ -112,7 +112,7 @@
         "column_QVkQnW": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Powerproject_Overview_2.png",
+            "image": "shopify://shop_images/APP_illustration_overview.png",
             "title": "Gantt Chart Scheduling",
             "text": "<p>Extensive schedule capabilities to visualise dependencies, baselines and critical path across every task and team.</p>",
             "link_label": "",
@@ -122,7 +122,7 @@
         "column_D4NcPk": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Powerproject_Overview.png",
+            "image": "shopify://shop_images/APP_illustration_overview_2.png",
             "title": "Cost Forecasting and Allocation",
             "text": "<p>Track planned verse actual spend in real time and mitigate delays before they happen.</p>",
             "link_label": "",
@@ -132,7 +132,7 @@
         "column_7EwNze": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Easyplan_Overview_1.png",
+            "image": "shopify://shop_images/APP_illustration_overview_3.png",
             "title": "Resource Planning",
             "text": "<p>Manage all available resources to maximise efficiency and manage planned vs actual completion time against deadline.</p>",
             "link_label": "",
@@ -263,43 +263,29 @@
         "faq_item_QVNkTB": {
           "type": "faq_item",
           "settings": {
-            "question": "What is the difference between the Trial and paid version?",
-            "answer": ""
+            "question": "What is the difference between the trial and paid version?",
+            "answer": "<p>The free trial gives you full access to every feature in the software for 14 days. No credit card is required, no locked features.</p>"
           }
         },
         "faq_item_iLkedR": {
           "type": "faq_item",
           "settings": {
             "question": "How do I access the software once I purchase?",
-            "answer": "<p>Our digital software allows for you to access </p>"
+            "answer": "<p>Our digital software allows for you to access the software instantly. You will receive an email walking you through the steps. You can be up and running within just a few minutes. </p>"
+          }
+        },
+        "faq_item_d8Pe8E": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is included in the enhanced support upgrade?",
+            "answer": "<p>Find comfort knowing you will be looked after every step of the way. </p><p>You will receive access to our trained product specialists including technical, installation and activation support in needed. </p><p>We constantly tailor our approach to support you and your business with a 99% ticket resolution within 6 hours.</p>"
           }
         },
         "faq_item_FbD6cb": {
           "type": "faq_item",
           "settings": {
             "question": "How do I cancel my subscription?",
-            "answer": "<p>We provide comprehensive in-house training solutions for new users and more advanced sessions for experienced teams, ensuring everyone can get the most out of Asta Powerproject.</p>"
-          }
-        },
-        "faq_item_mDbcdE": {
-          "type": "faq_item",
-          "settings": {
-            "question": "Can a single licence be transferred to another colleague or device?",
-            "answer": "<p>Yes. Users can follow the steps within the software to move a licence between a device. If you need to cancel a licence off a device for which you no longer have access, our support team can do this remotely; contact us at support@elecosoft.com.</p>"
-          }
-        },
-        "faq_item_jARANR": {
-          "type": "faq_item",
-          "settings": {
-            "question": "Can it be used on a Macbook?",
-            "answer": "<p>Yes. By upgrading to Asta Powerproject SaaS subscription, you can access it seamlessly on a Mac.</p>"
-          }
-        },
-        "faq_item_bVkqMa": {
-          "type": "faq_item",
-          "settings": {
-            "question": "What devices can I install Asta Powerproject on?",
-            "answer": "<p>The software is available for download on Windows PC. There is a separately licensed companion app for use on iOS and Android.</p>"
+            "answer": "<p>If you are looking to cancel your annual subscription you will need to provide a written notice of termination at least 60 days prior to the renewal date. </p><p>If you cancel in accordance with this notice period, your access will continue until the end of your current term. </p>"
           }
         },
         "faq_item_bAXDXk": {
@@ -309,11 +295,32 @@
             "answer": "<p>A single licence is tied to one user on one device. </p><p>A concurrent licence allows multiple users to share the same licence across different devices, offering greater flexibility and lowering the cost per user. </p><p>Both options suit businesses of any size, depending on your needs.</p>"
           }
         },
+        "faq_item_mDbcdE": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can a single licence be transferred to another colleague or device?",
+            "answer": "<p>Yes. Users can follow the steps within the software to move a licence between a device. If you need to cancel a licence off a device for which you no longer have access, our support team can do this remotely; contact us at support@elecosoft.com.</p>"
+          }
+        },
+        "faq_item_bVkqMa": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What devices can I install Asta Powerproject on?",
+            "answer": "<p>The software is available for download on Windows PC. There is a separately licenced companion app for use on iOS and Android.</p>"
+          }
+        },
+        "faq_item_jARANR": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can it be used on a Macbook?",
+            "answer": "<p>Yes. By upgrading to Asta Powerproject SaaS subscription, you can access it seamlessly on a Mac. You can contact us at support@elecosoft.com.</p>"
+          }
+        },
         "faq_item_3zcwtw": {
           "type": "faq_item",
           "settings": {
-            "question": "What language versions are available?",
-            "answer": "<p>Asta Powerproject is available in English (Australia, UK, US versions), Danish, Dutch, Finnish, German, Norwegian, Swedish, French, Polish, Spanish, Italian and Turkish.</p><p>For other languages, please refer to our list of <a href=\"https://elecosoft.com/support/reseller-directory/\" target=\"_blank\" title=\"https://elecosoft.com/support/reseller-directory/\">approved resellers.</a><br/><br/></p>"
+            "question": "What size and types of projects work best with Asta Powerproject?",
+            "answer": "<p>Asta Powerproject suits everything from small works (extensions, fit‑outs, minor civils) to major megaprojects (landmark buildings, airports, highways), and scales from small contractors to large enterprises.</p><p>It works best on construction, infrastructure, and industrial projects that need logic‑driven CPM schedules, clear critical path and float analysis, and professional, phase‑by‑phase bar chart presentations for clients, planners, and dispute resolution.</p>"
           }
         },
         "faq_item_Y8h4bQ": {
@@ -327,11 +334,12 @@
       "block_order": [
         "faq_item_QVNkTB",
         "faq_item_iLkedR",
+        "faq_item_d8Pe8E",
         "faq_item_FbD6cb",
-        "faq_item_mDbcdE",
-        "faq_item_jARANR",
-        "faq_item_bVkqMa",
         "faq_item_bAXDXk",
+        "faq_item_mDbcdE",
+        "faq_item_bVkqMa",
+        "faq_item_jARANR",
         "faq_item_3zcwtw",
         "faq_item_Y8h4bQ"
       ],
