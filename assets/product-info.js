@@ -168,7 +168,7 @@ if (!customElements.get('product-info')) {
           this.pickupAvailability?.update(variant);
           this.updateOptionValues(html);
           this.updateURL(productUrl, variant?.id);
-          this.updateVariantInputs(variant?.id);
+          this.updateVariantInputs(variant);
 
           if (!variant) {
             this.setUnavailable();
@@ -211,13 +211,22 @@ if (!customElements.get('product-info')) {
         };
       }
 
-      updateVariantInputs(variantId) {
+      updateVariantInputs(variant) {
         this.querySelectorAll(
           `#product-form-${this.dataset.section}, #product-form-installment-${this.dataset.section}`
         ).forEach((productForm) => {
           const input = productForm.querySelector('input[name="id"]');
-          input.value = variantId ?? '';
-          input.dispatchEvent(new Event('change', { bubbles: true }));
+          if (input) {
+            input.value = variant?.id ?? '';
+            input.dispatchEvent(new Event('change', { bubbles: true }));
+          }
+
+          const sellingPlanInput = productForm.querySelector('input[name="selling_plan"]');
+          if (sellingPlanInput) {
+            const sellingPlanId = variant?.selling_plan_allocations?.[0]?.selling_plan?.id ?? '';
+            sellingPlanInput.value = sellingPlanId;
+            sellingPlanInput.dispatchEvent(new Event('change', { bubbles: true }));
+          }
         });
       }
 
