@@ -267,11 +267,25 @@
             "answer": ""
           }
         },
-        "faq_item_bVkqMa": {
+        "faq_item_iLkedR": {
           "type": "faq_item",
           "settings": {
-            "question": "What devices can I install Asta Powerproject on?",
-            "answer": "<p>The software is available for download on Windows PC. There is a separately licensed companion app for use on iOS and Android.</p>"
+            "question": "How do I access the software once I purchase?",
+            "answer": "<p>Our digital software allows for you to access </p>"
+          }
+        },
+        "faq_item_FbD6cb": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How do I cancel my subscription?",
+            "answer": "<p>We provide comprehensive in-house training solutions for new users and more advanced sessions for experienced teams, ensuring everyone can get the most out of Asta Powerproject.</p>"
+          }
+        },
+        "faq_item_mDbcdE": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can a single licence be transferred to another colleague or device?",
+            "answer": "<p>Yes. Users can follow the steps within the software to move a licence between a device. If you need to cancel a licence off a device for which you no longer have access, our support team can do this remotely; contact us at support@elecosoft.com.</p>"
           }
         },
         "faq_item_jARANR": {
@@ -281,18 +295,18 @@
             "answer": "<p>Yes. By upgrading to Asta Powerproject SaaS subscription, you can access it seamlessly on a Mac.</p>"
           }
         },
+        "faq_item_bVkqMa": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What devices can I install Asta Powerproject on?",
+            "answer": "<p>The software is available for download on Windows PC. There is a separately licensed companion app for use on iOS and Android.</p>"
+          }
+        },
         "faq_item_bAXDXk": {
           "type": "faq_item",
           "settings": {
             "question": "What is the difference between a single and a concurrent licence?",
             "answer": "<p>A single licence is tied to one user on one device. </p><p>A concurrent licence allows multiple users to share the same licence across different devices, offering greater flexibility and lowering the cost per user. </p><p>Both options suit businesses of any size, depending on your needs.</p>"
-          }
-        },
-        "faq_item_iLkedR": {
-          "type": "faq_item",
-          "settings": {
-            "question": "How do I access the software once I purchase?",
-            "answer": "<p>Our digital software allows for you to access </p>"
           }
         },
         "faq_item_3zcwtw": {
@@ -308,32 +322,18 @@
             "question": "Can stakeholders view my project without a licence?",
             "answer": "<p>Yes. Stakeholders can download our free ProjectViewer to access your project without requiring a licence.</p>"
           }
-        },
-        "faq_item_mDbcdE": {
-          "type": "faq_item",
-          "settings": {
-            "question": "Can a single licence be transferred to another colleague or device?",
-            "answer": "<p>Yes. Users can follow the steps within the software to move a licence between a device. If you need to cancel a licence off a device for which you no longer have access, our support team can do this remotely; contact us at support@elecosoft.com.</p>"
-          }
-        },
-        "faq_item_FbD6cb": {
-          "type": "faq_item",
-          "settings": {
-            "question": "How do I cancel my subscription?",
-            "answer": "<p>We provide comprehensive in-house training solutions for new users and more advanced sessions for experienced teams, ensuring everyone can get the most out of Asta Powerproject.</p>"
-          }
         }
       },
       "block_order": [
         "faq_item_QVNkTB",
-        "faq_item_bVkqMa",
-        "faq_item_jARANR",
-        "faq_item_bAXDXk",
         "faq_item_iLkedR",
-        "faq_item_3zcwtw",
-        "faq_item_Y8h4bQ",
+        "faq_item_FbD6cb",
         "faq_item_mDbcdE",
-        "faq_item_FbD6cb"
+        "faq_item_jARANR",
+        "faq_item_bVkqMa",
+        "faq_item_bAXDXk",
+        "faq_item_3zcwtw",
+        "faq_item_Y8h4bQ"
       ],
       "name": "FAQ Accordion",
       "settings": {
