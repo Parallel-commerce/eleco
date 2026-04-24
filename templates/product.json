@@ -131,6 +131,119 @@
         "padding_bottom": 12
       }
     },
+    "main_product_custom": {
+      "type": "main-product-custom",
+      "blocks": {
+        "subscriptions_app_block_LH7gRY": {
+          "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
+          "settings": {
+            "widget_style": "card",
+            "widget_style_card_selector": "radio_button",
+            "subscription_policy_url": "",
+            "color_text_body": "#6D7175",
+            "dividers_color": "#8F8D8D",
+            "background_color": "#FFFFFF",
+            "border_thickness": 1,
+            "border_radius": 0,
+            "product": "{{product}}"
+          }
+        },
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "Subscription",
+            "text_style": "body"
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "text_dLBa9K": {
+          "type": "text",
+          "settings": {
+            "text": "1 User Windows",
+            "text_style": "body"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "subscriptions_app_block_LH7gRY",
+        "vendor",
+        "caption",
+        "price",
+        "text_dLBa9K",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons"
+      ],
+      "name": "Main product custom",
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-3",
+        "left_heading": "Plan with certainty, build with confidence",
+        "left_description": "<p>Take control with integrative tools that give teams the power to master project timelines.</p>",
+        "show_left_check_icons": true,
+        "left_checklist_item_1": "Full feature access from day one",
+        "left_checklist_item_2": "Free updates for the subscription period",
+        "left_checklist_item_3": "Email support included",
+        "left_checklist_item_4": "30-day money-back guarantee",
+        "left_checklist_item_5": "",
+        "left_checklist_item_6": "",
+        "left_text_color": "#ffffff",
+        "left_description_color": "#d1d5db",
+        "left_icon_background_color": "#1f5d46",
+        "left_icon_color": "#72f0ad",
+        "left_column_padding": 56,
+        "left_column_border_radius": 0,
+        "right_color_scheme": "scheme-2",
+        "right_link_label_1": "Download free trial",
+        "right_link_url_1": "",
+        "right_link_label_2": "Contact sales",
+        "right_link_url_2": "",
+        "show_right_price_period": false,
+        "right_price_divisor": 12,
+        "right_price_period_label": "month",
+        "right_column_padding": 40,
+        "right_column_border_radius": 20,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
     "related-products": {
       "type": "related-products",
       "disabled": true,
@@ -156,12 +269,14 @@
         "subscriptions_app_block_HfcxDY": {
           "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
           "settings": {
+            "widget_style": "card",
+            "widget_style_card_selector": "radio_button",
+            "subscription_policy_url": "",
             "color_text_body": "#6d7175",
             "dividers_color": "#8f8d8d",
-            "bacgkround_color": "#ffffff",
+            "background_color": "#ffffff",
             "border_thickness": 1,
             "border_radius": 0,
-            "subscription_policy_url": "",
             "product": "{{product}}"
           }
         }
@@ -172,33 +287,36 @@
       "name": "Custom Product Info",
       "settings": {
         "color_scheme": "",
-        "column_background_color": "#fff5f5",
-        "divider_color": "#ff0000",
-        "primary_button_color": "#ff6b35",
-        "primary_button_text_color": "#ffffff",
+        "anchor_id": "",
+        "padding_top": 0,
+        "padding_bottom": 36,
         "hero_title": "Plan with certainty, build with confidence",
         "hero_subtitle": "Take control with integrative tools that gives teams the power to master project timelines",
         "hero_image": "shopify://shop_images/Asta_Powerproject_109e16a4-29a3-4d9b-b8d5-165a549f2bf1.svg",
         "hero_background_color": "#4a4a4a",
         "hero_text_color": "#ffffff",
+        "column_background_color": "#fff5f5",
+        "divider_color": "#ff0000",
+        "primary_button_color": "#ff6b35",
+        "primary_button_text_color": "#ffffff",
         "left_column_title": "Annual subscription",
         "left_column_price": "",
-        "left_column_price_label": "Prices start from \u00a3122.5 / month",
         "left_column_button_text": "Add to cart",
         "left_column_secondary_button_text": "Download free trial",
         "left_column_secondary_button_link": "",
         "left_column_fine_print": "Paid annually, one user installed onto a single Windows PC. Includes VAT.",
         "right_column_title": "Concurrent & SaaS solutions",
+        "right_column_show_price": false,
         "right_column_price": "",
-        "right_column_price_label": "Prices start from \u00a32412 / year",
+        "right_column_price_suffix": "year",
+        "right_column_paragraph": "You wouldn't place a tender without first understanding the full scope of work. We approach custom quotes the same way. Help us get to know your team's needs to get started now.",
+        "right_column_fine_print": "Paid annually. Includes VAT.",
         "right_column_primary_button_text": "Contact sales",
         "right_column_primary_button_link": "",
+        "right_column_primary_button_embed_url": "",
         "right_column_secondary_button_text": "Book a demo",
         "right_column_secondary_button_link": "",
-        "right_column_fine_print": "Paid annually. Includes VAT.",
-        "anchor_id": "",
-        "padding_top": 0,
-        "padding_bottom": 36
+        "right_column_secondary_button_embed_url": ""
       }
     },
     "parallel_image_with_features_hVbtUt": {
@@ -622,6 +740,7 @@
         "heading_size": "h1",
         "title_alignment": "center",
         "title_spacing": 24,
+        "block_alignment": "center",
         "logo_width": 150,
         "logo_spacing": 40,
         "logo_opacity": 100,
@@ -772,6 +891,7 @@
         "heading_size": "h2",
         "title_alignment": "left",
         "title_spacing": 24,
+        "block_alignment": "center",
         "logo_width": 150,
         "logo_spacing": 40,
         "logo_opacity": 100,
@@ -830,7 +950,6 @@
         "item_padding": 18,
         "border_radius": 12,
         "question_font_size": 16,
-        "question_font_weight": "400",
         "color_scheme": "",
         "item_background": "#f6f7f7",
         "item_background_active": "#fce8e6",
@@ -914,6 +1033,7 @@
         "button_1_text_color": "#e83f40",
         "button_1_hover_text_color": "#ffffff",
         "button_2_label": "Buy Now",
+        "button_2_action": "add_to_cart",
         "button_2_link": "",
         "button_2_background_color": "#e83f40",
         "button_2_text_color": "#ffffff",
@@ -1041,129 +1161,6 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
-    },
-    "main_product_custom": {
-      "type": "main-product-custom",
-      "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title": {
-          "type": "title",
-          "settings": {}
-        },
-        "caption": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
-            "page": ""
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "vendor",
-        "title",
-        "caption",
-        "price",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
-        "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
-        "share"
-      ],
-      "disabled": false,
-      "settings": {
-        "enable_sticky_info": true,
-        "color_scheme": "",
-        "media_size": "large",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "gallery_layout": "stacked",
-        "mobile_thumbnails": "hide",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": true,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 12
-      },
-      "name": "Main product custom"
     }
   },
   "order": [
