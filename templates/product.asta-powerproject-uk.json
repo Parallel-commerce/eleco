@@ -64,6 +64,7 @@
         "subscriptions_app_block_YTNBAm",
         "buy_buttons_gpbtzm"
       ],
+      "custom_css": [],
       "name": "Main product custom",
       "settings": {
         "enable_sticky_info": true,
@@ -91,7 +92,7 @@
         "show_right_price_period": false,
         "right_price_divisor": 12,
         "right_price_period_label": "month",
-        "right_column_padding": 36,
+        "right_column_padding": 52,
         "right_column_border_radius": 26,
         "media_size": "medium",
         "constrain_to_viewport": true,
