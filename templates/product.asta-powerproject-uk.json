@@ -87,7 +87,7 @@
         "right_link_label_1": "Download free trial",
         "right_link_url_1": "",
         "right_link_label_2": "Contact sales",
-        "right_link_url_2": "",
+        "right_link_url_2": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/mwbhpqg9efgeb2bfvrmtaw.html?PageId=a5476031bd01f11184076045bd131303",
         "show_right_price_period": false,
         "right_price_divisor": 12,
         "right_price_period_label": "month",
@@ -1380,7 +1380,6 @@
         "embed_HGNRDr",
         "embed_6VLxN3"
       ],
-      "disabled": true,
       "custom_css": [],
       "name": "Market Embed",
       "settings": {
