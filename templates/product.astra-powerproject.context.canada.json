@@ -45,6 +45,15 @@
       "settings": {
         "button_1_label": "Not Available"
       }
+    },
+    "parallel_two_column_accordion_xi4PpU": {
+      "blocks": {
+        "accordion_item_htnMQm": {
+          "settings": {
+            "content_3": "<p>Clear task visibility and filters allow for visual clarity across complete program of works.</p>"
+          }
+        }
+      }
     }
   }
 }
