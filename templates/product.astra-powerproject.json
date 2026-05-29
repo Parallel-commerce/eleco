@@ -150,10 +150,32 @@
         "padding_bottom": 28
       }
     },
-    "parallel_custom_product_info_i3cpfR": {
-      "type": "parallel-custom-product-info",
+    "main_product_custom_WTrNQf": {
+      "type": "main-product-custom",
       "blocks": {
-        "subscriptions_app_block_HfcxDY": {
+        "text_R4Wcat": {
+          "type": "text",
+          "settings": {
+            "text": "Annual subscription",
+            "text_style": "body"
+          }
+        },
+        "price_gxxCpE": {
+          "type": "price",
+          "settings": {}
+        },
+        "text_rVVJh3": {
+          "type": "text",
+          "settings": {
+            "text": "1 user per licence • Windows PC • Billed annually",
+            "text_style": "body"
+          }
+        },
+        "quantity_selector_EVrfbW": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "subscriptions_app_block_JLRcB8": {
           "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
           "settings": {
             "widget_style": "card",
@@ -164,13 +186,70 @@
             "background_color": "#ffffff",
             "border_thickness": 1,
             "border_radius": 0,
-            "product": "{{product}}"
+            "product": "asta-powerproject"
+          }
+        },
+        "buy_buttons_pz68ch": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
           }
         }
       },
       "block_order": [
-        "subscriptions_app_block_HfcxDY"
+        "text_R4Wcat",
+        "price_gxxCpE",
+        "text_rVVJh3",
+        "quantity_selector_EVrfbW",
+        "subscriptions_app_block_JLRcB8",
+        "buy_buttons_pz68ch"
       ],
+      "name": "Main product custom",
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-3",
+        "left_heading": "Asta Powerproject",
+        "left_description": "<p>Take control with integrative tools that give teams the power to master project timelines.</p>",
+        "show_left_check_icons": false,
+        "left_checklist_item_1": "",
+        "left_checklist_item_2": "",
+        "left_checklist_item_3": "",
+        "left_checklist_item_4": "",
+        "left_checklist_item_5": "",
+        "left_checklist_item_6": "",
+        "left_text_color": "#ffffff",
+        "left_description_color": "#d1d5db",
+        "left_icon_background_color": "#1f5d46",
+        "left_icon_color": "#72f0ad",
+        "left_column_padding": 56,
+        "left_column_border_radius": 20,
+        "right_color_scheme": "scheme-2",
+        "right_link_label_1": "Download free trial",
+        "right_link_url_1": "https://shop.elecosoft.com/products/asta-powerproject-uk#free-trial",
+        "right_link_label_2": "Contact sales",
+        "right_link_url_2": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/mwbhpqg9efgeb2bfvrmtaw.html?PageId=a5476031bd01f11184076045bd131303",
+        "show_right_price_period": true,
+        "right_price_divisor": 12,
+        "right_price_period_label": "month",
+        "right_column_padding": 52,
+        "right_column_border_radius": 26,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "parallel_custom_product_info_i3cpfR": {
+      "type": "parallel-custom-product-info",
+      "disabled": true,
       "name": "Custom Product Info",
       "settings": {
         "color_scheme": "",
@@ -1313,6 +1392,7 @@
   "order": [
     "main",
     "related-products",
+    "main_product_custom_WTrNQf",
     "parallel_custom_product_info_i3cpfR",
     "parallel_highlights_yTAfJh",
     "parallel_image_with_features_hVbtUt",
