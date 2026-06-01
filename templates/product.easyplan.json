@@ -150,10 +150,32 @@
         "padding_bottom": 28
       }
     },
-    "parallel_custom_product_info_i3cpfR": {
-      "type": "parallel-custom-product-info",
+    "main_product_custom_XFLm4f": {
+      "type": "main-product-custom",
       "blocks": {
-        "subscriptions_app_block_HfcxDY": {
+        "text_cDkAB4": {
+          "type": "text",
+          "settings": {
+            "text": "Annual subscription",
+            "text_style": "body"
+          }
+        },
+        "price_bwCnLL": {
+          "type": "price",
+          "settings": {}
+        },
+        "text_Qhjehi": {
+          "type": "text",
+          "settings": {
+            "text": "One user installed onto a single Windows PC • Includes VAT",
+            "text_style": "body"
+          }
+        },
+        "quantity_selector_JQPJKa": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "subscriptions_app_block_QnjqDT": {
           "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
           "settings": {
             "widget_style": "card",
@@ -166,11 +188,68 @@
             "border_radius": 0,
             "product": "{{product}}"
           }
+        },
+        "buy_buttons_pJRByn": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
         }
       },
       "block_order": [
-        "subscriptions_app_block_HfcxDY"
+        "text_cDkAB4",
+        "price_bwCnLL",
+        "text_Qhjehi",
+        "quantity_selector_JQPJKa",
+        "subscriptions_app_block_QnjqDT",
+        "buy_buttons_pJRByn"
       ],
+      "name": "Main product custom",
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-3",
+        "left_heading": "Lean planning tool for small projects",
+        "left_description": "<p>The effective and affordable option for standalone plans and working on subsections of complex programmes that are managed within Asta Powerproject</p>",
+        "show_left_check_icons": false,
+        "left_checklist_item_1": "",
+        "left_checklist_item_2": "",
+        "left_checklist_item_3": "",
+        "left_checklist_item_4": "",
+        "left_checklist_item_5": "",
+        "left_checklist_item_6": "",
+        "left_text_color": "#ffffff",
+        "left_description_color": "#d1d5db",
+        "left_icon_background_color": "#1f5d46",
+        "left_icon_color": "#72f0ad",
+        "left_column_padding": 56,
+        "left_column_border_radius": 20,
+        "right_color_scheme": "scheme-1",
+        "right_link_label_1": "Download free trial",
+        "right_link_url_1": "",
+        "right_link_label_2": "Contact sales",
+        "right_link_url_2": "",
+        "show_right_price_period": false,
+        "right_price_divisor": 12,
+        "right_price_period_label": "month",
+        "right_column_padding": 52,
+        "right_column_border_radius": 26,
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "parallel_custom_product_info_i3cpfR": {
+      "type": "parallel-custom-product-info",
+      "disabled": true,
       "name": "Custom Product Info",
       "settings": {
         "color_scheme": "scheme-2",
@@ -985,9 +1064,9 @@
         "column_3_title": "Easyplan",
         "button_1_label": "Learn More",
         "button_1_link": "shopify://products/asta-powerproject",
-        "button_1_border_color": "#e83f40",
+        "button_1_border_color": "#e75742",
         "button_1_text_color": "#ffffff",
-        "button_1_hover_text_color": "#d14a32",
+        "button_1_hover_text_color": "#e75742",
         "button_2_label": "Buy Now",
         "button_2_action": "add_to_cart",
         "button_2_link": "shopify://products/asta-powerproject",
@@ -1061,8 +1140,8 @@
         "description": "Find comfort in knowing you will be looked after by our industry leading experts. The Asta Enhanced Support package includes technical, installation and activation support if needed, access to our help desk and customer success team to help you get the most out of your Asta projects.",
         "primary_button_label": "View Enhanced Support",
         "primary_button_link": "shopify://products/asta-enhanced-support",
-        "primary_button_background": "#e83f40",
-        "primary_button_background_hover": "#d04a35",
+        "primary_button_background": "#e75742",
+        "primary_button_background_hover": "#e75742",
         "primary_button_text": "#ffffff",
         "secondary_button_label": "Add to cart",
         "product": "asta-enhanced-support",
@@ -1151,6 +1230,7 @@
   "order": [
     "main",
     "related-products",
+    "main_product_custom_XFLm4f",
     "parallel_custom_product_info_i3cpfR",
     "parallel_image_with_features_hVbtUt",
     "parallel_image_with_features_pYtxX7",
