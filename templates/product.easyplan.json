@@ -156,9 +156,12 @@
         "subscriptions_app_block_HfcxDY": {
           "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
           "settings": {
+            "widget_style": "card",
+            "widget_style_card_selector": "radio_button",
             "subscription_policy_url": "",
             "color_text_body": "#6d7175",
             "dividers_color": "#8f8d8d",
+            "background_color": "#ffffff",
             "border_thickness": 1,
             "border_radius": 0,
             "product": "{{product}}"
@@ -170,7 +173,7 @@
       ],
       "name": "Custom Product Info",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "anchor_id": "",
         "padding_top": 0,
         "padding_bottom": 36,
@@ -180,8 +183,8 @@
         "hero_background_color": "#2a303a",
         "hero_text_color": "#ffffff",
         "column_background_color": "#fff5f5",
-        "divider_color": "#ff0000",
-        "primary_button_color": "#e22412",
+        "divider_color": "#e75742",
+        "primary_button_color": "#e75742",
         "primary_button_text_color": "#ffffff",
         "left_column_title": "Annual subscription",
         "left_column_price": "",
@@ -260,8 +263,8 @@
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "color_scheme": "",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-1",
         "anchor_id": "#",
         "padding_top": 0,
         "padding_bottom": 52,
@@ -725,7 +728,7 @@
         "product_3Mi7Bg": {
           "type": "product",
           "settings": {
-            "product": "asta-powerproject"
+            "product": "asta-powerproject-uk"
           }
         }
       },
