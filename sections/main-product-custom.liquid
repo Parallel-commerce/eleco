@@ -588,8 +588,6 @@
                   <div class="product__tax caption rte">
                     {%- if cart.duties_included and cart.taxes_included -%}
                       Duties and VAT included
-                    {%- elsif cart.taxes_included -%}
-                      VAT included
                     {%- elsif cart.duties_included -%}
                       {{ 'products.product.duties_included' | t }}
                     {%- endif -%}
