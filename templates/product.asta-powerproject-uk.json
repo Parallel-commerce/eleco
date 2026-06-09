@@ -1357,6 +1357,7 @@
         "embed_6VLxN3": {
           "type": "embed",
           "name": "United States",
+          "disabled": true,
           "settings": {
             "market_identifier": "us",
             "country_code": "us",
