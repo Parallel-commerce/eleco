@@ -134,13 +134,6 @@
     "main_product_custom_PJWQAt": {
       "type": "main-product-custom",
       "blocks": {
-        "text_m6Necd": {
-          "type": "text",
-          "settings": {
-            "text": "Annual subscription",
-            "text_style": "body"
-          }
-        },
         "price_NK9e7R": {
           "type": "price",
           "settings": {}
@@ -148,37 +141,23 @@
         "text_LM4qYM": {
           "type": "text",
           "settings": {
-            "text": "Paid annually.",
+            "text": "Select a date below • One time payment • Includes VAT",
             "text_style": "body"
           }
         },
-        "subscriptions_app_block_THhVq6": {
-          "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
+        "text_m6Necd": {
+          "type": "text",
           "disabled": true,
           "settings": {
-            "widget_style": "card",
-            "widget_style_card_selector": "radio_button",
-            "subscription_policy_url": "",
-            "color_text_body": "#6d7175",
-            "dividers_color": "#8f8d8d",
-            "background_color": "#ffffff",
-            "border_thickness": 1,
-            "border_radius": 0,
-            "product": "asta-enhanced-support"
+            "text": "One off payment",
+            "text_style": "body"
           }
         },
-        "subscriptions_app_block_beAifA": {
-          "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
+        "variant_picker_GnEecE": {
+          "type": "variant_picker",
           "settings": {
-            "widget_style": "card",
-            "widget_style_card_selector": "radio_button",
-            "subscription_policy_url": "",
-            "color_text_body": "#6d7175",
-            "dividers_color": "#8f8d8d",
-            "background_color": "#ffffff",
-            "border_thickness": 1,
-            "border_radius": 0,
-            "product": "asta-enhanced-support"
+            "picker_type": "button",
+            "swatch_shape": "circle"
           }
         },
         "buy_buttons_TjX9FV": {
@@ -190,19 +169,18 @@
         }
       },
       "block_order": [
-        "text_m6Necd",
         "price_NK9e7R",
         "text_LM4qYM",
-        "subscriptions_app_block_THhVq6",
-        "subscriptions_app_block_beAifA",
+        "text_m6Necd",
+        "variant_picker_GnEecE",
         "buy_buttons_TjX9FV"
       ],
       "name": "Main product custom",
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-3",
-        "left_heading": "Industry experts at your service",
-        "left_description": "<p>Ensure you get the most out of your Asta solutions with additional support from product specialists.</p>",
+        "left_heading": "Introductory Training Course",
+        "left_description": "<p>Develop a solid understanding of project programming and control with this 1-day course.</p>",
         "show_left_check_icons": false,
         "left_checklist_item_1": "",
         "left_checklist_item_2": "",
@@ -301,7 +279,7 @@
         "heading_GGwQtN": {
           "type": "heading",
           "settings": {
-            "heading": "Always on support at your fingertips!",
+            "heading": "Confidently build, manage and present a simple project programme",
             "heading_size": "h1"
           }
         },
@@ -309,28 +287,35 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Access to trained product specialists"
+            "text": "Trained product specialists"
           }
         },
         "feature_item_efdUrz": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "SLA-backed response commitments"
+            "text": "CPD accreditation"
+          }
+        },
+        "feature_item_hggKd7": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Apply skills to your project"
           }
         },
         "feature_item_eVF6yn": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Industry-leading resolution times"
+            "text": "6 hours of trainer learning"
           }
         },
         "feature_item_yyjEFM": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Specialist tools and expertise"
+            "text": "Recording available to replay"
           }
         }
       },
@@ -338,13 +323,14 @@
         "heading_GGwQtN",
         "feature_item_CkdfUp",
         "feature_item_efdUrz",
+        "feature_item_hggKd7",
         "feature_item_eVF6yn",
         "feature_item_yyjEFM"
       ],
       "name": "Image with features",
       "settings": {
-        "image": "shopify://shop_images/Vision_Overview_3.png",
-        "height": "adapt",
+        "image": "shopify://shop_images/Training_Overview.png",
+        "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "image_behavior": "none",
@@ -367,7 +353,7 @@
         "heading_qDbMj8": {
           "type": "heading",
           "settings": {
-            "heading": "Heading",
+            "heading": "What is covered:",
             "heading_size": "h1"
           }
         },
@@ -375,21 +361,63 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Apply working time"
           }
         },
         "feature_item_gVYYUV": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Create and link bar charts"
           }
         },
         "feature_item_iRNHQw": {
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Feature text"
+            "text": "Critical path and float"
+          }
+        },
+        "feature_item_nChUJG": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Understand Constraints"
+          }
+        },
+        "feature_item_VBLbwj": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Use Code Libraries"
+          }
+        },
+        "feature_item_t6qUxD": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Edit the display"
+          }
+        },
+        "feature_item_w4RQwC": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Monitor project's baseline"
+          }
+        },
+        "feature_item_8aHmVM": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Update Progress"
+          }
+        },
+        "feature_item_wHXByg": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Print the project"
           }
         }
       },
@@ -397,13 +425,18 @@
         "heading_qDbMj8",
         "feature_item_8agkWh",
         "feature_item_gVYYUV",
-        "feature_item_iRNHQw"
+        "feature_item_iRNHQw",
+        "feature_item_nChUJG",
+        "feature_item_VBLbwj",
+        "feature_item_t6qUxD",
+        "feature_item_w4RQwC",
+        "feature_item_8aHmVM",
+        "feature_item_wHXByg"
       ],
-      "disabled": true,
       "name": "Image with features",
       "settings": {
-        "image": "shopify://shop_images/failte-restaurant-image.jpg",
-        "height": "adapt",
+        "image": "shopify://shop_images/Vision_Overview_3.png",
+        "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "image_behavior": "none",
@@ -1014,6 +1047,7 @@
         "comparison_row_rJAtXQ",
         "comparison_row_DbzVPR"
       ],
+      "disabled": true,
       "name": "Comparison Table",
       "settings": {
         "heading": "Compare products",
@@ -1089,7 +1123,7 @@
       "name": "Support CTA",
       "settings": {
         "heading": "Know you're taken care of.",
-        "description": "The Asta Enhanced Support package includes technical, installation and activation support if needed, access to our help desk and customer success team. Find comfort in knowing you will be looked after by our industry leading experts.",
+        "description": "Training is great for an initial overview of Asta Powerproject, but the Asta Enhanced Support package includes technical, installation and activation support if needed, access to our help desk and customer success team. Find comfort in knowing you will be looked after by our industry leading experts.",
         "primary_button_label": "",
         "primary_button_link": "",
         "primary_button_background": "#e83f40",
