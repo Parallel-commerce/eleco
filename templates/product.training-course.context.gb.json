@@ -12,5 +12,32 @@
     "market": "gb"
   },
   "parent": "product.training-course.json",
-  "sections": {}
+  "sections": {
+    "parallel_image_with_features_hVbtUt": {
+      "settings": {},
+      "blocks": {
+        "heading_GGwQtN": {
+          "settings": {
+            "heading": "Learn from the Asta Team"
+          }
+        }
+      }
+    },
+    "main_product_custom_PJWQAt": {
+      "settings": {
+        "left_description": "<p>Confidently build, manage and present a simple project programme with this 1-day course.</p>"
+      },
+      "blocks": {}
+    },
+    "parallel_image_with_features_pYtxX7": {
+      "settings": {},
+      "blocks": {
+        "heading_qDbMj8": {
+          "settings": {
+            "heading": "What is covered in the Core Skills Training:"
+          }
+        }
+      }
+    }
+  }
 }
