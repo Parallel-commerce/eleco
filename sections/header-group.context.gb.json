@@ -12,5 +12,12 @@
     "market": "gb"
   },
   "parent": "header-group.json",
-  "sections": {}
+  "sections": {
+    "header": {
+      "settings": {
+        "color_scheme": "scheme-1"
+      },
+      "blocks": {}
+    }
+  }
 }
