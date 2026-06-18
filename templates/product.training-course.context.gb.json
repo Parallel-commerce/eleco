@@ -15,9 +15,16 @@
   "sections": {
     "main_product_custom_PJWQAt": {
       "settings": {
-        "left_description": "<p>Confidently build, manage and present a simple project programme with this 1-day level 1 online course.</p>"
+        "left_description": "<p>Confidently build, manage and present a simple project programme with this 1-day level 1 live online course.</p>",
+        "right_link_label_1": "Contact training"
       },
-      "blocks": {}
+      "blocks": {
+        "text_LM4qYM": {
+          "settings": {
+            "text": "Select a date below • One time payment • Includes VAT • GMT timezone"
+          }
+        }
+      }
     },
     "parallel_image_with_features_hVbtUt": {
       "settings": {},
@@ -47,6 +54,11 @@
             "text": "Edit calendars"
           }
         },
+        "feature_item_gVYYUV": {
+          "settings": {
+            "text": "Create linked bar charts"
+          }
+        },
         "feature_item_9Rm3y": {
           "type": "feature_item",
           "disabled": false,
@@ -54,11 +66,6 @@
             "icon": "eleco-tick",
             "image": null,
             "text": "Summarise bar chart"
-          }
-        },
-        "feature_item_gVYYUV": {
-          "settings": {
-            "text": "Create linked bar charts"
           }
         }
       },
