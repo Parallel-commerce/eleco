@@ -368,7 +368,7 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Create and link bar charts"
+            "text": "Create linked bar charts"
           }
         },
         "feature_item_iRNHQw": {
