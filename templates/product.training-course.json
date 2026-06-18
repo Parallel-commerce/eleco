@@ -1096,8 +1096,8 @@
         "resource_link_kEdPjk": {
           "type": "resource_link",
           "settings": {
-            "label": "Add Enhanced Support to cart",
-            "link": "{{ section.settings.product.url }}"
+            "label": "",
+            "link": "shopify://products/asta-enhanced-support"
           }
         },
         "resource_link_wTwLVG": {
