@@ -141,7 +141,7 @@
         "text_LM4qYM": {
           "type": "text",
           "settings": {
-            "text": "Select a date below • One time payment • Includes VAT  • GMT timezone",
+            "text": "Select a date below • One time payment • Includes VAT  •  BST/GMT timezone",
             "text_style": "body"
           }
         },
@@ -435,7 +435,7 @@
       ],
       "name": "Image with features",
       "settings": {
-        "image": "shopify://shop_images/Vision_Overview_3.png",
+        "image": "shopify://shop_images/Classroom_Training_Overview_1.png",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -447,7 +447,7 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "anchor_id": "#",
-        "padding_top": 52,
+        "padding_top": 24,
         "padding_bottom": 52,
         "text_padding_left": 16,
         "text_padding_right": 32
@@ -1129,7 +1129,7 @@
         "primary_button_background": "#e83f40",
         "primary_button_background_hover": "#d04a35",
         "primary_button_text": "#ffffff",
-        "secondary_button_label": "Add Enhance Support to your cart",
+        "secondary_button_label": "Add Enhanced Support to your cart",
         "product": "asta-enhanced-support",
         "secondary_button_link": "shopify://products/asta-enhanced-support",
         "secondary_button_background": "#ffffff",
