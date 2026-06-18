@@ -134,6 +134,13 @@
     "main_product_custom_PJWQAt": {
       "type": "main-product-custom",
       "blocks": {
+        "text_m6Necd": {
+          "type": "text",
+          "settings": {
+            "text": "Core Skills Training: Project Planning Level 1",
+            "text_style": "body"
+          }
+        },
         "price_NK9e7R": {
           "type": "price",
           "settings": {}
@@ -142,14 +149,6 @@
           "type": "text",
           "settings": {
             "text": "Select a date below • One time payment • Includes VAT  •  BST (British Summer Time) timezone",
-            "text_style": "body"
-          }
-        },
-        "text_m6Necd": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "One off payment",
             "text_style": "body"
           }
         },
@@ -169,9 +168,9 @@
         }
       },
       "block_order": [
+        "text_m6Necd",
         "price_NK9e7R",
         "text_LM4qYM",
-        "text_m6Necd",
         "variant_picker_GnEecE",
         "buy_buttons_TjX9FV"
       ],
