@@ -1096,8 +1096,8 @@
         "resource_link_kEdPjk": {
           "type": "resource_link",
           "settings": {
-            "label": "",
-            "link": ""
+            "label": "Add Enhanced Support to cart",
+            "link": "{{ section.settings.product.url }}"
           }
         },
         "resource_link_wTwLVG": {
