@@ -353,7 +353,7 @@
         "heading_qDbMj8": {
           "type": "heading",
           "settings": {
-            "heading": "What is covered:",
+            "heading": "What is covered in the Core Skills Training:",
             "heading_size": "h1"
           }
         },
@@ -361,7 +361,7 @@
           "type": "feature_item",
           "settings": {
             "icon": "eleco-tick",
-            "text": "Apply working time"
+            "text": "Edit calendars"
           }
         },
         "feature_item_gVYYUV": {
@@ -369,6 +369,13 @@
           "settings": {
             "icon": "eleco-tick",
             "text": "Create linked bar charts"
+          }
+        },
+        "feature_item_6thhqR": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Summarise bar chart"
           }
         },
         "feature_item_iRNHQw": {
@@ -425,6 +432,7 @@
         "heading_qDbMj8",
         "feature_item_8agkWh",
         "feature_item_gVYYUV",
+        "feature_item_6thhqR",
         "feature_item_iRNHQw",
         "feature_item_nChUJG",
         "feature_item_VBLbwj",
@@ -435,7 +443,7 @@
       ],
       "name": "Image with features",
       "settings": {
-        "image": "shopify://shop_images/Classroom_Training_Overview_1.png",
+        "image": "shopify://shop_images/Classroom_Training_Overview_1_54a55745-9122-4e83-8c1c-5d3f84ed3a62.png",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
