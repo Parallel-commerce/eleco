@@ -310,6 +310,13 @@
             "text": "6 hours of trainer learning"
           }
         },
+        "feature_item_rJRpzh": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Q&A throughout the day"
+          }
+        },
         "feature_item_yyjEFM": {
           "type": "feature_item",
           "settings": {
@@ -324,6 +331,7 @@
         "feature_item_efdUrz",
         "feature_item_hggKd7",
         "feature_item_eVF6yn",
+        "feature_item_rJRpzh",
         "feature_item_yyjEFM"
       ],
       "name": "Image with features",
