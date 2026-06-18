@@ -295,7 +295,7 @@
       "title": "Your cart",
       "caption": "Cart items",
       "remove_title": "Remove {{ title }}",
-      "estimated_total": "Total for products",
+      "estimated_total": "TOTAL",
       "new_estimated_total": "New estimated total",
       "note": "Order special instructions",
       "checkout": "Secure checkout",
