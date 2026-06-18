@@ -141,7 +141,7 @@
         "text_LM4qYM": {
           "type": "text",
           "settings": {
-            "text": "Select a date below • One time payment • Includes VAT",
+            "text": "Select a date below • One time payment • Includes VAT  • GMT timezone",
             "text_style": "body"
           }
         },
