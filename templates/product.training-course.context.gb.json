@@ -13,6 +13,12 @@
   },
   "parent": "product.training-course.json",
   "sections": {
+    "main_product_custom_PJWQAt": {
+      "settings": {
+        "left_description": "<p>Confidently build, manage and present a simple project programme with this 1-day level 1 online course.</p>"
+      },
+      "blocks": {}
+    },
     "parallel_image_with_features_hVbtUt": {
       "settings": {},
       "blocks": {
@@ -20,14 +26,13 @@
           "settings": {
             "heading": "Learn from the Asta Team"
           }
+        },
+        "feature_item_yyjEFM": {
+          "settings": {
+            "text": "Course manual to keep"
+          }
         }
       }
-    },
-    "main_product_custom_PJWQAt": {
-      "settings": {
-        "left_description": "<p>Confidently build, manage and present a simple project programme with this 1-day course.</p>"
-      },
-      "blocks": {}
     },
     "parallel_image_with_features_pYtxX7": {
       "settings": {},
@@ -36,8 +41,40 @@
           "settings": {
             "heading": "What is covered in the Core Skills Training:"
           }
+        },
+        "feature_item_8agkWh": {
+          "settings": {
+            "text": "Edit calendars"
+          }
+        },
+        "feature_item_9Rm3y": {
+          "type": "feature_item",
+          "disabled": false,
+          "settings": {
+            "icon": "eleco-tick",
+            "image": null,
+            "text": "Summarise bar chart"
+          }
+        },
+        "feature_item_gVYYUV": {
+          "settings": {
+            "text": "Create linked bar charts"
+          }
         }
-      }
+      },
+      "block_order": [
+        "heading_qDbMj8",
+        "feature_item_8agkWh",
+        "feature_item_gVYYUV",
+        "feature_item_iRNHQw",
+        "feature_item_nChUJG",
+        "feature_item_VBLbwj",
+        "feature_item_t6qUxD",
+        "feature_item_w4RQwC",
+        "feature_item_8aHmVM",
+        "feature_item_wHXByg",
+        "feature_item_9Rm3y"
+      ]
     }
   }
 }
