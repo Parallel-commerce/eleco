@@ -667,7 +667,6 @@
 .card__product-logo .product-logo {
   height: 24px;
   width: auto;
-  max-width: 140px;
   object-fit: contain;
   display: block;
 }
