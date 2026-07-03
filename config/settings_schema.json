@@ -1457,5 +1457,20 @@
         "default": "scheme-1"
       }
     ]
+  },
+  {
+    "name": "t:settings_schema.product_navigation.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.product_navigation.settings.header_buy_now.content"
+      },
+      {
+        "type": "color",
+        "id": "product_nav_buy_now_button_color",
+        "label": "t:settings_schema.product_navigation.settings.buy_now_button_color.label",
+        "default": "#E83F40"
+      }
+    ]
   }
 ]

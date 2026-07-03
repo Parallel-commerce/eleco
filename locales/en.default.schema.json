@@ -339,6 +339,17 @@
         }
       }
     },
+    "product_navigation": {
+      "name": "Product navigation",
+      "settings": {
+        "header_buy_now": {
+          "content": "Buy Now button"
+        },
+        "buy_now_button_color": {
+          "label": "Buy Now button color"
+        }
+      }
+    },
     "layout": {
       "name": "Layout",
       "settings": {

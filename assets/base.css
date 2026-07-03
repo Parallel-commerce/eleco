@@ -3617,7 +3617,7 @@ details-disclosure > details {
 /* Button - parallel */
 
 .button--orange{
-  background-color: var(--eleco-primary);
+  background-color: var(--product-nav-buy-now-button-color, var(--eleco-primary));
   border: none;
   box-shadow: none;
 }
