@@ -1031,7 +1031,7 @@
         "comparison_row_9B77nj": {
           "type": "comparison_row",
           "settings": {
-            "functionality_text": "Task of work per file",
+            "functionality_text": "Number of tasks per file",
             "column_2_type": "text",
             "column_2_text": "250",
             "column_3_type": "text",
@@ -1131,7 +1131,7 @@
         "comparison_row_nbtjdy": {
           "type": "comparison_row",
           "settings": {
-            "functionality_text": "Intergrates with other Asta software",
+            "functionality_text": "Integrates with other Asta software",
             "column_2_type": "cross",
             "column_2_text": "Value",
             "column_3_type": "tick",
