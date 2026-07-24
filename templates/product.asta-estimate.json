@@ -183,8 +183,8 @@
         "hero_background_color": "#2a303a",
         "hero_text_color": "#ffffff",
         "column_background_color": "#fff5f5",
-        "divider_color": "#ff0000",
-        "primary_button_color": "#ff6b35",
+        "divider_color": "#E75742",
+        "primary_button_color": "#E75742",
         "primary_button_text_color": "#ffffff",
         "left_column_title": "Annual subscription",
         "left_column_price": "",
@@ -698,6 +698,12 @@
     "parallel_custom_product_list_M7EFHt": {
       "type": "parallel-custom-product-list",
       "blocks": {
+        "product_kwnDNr": {
+          "type": "product",
+          "settings": {
+            "product": "asta-powerproject-uk"
+          }
+        },
         "product_Hi9e7N": {
           "type": "product",
           "settings": {
@@ -706,12 +712,14 @@
         },
         "product_3Mi7Bg": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "asta-powerproject"
           }
         }
       },
       "block_order": [
+        "product_kwnDNr",
         "product_Hi9e7N",
         "product_3Mi7Bg"
       ],
@@ -1022,7 +1030,7 @@
         "resource_background": "#2a303a",
         "resource_background_hover": "#2a303a",
         "resource_border": "#ffffff",
-        "resource_icon_color": "#e83f40",
+        "resource_icon_color": "#E75742",
         "heading_font_size": 48,
         "heading_font_weight": "700",
         "description_font_size": 16,
