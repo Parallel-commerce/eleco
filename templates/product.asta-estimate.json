@@ -525,7 +525,7 @@
         "heading": "Better project outcomes for every team",
         "heading_size": "h1",
         "anchor_id": "capabilities",
-        "padding_top": 48,
+        "padding_top": 72,
         "padding_bottom": 60
       }
     },
@@ -574,7 +574,7 @@
         "header_spacing": 40,
         "color_scheme": "",
         "anchor_id": "reviews",
-        "padding_top": 36,
+        "padding_top": 52,
         "padding_bottom": 36
       }
     },
@@ -654,110 +654,6 @@
         "padding_bottom": 40
       }
     },
-    "parallel_faq_accordion_3Vq7Fm": {
-      "type": "parallel-faq-accordion",
-      "blocks": {
-        "faq_item_QVNkTB": {
-          "type": "faq_item",
-          "settings": {
-            "question": "Who is Asta Estimate for?",
-            "answer": "<p>Asta Estimate is designed for estimators, QSs, planners and project teams who need accurate, structured estimates that link cost, time and carbon in one place.</p><p>It is designed to provide consistent, auditable estimating rather than ad‑hoc spreadsheets.<br/><br/></p>"
-          }
-        },
-        "faq_item_bVkqMa": {
-          "type": "faq_item",
-          "settings": {
-            "question": "Is Asta Estimate suitable for smaller contractors and subcontractors?",
-            "answer": "<p>Yes, Asta Estimate works well for smaller organisations that need professional-grade estimating without the overhead of complex enterprise systems. It supports repetitive tenders, trade-level breakdowns and standard templates so teams can price quickly and present estimates clearly to main contractors and clients.</p>"
-          }
-        },
-        "faq_item_Ud6FWL": {
-          "type": "faq_item",
-          "settings": {
-            "question": "How does Asta Estimate work with Asta Powerproject?",
-            "answer": "<p>Asta Estimate connects directly with Asta Powerproject so that cost and time share the same underlying data. This allows teams to align estimates with programmes, use model-based quantities in both tools, and maintain a single thread of information from tender through delivery.​</p>"
-          }
-        },
-        "faq_item_jARANR": {
-          "type": "faq_item",
-          "settings": {
-            "question": "Where does the cost database come from?",
-            "answer": "<p>Asta Estimate includes structured cost libraries that draw on recognised data sources including the RICS NRM1 and NRM2, which is widely used across the civil and construction sectors. These libraries can be customised with company norms, regional pricing and project-specific rates so that each organisation can refine the baseline data to its own standards.</p>"
-          }
-        },
-        "faq_item_bAXDXk": {
-          "type": "faq_item",
-          "settings": {
-            "question": "Can the cost database be customised?",
-            "answer": "<p>Yes, users can adapt and extend the cost database, adding or editing items, assemblies and labour rates to match their own methods and supply chain. This helps teams maintain consistency across bids while still reflecting real-world pricing and productivity.<br/><br/></p>"
-          }
-        },
-        "faq_item_DQVGf9": {
-          "type": "faq_item",
-          "settings": {
-            "question": "Does Asta Estimate integrate with other systems?",
-            "answer": "<p>Yes, Asta Estimate is designed to work within a broader digital ecosystem, including BIM tools, Bluebeam-based take-off workflows, ERP and analytics platforms.</p><p>This reduces double entry, improves reporting and helps different teams work from one consistent dataset.</p>"
-          }
-        },
-        "faq_item_ebJJeq": {
-          "type": "faq_item",
-          "settings": {
-            "question": "How does Asta Estimate handle carbon?",
-            "answer": "<p>Asta Estimate includes carbon calculation and reporting tools, allowing users to link climate data and EPDs to cost plans through a dedicated Climate Module. Carbon data is taken from the ICE database. This gives early visibility of carbon impact alongside cost, supporting compliance, client reporting and more sustainable decision-making.</p>"
-          }
-        },
-        "faq_item_g4eBDE": {
-          "type": "faq_item",
-          "settings": {
-            "question": "Can Asta Estimate be used on a MacBook?",
-            "answer": "<p>Asta Estimate is Windows-based, but Mac users can typically run it by using Windows via a virtual machine or remote desktop solution. This approach is similar to how other Windows-only construction applications are used in mixed IT environments.</p>"
-          }
-        },
-        "faq_item_xMEVnw": {
-          "type": "faq_item",
-          "settings": {
-            "question": "Can a licence be transferred to another colleague or device?",
-            "answer": "<p>Licences can normally be reassigned if team members change roles or devices are upgraded, following your organisation’s licence management process. Your account manager or support contact can advise on the practical steps to move licences between users or machines. You can contact us at support@elecosoft.com.</p>"
-          }
-        },
-        "faq_item_acXeiH": {
-          "type": "faq_item",
-          "settings": {
-            "question": "What support and training are available?",
-            "answer": "<p>We provide comprehensive in-house training solutions for new users, ensuring everyone can get the most out of Asta Estimate.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "faq_item_QVNkTB",
-        "faq_item_bVkqMa",
-        "faq_item_Ud6FWL",
-        "faq_item_jARANR",
-        "faq_item_bAXDXk",
-        "faq_item_DQVGf9",
-        "faq_item_ebJJeq",
-        "faq_item_g4eBDE",
-        "faq_item_xMEVnw",
-        "faq_item_acXeiH"
-      ],
-      "name": "FAQ Accordion",
-      "settings": {
-        "heading": "Questions? We have answers.",
-        "heading_size": "h1",
-        "heading_alignment": "left",
-        "heading_spacing": 40,
-        "item_gap": 12,
-        "item_padding": 18,
-        "border_radius": 12,
-        "question_font_size": 16,
-        "color_scheme": "",
-        "item_background": "#f6f7f7",
-        "item_background_active": "#fce8e6",
-        "anchor_id": "faqs",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "parallel_image_with_features_hVbtUt": {
       "type": "parallel-image-with-features",
       "blocks": {
@@ -811,7 +707,7 @@
         "color_scheme": "",
         "anchor_id": "#",
         "padding_top": 0,
-        "padding_bottom": 52,
+        "padding_bottom": 0,
         "text_padding_left": 32,
         "text_padding_right": 16
       }
@@ -926,10 +822,114 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "anchor_id": "#",
-        "padding_top": 52,
+        "padding_top": 0,
         "padding_bottom": 0,
         "text_padding_left": 32,
         "text_padding_right": 16
+      }
+    },
+    "parallel_faq_accordion_3Vq7Fm": {
+      "type": "parallel-faq-accordion",
+      "blocks": {
+        "faq_item_QVNkTB": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Who is Asta Estimate for?",
+            "answer": "<p>Asta Estimate is designed for estimators, QSs, planners and project teams who need accurate, structured estimates that link cost, time and carbon in one place.</p><p>It is designed to provide consistent, auditable estimating rather than ad‑hoc spreadsheets.<br/><br/></p>"
+          }
+        },
+        "faq_item_bVkqMa": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is Asta Estimate suitable for smaller contractors and subcontractors?",
+            "answer": "<p>Yes, Asta Estimate works well for smaller organisations that need professional-grade estimating without the overhead of complex enterprise systems. It supports repetitive tenders, trade-level breakdowns and standard templates so teams can price quickly and present estimates clearly to main contractors and clients.</p>"
+          }
+        },
+        "faq_item_Ud6FWL": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How does Asta Estimate work with Asta Powerproject?",
+            "answer": "<p>Asta Estimate connects directly with Asta Powerproject so that cost and time share the same underlying data. This allows teams to align estimates with programmes, use model-based quantities in both tools, and maintain a single thread of information from tender through delivery.​</p>"
+          }
+        },
+        "faq_item_jARANR": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Where does the cost database come from?",
+            "answer": "<p>Asta Estimate includes structured cost libraries that draw on recognised data sources including the RICS NRM1 and NRM2, which is widely used across the civil and construction sectors. These libraries can be customised with company norms, regional pricing and project-specific rates so that each organisation can refine the baseline data to its own standards.</p>"
+          }
+        },
+        "faq_item_bAXDXk": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can the cost database be customised?",
+            "answer": "<p>Yes, users can adapt and extend the cost database, adding or editing items, assemblies and labour rates to match their own methods and supply chain. This helps teams maintain consistency across bids while still reflecting real-world pricing and productivity.<br/><br/></p>"
+          }
+        },
+        "faq_item_DQVGf9": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Does Asta Estimate integrate with other systems?",
+            "answer": "<p>Yes, Asta Estimate is designed to work within a broader digital ecosystem, including BIM tools, Bluebeam-based take-off workflows, ERP and analytics platforms.</p><p>This reduces double entry, improves reporting and helps different teams work from one consistent dataset.</p>"
+          }
+        },
+        "faq_item_ebJJeq": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How does Asta Estimate handle carbon?",
+            "answer": "<p>Asta Estimate includes carbon calculation and reporting tools, allowing users to link climate data and EPDs to cost plans through a dedicated Climate Module. Carbon data is taken from the ICE database. This gives early visibility of carbon impact alongside cost, supporting compliance, client reporting and more sustainable decision-making.</p>"
+          }
+        },
+        "faq_item_g4eBDE": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can Asta Estimate be used on a MacBook?",
+            "answer": "<p>Asta Estimate is Windows-based, but Mac users can typically run it by using Windows via a virtual machine or remote desktop solution. This approach is similar to how other Windows-only construction applications are used in mixed IT environments.</p>"
+          }
+        },
+        "faq_item_xMEVnw": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can a licence be transferred to another colleague or device?",
+            "answer": "<p>Licences can normally be reassigned if team members change roles or devices are upgraded, following your organisation’s licence management process. Your account manager or support contact can advise on the practical steps to move licences between users or machines. You can contact us at support@elecosoft.com.</p>"
+          }
+        },
+        "faq_item_acXeiH": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What support and training are available?",
+            "answer": "<p>We provide comprehensive in-house training solutions for new users, ensuring everyone can get the most out of Asta Estimate.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_QVNkTB",
+        "faq_item_bVkqMa",
+        "faq_item_Ud6FWL",
+        "faq_item_jARANR",
+        "faq_item_bAXDXk",
+        "faq_item_DQVGf9",
+        "faq_item_ebJJeq",
+        "faq_item_g4eBDE",
+        "faq_item_xMEVnw",
+        "faq_item_acXeiH"
+      ],
+      "name": "FAQ Accordion",
+      "settings": {
+        "heading": "Questions? We have answers.",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_spacing": 40,
+        "item_gap": 12,
+        "item_padding": 18,
+        "border_radius": 12,
+        "question_font_size": 16,
+        "color_scheme": "",
+        "item_background": "#f6f7f7",
+        "item_background_active": "#fce8e6",
+        "anchor_id": "faqs",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "parallel_comparison_table_eeJhkm": {
@@ -1149,13 +1149,13 @@
     "parallel_logo_block_hHLWpL",
     "parallel_highlights_yTAfJh",
     "parallel_two_column_accordion_xi4PpU",
-    "parallel_testimonials_6ayBHg",
     "parallel_custom_product_list_M7EFHt",
     "parallel_logo_block_Kyk8RD",
-    "parallel_faq_accordion_3Vq7Fm",
+    "parallel_testimonials_6ayBHg",
     "parallel_image_with_features_hVbtUt",
     "parallel_image_with_features_pYtxX7",
     "parallel_image_with_features_UVMBrD",
+    "parallel_faq_accordion_3Vq7Fm",
     "parallel_comparison_table_eeJhkm",
     "parallel_support_cta_RxfB67",
     "parallel_information_Ehxmkb"
