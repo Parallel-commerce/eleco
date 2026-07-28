@@ -150,6 +150,95 @@
         "padding_bottom": 28
       }
     },
+    "main_product_custom_YCicNt": {
+      "type": "main-product-custom",
+      "blocks": {
+        "complementary_hXn9Cj": {
+          "type": "complementary",
+          "disabled": true,
+          "settings": {
+            "block_heading": "Pairs well with",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": false
+          }
+        },
+        "text_EmfAnQ": {
+          "type": "text",
+          "settings": {
+            "text": "Annual Subscription",
+            "text_style": "body"
+          }
+        },
+        "price_QfUtgV": {
+          "type": "price",
+          "settings": {}
+        },
+        "quantity_selector_fxKRGi": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_gUhePD": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "complementary_hXn9Cj",
+        "text_EmfAnQ",
+        "price_QfUtgV",
+        "quantity_selector_fxKRGi",
+        "buy_buttons_gUhePD"
+      ],
+      "name": "Main product custom",
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-3",
+        "left_heading": "Construction estimating software",
+        "left_description": "<p>Generates accurate cost estimates for tenders, increases productivity and reduces risk throughout the lifecycle of a project.</p>",
+        "show_left_check_icons": false,
+        "left_checklist_item_1": "",
+        "left_checklist_item_2": "",
+        "left_checklist_item_3": "",
+        "left_checklist_item_4": "",
+        "left_checklist_item_5": "",
+        "left_checklist_item_6": "",
+        "left_text_color": "#ffffff",
+        "left_description_color": "#d1d5db",
+        "left_icon_background_color": "#E75742",
+        "left_icon_color": "#E75742",
+        "left_column_padding": 56,
+        "left_column_border_radius": 0,
+        "right_color_scheme": "scheme-1",
+        "right_link_label_1": "Download free trial",
+        "right_link_url_1": "",
+        "right_link_label_2": "Contact sales",
+        "right_link_url_2": "",
+        "show_right_price_period": false,
+        "right_price_divisor": 12,
+        "right_price_period_label": "month",
+        "right_column_padding": 36,
+        "right_column_border_radius": 0,
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "parallel_custom_product_info_i3cpfR": {
       "type": "parallel-custom-product-info",
       "blocks": {
@@ -1143,6 +1232,7 @@
   "order": [
     "main",
     "related-products",
+    "main_product_custom_YCicNt",
     "parallel_custom_product_info_i3cpfR",
     "multicolumn_nLzjxb",
     "parallel_award_banner_C3twkW",
