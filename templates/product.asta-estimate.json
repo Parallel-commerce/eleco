@@ -260,7 +260,7 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 52
       }
     },
     "parallel_award_banner_C3twkW": {
@@ -393,7 +393,7 @@
       ],
       "name": "Logo Block",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "title": "",
         "heading_size": "h1",
         "title_alignment": "center",
@@ -644,9 +644,9 @@
       "name": "Testimonials",
       "settings": {
         "heading": "What do our customers say?",
-        "subheading": "Find out why our customers are glad they met us.",
+        "subheading": "Find out how Asta Estimate helps construction companies.",
         "heading_size": "h1",
-        "header_alignment": "center",
+        "header_alignment": "left",
         "header_spacing": 40,
         "color_scheme": "",
         "anchor_id": "reviews",
@@ -929,7 +929,7 @@
         "item_background_active": "#fce8e6",
         "anchor_id": "faqs",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 64
       }
     },
     "parallel_comparison_table_eeJhkm": {
