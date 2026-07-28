@@ -529,55 +529,6 @@
         "padding_bottom": 60
       }
     },
-    "parallel_testimonials_6ayBHg": {
-      "type": "parallel-testimonials",
-      "blocks": {
-        "testimonial_tHbLzP": {
-          "type": "testimonial",
-          "settings": {
-            "name": "David Chapell",
-            "title": "Head of Cost Management | Clarkson Alliance",
-            "country_flag": "",
-            "testimonial_text": "Asta Estimate (Bidcon) BIM ticked all our boxes – and, the more questions we asked, the more boxes it ticked. It puts your prices at your fingertips, instead of locating them from cost plans or bills of quantities on an ad-hoc basis."
-          }
-        },
-        "testimonial_FTmqJ9": {
-          "type": "testimonial",
-          "settings": {
-            "name": "Niclas Peterson",
-            "title": "Operation Manager | LP Entreprenad",
-            "country_flag": "",
-            "testimonial_text": "The big difference with Asta Estimate (Bidcon) is that it can visually show you that you really have everything included in the estimation, which makes the risk lower... Asta Estimate is a great tool for the entire workflow."
-          }
-        },
-        "testimonial_G4XiYQ": {
-          "type": "testimonial",
-          "settings": {
-            "name": "Jorgen",
-            "title": "Furniture Consulting AB",
-            "country_flag": "",
-            "testimonial_text": "Asta Estimate (Bidcon) provides us with the security of knowing that everything is taken into account and nothing is falling between the cracks. You constantly find new ways to work smarter if you let Asta Estimate do the job."
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_tHbLzP",
-        "testimonial_FTmqJ9",
-        "testimonial_G4XiYQ"
-      ],
-      "name": "Testimonials",
-      "settings": {
-        "heading": "What do our customers say?",
-        "subheading": "Find out why our customers are glad they met us.",
-        "heading_size": "h1",
-        "header_alignment": "center",
-        "header_spacing": 40,
-        "color_scheme": "",
-        "anchor_id": "reviews",
-        "padding_top": 52,
-        "padding_bottom": 36
-      }
-    },
     "parallel_custom_product_list_M7EFHt": {
       "type": "parallel-custom-product-list",
       "blocks": {
@@ -643,7 +594,7 @@
         "heading_size": "h2",
         "title_alignment": "left",
         "title_spacing": 24,
-        "block_alignment": "center",
+        "block_alignment": "start",
         "logo_width": 150,
         "logo_spacing": 40,
         "logo_opacity": 55,
@@ -652,6 +603,55 @@
         "anchor_id": "",
         "padding_top": 40,
         "padding_bottom": 40
+      }
+    },
+    "parallel_testimonials_6ayBHg": {
+      "type": "parallel-testimonials",
+      "blocks": {
+        "testimonial_tHbLzP": {
+          "type": "testimonial",
+          "settings": {
+            "name": "David Chapell",
+            "title": "Head of Cost Management | Clarkson Alliance",
+            "country_flag": "",
+            "testimonial_text": "Asta Estimate (Bidcon) BIM ticked all our boxes – and, the more questions we asked, the more boxes it ticked. It puts your prices at your fingertips, instead of locating them from cost plans or bills of quantities on an ad-hoc basis."
+          }
+        },
+        "testimonial_FTmqJ9": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Niclas Peterson",
+            "title": "Operation Manager | LP Entreprenad",
+            "country_flag": "",
+            "testimonial_text": "The big difference with Asta Estimate (Bidcon) is that it can visually show you that you really have everything included in the estimation, which makes the risk lower... Asta Estimate is a great tool for the entire workflow."
+          }
+        },
+        "testimonial_G4XiYQ": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Jorgen",
+            "title": "Furniture Consulting AB",
+            "country_flag": "",
+            "testimonial_text": "Asta Estimate (Bidcon) provides us with the security of knowing that everything is taken into account and nothing is falling between the cracks. You constantly find new ways to work smarter if you let Asta Estimate do the job."
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_tHbLzP",
+        "testimonial_FTmqJ9",
+        "testimonial_G4XiYQ"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "heading": "What do our customers say?",
+        "subheading": "Find out why our customers are glad they met us.",
+        "heading_size": "h1",
+        "header_alignment": "center",
+        "header_spacing": 40,
+        "color_scheme": "",
+        "anchor_id": "reviews",
+        "padding_top": 52,
+        "padding_bottom": 36
       }
     },
     "parallel_image_with_features_hVbtUt": {
