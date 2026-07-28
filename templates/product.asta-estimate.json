@@ -183,8 +183,8 @@
         "hero_background_color": "#2a303a",
         "hero_text_color": "#ffffff",
         "column_background_color": "#fff5f5",
-        "divider_color": "#E75742",
-        "primary_button_color": "#E75742",
+        "divider_color": "#e75742",
+        "primary_button_color": "#e75742",
         "primary_button_text_color": "#ffffff",
         "left_column_title": "Annual subscription",
         "left_column_price": "",
@@ -206,178 +206,61 @@
         "right_column_secondary_button_embed_url": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/yv3k1ghwefgeb3ztjwvsuq.html?PageId=d6e45d61d601f11184077ced8d6becb9"
       }
     },
-    "parallel_image_with_features_hVbtUt": {
-      "type": "parallel-image-with-features",
+    "multicolumn_nLzjxb": {
+      "type": "multicolumn",
       "blocks": {
-        "heading_GGwQtN": {
-          "type": "heading",
+        "column_JJmhxt": {
+          "type": "column",
           "settings": {
-            "heading": "Estimate projects faster with connected data",
-            "heading_size": "h1"
+            "image": "shopify://shop_images/Asta_Estimate_overview_2_4bacb07c-dc3b-4732-a236-37f2cb34aa29.png",
+            "title": "Asta Powerproject 4D Intergration",
+            "text": "<p>Asta Estimate links directly with schedules and BIM to see your project's cost, time and carbon impact together.</p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "feature_item_CkdfUp": {
-          "type": "feature_item",
+        "column_QAhAMb": {
+          "type": "column",
           "settings": {
-            "icon": "eleco-tick",
-            "text": "Build accurate cost plans quickly"
+            "image": "shopify://shop_images/Asta_Estimate_overview_3_b901eafb-e6d5-44c3-9e29-8052b6e8121b.png",
+            "title": "Up-to-date cost databases",
+            "text": "<p>Reduce the risk of underpricing or missed items with our intuitive NRM Level 1 & 2 cost libraries.</p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "feature_item_efdUrz": {
-          "type": "feature_item",
+        "column_dzQHHU": {
+          "type": "column",
           "settings": {
-            "icon": "eleco-tick",
-            "text": "Automate BIM and PDF take-offs"
-          }
-        },
-        "feature_item_eVF6yn": {
-          "type": "feature_item",
-          "settings": {
-            "icon": "eleco-tick",
-            "text": "Link cost and time in one place"
+            "image": "shopify://shop_images/Asta_Estimate_overview_1_41c2bce1-82f3-4345-a36f-5c3150cb802d.png",
+            "title": "Carbon Reporting",
+            "text": "<p>Transparent carbon and cost metrics that are compliant with requirements linked to the Building Safety Act.</p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "heading_GGwQtN",
-        "feature_item_CkdfUp",
-        "feature_item_efdUrz",
-        "feature_item_eVF6yn"
+        "column_JJmhxt",
+        "column_QAhAMb",
+        "column_dzQHHU"
       ],
-      "name": "Image with features",
+      "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Asta_Estimate_Overview_2.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
+        "title": "Know what your project is costing you",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
         "color_scheme": "",
-        "anchor_id": "#",
-        "padding_top": 0,
-        "padding_bottom": 52,
-        "text_padding_left": 32,
-        "text_padding_right": 16
-      }
-    },
-    "parallel_image_with_features_pYtxX7": {
-      "type": "parallel-image-with-features",
-      "blocks": {
-        "heading_qDbMj8": {
-          "type": "heading",
-          "settings": {
-            "heading": "Keep teams on the same page",
-            "heading_size": "h1"
-          }
-        },
-        "feature_item_8agkWh": {
-          "type": "feature_item",
-          "settings": {
-            "icon": "eleco-tick",
-            "text": "Work from a single project dataset"
-          }
-        },
-        "feature_item_gVYYUV": {
-          "type": "feature_item",
-          "settings": {
-            "icon": "eleco-tick",
-            "text": "Connect estimating, planning and delivery"
-          }
-        },
-        "feature_item_iRNHQw": {
-          "type": "feature_item",
-          "settings": {
-            "icon": "eleco-tick",
-            "text": "Align cost, time and carbon"
-          }
-        }
-      },
-      "block_order": [
-        "heading_qDbMj8",
-        "feature_item_8agkWh",
-        "feature_item_gVYYUV",
-        "feature_item_iRNHQw"
-      ],
-      "name": "Image with features",
-      "settings": {
-        "image": "shopify://shop_images/Asta_Estimate_Overview_3.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "anchor_id": "#",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "text_padding_left": 16,
-        "text_padding_right": 32
-      }
-    },
-    "parallel_image_with_features_UVMBrD": {
-      "type": "parallel-image-with-features",
-      "blocks": {
-        "heading_EU6MmW": {
-          "type": "heading",
-          "settings": {
-            "heading": "Win more work and prove value",
-            "heading_size": "h1"
-          }
-        },
-        "feature_item_Wp9bXU": {
-          "type": "feature_item",
-          "settings": {
-            "icon": "eleco-tick",
-            "text": "Increase bid accuracy and consistency"
-          }
-        },
-        "feature_item_JY6MwN": {
-          "type": "feature_item",
-          "settings": {
-            "icon": "eleco-tick",
-            "text": "Show carbon, time and cost side by side"
-          }
-        },
-        "feature_item_prUy3i": {
-          "type": "feature_item",
-          "settings": {
-            "icon": "eleco-tick",
-            "text": "Report performance clearly"
-          }
-        }
-      },
-      "block_order": [
-        "heading_EU6MmW",
-        "feature_item_Wp9bXU",
-        "feature_item_JY6MwN",
-        "feature_item_prUy3i"
-      ],
-      "name": "Image with features",
-      "settings": {
-        "image": "shopify://shop_images/Asta_Estimate_Overview_4.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "anchor_id": "#",
-        "padding_top": 52,
-        "padding_bottom": 0,
-        "text_padding_left": 32,
-        "text_padding_right": 16
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "parallel_award_banner_C3twkW": {
@@ -875,6 +758,180 @@
         "padding_bottom": 36
       }
     },
+    "parallel_image_with_features_hVbtUt": {
+      "type": "parallel-image-with-features",
+      "blocks": {
+        "heading_GGwQtN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Estimate projects faster with connected data",
+            "heading_size": "h1"
+          }
+        },
+        "feature_item_CkdfUp": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Build accurate cost plans quickly"
+          }
+        },
+        "feature_item_efdUrz": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Automate BIM and PDF take-offs"
+          }
+        },
+        "feature_item_eVF6yn": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Link cost and time in one place"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GGwQtN",
+        "feature_item_CkdfUp",
+        "feature_item_efdUrz",
+        "feature_item_eVF6yn"
+      ],
+      "name": "Image with features",
+      "settings": {
+        "image": "shopify://shop_images/Asta_Estimate_Overview_2.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "anchor_id": "#",
+        "padding_top": 0,
+        "padding_bottom": 52,
+        "text_padding_left": 32,
+        "text_padding_right": 16
+      }
+    },
+    "parallel_image_with_features_pYtxX7": {
+      "type": "parallel-image-with-features",
+      "blocks": {
+        "heading_qDbMj8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Keep teams on the same page",
+            "heading_size": "h1"
+          }
+        },
+        "feature_item_8agkWh": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Work from a single project dataset"
+          }
+        },
+        "feature_item_gVYYUV": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Connect estimating, planning and delivery"
+          }
+        },
+        "feature_item_iRNHQw": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Align cost, time and carbon"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qDbMj8",
+        "feature_item_8agkWh",
+        "feature_item_gVYYUV",
+        "feature_item_iRNHQw"
+      ],
+      "name": "Image with features",
+      "settings": {
+        "image": "shopify://shop_images/Asta_Estimate_Overview_3.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "anchor_id": "#",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "text_padding_left": 16,
+        "text_padding_right": 32
+      }
+    },
+    "parallel_image_with_features_UVMBrD": {
+      "type": "parallel-image-with-features",
+      "blocks": {
+        "heading_EU6MmW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Win more work and prove value",
+            "heading_size": "h1"
+          }
+        },
+        "feature_item_Wp9bXU": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Increase bid accuracy and consistency"
+          }
+        },
+        "feature_item_JY6MwN": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Show carbon, time and cost side by side"
+          }
+        },
+        "feature_item_prUy3i": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Report performance clearly"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EU6MmW",
+        "feature_item_Wp9bXU",
+        "feature_item_JY6MwN",
+        "feature_item_prUy3i"
+      ],
+      "name": "Image with features",
+      "settings": {
+        "image": "shopify://shop_images/Asta_Estimate_Overview_4.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "anchor_id": "#",
+        "padding_top": 52,
+        "padding_bottom": 0,
+        "text_padding_left": 32,
+        "text_padding_right": 16
+      }
+    },
     "parallel_comparison_table_eeJhkm": {
       "type": "parallel-comparison-table",
       "blocks": {
@@ -1030,7 +1087,7 @@
         "resource_background": "#2a303a",
         "resource_background_hover": "#2a303a",
         "resource_border": "#ffffff",
-        "resource_icon_color": "#E75742",
+        "resource_icon_color": "#e75742",
         "heading_font_size": 48,
         "heading_font_weight": "700",
         "description_font_size": 16,
@@ -1087,9 +1144,7 @@
     "main",
     "related-products",
     "parallel_custom_product_info_i3cpfR",
-    "parallel_image_with_features_hVbtUt",
-    "parallel_image_with_features_pYtxX7",
-    "parallel_image_with_features_UVMBrD",
+    "multicolumn_nLzjxb",
     "parallel_award_banner_C3twkW",
     "parallel_logo_block_hHLWpL",
     "parallel_highlights_yTAfJh",
@@ -1098,6 +1153,9 @@
     "parallel_custom_product_list_M7EFHt",
     "parallel_logo_block_Kyk8RD",
     "parallel_faq_accordion_3Vq7Fm",
+    "parallel_image_with_features_hVbtUt",
+    "parallel_image_with_features_pYtxX7",
+    "parallel_image_with_features_UVMBrD",
     "parallel_comparison_table_eeJhkm",
     "parallel_support_cta_RxfB67",
     "parallel_information_Ehxmkb"
