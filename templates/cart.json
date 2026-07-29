@@ -17,6 +17,110 @@
         "padding_bottom": 36
       }
     },
+    "parallel_logo_block_aT4T8F": {
+      "type": "parallel-logo-block",
+      "blocks": {
+        "logo_JaFAPJ": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/AEstimate_-_mcclaren-property-logo-new.svg",
+            "alt_text": "McLaren property Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_PfAPd8": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/mccarthy-stone-logo-new.svg",
+            "alt_text": "McCarthy and Stone Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_pzQ8UR": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/AEstimate_skanska-logo-new.svg",
+            "alt_text": "Skanska Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_W99e6t": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/mace-logo-new.svg",
+            "alt_text": "Mace Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_Bt6Q9K": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/john-moores-logo-new.svg",
+            "alt_text": "Liverpool John Moores Universite Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_FLG7zb": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/kier-logo-new.svg",
+            "alt_text": "Kier Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_XVqGGW": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/galliford-try-logo-new.svg",
+            "alt_text": "GallifordTry plc Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_NXmPMN": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/bam-logo-new.svg",
+            "alt_text": "Bam Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "logo_JaFAPJ",
+        "logo_PfAPd8",
+        "logo_pzQ8UR",
+        "logo_W99e6t",
+        "logo_Bt6Q9K",
+        "logo_FLG7zb",
+        "logo_XVqGGW",
+        "logo_NXmPMN"
+      ],
+      "name": "Logo Block",
+      "settings": {
+        "color_scheme": "",
+        "title": "Trusted by companies around the world",
+        "heading_size": "h2",
+        "title_alignment": "left",
+        "title_spacing": 24,
+        "block_alignment": "start",
+        "logo_width": 150,
+        "logo_spacing": 40,
+        "logo_opacity": 100,
+        "logo_hover_opacity": 100,
+        "mobile_columns": "1",
+        "anchor_id": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "featured_product_MjcE6b": {
       "type": "featured-product",
       "blocks": {
@@ -141,6 +245,7 @@
   },
   "order": [
     "cart-items",
+    "parallel_logo_block_aT4T8F",
     "featured_product_MjcE6b",
     "cart-footer",
     "featured-collection"
