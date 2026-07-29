@@ -9,36 +9,6 @@
  */
 {
   "sections": {
-    "cart-items": {
-      "type": "main-cart-items",
-      "settings": {
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "cart-footer": {
-      "type": "main-cart-footer",
-      "blocks": {
-        "subtotal": {
-          "type": "subtotal",
-          "settings": {}
-        },
-        "buttons": {
-          "type": "buttons",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "subtotal",
-        "buttons"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
     "parallel_logo_block_aT4T8F": {
       "type": "parallel-logo-block",
       "blocks": {
@@ -139,6 +109,36 @@
         "logo_hover_opacity": 100,
         "mobile_columns": "1",
         "anchor_id": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {}
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {
+        "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 40
       }
@@ -244,9 +244,9 @@
     }
   },
   "order": [
+    "parallel_logo_block_aT4T8F",
     "cart-items",
     "cart-footer",
-    "parallel_logo_block_aT4T8F",
     "featured_product_MjcE6b",
     "featured-collection"
   ]
