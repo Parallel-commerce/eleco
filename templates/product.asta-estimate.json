@@ -212,8 +212,8 @@
         "left_checklist_item_6": "",
         "left_text_color": "#ffffff",
         "left_description_color": "#d1d5db",
-        "left_icon_background_color": "#E75742",
-        "left_icon_color": "#E75742",
+        "left_icon_background_color": "#e75742",
+        "left_icon_color": "#e75742",
         "left_column_padding": 56,
         "left_column_border_radius": 0,
         "right_color_scheme": "scheme-1",
@@ -260,6 +260,7 @@
       "block_order": [
         "subscriptions_app_block_HfcxDY"
       ],
+      "disabled": true,
       "name": "Custom Product Info",
       "settings": {
         "color_scheme": "",
