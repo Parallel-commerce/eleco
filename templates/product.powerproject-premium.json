@@ -148,7 +148,7 @@
         "text_LM4qYM": {
           "type": "text",
           "settings": {
-            "text": "Paid annually.",
+            "text": "Billed annually",
             "text_style": "body"
           }
         },
@@ -159,9 +159,9 @@
             "widget_style": "card",
             "widget_style_card_selector": "radio_button",
             "subscription_policy_url": "",
-            "color_text_body": "#6D7175",
-            "dividers_color": "#8F8D8D",
-            "background_color": "#FFFFFF",
+            "color_text_body": "#6d7175",
+            "dividers_color": "#8f8d8d",
+            "background_color": "#ffffff",
             "border_thickness": 1,
             "border_radius": 0,
             "product": "asta-enhanced-support"
@@ -301,7 +301,7 @@
         "heading_GGwQtN": {
           "type": "heading",
           "settings": {
-            "heading": "Always on support at your fingertips",
+            "heading": "Support at your fingertips",
             "heading_size": "h1"
           }
         },
@@ -343,7 +343,7 @@
       ],
       "name": "Image with features",
       "settings": {
-        "image": "shopify://shop_images/Vision_Overview_3.png",
+        "image": "shopify://shop_images/A7409116.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
