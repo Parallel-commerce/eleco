@@ -1145,14 +1145,28 @@
           {%- if section.settings.right_link_label_1 != blank or section.settings.right_link_label_2 != blank -%}
             <div class="main-product-custom__links">
               {%- if section.settings.right_link_label_1 != blank -%}
-                <a class="main-product-custom__link" href="{{ section.settings.right_link_url_1 | default: '#' }}">
+                <a
+                  class="main-product-custom__link"
+                  href="{{ section.settings.right_link_url_1 | default: '#' }}"
+                  {% if section.settings.right_link_new_tab_1 %}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  {% endif %}
+                >
                   {{ section.settings.right_link_label_1 | escape }}
                 </a>
               {%- else -%}
                 <span></span>
               {%- endif -%}
               {%- if section.settings.right_link_label_2 != blank -%}
-                <a class="main-product-custom__link" href="{{ section.settings.right_link_url_2 | default: '#' }}">
+                <a
+                  class="main-product-custom__link"
+                  href="{{ section.settings.right_link_url_2 | default: '#' }}"
+                  {% if section.settings.right_link_new_tab_2 %}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  {% endif %}
+                >
                   {{ section.settings.right_link_label_2 | escape }}
                 </a>
               {%- else -%}
@@ -2711,6 +2725,12 @@
       "label": "Link 1 URL"
     },
     {
+      "type": "checkbox",
+      "id": "right_link_new_tab_1",
+      "label": "Open link 1 in a new tab",
+      "default": false
+    },
+    {
       "type": "text",
       "id": "right_link_label_2",
       "label": "Link 2 label",
@@ -2720,6 +2740,12 @@
       "type": "url",
       "id": "right_link_url_2",
       "label": "Link 2 URL"
+    },
+    {
+      "type": "checkbox",
+      "id": "right_link_new_tab_2",
+      "label": "Open link 2 in a new tab",
+      "default": false
     },
     {
       "type": "header",
