@@ -1451,6 +1451,29 @@
         "info": "Product shown as an upsell in the cart drawer."
       },
       {
+        "type": "product_list",
+        "id": "cart_upsell_products",
+        "label": "Additional upsell products",
+        "info": "These products stack below the main upsell. Items already in the cart are hidden.",
+        "limit": 4
+      },
+      {
+        "type": "select",
+        "id": "cart_upsell_picker_type",
+        "label": "Variant options",
+        "options": [
+          {
+            "value": "dropdown",
+            "label": "Dropdown"
+          },
+          {
+            "value": "button",
+            "label": "Pills"
+          }
+        ],
+        "default": "dropdown"
+      },
+      {
         "type": "color_scheme",
         "id": "cart_color_scheme",
         "label": "t:sections.all.colors.label",

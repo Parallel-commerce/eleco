@@ -373,54 +373,94 @@ cart-remove-button .icon-remove {
 
 /* Cart drawer upsell */
 .cart-drawer__upsell {
-  margin-top: 2.4rem;
-  margin-bottom: 2.4rem;
-  padding: 1.6rem 1.8rem;
+  margin: 0.8rem 0 1.2rem;
+  padding: 0.8rem 1rem;
   border-radius: var(--text-boxes-radius, 8px);
   background-color: rgba(var(--color-foreground), 0.03);
 }
 
-.cart-drawer__upsell-content {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1.6rem;
-  align-items: center;
-}
-
-.cart-drawer__upsell-media {
-  display: block;
-  max-width: 7.5rem;
-}
-
-.cart-drawer__upsell-image {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-  display: block;
-}
-
-.cart-drawer__upsell-info {
-  min-width: 0;
-}
-
 .cart-drawer__upsell-label {
-  margin: 0 0 0.4rem;
-  font-size: 1.2rem;
+  margin: 0 0 0.6rem;
+  font-size: 1.1rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   opacity: 0.7;
 }
 
-.cart-drawer__upsell-title {
+.cart-drawer__upsell-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-drawer__upsell-item + .cart-drawer__upsell-item {
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
+}
+
+.cart-drawer__upsell-content {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+}
+
+.cart-drawer__upsell-media {
   display: block;
-  margin: 0 0 0.6rem;
+  flex: 0 0 4rem;
+  width: 4rem;
+  max-width: 4rem;
+}
+
+.cart-drawer__upsell-image {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+.cart-drawer__upsell-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.cart-drawer__upsell-info {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.8rem;
+  min-width: 0;
+}
+
+.cart-drawer__upsell-title {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: rgb(var(--color-foreground));
+  text-decoration: none;
+}
+
+.cart-drawer__upsell-title:hover {
+  color: rgb(var(--color-foreground));
+  text-decoration: none;
 }
 
 .cart-drawer__upsell-price {
   display: flex;
   align-items: baseline;
-  gap: 0.6rem;
-  margin-bottom: 0.8rem;
+  gap: 0.4rem;
+  margin: 0;
+  flex-shrink: 0;
+  font-size: 1.2rem;
 }
 
 .cart-drawer__upsell-price--sale {
@@ -428,7 +468,7 @@ cart-remove-button .icon-remove {
 }
 
 .cart-drawer__upsell-price--compare {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   opacity: 0.7;
 }
 
@@ -436,13 +476,94 @@ cart-remove-button .icon-remove {
   font-weight: 500;
 }
 
+.cart-drawer__upsell-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.6rem;
+}
+
+.cart-drawer__upsell-options {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  gap: 0.4rem;
+  margin: 0;
+}
+
+.cart-drawer__upsell-option--dropdown .select {
+  height: 3.2rem;
+  min-height: 3.2rem;
+}
+
+.cart-drawer__upsell-option--dropdown .select__select {
+  height: 3.2rem;
+  min-height: 3.2rem;
+  font-size: 1.2rem;
+}
+
+.cart-drawer__upsell-option--pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.cart-drawer__upsell-option--pills input {
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+}
+
+.cart-drawer__upsell-option--pills label {
+  display: inline-block;
+  padding: 0.4rem 0.7rem;
+  border: 0.1rem solid rgba(var(--color-foreground), 0.2);
+  border-radius: var(--variant-pills-radius, 4rem);
+  background-color: rgb(var(--color-background));
+  font-size: 1.1rem;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.cart-drawer__upsell-option--pills input:checked + label {
+  background-color: rgb(var(--color-foreground));
+  color: rgb(var(--color-background));
+  border-color: rgb(var(--color-foreground));
+}
+
+.cart-drawer__upsell-option--pills input:focus-visible + label {
+  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0 0.5rem rgba(var(--color-foreground), 0.55);
+}
+
+.cart-drawer__upsell-form,
+.cart-drawer__upsell-form .form,
+.cart-drawer__upsell-form-inner {
+  margin: 0;
+  display: block;
+}
+
+.cart-drawer__upsell-form .product-form__error-message-wrapper {
+  margin: 0;
+}
+
 .cart-drawer__upsell-button {
-  width: 100%;
+  width: auto;
+  min-height: 3.2rem;
+  padding: 0.4rem 1.2rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.04rem;
   justify-content: center;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 749px) {
   .cart-drawer__upsell {
-    margin-top: 1.6rem;
+    margin: 0.8rem 0 1rem;
   }
 }

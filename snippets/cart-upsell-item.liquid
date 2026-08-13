@@ -1,0 +1,183 @@
+{% doc %}
+  Renders a compact cart drawer upsell product.
+
+  @param {product} product - The product to offer
+  @param {string} picker_type - Variant picker style: dropdown or button
+  @param {string} unique_id - Unique id used for form and option inputs
+
+  @example
+  {% render 'cart-upsell-item', product: product, picker_type: 'dropdown', unique_id: product.id %}
+{% enddoc %}
+
+{%- liquid
+  assign current_variant = product.selected_or_first_available_variant
+  assign product_form_id = 'CartDrawer-Upsell-Form-' | append: unique_id
+  assign show_picker = false
+  if product.has_only_default_variant == false
+    assign show_picker = true
+  endif
+
+  assign quantity_rule_soldout = false
+  assign check_inventory = true
+  if current_variant.inventory_management != 'shopify' or current_variant.inventory_policy == 'continue'
+    assign check_inventory = false
+  endif
+  if current_variant.quantity_rule.min > current_variant.inventory_quantity and check_inventory
+    assign quantity_rule_soldout = true
+  endif
+-%}
+
+<cart-upsell-item class="cart-drawer__upsell-item" data-product-id="{{ product.id }}">
+  <div class="cart-drawer__upsell-content">
+    {%- if product.featured_media != blank -%}
+      <a href="{{ product.url }}" class="cart-drawer__upsell-media" tabindex="-1" aria-hidden="true">
+        {{
+          product.featured_media
+          | image_url: width: 140
+          | image_tag: loading: 'lazy', alt: product.title, class: 'cart-drawer__upsell-image'
+        }}
+      </a>
+    {%- endif -%}
+
+    <div class="cart-drawer__upsell-body">
+      <div class="cart-drawer__upsell-info">
+        <a href="{{ product.url }}" class="cart-drawer__upsell-title">
+          {{ product.title | escape }}
+        </a>
+
+        <div class="cart-drawer__upsell-price" data-upsell-price>
+          {%- if current_variant.compare_at_price > current_variant.price -%}
+            <span class="cart-drawer__upsell-price--sale">{{ current_variant.price | money }}</span>
+            <s class="cart-drawer__upsell-price--compare">{{ current_variant.compare_at_price | money }}</s>
+          {%- else -%}
+            <span class="cart-drawer__upsell-price--regular">{{ current_variant.price | money }}</span>
+          {%- endif -%}
+        </div>
+      </div>
+
+      <div class="cart-drawer__upsell-actions">
+        {%- if show_picker -%}
+          <div class="cart-drawer__upsell-options">
+      {%- for option in product.options_with_values -%}
+        {%- assign option_index = forloop.index0 -%}
+        {%- if picker_type == 'button' -%}
+          <fieldset class="cart-drawer__upsell-option cart-drawer__upsell-option--pills" data-option-index="{{ option_index }}">
+            <legend class="visually-hidden">{{ option.name }}</legend>
+            {%- for value in option.values -%}
+              {%- assign input_id = unique_id | append: '-option-' | append: option_index | append: '-' | append: forloop.index0 -%}
+              <input
+                type="radio"
+                id="{{ input_id }}"
+                name="upsell-{{ unique_id }}-{{ option_index }}"
+                value="{{ value | escape }}"
+                {% if option.selected_value == value %}
+                  checked
+                {% endif %}
+              >
+              <label for="{{ input_id }}">{{ value }}</label>
+            {%- endfor -%}
+          </fieldset>
+        {%- else -%}
+          <div class="cart-drawer__upsell-option cart-drawer__upsell-option--dropdown">
+            <label class="visually-hidden" for="UpsellOption-{{ unique_id }}-{{ option_index }}">
+              {{ option.name }}
+            </label>
+            <div class="select">
+              <select
+                id="UpsellOption-{{ unique_id }}-{{ option_index }}"
+                class="select__select"
+                data-option-index="{{ option_index }}"
+              >
+                {%- for value in option.values -%}
+                  <option
+                    value="{{ value | escape }}"
+                    {% if option.selected_value == value %}
+                      selected="selected"
+                    {% endif %}
+                  >
+                    {{ value }}
+                  </option>
+                {%- endfor -%}
+              </select>
+              <span class="svg-wrapper">
+                {{- 'icon-caret.svg' | inline_asset_content -}}
+              </span>
+            </div>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+          </div>
+        {%- endif -%}
+
+        {%- if current_variant -%}
+          <product-form class="product-form cart-drawer__upsell-form" data-section-id="cart-drawer-upsell-{{ unique_id }}">
+      <div class="product-form__error-message-wrapper" role="alert" hidden>
+        <span class="svg-wrapper">
+          {{- 'icon-error.svg' | inline_asset_content -}}
+        </span>
+        <span class="product-form__error-message"></span>
+      </div>
+
+      {%- form 'product',
+        product,
+        id: product_form_id,
+        class: 'form cart-drawer__upsell-form-inner',
+        novalidate: 'novalidate',
+        data-type: 'add-to-cart-form'
+      -%}
+        <input
+          type="hidden"
+          name="id"
+          value="{{ current_variant.id }}"
+          class="product-variant-id"
+          {% if current_variant.available == false or quantity_rule_soldout or current_variant == null %}
+            disabled
+          {% endif %}
+        >
+        {%- if product.requires_selling_plan -%}
+          {%- assign upsell_selling_plan = product.selling_plan_groups.first.selling_plans.first -%}
+          {%- if upsell_selling_plan -%}
+            <input type="hidden" name="selling_plan" value="{{ upsell_selling_plan.id }}">
+          {%- endif -%}
+        {%- endif -%}
+        <button
+          type="submit"
+          name="add"
+          class="button button--secondary cart-drawer__upsell-button"
+          {% if current_variant.available == false or quantity_rule_soldout or current_variant == null %}
+            disabled
+          {% endif %}
+        >
+          <span>
+            {%- if current_variant == null -%}
+              {{ 'products.product.unavailable' | t }}
+            {%- elsif current_variant.available == false or quantity_rule_soldout -%}
+              {{ 'products.product.sold_out' | t }}
+            {%- else -%}
+              {{ 'products.product.add_to_cart' | t }}
+            {%- endif -%}
+          </span>
+          {%- render 'loading-spinner' -%}
+        </button>
+      {%- endform -%}
+          </product-form>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+
+  <script type="application/json" data-upsell-variants>
+    [
+      {%- for variant in product.variants -%}
+        {
+          "id": {{ variant.id }},
+          "available": {{ variant.available }},
+          "options": {{ variant.options | json }},
+          "price": {{ variant.price | money | json }},
+          "compare_at_price": {% if variant.compare_at_price > variant.price %}{{ variant.compare_at_price | money | json }}{% else %}null{% endif %},
+          "image": {% if variant.featured_image %}{{ variant.featured_image | image_url: width: 140 | json }}{% elsif product.featured_image %}{{ product.featured_image | image_url: width: 140 | json }}{% else %}null{% endif %}
+        }{% unless forloop.last %},{% endunless %}
+      {%- endfor -%}
+    ]
+  </script>
+</cart-upsell-item>
