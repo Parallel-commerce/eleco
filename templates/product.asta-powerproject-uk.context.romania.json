@@ -1,0 +1,111 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "product.asta-powerproject-uk.json",
+  "context": {
+    "market": "romania"
+  },
+  "sections": {
+    "main_product_custom_F9wTnY": {
+      "settings": {
+        "left_checklist_item_1": "Acces complet la funcții încă din prima zi",
+        "left_checklist_item_2": " Asistență pentru activare timp de 14 zile",
+        "left_checklist_item_3": "Începeți instantaneu",
+        "left_checklist_item_4": "Preț blocat timp de 12 luni",
+        "right_link_label_1": "Descărcați versiunea de încercare gratuită",
+        "right_link_label_2": "Contactați vânzările"
+      },
+      "blocks": {
+        "text_rRtFaG": {
+          "settings": {
+            "text": "Abonament anual"
+          }
+        },
+        "text_pcY3DW": {
+          "settings": {
+            "text": "1 utilizator per licență • PC cu Windows • Facturat anual"
+          }
+        }
+      }
+    },
+    "multicolumn_GRCHXY": {
+      "settings": {
+        "title": "Software-ul tău all-in-one pentru livrarea proiectelor la timp"
+      },
+      "blocks": {
+        "column_QVkQnW": {
+          "settings": {
+            "title": "Planificarea cu diagrame Gantt",
+            "text": "<p>Capacități extinse de programare pentru vizualizarea dependențelor, a liniilor de bază și a drumului critic pentru fiecare sarcină și echipă.</p>"
+          }
+        },
+        "column_D4NcPk": {
+          "settings": {
+            "title": "Previziunea și alocarea costurilor",
+            "text": "<p>Urmărește cheltuielile planificate versus cele reale în timp real și atenuează întârzierile înainte ca acestea să se producă.</p>"
+          }
+        },
+        "column_7EwNze": {
+          "settings": {
+            "title": "Planificarea resurselor",
+            "text": "<p>Gestionați toate resursele disponibile pentru a maximiza eficiența și a gestiona timpul de finalizare planificat față de cel efectiv în raport cu termenul limită.<br/><br/></p>"
+          }
+        }
+      }
+    },
+    "parallel_logo_block_hHLWpL": {
+      "settings": {
+        "title": "De încredere de"
+      }
+    },
+    "parallel_faq_accordion_3Vq7Fm": {
+      "settings": {
+        "heading": "Întrebări? Avem răspunsuri."
+      },
+      "blocks": {
+        "faq_item_QVNkTB": {
+          "settings": {
+            "question": "Care este diferența dintre versiunea de probă și cea plătită?",
+            "answer": "<p>Perioada de încercare gratuită vă oferă acces complet la fiecare funcție a software-ului timp de 14 zile. Nu este necesar card de credit și nu există funcții blocate.</p>"
+          }
+        },
+        "faq_item_iLkedR": {
+          "settings": {
+            "question": " Cum accesez software-ul după ce îl cumpăr?",
+            "answer": "<p>Software-ul nostru digital vă permite să accesați software-ul în doar câteva minute de la achiziționarea online. Veți primi un e-mail care vă va ghida prin pași și vă va arăta unde puteți găsi licența și cheia de activare. Puteți oricând să contactați support@eleco.com dacă aveți nevoie de asistență suplimentară.<br/><br/></p>"
+          }
+        },
+        "faq_item_d8Pe8E": {
+          "settings": {
+            "question": "Ce este inclus în upgrade-ul de asistență îmbunătățită?",
+            "answer": "<p>Găsește liniște știind că vei fi îngrijit la fiecare pas. Vei avea acces la specialiștii noștri de produse instruiți (9-17; luni-vineri), inclusiv asistență tehnică, de instalare și activare, dacă este necesar. Adaptăm constant abordarea noastră pentru a te sprijini pe tine și afacerea ta cu o rezoluție de 99% a tichetelor în termen de 6 ore.<br/><br/></p>"
+          }
+        },
+        "faq_item_FbD6cb": {
+          "settings": {
+            "question": " Cum îmi anulez abonamentul?",
+            "answer": "<p>Dacă doriți să anulați abonamentul anual, va trebui să furnizați o notificare scrisă de reziliere cu cel puțin 60 de zile înainte de data reînnoirii. Dacă anulați în conformitate cu această perioadă de notificare, accesul dvs. va continua până la sfârșitul perioadei curente.</p>"
+          }
+        },
+        "faq_item_bAXDXk": {
+          "settings": {
+            "question": "Care este diferența dintre o licență simplă și una concurentă?",
+            "answer": "<p>O singură licență este legată de un singur utilizator pe un singur dispozitiv.<br/><br/>O licență concurentă permite mai multor utilizatori să partajeze aceeași licență pe diferite dispozitive, oferind o flexibilitate mai mare și reducând costul per utilizator.<br/><br/>Ambele opțiuni se potrivesc companiilor de orice dimensiune, în funcție de nevoile dumneavoastră.<br/><br/></p>"
+          }
+        },
+        "faq_item_mDbcdE": {
+          "settings": {
+            "question": "Poate fi transferată o singură licență către un alt coleg sau dispozitiv?"
+          }
+        }
+      }
+    }
+  }
+}
