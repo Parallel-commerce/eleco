@@ -102,7 +102,53 @@
         },
         "faq_item_mDbcdE": {
           "settings": {
-            "question": "Poate fi transferată o singură licență către un alt coleg sau dispozitiv?"
+            "question": "Poate fi transferată o singură licență către un alt coleg sau dispozitiv?",
+            "answer": "<p>Da. Utilizatorii pot urma pașii din software pentru a muta o licență între dispozitive. Dacă trebuie să anulați o licență de pe un dispozitiv la care nu mai aveți acces, echipa noastră de asistență poate face acest lucru de la distanță; contactați-ne la support@eleco.com.</p>"
+          }
+        },
+        "faq_item_bVkqMa": {
+          "settings": {
+            "question": "Pe ce dispozitive pot instala Asta Powerproject?",
+            "answer": "<p>Software-ul este disponibil pentru descărcare pe PC cu Windows. Există o aplicație însoțitoare cu licență separată pentru utilizare pe iOS și Android.</p>"
+          }
+        },
+        "faq_item_jARANR": {
+          "settings": {
+            "question": "Se poate folosi pe un Macbook?",
+            "answer": "<p>Da. Prin actualizarea la abonamentul Asta Powerproject SaaS, îl puteți accesa fără probleme pe un Mac. Ne puteți contacta la support@eleco.com.</p>"
+          }
+        },
+        "faq_item_3zcwtw": {
+          "settings": {
+            "question": "Ce dimensiuni și tipuri de proiecte funcționează cel mai bine cu Asta Powerproject?",
+            "answer": "<p>Asta Powerproject se potrivește oricărui tip de proiect, de la lucrări mici (extensii, amenajări, lucrări civile minore) la megaproiecte majore (clădiri emblematice, aeroporturi, autostrăzi) și se extinde de la antreprenori mici la întreprinderi mari.<br/><br/>Funcționează cel mai bine în proiecte de construcții, infrastructură și industrie care necesită programe CPM bazate pe logică, analize clare ale drumului critic și ale fluxului de lucru, precum și prezentări profesionale, fază cu fază, cu diagrame cu bare pentru clienți, planificatori și soluționarea litigiilor.<br/><br/></p>"
+          }
+        },
+        "faq_item_Y8h4bQ": {
+          "settings": {
+            "question": "Pot părțile interesate să vizualizeze proiectul meu fără licență?",
+            "answer": "<p>Da. Părțile interesate pot descărca gratuit ProjectViewer pentru a accesa proiectul lor fără a necesita o licență.</p>"
+          }
+        }
+      }
+    },
+    "parallel_highlights_yTAfJh": {
+      "blocks": {
+        "highlight_KdRTH8": {
+          "settings": {
+            "highlight": " +100.000",
+            "text": "profesionisti din intreaga lume"
+          }
+        },
+        "highlight_kcCRDW": {
+          "settings": {
+            "highlight": "+70",
+            "text": " Țările folosesc Asta"
+          }
+        },
+        "highlight_kmzQJf": {
+          "settings": {
+            "text": "Top 100 de contractori din Marea Britanie ne aleg pe noi"
           }
         }
       }
