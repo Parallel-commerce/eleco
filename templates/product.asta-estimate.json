@@ -250,7 +250,7 @@
         "show_right_price_period": false,
         "right_price_divisor": 12,
         "right_price_period_label": "month",
-        "right_column_padding": 24,
+        "right_column_padding": 28,
         "right_column_border_radius": 26,
         "media_size": "medium",
         "constrain_to_viewport": true,
