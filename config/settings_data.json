@@ -122,6 +122,7 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "cart_upsell_product": "1-day-introductory-asta-powerproject-training-course",
+    "cart_upsell_picker_type": "button",
     "product_nav_buy_now_button_color": "#E65742",
     "sections": {
       "main-password-header": {
