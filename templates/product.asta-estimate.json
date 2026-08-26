@@ -178,6 +178,13 @@
           "type": "price",
           "settings": {}
         },
+        "variant_picker_zCjENt": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
         "quantity_selector_fxKRGi": {
           "type": "quantity_selector",
           "settings": {}
@@ -194,6 +201,7 @@
         "complementary_hXn9Cj",
         "text_EmfAnQ",
         "price_QfUtgV",
+        "variant_picker_zCjENt",
         "quantity_selector_fxKRGi",
         "buy_buttons_gUhePD"
       ],
@@ -219,8 +227,10 @@
         "right_color_scheme": "scheme-1",
         "right_link_label_1": "Download free trial",
         "right_link_url_1": "",
+        "right_link_new_tab_1": false,
         "right_link_label_2": "Contact sales",
         "right_link_url_2": "",
+        "right_link_new_tab_2": false,
         "show_right_price_period": false,
         "right_price_divisor": 12,
         "right_price_period_label": "month",
@@ -494,6 +504,8 @@
         "logo_opacity": 100,
         "logo_hover_opacity": 100,
         "mobile_columns": "2",
+        "mobile_autoplay": true,
+        "mobile_autoplay_speed": 4,
         "anchor_id": "",
         "padding_top": 20,
         "padding_bottom": 40
@@ -690,6 +702,8 @@
         "logo_opacity": 55,
         "logo_hover_opacity": 100,
         "mobile_columns": "2",
+        "mobile_autoplay": true,
+        "mobile_autoplay_speed": 4,
         "anchor_id": "",
         "padding_top": 40,
         "padding_bottom": 40
