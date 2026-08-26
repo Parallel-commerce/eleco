@@ -1,8 +1,123 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
+    "parallel_logo_block_aT4T8F": {
+      "type": "parallel-logo-block",
+      "blocks": {
+        "logo_JaFAPJ": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/AEstimate_-_mcclaren-property-logo-new.svg",
+            "alt_text": "McLaren property Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_PfAPd8": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/mccarthy-stone-logo-new.svg",
+            "alt_text": "McCarthy and Stone Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_pzQ8UR": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/AEstimate_skanska-logo-new.svg",
+            "alt_text": "Skanska Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_W99e6t": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/mace-logo-new.svg",
+            "alt_text": "Mace Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_Bt6Q9K": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/john-moores-logo-new.svg",
+            "alt_text": "Liverpool John Moores Universite Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_FLG7zb": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/kier-logo-new.svg",
+            "alt_text": "Kier Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_XVqGGW": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/galliford-try-logo-new.svg",
+            "alt_text": "GallifordTry plc Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_NXmPMN": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/bam-logo-new.svg",
+            "alt_text": "Bam Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "logo_JaFAPJ",
+        "logo_PfAPd8",
+        "logo_pzQ8UR",
+        "logo_W99e6t",
+        "logo_Bt6Q9K",
+        "logo_FLG7zb",
+        "logo_XVqGGW",
+        "logo_NXmPMN"
+      ],
+      "name": "Logo Block",
+      "settings": {
+        "color_scheme": "",
+        "title": "Trusted by companies around the world",
+        "heading_size": "h2",
+        "title_alignment": "left",
+        "title_spacing": 24,
+        "block_alignment": "start",
+        "logo_width": 150,
+        "logo_spacing": 40,
+        "logo_opacity": 100,
+        "logo_hover_opacity": 100,
+        "mobile_columns": "2",
+        "anchor_id": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "cart-items": {
       "type": "main-cart-items",
       "settings": {
+        "color_scheme": "scheme-1",
+        "image_size": 64,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -12,44 +127,128 @@
       "blocks": {
         "subtotal": {
           "type": "subtotal",
-          "settings": {
-          }
+          "settings": {}
         },
         "buttons": {
           "type": "buttons",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
         "subtotal",
         "buttons"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 16,
+        "padding_bottom": 40
+      }
+    },
+    "featured_product_MjcE6b": {
+      "type": "featured-product",
+      "blocks": {
+        "text_mF4C4p": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_fzcx8m": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_QpWBDQ": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_DxehkJ": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_C4k7VW": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_kWYn4a": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_Uihadg": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_mF4C4p",
+        "title_fzcx8m",
+        "price_QpWBDQ",
+        "variant_picker_DxehkJ",
+        "quantity_selector_C4k7VW",
+        "buy_buttons_kWYn4a",
+        "share_Uihadg"
+      ],
+      "disabled": true,
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "asta-enhanced-support",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     },
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured collection",
-        "heading_size": "h2",
-        "collection": "all",
+        "collection": "would-you-like-to-add",
         "products_to_show": 4,
+        "title": "Recommended to purchase with Asta",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "enable_desktop_slider": false,
+        "full_width": false,
         "show_view_all": true,
-        "swipe_on_mobile": false,
+        "view_all_style": "outline",
+        "color_scheme": "scheme-1",
         "image_ratio": "square",
+        "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
+        "quick_add": "standard",
         "columns_mobile": "2",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
+    "parallel_logo_block_aT4T8F",
     "cart-items",
     "cart-footer",
+    "featured_product_MjcE6b",
     "featured-collection"
   ]
 }

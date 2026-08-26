@@ -1,0 +1,156 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_e9tbaL": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_PGKFGb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Industries",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_PGKFGb"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Untitled_design_2.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "rich_text_KpRgxW": {
+      "type": "rich-text",
+      "blocks": {
+        "text_RHJV7T": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Engineered for the realities of live construction sites.</h2>"
+          }
+        },
+        "heading_kwwKXQ": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Industries",
+            "heading_size": "h1"
+          }
+        },
+        "text_9J9nyn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Asta suite is purpose-built for the entire built environment sector, supporting construction, infrastructure, civil engineering, fit-outs, residential developments, and complex engineering projects. Designed to perform in dynamic, real-world conditions, Asta empowers teams to plan, adapt, and deliver with confidence.<br/><br/>With real-time visibility, smarter resource management, and dependable scheduling from pre-construction to completion, Asta solutions give you full control of every phase of delivery.<br/><br/>Whether you’re driving large-scale infrastructure projects, fast-track commercial fit-outs, or residential developments, let our solutions help minimise delays, enhance collaboration, and ensure every project stays on time and on budget.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_RHJV7T",
+        "heading_kwwKXQ",
+        "text_9J9nyn"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "parallel_collection_list_q8BjYt": {
+      "type": "parallel-collection-list",
+      "blocks": {
+        "collection_rgDzKF": {
+          "type": "collection",
+          "settings": {
+            "collection": "construction"
+          }
+        },
+        "collection_yzWEVA": {
+          "type": "collection",
+          "settings": {
+            "collection": "civil-engineering"
+          }
+        },
+        "collection_kgxNNp": {
+          "type": "collection",
+          "settings": {
+            "collection": "engineering"
+          }
+        },
+        "collection_Ndat8J": {
+          "type": "collection",
+          "settings": {
+            "collection": "infastructure"
+          }
+        },
+        "collection_ywrXY8": {
+          "type": "collection",
+          "settings": {
+            "collection": "residential"
+          }
+        },
+        "collection_iiGK7V": {
+          "type": "collection",
+          "settings": {
+            "collection": "fit-out"
+          }
+        }
+      },
+      "block_order": [
+        "collection_rgDzKF",
+        "collection_yzWEVA",
+        "collection_kgxNNp",
+        "collection_Ndat8J",
+        "collection_ywrXY8",
+        "collection_iiGK7V"
+      ],
+      "name": "Collection list",
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "heading_size": "h1",
+        "columns_desktop": 3,
+        "columns_mobile": "1",
+        "image_ratio": "landscape",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_e9tbaL",
+    "rich_text_KpRgxW",
+    "parallel_collection_list_q8BjYt"
+  ]
+}

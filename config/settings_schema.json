@@ -1445,10 +1445,54 @@
         "info": "t:settings_schema.cart.settings.cart_drawer.collection.info"
       },
       {
+        "type": "product",
+        "id": "cart_upsell_product",
+        "label": "Upsell product",
+        "info": "Product shown as an upsell in the cart and cart drawer."
+      },
+      {
+        "type": "product_list",
+        "id": "cart_upsell_products",
+        "label": "Additional upsell products",
+        "info": "These products stack below the main upsell. Items already in the cart are hidden.",
+        "limit": 4
+      },
+      {
+        "type": "select",
+        "id": "cart_upsell_picker_type",
+        "label": "Variant options",
+        "options": [
+          {
+            "value": "dropdown",
+            "label": "Dropdown"
+          },
+          {
+            "value": "button",
+            "label": "Pills"
+          }
+        ],
+        "default": "dropdown"
+      },
+      {
         "type": "color_scheme",
         "id": "cart_color_scheme",
         "label": "t:sections.all.colors.label",
         "default": "scheme-1"
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.product_navigation.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.product_navigation.settings.header_buy_now.content"
+      },
+      {
+        "type": "color",
+        "id": "product_nav_buy_now_button_color",
+        "label": "t:settings_schema.product_navigation.settings.buy_now_button_color.label",
+        "default": "#E83F40"
       }
     ]
   }

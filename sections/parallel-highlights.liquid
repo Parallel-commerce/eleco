@@ -1,0 +1,205 @@
+{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .highlights-{{ section.id }}__grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .highlights-{{ section.id }}__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.25rem;
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    .highlights-{{ section.id }}__grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+  }
+
+  .highlights-{{ section.id }}__item {
+    background: rgba(var(--color-foreground), 0.04);
+    border: none;
+    box-shadow: none;
+    border-radius: 8px;
+    padding: 1.5rem 1.75rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .highlights-{{ section.id }}__item {
+      padding: 1.75rem 2.25rem;
+    }
+  }
+
+  .highlights-{{ section.id }}__value {
+    color: {{ section.settings.highlight_color | default: '#e85a47' }};
+    font-weight: 700;
+    font-size: clamp(2rem, 1.2vw + 1.5rem, 3rem);
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .highlights-{{ section.id }}__text {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: rgb(var(--color-foreground));
+  }
+
+  @media screen and (max-width: 749px) {
+    .highlights-{{ section.id }}__text {
+      font-size: 1.2rem;
+    }
+  }
+{%- endstyle -%}
+
+<div
+  {% if section.settings.anchor_id != blank and section.settings.anchor_id != '#' %}
+    {%- assign clean_anchor_id = section.settings.anchor_id | replace: '#', '' -%}
+    id="{{ clean_anchor_id }}"
+  {% endif %}
+  class="color-{{ section.settings.color_scheme }} gradient"
+>
+  <div class="page-width section-{{ section.id }}-padding isolate">
+    <div class="highlights-{{ section.id }}__grid">
+      {%- for block in section.blocks -%}
+        {%- if block.settings.highlight != blank or block.settings.text != blank -%}
+          <div
+            class="highlights-{{ section.id }}__item content-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            {{ block.shopify_attributes }}
+            {% if settings.animations_reveal_on_scroll %}
+              data-cascade
+              style="--animation-order: {{ forloop.index }};"
+            {% endif %}
+          >
+            <div class="highlights-{{ section.id }}__value">{{ block.settings.highlight | escape }}</div>
+            <div class="highlights-{{ section.id }}__text">{{ block.settings.text | escape }}</div>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "|| Highlights",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "color",
+      "id": "highlight_color",
+      "label": "Highlight colour",
+      "default": "#e85a47"
+    },
+    {
+      "type": "header",
+      "content": "Section anchor"
+    },
+    {
+      "type": "text",
+      "id": "anchor_id",
+      "label": "Anchor ID",
+      "info": "Enter an ID for anchor links (e.g., 'features'). Links can use #features to jump to this section. Do not include the # symbol."
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "highlight",
+      "name": "Highlight",
+      "settings": [
+        {
+          "type": "text",
+          "id": "highlight",
+          "label": "Highlight value",
+          "default": "+250k"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Description",
+          "default": "Licenses sold worldwide"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Highlights",
+      "blocks": [
+        {
+          "type": "highlight",
+          "settings": {
+            "highlight": "+250k",
+            "text": "Licenses sold worldwide"
+          }
+        },
+        {
+          "type": "highlight",
+          "settings": {
+            "highlight": "70+",
+            "text": "Countries use Asta"
+          }
+        },
+        {
+          "type": "highlight",
+          "settings": {
+            "highlight": "75%",
+            "text": "UK builder choose Asta"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

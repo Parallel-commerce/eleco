@@ -1,0 +1,876 @@
+{%- style -%}
+  .comparison-table-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .comparison-table-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .comparison-table-{{ section.id }}__wrapper {
+    width: 100%;
+  }
+
+  .comparison-table-{{ section.id }}__heading {
+    margin: 0 0 {{ section.settings.heading_spacing }}px 0;
+  }
+
+  .comparison-table-{{ section.id }}__table-wrapper {
+    margin-bottom: {{ section.settings.button_spacing }}px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .comparison-table-{{ section.id }}__header-wrapper {
+    display: flex;
+    margin-bottom: 8px;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .comparison-table-{{ section.id }}__header-cell {
+    padding: {{ section.settings.cell_padding }}px;
+    font-weight: 600;
+    font-size: {{ section.settings.header_font_size }}px;
+    color: {{ section.settings.header_text_color }};
+    background: {{ section.settings.header_background }};
+    border-radius: {{ section.settings.border_radius }}px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    min-width: 0;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .comparison-table-{{ section.id }}__header-cell:first-child {
+    flex: 1 1 66.67%;
+    text-align: left;
+  }
+
+  .comparison-table-{{ section.id }}__header-cell:not(:first-child) {
+    flex: 1 1 16.67%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .comparison-table-{{ section.id }}__table {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+  }
+
+  .comparison-table-{{ section.id }}__row {
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .comparison-table-{{ section.id }}__cell {
+    padding: {{ section.settings.cell_padding }}px;
+    font-size: {{ section.settings.cell_font_size }}px;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-bottom: 1px solid var(--eleco-primary);
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .comparison-table-{{ section.id }}__cell:first-child {
+    flex: 1 1 66.67%;
+    text-align: left;
+  }
+
+  .comparison-table-{{ section.id }}__cell:not(:first-child) {
+    flex: 1 1 16.67%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .comparison-table-{{ section.id }}__functionality {
+    font-weight: 500;
+    color: rgb(var(--color-foreground));
+  }
+
+  .comparison-table-{{ section.id }}__value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .comparison-table-{{ section.id }}__icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .comparison-table-{{ section.id }}__icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .comparison-table-{{ section.id }}__text-value {
+    color: rgb(var(--color-foreground));
+  }
+
+  .comparison-table-{{ section.id }}__buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .comparison-table-{{ section.id }}__button-wrapper {
+    flex: 0 0 16.67%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .comparison-table-{{ section.id }}__button-wrapper .button {
+    min-width: auto;
+  }
+
+  .comparison-table-{{ section.id }}__add-to-cart-form {
+    display: block;
+    width: 100%;
+  }
+
+  .comparison-table-{{ section.id }}__add-to-cart-form .button {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 749px) {
+    .comparison-table-{{ section.id }}__table-wrapper {
+      overflow-x: auto;
+    }
+
+    .comparison-table-{{ section.id }}__header-wrapper {
+      gap: 0.25rem;
+      margin-bottom: 8px;
+      width: 100%;
+      min-width: 0;
+    }
+
+    .comparison-table-{{ section.id }}__header-cell {
+      min-width: 0;
+    }
+
+    .comparison-table-{{ section.id }}__header-cell:first-child {
+      flex: 1 1 33.33%;
+    }
+
+    .comparison-table-{{ section.id }}__header-cell:not(:first-child) {
+      flex: 1 1 33.33%;
+    }
+
+    .comparison-table-{{ section.id }}__table {
+      gap: 8px;
+    }
+
+    .comparison-table-{{ section.id }}__row {
+      gap: 0.25rem;
+      width: 100%;
+      min-width: 0;
+    }
+
+    .comparison-table-{{ section.id }}__cell {
+      min-width: 0;
+    }
+
+    .comparison-table-{{ section.id }}__cell:first-child {
+      flex: 1 1 33.33%;
+    }
+
+    .comparison-table-{{ section.id }}__cell:not(:first-child) {
+      flex: 1 1 33.33%;
+    }
+
+    .comparison-table-{{ section.id }}__header-cell,
+    .comparison-table-{{ section.id }}__cell {
+      padding: 12px;
+      font-size: {{ section.settings.cell_font_size | times: 0.9 | round: 0 }}px;
+    }
+
+    .comparison-table-{{ section.id }}__header-cell {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+    }
+
+    .comparison-table-{{ section.id }}__header-cell:not(:first-child) {
+      justify-content: center;
+    }
+
+    .comparison-table-{{ section.id }}__buttons {
+      flex-direction: row;
+      gap: 0.5rem;
+    }
+
+    .comparison-table-{{ section.id }}__button-wrapper {
+      flex: 0 0 calc(50% - 0.25rem);
+      max-width: calc(50% - 0.25rem);
+    }
+
+    .comparison-table-{{ section.id }}__button-wrapper .button {
+      width: 100%;
+    }
+  }
+{%- endstyle -%}
+
+<div
+  {% if section.settings.anchor_id != blank and section.settings.anchor_id != '#' %}
+    {%- assign clean_anchor_id = section.settings.anchor_id | replace: '#', '' -%}
+    id="{{ clean_anchor_id }}"
+  {% endif %}
+  class="color-{{ section.settings.color_scheme }} gradient"
+>
+  <div class="comparison-table-{{ section.id }} page-width isolate">
+    <div class="comparison-table-{{ section.id }}__wrapper">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="comparison-table-{{ section.id }}__heading inline-richtext {{ section.settings.heading_size }}">
+          {{ section.settings.heading }}
+        </h2>
+      {%- endif -%}
+
+      {%- if section.blocks.size > 0 -%}
+        <div class="comparison-table-{{ section.id }}__header-wrapper">
+          <div class="comparison-table-{{ section.id }}__header-cell">
+            {{ section.settings.column_1_title | default: 'Functionality' }}
+          </div>
+          <div class="comparison-table-{{ section.id }}__header-cell">
+            {{ section.settings.column_2_title | default: 'Product 1' }}
+          </div>
+          <div class="comparison-table-{{ section.id }}__header-cell">
+            {{ section.settings.column_3_title | default: 'Product 2' }}
+          </div>
+        </div>
+        <div class="comparison-table-{{ section.id }}__table-wrapper">
+          <div class="comparison-table-{{ section.id }}__table">
+            {%- for block in section.blocks -%}
+              <div class="comparison-table-{{ section.id }}__row" {{ block.shopify_attributes }}>
+                <div class="comparison-table-{{ section.id }}__cell comparison-table-{{ section.id }}__functionality">
+                  {{ block.settings.functionality_text | escape }}
+                </div>
+                <div class="comparison-table-{{ section.id }}__cell">
+                  <div class="comparison-table-{{ section.id }}__value">
+                    {%- if block.settings.column_2_type == 'tick' -%}
+                      <span
+                        class="comparison-table-{{ section.id }}__icon comparison-table-{{ section.id }}__icon--tick"
+                        aria-label="Yes"
+                      >
+                        {{ 'icon-eleco-tick-green.svg' | inline_asset_content }}
+                      </span>
+                    {%- elsif block.settings.column_2_type == 'cross' -%}
+                      <span
+                        class="comparison-table-{{ section.id }}__icon comparison-table-{{ section.id }}__icon--cross"
+                        aria-label="No"
+                      >
+                        {{ 'icon-eleco-negative.svg' | inline_asset_content }}
+                      </span>
+                    {%- else -%}
+                      <span class="comparison-table-{{ section.id }}__text-value">
+                        {{ block.settings.column_2_text | escape }}
+                      </span>
+                    {%- endif -%}
+                  </div>
+                </div>
+                <div class="comparison-table-{{ section.id }}__cell">
+                  <div class="comparison-table-{{ section.id }}__value">
+                    {%- if block.settings.column_3_type == 'tick' -%}
+                      <span
+                        class="comparison-table-{{ section.id }}__icon comparison-table-{{ section.id }}__icon--tick"
+                        aria-label="Yes"
+                      >
+                        {{ 'icon-eleco-tick-green.svg' | inline_asset_content }}
+                      </span>
+                    {%- elsif block.settings.column_3_type == 'cross' -%}
+                      <span
+                        class="comparison-table-{{ section.id }}__icon comparison-table-{{ section.id }}__icon--cross"
+                        aria-label="No"
+                      >
+                        {{ 'icon-eleco-negative.svg' | inline_asset_content }}
+                      </span>
+                    {%- else -%}
+                      <span class="comparison-table-{{ section.id }}__text-value">
+                        {{ block.settings.column_3_text | escape }}
+                      </span>
+                    {%- endif -%}
+                  </div>
+                </div>
+              </div>
+            {%- endfor -%}
+          </div>
+        </div>
+      {%- endif -%}
+
+      {%- if section.settings.button_1_label != blank or section.settings.button_2_label != blank -%}
+        <div class="comparison-table-{{ section.id }}__buttons">
+          {%- if section.settings.button_1_label != blank -%}
+            <div class="comparison-table-{{ section.id }}__button-wrapper">
+              <a
+                {% if section.settings.button_1_link == blank %}
+                  role="link" aria-disabled="true"
+                {% else %}
+                  href="{{ section.settings.button_1_link }}"
+                {% endif %}
+                class="button button--secondary"
+              >
+                {{ section.settings.button_1_label | escape }}
+              </a>
+            </div>
+          {%- endif -%}
+          {%- if section.settings.button_2_label != blank -%}
+            <div class="comparison-table-{{ section.id }}__button-wrapper">
+              {%- if section.settings.button_2_action == 'add_to_cart' and product -%}
+                {%- assign variant = product.selected_or_first_available_variant -%}
+                {%- if variant.available -%}
+                  {%- assign comparison_table_form_id = 'comparison-table-add-to-cart-' | append: section.id -%}
+                  <form
+                    id="{{ comparison_table_form_id }}"
+                    action="{{ routes.cart_add_url }}"
+                    method="post"
+                    class="comparison-table-{{ section.id }}__add-to-cart-form form"
+                    novalidate="novalidate"
+                    data-comparison-table-page-product="true"
+                  >
+                    <input type="hidden" name="id" value="{{ variant.id }}">
+                    <input type="hidden" name="quantity" value="1">
+                    {%- if product.requires_selling_plan -%}
+                      <input type="hidden" name="selling_plan" value="{{ variant.selling_plan_allocations.first.selling_plan.id }}">
+                    {%- endif -%}
+                    <button type="submit" class="button" name="add">
+                      <span>{{ section.settings.button_2_label | escape }}</span>
+                      {%- render 'loading-spinner' -%}
+                    </button>
+                  </form>
+                  <script>
+                    (function() {
+                      var form = document.getElementById('{{ comparison_table_form_id }}');
+                      if (!form) return;
+                      form.addEventListener('submit', function(evt) {
+                        evt.preventDefault();
+                        var submitBtn = form.querySelector('[type="submit"]');
+                        var spinner = form.querySelector('.loading__spinner');
+                        if (submitBtn.getAttribute('aria-disabled') === 'true') return;
+                        submitBtn.setAttribute('aria-disabled', 'true');
+                        submitBtn.classList.add('loading');
+                        if (spinner) spinner.classList.remove('hidden');
+                        var config = window.fetchConfig('javascript');
+                        config.headers['X-Requested-With'] = 'XMLHttpRequest';
+                        delete config.headers['Content-Type'];
+                        var formData = new FormData(form);
+                        var cart = document.querySelector('cart-drawer');
+                        if (cart) {
+                          formData.append('sections', cart.getSectionsToRender().map(function(s) { return s.id; }).join(','));
+                          formData.append('sections_url', window.location.pathname);
+                          cart.setActiveElement(document.activeElement);
+                        }
+                        config.body = formData;
+                        fetch(window.routes.cart_add_url, config)
+                          .then(function(r) { return r.json(); })
+                          .then(function(response) {
+                            if (response.status) {
+                              submitBtn.removeAttribute('aria-disabled');
+                              return;
+                            }
+                            if (cart) {
+                              cart.renderContents(response);
+                            } else {
+                              window.location = window.routes.cart_url;
+                            }
+                          })
+                          .catch(function(e) { console.error(e); })
+                          .finally(function() {
+                            submitBtn.classList.remove('loading');
+                            submitBtn.removeAttribute('aria-disabled');
+                            if (spinner) spinner.classList.add('hidden');
+                          });
+                      });
+                    })();
+                  </script>
+                {%- else -%}
+                  <button type="button" class="button" disabled>
+                    {{ section.settings.button_2_label | escape }}
+                  </button>
+                {%- endif -%}
+              {%- else -%}
+                <a
+                  {% if section.settings.button_2_link == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ section.settings.button_2_link }}"
+                  {% endif %}
+                  class="button"
+                >
+                  {{ section.settings.button_2_label | escape }}
+                </a>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "|| Comparison Table",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Compare products"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Heading size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "Small"
+        },
+        {
+          "value": "h1",
+          "label": "Medium"
+        },
+        {
+          "value": "h0",
+          "label": "Large"
+        },
+        {
+          "value": "hxl",
+          "label": "Extra large"
+        },
+        {
+          "value": "hxxl",
+          "label": "Extra extra large"
+        }
+      ],
+      "default": "h1"
+    },
+    {
+      "type": "range",
+      "id": "heading_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Heading spacing",
+      "default": 40,
+      "info": "Space between heading and table"
+    },
+    {
+      "type": "header",
+      "content": "Table Headers"
+    },
+    {
+      "type": "text",
+      "id": "column_1_title",
+      "label": "Column 1 title",
+      "default": "Functionality"
+    },
+    {
+      "type": "text",
+      "id": "column_2_title",
+      "label": "Column 2 title",
+      "default": "Product 1"
+    },
+    {
+      "type": "text",
+      "id": "column_3_title",
+      "label": "Column 3 title",
+      "default": "Product 2"
+    },
+    {
+      "type": "header",
+      "content": "Buttons"
+    },
+    {
+      "type": "text",
+      "id": "button_1_label",
+      "label": "Button 1 label",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "button_1_link",
+      "label": "Button 1 link"
+    },
+    {
+      "type": "header",
+      "content": "Button 1 Styles"
+    },
+    {
+      "type": "color",
+      "id": "button_1_border_color",
+      "label": "Button 1 border color",
+      "default": "#E83F40"
+    },
+    {
+      "type": "color",
+      "id": "button_1_text_color",
+      "label": "Button 1 text color",
+      "default": "#E83F40"
+    },
+    {
+      "type": "color",
+      "id": "button_1_hover_text_color",
+      "label": "Button 1 hover text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Button 2"
+    },
+    {
+      "type": "text",
+      "id": "button_2_label",
+      "label": "Button 2 label",
+      "default": "Buy Now"
+    },
+    {
+      "type": "select",
+      "id": "button_2_action",
+      "label": "Button 2 action",
+      "options": [
+        {
+          "value": "link",
+          "label": "Link to URL"
+        },
+        {
+          "value": "add_to_cart",
+          "label": "Add this product to cart"
+        }
+      ],
+      "default": "add_to_cart",
+      "info": "Add to cart only works when this section is on a product page."
+    },
+    {
+      "type": "url",
+      "id": "button_2_link",
+      "label": "Button 2 link",
+      "info": "Used when Button 2 action is \"Link to URL\", or as fallback when \"Add to cart\" is selected but the section is not on a product page."
+    },
+    {
+      "type": "header",
+      "content": "Button 2 Styles"
+    },
+    {
+      "type": "color",
+      "id": "button_2_background_color",
+      "label": "Button 2 background color",
+      "default": "#E83F40"
+    },
+    {
+      "type": "color",
+      "id": "button_2_text_color",
+      "label": "Button 2 text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_2_hover_background_color",
+      "label": "Button 2 hover background color",
+      "default": "#d14a32"
+    },
+    {
+      "type": "color",
+      "id": "button_2_hover_text_color",
+      "label": "Button 2 hover text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "button_spacing",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Button spacing",
+      "default": 40,
+      "info": "Space between table and buttons"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "cell_padding",
+      "min": 4,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Cell padding",
+      "default": 20,
+      "info": "Padding inside table cells"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 8,
+      "info": "Rounded corners for table"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "header_font_size",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Header font size",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "cell_font_size",
+      "min": 14,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Cell font size",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "color",
+      "id": "header_background",
+      "label": "Header background",
+      "default": "#f3f4f6"
+    },
+    {
+      "type": "color",
+      "id": "header_text_color",
+      "label": "Header text color",
+      "default": "#111827"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#e5e7eb"
+    },
+    {
+      "type": "header",
+      "content": "Section anchor"
+    },
+    {
+      "type": "text",
+      "id": "anchor_id",
+      "label": "Anchor ID",
+      "info": "Enter an ID for anchor links (e.g., 'features'). Links can use #features to jump to this section. Do not include the # symbol."
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "comparison_row",
+      "name": "Comparison Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "functionality_text",
+          "label": "Functionality",
+          "default": "Feature name"
+        },
+        {
+          "type": "header",
+          "content": "Column 2"
+        },
+        {
+          "type": "select",
+          "id": "column_2_type",
+          "label": "Column 2 value type",
+          "options": [
+            {
+              "value": "text",
+              "label": "Text"
+            },
+            {
+              "value": "tick",
+              "label": "Tick (Yes)"
+            },
+            {
+              "value": "cross",
+              "label": "Cross (No)"
+            }
+          ],
+          "default": "text"
+        },
+        {
+          "type": "text",
+          "id": "column_2_text",
+          "label": "Column 2 text",
+          "default": "Value",
+          "info": "Only used when value type is 'Text'"
+        },
+        {
+          "type": "header",
+          "content": "Column 3"
+        },
+        {
+          "type": "select",
+          "id": "column_3_type",
+          "label": "Column 3 value type",
+          "options": [
+            {
+              "value": "text",
+              "label": "Text"
+            },
+            {
+              "value": "tick",
+              "label": "Tick (Yes)"
+            },
+            {
+              "value": "cross",
+              "label": "Cross (No)"
+            }
+          ],
+          "default": "text"
+        },
+        {
+          "type": "text",
+          "id": "column_3_text",
+          "label": "Column 3 text",
+          "default": "Value",
+          "info": "Only used when value type is 'Text'"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Comparison Table",
+      "blocks": [
+        {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Task of work per file",
+            "column_2_type": "text",
+            "column_2_text": "250",
+            "column_3_type": "text",
+            "column_3_text": "Unlimited"
+          }
+        },
+        {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Task per line of work",
+            "column_2_type": "text",
+            "column_2_text": "10",
+            "column_3_type": "text",
+            "column_3_text": "Unlimited"
+          }
+        },
+        {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Overlapping tasks",
+            "column_2_type": "cross",
+            "column_3_type": "tick"
+          }
+        },
+        {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Reschedule tasks within the project",
+            "column_2_type": "cross",
+            "column_3_type": "tick"
+          }
+        },
+        {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Start On or After constraints",
+            "column_2_type": "tick",
+            "column_3_type": "tick"
+          }
+        }
+      ],
+      "settings": {
+        "heading": "Compare products",
+        "column_1_title": "Functionality",
+        "column_2_title": "Easyplan",
+        "column_3_title": "Asta Powerproject",
+        "button_1_label": "Learn more",
+        "button_2_label": "Buy Now"
+      }
+    }
+  ]
+}
+{% endschema %}

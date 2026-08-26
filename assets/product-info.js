@@ -216,8 +216,10 @@ if (!customElements.get('product-info')) {
           `#product-form-${this.dataset.section}, #product-form-installment-${this.dataset.section}`
         ).forEach((productForm) => {
           const input = productForm.querySelector('input[name="id"]');
-          input.value = variantId ?? '';
-          input.dispatchEvent(new Event('change', { bubbles: true }));
+          if (input) {
+            input.value = variantId ?? '';
+            input.dispatchEvent(new Event('change', { bubbles: true }));
+          }
         });
       }
 

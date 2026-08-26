@@ -1,0 +1,577 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  #AwardBanner-{{ section.id }} {
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Desktop: Image as background with overlay content */
+  #AwardBanner-{{ section.id }} .award-banner__image-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  #AwardBanner-{{ section.id }} .award-banner__background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  @media screen and (max-width: 749px) {
+    #AwardBanner-{{ section.id }} .award-banner__background {
+      height: 35rem;
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    #AwardBanner-{{ section.id }} .award-banner__image-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    #AwardBanner-{{ section.id }} .award-banner__background {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  /* Desktop: Container needs height for absolute positioning */
+  @media screen and (min-width: 750px) {
+    #AwardBanner-{{ section.id }} {
+      min-height: {{ section.settings.min_height }}px;
+    }
+  }
+
+  /* Desktop content overlay */
+  #AwardBanner-{{ section.id }} .award-banner__content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 4rem 2rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    #AwardBanner-{{ section.id }} .award-banner__content {
+      min-height: {{ section.settings.min_height }}px;
+      padding: 6rem 4rem;
+    }
+  }
+
+  /* Mobile: Content below image with white background */
+  @media screen and (max-width: 749px) {
+    #AwardBanner-{{ section.id }} .award-banner__content {
+      background-color: #ffffff;
+      padding: 3rem 2rem;
+      min-height: auto;
+      display: block;
+    }
+  }
+
+  #AwardBanner-{{ section.id }} .award-banner__inner {
+    width: 100%;
+    text-align: {{ section.settings.text_alignment }};
+  }
+
+  @media screen and (min-width: 750px) {
+    #AwardBanner-{{ section.id }} .award-banner__inner {
+      max-width: {{ section.settings.content_width }}%;
+    }
+  }
+
+  #AwardBanner-{{ section.id }} .award-banner__content-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  #AwardBanner-{{ section.id }} .award-banner__content-wrap--left {
+    justify-content: flex-start;
+  }
+
+  #AwardBanner-{{ section.id }} .award-banner__content-wrap--center {
+    justify-content: center;
+  }
+
+  #AwardBanner-{{ section.id }} .award-banner__content-wrap--right {
+    justify-content: flex-end;
+  }
+
+  #AwardBanner-{{ section.id }} .award-banner__icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    justify-content: {{ section.settings.content_alignment }};
+  }
+
+  {%- if section.settings.hide_logos_mobile -%}
+    @media screen and (max-width: 749px) {
+      #AwardBanner-{{ section.id }} .award-banner__icons {
+        display: none;
+      }
+    }
+  {%- endif -%}
+
+  /* Desktop icons - hidden on mobile */
+  #AwardBanner-{{ section.id }} .award-banner__icon--desktop {
+    max-width: {{ section.settings.icon_size }}px;
+    height: auto;
+    width: auto;
+  }
+
+  @media screen and (max-width: 749px) {
+    #AwardBanner-{{ section.id }} .award-banner__icon--desktop {
+      display: none;
+    }
+  }
+
+  /* Mobile icons - hidden on desktop */
+  #AwardBanner-{{ section.id }} .award-banner__icon--mobile {
+    max-width: {{ section.settings.icon_size }}px;
+    height: auto;
+    width: auto;
+  }
+
+  @media screen and (min-width: 750px) {
+    #AwardBanner-{{ section.id }} .award-banner__icon--mobile {
+      display: none;
+    }
+  }
+
+  /* Desktop text color */
+  @media screen and (min-width: 750px) {
+    #AwardBanner-{{ section.id }} .award-banner__text,
+    #AwardBanner-{{ section.id }} .award-banner__text * {
+      color: {{ section.settings.text_color }};
+    }
+  }
+
+  /* Mobile text color */
+  @media screen and (max-width: 749px) {
+    #AwardBanner-{{ section.id }} .award-banner__text,
+    #AwardBanner-{{ section.id }} .award-banner__text * {
+      color: {{ section.settings.mobile_text_color }};
+    }
+  }
+
+  /* Underline marker: treat underlined text as highlighted text color, remove underline */
+  #AwardBanner-{{ section.id }} .award-banner__text span[style*="text-decoration:underline"],
+  #AwardBanner-{{ section.id }} .award-banner__text span[style*="text-decoration: underline"],
+  #AwardBanner-{{ section.id }} .award-banner__text u {
+    color: {{ section.settings.underline_color }} !important;
+    text-decoration: none !important;
+  }
+
+  /* Ensure nested elements inherit the highlight color */
+  #AwardBanner-{{ section.id }} .award-banner__text span[style*="text-decoration:underline"] *,
+  #AwardBanner-{{ section.id }} .award-banner__text span[style*="text-decoration: underline"] *,
+  #AwardBanner-{{ section.id }} .award-banner__text u * {
+    color: {{ section.settings.underline_color }} !important;
+    text-decoration: none !important;
+  }
+
+  #AwardBanner-{{ section.id }} .award-banner__text {
+    margin: 0;
+  }
+
+  #AwardBanner-{{ section.id }} .award-banner__text.rte {
+    margin: 0;
+  }
+
+  #AwardBanner-{{ section.id }} .award-banner__text.rte p {
+    margin: 0;
+  }
+
+  #AwardBanner-{{ section.id }} .award-banner__text.rte p:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  {%- if section.settings.image_height == 'adapt' and section.settings.background_image != blank -%}
+    @media screen and (max-width: 749px) {
+      #AwardBanner-{{ section.id }} .award-banner__image-wrapper::before {
+        padding-bottom: {{ 1 | divided_by: section.settings.background_image.aspect_ratio | times: 100 }}%;
+        content: '';
+        display: block;
+      }
+    }
+
+    @media screen and (min-width: 750px) {
+      #AwardBanner-{{ section.id }}::before {
+        padding-bottom: {{ 1 | divided_by: section.settings.background_image.aspect_ratio | times: 100 }}%;
+        content: '';
+        display: block;
+      }
+    }
+  {%- endif -%}
+
+  {%- if section.settings.overlay_opacity > 0 -%}
+    @media screen and (min-width: 750px) {
+      #AwardBanner-{{ section.id }}::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: {{ section.settings.overlay_color }};
+        opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
+        z-index: 0;
+      }
+    }
+  {%- endif -%}
+{%- endstyle -%}
+
+<div
+  {% if section.settings.anchor_id != blank and section.settings.anchor_id != '#' %}
+    {%- assign clean_anchor_id = section.settings.anchor_id | replace: '#', '' -%}
+    id="{{ clean_anchor_id }}"
+  {% else %}
+    id="AwardBanner-{{ section.id }}"
+  {% endif %}
+  class="award-banner{% if section.settings.image_height == 'adapt' and section.settings.background_image != blank %} award-banner--adapt{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+>
+  <div class="award-banner__image-wrapper">
+    {%- if section.settings.background_image != blank -%}
+      {{
+        section.settings.background_image
+        | image_url: width: 3840
+        | image_tag:
+          loading: 'lazy',
+          class: 'award-banner__background',
+          sizes: '100vw',
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+      }}
+    {%- else -%}
+      <div
+        class="award-banner__background"
+        style="background-color: #1a1a1a; min-height: {{ section.settings.min_height }}px;"
+      ></div>
+    {%- endif -%}
+  </div>
+
+  <div class="award-banner__content page-width">
+    <div class="award-banner__content-wrap award-banner__content-wrap--{{ section.settings.content_alignment }}">
+      <div class="award-banner__inner">
+        {%- if section.blocks.size > 0 -%}
+          <div class="award-banner__icons">
+            {%- for block in section.blocks -%}
+              {%- if block.type == 'award_icon' -%}
+                {%- liquid
+                  assign desktop_alt = block.settings.icon_alt
+                  if desktop_alt == blank
+                    assign desktop_alt = 'Award icon'
+                  endif
+                  assign mobile_alt = block.settings.mobile_icon_alt
+                  if mobile_alt == blank
+                    assign mobile_alt = block.settings.icon_alt
+                  endif
+                  if mobile_alt == blank
+                    assign mobile_alt = 'Award icon'
+                  endif
+                -%}
+                <div class="award-banner__icon-wrapper" {{ block.shopify_attributes }}>
+                  {%- if block.settings.icon_image != blank -%}
+                    {{
+                      block.settings.icon_image
+                      | image_url: width: 240
+                      | image_tag:
+                        loading: 'lazy',
+                        class: 'award-banner__icon award-banner__icon--desktop',
+                        alt: desktop_alt
+                    }}
+                  {%- endif -%}
+                  {%- if block.settings.mobile_icon_image != blank -%}
+                    {{
+                      block.settings.mobile_icon_image
+                      | image_url: width: 240
+                      | image_tag:
+                        loading: 'lazy',
+                        class: 'award-banner__icon award-banner__icon--mobile',
+                        alt: mobile_alt
+                    }}
+                  {%- elsif block.settings.icon_image != blank -%}
+                    {{
+                      block.settings.icon_image
+                      | image_url: width: 240
+                      | image_tag:
+                        loading: 'lazy',
+                        class: 'award-banner__icon award-banner__icon--mobile',
+                        alt: desktop_alt
+                    }}
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'richtext' -%}
+            <div class="award-banner__text rte" {{ block.shopify_attributes }}>
+              {{ block.settings.text }}
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "|| Award Banner",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background image"
+    },
+    {
+      "type": "select",
+      "id": "image_height",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "Adapt to image"
+        },
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "medium",
+      "label": "Image height"
+    },
+    {
+      "type": "range",
+      "id": "min_height",
+      "min": 200,
+      "max": 800,
+      "step": 50,
+      "unit": "px",
+      "label": "Minimum height",
+      "default": 400
+    },
+    {
+      "type": "header",
+      "content": "Overlay"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Overlay opacity",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "select",
+      "id": "content_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left (container)"
+        },
+        {
+          "value": "center",
+          "label": "Center (container)"
+        },
+        {
+          "value": "right",
+          "label": "Right (container)"
+        }
+      ],
+      "default": "left",
+      "label": "Content alignment (container)"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left",
+      "label": "Text alignment"
+    },
+    {
+      "type": "range",
+      "id": "content_width",
+      "min": 30,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Content width (desktop)",
+      "default": 50
+    },
+    {
+      "type": "header",
+      "content": "Text"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color (desktop)",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "mobile_text_color",
+      "label": "Text color (mobile)",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "underline_color",
+      "label": "Underline color",
+      "default": "#ff5a3c",
+      "info": "Underlined text will use this color (underline is removed)."
+    },
+    {
+      "type": "header",
+      "content": "Section anchor"
+    },
+    {
+      "type": "text",
+      "id": "anchor_id",
+      "label": "Anchor ID",
+      "info": "Enter an ID for anchor links (e.g., 'features'). Links can use #features to jump to this section. Do not include the # symbol."
+    },
+    {
+      "type": "header",
+      "content": "Award Icons"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "min": 60,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Icon size",
+      "default": 120
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_logos_mobile",
+      "label": "Hide logos on mobile",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "award_icon",
+      "name": "Award Icon",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Desktop Icon"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Icon image (desktop)"
+        },
+        {
+          "type": "text",
+          "id": "icon_alt",
+          "label": "Alt text (desktop)",
+          "default": "Award icon"
+        },
+        {
+          "type": "header",
+          "content": "Mobile Icon"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_icon_image",
+          "label": "Icon image (mobile)",
+          "info": "Optional. If not set, desktop icon will be used on mobile."
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_alt",
+          "label": "Alt text (mobile)",
+          "info": "Optional. If not set, desktop alt text will be used."
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "name": "Rich text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Voted best Project Management Software</p>",
+          "info": "Use Cmd/Ctrl+U to underline words. Underline color follows the underline color setting."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Award Banner",
+      "blocks": [
+        {
+          "type": "award_icon"
+        },
+        {
+          "type": "award_icon"
+        },
+        {
+          "type": "award_icon"
+        },
+        {
+          "type": "richtext"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

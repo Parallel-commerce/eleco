@@ -1,0 +1,909 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Materials",
+            "icon": "leather",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "truck",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Dimensions",
+            "icon": "ruler",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care Instructions",
+            "icon": "heart",
+            "content": "",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "collapsible-row-2",
+        "collapsible-row-3",
+        "share"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "parallel_custom_product_info_i3cpfR": {
+      "type": "parallel-custom-product-info",
+      "blocks": {
+        "subscriptions_app_block_HfcxDY": {
+          "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
+          "settings": {
+            "color_text_body": "#6d7175",
+            "dividers_color": "#8f8d8d",
+            "bacgkround_color": "#ffffff",
+            "border_thickness": 1,
+            "border_radius": 0,
+            "subscription_policy_url": "",
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "subscriptions_app_block_HfcxDY"
+      ],
+      "name": "Custom Product Info",
+      "settings": {
+        "color_scheme": "",
+        "anchor_id": "",
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "hero_title": "Plan with certainty, build with confidence",
+        "hero_subtitle": "Take control with integrative tools that gives teams the power to master project timelines",
+        "hero_image": "shopify://shop_images/Asta_Powerproject_109e16a4-29a3-4d9b-b8d5-165a549f2bf1.svg",
+        "hero_background_color": "#2a303a",
+        "hero_text_color": "#ffffff",
+        "column_background_color": "#fff5f5",
+        "divider_color": "#ff0000",
+        "primary_button_color": "#ff6b35",
+        "primary_button_text_color": "#ffffff",
+        "left_column_title": "Annual subscription",
+        "left_column_price": "",
+        "left_column_button_text": "Add to cart",
+        "left_column_secondary_button_text": "Download free trial",
+        "left_column_secondary_button_link": "",
+        "left_column_fine_print": "Paid annually, one user installed onto a single Windows PC. Includes VAT.",
+        "right_column_title": "Concurrent & SaaS solutions",
+        "right_column_paragraph": "You wouldn't place a tender without first understanding the full scope of work. We approach custom quotes the same way. Help us get to know your team's needs to get started now.",
+        "right_column_fine_print": "",
+        "right_column_primary_button_text": "Contact sales",
+        "right_column_primary_button_link": "",
+        "right_column_primary_button_embed_url": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/obtrdqg9efgeb3ztjwvsuq.html?PageId=0d51bba1bd01f11184077ced8d6becb9",
+        "right_column_secondary_button_text": "Book a demo",
+        "right_column_secondary_button_link": "",
+        "right_column_secondary_button_embed_url": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/ex92qhfefgeb2bfvrmtaw.html?PageId=d9fd1f7bdf01f11184076045bd131303"
+      }
+    },
+    "parallel_image_with_features_hVbtUt": {
+      "type": "parallel-image-with-features",
+      "blocks": {
+        "heading_GGwQtN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Heading",
+            "heading_size": "h1"
+          }
+        },
+        "feature_item_CkdfUp": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Feature text"
+          }
+        },
+        "feature_item_efdUrz": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Feature text"
+          }
+        },
+        "feature_item_eVF6yn": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Feature text"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GGwQtN",
+        "feature_item_CkdfUp",
+        "feature_item_efdUrz",
+        "feature_item_eVF6yn"
+      ],
+      "name": "Image with features",
+      "settings": {
+        "image": "shopify://shop_images/failte-restaurant-image.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "anchor_id": "#",
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "text_padding_left": 32,
+        "text_padding_right": 16
+      }
+    },
+    "parallel_image_with_features_pYtxX7": {
+      "type": "parallel-image-with-features",
+      "blocks": {
+        "heading_qDbMj8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Heading",
+            "heading_size": "h1"
+          }
+        },
+        "feature_item_8agkWh": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Feature text"
+          }
+        },
+        "feature_item_gVYYUV": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Feature text"
+          }
+        },
+        "feature_item_iRNHQw": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Feature text"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qDbMj8",
+        "feature_item_8agkWh",
+        "feature_item_gVYYUV",
+        "feature_item_iRNHQw"
+      ],
+      "name": "Image with features",
+      "settings": {
+        "image": "shopify://shop_images/failte-restaurant-image.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "anchor_id": "#",
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "text_padding_left": 16,
+        "text_padding_right": 32
+      }
+    },
+    "parallel_image_with_features_UVMBrD": {
+      "type": "parallel-image-with-features",
+      "blocks": {
+        "heading_EU6MmW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Heading",
+            "heading_size": "h1"
+          }
+        },
+        "feature_item_Wp9bXU": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Feature text"
+          }
+        },
+        "feature_item_JY6MwN": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Feature text"
+          }
+        },
+        "feature_item_prUy3i": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Feature text"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EU6MmW",
+        "feature_item_Wp9bXU",
+        "feature_item_JY6MwN",
+        "feature_item_prUy3i"
+      ],
+      "name": "Image with features",
+      "settings": {
+        "image": "shopify://shop_images/failte-restaurant-image.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "anchor_id": "#",
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "text_padding_left": 32,
+        "text_padding_right": 16
+      }
+    },
+    "parallel_award_banner_C3twkW": {
+      "type": "parallel-award-banner",
+      "blocks": {
+        "award_icon_wWHCpq": {
+          "type": "award_icon",
+          "settings": {
+            "icon_image": "shopify://shop_images/Project_Management_Software_of_the_year.png",
+            "icon_alt": "Award icon",
+            "mobile_icon_image": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
+            "mobile_icon_alt": ""
+          }
+        },
+        "award_icon_VzWygn": {
+          "type": "award_icon",
+          "settings": {
+            "icon_image": "shopify://shop_images/Project_Management_Software_of_the_year.png",
+            "icon_alt": "Award icon",
+            "mobile_icon_image": "shopify://shop_images/sparklayer_black.svg",
+            "mobile_icon_alt": ""
+          }
+        },
+        "award_icon_LXKmTV": {
+          "type": "award_icon",
+          "settings": {
+            "icon_alt": "Award icon",
+            "mobile_icon_alt": ""
+          }
+        },
+        "richtext_LJNcig": {
+          "type": "richtext",
+          "settings": {
+            "text": "<h1>Voted best <span style=\"text-decoration:underline\">Project Management </span>Software</h1>"
+          }
+        }
+      },
+      "block_order": [
+        "award_icon_wWHCpq",
+        "award_icon_VzWygn",
+        "award_icon_LXKmTV",
+        "richtext_LJNcig"
+      ],
+      "name": "Award Banner",
+      "settings": {
+        "background_image": "shopify://shop_images/team.jpg",
+        "image_height": "medium",
+        "min_height": 400,
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "content_alignment": "left",
+        "text_alignment": "left",
+        "content_width": 50,
+        "text_color": "#ffffff",
+        "mobile_text_color": "#000000",
+        "underline_color": "#ff5a3c",
+        "anchor_id": "",
+        "icon_size": 100,
+        "hide_logos_mobile": true
+      }
+    },
+    "parallel_highlights_yTAfJh": {
+      "type": "parallel-highlights",
+      "blocks": {
+        "highlight_KdRTH8": {
+          "type": "highlight",
+          "settings": {
+            "highlight": "+250k",
+            "text": "Licenses sold worldwide"
+          }
+        },
+        "highlight_kcCRDW": {
+          "type": "highlight",
+          "settings": {
+            "highlight": "70+",
+            "text": "Countries use Asta"
+          }
+        },
+        "highlight_kmzQJf": {
+          "type": "highlight",
+          "settings": {
+            "highlight": "75%",
+            "text": "UK builder choose Asta"
+          }
+        }
+      },
+      "block_order": [
+        "highlight_KdRTH8",
+        "highlight_kcCRDW",
+        "highlight_kmzQJf"
+      ],
+      "name": "Highlights",
+      "settings": {
+        "color_scheme": "",
+        "highlight_color": "#e85a47",
+        "anchor_id": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "parallel_two_column_accordion_xi4PpU": {
+      "type": "parallel-two-column-accordion",
+      "blocks": {
+        "accordion_item_AX7zXQ": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Contractors",
+            "content_1": "<p>Powerful critical path analysis and precise scheduling.</p>",
+            "content_2": "<p>Powerful critical path analysis and precise scheduling.</p>",
+            "content_3": "<p>Powerful critical path analysis and precise scheduling.</p>",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_htnMQm": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Subcontractors",
+            "content_1": "<p>Comprehensive resource and cost management, early identification of budget issues.</p>",
+            "content_2": "",
+            "content_3": "",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_EDULcY": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Designers and consultancy",
+            "content_1": "<p>Detailed history of project changes to support claims and resolve disputes.</p>",
+            "content_2": "",
+            "content_3": "",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_AX7zXQ",
+        "accordion_item_htnMQm",
+        "accordion_item_EDULcY"
+      ],
+      "name": "Two-Column Accordion",
+      "settings": {
+        "heading": "Better project outcomes for every team",
+        "heading_size": "h1",
+        "anchor_id": "#capabilities",
+        "padding_top": 48,
+        "padding_bottom": 60
+      }
+    },
+    "parallel_video_three_column_BTPQnC": {
+      "type": "parallel-video-three-column",
+      "blocks": {
+        "video_item_NYWJta": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "video_item_qFpjwc": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "video_item_cfdDnt": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_item_NYWJta",
+        "video_item_qFpjwc",
+        "video_item_cfdDnt"
+      ],
+      "name": "Three Column Video",
+      "settings": {
+        "heading": "Video Gallery",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "full_width": false,
+        "color_scheme": "",
+        "anchor_id": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "parallel_logo_block_hHLWpL": {
+      "type": "parallel-logo-block",
+      "blocks": {
+        "logo_XeHnR7": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/sparklayer_black.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_WNf64B": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_hWRjrM": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/partner_logo_2.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_itwWmj": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/partner_logo_3.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "logo_XeHnR7",
+        "logo_WNf64B",
+        "logo_hWRjrM",
+        "logo_itwWmj"
+      ],
+      "name": "Logo Block",
+      "settings": {
+        "color_scheme": "",
+        "title": "",
+        "heading_size": "h1",
+        "title_alignment": "center",
+        "title_spacing": 24,
+        "block_alignment": "center",
+        "logo_width": 150,
+        "logo_spacing": 40,
+        "logo_opacity": 100,
+        "logo_hover_opacity": 100,
+        "mobile_columns": "2",
+        "anchor_id": "",
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
+    "parallel_testimonials_6ayBHg": {
+      "type": "parallel-testimonials",
+      "blocks": {
+        "testimonial_tHbLzP": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Bengisu Uygur",
+            "title": "Planning Manager | MiCiM Ltd",
+            "country_flag": "",
+            "testimonial_text": "MiCiM can now produce BI reports using live, unambiguous project data that is visible 24/7 to anyone and is just one click away."
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_tHbLzP"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "heading": "What do our clients say?",
+        "subheading": "Find out why our clients are glad they met us.",
+        "heading_size": "h1",
+        "header_alignment": "center",
+        "header_spacing": 40,
+        "color_scheme": "",
+        "anchor_id": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "parallel_custom_product_list_M7EFHt": {
+      "type": "parallel-custom-product-list",
+      "blocks": {
+        "product_9Fqg3n": {
+          "type": "product",
+          "settings": {
+            "product": "asta-powerproject"
+          }
+        },
+        "product_Hi9e7N": {
+          "type": "product",
+          "settings": {
+            "product": "asta-enterprise"
+          }
+        },
+        "product_aeUw4W": {
+          "type": "product",
+          "settings": {
+            "product": "asta-vision"
+          }
+        },
+        "product_3Mi7Bg": {
+          "type": "product",
+          "settings": {
+            "product": "asta-vision-live"
+          }
+        }
+      },
+      "block_order": [
+        "product_9Fqg3n",
+        "product_Hi9e7N",
+        "product_aeUw4W",
+        "product_3Mi7Bg"
+      ],
+      "name": "Custom Product List",
+      "settings": {
+        "heading": "Asta Integrations",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "button_text": "Learn more",
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-2",
+        "anchor_id": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "parallel_faq_accordion_3Vq7Fm": {
+      "type": "parallel-faq-accordion",
+      "blocks": {
+        "faq_item_QVNkTB": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is Asta 4D?",
+            "answer": "<p>Asta 4D is the 4D (time-linked) planning and visualisation capability for Asta Powerproject, connecting the project schedule to BIM models to show how a project will be built over time. It turns 3D models into animated construction sequences, improving communication, coordination, and issue identification across the project team.</p>"
+          }
+        },
+        "faq_item_bVkqMa": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is model-based planning?",
+            "answer": "<p>Model-based planning links the construction programme directly to a digital model, so time, sequence, and geometry are managed together rather than in separate tools. This allows teams to simulate the build, test options, and spot problems visually before they affect cost, safety, or time on site.</p>"
+          }
+        },
+        "faq_item_jARANR": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Who is Asta 4D for?",
+            "answer": "<p>Asta 4D is designed for contractors, subcontractors, designers, consultants, clients, and asset owners who want to plan and review projects using 4D rather than Gantt charts alone. It suits organisations delivering complex buildings, infrastructure, or residential schemes where visualising sequence, logistics, and risk is critical.</p>"
+          }
+        },
+        "faq_item_bAXDXk": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How does Asta 4D work with Asta Powerproject?",
+            "answer": "<p>Asta 4D is integrated with Asta Powerproject so the construction schedule drives the 4D simulation directly, using tasks, calendars, and logic already in the programme. BIM models (for example from IFC) are linked to tasks, and the 4D viewer- built on Unity, plays the construction sequence, updated automatically when the schedule or model changes.​</p>"
+          }
+        },
+        "faq_item_pnqnDE": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Does Asta 4D export to other formats?",
+            "answer": "<p>Yes, AVI movie files along with JPEG, PNG, GIF, BMP, TIFF imagery formats.</p>"
+          }
+        },
+        "faq_item_4jdJCN": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What BIM Model formats does Asta 4D use?",
+            "answer": "<p>Asta can import one or multiple IFC files, which can then be overlaid to create a federated model view.</p>"
+          }
+        },
+        "faq_item_QReLdF": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can Temporary Works be visualised in Asta 4D?",
+            "answer": "<p>Yes. Separate IFC files for site objects, like cranes and site offices, can be imported and moved around within the 3D viewer. These can be linked to activities to control appearance, and have movement paths added to animate them.</p>"
+          }
+        },
+        "faq_item_PVFAzH": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What training is available?",
+            "answer": "<p>Yes, we offer a two-day Introduction to Asta 4D course.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_QVNkTB",
+        "faq_item_bVkqMa",
+        "faq_item_jARANR",
+        "faq_item_bAXDXk",
+        "faq_item_pnqnDE",
+        "faq_item_4jdJCN",
+        "faq_item_QReLdF",
+        "faq_item_PVFAzH"
+      ],
+      "name": "FAQ Accordion",
+      "settings": {
+        "heading": "Questions? We have answers.",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_spacing": 40,
+        "item_gap": 12,
+        "item_padding": 18,
+        "border_radius": 12,
+        "question_font_size": 16,
+        "color_scheme": "",
+        "item_background": "#f6f7f7",
+        "item_background_active": "#fce8e6",
+        "anchor_id": "",
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
+    },
+    "parallel_support_cta_RxfB67": {
+      "type": "parallel-support-cta",
+      "blocks": {
+        "resource_link_kEdPjk": {
+          "type": "resource_link",
+          "settings": {
+            "label": "Support portal",
+            "link": "https://support.elecosoft.com/"
+          }
+        },
+        "resource_link_wTwLVG": {
+          "type": "resource_link",
+          "settings": {
+            "label": "Release notes",
+            "link": "https://elecosoft.com/us/documentation/powerproject/release-notes/"
+          }
+        },
+        "resource_link_y8bPwx": {
+          "type": "resource_link",
+          "settings": {
+            "label": "System requirements",
+            "link": "https://elecosoft.com/us/documentation/powerproject/system-requirements/"
+          }
+        },
+        "resource_link_VzrFGt": {
+          "type": "resource_link",
+          "settings": {
+            "label": "View all resources",
+            "link": "https://elecosoft.com/us/documentation/powerproject/"
+          }
+        }
+      },
+      "block_order": [
+        "resource_link_kEdPjk",
+        "resource_link_wTwLVG",
+        "resource_link_y8bPwx",
+        "resource_link_VzrFGt"
+      ],
+      "name": "Support CTA",
+      "settings": {
+        "heading": "Learn & Support",
+        "description": "Our support services are complemented by our wide range of web-based tutorials, release notes, classroom and online training to ensure you get the most from your software.",
+        "primary_button_label": "Learn & Support",
+        "primary_button_link": "",
+        "primary_button_background": "#e83f40",
+        "primary_button_background_hover": "#d04a35",
+        "primary_button_text": "#ffffff",
+        "secondary_button_label": "Add premium support",
+        "product": "",
+        "secondary_button_link": "https://elecosoft.com/us/products/asta/asta-powerproject/learn-support/",
+        "secondary_button_background": "#ffffff",
+        "secondary_button_background_hover": "#f5f5f5",
+        "secondary_button_text": "#333333",
+        "secondary_button_border": "#cccccc",
+        "background_color": "#2a303a",
+        "text_color": "#ffffff",
+        "resource_background": "#3a3a3a",
+        "resource_background_hover": "#4a4a4a",
+        "resource_border": "#ffffff",
+        "resource_icon_color": "#e83f40",
+        "heading_font_size": 48,
+        "heading_font_weight": "700",
+        "description_font_size": 16,
+        "button_font_size": 16,
+        "resource_font_size": 16,
+        "button_border_radius": 4,
+        "resource_border_radius": 4,
+        "anchor_id": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "parallel_information_Ehxmkb": {
+      "type": "parallel-information",
+      "name": "Information",
+      "settings": {
+        "color_scheme": "",
+        "heading_font_size": 24,
+        "heading_font_weight": "700",
+        "text_font_size": 16,
+        "heading_color": "",
+        "text_color": "",
+        "border_color": "#e83f40",
+        "block_spacing": 24,
+        "anchor_id": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "parallel_custom_product_info_i3cpfR",
+    "parallel_image_with_features_hVbtUt",
+    "parallel_image_with_features_pYtxX7",
+    "parallel_image_with_features_UVMBrD",
+    "parallel_award_banner_C3twkW",
+    "parallel_highlights_yTAfJh",
+    "parallel_two_column_accordion_xi4PpU",
+    "parallel_video_three_column_BTPQnC",
+    "parallel_logo_block_hHLWpL",
+    "parallel_testimonials_6ayBHg",
+    "parallel_custom_product_list_M7EFHt",
+    "parallel_faq_accordion_3Vq7Fm",
+    "parallel_support_cta_RxfB67",
+    "parallel_information_Ehxmkb"
+  ]
+}

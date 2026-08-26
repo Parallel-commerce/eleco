@@ -1,0 +1,616 @@
+{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign block_count = section.blocks.size
+  if block_count > 8
+    assign block_count = 8
+  endif
+  assign mobile_columns = section.settings.mobile_columns | plus: 0
+  assign carousel_label = section.settings.title | strip_html | strip
+  if carousel_label == blank
+    assign carousel_label = 'sections.logo_block.carousel' | t
+  endif
+-%}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .logo-block-{{ section.id }} {
+    width: 100%;
+  }
+
+  logo-block-carousel {
+    display: block;
+    width: 100%;
+  }
+
+  .logo-block-{{ section.id }}__grid {
+    --logo-mobile-gap: 1.5rem;
+    --logo-mobile-columns: {{ mobile_columns }};
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: var(--logo-mobile-gap);
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .logo-block-{{ section.id }}__grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .logo-block-{{ section.id }}__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 calc((100% - (var(--logo-mobile-columns) - 1) * var(--logo-mobile-gap)) / var(--logo-mobile-columns));
+    width: calc((100% - (var(--logo-mobile-columns) - 1) * var(--logo-mobile-gap)) / var(--logo-mobile-columns));
+    max-width: calc((100% - (var(--logo-mobile-columns) - 1) * var(--logo-mobile-gap)) / var(--logo-mobile-columns));
+    min-height: 7rem;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+
+  @media screen and (max-width: 749px) {
+    .logo-block-{{ section.id }}__item.scroll-trigger.animate--slide-in {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .logo-block-{{ section.id }}__item img {
+    max-width: {{ section.settings.logo_width }}px;
+    max-height: 5rem;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    opacity: {{ section.settings.logo_opacity | divided_by: 100.0 }};
+    transition: opacity 0.3s ease;
+  }
+
+  @media screen and (min-width: 750px) {
+    .logo-block-{{ section.id }}__grid {
+      display: grid;
+      grid-template-columns: repeat({{ block_count }}, minmax(0, 1fr));
+      gap: {{ section.settings.logo_spacing }}px;
+      align-items: center;
+      justify-items: {{ section.settings.block_alignment }};
+      justify-content: {{ section.settings.block_alignment }};
+      overflow: visible;
+      scroll-snap-type: none;
+    }
+
+    .logo-block-{{ section.id }}__item {
+      flex: none;
+      width: 100%;
+      max-width: none;
+      min-height: 0;
+      scroll-snap-align: unset;
+      justify-content: {{ section.settings.block_alignment }};
+    }
+
+    .logo-block-{{ section.id }}__item img {
+      max-height: none;
+    }
+  }
+
+  {%- if section.settings.logo_hover_opacity > 0 -%}
+    .logo-block-{{ section.id }}__item:hover img {
+      opacity: {{ section.settings.logo_hover_opacity | divided_by: 100.0 }};
+    }
+  {%- endif -%}
+
+  .logo-block-{{ section.id }}__item a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  .logo-block-{{ section.id }}__title {
+    text-align: {{ section.settings.title_alignment }};
+    margin-bottom: {{ section.settings.title_spacing }}px;
+  }
+
+  .logo-block-{{ section.id }}__title h2 {
+    margin: 0;
+  }
+{%- endstyle -%}
+
+<div
+  {% if section.settings.anchor_id != blank and section.settings.anchor_id != '#' %}
+    {%- assign clean_anchor_id = section.settings.anchor_id | replace: '#', '' -%}
+    id="{{ clean_anchor_id }}"
+  {% endif %}
+  class="color-{{ section.settings.color_scheme }} gradient"
+>
+  <div class="logo-block-{{ section.id }} section-{{ section.id }}-padding isolate">
+    <div class="logo-block-{{ section.id }}__container page-width">
+      {%- if section.settings.title != blank -%}
+        <div class="logo-block-{{ section.id }}__title{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+          <h2 class="inline-richtext {{ section.settings.heading_size }}">
+            {{ section.settings.title }}
+          </h2>
+        </div>
+      {%- endif -%}
+      {%- if section.blocks.size > 0 -%}
+        <logo-block-carousel
+          data-autoplay="{% if section.settings.mobile_autoplay %}true{% else %}false{% endif %}"
+          data-speed="{{ section.settings.mobile_autoplay_speed }}"
+          data-columns="{{ mobile_columns }}"
+          role="region"
+          aria-roledescription="{{ 'sections.slideshow.carousel' | t }}"
+          aria-label="{{ carousel_label | escape }}"
+        >
+          <div class="logo-block-{{ section.id }}__grid" data-logo-slider>
+            {%- for block in section.blocks -%}
+              {%- if block.settings.logo != blank -%}
+                {%- liquid
+                  assign logo_alt = block.settings.alt_text
+                  if logo_alt == blank
+                    assign logo_alt = 'Logo'
+                  endif
+                  assign logo_sizes = '(min-width: 750px) ' | append: section.settings.logo_width | append: 'px, 50vw'
+                -%}
+                <div
+                  class="logo-block-{{ section.id }}__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                  data-logo-slide
+                  {{ block.shopify_attributes }}
+                  {% if settings.animations_reveal_on_scroll %}
+                    data-cascade
+                    style="--animation-order: {{ forloop.index }};"
+                  {% endif %}
+                >
+                  {%- if block.settings.link != blank -%}
+                    <a
+                      href="{{ block.settings.link }}"
+                      {% if block.settings.link_target_blank %}
+                        target="_blank" rel="noopener noreferrer"
+                      {% endif %}
+                    >
+                  {%- endif -%}
+                  {{
+                    block.settings.logo
+                    | image_url: width: 600
+                    | image_tag: loading: 'lazy', alt: logo_alt, sizes: logo_sizes, widths: '200, 300, 400, 500, 600'
+                  }}
+                  {%- if block.settings.link != blank -%}
+                    </a>
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+        </logo-block-carousel>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% javascript %}
+if (!customElements.get('logo-block-carousel')) {
+  class LogoBlockCarousel extends HTMLElement {
+    connectedCallback() {
+      this.slider = this.querySelector('[data-logo-slider]');
+      if (!this.slider) return;
+
+      this.slides = Array.from(this.slider.querySelectorAll('[data-logo-slide]'));
+      this.autoplayEnabled = this.getAttribute('data-autoplay') === 'true';
+      this.speed = Number(this.getAttribute('data-speed') || 4) * 1000;
+      this.columns = Number(this.getAttribute('data-columns') || 2);
+      this.mobileQuery = window.matchMedia('(max-width: 749px)');
+      this.reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      this.isVisible = false;
+      this.userPaused = false;
+      this.timer = null;
+
+      this.syncPlayback = this.syncPlayback.bind(this);
+      this.pause = this.pause.bind(this);
+      this.onPointerDown = this.onPointerDown.bind(this);
+      this.onPointerUp = this.onPointerUp.bind(this);
+      this.onVisibility = this.onVisibility.bind(this);
+
+      this.mobileQuery.addEventListener('change', this.syncPlayback);
+      this.reducedMotion.addEventListener('change', this.syncPlayback);
+      this.slider.addEventListener('pointerdown', this.onPointerDown);
+      this.slider.addEventListener('pointerup', this.onPointerUp);
+      this.slider.addEventListener('pointercancel', this.onPointerUp);
+      this.addEventListener('mouseenter', this.pause);
+      this.addEventListener('mouseleave', this.syncPlayback);
+      this.addEventListener('focusin', this.pause);
+      this.addEventListener('focusout', this.syncPlayback);
+
+      this.visibilityObserver = new IntersectionObserver(this.onVisibility, {
+        threshold: 0.35,
+      });
+      this.visibilityObserver.observe(this);
+      this.syncPlayback();
+    }
+
+    disconnectedCallback() {
+      this.pause();
+      if (this.resumeTimeout) clearTimeout(this.resumeTimeout);
+      if (this.visibilityObserver) this.visibilityObserver.disconnect();
+      if (this.mobileQuery) this.mobileQuery.removeEventListener('change', this.syncPlayback);
+      if (this.reducedMotion) this.reducedMotion.removeEventListener('change', this.syncPlayback);
+      if (this.slider) {
+        this.slider.removeEventListener('pointerdown', this.onPointerDown);
+        this.slider.removeEventListener('pointerup', this.onPointerUp);
+        this.slider.removeEventListener('pointercancel', this.onPointerUp);
+      }
+      this.removeEventListener('mouseenter', this.pause);
+      this.removeEventListener('mouseleave', this.syncPlayback);
+      this.removeEventListener('focusin', this.pause);
+      this.removeEventListener('focusout', this.syncPlayback);
+    }
+
+    onVisibility(entries) {
+      this.isVisible = entries.some((entry) => entry.isIntersecting);
+      this.syncPlayback();
+    }
+
+    onPointerDown() {
+      this.userPaused = true;
+      this.pause();
+    }
+
+    onPointerUp() {
+      if (this.resumeTimeout) clearTimeout(this.resumeTimeout);
+      this.resumeTimeout = setTimeout(() => {
+        this.userPaused = false;
+        this.syncPlayback();
+      }, this.speed);
+    }
+
+    get shouldPlay() {
+      return (
+        this.autoplayEnabled &&
+        this.isVisible &&
+        !this.userPaused &&
+        this.mobileQuery.matches &&
+        !this.reducedMotion.matches &&
+        this.slides.length > this.columns
+      );
+    }
+
+    get pageOffset() {
+      if (this.slides.length <= this.columns) return this.slider.clientWidth;
+      return this.slides[this.columns].offsetLeft - this.slides[0].offsetLeft;
+    }
+
+    syncPlayback() {
+      if (!this.mobileQuery.matches) {
+        this.pause();
+        this.slider.scrollTo({ left: 0 });
+        return;
+      }
+
+      if (this.shouldPlay) {
+        this.play();
+      } else {
+        this.pause();
+      }
+    }
+
+    play() {
+      this.pause();
+      if (!this.shouldPlay) return;
+      this.timer = setInterval(() => this.next(), this.speed);
+    }
+
+    pause() {
+      if (this.timer) {
+        clearInterval(this.timer);
+        this.timer = null;
+      }
+    }
+
+    next() {
+      if (!this.slider || !this.shouldPlay) return;
+
+      const maxScroll = this.slider.scrollWidth - this.slider.clientWidth;
+      const nextLeft = this.slider.scrollLeft + this.pageOffset;
+      const atEnd = nextLeft >= maxScroll - 4;
+
+      this.slider.scrollTo({
+        left: atEnd ? 0 : nextLeft,
+        behavior: atEnd ? 'auto' : 'smooth',
+      });
+    }
+  }
+
+  customElements.define('logo-block-carousel', LogoBlockCarousel);
+}
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "|| Logo Block",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Title",
+      "default": "Our Partners"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "Small"
+        },
+        {
+          "value": "h1",
+          "label": "Medium"
+        },
+        {
+          "value": "h0",
+          "label": "Large"
+        },
+        {
+          "value": "hxl",
+          "label": "Extra large"
+        },
+        {
+          "value": "hxxl",
+          "label": "Extra extra large"
+        }
+      ],
+      "default": "h1",
+      "label": "Title size"
+    },
+    {
+      "type": "select",
+      "id": "title_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "label": "Title alignment"
+    },
+    {
+      "type": "range",
+      "id": "title_spacing",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Title spacing",
+      "default": 24,
+      "info": "Space between title and logos"
+    },
+    {
+      "type": "select",
+      "id": "block_alignment",
+      "options": [
+        {
+          "value": "start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Centre"
+        },
+        {
+          "value": "end",
+          "label": "Right"
+        }
+      ],
+      "default": "start",
+      "label": "Block alignment"
+    },
+    {
+      "type": "header",
+      "content": "Logo Settings"
+    },
+    {
+      "type": "range",
+      "id": "logo_width",
+      "min": 50,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Logo width",
+      "default": 150,
+      "info": "Maximum width for each logo"
+    },
+    {
+      "type": "range",
+      "id": "logo_spacing",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Logo spacing (desktop)",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "logo_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Logo opacity",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "logo_hover_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Logo hover opacity",
+      "default": 100,
+      "info": "Set to 0 to disable hover effect"
+    },
+    {
+      "type": "header",
+      "content": "Mobile Settings"
+    },
+    {
+      "type": "select",
+      "id": "mobile_columns",
+      "options": [
+        {
+          "value": "1",
+          "label": "1 logo"
+        },
+        {
+          "value": "2",
+          "label": "2 logos"
+        }
+      ],
+      "default": "2",
+      "label": "Logos visible on mobile",
+      "info": "Logos beyond this number auto-swipe on mobile"
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile_autoplay",
+      "label": "Auto-swipe logos on mobile",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "mobile_autoplay_speed",
+      "min": 2,
+      "max": 8,
+      "step": 1,
+      "unit": "s",
+      "label": "Change logos every",
+      "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Section anchor"
+    },
+    {
+      "type": "text",
+      "id": "anchor_id",
+      "label": "Anchor ID",
+      "info": "Enter an ID for anchor links (e.g., 'features'). Links can use #features to jump to this section. Do not include the # symbol."
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo image"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Alt text",
+          "default": "Logo",
+          "info": "Description of the logo for accessibility"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link",
+          "info": "Optional link for the logo"
+        },
+        {
+          "type": "checkbox",
+          "id": "link_target_blank",
+          "label": "Open link in new tab",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [
+    {
+      "name": "Logo Block",
+      "blocks": [
+        {
+          "type": "logo"
+        },
+        {
+          "type": "logo"
+        },
+        {
+          "type": "logo"
+        },
+        {
+          "type": "logo"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

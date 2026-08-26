@@ -1,0 +1,189 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_kGMAxh": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_NAWHMp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Job Titles",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NAWHMp"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Untitled_design_3.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-center",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "rich_text_WQ3iEj": {
+      "type": "rich-text",
+      "blocks": {
+        "text_i4xKmJ": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Built for every role in project delivery.</h2>"
+          }
+        },
+        "text_yR6Mkj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our powerful yet intuitive project management suite is designed for everyone involved in planning and delivering projects across the built environment. From strategic decision-makers to on-site delivery teams, Asta solutions bring clarity, control, and collaboration to every stage of your project.<br/><br/>Supporting clients, executives, commercial teams, estimators, planners and schedulers, project managers, site managers, field engineers, IT teams, and subcontractors, connecting every role within a single, streamlined platform.<br/><br/>With real-time planning, construction scheduling, and complete programme visibility, the Asta suite keeps your projects moving forward. Cloud-based access, role-specific permissions, and a single source of truth empower teams to coordinate seamlessly, reduce risk, and deliver on time and within budget.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_i4xKmJ",
+        "text_yR6Mkj"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "parallel_collection_list_QYLGV9": {
+      "type": "parallel-collection-list",
+      "blocks": {
+        "collection_3pxrj6": {
+          "type": "collection",
+          "settings": {
+            "collection": "client"
+          }
+        },
+        "collection_FUFeTr": {
+          "type": "collection",
+          "settings": {
+            "collection": "commercial"
+          }
+        },
+        "collection_CeJAqc": {
+          "type": "collection",
+          "settings": {
+            "collection": "digital-construction"
+          }
+        },
+        "collection_9djaaK": {
+          "type": "collection",
+          "settings": {
+            "collection": "planners-and-schedulers"
+          }
+        },
+        "collection_ey83UT": {
+          "type": "collection",
+          "settings": {
+            "collection": "bim-manager"
+          }
+        },
+        "collection_3ViyWy": {
+          "type": "collection",
+          "settings": {
+            "collection": "executive"
+          }
+        },
+        "collection_qD6WbQ": {
+          "type": "collection",
+          "settings": {
+            "collection": "estimator"
+          }
+        },
+        "collection_6JF8En": {
+          "type": "collection",
+          "settings": {
+            "collection": "field-engineer"
+          }
+        },
+        "collection_BhQXCU": {
+          "type": "collection",
+          "settings": {
+            "collection": "it-systems"
+          }
+        },
+        "collection_UY4JVi": {
+          "type": "collection",
+          "settings": {
+            "collection": "planning-lead"
+          }
+        },
+        "collection_mqbNPK": {
+          "type": "collection",
+          "settings": {
+            "collection": "project-manager"
+          }
+        },
+        "collection_F83iAz": {
+          "type": "collection",
+          "settings": {
+            "collection": "site-manager"
+          }
+        }
+      },
+      "block_order": [
+        "collection_3pxrj6",
+        "collection_FUFeTr",
+        "collection_CeJAqc",
+        "collection_9djaaK",
+        "collection_ey83UT",
+        "collection_3ViyWy",
+        "collection_qD6WbQ",
+        "collection_6JF8En",
+        "collection_BhQXCU",
+        "collection_UY4JVi",
+        "collection_mqbNPK",
+        "collection_F83iAz"
+      ],
+      "name": "Collection list",
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "heading_size": "h1",
+        "columns_desktop": 3,
+        "columns_mobile": "1",
+        "image_ratio": "adapt",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_kGMAxh",
+    "rich_text_WQ3iEj",
+    "parallel_collection_list_QYLGV9"
+  ]
+}

@@ -77,6 +77,7 @@ if (!customElements.get('product-form')) {
               });
             this.error = false;
             const quickAddModal = this.closest('quick-add-modal');
+            const skipCartOpen = Boolean(this.closest('#main-cart-footer'));
             if (quickAddModal) {
               document.body.addEventListener(
                 'modalClosed',
@@ -92,7 +93,7 @@ if (!customElements.get('product-form')) {
               quickAddModal.hide(true);
             } else {
               CartPerformance.measure("add:paint-updated-sections", () => {
-                this.cart.renderContents(response);
+                this.cart.renderContents(response, { open: !skipCartOpen });
               });
             }
           })

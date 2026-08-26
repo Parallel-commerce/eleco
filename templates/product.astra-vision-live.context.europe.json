@@ -1,0 +1,22 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "product.astra-vision-live.json",
+  "context": {
+    "market": "europe"
+  },
+  "sections": {
+    "parallel_custom_product_info_i3cpfR": {
+      "settings": {
+        "right_column_primary_button_embed_url": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/icithag2efgeb3ztjwvsuq.html?PageId=1c13c289b601f11184077ced8d6becb9"
+      }
+    }
+  }
+}

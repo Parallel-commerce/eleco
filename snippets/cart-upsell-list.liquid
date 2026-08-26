@@ -1,0 +1,70 @@
+{% doc %}
+  Renders cart upsell products, hiding items already in the cart.
+
+  @param {string} id_prefix - Prefix for unique form and option ids
+
+  @example
+  {% render 'cart-upsell-list', id_prefix: 'drawer' %}
+{% enddoc %}
+
+{%- liquid
+  if id_prefix == blank
+    assign id_prefix = 'cart'
+  endif
+  assign picker_type = settings.cart_upsell_picker_type | default: 'dropdown'
+-%}
+
+{%- capture upsell_items -%}
+  {%- if settings.cart_upsell_product != blank -%}
+    {%- liquid
+      assign product_in_cart = false
+      for item in cart.items
+        if item.product_id == settings.cart_upsell_product.id
+          assign product_in_cart = true
+        endif
+      endfor
+      assign upsell_unique_id = id_prefix | append: '-' | append: settings.cart_upsell_product.id
+    -%}
+    {%- if product_in_cart == false and settings.cart_upsell_product.available -%}
+      {% render 'cart-upsell-item',
+        product: settings.cart_upsell_product,
+        picker_type: picker_type,
+        unique_id: upsell_unique_id
+      %}
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- for upsell_product in settings.cart_upsell_products -%}
+    {%- liquid
+      assign is_duplicate = false
+      if settings.cart_upsell_product != blank and upsell_product.id == settings.cart_upsell_product.id
+        assign is_duplicate = true
+      endif
+      assign product_in_cart = false
+      for item in cart.items
+        if item.product_id == upsell_product.id
+          assign product_in_cart = true
+        endif
+      endfor
+      assign upsell_unique_id = id_prefix | append: '-' | append: upsell_product.id
+    -%}
+    {%- if is_duplicate == false and product_in_cart == false and upsell_product.available -%}
+      {% render 'cart-upsell-item',
+        product: upsell_product,
+        picker_type: picker_type,
+        unique_id: upsell_unique_id
+      %}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+
+{%- if cart != empty and upsell_items != blank -%}
+  <div class="cart-drawer__upsell" aria-label="{{ 'sections.cart.upsell_label' | t }}">
+    <p class="cart-drawer__upsell-label">
+      {{ 'sections.cart.upsell_label' | t }}
+    </p>
+    <div class="cart-drawer__upsell-list">
+      {{ upsell_items }}
+    </div>
+  </div>
+{%- endif -%}

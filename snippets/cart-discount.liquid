@@ -1,0 +1,80 @@
+{% doc %}
+  Renders a discount code form for the cart drawer or cart page.
+
+  @param {string} id - Unique prefix for form field ids
+
+  @example
+  {% render 'cart-discount', id: 'CartDrawer' %}
+{% enddoc %}
+
+{%- liquid
+  assign discount_codes_string = ''
+  for discount_application in cart.cart_level_discount_applications
+    if discount_application.type == 'discount_code'
+      assign discount_codes_string = discount_codes_string | append: discount_application.title | append: ','
+    endif
+  endfor
+  for item in cart.items
+    for allocation in item.line_level_discount_allocations
+      if allocation.discount_application.type == 'discount_code'
+        assign discount_codes_string = discount_codes_string | append: allocation.discount_application.title | append: ','
+      endif
+    endfor
+  endfor
+  assign discount_codes = discount_codes_string | split: ',' | uniq
+-%}
+
+<cart-discount class="cart-discount">
+  <p class="cart-discount__label" id="{{ id }}-DiscountLabel">
+    {{ 'sections.cart.discount_code' | t }}
+  </p>
+  <form class="cart-discount__form">
+    <input
+      id="{{ id }}-Discount"
+      class="cart-discount__input"
+      type="text"
+      name="discount"
+      placeholder="{{ 'sections.cart.discount_code_placeholder' | t }}"
+      autocomplete="off"
+      autocapitalize="characters"
+      spellcheck="false"
+      aria-labelledby="{{ id }}-DiscountLabel"
+      required
+    >
+    <button type="submit" class="button button--secondary cart-discount__submit">
+      {{ 'sections.cart.discount_apply' | t }}
+    </button>
+  </form>
+
+  <p id="{{ id }}-DiscountError" class="cart-discount__error hidden" role="alert">
+    <span class="svg-wrapper">
+      {{- 'icon-error.svg' | inline_asset_content -}}
+    </span>
+    <span class="cart-discount__error-text"></span>
+  </p>
+
+  {%- if discount_codes_string != blank -%}
+    <ul class="cart-discount__codes list-unstyled" role="list">
+      {%- for code in discount_codes -%}
+        {%- if code != blank -%}
+          <li class="cart-discount__pill" data-discount-code="{{ code | escape }}">
+            <span class="svg-wrapper">
+              {{- 'icon-discount.svg' | inline_asset_content -}}
+            </span>
+            <span class="cart-discount__pill-code">{{ code | escape }}</span>
+            <button
+              type="button"
+              class="cart-discount__remove"
+              data-remove-discount
+              aria-label="{{ 'sections.cart.remove_discount' | t: code: code }}"
+            >
+              <span class="svg-wrapper">
+                {{- 'icon-close.svg' | inline_asset_content -}}
+              </span>
+            </button>
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+</cart-discount>

@@ -1,7 +1,17 @@
 {{ 'component-cart.css' | asset_url | stylesheet_tag }}
+{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}
 {{ 'component-totals.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+
+{%- unless settings.cart_type == 'drawer' -%}
+  <script src="{{ 'cart-discount.js' | asset_url }}" defer="defer"></script>
+{%- endunless -%}
+
+{%- if settings.cart_upsell_product != blank or settings.cart_upsell_products != blank -%}
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'cart-upsell.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -37,13 +47,19 @@
         </cart-note>
       {%- endif -%}
 
-      <div class="cart__blocks">
+      <div class="js-contents cart__footer-content">
+        {% render 'cart-upsell-list', id_prefix: 'page' %}
+
+        <div class="cart__blocks">
         {% for block in section.blocks %}
           {%- case block.type -%}
             {%- when '@app' -%}
               {% render block %}
             {%- when 'subtotal' -%}
-              <div class="js-contents" {{ block.shopify_attributes }}>
+              <div {{ block.shopify_attributes }}>
+                {%- if cart != empty -%}
+                  {% render 'cart-discount', id: 'Cart' %}
+                {%- endif -%}
                 <div>
                   {%- if cart.cart_level_discount_applications.size > 0 -%}
                     <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
@@ -128,6 +144,7 @@
         {% endfor %}
 
         <div id="cart-errors"></div>
+        </div>
       </div>
     </div>
   </div>

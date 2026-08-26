@@ -1,0 +1,984 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Materials",
+            "icon": "leather",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "truck",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Dimensions",
+            "icon": "ruler",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care Instructions",
+            "icon": "heart",
+            "content": "",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "collapsible-row-2",
+        "collapsible-row-3",
+        "share"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "parallel_custom_product_info_i3cpfR": {
+      "type": "parallel-custom-product-info",
+      "blocks": {
+        "subscriptions_app_block_HfcxDY": {
+          "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
+          "settings": {
+            "color_text_body": "#6d7175",
+            "dividers_color": "#8f8d8d",
+            "bacgkround_color": "#ffffff",
+            "border_thickness": 1,
+            "border_radius": 0,
+            "subscription_policy_url": "",
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "subscriptions_app_block_HfcxDY"
+      ],
+      "name": "Custom Product Info",
+      "settings": {
+        "color_scheme": "",
+        "anchor_id": "",
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "hero_title": "Optimise team collaboration",
+        "hero_subtitle": "Drive profitability and efficiency with Asta Vision, the web-based portal designed to simplify complex construction project management",
+        "hero_image": "shopify://shop_images/Asta_Powerproject_109e16a4-29a3-4d9b-b8d5-165a549f2bf1.svg",
+        "hero_background_color": "#2a303a",
+        "hero_text_color": "#ffffff",
+        "column_background_color": "#fff5f5",
+        "divider_color": "#ff0000",
+        "primary_button_color": "#ff6b35",
+        "primary_button_text_color": "#ffffff",
+        "left_column_title": "Annual subscription",
+        "left_column_price": "",
+        "left_column_button_text": "Add to cart",
+        "left_column_secondary_button_text": "Download free trial",
+        "left_column_secondary_button_link": "",
+        "left_column_fine_print": "Paid annually, one user installed onto a single Windows PC. Includes VAT.",
+        "right_column_title": "Concurrent & SaaS solutions",
+        "right_column_paragraph": "You wouldn't place a tender without first understanding the full scope of work. We approach custom quotes the same way. Help us get to know your team's needs to get started now.",
+        "right_column_fine_print": "",
+        "right_column_primary_button_text": "Contact sales",
+        "right_column_primary_button_link": "",
+        "right_column_primary_button_embed_url": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/ha46qg7efgeb2bfvrmtaw.html?PageId=e93810fabb01f11184076045bd131303",
+        "right_column_secondary_button_text": "Book a demo",
+        "right_column_secondary_button_link": "",
+        "right_column_secondary_button_embed_url": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/4v0yqhcefgeb2bfvrmtaw.html?PageId=6174f5e3dc01f11184076045bd131303"
+      }
+    },
+    "parallel_image_with_features_hVbtUt": {
+      "type": "parallel-image-with-features",
+      "blocks": {
+        "heading_GGwQtN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Transform raw data into real-time decisions",
+            "heading_size": "h1"
+          }
+        },
+        "feature_item_CkdfUp": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Streamline project insights"
+          }
+        },
+        "feature_item_efdUrz": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Automated integrated reporting"
+          }
+        },
+        "feature_item_eVF6yn": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Baseline management ensures visibility"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GGwQtN",
+        "feature_item_CkdfUp",
+        "feature_item_efdUrz",
+        "feature_item_eVF6yn"
+      ],
+      "name": "Image with features",
+      "settings": {
+        "image": "shopify://shop_images/Vision_Overview_2.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "anchor_id": "#",
+        "padding_top": 0,
+        "padding_bottom": 52,
+        "text_padding_left": 32,
+        "text_padding_right": 16
+      }
+    },
+    "parallel_image_with_features_pYtxX7": {
+      "type": "parallel-image-with-features",
+      "blocks": {
+        "heading_qDbMj8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Access enterprise-grade tools for a competitive edge",
+            "heading_size": "h1"
+          }
+        },
+        "feature_item_8agkWh": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "4D BIM integration creates impressive visual planning presentations"
+          }
+        },
+        "feature_item_gVYYUV": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Complex modeling capabilities"
+          }
+        },
+        "feature_item_iRNHQw": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Contractual compliance through change management"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qDbMj8",
+        "feature_item_8agkWh",
+        "feature_item_gVYYUV",
+        "feature_item_iRNHQw"
+      ],
+      "name": "Image with features",
+      "settings": {
+        "image": "shopify://shop_images/Vision_Overview.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "anchor_id": "#",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "text_padding_left": 16,
+        "text_padding_right": 32
+      }
+    },
+    "parallel_image_with_features_UVMBrD": {
+      "type": "parallel-image-with-features",
+      "blocks": {
+        "heading_EU6MmW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Reduce risk from time-related costs",
+            "heading_size": "h1"
+          }
+        },
+        "feature_item_Wp9bXU": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Identify risks before they materialise and cause delays"
+          }
+        },
+        "feature_item_JY6MwN": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Automated revision management"
+          }
+        },
+        "feature_item_prUy3i": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Resource and cost management integrated with time scheduling"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EU6MmW",
+        "feature_item_Wp9bXU",
+        "feature_item_JY6MwN",
+        "feature_item_prUy3i"
+      ],
+      "name": "Image with features",
+      "settings": {
+        "image": "shopify://shop_images/Vision_Overview_1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "anchor_id": "#",
+        "padding_top": 52,
+        "padding_bottom": 0,
+        "text_padding_left": 32,
+        "text_padding_right": 16
+      }
+    },
+    "parallel_award_banner_C3twkW": {
+      "type": "parallel-award-banner",
+      "blocks": {
+        "award_icon_wWHCpq": {
+          "type": "award_icon",
+          "settings": {
+            "icon_image": "shopify://shop_images/Project_Management_Software_of_the_year.png",
+            "icon_alt": "Award icon",
+            "mobile_icon_image": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
+            "mobile_icon_alt": ""
+          }
+        },
+        "award_icon_VzWygn": {
+          "type": "award_icon",
+          "settings": {
+            "icon_image": "shopify://shop_images/Project_Management_Software_of_the_year.png",
+            "icon_alt": "Award icon",
+            "mobile_icon_image": "shopify://shop_images/sparklayer_black.svg",
+            "mobile_icon_alt": ""
+          }
+        },
+        "award_icon_LXKmTV": {
+          "type": "award_icon",
+          "settings": {
+            "icon_alt": "Award icon",
+            "mobile_icon_alt": ""
+          }
+        },
+        "richtext_LJNcig": {
+          "type": "richtext",
+          "settings": {
+            "text": "<h1>Voted best <span style=\"text-decoration:underline\">Project Management </span>Software</h1>"
+          }
+        }
+      },
+      "block_order": [
+        "award_icon_wWHCpq",
+        "award_icon_VzWygn",
+        "award_icon_LXKmTV",
+        "richtext_LJNcig"
+      ],
+      "disabled": true,
+      "name": "Award Banner",
+      "settings": {
+        "background_image": "shopify://shop_images/team.jpg",
+        "image_height": "medium",
+        "min_height": 400,
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "content_alignment": "left",
+        "text_alignment": "left",
+        "content_width": 50,
+        "text_color": "#ffffff",
+        "mobile_text_color": "#000000",
+        "underline_color": "#ff5a3c",
+        "anchor_id": "",
+        "icon_size": 100,
+        "hide_logos_mobile": true
+      }
+    },
+    "parallel_highlights_yTAfJh": {
+      "type": "parallel-highlights",
+      "blocks": {
+        "highlight_KdRTH8": {
+          "type": "highlight",
+          "settings": {
+            "highlight": "+250k",
+            "text": "Licenses sold worldwide"
+          }
+        },
+        "highlight_kcCRDW": {
+          "type": "highlight",
+          "settings": {
+            "highlight": "70+",
+            "text": "Countries use Asta"
+          }
+        },
+        "highlight_kmzQJf": {
+          "type": "highlight",
+          "settings": {
+            "highlight": "75%",
+            "text": "UK builder choose Asta"
+          }
+        }
+      },
+      "block_order": [
+        "highlight_KdRTH8",
+        "highlight_kcCRDW",
+        "highlight_kmzQJf"
+      ],
+      "disabled": true,
+      "name": "Highlights",
+      "settings": {
+        "color_scheme": "",
+        "highlight_color": "#e85a47",
+        "anchor_id": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "parallel_two_column_accordion_xi4PpU": {
+      "type": "parallel-two-column-accordion",
+      "blocks": {
+        "accordion_item_AX7zXQ": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Contractors",
+            "content_1": "<p>Real-time portfolio visibility through centralised schedule management</p>",
+            "content_2": "<p>Reduce time-related project costs by identifying issues before they escalate</p>",
+            "content_3": "<p>Supports good practice by automatically logging changes against each revision.</p>",
+            "content_4": "<p>Develop contract-specific workflows flexibly, standardising enture project approach.</p>",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_htnMQm": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Subcontractors",
+            "content_1": "<p>Real-time multi-user collaboration means everyone is working from the same project plans.</p>",
+            "content_2": "<p>Access tender planning tools allowing for accurate and reliable bids for a competitive advantage.</p>",
+            "content_3": "<p>Controlled access and clear responsibilities fosters accountability while protecting sensitive information.</p>",
+            "content_4": "<p><a href=\"/products/asta-siteprogress\" title=\"Asta SiteProgress\">Asta Siteprogress</a> integration allows for on-site updates that feed information directly into Asta Vision.</p>",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_EDULcY": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Designers and Consultants",
+            "content_1": "<p>Centralised programme hub to align design stages, approvals, and delivery milestones across all projects.</p>",
+            "content_2": "<p>Configurable, portfolio‑level views and dashboards to support client reporting and governance.</p>",
+            "content_3": "<p>Controlled collaboration spaces so internal teams and external partners can work on shared, live schedules.</p>",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_XX8GYV": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Residential Construction",
+            "content_1": "<p>Portfolio-level oversight for multiple housing developments enables faster, strategic decision-making.</p>",
+            "content_2": "<p>Template-driven planning to standardise planning and minimise the risk of errors.</p>",
+            "content_3": "<p>Seamless resource management across multiple developments to co-ordinate trades.</p>",
+            "content_4": "<p>Controlled access features allow different users to co-ordinate, for better supply chain management.</p>",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_MXN6jV": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Clients and Asset Owners",
+            "content_1": "<p>Portfolio hub giving a single, controlled view of all project schedules and key milestones.</p>",
+            "content_2": "<p>Standardised coding, templates, and approvals so partners supply data in a consistent, comparable format.</p>",
+            "content_3": "<p>Configurable views and reports to support governance forums, gateway decisions, and board reporting.</p>",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_AX7zXQ",
+        "accordion_item_htnMQm",
+        "accordion_item_EDULcY",
+        "accordion_item_XX8GYV",
+        "accordion_item_MXN6jV"
+      ],
+      "name": "Two-Column Accordion",
+      "settings": {
+        "heading": "Better project outcomes for every team",
+        "heading_size": "h1",
+        "anchor_id": "#capabilities",
+        "padding_top": 48,
+        "padding_bottom": 60
+      }
+    },
+    "parallel_video_three_column_BTPQnC": {
+      "type": "parallel-video-three-column",
+      "blocks": {
+        "video_item_NYWJta": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "video_item_qFpjwc": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "video_item_cfdDnt": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_item_NYWJta",
+        "video_item_qFpjwc",
+        "video_item_cfdDnt"
+      ],
+      "disabled": true,
+      "name": "Three Column Video",
+      "settings": {
+        "heading": "Video Gallery",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "full_width": false,
+        "color_scheme": "",
+        "anchor_id": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "parallel_logo_block_hHLWpL": {
+      "type": "parallel-logo-block",
+      "blocks": {
+        "logo_XeHnR7": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/sparklayer_black.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_WNf64B": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_hWRjrM": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/partner_logo_2.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_itwWmj": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/partner_logo_3.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "logo_XeHnR7",
+        "logo_WNf64B",
+        "logo_hWRjrM",
+        "logo_itwWmj"
+      ],
+      "disabled": true,
+      "name": "Logo Block",
+      "settings": {
+        "color_scheme": "",
+        "title": "",
+        "heading_size": "h1",
+        "title_alignment": "center",
+        "title_spacing": 24,
+        "block_alignment": "center",
+        "logo_width": 150,
+        "logo_spacing": 40,
+        "logo_opacity": 100,
+        "logo_hover_opacity": 100,
+        "mobile_columns": "2",
+        "anchor_id": "",
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
+    "parallel_testimonials_6ayBHg": {
+      "type": "parallel-testimonials",
+      "blocks": {
+        "testimonial_a3KHyH": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Steven Tideswell",
+            "title": " Head of Business Excellence | VINCI Construction",
+            "country_flag": "",
+            "testimonial_text": "Going forward, all our programmes will be created and managed in Asta Vision. We will be able to simplify and automate reporting, reduce our business continuity risk by working more collaboratively and without loss of data, and a with standardised approach to planning and programming across the business we will be able to create a better, more professional and more consistent experience for all our customers."
+          }
+        },
+        "testimonial_BKxVbp": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Bengisu Uygur",
+            "title": "Planning Manager | MiCiM Ltd",
+            "country_flag": "",
+            "testimonial_text": "With Asta Powerproject Vision, we have end-to-end visibility of project changes and progress. As a result, we can easily make and sync changes to ensure that our teams never work in isolation again."
+          }
+        },
+        "testimonial_dC6gQg": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Derek O'Neil",
+            "title": "Head of Planning | Careys Civil Engineering",
+            "country_flag": "",
+            "testimonial_text": "With Asta Vision we have a common tool to help guide everyone towards using good planning principles and processes. Asta Vision enables us to view live project data across all our projects with greater transparency and consistency. It helps planners to focus on the day job and not be distracted by lengthy reporting processes."
+          }
+        },
+        "testimonial_tHbLzP": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Graham McCracken",
+            "title": "Senior Planner | Errigal",
+            "country_flag": "",
+            "testimonial_text": "In Vision you can baseline documents at the click of a button. It's a strong feature.\n(Valued customer of 15 years)"
+          }
+        },
+        "testimonial_gmUK7t": {
+          "type": "testimonial",
+          "settings": {
+            "name": "James Murkin",
+            "title": "Data & Reporting Lead | GMI Construction",
+            "country_flag": "",
+            "testimonial_text": "Asta Vision is crucial because we can connect directly to the database that holds all of our programme information, giving us a single version of the truth."
+          }
+        },
+        "testimonial_FTmqJ9": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "name": "Levin Wense",
+            "title": "CEO and Co-founder |  MVP Match",
+            "country_flag": "",
+            "testimonial_text": "I would highly recommend their services to any company looking for top-notch IT staff. They have truly been a valuable partner for our business and have played an important role in our success."
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_a3KHyH",
+        "testimonial_BKxVbp",
+        "testimonial_dC6gQg",
+        "testimonial_tHbLzP",
+        "testimonial_gmUK7t",
+        "testimonial_FTmqJ9"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "heading": "What do our customers say?",
+        "subheading": "Find out why our customers are glad they met us.",
+        "heading_size": "h1",
+        "header_alignment": "center",
+        "header_spacing": 40,
+        "color_scheme": "",
+        "anchor_id": "reviews",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "parallel_custom_product_list_M7EFHt": {
+      "type": "parallel-custom-product-list",
+      "blocks": {
+        "product_Hi9e7N": {
+          "type": "product",
+          "settings": {
+            "product": "asta-enterprise"
+          }
+        },
+        "product_3Mi7Bg": {
+          "type": "product",
+          "settings": {
+            "product": "asta-powerproject"
+          }
+        }
+      },
+      "block_order": [
+        "product_Hi9e7N",
+        "product_3Mi7Bg"
+      ],
+      "name": "Custom Product List",
+      "settings": {
+        "heading": "Asta Integrations",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "button_text": "Learn more",
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-2",
+        "anchor_id": "integrations",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "parallel_faq_accordion_3Vq7Fm": {
+      "type": "parallel-faq-accordion",
+      "blocks": {
+        "faq_item_bVkqMa": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is Asta Vision?",
+            "answer": "<p>Asta Vision is the cloud intelligence layer for Asta Powerproject. It centralises programme data, making schedules accessible, visible, and usable across your organisation through business intelligence, quality controls, and collaboration tools.</p>"
+          }
+        },
+        "faq_item_HE6Npx": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Who is Asta Vision for?",
+            "answer": "<p>Asta Vision is used by planners, project managers, PMOs, commercial teams, directors, and clients. Anyone who needs reliable insight into programme data can access it without needing to use Powerproject.</p>"
+          }
+        },
+        "faq_item_QkUV3x": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What benefits does Asta Vision offer enterprise companies?",
+            "answer": "<p>Asta Vision helps organisations move beyond individual schedule files by:</p><ul><li>Making programme data accessible to the wider business</li><li>Applying consistent quality and standardisation checks</li><li>Supporting governance, assurance, and review processes</li><li>Enabling collaboration without distributing .pp files</li><li>Providing trusted data for business intelligence and reporting tools<br/><br/></li></ul>"
+          }
+        },
+        "faq_item_XjQ7tP": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is my data secure in Asta Vision?",
+            "answer": "<p>Yes. Asta Vision is hosted on Microsoft Azure and uses enterprise-grade security, role-based access control, and auditing to protect your data and ensure the right people see the right information.</p>"
+          }
+        },
+        "faq_item_jARANR": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How is Asta Vision different from Asta Powerproject?",
+            "answer": "<p>Asta Powerproject is where schedules are built and maintained.</p><p>Asta Vision sits above it, providing structured access to business intelligence data, schedule quality and standardisation tools, and shared views for teams who need insight without editing the programme.</p>"
+          }
+        },
+        "faq_item_bAXDXk": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Do I still need Asta Powerproject if I use Asta Vision?",
+            "answer": "<p>Yes. Asta Vision extends Powerproject rather than replacing it. All planning and schedule changes remain in Powerproject, while Vision provides oversight, governance, and data access at scale.</p>"
+          }
+        },
+        "faq_item_NBDry8": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How does Asta Vision get data from my schedules?",
+            "answer": "<p>For the best results, Asta Vision creates projects for you and sets them up in line with your agreed planning and data standards. Existing and historic Powerproject schedules can also be uploaded and then managed within Vision going forward.</p>"
+          }
+        },
+        "faq_item_H9HznX": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can Asta Vision change my schedule?",
+            "answer": "<p>No. Asta Vision is not used to edit schedules. All programme logic and updates remain fully controlled within Asta Powerproject.</p>"
+          }
+        },
+        "faq_item_w9Dmy3": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I use my own reporting tools with Asta Vision?",
+            "answer": "<p>Yes. Asta Vision exposes structured programme data through a SQL BI database, allowing you to build dashboards and reports in tools such as Power BI or Tableau.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_bVkqMa",
+        "faq_item_HE6Npx",
+        "faq_item_QkUV3x",
+        "faq_item_XjQ7tP",
+        "faq_item_jARANR",
+        "faq_item_bAXDXk",
+        "faq_item_NBDry8",
+        "faq_item_H9HznX",
+        "faq_item_w9Dmy3"
+      ],
+      "name": "FAQ Accordion",
+      "settings": {
+        "heading": "Questions? We have answers.",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_spacing": 40,
+        "item_gap": 12,
+        "item_padding": 18,
+        "border_radius": 12,
+        "question_font_size": 16,
+        "color_scheme": "",
+        "item_background": "#f6f7f7",
+        "item_background_active": "#fce8e6",
+        "anchor_id": "faqs",
+        "padding_top": 60,
+        "padding_bottom": 36
+      }
+    },
+    "parallel_support_cta_RxfB67": {
+      "type": "parallel-support-cta",
+      "blocks": {
+        "resource_link_kEdPjk": {
+          "type": "resource_link",
+          "settings": {
+            "label": "Support portal",
+            "link": "https://support.elecosoft.com/"
+          }
+        },
+        "resource_link_wTwLVG": {
+          "type": "resource_link",
+          "settings": {
+            "label": "What's new",
+            "link": "https://elecosoft.com/us/documentation/powerproject/powerproject-vision/whats-new/"
+          }
+        },
+        "resource_link_y8bPwx": {
+          "type": "resource_link",
+          "settings": {
+            "label": "Troubleshooting",
+            "link": "https://elecosoft.com/us/documentation/powerproject/powerproject-vision/troubleshooting/"
+          }
+        },
+        "resource_link_VzrFGt": {
+          "type": "resource_link",
+          "settings": {
+            "label": "Training courses (UK)",
+            "link": "https://elecosoft.com/training"
+          }
+        }
+      },
+      "block_order": [
+        "resource_link_kEdPjk",
+        "resource_link_wTwLVG",
+        "resource_link_y8bPwx",
+        "resource_link_VzrFGt"
+      ],
+      "name": "Support CTA",
+      "settings": {
+        "heading": "Learn & Support",
+        "description": "Our support services are complemented by our wide range of web-based tutorials, release notes, classroom and online training to ensure you get the most from your software.",
+        "primary_button_label": "View all resources",
+        "primary_button_link": "https://elecosoft.com/products/asta/asta-powerproject/learn-support",
+        "primary_button_background": "#e83f40",
+        "primary_button_background_hover": "#d04a35",
+        "primary_button_text": "#ffffff",
+        "secondary_button_label": "",
+        "product": "",
+        "secondary_button_link": "",
+        "secondary_button_background": "#ffffff",
+        "secondary_button_background_hover": "#f5f5f5",
+        "secondary_button_text": "#333333",
+        "secondary_button_border": "#cccccc",
+        "background_color": "#2a303a",
+        "text_color": "#ffffff",
+        "resource_background": "#3a3a3a",
+        "resource_background_hover": "#4a4a4a",
+        "resource_border": "#ffffff",
+        "resource_icon_color": "#e83f40",
+        "heading_font_size": 48,
+        "heading_font_weight": "700",
+        "description_font_size": 16,
+        "button_font_size": 16,
+        "resource_font_size": 16,
+        "button_border_radius": 4,
+        "resource_border_radius": 4,
+        "anchor_id": "support",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "parallel_information_Ehxmkb": {
+      "type": "parallel-information",
+      "name": "Information",
+      "settings": {
+        "color_scheme": "",
+        "heading_font_size": 24,
+        "heading_font_weight": "700",
+        "text_font_size": 16,
+        "heading_color": "",
+        "text_color": "",
+        "border_color": "#e83f40",
+        "block_spacing": 24,
+        "anchor_id": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "parallel_custom_product_info_i3cpfR",
+    "parallel_image_with_features_hVbtUt",
+    "parallel_image_with_features_pYtxX7",
+    "parallel_image_with_features_UVMBrD",
+    "parallel_award_banner_C3twkW",
+    "parallel_highlights_yTAfJh",
+    "parallel_two_column_accordion_xi4PpU",
+    "parallel_video_three_column_BTPQnC",
+    "parallel_logo_block_hHLWpL",
+    "parallel_testimonials_6ayBHg",
+    "parallel_custom_product_list_M7EFHt",
+    "parallel_faq_accordion_3Vq7Fm",
+    "parallel_support_cta_RxfB67",
+    "parallel_information_Ehxmkb"
+  ]
+}

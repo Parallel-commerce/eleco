@@ -7,9 +7,12 @@
 
 {{ 'quantity-popover.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}
 
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'cart-discount.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
 <style>
   .drawer {
@@ -91,9 +94,6 @@
                 <table class="cart-items" role="table">
                   <thead role="rowgroup">
                     <tr role="row">
-                      <th id="CartDrawer-ColumnProductImage" role="columnheader">
-                        <span class="visually-hidden">{{ 'sections.cart.headings.image' | t }}</span>
-                      </th>
                       <th
                         id="CartDrawer-ColumnProduct"
                         class="caption-with-letter-spacing"
@@ -126,33 +126,33 @@
                           aria-label="{{- 'products.product.nested_label' | t: title: item.product.title, parent_title: item.parent_relationship.parent.title | escape -}}"
                         {% endif %}
                       >
-                        <td
-                          class="cart-item__media"
-                          role="cell"
-                          headers="CartDrawer-ColumnProductImage"
-                        >
-                          {% if item.image %}
-                            {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
-                            <a href="{{ item.url }}" class="cart-item__link" tabindex="-1" aria-hidden="true"> </a>
-                            <img
-                              class="cart-item__image"
-                              src="{{ item.image | image_url: width: 300 }}"
-                              alt="{{ item.image.alt | escape }}"
-                              loading="lazy"
-                              width="150"
-                              height="{{ 150 | divided_by: item.image.aspect_ratio | ceil }}"
-                            >
-                          {% endif %}
-                        </td>
-
                         <td class="cart-item__details" role="cell" headers="CartDrawer-ColumnProduct">
+                          {%- liquid
+                            assign product_logo = item.product.metafields.custom.product_logo
+                            if product_logo.value != blank
+                              assign product_logo = product_logo.value
+                            endif
+                          -%}
+
+                          {%- if product_logo != blank -%}
+                            <a href="{{ item.url }}" class="cart-item__product-logo-link">
+                              {{
+                                product_logo
+                                | image_url: width: 200
+                                | image_tag: loading: 'lazy', alt: item.product.title, class: 'product-logo'
+                              }}
+                            </a>
+                          {%- endif -%}
+
                           {%- if settings.show_vendor -%}
                             <p class="caption-with-letter-spacing light">{{ item.product.vendor }}</p>
                           {%- endif -%}
 
-                          <a href="{{ item.url }}" class="cart-item__name h4 break">
-                            {{- item.product.title | escape -}}
-                          </a>
+                          {%- if product_logo == blank -%}
+                            <a href="{{ item.url }}" class="cart-item__name h4 break">
+                              {{- item.product.title | escape -}}
+                            </a>
+                          {%- endif -%}
 
                           {%- if item.original_price != item.final_price -%}
                             <div class="cart-item__discounted-prices">
@@ -475,6 +475,11 @@
         </form>
       </cart-drawer-items>
       <div class="drawer__footer">
+        {%- if settings.cart_upsell_product != blank or settings.cart_upsell_products != blank -%}
+          <script src="{{ 'cart-upsell.js' | asset_url }}" defer="defer"></script>
+        {%- endif -%}
+        {% render 'cart-upsell-list', id_prefix: 'drawer' %}
+
         {%- if settings.show_cart_note -%}
           <details id="Details-CartDrawer">
             <summary>
@@ -493,6 +498,10 @@
               >{{ cart.note }}</textarea>
             </cart-note>
           </details>
+        {%- endif -%}
+
+        {%- if cart != empty -%}
+          {% render 'cart-discount', id: 'CartDrawer' %}
         {%- endif -%}
 
         <!-- Start blocks -->
@@ -518,6 +527,7 @@
             <p class="totals__total-value">{{ cart.total_price | money_with_currency }}</p>
           </div>
 
+          {% comment %}
           <small class="tax-note caption-large rte">
             {%- if cart.duties_included and cart.taxes_included -%}
               {%- if shop.shipping_policy.body == blank -%}
@@ -557,11 +567,12 @@
               {%- endif -%}
             {%- endif -%}
           </small>
+          {% endcomment %}
         </div>
 
         <!-- CTAs -->
 
-        <div class="cart__ctas" {{ block.shopify_attributes }}>
+        <div class="cart__ctas" style="margin-top: 1.5rem;" {{ block.shopify_attributes }}>
           <button
             type="submit"
             id="CartDrawer-Checkout"
@@ -572,7 +583,7 @@
               disabled
             {% endif %}
           >
-            {{ 'sections.cart.checkout' | t }}
+            {{ 'sections.cart.secure_checkout' | t }}
           </button>
         </div>
       </div>

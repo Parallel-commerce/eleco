@@ -1,0 +1,769 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Materials",
+            "icon": "leather",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "truck",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Dimensions",
+            "icon": "ruler",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care Instructions",
+            "icon": "heart",
+            "content": "",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "collapsible-row-2",
+        "collapsible-row-3",
+        "share"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "parallel_custom_product_info_i3cpfR": {
+      "type": "parallel-custom-product-info",
+      "blocks": {
+        "subscriptions_app_block_HfcxDY": {
+          "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
+          "settings": {
+            "color_text_body": "#6d7175",
+            "dividers_color": "#8f8d8d",
+            "bacgkround_color": "#ffffff",
+            "border_thickness": 1,
+            "border_radius": 0,
+            "subscription_policy_url": "",
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "subscriptions_app_block_HfcxDY"
+      ],
+      "name": "Custom Product Info",
+      "settings": {
+        "color_scheme": "",
+        "anchor_id": "",
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "hero_title": "Free Project Viewer",
+        "hero_subtitle": "View files that are sent to you without having a licensed copy of that software on your device. Integrated with Asta Powerproject (including Asta Powerproject 4D) as well as Microsoft Project and Oracle Primavera.",
+        "hero_image": "shopify://shop_images/Asta_Powerproject_109e16a4-29a3-4d9b-b8d5-165a549f2bf1.svg",
+        "hero_background_color": "#2a303a",
+        "hero_text_color": "#ffffff",
+        "column_background_color": "#fff5f5",
+        "divider_color": "#ff0000",
+        "primary_button_color": "#ff6b35",
+        "primary_button_text_color": "#ffffff",
+        "left_column_title": "Annual subscription",
+        "left_column_price": "",
+        "left_column_button_text": "Add to cart",
+        "left_column_secondary_button_text": "Download free trial",
+        "left_column_secondary_button_link": "",
+        "left_column_fine_print": "Paid annually, one user installed onto a single Windows PC. Includes VAT.",
+        "right_column_title": "Free Resource",
+        "right_column_paragraph": "",
+        "right_column_fine_print": "",
+        "right_column_primary_button_text": "Download now",
+        "right_column_primary_button_link": "",
+        "right_column_primary_button_embed_url": "",
+        "right_column_secondary_button_text": "",
+        "right_column_secondary_button_link": "",
+        "right_column_secondary_button_embed_url": ""
+      }
+    },
+    "parallel_image_with_features_hVbtUt": {
+      "type": "parallel-image-with-features",
+      "blocks": {
+        "heading_GGwQtN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Unlock schedule access",
+            "heading_size": "h1"
+          }
+        },
+        "feature_item_CkdfUp": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Share read‑only programmes with everyone"
+          }
+        },
+        "feature_item_efdUrz": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Keep all teams on the same plan"
+          }
+        },
+        "feature_item_eVF6yn": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Cut time spent sending PDFs and exports"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GGwQtN",
+        "feature_item_CkdfUp",
+        "feature_item_efdUrz",
+        "feature_item_eVF6yn"
+      ],
+      "name": "Image with features",
+      "settings": {
+        "image": "shopify://shop_images/failte-restaurant-image.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "anchor_id": "#",
+        "padding_top": 0,
+        "padding_bottom": 52,
+        "text_padding_left": 32,
+        "text_padding_right": 16
+      }
+    },
+    "parallel_image_with_features_pYtxX7": {
+      "type": "parallel-image-with-features",
+      "blocks": {
+        "heading_qDbMj8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Reduce miscommunication",
+            "heading_size": "h1"
+          }
+        },
+        "feature_item_8agkWh": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Avoid mistakes from outdated schedules"
+          }
+        },
+        "feature_item_gVYYUV": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Make milestones and dependencies clear"
+          }
+        },
+        "feature_item_iRNHQw": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Align all parties on one trusted view"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qDbMj8",
+        "feature_item_8agkWh",
+        "feature_item_gVYYUV",
+        "feature_item_iRNHQw"
+      ],
+      "disabled": true,
+      "name": "Image with features",
+      "settings": {
+        "image": "shopify://shop_images/failte-restaurant-image.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "anchor_id": "#",
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "text_padding_left": 16,
+        "text_padding_right": 32
+      }
+    },
+    "parallel_image_with_features_UVMBrD": {
+      "type": "parallel-image-with-features",
+      "blocks": {
+        "heading_EU6MmW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get more from planning tools",
+            "heading_size": "h1"
+          }
+        },
+        "feature_item_prUy3i": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Improve portfolio visibility"
+          }
+        },
+        "feature_item_Wp9bXU": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Spread planning insight at low extra cost"
+          }
+        },
+        "feature_item_JY6MwN": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Free planners from ad‑hoc status requests"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EU6MmW",
+        "feature_item_prUy3i",
+        "feature_item_Wp9bXU",
+        "feature_item_JY6MwN"
+      ],
+      "disabled": true,
+      "name": "Image with features",
+      "settings": {
+        "image": "shopify://shop_images/failte-restaurant-image.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "anchor_id": "#",
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "text_padding_left": 32,
+        "text_padding_right": 16
+      }
+    },
+    "parallel_award_banner_C3twkW": {
+      "type": "parallel-award-banner",
+      "blocks": {
+        "award_icon_wWHCpq": {
+          "type": "award_icon",
+          "settings": {
+            "icon_image": "shopify://shop_images/Project_Management_Software_of_the_year.png",
+            "icon_alt": "Award icon",
+            "mobile_icon_image": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
+            "mobile_icon_alt": ""
+          }
+        },
+        "award_icon_VzWygn": {
+          "type": "award_icon",
+          "settings": {
+            "icon_image": "shopify://shop_images/Project_Management_Software_of_the_year.png",
+            "icon_alt": "Award icon",
+            "mobile_icon_image": "shopify://shop_images/sparklayer_black.svg",
+            "mobile_icon_alt": ""
+          }
+        },
+        "award_icon_LXKmTV": {
+          "type": "award_icon",
+          "settings": {
+            "icon_alt": "Award icon",
+            "mobile_icon_alt": ""
+          }
+        },
+        "richtext_LJNcig": {
+          "type": "richtext",
+          "settings": {
+            "text": "<h1>Voted best <span style=\"text-decoration:underline\">Project Management </span>Software</h1>"
+          }
+        }
+      },
+      "block_order": [
+        "award_icon_wWHCpq",
+        "award_icon_VzWygn",
+        "award_icon_LXKmTV",
+        "richtext_LJNcig"
+      ],
+      "disabled": true,
+      "name": "Award Banner",
+      "settings": {
+        "background_image": "shopify://shop_images/team.jpg",
+        "image_height": "medium",
+        "min_height": 400,
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "content_alignment": "left",
+        "text_alignment": "left",
+        "content_width": 50,
+        "text_color": "#ffffff",
+        "mobile_text_color": "#000000",
+        "underline_color": "#ff5a3c",
+        "anchor_id": "",
+        "icon_size": 100,
+        "hide_logos_mobile": true
+      }
+    },
+    "parallel_logo_block_hHLWpL": {
+      "type": "parallel-logo-block",
+      "blocks": {
+        "logo_XeHnR7": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/sparklayer_black.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_WNf64B": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_hWRjrM": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/partner_logo_2.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_itwWmj": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/partner_logo_3.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "logo_XeHnR7",
+        "logo_WNf64B",
+        "logo_hWRjrM",
+        "logo_itwWmj"
+      ],
+      "disabled": true,
+      "name": "Logo Block",
+      "settings": {
+        "color_scheme": "",
+        "title": "",
+        "heading_size": "h1",
+        "title_alignment": "center",
+        "title_spacing": 24,
+        "logo_width": 150,
+        "logo_spacing": 40,
+        "logo_opacity": 100,
+        "logo_hover_opacity": 100,
+        "mobile_columns": "2",
+        "anchor_id": "",
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
+    "parallel_two_column_accordion_xi4PpU": {
+      "type": "parallel-two-column-accordion",
+      "blocks": {
+        "accordion_item_AX7zXQ": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Contractors",
+            "content_1": "<p>Read‑only access to project schedules so site teams, QS's, and managers can view details without risking changes.</p>",
+            "content_2": "<p>Easy navigation of tasks, milestones, and filters so users can quickly find what affects their area of work.</p>",
+            "content_3": "<p>Lightweight deployment that lets you roll out programme visibility widely, including to site cabins and partner organisations.</p>",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_htnMQm": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Subcontractors",
+            "content_1": "<p>Read‑only access to current programmes so site supervisors and planners can check dates and logic safely.</p>",
+            "content_2": "<p>Quick views of relevant tasks, milestones, and float to plan crews and deliveries around real constraints.</p>",
+            "content_3": "<p>Simple rollout to site teams and offices so everyone works from the same trusted schedule.</p>",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_EDULcY": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Designers and Consultants",
+            "content_1": "<p>Read‑only access to project schedules so teams can explore logic, dates, and critical paths safely.</p>",
+            "content_2": "<p>Fast filtering and navigation to focus on specific workstreams, phases, or milestones.</p>",
+            "content_3": "<p>Simple distribution to internal teams and clients so everyone reviews the same trusted programme view.</p>",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_83TNbE": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Residential Construction",
+            "content_1": "<p>Read‑only access to site and plot‑level programmes so teams can check build stages and handover dates safely.</p>",
+            "content_2": "<p>Easy views of milestones such as releases, inspections, and completions to coordinate trades and customer commitments.</p>",
+            "content_3": "<p>Simple rollout to site cabins, sales offices, and partners so everyone works from the same trusted schedule.</p>",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_fBMQnd": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Clients and Asset Owners",
+            "content_1": "<p>Read‑only access to project schedules so stakeholders can explore dates, milestones, and critical paths safely.</p>",
+            "content_2": "<p>Simple, navigable views that make it easy to focus on key milestones, gateways, and handover points.</p>",
+            "content_3": "<p>Easy distribution across client teams so everyone reviews the same trusted version of the programme.</p>",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_AX7zXQ",
+        "accordion_item_htnMQm",
+        "accordion_item_EDULcY",
+        "accordion_item_83TNbE",
+        "accordion_item_fBMQnd"
+      ],
+      "name": "Two-Column Accordion",
+      "settings": {
+        "heading": "Better project outcomes for every team",
+        "heading_size": "h1",
+        "anchor_id": "capabilities",
+        "padding_top": 48,
+        "padding_bottom": 60
+      }
+    },
+    "parallel_logo_block_Kyk8RD": {
+      "type": "parallel-logo-block",
+      "blocks": {
+        "logo_X7DT6Q": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Asta_Powerproject.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "logo_X7DT6Q"
+      ],
+      "name": "Logo Block",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "title": "Asta Integrations",
+        "heading_size": "h2",
+        "title_alignment": "left",
+        "title_spacing": 24,
+        "logo_width": 150,
+        "logo_spacing": 40,
+        "logo_opacity": 100,
+        "logo_hover_opacity": 100,
+        "mobile_columns": "2",
+        "anchor_id": "integrations",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "parallel_faq_accordion_3Vq7Fm": {
+      "type": "parallel-faq-accordion",
+      "blocks": {
+        "faq_item_QVNkTB": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is ProjectViewer?",
+            "answer": "<p>ProjectViewer is a read only application that lets users open and explore project schedules without needing a full planning licence or risking accidental changes.</p>"
+          }
+        },
+        "faq_item_bVkqMa": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Who is ProjectViewer for?",
+            "answer": "<p>It is designed for site teams, commercial staff, management, clients, and partners who need clear visibility of programme dates, milestones, and logic but do not build the schedules themselves.</p>"
+          }
+        },
+        "faq_item_r4jYJ9": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How does ProjectViewer help planners?",
+            "answer": "<p>By letting others self serve schedule information, planners spend less time creating ad hoc exports and more time analysing and controlling the programme.</p>"
+          }
+        },
+        "faq_item_jARANR": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Why would I use ProjectViewer instead of our planning tool?",
+            "answer": "<p>ProjectViewer gives wider teams access to schedules in a simpler, safer interface, freeing planners from constant status requests and reducing the cost of full licences for occasional users.</p>"
+          }
+        },
+        "faq_item_VkLqTr": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What can I do in ProjectViewer?",
+            "answer": "<p>You can open project schedules, navigate tasks and milestones, apply filters and views, and review critical paths and dependencies, all in read only mode.</p>"
+          }
+        },
+        "faq_item_nU7LXm": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I edit schedules in ProjectViewer?",
+            "answer": "<p>You can open project schedules, navigate tasks and milestones, apply filters and views, and review critical paths and dependencies, all in read only mode.</p>"
+          }
+        },
+        "faq_item_t6MLXe": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Does ProjectViewer support multiple projects?",
+            "answer": "<p>Yes, you can open and review multiple project files, allowing portfolio teams and managers to check different programmes as needed.</p>"
+          }
+        },
+        "faq_item_NVqVfU": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Which planning tools does ProjectViewer work with?",
+            "answer": "<p>ProjectViewer is designed to work with schedules produced in your primary planning system (for example, Asta Powerproject), using the same file formats and structures.</p>"
+          }
+        },
+        "faq_item_bFDdzT": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Do users need specialist training?",
+            "answer": "<p>Most users can get started quickly because the interface focuses on viewing, searching, and filtering; short familiarisation sessions are usually sufficient.</p>"
+          }
+        },
+        "faq_item_bAa3Kk": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can ProjectViewer be used on site?",
+            "answer": "<p>Yes, it can be deployed to site cabins and laptops so supervisors and foremen can check up to date programmes directly.</p>"
+          }
+        },
+        "faq_item_iNTgLB": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How is ProjectViewer licensed?",
+            "answer": "<p>Licensing is typically lighter and more cost effective than full planner licences, making it viable to roll out to a broad audience.</p>"
+          }
+        },
+        "faq_item_bAXDXk": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What support is available for ProjectViewer?",
+            "answer": "<p>Support usually covers installation, configuration, updates, and user assistance, helping your organisation deploy and adopt the tool successfully.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_QVNkTB",
+        "faq_item_bVkqMa",
+        "faq_item_r4jYJ9",
+        "faq_item_jARANR",
+        "faq_item_VkLqTr",
+        "faq_item_nU7LXm",
+        "faq_item_t6MLXe",
+        "faq_item_NVqVfU",
+        "faq_item_bFDdzT",
+        "faq_item_bAa3Kk",
+        "faq_item_iNTgLB",
+        "faq_item_bAXDXk"
+      ],
+      "name": "FAQ Accordion",
+      "settings": {
+        "heading": "Questions? We have answers.",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_spacing": 40,
+        "item_gap": 12,
+        "item_padding": 18,
+        "border_radius": 12,
+        "question_font_size": 16,
+        "color_scheme": "",
+        "item_background": "#f6f7f7",
+        "item_background_active": "#fce8e6",
+        "anchor_id": "faqs",
+        "padding_top": 64,
+        "padding_bottom": 72
+      }
+    },
+    "parallel_information_Ehxmkb": {
+      "type": "parallel-information",
+      "name": "Information",
+      "settings": {
+        "color_scheme": "",
+        "heading_font_size": 24,
+        "heading_font_weight": "700",
+        "text_font_size": 16,
+        "heading_color": "",
+        "text_color": "",
+        "border_color": "#e83f40",
+        "block_spacing": 24,
+        "anchor_id": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "parallel_custom_product_info_i3cpfR",
+    "parallel_image_with_features_hVbtUt",
+    "parallel_image_with_features_pYtxX7",
+    "parallel_image_with_features_UVMBrD",
+    "parallel_award_banner_C3twkW",
+    "parallel_logo_block_hHLWpL",
+    "parallel_two_column_accordion_xi4PpU",
+    "parallel_logo_block_Kyk8RD",
+    "parallel_faq_accordion_3Vq7Fm",
+    "parallel_information_Ehxmkb"
+  ]
+}

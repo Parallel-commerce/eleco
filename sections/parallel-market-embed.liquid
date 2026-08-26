@@ -1,0 +1,288 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .market-embed-{{ section.id }} {
+    width: 100%;
+  }
+
+  .market-embed-{{ section.id }}__wrapper {
+    width: 100%;
+  }
+
+  .market-embed-{{ section.id }}__embed {
+    width: 100%;
+  }
+
+  .market-embed-{{ section.id }}__embed iframe,
+  .market-embed-{{ section.id }}__embed embed,
+  .market-embed-{{ section.id }}__embed object {
+    width: 100%;
+    border: 0;
+  }
+{%- endstyle -%}
+
+{%- liquid
+  assign current_market_handle = localization.market.handle | default: '' | downcase
+  assign current_country_code = localization.country.iso_code | default: '' | upcase
+  assign matched_embed = blank
+  assign fallback_embed = blank
+
+  comment
+    Loop through blocks to find matching embed
+    Priority: 1. Market handle match, 2. Country code match, 3. Fallback
+  endcomment
+
+  for block in section.blocks
+    assign block_market = block.settings.market_identifier | strip | downcase
+    assign block_country = block.settings.country_code | strip | upcase
+    
+    if block.settings.is_fallback
+      assign fallback_embed = block.settings.embed_code
+    elsif block_market != blank and block_market == current_market_handle
+      assign matched_embed = block.settings.embed_code
+      break
+    elsif block_country != blank and block_country == current_country_code
+      assign matched_embed = block.settings.embed_code
+      break
+    endif
+  endfor
+
+  if matched_embed == blank
+    assign matched_embed = fallback_embed
+  endif
+-%}
+
+<div
+  {% if section.settings.anchor_id != blank and section.settings.anchor_id != '#' %}
+    {%- assign clean_anchor_id = section.settings.anchor_id | replace: '#', '' -%}
+    id="{{ clean_anchor_id }}"
+  {% endif %}
+  class="color-{{ section.settings.color_scheme }} gradient"
+>
+  <div class="market-embed-{{ section.id }} page-width section-{{ section.id }}-padding isolate">
+    {%- if section.settings.heading != blank -%}
+      <div class="market-embed-{{ section.id }}__header{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <h2 class="market-embed-{{ section.id }}__heading inline-richtext {{ section.settings.heading_size }}">
+          {{ section.settings.heading }}
+        </h2>
+        {%- if section.settings.subheading != blank -%}
+          <p class="market-embed-{{ section.id }}__subheading">
+            {{ section.settings.subheading }}
+          </p>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {%- if matched_embed != blank -%}
+      <div class="market-embed-{{ section.id }}__wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <div class="market-embed-{{ section.id }}__embed">
+          {{ matched_embed }}
+        </div>
+      </div>
+    {%- elsif section.settings.show_debug_info -%}
+      <div class="market-embed-{{ section.id }}__debug" style="padding: 1rem; background: rgba(var(--color-foreground), 0.05); border-radius: 0.4rem; font-size: 0.9em;">
+        <p><strong>Debug Info:</strong></p>
+        <p>Current Market Handle: <code>{{ current_market_handle | default: '(not set)' }}</code></p>
+        <p>Current Country Code: <code>{{ current_country_code | default: '(not set)' }}</code></p>
+        <p>No matching embed found. Please configure an embed block for this market or set a fallback embed.</p>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "|| Market Embed",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Embedded Content"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "Small"
+        },
+        {
+          "value": "h1",
+          "label": "Medium"
+        },
+        {
+          "value": "h0",
+          "label": "Large"
+        },
+        {
+          "value": "hxl",
+          "label": "Extra large"
+        },
+        {
+          "value": "hxxl",
+          "label": "Extra extra large"
+        }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Section anchor"
+    },
+    {
+      "type": "text",
+      "id": "anchor_id",
+      "label": "Anchor ID",
+      "info": "Enter an ID for anchor links (e.g., 'embed'). Links can use #embed to jump to this section. Do not include the # symbol."
+    },
+    {
+      "type": "header",
+      "content": "Debug"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_debug_info",
+      "label": "Show debug information",
+      "default": false,
+      "info": "Display current market and country information when no embed is found. Useful for setup and troubleshooting."
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "embed",
+      "name": "Market Embed",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Market Configuration"
+        },
+        {
+          "type": "text",
+          "id": "market_identifier",
+          "label": "Market Handle",
+          "info": "Enter the market handle (e.g., 'us', 'uk', 'europe'). You can find this in Shopify Admin > Settings > Markets. Leave blank if using country code instead."
+        },
+        {
+          "type": "text",
+          "id": "country_code",
+          "label": "Country Code (Alternative)",
+          "info": "Enter a 2-letter country ISO code (e.g., 'US', 'GB', 'CA'). This is used if market handle is not set. You can find country codes in Shopify Admin > Settings > Markets."
+        },
+        {
+          "type": "checkbox",
+          "id": "is_fallback",
+          "label": "Use as fallback",
+          "default": false,
+          "info": "This embed will be shown for markets that don't have a specific match. Only one block should be marked as fallback."
+        },
+        {
+          "type": "header",
+          "content": "Embed Code"
+        },
+        {
+          "type": "textarea",
+          "id": "embed_code",
+          "label": "Embed Code",
+          "info": "Paste your embed code here (iframe, script tags, etc.). This will be displayed for the specified market.",
+          "default": "<iframe src=\"https://example.com/embed\" width=\"100%\" height=\"100%\" frameborder=\"0\"></iframe>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Market Embed",
+      "blocks": [
+        {
+          "type": "embed",
+          "settings": {
+            "market_identifier": "",
+            "country_code": "US",
+            "is_fallback": false,
+            "embed_code": "<iframe src=\"https://example.com/us-embed\" width=\"100%\" height=\"100%\" frameborder=\"0\"></iframe>"
+          }
+        },
+        {
+          "type": "embed",
+          "settings": {
+            "market_identifier": "",
+            "country_code": "GB",
+            "is_fallback": false,
+            "embed_code": "<iframe src=\"https://example.com/uk-embed\" width=\"100%\" height=\"100%\" frameborder=\"0\"></iframe>"
+          }
+        },
+        {
+          "type": "embed",
+          "settings": {
+            "market_identifier": "",
+            "country_code": "",
+            "is_fallback": true,
+            "embed_code": "<iframe src=\"https://example.com/default-embed\" width=\"100%\" height=\"100%\" frameborder=\"0\"></iframe>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

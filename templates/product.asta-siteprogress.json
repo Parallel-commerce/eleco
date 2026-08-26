@@ -1,0 +1,897 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Materials",
+            "icon": "leather",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "truck",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Dimensions",
+            "icon": "ruler",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care Instructions",
+            "icon": "heart",
+            "content": "",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "collapsible-row-2",
+        "collapsible-row-3",
+        "share"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "parallel_custom_product_info_i3cpfR": {
+      "type": "parallel-custom-product-info",
+      "blocks": {
+        "subscriptions_app_block_HfcxDY": {
+          "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
+          "settings": {
+            "color_text_body": "#6d7175",
+            "dividers_color": "#8f8d8d",
+            "bacgkround_color": "#ffffff",
+            "border_thickness": 1,
+            "border_radius": 0,
+            "subscription_policy_url": "",
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "subscriptions_app_block_HfcxDY"
+      ],
+      "name": "Custom Product Info",
+      "settings": {
+        "color_scheme": "",
+        "anchor_id": "",
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "hero_title": "Maximise site-to-office progress reporting",
+        "hero_subtitle": "Streamline worksite communication and reporting to align with your project's plans using our free to install mobile app.",
+        "hero_image": "shopify://shop_images/Asta_Powerproject_109e16a4-29a3-4d9b-b8d5-165a549f2bf1.svg",
+        "hero_background_color": "#2a303a",
+        "hero_text_color": "#ffffff",
+        "column_background_color": "#fff5f5",
+        "divider_color": "#ff0000",
+        "primary_button_color": "#ff6b35",
+        "primary_button_text_color": "#ffffff",
+        "left_column_title": "",
+        "left_column_price": "",
+        "left_column_button_text": "",
+        "left_column_secondary_button_text": "",
+        "left_column_secondary_button_link": "https://shop.elecosoft.com/products/asta-siteprogress#download",
+        "left_column_fine_print": "",
+        "right_column_title": "Free to install mobile app",
+        "right_column_paragraph": "*the service is charged according to the number of active jobs exported to the secure cloud storage area.",
+        "right_column_fine_print": "",
+        "right_column_primary_button_text": "Download Now",
+        "right_column_primary_button_link": "https://shop.elecosoft.com/products/asta-siteprogress#download",
+        "right_column_primary_button_embed_url": "https://apps.apple.com/gb/app/asta-siteprogress-mobile/id1450634741",
+        "right_column_secondary_button_text": "View Apps",
+        "right_column_secondary_button_link": "https://shop.elecosoft.com/products/asta-siteprogress#download",
+        "right_column_secondary_button_embed_url": ""
+      }
+    },
+    "parallel_image_with_features_hVbtUt": {
+      "type": "parallel-image-with-features",
+      "blocks": {
+        "heading_GGwQtN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Reliable offline, on-site data capture",
+            "heading_size": "h1"
+          }
+        },
+        "feature_item_efdUrz": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Offline-first approach"
+          }
+        },
+        "feature_item_eVF6yn": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Streamline site operations"
+          }
+        },
+        "feature_item_CkdfUp": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Record progress without a signal"
+          }
+        },
+        "feature_item_HUwPLi": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Updates synced automatically when signal returns"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GGwQtN",
+        "feature_item_efdUrz",
+        "feature_item_eVF6yn",
+        "feature_item_CkdfUp",
+        "feature_item_HUwPLi"
+      ],
+      "name": "Image with features",
+      "settings": {
+        "image": "shopify://shop_images/Siteprogress_Value_Prop_1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "anchor_id": "#",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "text_padding_left": 32,
+        "text_padding_right": 16
+      }
+    },
+    "parallel_image_with_features_pYtxX7": {
+      "type": "parallel-image-with-features",
+      "blocks": {
+        "heading_qDbMj8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Simple, focused UX for site teams",
+            "heading_size": "h1"
+          }
+        },
+        "feature_item_mzeYTi": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Quick and intuitive capture"
+          }
+        },
+        "feature_item_H4qCNB": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Improve overall delivery"
+          }
+        },
+        "feature_item_dwV9eq": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Clean task-focused interface"
+          }
+        },
+        "feature_item_a9jrqF": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Designed for standard site activities"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qDbMj8",
+        "feature_item_mzeYTi",
+        "feature_item_H4qCNB",
+        "feature_item_dwV9eq",
+        "feature_item_a9jrqF"
+      ],
+      "name": "Image with features",
+      "settings": {
+        "image": "shopify://shop_images/Siteprogress_Value_Prop_3.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "anchor_id": "#",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "text_padding_left": 16,
+        "text_padding_right": 32
+      }
+    },
+    "parallel_image_with_features_UVMBrD": {
+      "type": "parallel-image-with-features",
+      "blocks": {
+        "heading_EU6MmW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Direct integration with Asta Powerproject",
+            "heading_size": "h1"
+          }
+        },
+        "feature_item_hHczD3": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Update progress at any time from any location"
+          }
+        },
+        "feature_item_i4nA7a": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Align site reporting with planning"
+          }
+        },
+        "feature_item_bDDnaj": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Purpose-built for Powerproject"
+          }
+        },
+        "feature_item_mXyfPf": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Updates captured in the app sync directly into the Asta Powerproject master schedule"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EU6MmW",
+        "feature_item_hHczD3",
+        "feature_item_i4nA7a",
+        "feature_item_bDDnaj",
+        "feature_item_mXyfPf"
+      ],
+      "name": "Image with features",
+      "settings": {
+        "image": "shopify://shop_images/Siteprogress_Value_Prop_2.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "anchor_id": "#",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "text_padding_left": 32,
+        "text_padding_right": 16
+      }
+    },
+    "parallel_award_banner_C3twkW": {
+      "type": "parallel-award-banner",
+      "blocks": {
+        "award_icon_wWHCpq": {
+          "type": "award_icon",
+          "settings": {
+            "icon_image": "shopify://shop_images/Project_Management_Software_of_the_year.png",
+            "icon_alt": "Award icon",
+            "mobile_icon_image": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
+            "mobile_icon_alt": ""
+          }
+        },
+        "award_icon_VzWygn": {
+          "type": "award_icon",
+          "settings": {
+            "icon_image": "shopify://shop_images/Project_Management_Software_of_the_year.png",
+            "icon_alt": "Award icon",
+            "mobile_icon_image": "shopify://shop_images/sparklayer_black.svg",
+            "mobile_icon_alt": ""
+          }
+        },
+        "award_icon_LXKmTV": {
+          "type": "award_icon",
+          "settings": {
+            "icon_alt": "Award icon",
+            "mobile_icon_alt": ""
+          }
+        },
+        "richtext_LJNcig": {
+          "type": "richtext",
+          "settings": {
+            "text": "<h1>Voted best <span style=\"text-decoration:underline\">Project Management </span>Software</h1>"
+          }
+        }
+      },
+      "block_order": [
+        "award_icon_wWHCpq",
+        "award_icon_VzWygn",
+        "award_icon_LXKmTV",
+        "richtext_LJNcig"
+      ],
+      "disabled": true,
+      "name": "Award Banner",
+      "settings": {
+        "background_image": "shopify://shop_images/team.jpg",
+        "image_height": "medium",
+        "min_height": 400,
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "content_alignment": "left",
+        "text_alignment": "left",
+        "content_width": 50,
+        "text_color": "#ffffff",
+        "mobile_text_color": "#000000",
+        "underline_color": "#ff5a3c",
+        "anchor_id": "",
+        "icon_size": 100,
+        "hide_logos_mobile": true
+      }
+    },
+    "parallel_logo_block_hHLWpL": {
+      "type": "parallel-logo-block",
+      "blocks": {
+        "logo_YkAYGD": {
+          "type": "logo",
+          "settings": {
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_XeHnR7": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/JJ-Rhatigan-logo-400x200-1.jpg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_WNf64B": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_hWRjrM": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/partner_logo_2.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_itwWmj": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/partner_logo_3.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "logo_YkAYGD",
+        "logo_XeHnR7",
+        "logo_WNf64B",
+        "logo_hWRjrM",
+        "logo_itwWmj"
+      ],
+      "disabled": true,
+      "name": "Logo Block",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "title": "",
+        "heading_size": "h1",
+        "title_alignment": "center",
+        "title_spacing": 24,
+        "block_alignment": "center",
+        "logo_width": 150,
+        "logo_spacing": 40,
+        "logo_opacity": 50,
+        "logo_hover_opacity": 100,
+        "mobile_columns": "2",
+        "anchor_id": "",
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
+    "parallel_two_column_accordion_xi4PpU": {
+      "type": "parallel-two-column-accordion",
+      "blocks": {
+        "accordion_item_AX7zXQ": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Contractors",
+            "content_1": "<p>Reduced risk of project delays as site teams record real progress against planned tasks</p>",
+            "content_2": "<p>Lower admin effort as updates are captured once in the app and synced into Asta Powerproject.</p>",
+            "content_3": "<p>Stronger evidence for claims and disputes through physical records of work.</p>",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_htnMQm": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Subcontractors",
+            "content_1": "<p>Clear visibility of what needs doing and when, as tasks are derived from the main schedule.</p>",
+            "content_2": "<p>Faster sign-off for completed work.</p>",
+            "content_3": "<p>Reduced paperwork and duplication with a simple mobile workflow.</p>",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_EDULcY": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Designers and Consultants",
+            "content_1": "<p>More accurate as-built data from the field, improving project analysis.</p>",
+            "content_2": "<p>Easier compliance and energy-performance verification for Part L compliance.</p>",
+            "content_3": "<p>Better insight for advisory work through consistent data.</p>",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_E9ewrb": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Residential Construction",
+            "content_1": "<p>Plot-by-plot visibility of build and Part L status so housebuilders can see which are compliant.</p>",
+            "content_2": "<p>Faster EPC and handover.</p>",
+            "content_3": "<p>Lower risk of costly rework when defects are caught early.</p>",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_kqEfGL": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Clients and Asset Owners",
+            "content_1": "<p>Greater transparency over progress and compliance.</p>",
+            "content_2": "<p>Strong asset documentation (including Part L).</p>",
+            "content_3": "<p>Improved delivery, as accurate site data gives the information needed to manage risk.</p>",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_AX7zXQ",
+        "accordion_item_htnMQm",
+        "accordion_item_EDULcY",
+        "accordion_item_E9ewrb",
+        "accordion_item_kqEfGL"
+      ],
+      "name": "Two-Column Accordion",
+      "settings": {
+        "heading": "Better project outcomes for every team",
+        "heading_size": "h1",
+        "anchor_id": "capabilities",
+        "padding_top": 48,
+        "padding_bottom": 60
+      }
+    },
+    "parallel_testimonials_6ayBHg": {
+      "type": "parallel-testimonials",
+      "blocks": {
+        "testimonial_LQpJVG": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Michael Bryars",
+            "title": "Senior Project Manager | Severfield plc",
+            "country_flag": "",
+            "testimonial_text": "Our Asta SiteProgress users said the app was easy to use, while the Asta Powerproject users immediately felt the benefit of better reporting. They found it easier to report upstream, and it was much easier for the directors to look at a dropline programme instead of five or so pages of written content. The look and feel of what we could print out and present to clients was one of the biggest selling points."
+          }
+        },
+        "testimonial_t7cwLV": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Warren Betts",
+            "title": "United House",
+            "country_flag": "",
+            "testimonial_text": "Asta SiteProgress enables us to do is give the project teams their programmes, with all the planning aspects agreed in advance. The opportunity was to give project managers real responsibility for their own progress management and how they mark it up. Now, the planning team can collate and aggregate the programme position fast, sending them back a report on the same day."
+          }
+        },
+        "testimonial_BizQXi": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Matthew Kingston",
+            "title": "Planner | Brown & Carroll London",
+            "country_flag": "",
+            "testimonial_text": "The great thing about the Asta SiteProgress app is we can go to a location that is marked on the programme, and if we can’t start work take a picture of the area. That is automatically pulled into the programme with a photo reference, which demonstrates the reason for the delay."
+          }
+        },
+        "testimonial_Yqb8KC": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Damien Gallagher",
+            "title": "John Sisk & Son",
+            "country_flag": "",
+            "testimonial_text": "Tools like the Asta SiteProgress app help us to take people out from behind desks, marking up progress on drawings or schedules, to managing the work on site – which is exactly where we want them."
+          }
+        },
+        "testimonial_tHbLzP": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Shane McHugh",
+            "title": "Senior Planner | JJ Rhatigan & Company",
+            "country_flag": "",
+            "testimonial_text": "Bringing in Asta Powerproject and Asta SiteProgress has been central to restructuring our project delivery and operations."
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_LQpJVG",
+        "testimonial_t7cwLV",
+        "testimonial_BizQXi",
+        "testimonial_Yqb8KC",
+        "testimonial_tHbLzP"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "heading": "What do our customers say?",
+        "subheading": "Find out why our customers are glad they met us.",
+        "heading_size": "h1",
+        "header_alignment": "center",
+        "header_spacing": 40,
+        "color_scheme": "",
+        "anchor_id": "reviews",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "parallel_custom_product_list_M7EFHt": {
+      "type": "parallel-custom-product-list",
+      "blocks": {
+        "product_Hi9e7N": {
+          "type": "product",
+          "settings": {
+            "product": "asta-enterprise"
+          }
+        },
+        "product_3Mi7Bg": {
+          "type": "product",
+          "settings": {
+            "product": "asta-powerproject"
+          }
+        }
+      },
+      "block_order": [
+        "product_Hi9e7N",
+        "product_3Mi7Bg"
+      ],
+      "name": "Custom Product List",
+      "settings": {
+        "heading": "Asta Integrations",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "button_text": "Learn more",
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-2",
+        "anchor_id": "integrations",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "parallel_faq_accordion_3Vq7Fm": {
+      "type": "parallel-faq-accordion",
+      "blocks": {
+        "faq_item_QVNkTB": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is Asta Siteprogress and how does it work with Asta Powerproject?",
+            "answer": "<p>Asta Siteprogress  is an app for recording progress on tasks and building stages from a remote location using a mobile device.​ At the start of a period, an administrator exports project information from Powerproject so that the relevant tasks and plots appear in the app for each user.​ At the end of the period, users submit their updates and an Asta Siteprogress Administrator imports and applies the approved changes back into the Powerproject plan.</p>"
+          }
+        },
+        "faq_item_bVkqMa": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Do I need an extra modules in Powerproject to use Siteprogress?",
+            "answer": "<p>Siteprogress is an add‑on connected to Asta Powerproject, so you need a compatible Powerproject installation plus the Siteprogress functionality enabled.​ </p>"
+          }
+        },
+        "faq_item_jARANR": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What devices and operating systems are supported?",
+            "answer": "<p>Siteprogress is available as a mobile app for iOS and Android.</p>"
+          }
+        },
+        "faq_item_bAXDXk": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I use Siteprogress offline and what happens to updates when I have no signal?",
+            "answer": "<p>Once project data has been downloaded, you can record progress in Siteprogress even without a valid internet connection (for example, in remote or low‑signal areas). While offline, your changes (progress values, photos, notes) are stored locally on the device. When a connection becomes available, you submit your changes and the app synchronises them, making them available for import into the Powerproject programme.</p>"
+          }
+        },
+        "faq_item_GHpatt": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How is Asta Siteprogress licenced?",
+            "answer": "<p>You will need an Asta Powerproject licence, as well as an additional licence to use the app.</p>"
+          }
+        },
+        "faq_item_dwXCEV": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is Siteprogress included with my existing Asta Powerproject licences?",
+            "answer": "<p>Siteprogress requires an additional licence.</p>"
+          }
+        },
+        "faq_item_iN34Cy": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What support is available for Siteprogress?",
+            "answer": "<p>Siteprogress has user guides available and video tutorials to help users learn the workflow.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_QVNkTB",
+        "faq_item_bVkqMa",
+        "faq_item_jARANR",
+        "faq_item_bAXDXk",
+        "faq_item_GHpatt",
+        "faq_item_dwXCEV",
+        "faq_item_iN34Cy"
+      ],
+      "name": "FAQ Accordion",
+      "settings": {
+        "heading": "Questions? We have answers.",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_spacing": 40,
+        "item_gap": 12,
+        "item_padding": 18,
+        "border_radius": 12,
+        "question_font_size": 16,
+        "color_scheme": "",
+        "item_background": "#f6f7f7",
+        "item_background_active": "#fce8e6",
+        "anchor_id": "faqs",
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
+    },
+    "parallel_support_cta_RxfB67": {
+      "type": "parallel-support-cta",
+      "blocks": {
+        "resource_link_kEdPjk": {
+          "type": "resource_link",
+          "settings": {
+            "label": "iOS app store",
+            "link": "https://apps.apple.com/gb/app/asta-siteprogress-mobile/id1450634741"
+          }
+        },
+        "resource_link_wTwLVG": {
+          "type": "resource_link",
+          "settings": {
+            "label": "Google Play",
+            "link": "https://play.google.com/store/apps/details?id=com.elecosoft.SiteProgressMobile2"
+          }
+        },
+        "resource_link_y8bPwx": {
+          "type": "resource_link",
+          "settings": {
+            "label": "Microsoft",
+            "link": "https://apps.microsoft.com/detail/9mv663k3k7gf?hl=en-GB&gl=GB"
+          }
+        }
+      },
+      "block_order": [
+        "resource_link_kEdPjk",
+        "resource_link_wTwLVG",
+        "resource_link_y8bPwx"
+      ],
+      "name": "Support CTA",
+      "settings": {
+        "heading": "Free to install on",
+        "description": "Asta SiteProgress app is free to install, with the use of the service charged according to the number of active jobs exported to the secure cloud storage area.",
+        "primary_button_label": "",
+        "primary_button_link": "",
+        "primary_button_background": "#e83f40",
+        "primary_button_background_hover": "#d04a35",
+        "primary_button_text": "#ffffff",
+        "secondary_button_label": "",
+        "product": "",
+        "secondary_button_link": "",
+        "secondary_button_background": "#ffffff",
+        "secondary_button_background_hover": "#f5f5f5",
+        "secondary_button_text": "#333333",
+        "secondary_button_border": "#cccccc",
+        "background_color": "#2a303a",
+        "text_color": "#ffffff",
+        "resource_background": "#3a3a3a",
+        "resource_background_hover": "#4a4a4a",
+        "resource_border": "#ffffff",
+        "resource_icon_color": "#e83f40",
+        "heading_font_size": 48,
+        "heading_font_weight": "700",
+        "description_font_size": 16,
+        "button_font_size": 16,
+        "resource_font_size": 16,
+        "button_border_radius": 4,
+        "resource_border_radius": 4,
+        "anchor_id": "download",
+        "padding_top": 60,
+        "padding_bottom": 116
+      }
+    },
+    "parallel_information_Ehxmkb": {
+      "type": "parallel-information",
+      "name": "Information",
+      "settings": {
+        "color_scheme": "",
+        "heading_font_size": 24,
+        "heading_font_weight": "700",
+        "text_font_size": 16,
+        "heading_color": "",
+        "text_color": "",
+        "border_color": "#e83f40",
+        "block_spacing": 24,
+        "anchor_id": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "parallel_custom_product_info_i3cpfR",
+    "parallel_image_with_features_hVbtUt",
+    "parallel_image_with_features_pYtxX7",
+    "parallel_image_with_features_UVMBrD",
+    "parallel_award_banner_C3twkW",
+    "parallel_logo_block_hHLWpL",
+    "parallel_two_column_accordion_xi4PpU",
+    "parallel_testimonials_6ayBHg",
+    "parallel_custom_product_list_M7EFHt",
+    "parallel_faq_accordion_3Vq7Fm",
+    "parallel_support_cta_RxfB67",
+    "parallel_information_Ehxmkb"
+  ]
+}

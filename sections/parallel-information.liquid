@@ -1,0 +1,289 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .information-{{ section.id }} {
+    width: 100%;
+  }
+
+  .information-{{ section.id }}__container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .information-{{ section.id }}__container {
+      /* padding: 0 5rem; */
+    }
+  }
+
+  .information-{{ section.id }}__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .information-{{ section.id }}__block {
+    padding-top: {{ section.settings.block_spacing }}px;
+    padding-bottom: {{ section.settings.block_spacing }}px;
+    {%- if section.settings.border_color != blank -%}
+      border-bottom: 1px solid {{ section.settings.border_color }};
+    {%- else -%}
+      border-bottom: 1px solid var(--eleco-primary);
+    {%- endif -%}
+  }
+
+  .information-{{ section.id }}__block:last-child {
+    border-bottom: none;
+  }
+
+  .information-{{ section.id }}__heading {
+    margin: 0 0 1rem 0;
+    color: {{ section.settings.heading_color | default: 'rgb(var(--color-foreground))' }};
+    font-size: {{ section.settings.heading_font_size }}px;
+    font-weight: {{ section.settings.heading_font_weight }};
+    line-height: 1.3;
+  }
+
+  .information-{{ section.id }}__text {
+    margin: 0;
+    color: {{ section.settings.text_color | default: 'rgb(var(--color-foreground))' }};
+    font-size: {{ section.settings.text_font_size }}px;
+    line-height: 1.6;
+  }
+
+  .information-{{ section.id }}__text p {
+    margin: 0 0 1rem 0;
+  }
+
+  .information-{{ section.id }}__text p:last-child {
+    margin-bottom: 0;
+  }
+{%- endstyle -%}
+
+<div
+  {% if section.settings.anchor_id != blank and section.settings.anchor_id != '#' %}
+    {%- assign clean_anchor_id = section.settings.anchor_id | replace: '#', '' -%}
+    id="{{ clean_anchor_id }}"
+  {% endif %}
+  class="color-{{ section.settings.color_scheme }} gradient"
+>
+  <div class="information-{{ section.id }} section-{{ section.id }}-padding page-width isolate">
+    <div class="information-{{ section.id }}__container">
+      {%- if section.blocks.size > 0 -%}
+        <div class="information-{{ section.id }}__list">
+          {%- for block in section.blocks -%}
+            {%- if block.settings.heading != blank or block.settings.text != blank -%}
+              <div
+                class="information-{{ section.id }}__block{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                {{ block.shopify_attributes }}
+                {% if settings.animations_reveal_on_scroll %}
+                  data-cascade
+                  style="--animation-order: {{ forloop.index }};"
+                {% endif %}
+              >
+                {%- if block.settings.heading != blank -%}
+                  <h2 class="information-{{ section.id }}__heading">
+                    {{ block.settings.heading }}
+                  </h2>
+                {%- endif -%}
+
+                {%- if block.settings.text != blank -%}
+                  <div class="information-{{ section.id }}__text">
+                    {{ block.settings.text }}
+                  </div>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "|| Information",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading font size",
+      "default": 24
+    },
+    {
+      "type": "select",
+      "id": "heading_font_weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "700",
+      "label": "Heading font weight"
+    },
+    {
+      "type": "range",
+      "id": "text_font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Text font size",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "info": "Leave blank to use theme default"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "info": "Leave blank to use theme default"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#E83F40",
+      "info": "Leave blank to use default color (#E83F40)"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "block_spacing",
+      "min": 16,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Block spacing",
+      "default": 24,
+      "info": "Vertical spacing between blocks"
+    },
+    {
+      "type": "header",
+      "content": "Section anchor"
+    },
+    {
+      "type": "text",
+      "id": "anchor_id",
+      "label": "Anchor ID",
+      "info": "Enter an ID for anchor links (e.g., 'features'). Links can use #features to jump to this section. Do not include the # symbol."
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "info_block",
+      "name": "Info Block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Information Block"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Add your information text here. You can use multiple paragraphs and formatting.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Information",
+      "blocks": [
+        {
+          "type": "info_block",
+          "settings": {
+            "heading": "Try Asta Powerproject before you buy",
+            "text": "<p>See how Asta Powerproject can work for you and your organisation.</p><p>Asta Powerproject supports more than 100,000 professionals worldwide in delivering successful projects by equipping organisations with the award-winning project, program, and resource management tools necessary to bring their built asset to life, regardless of scale; whether a high-profile megaproject, single storey extensions or anything in between.</p><p>Sales team: +44 1844 281 700</p>"
+          }
+        },
+        {
+          "type": "info_block",
+          "settings": {
+            "heading": "Need a single Education licence?",
+            "text": "<p>To receive an education licence, an authorised officer of the educational establishment can complete this form to start the process.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

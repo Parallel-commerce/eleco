@@ -1,0 +1,33 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "product.astra-powerproject.json",
+  "context": {
+    "market": "gb"
+  },
+  "sections": {
+    "parallel_custom_product_info_i3cpfR": {
+      "settings": {
+        "right_column_primary_button_link": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/mwbhpqg9efgeb2bfvrmtaw.html?PageId=a5476031bd01f11184076045bd131303",
+        "right_column_primary_button_embed_url": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/mwbhpqg9efgeb2bfvrmtaw.html?PageId=a5476031bd01f11184076045bd131303",
+        "right_column_secondary_button_embed_url": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/uqvwuqheefgeb3ztjwvsuq.html?PageId=515605b9de01f11184077ced8d6becb9"
+      }
+    },
+    "parallel_market_embed_gGAwgk": {
+      "blocks": {
+        "embed_kej3bR": {
+          "settings": {
+            "embed_code": "<script type=\"text/javascript\">var loc = \"https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/\";var cdSurveyCdn = \"https://cdn-eu.clickdimensions.com/web/newformeditor/\";</script>\n<script type=\"text/javascript\" src=\"https://cdn-eu.clickdimensions.com/web/newformeditor/CDWidget.js\"></script>\n<div pageid=\"1laq6gu7efc0y3weui1vuq\"></div>"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1254 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Materials",
+            "icon": "leather",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "truck",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Dimensions",
+            "icon": "ruler",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care Instructions",
+            "icon": "heart",
+            "content": "",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "collapsible-row-2",
+        "collapsible-row-3",
+        "share"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "main_product_custom_YCicNt": {
+      "type": "main-product-custom",
+      "blocks": {
+        "complementary_hXn9Cj": {
+          "type": "complementary",
+          "disabled": true,
+          "settings": {
+            "block_heading": "Pairs well with",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": false
+          }
+        },
+        "text_EmfAnQ": {
+          "type": "text",
+          "settings": {
+            "text": "Annual Subscription",
+            "text_style": "body"
+          }
+        },
+        "price_QfUtgV": {
+          "type": "price",
+          "settings": {}
+        },
+        "quantity_selector_fxKRGi": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_gUhePD": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "complementary_hXn9Cj",
+        "text_EmfAnQ",
+        "price_QfUtgV",
+        "quantity_selector_fxKRGi",
+        "buy_buttons_gUhePD"
+      ],
+      "name": "Main product custom",
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-3",
+        "left_heading": "Construction estimating software",
+        "left_description": "<p>Generates accurate cost estimates for tenders, increases productivity and reduces risk throughout the lifecycle of a project.</p>",
+        "show_left_check_icons": false,
+        "left_checklist_item_1": "",
+        "left_checklist_item_2": "",
+        "left_checklist_item_3": "",
+        "left_checklist_item_4": "",
+        "left_checklist_item_5": "",
+        "left_checklist_item_6": "",
+        "left_text_color": "#ffffff",
+        "left_description_color": "#d1d5db",
+        "left_icon_background_color": "#e75742",
+        "left_icon_color": "#e75742",
+        "left_column_padding": 56,
+        "left_column_border_radius": 0,
+        "right_color_scheme": "scheme-1",
+        "right_link_label_1": "Download free trial",
+        "right_link_url_1": "",
+        "right_link_label_2": "Contact sales",
+        "right_link_url_2": "",
+        "show_right_price_period": false,
+        "right_price_divisor": 12,
+        "right_price_period_label": "month",
+        "right_column_padding": 36,
+        "right_column_border_radius": 0,
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "parallel_custom_product_info_i3cpfR": {
+      "type": "parallel-custom-product-info",
+      "blocks": {
+        "subscriptions_app_block_HfcxDY": {
+          "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
+          "settings": {
+            "widget_style": "card",
+            "widget_style_card_selector": "radio_button",
+            "subscription_policy_url": "",
+            "color_text_body": "#6d7175",
+            "dividers_color": "#8f8d8d",
+            "background_color": "#ffffff",
+            "border_thickness": 1,
+            "border_radius": 0,
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "subscriptions_app_block_HfcxDY"
+      ],
+      "disabled": true,
+      "name": "Custom Product Info",
+      "settings": {
+        "color_scheme": "",
+        "anchor_id": "",
+        "padding_top": 52,
+        "padding_bottom": 16,
+        "hero_title": "Construction estimating software",
+        "hero_subtitle": "Generates accurate cost estimates for tenders, increases productivity and reduces risk throughout the lifecycle of a project.",
+        "hero_image": "shopify://shop_images/Asta_Estimate_8.png",
+        "hero_background_color": "#2a303a",
+        "hero_text_color": "#ffffff",
+        "column_background_color": "#fff5f5",
+        "divider_color": "#e75742",
+        "primary_button_color": "#e75742",
+        "primary_button_text_color": "#ffffff",
+        "left_column_title": "Annual subscription",
+        "left_column_price": "",
+        "left_column_button_text": "Add to cart",
+        "left_column_secondary_button_text": "Download free trial",
+        "left_column_secondary_button_link": "",
+        "left_column_fine_print": "Paid annually, one user installed onto a single Windows PC. Includes VAT.",
+        "right_column_title": "Concurrent & SaaS solutions",
+        "right_column_show_price": false,
+        "right_column_price": "",
+        "right_column_price_suffix": "year",
+        "right_column_paragraph": "You wouldn't place a tender without first understanding the full scope of work. We approach custom quotes the same way. Help us get to know your team's needs to get started now.",
+        "right_column_fine_print": "",
+        "right_column_primary_button_text": "Contact sales",
+        "right_column_primary_button_link": "",
+        "right_column_primary_button_embed_url": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/fqsh7gg5efgebwaisehs0q.html?PageId=eea1047db901f111840700224841d2d1",
+        "right_column_secondary_button_text": "Book a demo",
+        "right_column_secondary_button_link": "",
+        "right_column_secondary_button_embed_url": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/yv3k1ghwefgeb3ztjwvsuq.html?PageId=d6e45d61d601f11184077ced8d6becb9"
+      }
+    },
+    "multicolumn_nLzjxb": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_JJmhxt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Asta_Estimate_overview_2_4bacb07c-dc3b-4732-a236-37f2cb34aa29.png",
+            "title": "Asta Powerproject 4D Intergration",
+            "text": "<p>Asta Estimate links directly with schedules and BIM to see your project's cost, time and carbon impact together.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_QAhAMb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Asta_Estimate_overview_3_b901eafb-e6d5-44c3-9e29-8052b6e8121b.png",
+            "title": "Up-to-date cost databases",
+            "text": "<p>Reduce the risk of underpricing or missed items with our intuitive NRM Level 1 & 2 cost libraries.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_dzQHHU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Asta_Estimate_overview_1_41c2bce1-82f3-4345-a36f-5c3150cb802d.png",
+            "title": "Carbon Reporting",
+            "text": "<p>Transparent carbon and cost metrics that are compliant with requirements linked to the Building Safety Act.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_JJmhxt",
+        "column_QAhAMb",
+        "column_dzQHHU"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Know what your project is costing you",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 52
+      }
+    },
+    "parallel_award_banner_C3twkW": {
+      "type": "parallel-award-banner",
+      "blocks": {
+        "award_icon_wWHCpq": {
+          "type": "award_icon",
+          "disabled": true,
+          "settings": {
+            "icon_image": "shopify://shop_images/Project_Management_Software_of_the_year.png",
+            "icon_alt": "Award icon",
+            "mobile_icon_image": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
+            "mobile_icon_alt": ""
+          }
+        },
+        "award_icon_VzWygn": {
+          "type": "award_icon",
+          "disabled": true,
+          "settings": {
+            "icon_image": "shopify://shop_images/Project_Management_Software_of_the_year.png",
+            "icon_alt": "Award icon",
+            "mobile_icon_image": "shopify://shop_images/sparklayer_black.svg",
+            "mobile_icon_alt": ""
+          }
+        },
+        "award_icon_LXKmTV": {
+          "type": "award_icon",
+          "settings": {
+            "icon_alt": "Award icon",
+            "mobile_icon_alt": ""
+          }
+        },
+        "richtext_LJNcig": {
+          "type": "richtext",
+          "settings": {
+            "text": "<h1>UK's <span style=\"text-decoration:underline\">newest </span>costing and estimating software</h1>"
+          }
+        }
+      },
+      "block_order": [
+        "award_icon_wWHCpq",
+        "award_icon_VzWygn",
+        "award_icon_LXKmTV",
+        "richtext_LJNcig"
+      ],
+      "disabled": true,
+      "name": "Award Banner",
+      "settings": {
+        "background_image": "shopify://shop_images/team.jpg",
+        "image_height": "medium",
+        "min_height": 400,
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "content_alignment": "left",
+        "text_alignment": "left",
+        "content_width": 50,
+        "text_color": "#ffffff",
+        "mobile_text_color": "#000000",
+        "underline_color": "#ff5a3c",
+        "anchor_id": "",
+        "icon_size": 100,
+        "hide_logos_mobile": true
+      }
+    },
+    "parallel_logo_block_hHLWpL": {
+      "type": "parallel-logo-block",
+      "blocks": {
+        "logo_PRBypU": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/AEstimate_skanska-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_LiNF9m": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/AEstimate_clarkson-alliance-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_XeHnR7": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/bam-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_WNf64B": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/mccarthy-stone-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_hWRjrM": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/AEstimate_-_mcclaren-property-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_itwWmj": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/AEstimate_willmot-dixon-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "logo_PRBypU",
+        "logo_LiNF9m",
+        "logo_XeHnR7",
+        "logo_WNf64B",
+        "logo_hWRjrM",
+        "logo_itwWmj"
+      ],
+      "name": "Logo Block",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "title": "",
+        "heading_size": "h1",
+        "title_alignment": "center",
+        "title_spacing": 24,
+        "block_alignment": "center",
+        "logo_width": 150,
+        "logo_spacing": 40,
+        "logo_opacity": 100,
+        "logo_hover_opacity": 100,
+        "mobile_columns": "2",
+        "anchor_id": "",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "parallel_highlights_yTAfJh": {
+      "type": "parallel-highlights",
+      "blocks": {
+        "highlight_KdRTH8": {
+          "type": "highlight",
+          "settings": {
+            "highlight": "+250k",
+            "text": "Licenses sold worldwide"
+          }
+        },
+        "highlight_kcCRDW": {
+          "type": "highlight",
+          "settings": {
+            "highlight": "70+",
+            "text": "Countries use Asta"
+          }
+        },
+        "highlight_kmzQJf": {
+          "type": "highlight",
+          "settings": {
+            "highlight": "75%",
+            "text": "UK builder choose Asta"
+          }
+        }
+      },
+      "block_order": [
+        "highlight_KdRTH8",
+        "highlight_kcCRDW",
+        "highlight_kmzQJf"
+      ],
+      "disabled": true,
+      "name": "Highlights",
+      "settings": {
+        "color_scheme": "",
+        "highlight_color": "#e85a47",
+        "anchor_id": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "parallel_two_column_accordion_xi4PpU": {
+      "type": "parallel-two-column-accordion",
+      "blocks": {
+        "accordion_item_AX7zXQ": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Contractors",
+            "content_1": "<p>Improve bid accuracy and consistency with structured, up-to-date cost databases instead of spreadsheets, reducing the risk of underpricing or missed items on projects.​</p>",
+            "content_2": "<p>Link estimates directly with schedules and BIM to see cost, time and carbon impacts together, helping contractors manage change, protect margin and evidence decisions to Tier 1 clients and funders.</p>",
+            "content_3": "",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_htnMQm": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Subcontractors",
+            "content_1": "<p>Enable repeatable, fast estimating for frequent tenders, with reusable templates and libraries that suit specialist trades such as steel, concrete and MEP.​</p>",
+            "content_2": "<p>Provide clear, structured breakdowns of cost, time and carbon that make it easier to respond to multiple main contractors on the same project while demonstrating professionalism and transparency.</p>",
+            "content_3": "",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_EDULcY": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Designers and Consultants",
+            "content_1": "<p>Model-based quantity take-offs and linked cost plans, creating a robust basis for early-stage option studies and value engineering.​</p>",
+            "content_2": "<p>Transparent carbon and cost metrics that help advisors test scenarios, support planning submissions and meet emerging sustainability and reporting standards.</p>",
+            "content_3": "",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_TaQTDx": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Residential Construction",
+            "content_1": "<p>A consistent way to price standard house types, phases and options using reusable cost structures and assemblies.​</p>",
+            "content_2": "<p>Produce detailed cost and carbon breakdowns that support internal approvals, sales pricing, and compliance requirements such as those linked to the Building Safety Act.</p>",
+            "content_3": "",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_UPkC8E": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Clients and Asset Owners",
+            "content_1": "<p>Standardised reports that show cost, time and carbon in a format that is easy to review across multiple projects and suppliers.​</p>",
+            "content_2": "<p>Enable better decision-making by making the impact of design changes and phasing visible early, supporting more reliable budgets, programmes and sustainability targets over the asset lifecycle.</p>",
+            "content_3": "",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_AX7zXQ",
+        "accordion_item_htnMQm",
+        "accordion_item_EDULcY",
+        "accordion_item_TaQTDx",
+        "accordion_item_UPkC8E"
+      ],
+      "name": "Two-Column Accordion",
+      "settings": {
+        "heading": "Better project outcomes for every team",
+        "heading_size": "h1",
+        "anchor_id": "capabilities",
+        "padding_top": 72,
+        "padding_bottom": 60
+      }
+    },
+    "parallel_custom_product_list_M7EFHt": {
+      "type": "parallel-custom-product-list",
+      "blocks": {
+        "product_kwnDNr": {
+          "type": "product",
+          "settings": {
+            "product": "asta-powerproject-uk"
+          }
+        },
+        "product_Hi9e7N": {
+          "type": "product",
+          "settings": {
+            "product": "asta-enterprise"
+          }
+        },
+        "product_3Mi7Bg": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "asta-powerproject"
+          }
+        }
+      },
+      "block_order": [
+        "product_kwnDNr",
+        "product_Hi9e7N",
+        "product_3Mi7Bg"
+      ],
+      "name": "Custom Product List",
+      "settings": {
+        "heading": "Asta Integrations",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "button_text": "Learn more",
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-2",
+        "anchor_id": "integrations",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "parallel_logo_block_Kyk8RD": {
+      "type": "parallel-logo-block",
+      "blocks": {
+        "logo_X7DT6Q": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/bluebeam_logo_black_76c994a2-a597-4248-84e6-7e08d717f1c1.png",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "logo_X7DT6Q"
+      ],
+      "name": "Logo Block",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "title": "Partner Integrations",
+        "heading_size": "h2",
+        "title_alignment": "left",
+        "title_spacing": 24,
+        "block_alignment": "start",
+        "logo_width": 150,
+        "logo_spacing": 40,
+        "logo_opacity": 55,
+        "logo_hover_opacity": 100,
+        "mobile_columns": "2",
+        "anchor_id": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "parallel_testimonials_6ayBHg": {
+      "type": "parallel-testimonials",
+      "blocks": {
+        "testimonial_tHbLzP": {
+          "type": "testimonial",
+          "settings": {
+            "name": "David Chapell",
+            "title": "Head of Cost Management | Clarkson Alliance",
+            "country_flag": "",
+            "testimonial_text": "Asta Estimate (Bidcon) BIM ticked all our boxes – and, the more questions we asked, the more boxes it ticked. It puts your prices at your fingertips, instead of locating them from cost plans or bills of quantities on an ad-hoc basis."
+          }
+        },
+        "testimonial_FTmqJ9": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Niclas Peterson",
+            "title": "Operation Manager | LP Entreprenad",
+            "country_flag": "",
+            "testimonial_text": "The big difference with Asta Estimate (Bidcon) is that it can visually show you that you really have everything included in the estimation, which makes the risk lower... Asta Estimate is a great tool for the entire workflow."
+          }
+        },
+        "testimonial_G4XiYQ": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Jorgen",
+            "title": "Furniture Consulting AB",
+            "country_flag": "",
+            "testimonial_text": "Asta Estimate (Bidcon) provides us with the security of knowing that everything is taken into account and nothing is falling between the cracks. You constantly find new ways to work smarter if you let Asta Estimate do the job."
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_tHbLzP",
+        "testimonial_FTmqJ9",
+        "testimonial_G4XiYQ"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "heading": "What do our customers say?",
+        "subheading": "Find out how Asta Estimate helps construction companies.",
+        "heading_size": "h1",
+        "header_alignment": "left",
+        "header_spacing": 40,
+        "color_scheme": "",
+        "anchor_id": "reviews",
+        "padding_top": 52,
+        "padding_bottom": 36
+      }
+    },
+    "parallel_image_with_features_hVbtUt": {
+      "type": "parallel-image-with-features",
+      "blocks": {
+        "heading_GGwQtN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Estimate projects faster with connected data",
+            "heading_size": "h1"
+          }
+        },
+        "feature_item_CkdfUp": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Build accurate cost plans quickly"
+          }
+        },
+        "feature_item_efdUrz": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Automate BIM and PDF take-offs"
+          }
+        },
+        "feature_item_eVF6yn": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Link cost and time in one place"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GGwQtN",
+        "feature_item_CkdfUp",
+        "feature_item_efdUrz",
+        "feature_item_eVF6yn"
+      ],
+      "name": "Image with features",
+      "settings": {
+        "image": "shopify://shop_images/Asta_Estimate_Overview_2.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "anchor_id": "#",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "text_padding_left": 32,
+        "text_padding_right": 16
+      }
+    },
+    "parallel_image_with_features_pYtxX7": {
+      "type": "parallel-image-with-features",
+      "blocks": {
+        "heading_qDbMj8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Keep teams on the same page",
+            "heading_size": "h1"
+          }
+        },
+        "feature_item_8agkWh": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Work from a single project dataset"
+          }
+        },
+        "feature_item_gVYYUV": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Connect estimating, planning and delivery"
+          }
+        },
+        "feature_item_iRNHQw": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Align cost, time and carbon"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qDbMj8",
+        "feature_item_8agkWh",
+        "feature_item_gVYYUV",
+        "feature_item_iRNHQw"
+      ],
+      "name": "Image with features",
+      "settings": {
+        "image": "shopify://shop_images/Asta_Estimate_Overview_3.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "anchor_id": "#",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "text_padding_left": 16,
+        "text_padding_right": 32
+      }
+    },
+    "parallel_image_with_features_UVMBrD": {
+      "type": "parallel-image-with-features",
+      "blocks": {
+        "heading_EU6MmW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Win more work and prove value",
+            "heading_size": "h1"
+          }
+        },
+        "feature_item_Wp9bXU": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Increase bid accuracy and consistency"
+          }
+        },
+        "feature_item_JY6MwN": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Show carbon, time and cost side by side"
+          }
+        },
+        "feature_item_prUy3i": {
+          "type": "feature_item",
+          "settings": {
+            "icon": "eleco-tick",
+            "text": "Report performance clearly"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EU6MmW",
+        "feature_item_Wp9bXU",
+        "feature_item_JY6MwN",
+        "feature_item_prUy3i"
+      ],
+      "name": "Image with features",
+      "settings": {
+        "image": "shopify://shop_images/Asta_Estimate_Overview_4.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "anchor_id": "#",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "text_padding_left": 32,
+        "text_padding_right": 16
+      }
+    },
+    "parallel_faq_accordion_3Vq7Fm": {
+      "type": "parallel-faq-accordion",
+      "blocks": {
+        "faq_item_QVNkTB": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Who is Asta Estimate for?",
+            "answer": "<p>Asta Estimate is designed for estimators, QSs, planners and project teams who need accurate, structured estimates that link cost, time and carbon in one place.</p><p>It is designed to provide consistent, auditable estimating rather than ad‑hoc spreadsheets.<br/><br/></p>"
+          }
+        },
+        "faq_item_bVkqMa": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is Asta Estimate suitable for smaller contractors and subcontractors?",
+            "answer": "<p>Yes, Asta Estimate works well for smaller organisations that need professional-grade estimating without the overhead of complex enterprise systems. It supports repetitive tenders, trade-level breakdowns and standard templates so teams can price quickly and present estimates clearly to main contractors and clients.</p>"
+          }
+        },
+        "faq_item_Ud6FWL": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How does Asta Estimate work with Asta Powerproject?",
+            "answer": "<p>Asta Estimate connects directly with Asta Powerproject so that cost and time share the same underlying data. This allows teams to align estimates with programmes, use model-based quantities in both tools, and maintain a single thread of information from tender through delivery.​</p>"
+          }
+        },
+        "faq_item_jARANR": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Where does the cost database come from?",
+            "answer": "<p>Asta Estimate includes structured cost libraries that draw on recognised data sources including the RICS NRM1 and NRM2, which is widely used across the civil and construction sectors. These libraries can be customised with company norms, regional pricing and project-specific rates so that each organisation can refine the baseline data to its own standards.</p>"
+          }
+        },
+        "faq_item_bAXDXk": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can the cost database be customised?",
+            "answer": "<p>Yes, users can adapt and extend the cost database, adding or editing items, assemblies and labour rates to match their own methods and supply chain. This helps teams maintain consistency across bids while still reflecting real-world pricing and productivity.<br/><br/></p>"
+          }
+        },
+        "faq_item_DQVGf9": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Does Asta Estimate integrate with other systems?",
+            "answer": "<p>Yes, Asta Estimate is designed to work within a broader digital ecosystem, including BIM tools, Bluebeam-based take-off workflows, ERP and analytics platforms.</p><p>This reduces double entry, improves reporting and helps different teams work from one consistent dataset.</p>"
+          }
+        },
+        "faq_item_ebJJeq": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How does Asta Estimate handle carbon?",
+            "answer": "<p>Asta Estimate includes carbon calculation and reporting tools, allowing users to link climate data and EPDs to cost plans through a dedicated Climate Module. Carbon data is taken from the ICE database. This gives early visibility of carbon impact alongside cost, supporting compliance, client reporting and more sustainable decision-making.</p>"
+          }
+        },
+        "faq_item_g4eBDE": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can Asta Estimate be used on a MacBook?",
+            "answer": "<p>Asta Estimate is Windows-based, but Mac users can typically run it by using Windows via a virtual machine or remote desktop solution. This approach is similar to how other Windows-only construction applications are used in mixed IT environments.</p>"
+          }
+        },
+        "faq_item_xMEVnw": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can a licence be transferred to another colleague or device?",
+            "answer": "<p>Licences can normally be reassigned if team members change roles or devices are upgraded, following your organisation’s licence management process. Your account manager or support contact can advise on the practical steps to move licences between users or machines. You can contact us at support@elecosoft.com.</p>"
+          }
+        },
+        "faq_item_acXeiH": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What support and training are available?",
+            "answer": "<p>We provide comprehensive in-house training solutions for new users, ensuring everyone can get the most out of Asta Estimate.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_QVNkTB",
+        "faq_item_bVkqMa",
+        "faq_item_Ud6FWL",
+        "faq_item_jARANR",
+        "faq_item_bAXDXk",
+        "faq_item_DQVGf9",
+        "faq_item_ebJJeq",
+        "faq_item_g4eBDE",
+        "faq_item_xMEVnw",
+        "faq_item_acXeiH"
+      ],
+      "name": "FAQ Accordion",
+      "settings": {
+        "heading": "Questions? We have answers.",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_spacing": 40,
+        "item_gap": 12,
+        "item_padding": 18,
+        "border_radius": 12,
+        "question_font_size": 16,
+        "color_scheme": "",
+        "item_background": "#f6f7f7",
+        "item_background_active": "#fce8e6",
+        "anchor_id": "faqs",
+        "padding_top": 36,
+        "padding_bottom": 64
+      }
+    },
+    "parallel_comparison_table_eeJhkm": {
+      "type": "parallel-comparison-table",
+      "blocks": {
+        "comparison_row_9B77nj": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Task of work per file",
+            "column_2_type": "text",
+            "column_2_text": "250",
+            "column_3_type": "text",
+            "column_3_text": "Unlimited"
+          }
+        },
+        "comparison_row_hhDyjA": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Task per line of work",
+            "column_2_type": "text",
+            "column_2_text": "10",
+            "column_3_type": "text",
+            "column_3_text": "Unlimited"
+          }
+        },
+        "comparison_row_3E8i6B": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Overlapping tasks",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_rJAtXQ": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Reschedule tasks within the project",
+            "column_2_type": "cross",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        },
+        "comparison_row_DbzVPR": {
+          "type": "comparison_row",
+          "settings": {
+            "functionality_text": "Start On or After constraints",
+            "column_2_type": "tick",
+            "column_2_text": "Value",
+            "column_3_type": "tick",
+            "column_3_text": "Value"
+          }
+        }
+      },
+      "block_order": [
+        "comparison_row_9B77nj",
+        "comparison_row_hhDyjA",
+        "comparison_row_3E8i6B",
+        "comparison_row_rJAtXQ",
+        "comparison_row_DbzVPR"
+      ],
+      "disabled": true,
+      "name": "Comparison Table",
+      "settings": {
+        "heading": "Compare products",
+        "heading_size": "h1",
+        "heading_spacing": 40,
+        "column_1_title": "Functionality",
+        "column_2_title": "Easyplan",
+        "column_3_title": "Asta Powerproject",
+        "button_1_label": "Learn more",
+        "button_1_link": "",
+        "button_1_border_color": "#e83f40",
+        "button_1_text_color": "#e83f40",
+        "button_1_hover_text_color": "#ffffff",
+        "button_2_label": "Buy Now",
+        "button_2_action": "add_to_cart",
+        "button_2_link": "",
+        "button_2_background_color": "#e83f40",
+        "button_2_text_color": "#ffffff",
+        "button_2_hover_background_color": "#d14a32",
+        "button_2_hover_text_color": "#ffffff",
+        "button_spacing": 40,
+        "cell_padding": 20,
+        "border_radius": 8,
+        "header_font_size": 18,
+        "cell_font_size": 16,
+        "color_scheme": "",
+        "header_background": "#f3f4f6",
+        "header_text_color": "#111827",
+        "border_color": "#e5e7eb",
+        "anchor_id": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "parallel_support_cta_RxfB67": {
+      "type": "parallel-support-cta",
+      "blocks": {
+        "resource_link_kEdPjk": {
+          "type": "resource_link",
+          "settings": {
+            "label": "Support portal",
+            "link": "https://www.elecosoft.se/customer-pages/"
+          }
+        },
+        "resource_link_wTwLVG": {
+          "type": "resource_link",
+          "settings": {
+            "label": "Troubleshooting",
+            "link": "https://elecosoft.com/documentation/asta-estimate/troubleshooting/"
+          }
+        },
+        "resource_link_y8bPwx": {
+          "type": "resource_link",
+          "settings": {
+            "label": "System requirements",
+            "link": "https://elecosoft.com/documentation/asta-estimate/system-requirements/"
+          }
+        },
+        "resource_link_VzrFGt": {
+          "type": "resource_link",
+          "settings": {
+            "label": "View all resources",
+            "link": "https://elecosoft.com/products/asta-estimate/learn-support/"
+          }
+        }
+      },
+      "block_order": [
+        "resource_link_kEdPjk",
+        "resource_link_wTwLVG",
+        "resource_link_y8bPwx",
+        "resource_link_VzrFGt"
+      ],
+      "name": "Support CTA",
+      "settings": {
+        "heading": "Learn & Support",
+        "description": "Our support services are complemented by our wide range of web-based tutorials, release notes, classroom and online training to ensure you get the most from your software.",
+        "primary_button_label": "",
+        "primary_button_link": "https://elecosoft.com/products/asta-estimate/learn-support/",
+        "primary_button_background": "#e83f40",
+        "primary_button_background_hover": "#d04a35",
+        "primary_button_text": "#ffffff",
+        "secondary_button_label": "",
+        "product": "",
+        "secondary_button_link": "",
+        "secondary_button_background": "#ffffff",
+        "secondary_button_background_hover": "#f5f5f5",
+        "secondary_button_text": "#333333",
+        "secondary_button_border": "#cccccc",
+        "background_color": "#2a303a",
+        "text_color": "#ffffff",
+        "resource_background": "#2a303a",
+        "resource_background_hover": "#2a303a",
+        "resource_border": "#ffffff",
+        "resource_icon_color": "#e75742",
+        "heading_font_size": 48,
+        "heading_font_weight": "700",
+        "description_font_size": 16,
+        "button_font_size": 16,
+        "resource_font_size": 16,
+        "button_border_radius": 4,
+        "resource_border_radius": 4,
+        "anchor_id": "support",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "parallel_information_Ehxmkb": {
+      "type": "parallel-information",
+      "blocks": {
+        "info_block_WNhbpE": {
+          "type": "info_block",
+          "disabled": true,
+          "settings": {
+            "heading": "Try Asta Powerproject before you buy",
+            "text": "<p>See how Asta Powerproject can work for you and your organisation.</p><p>Asta Powerproject supports more than 100,000 professionals worldwide in delivering successful projects by equipping organisations with the award-winning project, program, and resource management tools necessary to bring their built asset to life, regardless of scale; whether a high-profile megaproject, single storey extensions or anything in between.</p><p>Sales team: +44 1844 281 700</p>"
+          }
+        },
+        "info_block_39Mnd3": {
+          "type": "info_block",
+          "disabled": true,
+          "settings": {
+            "heading": "Need a single Education licence?",
+            "text": "<p>To receive an education licence, an authorised officer of the educational establishment can complete this form to start the process.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "info_block_WNhbpE",
+        "info_block_39Mnd3"
+      ],
+      "name": "Information",
+      "settings": {
+        "color_scheme": "",
+        "heading_font_size": 24,
+        "heading_font_weight": "700",
+        "text_font_size": 16,
+        "heading_color": "",
+        "text_color": "",
+        "border_color": "#e83f40",
+        "block_spacing": 24,
+        "anchor_id": "",
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "main_product_custom_YCicNt",
+    "parallel_custom_product_info_i3cpfR",
+    "multicolumn_nLzjxb",
+    "parallel_award_banner_C3twkW",
+    "parallel_logo_block_hHLWpL",
+    "parallel_highlights_yTAfJh",
+    "parallel_two_column_accordion_xi4PpU",
+    "parallel_custom_product_list_M7EFHt",
+    "parallel_logo_block_Kyk8RD",
+    "parallel_testimonials_6ayBHg",
+    "parallel_image_with_features_hVbtUt",
+    "parallel_image_with_features_pYtxX7",
+    "parallel_image_with_features_UVMBrD",
+    "parallel_faq_accordion_3Vq7Fm",
+    "parallel_comparison_table_eeJhkm",
+    "parallel_support_cta_RxfB67",
+    "parallel_information_Ehxmkb"
+  ]
+}

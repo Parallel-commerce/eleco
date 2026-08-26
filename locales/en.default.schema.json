@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "settings_schema": {
     "global": {
@@ -336,6 +345,17 @@
             "label": "Collection",
             "info": "Shown when cart drawer is empty"
           }
+        }
+      }
+    },
+    "product_navigation": {
+      "name": "Product navigation",
+      "settings": {
+        "header_buy_now": {
+          "content": "Buy Now button"
+        },
+        "buy_now_button_color": {
+          "label": "Buy Now button color"
         }
       }
     },
@@ -1746,7 +1766,12 @@
       }
     },
     "main-cart-items": {
-      "name": "Items"
+      "name": "Items",
+      "settings": {
+        "image_size": {
+          "label": "Image size"
+        }
+      }
     },
     "main-collection-banner": {
       "name": "Collection banner",

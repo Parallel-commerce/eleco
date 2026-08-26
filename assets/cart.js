@@ -29,7 +29,7 @@ class CartItems extends HTMLElement {
 
   connectedCallback() {
     this.cartUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, (event) => {
-      if (event.source === 'cart-items') {
+      if (event.source === 'cart-items' || event.source === 'cart-discount') {
         return;
       }
       return this.onCartUpdate();
@@ -106,16 +106,38 @@ class CartItems extends HTMLElement {
           console.error(e);
         });
     } else {
-      return fetch(`${routes.cart_url}?section_id=main-cart-items`)
-        .then((response) => response.text())
-        .then((responseText) => {
-          const html = new DOMParser().parseFromString(responseText, 'text/html');
-          const sourceQty = html.querySelector('cart-items');
-          this.innerHTML = sourceQty.innerHTML;
-        })
-        .catch((e) => {
-          console.error(e);
-        });
+      const cartFooter = document.getElementById('main-cart-footer');
+      const fetches = [
+        fetch(`${routes.cart_url}?section_id=main-cart-items`)
+          .then((response) => response.text())
+          .then((responseText) => {
+            const html = new DOMParser().parseFromString(responseText, 'text/html');
+            const sourceQty = html.querySelector('cart-items');
+            this.innerHTML = sourceQty.innerHTML;
+            this.classList.toggle('is-empty', sourceQty.classList.contains('is-empty'));
+            if (cartFooter) cartFooter.classList.toggle('is-empty', sourceQty.classList.contains('is-empty'));
+          }),
+      ];
+
+      if (cartFooter?.dataset.id) {
+        fetches.push(
+          fetch(`${routes.cart_url}?section_id=${cartFooter.dataset.id}`)
+            .then((response) => response.text())
+            .then((responseText) => {
+              const html = new DOMParser().parseFromString(responseText, 'text/html');
+              const selector = '.js-contents';
+              const targetElement = cartFooter.querySelector(selector) || cartFooter;
+              const sourceElement = html.querySelector(selector);
+              if (sourceElement && targetElement) {
+                targetElement.innerHTML = sourceElement.innerHTML;
+              }
+            })
+        );
+      }
+
+      return Promise.all(fetches).catch((e) => {
+        console.error(e);
+      });
     }
   }
 

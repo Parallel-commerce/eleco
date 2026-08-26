@@ -54,6 +54,7 @@
       {{ body_font_bold_italic | font_face: font_display: 'swap' }}
       {{ settings.type_header_font | font_face: font_display: 'swap' }}
 
+      {% assign scheme_classes = '' %}
       {% for scheme in settings.color_schemes -%}
         {% assign scheme_classes = scheme_classes | append: ', .color-' | append: scheme.id %}
         {% if forloop.index == 1 -%}
@@ -220,6 +221,8 @@
         --variant-pills-shadow-horizontal-offset: {{ settings.variant_pills_shadow_horizontal_offset }}px;
         --variant-pills-shadow-vertical-offset: {{ settings.variant_pills_shadow_vertical_offset }}px;
         --variant-pills-shadow-blur-radius: {{ settings.variant_pills_shadow_blur }}px;
+
+        --product-nav-buy-now-button-color: {{ settings.product_nav_buy_now_button_color | default: '#E83F40' }};
       }
 
       *,
@@ -240,7 +243,7 @@
         grid-template-columns: 100%;
         min-height: 100%;
         margin: 0;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         letter-spacing: 0.06rem;
         line-height: calc(1 + 0.8 / var(--font-body-scale));
         font-family: var(--font-body-family);
@@ -296,7 +299,8 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
-  </head>
+  <meta name="google-site-verification" content="77-hROPeTy6YrgVmW3buYAIgSOOhIxmli2hrKDn8ZYw" />
+</head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
@@ -333,6 +337,7 @@
       window.cartStrings = {
         error: `{{ 'sections.cart.cart_error' | t }}`,
         quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`,
+        discountError: `{{ 'sections.cart.discount_code_error' | t }}`,
       };
 
       window.variantStrings = {
@@ -372,5 +377,55 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    <script>
+      // Handle anchor link scrolling with header offset
+      (function() {
+        const scrollToAnchor = (hash) => {
+          if (!hash) return;
+          
+          const targetId = hash.replace('#', '');
+          const targetElement = document.getElementById(targetId);
+          
+          if (targetElement) {
+            const headerHeight = document.documentElement.style.getPropertyValue('--header-height') || 
+                                (document.querySelector('.section-header')?.offsetHeight || 0);
+            const offset = parseInt(headerHeight) || 0;
+            const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+            const offsetPosition = elementPosition - offset - 20; // 20px extra padding
+            
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        };
+
+        // Handle initial page load with hash
+        if (window.location.hash) {
+          window.addEventListener('load', () => {
+            setTimeout(() => scrollToAnchor(window.location.hash), 100);
+          });
+        }
+
+        // Handle hash changes
+        window.addEventListener('hashchange', () => {
+          scrollToAnchor(window.location.hash);
+        });
+
+        // Handle anchor link clicks
+        document.addEventListener('click', (event) => {
+          const link = event.target.closest('a[href^="#"]');
+          if (link && link.getAttribute('href') !== '#') {
+            const hash = link.getAttribute('href');
+            if (document.getElementById(hash.replace('#', ''))) {
+              event.preventDefault();
+              history.pushState(null, null, hash);
+              scrollToAnchor(hash);
+            }
+          }
+        });
+      })();
+    </script>
   </body>
 </html>

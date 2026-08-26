@@ -1,0 +1,47 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "product.astra-powerproject.json",
+  "context": {
+    "market": "mexico"
+  },
+  "sections": {
+    "parallel_custom_product_info_i3cpfR": {
+      "settings": {
+        "right_column_primary_button_link": "https://e5kao.share.hsforms.com/27ZLT8NmISCCtHeWcu71hQw",
+        "right_column_secondary_button_embed_url": "https://e5kao.share.hsforms.com/23_piFlD-S0e9Unuhe_A5qg",
+        "right_column_price": "2500"
+      }
+    },
+    "parallel_information_Ehxmkb": {
+      "blocks": {
+        "info_block_39Mnd3": {
+          "settings": {
+            "text": "<p>To receive an education licence, an authorized officer of the educational establishment can complete this <a href=\"https://elecosoft.com/products/asta/asta-powerproject/single-education-licence/\" title=\"https://elecosoft.com/products/asta/asta-powerproject/single-education-licence/\"><span style=\"text-decoration:underline\">form</span></a> to start the process.</p>"
+          }
+        }
+      }
+    },
+    "parallel_market_embed_gGAwgk": {
+      "blocks": {
+        "embed_kej3bR": {
+          "settings": {
+            "embed_code": "<script src=\"https://js.hsforms.net/forms/embed/23774208.js\" defer></script>\n<div class=\"hs-form-frame\" data-region=\"na1\" data-form-id=\"d02192f6-5226-41f1-af02-2abdedbdf035\" data-portal-id=\"23774208\"></div>"
+          }
+        }
+      }
+    },
+    "parallel_comparison_table_eeJhkm": {
+      "settings": {
+        "button_1_label": "Not Available"
+      }
+    }
+  }
+}

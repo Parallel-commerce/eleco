@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "password_page": {
@@ -176,9 +185,9 @@
       "view_full_details": "View full details",
       "xr_button": "View in your space",
       "xr_button_label": "View in your space, loads item in augmented reality window",
-      "taxes_included": "Taxes included.",
+      "taxes_included": "VAT or Taxes are included.",
       "duties_included": "Duties included.",
-      "duties_and_taxes_included": "Duties and taxes included.",
+      "duties_and_taxes_included": "VAT or Taxes included.",
       "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout."
     },
     "modal": {
@@ -274,7 +283,6 @@
       "announcement": "Announcement",
       "announcement_bar": "Announcement bar"
     },
-
     "header": {
       "announcement": "Announcement",
       "menu": "Menu",
@@ -287,17 +295,23 @@
       "title": "Your cart",
       "caption": "Cart items",
       "remove_title": "Remove {{ title }}",
-      "estimated_total": "Estimated total",
+      "estimated_total": "TOTAL",
       "new_estimated_total": "New estimated total",
       "note": "Order special instructions",
-      "checkout": "Check out",
+      "checkout": "Secure checkout",
+      "secure_checkout": "Secure checkout",
       "empty": "Your cart is empty",
       "cart_error": "There was an error while updating your cart. Please try again.",
       "cart_quantity_error_html": "You can only add {{ quantity }} of this item to your cart.",
-      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Duties and taxes included. Discounts and <a href=\"{{ link }}\">shipping</a> calculated at checkout.",
-      "duties_and_taxes_included_shipping_at_checkout_without_policy": "Duties and taxes included. Discounts and shipping calculated at checkout.",
+      "discount_code": "Discount code",
+      "discount_code_placeholder": "Enter code",
+      "discount_apply": "Apply",
+      "discount_code_error": "Enter a valid discount code",
+      "remove_discount": "Remove discount {{ code }}",
+      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Discounts are calculated at checkout. VAT and taxes included. ",
+      "duties_and_taxes_included_shipping_at_checkout_without_policy": "Discounts are calculated at checkout. VAT and taxes included. ",
       "taxes_included_shipping_at_checkout_with_policy_html": "Taxes included. Discounts and <a href=\"{{ link }}\">shipping</a> calculated at checkout.",
-      "taxes_included_shipping_at_checkout_without_policy": "Taxes included. Discounts and shipping calculated at checkout.",
+      "taxes_included_shipping_at_checkout_without_policy": "Discounts are calculated at checkout. VAT and taxes included in total. ",
       "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Duties included. Taxes, discounts and <a href=\"{{ link }}\">shipping</a> calculated at checkout.",
       "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Duties included. Taxes, discounts and shipping calculated at checkout.",
       "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Taxes, discounts and <a href=\"{{ link }}\">shipping</a> calculated at checkout.",
@@ -313,7 +327,8 @@
       "login": {
         "title": "Have an account?",
         "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Log in</a> to check out faster."
-      }
+      },
+      "upsell_label": "You might also like"
     },
     "footer": {
       "payment": "Payment methods"
@@ -346,6 +361,9 @@
       "play_slideshow": "Play slideshow",
       "carousel": "Carousel",
       "slide": "Slide"
+    },
+    "logo_block": {
+      "carousel": "Company logos"
     },
     "page": {
       "title": "Page title"
