@@ -227,8 +227,10 @@
         "right_color_scheme": "scheme-2",
         "right_link_label_1": "Download free trial",
         "right_link_url_1": "https://shop.elecosoft.com/products/asta-powerproject-uk#free-trial",
+        "right_link_new_tab_1": false,
         "right_link_label_2": "Contact sales",
         "right_link_url_2": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/mwbhpqg9efgeb2bfvrmtaw.html?PageId=a5476031bd01f11184076045bd131303",
+        "right_link_new_tab_2": false,
         "show_right_price_period": true,
         "right_price_divisor": 12,
         "right_price_period_label": "month",
@@ -802,6 +804,8 @@
         "logo_opacity": 100,
         "logo_hover_opacity": 100,
         "mobile_columns": "2",
+        "mobile_autoplay": true,
+        "mobile_autoplay_speed": 4,
         "anchor_id": "",
         "padding_top": 28,
         "padding_bottom": 40
@@ -960,6 +964,13 @@
             "answer": "<p>A single licence is tied to one user on one device. </p><p>A concurrent licence allows multiple users to share the same licence across different devices, offering greater flexibility and lowering the cost per user. </p><p>Both options suit businesses of any size, depending on your needs.</p>"
           }
         },
+        "faq_item_PkpqmH": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is included in the enhanced support upgrade?",
+            "answer": "<p>Find comfort knowing you will be looked after every step of the way.</p><p>You will receive access to our trained product specialists (Office hours are <strong>9am to 5pm, Monday to Thursday, 9am to 4:30pm on Friday</strong>) including technical, installation and activation support if needed.</p><p>We constantly tailor our approach to support you and your business with a 99% ticket resolution within <strong>8 working</strong> hours.</p>"
+          }
+        },
         "faq_item_iLkedR": {
           "type": "faq_item",
           "settings": {
@@ -1001,6 +1012,7 @@
         "faq_item_bVkqMa",
         "faq_item_jARANR",
         "faq_item_bAXDXk",
+        "faq_item_PkpqmH",
         "faq_item_iLkedR",
         "faq_item_3zcwtw",
         "faq_item_Y8h4bQ",
