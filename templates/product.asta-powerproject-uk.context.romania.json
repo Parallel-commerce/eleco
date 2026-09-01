@@ -58,6 +58,18 @@
             "question": "Care este diferența dintre versiunea de încercare și versiunea plătită? ",
             "answer": "<p>Versiunea de încercare gratuită îți oferă acces complet la toate funcționalitățile software-ului timp de 14 zile. Nu este necesar un card de credit și nicio funcționalitate nu este restricționată.</p>"
           }
+        },
+        "faq_item_iLkedR": {
+          "settings": {
+            "question": "Cum accesez software-ul după achiziție?",
+            "answer": "<p>Fiind un produs software digital, vei putea accesa aplicația în doar câteva minute după achiziția online. Vei primi un e-mail cu pașii necesari și informații despre unde poți găsi licența și cheia de activare. Dacă ai nevoie de ajutor suplimentar, poți contacta echipa de suport la support@eleco.com.</p>"
+          }
+        },
+        "faq_item_d8Pe8E": {
+          "settings": {
+            "question": "Ce include opțiunea Enhanced Support? ",
+            "answer": "<p>Ai siguranța că vei beneficia de asistență la fiecare pas. </p><p>Vei avea acces la specialiștii noștri de produs, disponibili de luni până vineri, între orele 09:00 și 17:00, inclusiv pentru asistență tehnică, instalare și activare. </p><p>Ne adaptăm permanent serviciile de suport la nevoile companiei tale, cu <strong>99% dintre solicitări soluționate în maximum 6 ore</strong>. </p>"
+          }
         }
       }
     }
