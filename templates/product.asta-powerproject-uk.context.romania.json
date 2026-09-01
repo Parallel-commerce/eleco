@@ -20,6 +20,19 @@
         "left_checklist_item_3": "Începe imediat",
         "left_checklist_item_4": "Preț garantat timp de 12 luni"
       }
+    },
+    "multicolumn_GRCHXY": {
+      "settings": {
+        "title": "Soluția software completă pentru finalizarea proiectelor la timp"
+      },
+      "blocks": {
+        "column_QVkQnW": {
+          "settings": {
+            "title": "Planificare cu diagrame Gantt",
+            "text": "<p>Funcționalități avansate de planificare pentru vizualizarea dependențelor, planurilor de referință și drumului critic pentru toate activitățile și echipele<br/><br/></p>"
+          }
+        }
+      }
     }
   }
 }
