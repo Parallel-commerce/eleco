@@ -85,7 +85,32 @@
         },
         "faq_item_mDbcdE": {
           "settings": {
-            "question": "Poate fi transferată o licență individuală către un alt coleg sau pe un alt dispozitiv? "
+            "question": "Poate fi transferată o licență individuală către un alt coleg sau pe un alt dispozitiv? ",
+            "answer": "<p>Da. Utilizatorii pot urma pașii disponibili în aplicație pentru a transfera licența de pe un dispozitiv pe altul. Dacă nu mai ai acces la dispozitivul pe care este activată licența, echipa noastră de suport o poate dezactiva de la distanță. Ne poți contacta la support@eleco.com.</p>"
+          }
+        },
+        "faq_item_bVkqMa": {
+          "settings": {
+            "question": "Pe ce dispozitive pot instala Asta Powerproject? ",
+            "answer": "<p>Software-ul poate fi descărcat și instalat pe PC-uri cu Windows. Este disponibilă separat și o aplicație complementară pentru iOS și Android, care necesită o licență separată.</p>"
+          }
+        },
+        "faq_item_jARANR": {
+          "settings": {
+            "question": "Asta Powerproject poate fi utilizat pe MacBook? ",
+            "answer": "<p>Da. Prin trecerea la un abonament <strong>Asta Powerproject SaaS</strong>, îl poți accesa și de pe Mac. Pentru mai multe informații, poți contacta echipa la <a href=\"mailto:asta.uk@eleco.com\" title=\"mailto:asta.uk@eleco.com\"><strong>asta.uk@eleco.com</strong></a>.</p>"
+          }
+        },
+        "faq_item_3zcwtw": {
+          "settings": {
+            "question": "Pentru ce tipuri și dimensiuni de proiecte este potrivit Asta Powerproject? ",
+            "answer": "<p>Asta Powerproject este potrivit atât pentru lucrări de dimensiuni reduse – precum extinderi, amenajări interioare sau lucrări civile de mică amploare – cât și pentru proiecte majore, precum clădiri emblematice, aeroporturi sau autostrăzi. Soluția poate fi utilizată atât de contractori mici, cât și de companii mari.</p><p></p><p>Este potrivit în special pentru proiecte de <strong>construcții, infrastructură și proiecte industriale</strong> care necesită planificare CPM bazată pe relații logice, identificarea clară a drumului critic și analiza rezervelor de timp, precum și prezentări profesionale ale planificării pe etape.</p>"
+          }
+        },
+        "faq_item_Y8h4bQ": {
+          "settings": {
+            "question": "Pot alte persoane implicate în proiect să îl vizualizeze fără licență? ",
+            "answer": "<p>Da. Persoanele implicate în proiect pot descărca gratuit <strong>ProjectViewer</strong> pentru a vizualiza proiectul fără a avea nevoie de o licență Asta Powerproject.</p>"
           }
         }
       }
