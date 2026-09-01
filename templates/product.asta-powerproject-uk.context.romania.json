@@ -31,7 +31,24 @@
             "title": "Planificare cu diagrame Gantt",
             "text": "<p>Funcționalități avansate de planificare pentru vizualizarea dependențelor, planurilor de referință și drumului critic pentru toate activitățile și echipele<br/><br/></p>"
           }
+        },
+        "column_D4NcPk": {
+          "settings": {
+            "title": "Estimarea și alocarea costurilor",
+            "text": "<p>Monitorizează în timp real costurile planificate comparativ cu cele reale și redu riscul întârzierilor înainte ca acestea să apară</p>"
+          }
+        },
+        "column_7EwNze": {
+          "settings": {
+            "title": "Planificarea resurselor",
+            "text": "<p>Gestionează toate resursele disponibile pentru a maximiza eficiența și compară timpul de finalizare planificat cu cel real, în raport cu termenele stabilite</p>"
+          }
         }
+      }
+    },
+    "parallel_logo_block_hHLWpL": {
+      "settings": {
+        "title": "Folosit cu incredere de"
       }
     }
   }
