@@ -18,7 +18,16 @@
         "left_checklist_item_1": "Acces la toate funcționalitățile încă din prima zi ",
         "left_checklist_item_2": "Asistență pentru activare timp de 14 zile ",
         "left_checklist_item_3": "Începe imediat",
-        "left_checklist_item_4": "Preț garantat timp de 12 luni"
+        "left_checklist_item_4": "Preț garantat timp de 12 luni",
+        "right_link_label_1": "Descărcați versiunea de încercare gratuită",
+        "right_link_label_2": "Contactați vânzările"
+      },
+      "blocks": {
+        "text_pcY3DW": {
+          "settings": {
+            "text": "1 utilizator per licență • PC cu Windows • Facturat anual"
+          }
+        }
       }
     },
     "multicolumn_GRCHXY": {
