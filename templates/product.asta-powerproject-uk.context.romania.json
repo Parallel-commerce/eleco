@@ -50,6 +50,16 @@
       "settings": {
         "title": "Folosit cu incredere de"
       }
+    },
+    "parallel_faq_accordion_3Vq7Fm": {
+      "blocks": {
+        "faq_item_QVNkTB": {
+          "settings": {
+            "question": "Care este diferența dintre versiunea de încercare și versiunea plătită? ",
+            "answer": "<p>Versiunea de încercare gratuită îți oferă acces complet la toate funcționalitățile software-ului timp de 14 zile. Nu este necesar un card de credit și nicio funcționalitate nu este restricționată.</p>"
+          }
+        }
+      }
     }
   }
 }
