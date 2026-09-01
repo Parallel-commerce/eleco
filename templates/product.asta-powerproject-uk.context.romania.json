@@ -127,6 +127,9 @@
             "answer": "<p>Da. Persoanele implicate în proiect pot descărca gratuit <strong>ProjectViewer</strong> pentru a vizualiza proiectul fără a avea nevoie de o licență Asta Powerproject.</p>"
           }
         }
+      },
+      "settings": {
+        "heading": "Întrebări? Avem răspunsuri."
       }
     }
   }
