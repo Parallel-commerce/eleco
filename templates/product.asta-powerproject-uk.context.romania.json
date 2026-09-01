@@ -68,7 +68,24 @@
         "faq_item_d8Pe8E": {
           "settings": {
             "question": "Ce include opțiunea Enhanced Support? ",
-            "answer": "<p>Ai siguranța că vei beneficia de asistență la fiecare pas. </p><p>Vei avea acces la specialiștii noștri de produs, disponibili de luni până vineri, între orele 09:00 și 17:00, inclusiv pentru asistență tehnică, instalare și activare. </p><p>Ne adaptăm permanent serviciile de suport la nevoile companiei tale, cu <strong>99% dintre solicitări soluționate în maximum 6 ore</strong>. </p>"
+            "answer": "<p>Ai siguranța că vei beneficia de asistență la fiecare pas. </p><p>Vei avea acces la specialiștii noștri de produs, disponibili de luni până vineri, între orele 09:00 și 17:00, inclusiv pentru asistență tehnică, instalare și activare. </p><p>Ne adaptăm permanent serviciile de suport la nevoile companiei tale, cu <strong>99% dintre solicitări soluționate în maximum 8 ore</strong>. </p>"
+          }
+        },
+        "faq_item_FbD6cb": {
+          "settings": {
+            "question": "Cum îmi anulez abonamentul? ",
+            "answer": "<p>Pentru anularea abonamentului anual, trebuie transmisă o notificare scrisă de încetare cu cel puțin 60 de zile înainte de data reînnoirii. </p><p>Dacă abonamentul este anulat cu respectarea acestui termen, vei avea în continuare acces la software până la finalul perioadei contractuale curente. </p>"
+          }
+        },
+        "faq_item_bAXDXk": {
+          "settings": {
+            "question": "Care este diferența dintre o licență individuală și o licență concurentă? ",
+            "answer": "<p>O licență individuală este asociată unui singur utilizator, pe un singur dispozitiv. </p><p>O licență concurentă permite mai multor utilizatori să utilizeze aceeași licență pe dispozitive diferite, oferind mai multă flexibilitate și reducând costul per utilizator. </p><p>Ambele variante sunt potrivite pentru companii de orice dimensiune, în funcție de nevoile acestora. </p>"
+          }
+        },
+        "faq_item_mDbcdE": {
+          "settings": {
+            "question": "Poate fi transferată o licență individuală către un alt coleg sau pe un alt dispozitiv? "
           }
         }
       }
