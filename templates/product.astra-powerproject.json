@@ -328,6 +328,63 @@
         "padding_bottom": 40
       }
     },
+    "multicolumn_9tdKcB": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_rEyzMB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/APP_Illustration_overview_c598e464-bcf6-4db3-81dd-28288e68a4a5.png",
+            "title": "Gantt Chart Scheduling",
+            "text": "<p>Extensive schedule capabilities to visualize dependencies, baselines and critical path across every task and team.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_PpjXbQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/APP_Illustration_overview_2_883548d6-ab5f-4319-83bb-ebe4f571e0bf.png",
+            "title": "Cost Forecasting and Allocation",
+            "text": "<p>Track planned verse actual spend in real time and mitigate delays before they happen.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_KYG6mw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/APP_Illustration_overview_3_f25259d3-8810-4c7c-be94-1d72505ca1e0.png",
+            "title": "Resource Planning",
+            "text": "<p>Manage all available resources to maximise efficiency and manage planned vs actual completion time against deadline.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_rEyzMB",
+        "column_PpjXbQ",
+        "column_KYG6mw"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Your all-in-one software to deliver projects on time",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "parallel_image_with_features_hVbtUt": {
       "type": "parallel-image-with-features",
       "blocks": {
@@ -374,6 +431,7 @@
         "feature_item_eVF6yn",
         "feature_item_mCNTLb"
       ],
+      "disabled": true,
       "name": "Image with features",
       "settings": {
         "image": "shopify://shop_images/Powerproject_Overview.png",
@@ -440,6 +498,7 @@
         "feature_item_gVYYUV",
         "feature_item_a4YiiR"
       ],
+      "disabled": true,
       "name": "Image with features",
       "settings": {
         "image": "shopify://shop_images/Powerproject_Overview_2.png",
@@ -506,6 +565,7 @@
         "feature_item_Wp9bXU",
         "feature_item_prUy3i"
       ],
+      "disabled": true,
       "name": "Image with features",
       "settings": {
         "image": "shopify://shop_images/Vision_Overview_4.png",
@@ -524,65 +584,6 @@
         "padding_bottom": 32,
         "text_padding_left": 32,
         "text_padding_right": 16
-      }
-    },
-    "parallel_award_banner_C3twkW": {
-      "type": "parallel-award-banner",
-      "blocks": {
-        "award_icon_wWHCpq": {
-          "type": "award_icon",
-          "settings": {
-            "icon_image": "shopify://shop_images/Project_Management_Software_of_the_year.png",
-            "icon_alt": "Award icon",
-            "mobile_icon_image": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
-            "mobile_icon_alt": ""
-          }
-        },
-        "award_icon_VzWygn": {
-          "type": "award_icon",
-          "settings": {
-            "icon_image": "shopify://shop_images/Project_Management_Software_of_the_year.png",
-            "icon_alt": "Award icon",
-            "mobile_icon_image": "shopify://shop_images/sparklayer_black.svg",
-            "mobile_icon_alt": ""
-          }
-        },
-        "award_icon_LXKmTV": {
-          "type": "award_icon",
-          "settings": {
-            "icon_alt": "Award icon",
-            "mobile_icon_alt": ""
-          }
-        },
-        "richtext_LJNcig": {
-          "type": "richtext",
-          "settings": {
-            "text": "<h1>Voted best <span style=\"text-decoration:underline\">Project Management </span>Software</h1>"
-          }
-        }
-      },
-      "block_order": [
-        "award_icon_wWHCpq",
-        "award_icon_VzWygn",
-        "award_icon_LXKmTV",
-        "richtext_LJNcig"
-      ],
-      "name": "Award Banner",
-      "settings": {
-        "background_image": "shopify://shop_images/team.jpg",
-        "image_height": "medium",
-        "min_height": 400,
-        "overlay_color": "#000000",
-        "overlay_opacity": 0,
-        "content_alignment": "left",
-        "text_alignment": "left",
-        "content_width": 50,
-        "text_color": "#ffffff",
-        "mobile_text_color": "#000000",
-        "underline_color": "#ff5a3c",
-        "anchor_id": "",
-        "icon_size": 100,
-        "hide_logos_mobile": true
       }
     },
     "parallel_two_column_accordion_xi4PpU": {
@@ -665,6 +666,65 @@
         "padding_bottom": 60
       }
     },
+    "parallel_award_banner_C3twkW": {
+      "type": "parallel-award-banner",
+      "blocks": {
+        "award_icon_wWHCpq": {
+          "type": "award_icon",
+          "settings": {
+            "icon_image": "shopify://shop_images/Project_Management_Software_of_the_year.png",
+            "icon_alt": "Award icon",
+            "mobile_icon_image": "shopify://shop_images/Patchworks-Logo-Primary-Black.svg",
+            "mobile_icon_alt": ""
+          }
+        },
+        "award_icon_VzWygn": {
+          "type": "award_icon",
+          "settings": {
+            "icon_image": "shopify://shop_images/Project_Management_Software_of_the_year.png",
+            "icon_alt": "Award icon",
+            "mobile_icon_image": "shopify://shop_images/sparklayer_black.svg",
+            "mobile_icon_alt": ""
+          }
+        },
+        "award_icon_LXKmTV": {
+          "type": "award_icon",
+          "settings": {
+            "icon_alt": "Award icon",
+            "mobile_icon_alt": ""
+          }
+        },
+        "richtext_LJNcig": {
+          "type": "richtext",
+          "settings": {
+            "text": "<h1>Voted best <span style=\"text-decoration:underline\">Project Management </span>Software</h1>"
+          }
+        }
+      },
+      "block_order": [
+        "award_icon_wWHCpq",
+        "award_icon_VzWygn",
+        "award_icon_LXKmTV",
+        "richtext_LJNcig"
+      ],
+      "name": "Award Banner",
+      "settings": {
+        "background_image": "shopify://shop_images/team.jpg",
+        "image_height": "medium",
+        "min_height": 400,
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "content_alignment": "left",
+        "text_alignment": "left",
+        "content_width": 50,
+        "text_color": "#ffffff",
+        "mobile_text_color": "#000000",
+        "underline_color": "#ff5a3c",
+        "anchor_id": "",
+        "icon_size": 100,
+        "hide_logos_mobile": true
+      }
+    },
     "parallel_testimonials_6ayBHg": {
       "type": "parallel-testimonials",
       "blocks": {
@@ -713,7 +773,52 @@
         "header_spacing": 40,
         "color_scheme": "",
         "anchor_id": "reviews",
-        "padding_top": 48,
+        "padding_top": 76,
+        "padding_bottom": 36
+      }
+    },
+    "parallel_video_three_column_BTPQnC": {
+      "type": "parallel-video-three-column",
+      "blocks": {
+        "video_item_NYWJta": {
+          "type": "video_item",
+          "settings": {
+            "video": "shopify://files/videos/Richard Easton, Senior Planner, Higgins Partnership.mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "video_item_qFpjwc": {
+          "type": "video_item",
+          "settings": {
+            "video": "shopify://files/videos/Glopet Izidug, Project Planner, Dornan Engineering Services (1).mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "video_item_cfdDnt": {
+          "type": "video_item",
+          "settings": {
+            "video": "shopify://files/videos/James Horton, Senior Planning Manager, MACE Construction (1).mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_item_NYWJta",
+        "video_item_qFpjwc",
+        "video_item_cfdDnt"
+      ],
+      "name": "Three Column Video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "full_width": false,
+        "color_scheme": "",
+        "anchor_id": "reviews",
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -811,51 +916,6 @@
         "anchor_id": "",
         "padding_top": 28,
         "padding_bottom": 40
-      }
-    },
-    "parallel_video_three_column_BTPQnC": {
-      "type": "parallel-video-three-column",
-      "blocks": {
-        "video_item_NYWJta": {
-          "type": "video_item",
-          "settings": {
-            "video": "shopify://files/videos/Richard Easton, Senior Planner, Higgins Partnership.mp4",
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": ""
-          }
-        },
-        "video_item_qFpjwc": {
-          "type": "video_item",
-          "settings": {
-            "video": "shopify://files/videos/Glopet Izidug, Project Planner, Dornan Engineering Services (1).mp4",
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": ""
-          }
-        },
-        "video_item_cfdDnt": {
-          "type": "video_item",
-          "settings": {
-            "video": "shopify://files/videos/James Horton, Senior Planning Manager, MACE Construction (1).mp4",
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": ""
-          }
-        }
-      },
-      "block_order": [
-        "video_item_NYWJta",
-        "video_item_qFpjwc",
-        "video_item_cfdDnt"
-      ],
-      "name": "Three Column Video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "full_width": false,
-        "color_scheme": "",
-        "anchor_id": "reviews",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "parallel_custom_product_list_M7EFHt": {
@@ -1347,8 +1407,8 @@
           "type": "embed",
           "name": "United States",
           "settings": {
-            "market_identifier": "us",
-            "country_code": "us",
+            "market_identifier": "United States",
+            "country_code": "us, ca, mx",
             "is_fallback": false,
             "embed_code": "<script src=\"https://js.hsforms.net/forms/embed/23774208.js\" defer></script>\n<div class=\"hs-form-frame\" data-region=\"na1\" data-form-id=\"d02192f6-5226-41f1-af02-2abdedbdf035\" data-portal-id=\"23774208\"></div>"
           }
@@ -1409,14 +1469,15 @@
     "main_product_custom_WTrNQf",
     "parallel_custom_product_info_i3cpfR",
     "parallel_highlights_yTAfJh",
+    "multicolumn_9tdKcB",
     "parallel_image_with_features_hVbtUt",
     "parallel_image_with_features_pYtxX7",
     "parallel_image_with_features_UVMBrD",
-    "parallel_award_banner_C3twkW",
     "parallel_two_column_accordion_xi4PpU",
+    "parallel_award_banner_C3twkW",
     "parallel_testimonials_6ayBHg",
-    "parallel_logo_block_hHLWpL",
     "parallel_video_three_column_BTPQnC",
+    "parallel_logo_block_hHLWpL",
     "parallel_custom_product_list_M7EFHt",
     "parallel_faq_accordion_3Vq7Fm",
     "parallel_comparison_table_eeJhkm",
