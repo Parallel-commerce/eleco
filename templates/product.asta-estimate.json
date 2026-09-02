@@ -199,6 +199,21 @@
             "text_style": "body"
           }
         },
+        "subscriptions_app_block_6XdN4J": {
+          "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
+          "disabled": true,
+          "settings": {
+            "widget_style": "card",
+            "widget_style_card_selector": "radio_button",
+            "subscription_policy_url": "",
+            "color_text_body": "#6d7175",
+            "dividers_color": "#8f8d8d",
+            "background_color": "#ffffff",
+            "border_thickness": 1,
+            "border_radius": 0,
+            "product": "asta-estimate"
+          }
+        },
         "quantity_selector_fxKRGi": {
           "type": "quantity_selector",
           "settings": {}
@@ -218,6 +233,7 @@
         "variant_picker_zCjENt",
         "text_A4VRBK",
         "text_8C9HyR",
+        "subscriptions_app_block_6XdN4J",
         "quantity_selector_fxKRGi",
         "buy_buttons_gUhePD"
       ],
@@ -241,16 +257,18 @@
         "left_column_padding": 56,
         "left_column_border_radius": 18,
         "right_color_scheme": "scheme-1",
-        "right_link_label_1": "Download free trial",
+        "right_link_label_1": "",
         "right_link_url_1": "",
         "right_link_new_tab_1": false,
         "right_link_label_2": "Contact sales",
+        "right_link_embed_2": "",
+        "right_link_embed_code_2": "",
         "right_link_url_2": "",
         "right_link_new_tab_2": false,
         "show_right_price_period": false,
         "right_price_divisor": 12,
         "right_price_period_label": "month",
-        "right_column_padding": 28,
+        "right_column_padding": 36,
         "right_column_border_radius": 26,
         "media_size": "medium",
         "constrain_to_viewport": true,
@@ -267,25 +285,6 @@
     },
     "parallel_custom_product_info_i3cpfR": {
       "type": "parallel-custom-product-info",
-      "blocks": {
-        "subscriptions_app_block_HfcxDY": {
-          "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
-          "settings": {
-            "widget_style": "card",
-            "widget_style_card_selector": "radio_button",
-            "subscription_policy_url": "",
-            "color_text_body": "#6d7175",
-            "dividers_color": "#8f8d8d",
-            "background_color": "#ffffff",
-            "border_thickness": 1,
-            "border_radius": 0,
-            "product": "{{product}}"
-          }
-        }
-      },
-      "block_order": [
-        "subscriptions_app_block_HfcxDY"
-      ],
       "disabled": true,
       "name": "Custom Product Info",
       "settings": {
@@ -363,7 +362,7 @@
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Know what your project is costing you",
+        "title": "Reduce project risk and win more work",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -377,6 +376,86 @@
         "swipe_on_mobile": false,
         "padding_top": 92,
         "padding_bottom": 20
+      }
+    },
+    "parallel_two_column_accordion_xi4PpU": {
+      "type": "parallel-two-column-accordion",
+      "blocks": {
+        "accordion_item_AX7zXQ": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Contractors",
+            "content_1": "<p>Improve bid accuracy and consistency with structured, up-to-date cost databases instead of spreadsheets, reducing the risk of underpricing or missed items on projects.​</p>",
+            "content_2": "<p>Link estimates directly with schedules and BIM to see cost, time and carbon impacts together, helping contractors manage change, protect margin and evidence decisions to Tier 1 clients and funders.</p>",
+            "content_3": "",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_htnMQm": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Subcontractors",
+            "content_1": "<p>Enable repeatable, fast estimating for frequent tenders, with reusable templates and libraries that suit specialist trades such as steel, concrete and MEP.​</p>",
+            "content_2": "<p>Provide clear, structured breakdowns of cost, time and carbon that make it easier to respond to multiple main contractors on the same project while demonstrating professionalism and transparency.</p>",
+            "content_3": "",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_EDULcY": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Designers and Consultants",
+            "content_1": "<p>Model-based quantity take-offs and linked cost plans, creating a robust basis for early-stage option studies and value engineering.​</p>",
+            "content_2": "<p>Transparent carbon and cost metrics that help advisors test scenarios, support planning submissions and meet emerging sustainability and reporting standards.</p>",
+            "content_3": "",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_TaQTDx": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Residential Construction",
+            "content_1": "<p>A consistent way to price standard house types, phases and options using reusable cost structures and assemblies.​</p>",
+            "content_2": "<p>Produce detailed cost and carbon breakdowns that support internal approvals, sales pricing, and compliance requirements such as those linked to the Building Safety Act.</p>",
+            "content_3": "",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        },
+        "accordion_item_UPkC8E": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Clients and Asset Owners",
+            "content_1": "<p>Standardised reports that show cost, time and carbon in a format that is easy to review across multiple projects and suppliers.​</p>",
+            "content_2": "<p>Enable better decision-making by making the impact of design changes and phasing visible early, supporting more reliable budgets, programmes and sustainability targets over the asset lifecycle.</p>",
+            "content_3": "",
+            "content_4": "",
+            "content_5": "",
+            "content_6": ""
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_AX7zXQ",
+        "accordion_item_htnMQm",
+        "accordion_item_EDULcY",
+        "accordion_item_TaQTDx",
+        "accordion_item_UPkC8E"
+      ],
+      "name": "Two-Column Accordion",
+      "settings": {
+        "heading": "Better project outcomes for every team",
+        "heading_size": "h1",
+        "anchor_id": "capabilities",
+        "padding_top": 72,
+        "padding_bottom": 60
       }
     },
     "parallel_award_banner_C3twkW": {
@@ -510,7 +589,7 @@
       "name": "Logo Block",
       "settings": {
         "color_scheme": "scheme-1",
-        "title": "Trusted by",
+        "title": "Asta is trusted by",
         "heading_size": "h1",
         "title_alignment": "left",
         "title_spacing": 24,
@@ -565,86 +644,6 @@
         "anchor_id": "",
         "padding_top": 40,
         "padding_bottom": 40
-      }
-    },
-    "parallel_two_column_accordion_xi4PpU": {
-      "type": "parallel-two-column-accordion",
-      "blocks": {
-        "accordion_item_AX7zXQ": {
-          "type": "accordion_item",
-          "settings": {
-            "title": "Contractors",
-            "content_1": "<p>Improve bid accuracy and consistency with structured, up-to-date cost databases instead of spreadsheets, reducing the risk of underpricing or missed items on projects.​</p>",
-            "content_2": "<p>Link estimates directly with schedules and BIM to see cost, time and carbon impacts together, helping contractors manage change, protect margin and evidence decisions to Tier 1 clients and funders.</p>",
-            "content_3": "",
-            "content_4": "",
-            "content_5": "",
-            "content_6": ""
-          }
-        },
-        "accordion_item_htnMQm": {
-          "type": "accordion_item",
-          "settings": {
-            "title": "Subcontractors",
-            "content_1": "<p>Enable repeatable, fast estimating for frequent tenders, with reusable templates and libraries that suit specialist trades such as steel, concrete and MEP.​</p>",
-            "content_2": "<p>Provide clear, structured breakdowns of cost, time and carbon that make it easier to respond to multiple main contractors on the same project while demonstrating professionalism and transparency.</p>",
-            "content_3": "",
-            "content_4": "",
-            "content_5": "",
-            "content_6": ""
-          }
-        },
-        "accordion_item_EDULcY": {
-          "type": "accordion_item",
-          "settings": {
-            "title": "Designers and Consultants",
-            "content_1": "<p>Model-based quantity take-offs and linked cost plans, creating a robust basis for early-stage option studies and value engineering.​</p>",
-            "content_2": "<p>Transparent carbon and cost metrics that help advisors test scenarios, support planning submissions and meet emerging sustainability and reporting standards.</p>",
-            "content_3": "",
-            "content_4": "",
-            "content_5": "",
-            "content_6": ""
-          }
-        },
-        "accordion_item_TaQTDx": {
-          "type": "accordion_item",
-          "settings": {
-            "title": "Residential Construction",
-            "content_1": "<p>A consistent way to price standard house types, phases and options using reusable cost structures and assemblies.​</p>",
-            "content_2": "<p>Produce detailed cost and carbon breakdowns that support internal approvals, sales pricing, and compliance requirements such as those linked to the Building Safety Act.</p>",
-            "content_3": "",
-            "content_4": "",
-            "content_5": "",
-            "content_6": ""
-          }
-        },
-        "accordion_item_UPkC8E": {
-          "type": "accordion_item",
-          "settings": {
-            "title": "Clients and Asset Owners",
-            "content_1": "<p>Standardised reports that show cost, time and carbon in a format that is easy to review across multiple projects and suppliers.​</p>",
-            "content_2": "<p>Enable better decision-making by making the impact of design changes and phasing visible early, supporting more reliable budgets, programmes and sustainability targets over the asset lifecycle.</p>",
-            "content_3": "",
-            "content_4": "",
-            "content_5": "",
-            "content_6": ""
-          }
-        }
-      },
-      "block_order": [
-        "accordion_item_AX7zXQ",
-        "accordion_item_htnMQm",
-        "accordion_item_EDULcY",
-        "accordion_item_TaQTDx",
-        "accordion_item_UPkC8E"
-      ],
-      "name": "Two-Column Accordion",
-      "settings": {
-        "heading": "Better project outcomes for every team",
-        "heading_size": "h1",
-        "anchor_id": "capabilities",
-        "padding_top": 72,
-        "padding_bottom": 60
       }
     },
     "parallel_custom_product_list_M7EFHt": {
@@ -1266,10 +1265,10 @@
     "main_product_custom_YCicNt",
     "parallel_custom_product_info_i3cpfR",
     "multicolumn_nLzjxb",
+    "parallel_two_column_accordion_xi4PpU",
     "parallel_award_banner_C3twkW",
     "parallel_logo_block_hHLWpL",
     "parallel_highlights_yTAfJh",
-    "parallel_two_column_accordion_xi4PpU",
     "parallel_custom_product_list_M7EFHt",
     "parallel_logo_block_Kyk8RD",
     "parallel_testimonials_6ayBHg",
