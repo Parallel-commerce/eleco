@@ -1195,6 +1195,7 @@
               {%- endif -%}
               {%- if section.settings.right_link_label_2 != blank -%}
                 {%- if section.settings.right_link_embed_2 != blank
+                  or section.settings.right_link_embed_code_2 != blank
                   or section.settings.right_link_url_2 != blank
                 -%}
                   <modal-opener data-modal="#EmbedModal-Contact-{{ section.id }}">
@@ -1232,7 +1233,10 @@
     {% render 'product-media-modal', variant_images: variant_images %}
 
     {%- if section.settings.right_link_label_2 != blank -%}
-      {%- if section.settings.right_link_embed_2 != blank or section.settings.right_link_url_2 != blank -%}
+      {%- if section.settings.right_link_embed_2 != blank
+        or section.settings.right_link_embed_code_2 != blank
+        or section.settings.right_link_url_2 != blank
+      -%}
         <modal-dialog
           id="EmbedModal-Contact-{{ section.id }}"
           class="product-popup-modal main-product-custom__embed-modal"
@@ -1252,10 +1256,16 @@
             >
               {{- 'icon-close.svg' | inline_asset_content -}}
             </button>
-            {%- if section.settings.right_link_embed_2 != blank -%}
+            {%- if section.settings.right_link_embed_code_2 != blank -%}
               <div class="main-product-custom__embed-body">
-                {{ section.settings.right_link_embed_2 }}
+                {{ section.settings.right_link_embed_code_2 }}
               </div>
+            {%- elsif section.settings.right_link_embed_2 != blank -%}
+              <iframe
+                src="{{ section.settings.right_link_embed_2 }}"
+                class="main-product-custom__embed-iframe"
+                title="{{ section.settings.right_link_label_2 | escape }}"
+              ></iframe>
             {%- else -%}
               <iframe
                 src="{{ section.settings.right_link_url_2 }}"
@@ -2817,15 +2827,21 @@
     },
     {
       "type": "url",
-      "id": "right_link_url_2",
-      "label": "Link 2 URL",
-      "info": "Opens in a popup as an iframe when embed code is empty."
+      "id": "right_link_embed_2",
+      "label": "Embed URL",
+      "info": "Opens Contact sales in a popup with this page embedded."
     },
     {
-      "type": "liquid",
-      "id": "right_link_embed_2",
-      "label": "Link 2 embed",
-      "info": "Paste embed code (iframe, form embed, etc.). When filled, Contact sales opens this in a popup instead of using the URL."
+      "type": "textarea",
+      "id": "right_link_embed_code_2",
+      "label": "Embed code",
+      "info": "Optional. Paste iframe or form embed HTML. Used instead of Embed URL when filled."
+    },
+    {
+      "type": "url",
+      "id": "right_link_url_2",
+      "label": "Link 2 URL",
+      "info": "Used as a fallback embed if Embed URL and Embed code are empty."
     },
     {
       "type": "checkbox",
