@@ -153,6 +153,41 @@
       text-underline-offset: 0.18rem;
     }
 
+    .section-{{ section.id }}-padding button.main-product-custom__link {
+      background: none;
+      border: none;
+      padding: 0;
+      font-family: inherit;
+      cursor: pointer;
+      text-align: inherit;
+      text-decoration: underline;
+    }
+
+    .main-product-custom__embed-modal .product-popup-modal__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .main-product-custom__embed-body {
+      flex: 1;
+      min-height: 50vh;
+      overflow: auto;
+      width: 100%;
+      padding-right: 4.4rem;
+    }
+
+    .main-product-custom__embed-iframe,
+    .main-product-custom__embed-body iframe {
+      flex: 1;
+      width: 100%;
+      min-height: 50vh;
+      border: none;
+    }
+
+    .section-{{ section.id }}-padding .main-product-custom__links modal-opener {
+      display: block;
+    }
+
     .section-{{ section.id }}-padding .main-product-custom__links > :nth-child(2) {
       justify-self: end;
       text-align: right;
@@ -1159,16 +1194,24 @@
                 <span></span>
               {%- endif -%}
               {%- if section.settings.right_link_label_2 != blank -%}
-                <a
-                  class="main-product-custom__link"
-                  href="{{ section.settings.right_link_url_2 | default: '#' }}"
-                  {% if section.settings.right_link_new_tab_2 %}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  {% endif %}
-                >
-                  {{ section.settings.right_link_label_2 | escape }}
-                </a>
+                {%- if section.settings.right_link_embed_2 != blank
+                  or section.settings.right_link_embed_code_2 != blank
+                  or section.settings.right_link_url_2 != blank
+                -%}
+                  <modal-opener data-modal="#EmbedModal-Contact-{{ section.id }}">
+                    <button
+                      type="button"
+                      class="main-product-custom__link"
+                      aria-haspopup="dialog"
+                    >
+                      {{ section.settings.right_link_label_2 | escape }}
+                    </button>
+                  </modal-opener>
+                {%- else -%}
+                  <span class="main-product-custom__link">
+                    {{ section.settings.right_link_label_2 | escape }}
+                  </span>
+                {%- endif -%}
               {%- else -%}
                 <span></span>
               {%- endif -%}
@@ -1188,6 +1231,52 @@
     </div>
 
     {% render 'product-media-modal', variant_images: variant_images %}
+
+    {%- if section.settings.right_link_label_2 != blank -%}
+      {%- if section.settings.right_link_embed_2 != blank
+        or section.settings.right_link_embed_code_2 != blank
+        or section.settings.right_link_url_2 != blank
+      -%}
+        <modal-dialog
+          id="EmbedModal-Contact-{{ section.id }}"
+          class="product-popup-modal main-product-custom__embed-modal"
+        >
+          <div
+            role="dialog"
+            aria-label="{{ section.settings.right_link_label_2 | escape }}"
+            aria-modal="true"
+            class="product-popup-modal__content"
+            tabindex="-1"
+          >
+            <button
+              id="ModalClose-EmbedContact-{{ section.id }}"
+              type="button"
+              class="product-popup-modal__toggle"
+              aria-label="{{ 'accessibility.close' | t }}"
+            >
+              {{- 'icon-close.svg' | inline_asset_content -}}
+            </button>
+            {%- if section.settings.right_link_embed_code_2 != blank -%}
+              <div class="main-product-custom__embed-body">
+                {{ section.settings.right_link_embed_code_2 }}
+              </div>
+            {%- elsif section.settings.right_link_embed_2 != blank -%}
+              <iframe
+                src="{{ section.settings.right_link_embed_2 }}"
+                class="main-product-custom__embed-iframe"
+                title="{{ section.settings.right_link_label_2 | escape }}"
+              ></iframe>
+            {%- else -%}
+              <iframe
+                src="{{ section.settings.right_link_url_2 }}"
+                class="main-product-custom__embed-iframe"
+                title="{{ section.settings.right_link_label_2 | escape }}"
+              ></iframe>
+            {%- endif -%}
+          </div>
+        </modal-dialog>
+      {%- endif -%}
+    {%- endif -%}
 
     {% assign popups = section.blocks | where: 'type', 'popup' %}
     {%- for block in popups -%}
@@ -2707,7 +2796,8 @@
     {
       "type": "color_scheme",
       "id": "right_color_scheme",
-      "label": "Color scheme"
+      "label": "Color scheme",
+      "default": "scheme-1"
     },
     {
       "type": "header",
@@ -2738,8 +2828,21 @@
     },
     {
       "type": "url",
+      "id": "right_link_embed_2",
+      "label": "Embed URL",
+      "info": "Opens Contact sales in a popup with this page embedded."
+    },
+    {
+      "type": "textarea",
+      "id": "right_link_embed_code_2",
+      "label": "Embed code",
+      "info": "Optional. Paste iframe or form embed HTML. Used instead of Embed URL when filled."
+    },
+    {
+      "type": "url",
       "id": "right_link_url_2",
-      "label": "Link 2 URL"
+      "label": "Link 2 URL",
+      "info": "Used as a fallback embed if Embed URL and Embed code are empty."
     },
     {
       "type": "checkbox",
