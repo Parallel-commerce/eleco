@@ -52,7 +52,7 @@
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": false,
-            "show_gift_card_recipient": true
+            "show_gift_card_recipient": false
           }
         }
       },
@@ -89,6 +89,8 @@
         "right_link_url_1": "https://shop.elecosoft.com/products/asta-powerproject-uk#trial",
         "right_link_new_tab_1": false,
         "right_link_label_2": "Contact sales",
+        "right_link_embed_2": "",
+        "right_link_embed_code_2": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/bny88gg9efgeb2bfvrmtaw.html?PageId=f23c7606bd01f11184076045bd131303",
         "right_link_url_2": "https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/bny88gg9efgeb2bfvrmtaw.html?PageId=f23c7606bd01f11184076045bd131303",
         "right_link_new_tab_2": false,
         "show_right_price_period": false,
