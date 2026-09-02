@@ -188,7 +188,7 @@
         "text_A4VRBK": {
           "type": "text",
           "settings": {
-            "text": "1 Concurrent licence  • Windows PC • Billed annually",
+            "text": "1 Concurrent licence  • Windows PC • Billed annually • VAT included",
             "text_style": "body"
           }
         },
@@ -455,7 +455,7 @@
         "heading_size": "h1",
         "anchor_id": "capabilities",
         "padding_top": 72,
-        "padding_bottom": 60
+        "padding_bottom": 80
       }
     },
     "parallel_award_banner_C3twkW": {
@@ -518,92 +518,6 @@
         "anchor_id": "",
         "icon_size": 100,
         "hide_logos_mobile": true
-      }
-    },
-    "parallel_logo_block_hHLWpL": {
-      "type": "parallel-logo-block",
-      "blocks": {
-        "logo_PRBypU": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/AEstimate_skanska-logo-new.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_LiNF9m": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/AEstimate_clarkson-alliance-logo-new.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_XeHnR7": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/bam-logo-new.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_WNf64B": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/mccarthy-stone-logo-new.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_hWRjrM": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/AEstimate_-_mcclaren-property-logo-new.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        },
-        "logo_itwWmj": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/AEstimate_willmot-dixon-logo-new.svg",
-            "alt_text": "Logo",
-            "link": "",
-            "link_target_blank": false
-          }
-        }
-      },
-      "block_order": [
-        "logo_PRBypU",
-        "logo_LiNF9m",
-        "logo_XeHnR7",
-        "logo_WNf64B",
-        "logo_hWRjrM",
-        "logo_itwWmj"
-      ],
-      "name": "Logo Block",
-      "settings": {
-        "color_scheme": "scheme-1",
-        "title": "Asta is trusted by",
-        "heading_size": "h1",
-        "title_alignment": "left",
-        "title_spacing": 24,
-        "block_alignment": "center",
-        "logo_width": 150,
-        "logo_spacing": 40,
-        "logo_opacity": 100,
-        "logo_hover_opacity": 100,
-        "mobile_columns": "2",
-        "mobile_autoplay": true,
-        "mobile_autoplay_speed": 4,
-        "anchor_id": "",
-        "padding_top": 72,
-        "padding_bottom": 40
       }
     },
     "parallel_highlights_yTAfJh": {
@@ -771,6 +685,92 @@
         "anchor_id": "reviews",
         "padding_top": 52,
         "padding_bottom": 36
+      }
+    },
+    "parallel_logo_block_hHLWpL": {
+      "type": "parallel-logo-block",
+      "blocks": {
+        "logo_PRBypU": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/AEstimate_skanska-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_LiNF9m": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/AEstimate_clarkson-alliance-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_XeHnR7": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/bam-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_WNf64B": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/mccarthy-stone-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_hWRjrM": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/AEstimate_-_mcclaren-property-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        },
+        "logo_itwWmj": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/AEstimate_willmot-dixon-logo-new.svg",
+            "alt_text": "Logo",
+            "link": "",
+            "link_target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "logo_PRBypU",
+        "logo_LiNF9m",
+        "logo_XeHnR7",
+        "logo_WNf64B",
+        "logo_hWRjrM",
+        "logo_itwWmj"
+      ],
+      "name": "Logo Block",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "title": "",
+        "heading_size": "h1",
+        "title_alignment": "left",
+        "title_spacing": 24,
+        "block_alignment": "center",
+        "logo_width": 150,
+        "logo_spacing": 40,
+        "logo_opacity": 100,
+        "logo_hover_opacity": 100,
+        "mobile_columns": "2",
+        "mobile_autoplay": true,
+        "mobile_autoplay_speed": 4,
+        "anchor_id": "",
+        "padding_top": 20,
+        "padding_bottom": 40
       }
     },
     "parallel_image_with_features_hVbtUt": {
@@ -1267,11 +1267,11 @@
     "multicolumn_nLzjxb",
     "parallel_two_column_accordion_xi4PpU",
     "parallel_award_banner_C3twkW",
-    "parallel_logo_block_hHLWpL",
     "parallel_highlights_yTAfJh",
     "parallel_custom_product_list_M7EFHt",
     "parallel_logo_block_Kyk8RD",
     "parallel_testimonials_6ayBHg",
+    "parallel_logo_block_hHLWpL",
     "parallel_image_with_features_hVbtUt",
     "parallel_image_with_features_pYtxX7",
     "parallel_image_with_features_UVMBrD",
