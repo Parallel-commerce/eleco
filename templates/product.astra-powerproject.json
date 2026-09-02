@@ -1380,7 +1380,7 @@
           "settings": {
             "market_identifier": "",
             "country_code": "",
-            "is_fallback": true,
+            "is_fallback": false,
             "embed_code": "<script type=\"text/javascript\">var loc = \"https://analytics-eu.clickdimensions.com/elecosoftcom-adeay/pages/\";var cdSurveyCdn = \"https://cdn-eu.clickdimensions.com/web/newformeditor/\";</script>\n<script type=\"text/javascript\" src=\"https://cdn-eu.clickdimensions.com/web/newformeditor/CDWidget.js\"></script>\n<div pageid=\"suogdrytefgdqnztjwvsuq\"></div>"
           }
         },
@@ -1409,7 +1409,7 @@
           "settings": {
             "market_identifier": "United States",
             "country_code": "us, ca, mx",
-            "is_fallback": false,
+            "is_fallback": true,
             "embed_code": "<script src=\"https://js.hsforms.net/forms/embed/23774208.js\" defer></script>\n<div class=\"hs-form-frame\" data-region=\"na1\" data-form-id=\"d02192f6-5226-41f1-af02-2abdedbdf035\" data-portal-id=\"23774208\"></div>"
           }
         }
