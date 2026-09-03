@@ -247,7 +247,7 @@
       "name": "Logo Block",
       "settings": {
         "color_scheme": "",
-        "title": "Trusted by",
+        "title": "Trusted by teams at",
         "heading_size": "h1",
         "title_alignment": "left",
         "title_spacing": 28,
@@ -261,7 +261,83 @@
         "mobile_autoplay_speed": 4,
         "anchor_id": "",
         "padding_top": 72,
-        "padding_bottom": 40
+        "padding_bottom": 80
+      }
+    },
+    "parallel_custom_product_list_M7EFHt": {
+      "type": "parallel-custom-product-list",
+      "blocks": {
+        "product_9Fqg3n": {
+          "type": "product",
+          "settings": {
+            "product": "asta-vision"
+          }
+        },
+        "product_aeUw4W": {
+          "type": "product",
+          "settings": {
+            "product": "asta-siteprogress"
+          }
+        },
+        "product_w7pAX3": {
+          "type": "product",
+          "settings": {
+            "product": "asta-estimate"
+          }
+        },
+        "product_W6X3YF": {
+          "type": "product",
+          "settings": {
+            "product": "asta-powerproject-4d"
+          }
+        },
+        "product_3Mi7Bg": {
+          "type": "product",
+          "settings": {
+            "product": "asta-vision-live"
+          }
+        },
+        "product_Hi9e7N": {
+          "type": "product",
+          "settings": {
+            "product": "asta-enterprise"
+          }
+        },
+        "product_dMQG99": {
+          "type": "product",
+          "settings": {
+            "product": "business-intelligence"
+          }
+        },
+        "product_TQGH9D": {
+          "type": "product",
+          "settings": {
+            "product": "project-viewer"
+          }
+        }
+      },
+      "block_order": [
+        "product_9Fqg3n",
+        "product_aeUw4W",
+        "product_w7pAX3",
+        "product_W6X3YF",
+        "product_3Mi7Bg",
+        "product_Hi9e7N",
+        "product_dMQG99",
+        "product_TQGH9D"
+      ],
+      "name": "Custom Product List",
+      "settings": {
+        "heading": "Asta Integrations",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "button_text": "Learn more",
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-3",
+        "anchor_id": "integrations",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "parallel_faq_accordion_3Vq7Fm": {
@@ -987,83 +1063,6 @@
         "padding_bottom": 36
       }
     },
-    "parallel_custom_product_list_M7EFHt": {
-      "type": "parallel-custom-product-list",
-      "blocks": {
-        "product_9Fqg3n": {
-          "type": "product",
-          "settings": {
-            "product": "asta-vision"
-          }
-        },
-        "product_aeUw4W": {
-          "type": "product",
-          "settings": {
-            "product": "asta-siteprogress"
-          }
-        },
-        "product_w7pAX3": {
-          "type": "product",
-          "settings": {
-            "product": "asta-estimate"
-          }
-        },
-        "product_W6X3YF": {
-          "type": "product",
-          "settings": {
-            "product": "asta-powerproject-4d"
-          }
-        },
-        "product_3Mi7Bg": {
-          "type": "product",
-          "settings": {
-            "product": "asta-vision-live"
-          }
-        },
-        "product_Hi9e7N": {
-          "type": "product",
-          "settings": {
-            "product": "asta-enterprise"
-          }
-        },
-        "product_dMQG99": {
-          "type": "product",
-          "settings": {
-            "product": "business-intelligence"
-          }
-        },
-        "product_TQGH9D": {
-          "type": "product",
-          "settings": {
-            "product": "project-viewer"
-          }
-        }
-      },
-      "block_order": [
-        "product_9Fqg3n",
-        "product_aeUw4W",
-        "product_w7pAX3",
-        "product_W6X3YF",
-        "product_3Mi7Bg",
-        "product_Hi9e7N",
-        "product_dMQG99",
-        "product_TQGH9D"
-      ],
-      "disabled": true,
-      "name": "Custom Product List",
-      "settings": {
-        "heading": "Asta Integrations",
-        "heading_size": "h2",
-        "heading_alignment": "left",
-        "button_text": "Learn more",
-        "columns_desktop": 3,
-        "columns_mobile": "2",
-        "color_scheme": "scheme-2",
-        "anchor_id": "integrations",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "parallel_comparison_table_eeJhkm": {
       "type": "parallel-comparison-table",
       "blocks": {
@@ -1425,6 +1424,7 @@
     "main_product_custom_F9wTnY",
     "multicolumn_GRCHXY",
     "parallel_logo_block_hHLWpL",
+    "parallel_custom_product_list_M7EFHt",
     "parallel_faq_accordion_3Vq7Fm",
     "main",
     "related-products",
@@ -1436,7 +1436,6 @@
     "parallel_two_column_accordion_xi4PpU",
     "parallel_testimonials_6ayBHg",
     "parallel_video_three_column_BTPQnC",
-    "parallel_custom_product_list_M7EFHt",
     "parallel_comparison_table_eeJhkm",
     "parallel_support_cta_RxfB67",
     "parallel_market_embed_gGAwgk",
