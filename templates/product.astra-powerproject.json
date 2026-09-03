@@ -1058,7 +1058,7 @@
           "type": "faq_item",
           "settings": {
             "question": "Can a single licence be transferred to another colleague or device?",
-            "answer": "<p>Yes. Users can follow the steps within the software to move a licence between a device. If you need to cancel a licence off a device for which you no longer have access, our support team can do this remotely; contact us at support@eleco.com.</p>"
+            "answer": "<p>Yes. Users can follow the steps within the software to move a licence between a device. If you need to cancel a licence off a device for which you no longer have access, our support team can do this remotely; contact us at <a href=\"mailto:supportusa@elecosoft.com\" target=\"_blank\" title=\"mailto:supportusa@elecosoft.com\">supportusa@elecosoft.com.</a></p>"
           }
         },
         "faq_item_FbD6cb": {
