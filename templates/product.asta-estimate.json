@@ -188,7 +188,7 @@
         "text_A4VRBK": {
           "type": "text",
           "settings": {
-            "text": "1 Concurrent licence  • Windows PC • Billed annually • VAT included",
+            "text": "1 user per licence  • Windows PC • Billed annually • VAT included",
             "text_style": "body"
           }
         },
@@ -1152,6 +1152,7 @@
       "blocks": {
         "resource_link_kEdPjk": {
           "type": "resource_link",
+          "disabled": true,
           "settings": {
             "label": "Support portal",
             "link": "https://www.elecosoft.se/customer-pages/"
@@ -1159,6 +1160,7 @@
         },
         "resource_link_wTwLVG": {
           "type": "resource_link",
+          "disabled": true,
           "settings": {
             "label": "Troubleshooting",
             "link": "https://elecosoft.com/documentation/asta-estimate/troubleshooting/"
@@ -1166,6 +1168,7 @@
         },
         "resource_link_y8bPwx": {
           "type": "resource_link",
+          "disabled": true,
           "settings": {
             "label": "System requirements",
             "link": "https://elecosoft.com/documentation/asta-estimate/system-requirements/"
@@ -1173,6 +1176,7 @@
         },
         "resource_link_VzrFGt": {
           "type": "resource_link",
+          "disabled": true,
           "settings": {
             "label": "View all resources",
             "link": "https://elecosoft.com/products/asta-estimate/learn-support/"
@@ -1189,11 +1193,11 @@
       "settings": {
         "heading": "Learn & Support",
         "description": "Our support services are complemented by our wide range of web-based tutorials, release notes, classroom and online training to ensure you get the most from your software.",
-        "primary_button_label": "",
-        "primary_button_link": "https://elecosoft.com/products/asta-estimate/learn-support/",
-        "primary_button_background": "#e83f40",
-        "primary_button_background_hover": "#d04a35",
-        "primary_button_text": "#ffffff",
+        "primary_button_label": "Add enhanced support to cart",
+        "primary_button_link": "shopify://products/asta-enhanced-support",
+        "primary_button_background": "#E75742",
+        "primary_button_background_hover": "#E75742",
+        "primary_button_text": "#FFFFFF",
         "secondary_button_label": "",
         "product": "",
         "secondary_button_link": "",
