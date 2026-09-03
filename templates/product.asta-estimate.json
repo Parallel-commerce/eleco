@@ -328,7 +328,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Asta_Estimate_overview_2_4bacb07c-dc3b-4732-a236-37f2cb34aa29.png",
-            "title": "Asta Powerproject 4D Intergration",
+            "title": "Asta Powerproject 4D Integration",
             "text": "<p>Asta Estimate links directly with schedules and BIM to see your project's cost, time and carbon impact together.</p>",
             "link_label": "",
             "link": ""
