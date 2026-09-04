@@ -190,11 +190,11 @@
       {%- if section.blocks.size > 0 -%}
         {%- if section.blocks.size > 6 -%}
           {%- assign first_col_count = section.blocks.size | plus: 1 | divided_by: 2 -%}
-          <div class="faq-accordion-{{ section.id }}__list faq-accordion-{{ section.id }}__list--two-columns">
+          <faq-accordion class="faq-accordion-{{ section.id }}__list faq-accordion-{{ section.id }}__list--two-columns">
             <div class="faq-accordion-{{ section.id }}__column">
               {%- for block in section.blocks limit: first_col_count -%}
                 <div class="faq-accordion-{{ section.id }}__item" {{ block.shopify_attributes }}>
-                  <details id="Details-{{ block.id }}-{{ section.id }}">
+                  <details id="Details-{{ block.id }}-{{ section.id }}" name="faq-accordion-{{ section.id }}">
                     <summary id="Summary-{{ block.id }}-{{ section.id }}">
                       <h3 class="faq-accordion-{{ section.id }}__question">
                         {{ block.settings.question | escape }}
@@ -229,7 +229,7 @@
             <div class="faq-accordion-{{ section.id }}__column">
               {%- for block in section.blocks offset: first_col_count -%}
                 <div class="faq-accordion-{{ section.id }}__item" {{ block.shopify_attributes }}>
-                  <details id="Details-{{ block.id }}-{{ section.id }}">
+                  <details id="Details-{{ block.id }}-{{ section.id }}" name="faq-accordion-{{ section.id }}">
                     <summary id="Summary-{{ block.id }}-{{ section.id }}">
                       <h3 class="faq-accordion-{{ section.id }}__question">
                         {{ block.settings.question | escape }}
@@ -261,12 +261,12 @@
                 </div>
               {%- endfor -%}
             </div>
-          </div>
+          </faq-accordion>
         {%- else -%}
-          <div class="faq-accordion-{{ section.id }}__list">
+          <faq-accordion class="faq-accordion-{{ section.id }}__list">
             {%- for block in section.blocks -%}
               <div class="faq-accordion-{{ section.id }}__item" {{ block.shopify_attributes }}>
-                <details id="Details-{{ block.id }}-{{ section.id }}">
+                <details id="Details-{{ block.id }}-{{ section.id }}" name="faq-accordion-{{ section.id }}">
                   <summary id="Summary-{{ block.id }}-{{ section.id }}">
                     <h3 class="faq-accordion-{{ section.id }}__question">
                       {{ block.settings.question | escape }}
@@ -297,12 +297,39 @@
                 </details>
               </div>
             {%- endfor -%}
-          </div>
+          </faq-accordion>
         {%- endif -%}
       {%- endif -%}
     </div>
   </div>
 </div>
+
+{% javascript %}
+  if (!customElements.get('faq-accordion')) {
+    customElements.define(
+      'faq-accordion',
+      class FaqAccordion extends HTMLElement {
+        constructor() {
+          super();
+          this.addEventListener('click', this.onClick.bind(this));
+        }
+
+        onClick(event) {
+          const summary = event.target.closest('summary');
+          if (!summary || !this.contains(summary)) return;
+
+          const details = summary.closest('details');
+          if (!(details instanceof HTMLDetailsElement) || !this.contains(details)) return;
+          if (details.open) return;
+
+          this.querySelectorAll('details[open]').forEach((openDetails) => {
+            if (openDetails !== details) openDetails.removeAttribute('open');
+          });
+        }
+      }
+    );
+  }
+{% endjavascript %}
 
 {% schema %}
 {

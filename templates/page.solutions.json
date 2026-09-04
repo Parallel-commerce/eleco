@@ -60,22 +60,22 @@
       }
     },
     "collection_list_YAecfn": {
-      "type": "collection-list",
+      "type": "parallel-collection-list",
       "blocks": {
         "featured_collection_GYTrgR": {
-          "type": "featured_collection",
+          "type": "collection",
           "settings": {
             "collection": "construction"
           }
         },
         "featured_collection_fEn3FG": {
-          "type": "featured_collection",
+          "type": "collection",
           "settings": {
             "collection": ""
           }
         },
         "featured_collection_x3WTXh": {
-          "type": "featured_collection",
+          "type": "collection",
           "settings": {
             "collection": ""
           }
@@ -86,16 +86,15 @@
         "featured_collection_fEn3FG",
         "featured_collection_x3WTXh"
       ],
-      "name": "t:sections.collection-list.presets.name",
+      "name": "Collection list",
       "settings": {
         "title": "Solutions",
+        "subtitle": "",
         "heading_size": "h1",
-        "image_ratio": "adapt",
         "columns_desktop": 3,
-        "color_scheme": "",
-        "show_view_all": false,
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
