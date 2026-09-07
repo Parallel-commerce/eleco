@@ -753,6 +753,7 @@
         "logo_hWRjrM",
         "logo_itwWmj"
       ],
+      "disabled": true,
       "name": "Logo Block",
       "settings": {
         "color_scheme": "scheme-1",
