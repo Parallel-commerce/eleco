@@ -47,6 +47,7 @@
         "video_item_FBApFg",
         "video_item_44Wfam"
       ],
+      "disabled": true,
       "name": "Three Column Video",
       "settings": {
         "heading": "Video Gallery",

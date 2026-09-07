@@ -9,12 +9,51 @@
  */
 {
   "sections": {
+    "image_with_text_wNpgxd": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_dbExbw": {
+          "type": "heading",
+          "settings": {
+            "heading": "Asta Solutions",
+            "heading_size": "h1"
+          }
+        },
+        "text_dDPd38": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/>Asta is a suite of solutions  in the area of project planning and scheduling with a variety of software solutions that can tackle different problems that are familiar to the construction industry.<br/><br/></p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dbExbw",
+        "text_dDPd38"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Easyplan_80721e38-dafc-413e-96e5-ca480304c26e.svg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-3",
+        "color_scheme": "scheme-3",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
         "collection": "all-products",
         "products_to_show": 12,
-        "title": "Software & Training",
+        "title": "Asta Software & Training",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -33,12 +72,57 @@
         "quick_add": "standard",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 28,
+        "padding_top": 56,
         "padding_bottom": 36
+      }
+    },
+    "rich_text_rgzzMj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_zkajxm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_p8fndG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Asta is a suite of solutions  in the area of project planning and scheduling with a variety of software solutions that can tackle different problems that are familiar to the construction industry.</p>"
+          }
+        },
+        "button_QwBK3y": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_zkajxm",
+        "text_p8fndG",
+        "button_QwBK3y"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
-    "featured_collection"
+    "image_with_text_wNpgxd",
+    "featured_collection",
+    "rich_text_rgzzMj"
   ]
 }
