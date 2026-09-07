@@ -33,7 +33,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Easyplan_80721e38-dafc-413e-96e5-ca480304c26e.svg",
+        "image": "shopify://shop_images/Asta_Solutions.svg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
