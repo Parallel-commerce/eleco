@@ -33,7 +33,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Asta_Solutions.svg",
+        "image": "shopify://shop_images/Asta-UK.svg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -44,8 +44,8 @@
         "mobile_content_alignment": "left",
         "section_color_scheme": "scheme-3",
         "color_scheme": "scheme-3",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 56,
+        "padding_bottom": 52
       }
     },
     "featured_collection": {
