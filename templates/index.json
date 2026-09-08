@@ -228,6 +228,37 @@
         "padding_bottom": 52
       }
     },
+    "rich_text_GhBYwN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ER6Bii": {
+          "type": "heading",
+          "settings": {
+            "heading": "Start here",
+            "heading_size": "h1"
+          }
+        },
+        "text_rRnjQz": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_ER6Bii",
+        "text_rRnjQz"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 56,
+        "padding_bottom": 12
+      }
+    },
     "multirow_y7kNkQ": {
       "type": "multirow",
       "blocks": {
@@ -238,7 +269,7 @@
             "caption": "",
             "heading": "Asta Powerproject",
             "text": "<p>Start with our award-winning project planning and scheduling software.</p>",
-            "button_label": "Learn more",
+            "button_label": "View software",
             "button_link": "shopify://products/asta-powerproject-uk"
           }
         },
@@ -249,14 +280,26 @@
             "caption": "",
             "heading": "EasyPlan",
             "text": "<p>A lean version of our award-winning project planning and scheduling software, with a maximum 250 tasks per project.</p>",
-            "button_label": "Learn more",
+            "button_label": "View software",
             "button_link": "shopify://products/easyplan"
+          }
+        },
+        "row_rRkhnd": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Asta_estimate_Overview_banner.png",
+            "caption": "",
+            "heading": "Asta Estimate",
+            "text": "<p>Reduce project risk and win more tenders with up-to-date UK cost databases, 4D integration, and carbon reporting. </p>",
+            "button_label": "View software",
+            "button_link": "shopify://products/asta-estimate"
           }
         }
       },
       "block_order": [
         "row_UrQ3eF",
-        "row_jEzkLt"
+        "row_jEzkLt",
+        "row_rRkhnd"
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
@@ -271,7 +314,7 @@
         "mobile_content_alignment": "left",
         "section_color_scheme": "",
         "row_color_scheme": "scheme-1",
-        "padding_top": 36,
+        "padding_top": 8,
         "padding_bottom": 36
       }
     },
@@ -301,6 +344,7 @@
     "featured_collection",
     "rich_text_rgzzMj",
     "image_with_text_A4BbM4",
+    "rich_text_GhBYwN",
     "multirow_y7kNkQ",
     "video_eB7J4a"
   ]
