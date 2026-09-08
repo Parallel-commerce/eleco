@@ -354,7 +354,7 @@
       "custom_css": [],
       "name": "t:sections.video.presets.name",
       "settings": {
-        "heading": "Get started with Asta Powerproject",
+        "heading": "Get started with Asta",
         "heading_size": "h1",
         "enable_video_looping": false,
         "video": "shopify://files/videos/Asta Suite Overview.mp4",
