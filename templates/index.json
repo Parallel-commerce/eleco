@@ -419,7 +419,7 @@
           "type": "faq_item",
           "settings": {
             "question": "Who is Asta Powerproject for?",
-            "answer": "<p>This is a sample answer to the first question.</p>"
+            "answer": "<p>Asta Powerproject is designed to scale. It’s used by smaller independent contractors as well as large £1B enterprises and it’s also widely adopted across industries beyond construction for effective project planning and management.</p>"
           }
         },
         "faq_item_w7hk4V": {
@@ -436,6 +436,13 @@
             "answer": "<p>Find comfort knowing you will be looked after every step of the way.</p><p>You will receive access to our trained product specialists (Office hours are <strong>9am to 5pm, Monday to Thursday, 9am to 4:30pm on Friday, UK time</strong>) including technical, installation and activation support in needed.</p><p>We constantly tailor our approach to support you and your business with a 99% ticket resolution within <strong>8 working</strong> hours.</p>"
           }
         },
+        "faq_item_9q46nV": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What size and types of projects work best with Asta Powerproject?",
+            "answer": "<p>Asta Powerproject suits everything from small works (extensions, fit‑outs, minor civils) to major megaprojects (landmark buildings, airports, highways), and scales from small contractors to large enterprises.</p><p>It works best on construction, infrastructure, and industrial projects that need logic‑driven CPM schedules, clear critical path and float analysis, and professional, phase‑by‑phase bar chart presentations for clients, planners, and dispute resolution.</p>"
+          }
+        },
         "faq_item_73pCre": {
           "type": "faq_item",
           "settings": {
@@ -448,6 +455,7 @@
         "faq_item_CWkwHy",
         "faq_item_w7hk4V",
         "faq_item_aWEPnA",
+        "faq_item_9q46nV",
         "faq_item_73pCre"
       ],
       "name": "FAQ Accordion",
