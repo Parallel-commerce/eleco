@@ -55,7 +55,7 @@
         "collection": "discover-asta-software-solutions",
         "products_to_show": 4,
         "title": "Discover Asta Solutions",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
