@@ -354,8 +354,8 @@
       "custom_css": [],
       "name": "t:sections.video.presets.name",
       "settings": {
-        "heading": "",
-        "heading_size": "h2",
+        "heading": "Get started with Asta Powerproject",
+        "heading_size": "h1",
         "enable_video_looping": false,
         "video": "shopify://files/videos/Asta Suite Overview.mp4",
         "video_url": "",
@@ -363,7 +363,7 @@
         "description": "",
         "full_width": false,
         "color_scheme": "scheme-1",
-        "padding_top": 36,
+        "padding_top": 68,
         "padding_bottom": 36
       }
     },
@@ -411,6 +411,62 @@
         "padding_top": 0,
         "padding_bottom": 36
       }
+    },
+    "parallel_faq_accordion_ypPtXz": {
+      "type": "parallel-faq-accordion",
+      "blocks": {
+        "faq_item_CWkwHy": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Who is Asta Powerproject for?",
+            "answer": "<p>This is a sample answer to the first question.</p>"
+          }
+        },
+        "faq_item_w7hk4V": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How does Asta Estimate integrate with Asta Powerproject?",
+            "answer": "<p>Asta Estimate connects directly with Asta Powerproject so that cost and time share the same underlying data. This allows teams to align estimates with programmes, use model-based quantities in both tools, and maintain a single thread of information from tender through delivery.​</p>"
+          }
+        },
+        "faq_item_aWEPnA": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is the difference between a single and a concurrent license?",
+            "answer": "<p>This is a sample answer to the third question.</p>"
+          }
+        },
+        "faq_item_73pCre": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can stakeholders see my project if they don't have a license?",
+            "answer": "<p>If a stakeholder hasn't bought a licence but needs to view the project, they can download our Project Viewer.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_CWkwHy",
+        "faq_item_w7hk4V",
+        "faq_item_aWEPnA",
+        "faq_item_73pCre"
+      ],
+      "name": "FAQ Accordion",
+      "settings": {
+        "heading": "Questions? We have answers.",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_spacing": 40,
+        "item_gap": 12,
+        "item_padding": 18,
+        "border_radius": 12,
+        "question_font_size": 16,
+        "color_scheme": "",
+        "item_background": "#f6f7f7",
+        "item_background_active": "#fce8e6",
+        "anchor_id": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -424,6 +480,7 @@
     "rich_text_GhBYwN",
     "multirow_y7kNkQ",
     "video_eB7J4a",
-    "parallel_video_three_column_DpQMHj"
+    "parallel_video_three_column_DpQMHj",
+    "parallel_faq_accordion_ypPtXz"
   ]
 }
