@@ -278,6 +278,7 @@
         "heading_ER6Bii",
         "text_rRnjQz"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "left",
@@ -330,6 +331,7 @@
         "row_jEzkLt",
         "row_rRkhnd"
       ],
+      "disabled": true,
       "name": "t:sections.multirow.presets.name",
       "settings": {
         "image_height": "small",
@@ -360,8 +362,53 @@
         "cover_image": "shopify://shop_images/new_brand_Video_Thumbnails_2.png",
         "description": "",
         "full_width": false,
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-1",
         "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "parallel_video_three_column_DpQMHj": {
+      "type": "parallel-video-three-column",
+      "blocks": {
+        "video_item_tKGX9q": {
+          "type": "video_item",
+          "settings": {
+            "video": "shopify://files/videos/Asta Powerproject Overview.mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "video_item_TiTcgt": {
+          "type": "video_item",
+          "settings": {
+            "video": "shopify://files/videos/Asta Estimate Overview.mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "video_item_aHNBTz": {
+          "type": "video_item",
+          "settings": {
+            "video": "shopify://files/videos/Asta 4D Overview.mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_item_tKGX9q",
+        "video_item_TiTcgt",
+        "video_item_aHNBTz"
+      ],
+      "name": "Three Column Video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "full_width": false,
+        "color_scheme": "",
+        "anchor_id": "",
+        "padding_top": 0,
         "padding_bottom": 36
       }
     }
@@ -376,6 +423,7 @@
     "image_with_text_A4BbM4",
     "rich_text_GhBYwN",
     "multirow_y7kNkQ",
-    "video_eB7J4a"
+    "video_eB7J4a",
+    "parallel_video_three_column_DpQMHj"
   ]
 }
