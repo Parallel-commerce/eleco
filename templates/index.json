@@ -422,18 +422,25 @@
             "answer": "<p>Asta Powerproject is designed to scale. It’s used by smaller independent contractors as well as large £1B enterprises and it’s also widely adopted across industries beyond construction for effective project planning and management.</p>"
           }
         },
+        "faq_item_iEKinn": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Who is Easyplan for?",
+            "answer": "<p>Easyplan is designed for planners, project managers and site teams who need clear, practical schedules without the complexity of enterprise scheduling tools.</p><p>It suitable for simple projects or to breakdown work packages, where fast, reliable project plans that are easy to update and share are required.</p>"
+          }
+        },
+        "faq_item_EqgmB4": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Why choose Asta Powerproject over other scheduling tools?",
+            "answer": "<p>Asta Powerproject offers features unique to our user base, offering improved usability, more accurate scheduling and better analytics which are not available in other project management solutions. This helps you to predict, plan, and proactively avoid delays, giving greater certainty and smarter outcomes.</p><p>It is also consistently recognised for being user-friendly, efficient, and cost-effective.</p>"
+          }
+        },
         "faq_item_w7hk4V": {
           "type": "faq_item",
           "settings": {
             "question": "How does Asta Estimate integrate with Asta Powerproject?",
             "answer": "<p><a href=\"/products/asta-estimate\" title=\"Asta Estimate\">Asta Estimate</a> connects directly with Asta Powerproject so that cost and time share the same underlying data. This allows teams to align estimates with programmes, use model-based quantities in both tools, and maintain a single thread of information from tender through delivery.​</p>"
-          }
-        },
-        "faq_item_aWEPnA": {
-          "type": "faq_item",
-          "settings": {
-            "question": "What is included in the enhanced support upgrade?",
-            "answer": "<p>Find comfort knowing you will be looked after every step of the way.</p><p>You will receive access to our trained product specialists (Office hours are <strong>9am to 5pm, Monday to Thursday, 9am to 4:30pm on Friday, UK time</strong>) including technical, installation and activation support in needed.</p><p>We constantly tailor our approach to support you and your business with a 99% ticket resolution within <strong>8 working</strong> hours.</p>"
           }
         },
         "faq_item_9q46nV": {
@@ -449,14 +456,23 @@
             "question": "Can stakeholders see my project if they don't have a license?",
             "answer": "<p>If a stakeholder hasn't bought a licence but needs to view the project, they can download our Project Viewer.</p>"
           }
+        },
+        "faq_item_aWEPnA": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is included in the enhanced support upgrade?",
+            "answer": "<p>Find comfort knowing you will be looked after every step of the way.</p><p>You will receive access to our trained product specialists (Office hours are <strong>9am to 5pm, Monday to Thursday, 9am to 4:30pm on Friday, UK time</strong>) including technical, installation and activation support in needed.</p><p>We constantly tailor our approach to support you and your business with a 99% ticket resolution within <strong>8 working</strong> hours.</p>"
+          }
         }
       },
       "block_order": [
         "faq_item_CWkwHy",
+        "faq_item_iEKinn",
+        "faq_item_EqgmB4",
         "faq_item_w7hk4V",
-        "faq_item_aWEPnA",
         "faq_item_9q46nV",
-        "faq_item_73pCre"
+        "faq_item_73pCre",
+        "faq_item_aWEPnA"
       ],
       "name": "FAQ Accordion",
       "settings": {
