@@ -12,5 +12,20 @@
     "market": "united-states"
   },
   "parent": "index.json",
-  "sections": {}
+  "sections": {
+    "featured_collection_yqMQTw": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    },
+    "parallel_faq_accordion_ypPtXz": {
+      "settings": {},
+      "blocks": {
+        "faq_item_w7hk4V": {
+          "disabled": true,
+          "settings": {}
+        }
+      }
+    }
+  }
 }
