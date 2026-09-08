@@ -119,11 +119,60 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "image_with_text_A4BbM4": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_EPKH8G": {
+          "type": "heading",
+          "settings": {
+            "heading": "Beyond project management",
+            "heading_size": "h1"
+          }
+        },
+        "text_kyHP3J": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Asta is a fully integrated and scalable planning and scheduling suite of software solutions that enables construction professionals to plan, track and deliver their projects regardless of size and complexity from anywhere and at any time.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_EtAMyK": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_EPKH8G",
+        "text_kyHP3J",
+        "button_EtAMyK"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Asta_Solutions.svg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "image_with_text_wNpgxd",
     "featured_collection",
-    "rich_text_rgzzMj"
+    "rich_text_rgzzMj",
+    "image_with_text_A4BbM4"
   ]
 }
