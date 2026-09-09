@@ -476,27 +476,25 @@
       <div class="drawer__footer">
         {%- liquid
           assign picker_type = settings.cart_upsell_picker_type | default: 'dropdown'
+          assign next_upsell = blank
         -%}
 
-        {%- capture upsell_items -%}
-          {%- if settings.cart_upsell_product != blank -%}
-            {%- liquid
-              assign product_in_cart = false
-              for item in cart.items
-                if item.product_id == settings.cart_upsell_product.id
-                  assign product_in_cart = true
-                endif
-              endfor
-            -%}
-            {%- if product_in_cart == false and settings.cart_upsell_product.available -%}
-              {% render 'cart-upsell-item',
-                product: settings.cart_upsell_product,
-                picker_type: picker_type,
-                unique_id: settings.cart_upsell_product.id
-              %}
-            {%- endif -%}
+        {%- if settings.cart_upsell_product != blank -%}
+          {%- liquid
+            assign product_in_cart = false
+            for item in cart.items
+              if item.product_id == settings.cart_upsell_product.id
+                assign product_in_cart = true
+                break
+              endif
+            endfor
+          -%}
+          {%- if product_in_cart == false and settings.cart_upsell_product.available -%}
+            {%- assign next_upsell = settings.cart_upsell_product -%}
           {%- endif -%}
+        {%- endif -%}
 
+        {%- if next_upsell == blank -%}
           {%- for upsell_product in settings.cart_upsell_products -%}
             {%- liquid
               assign is_duplicate = false
@@ -507,27 +505,29 @@
               for item in cart.items
                 if item.product_id == upsell_product.id
                   assign product_in_cart = true
+                  break
                 endif
               endfor
             -%}
             {%- if is_duplicate == false and product_in_cart == false and upsell_product.available -%}
-              {% render 'cart-upsell-item',
-                product: upsell_product,
-                picker_type: picker_type,
-                unique_id: upsell_product.id
-              %}
+              {%- assign next_upsell = upsell_product -%}
+              {%- break -%}
             {%- endif -%}
           {%- endfor -%}
-        {%- endcapture -%}
+        {%- endif -%}
 
-        {%- if cart != empty and upsell_items != blank -%}
+        {%- if cart != empty and next_upsell != blank -%}
           <script src="{{ 'cart-upsell.js' | asset_url }}" defer="defer"></script>
           <div class="cart-drawer__upsell" aria-label="{{ 'sections.cart.upsell_label' | t }}">
             <p class="cart-drawer__upsell-label">
               {{ 'sections.cart.upsell_label' | t }}
             </p>
             <div class="cart-drawer__upsell-list">
-              {{ upsell_items }}
+              {% render 'cart-upsell-item',
+                product: next_upsell,
+                picker_type: picker_type,
+                unique_id: next_upsell.id
+              %}
             </div>
           </div>
         {%- endif -%}
